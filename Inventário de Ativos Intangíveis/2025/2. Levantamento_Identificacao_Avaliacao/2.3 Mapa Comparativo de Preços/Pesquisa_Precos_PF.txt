@@ -1,0 +1,114 @@
+Trata-se do estudo, pesquisa, tratamento e análises de preços que tem o objetivo primário fixar o preço estimado de pontos de função para contratação, aditivos, reajustes, cálculos de economicidade, avaliação de bens intangíveis desenvolvidos internamente ou de terceiros como softwares aplicativos (sistemas transacionais) afim de obter valor de referência para a Administação, para serviços comuns ou similares ao objeto:
+
+Contratação de serviço técnico especializado, continuado, remoto ou presencial, na modalidade de fábrica de software para sustentação, manutenção, desenvolvimento e melhorias dos Sistemas de Informação da Secretaria de Estado de Planejamento e Gestão do Estado de Mato Grosso.
+
+1- Objeto de referência
+A escolha deste objeto base-se no contrato 014/2022/SEPLAG firmado entre a empresa CRP Tecnologia e a Secretaria de Estado de Planejamento e Gestão de MT (Seplag), onde os serviços são executados na mesma tecnologia, arquitetura e modus operandi similar os serviços executados pela Suterintendência de Inteligência Tecnológica (SITEC) da Seplag.
+
+A CRP Tecnologia, no momento, é uma extensão da SITEC para atividades de engenharia de software, executando atividades desde o entendimento do negócio, documentação, ao desenvolviento (codificação), testes e entrega para homologação.
+
+Assim, contempla a maioria das estapas do ciclo de vida de projetos de desenvolvimento de softwares executadas pela SITEC.
+
+Desta forma, a escolha deste objeto é essencial no processo de avaliação financeira de bens intangíveis desenvolvidos internamente pela SITEC.
+
+2- Dos Dados
+Os dados sobre preços de pontos de função foram obtivos atavés de pesquisas de contratações públicas na internet, em sites de livre acesso, como o Radar de Preços TCE MT (https://radardeprecos.tce.mt.gov.br/), Banco de Preços (https://www.bancodeprecos.com.br/PrecosPublicos), Portal de Compras do Governo Federal (https://www.gov.br/compras/pt-br) e do Contrato 014/2022/SEPLAG.
+
+A coleta e análise de preços identificou contratações cujo objeto é similar ao do Contrato (vigente) 014/2022/SEPLAG, medido por pontos de função (PF) e da tecnologia Java.
+
+Esta tecnologia back-end é padronizada e predominante nos produtos/softwares desenvolvidos internamente pela SITEC, por isso sua escolha.
+
+O trabalho de coleta e análise dos preços envolvem aquisições, compras ou Atas de Registros de Preços publicadas ou homologadas do ano de 2024 a 2025, para que os preços possam refletir com os valores praticados no mercado.
+
+Será disponibilizado artefatos das pesquisas e análises de preços, afim de que a parte interressada no presente estudo possa consultá-las, se necessário.
+
+Ainda sim, são raros os serviços ou contratações públicas com tal especificidade, motivo pelo que foram aplicadas técnicas robustas de estatísticas, conhecimento técnico do objeto/serviço, índices econômicos que medem a inflação brasileira, ciência de dados, análises exploratória de dados para não somente sustentar a escolha do preço do ponto de função, mas para garantir equilíbrio econômico-financeiro e valor justo.
+
+Em consulta ao Radar de Preços do TCE MT, a pesquisa encontrou apenas uma aquisição similar ao objeto/serviço escolhido do ano de 2021, razão pela qual o preço será descartado para a presente análise.
+
+Já o Banco de Preços Públicos, foram encontradas 3 contratações similares:
+
+1- Serviço de Desenvolvimento e Manutenção de Software com a Tecnologia Java
+2- Desenvolvimento de Novo Software e Manutenção Evolutiva Baseadas em Tecnologia Java
+3- Serviços de Desenvolvimento e Manutenção - Java
+
+Estas contratações são fruto de pesquisa refinada dos Principais Resultados, que considerou as unidades de medida Ponto de Função e PF para o código do item CatSer: 25852, com base na IN 65/2021 (Lei nº 14.133).
+
+Para o presente trabalho, serão utilizados 3 critérios para escolha do preço do ponto de função, conforme Art. 47 do Decreto Estadual de MT nº 1.525, de 23 de Novembro de 2022.
+
+Neste sentido, abaixo o critério/fórmula de cada serviço do Banco de Preços Públicos:
+
+Contratação 1: Menor Preço, R$ 1.060,00 (valores arredondados, sem os valores de centavos)
+Contratação 2: Mediana das 3 Melhores Propostas Finais: R$ 650,00
+Contratação 3: Média Saneada das propostas Finais (TCU): R$ 1.182,09 (valores arredondados, sem os valores de centavos)
+
+Este critério visa equilibrar os preços para dispor não só de volume de dados, mas suprir a ausência de outros dados para prover maior acurácidade nos resultados.
+
+
+Quanto aos dados do Portal de Compras do Governo Federal, não foram identificadas até então contratações públicas similar ao objeto/serviço no ano de 2025, por este motivo, foram utilizadas Atas de Registros de Preços e contratos do ano de 2024, em sua maioria.
+
+TERMO DE APOSTILAMENTO Nº 06/2024
+ATA DE REGISTRO DE PREÇOS Nº 33/2024
+Item 35
+Preço: R$ 943,26
+Atualizado até 09/2024
+
+
+TERMO DE APOSTILAMENTO Nº 05/2024
+ATA DE REGISTRO DE PREÇOS Nº 32/2024
+Item 42
+Preço: R$ 558,61
+Atualizado até 09/2024
+
+TERMO DE APOSTILAMENTO Nº 01/2025
+ATA DE REGISTRO DE PREÇOS Nº 31/2024
+Item 22: R$ 585,21
+Atualizado até 09/2024
+
+TERMO DE APOSTILAMENTO Nº 04/2024
+ATA DE REGISTRO DE PREÇOS Nº 30/2024
+Item 8: R$ 638,41
+Atualizado até 09/2024
+
+TERMO DE APOSTILAMENTO Nº 03/2024
+ATA DE REGISTRO DE PREÇOS Nº 29/2024
+Item 1: R$ 601,33
+Atualizado até 09/2024
+
+Contrato Nº 14/2024
+Min. MEIO AMBIENTE E MUDANÇA DO CLIMA
+Serv. Florestal Brasileiro
+ATA DE REGISTRO DE PREÇOS Nº 33/2024
+Item: 35: R$ 886,51
+Atualizado até 08/2024
+
+CONTRATO Nº 024/2024
+AGÊNCIA NACIONAL DE TRANSPORTES TERRESTRES
+Item 35: R$ 886,51
+Atualizado até 10/2024
+
+CONTRATO Nº 21/2024
+SUFRAMA
+Item 1: R$ 707,64
+Atualizado até 09/2024
+
+CONTRATO Nº 45/2024
+ICMBio
+Item 35: R$ 886,51
+Atualizado até 09/2024
+
+CONTRATO Nº 014/2022/SEPLAG
+Itens 1 e 2: R$ 519,99
+Atualizado até 05/2025
+
+Com estes dados em mãos, podemos proceder com a análise exploratória para melhor compreensão.
+
+
+2- Análise Exploratório de Preços de Pontos de Função
+Com ferramentas, procedimentos e técnias estatísticas, foi realizada análise exploratória de dados, ou seja, de preços escolhidos e selecionados.
+
+A base de dados dispõe de 13 itens de preços para serviços similares aos executados na SITEC. Entende-se que a fonte de dados disponíveis no mercado possa conter outros preços diferentes dos listados neste estudo, entretanto, coletar, processar e analisá-los é trabalho moroso e por esta razão trataremos nossa base de dados com 13 preços como amostra significativa para tal a finalidade do presente trabalho.
+
+Além disso,tem-se as limitações para acessos e disponibilidade, o que corrobora com a dificuldade de pesquisar por mais preços.
+
+

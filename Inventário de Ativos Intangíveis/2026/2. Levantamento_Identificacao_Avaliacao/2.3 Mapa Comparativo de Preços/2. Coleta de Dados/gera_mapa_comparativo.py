@@ -21,7 +21,7 @@ for r in pf:
 ordem={'AMOSTRA A - ADERENTE':0,'AMOSTRA B - AMPLIADA':1,'DESCARTE SUGERIDO':2}
 out.sort(key=lambda o:(ordem[o['classificacao']],o['data_compra']))
 for i,o in enumerate(out,1): o['id']=i
-w=csv.DictWriter(open('../Precos_Ponto_Funcao_2025-2026.csv','w',newline='',encoding='utf-8-sig'),fieldnames=list(out[0]),delimiter=';'); w.writeheader(); w.writerows(out)
+w=csv.DictWriter(open('../4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv','w',newline='',encoding='utf-8-sig'),fieldnames=list(out[0]),delimiter=';'); w.writeheader(); w.writerows(out)
 import collections,statistics as st
 print(collections.Counter(o['classificacao'] for o in out))
 for o in out:

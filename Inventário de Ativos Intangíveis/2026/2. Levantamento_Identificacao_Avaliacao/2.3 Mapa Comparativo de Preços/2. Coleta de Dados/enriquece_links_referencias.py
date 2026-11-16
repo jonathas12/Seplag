@@ -2,7 +2,7 @@
 Fonte: API de Dados Abertos do Compras.gov.br (módulo Contratações PNCP 14.133 e módulo Legado)."""
 import csv, json, time, urllib.request, urllib.parse
 B = 'https://dadosabertos.compras.gov.br'
-CSV = '../Precos_Ponto_Funcao_2025-2026.csv'
+CSV = '../4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv'
 def get(path, **q):
     u = B + path + '?' + urllib.parse.urlencode(q)
     for i in range(3):

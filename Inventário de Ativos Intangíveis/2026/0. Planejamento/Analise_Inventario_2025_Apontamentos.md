@@ -21,7 +21,7 @@ Fontes analisadas: `2025/4. Relatório Final` (Relatório v1 e Processo SEPLAG-P
 | Grupo | Bens | Tamanho | Valor (R$) |
 |---|---:|---:|---:|
 | Desenvolvidos internamente / medidos por PF | 31 | 26.660 PF | 44.976.518,13 |
-| Licenciados e licenciados mantidos | 19 | — | 6.287.832,16 |
+| Licenciados e licenciados mantidos | 19 | - | 6.287.832,16 |
 | **Total** | **50** | | **51.264.350,29** |
 
 ## 2. Apontamentos e tratamento em 2026
@@ -40,7 +40,7 @@ Fontes analisadas: `2025/4. Relatório Final` (Relatório v1 e Processo SEPLAG-P
 | A10 | Marcas, patentes, APIs, painéis, bancos de dados e SaaS ficaram fora do escopo, sem decisão formal sobre registro de propriedade intelectual. | IN, art. 2º, II; art. 28 | Manter fora da mensuração em 2026 e recomendar registro de programa de computador e de marca (ver `5. Governança_Recomendações`). |
 | A11 | Não há evidência, no processo, de retorno do setor contábil nem do reflexo no FIPLAN. | Portaria, art. 8º; IN, arts. 21 a 25 | Pedir à CPS e à contabilidade a posição do registro de 2025 antes de fechar 2026, para conciliar saldo inicial. |
 | A12 | Falta conciliação entre o inventário anterior e o atual (entradas, baixas, reavaliações). | IN, art. 23 | Incluir no relatório quadro de movimentação 2025 → 2026 por bem. |
-| A13 | Forma: numeração do escopo salta o item 5.0, erros de digitação, arquivos de 2024 na pasta de 2025. O relatório cita Aprendizado de Máquina; o método usado é K-Means (agrupamento), não KNN (classificação). | — | Revisão textual; padronizar nomenclatura como K-Means; cada exercício só com seus arquivos. |
+| A13 | Forma: numeração do escopo salta o item 5.0, erros de digitação, arquivos de 2024 na pasta de 2025. O relatório cita Aprendizado de Máquina; o método usado é K-Means (agrupamento), não KNN (classificação). | - | Revisão textual; padronizar nomenclatura como K-Means; cada exercício só com seus arquivos. |
 
 ## 3. Pontos fortes a manter
 

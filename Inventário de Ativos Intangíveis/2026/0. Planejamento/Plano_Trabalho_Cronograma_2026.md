@@ -1,4 +1,4 @@
-# Plano de Trabalho e Cronograma — Inventário de Bens Intangíveis 2026
+# Plano de Trabalho e Cronograma - Inventário de Bens Intangíveis 2026
 
 Comissão instituída pela Portaria nº 124/2026/SEPLAG. Versão 1.0, de 16/11/2026.
 
@@ -12,7 +12,7 @@ Identificar, mensurar e avaliar os bens intangíveis sob responsabilidade da SEP
 |---|---|
 | Publicação da Portaria nº 124/2026/SEPLAG | 23/07/2026 |
 | Abertura dos trabalhos | 16/10/2026 |
-| Prazo da Portaria (art. 6º) | 30/10/2026 — vencido |
+| Prazo da Portaria (art. 6º) | 30/10/2026 - vencido |
 | Data final replanejada | 27/11/2026 |
 | Encaminhamento do patrimônio ao setor contábil (IN, art. 26, § 1º) | até 15/12/2026 |
 | Progresso em 16/11/2026 | 30% |

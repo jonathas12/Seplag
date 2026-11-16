@@ -1,13 +1,13 @@
-# ATA Nº 001/2026 — ABERTURA DOS TRABALHOS
+# ATA Nº 001/2026 - ABERTURA DOS TRABALHOS
 
-**Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) — SEPLAG/MT — Exercício 2026**
+**Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) - SEPLAG/MT - Exercício 2026**
 
 > Minuta para conferência e assinatura. Os campos entre colchetes dependem de confirmação da presidência antes da juntada ao processo no SIGADOC.
 
 | | |
 |---|---|
 | Data de abertura | 16 de outubro de 2026 |
-| Local | [Coordenadoria de Planejamento e Projetos de TI — SEPLAG, Cuiabá/MT] |
+| Local | [Coordenadoria de Planejamento e Projetos de TI - SEPLAG, Cuiabá/MT] |
 | Ato de designação | Portaria nº 124/2026/SEPLAG, de 22/07/2026, publicada no DOE/MT nº 29.279, de 23/07/2026, p. 5 |
 | Norma de regência | Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ |
 
@@ -45,7 +45,7 @@ Aos dezesseis dias do mês de outubro de dois mil e vinte e seis, o presidente d
 
 ---
 
-## ATUALIZAÇÃO Nº 1 — 13 de novembro de 2026
+## ATUALIZAÇÃO Nº 1 - 13 de novembro de 2026
 
 Presentes: [confirmar].
 
@@ -68,10 +68,10 @@ Presentes: [confirmar].
 
 Cuiabá/MT.
 
-Jonathas Gomes Marques — Presidente
+Jonathas Gomes Marques - Presidente
 
-João Vitor de Vasconcelos — Membro
+João Vitor de Vasconcelos - Membro
 
-Thiago Nascimento de Vasconcelos — Membro
+Thiago Nascimento de Vasconcelos - Membro
 
-Vanessa Camila Souza Viana — Membro
+Vanessa Camila Souza Viana - Membro

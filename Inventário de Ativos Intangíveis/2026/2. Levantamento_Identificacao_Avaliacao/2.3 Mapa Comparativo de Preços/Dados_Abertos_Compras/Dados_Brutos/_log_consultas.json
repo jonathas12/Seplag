@@ -1,0 +1,147 @@
+[
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-servico/6_consultarItemServico?pagina=1&tamanhoPagina=500&codigoGrupo=111",
+  "consultado_em": "2026-11-16T14:35:53.292825+00:00",
+  "totalRegistros": 14
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25852&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:35:54.740107+00:00",
+  "totalRegistros": 23
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25852&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:35:55.785119+00:00",
+  "totalRegistros": 1
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25860&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:35:57.221525+00:00",
+  "totalRegistros": 60
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25860&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:35:58.759249+00:00",
+  "totalRegistros": 4
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25879&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:35:59.859183+00:00",
+  "totalRegistros": 10
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25879&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:00.884768+00:00",
+  "totalRegistros": 5
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25887&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:01.998115+00:00",
+  "totalRegistros": 23
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25887&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:02.933292+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25895&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:03.993113+00:00",
+  "totalRegistros": 22
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25895&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:04.975404+00:00",
+  "totalRegistros": 1
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25909&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:06.173103+00:00",
+  "totalRegistros": 9
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25909&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:06.999547+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25917&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:09.930396+00:00",
+  "totalRegistros": 275
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25917&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:11.482472+00:00",
+  "totalRegistros": 5
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25925&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:12.925646+00:00",
+  "totalRegistros": 20
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25925&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:13.746643+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25933&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:15.113822+00:00",
+  "totalRegistros": 13
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25933&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:15.944017+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25941&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:17.534431+00:00",
+  "totalRegistros": 59
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25941&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:18.324389+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25950&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:19.541800+00:00",
+  "totalRegistros": 7
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25950&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:20.865151+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25968&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:22.089139+00:00",
+  "totalRegistros": 13
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25968&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:22.841384+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25976&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:23.919831+00:00",
+  "totalRegistros": 15
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25976&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:24.527556+00:00",
+  "totalRegistros": 0
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-pesquisa-preco/3_consultarServico?pagina=1&tamanhoPagina=500&codigoItemCatalogo=25984&dataCompraInicio=2025-01-01&dataCompraFim=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:26.507762+00:00",
+  "totalRegistros": 134
+ },
+ {
+  "url": "https://dadosabertos.compras.gov.br/modulo-arp/2_consultarARPItem?pagina=1&tamanhoPagina=500&codigoItem=25984&dataVigenciaInicialMin=2025-01-01&dataVigenciaInicialMax=2026-11-16",
+  "consultado_em": "2026-11-16T14:36:27.532713+00:00",
+  "totalRegistros": 7
+ }
+]

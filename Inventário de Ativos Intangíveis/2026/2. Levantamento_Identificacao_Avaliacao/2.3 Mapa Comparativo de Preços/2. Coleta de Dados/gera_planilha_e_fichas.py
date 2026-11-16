@@ -5,8 +5,8 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 RAIZ = '..'
 rows = list(csv.DictReader(open(f'{RAIZ}/4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv', encoding='utf-8-sig'), delimiter=';'))
-res = json.load(open(f'{RAIZ}/5. Análise Estatística/resultados_analise.json'))
-log = json.load(open('Dados_Brutos/_log_consultas.json'))
+res = json.load(open(f'{RAIZ}/5. Análise Estatística/resultados_analise.json', encoding='utf-8'))
+log = json.load(open('Dados_Brutos/_log_consultas.json', encoding='utf-8'))
 consulta = '/'.join(reversed(log[0]['consultado_em'][:10].split('-')))
 APELIDO = {1: 'Casa da Moeda', 2: 'SESED-RN', 3: 'Marinha-PAPEM', 4: 'UFCA', 5: 'MP-PA', 6: 'INCRA-Serpro', 7: 'TJ-PA', 8: 'MDS', 9: 'SMED-Salvador'}
 OBS = {1: 'Pregão com registro de preços. Fora da janela de 13 meses.',
@@ -20,12 +20,30 @@ brl = lambda v: ('R$ ' + f"{float(v):,.2f}".replace(',', 'X').replace('.', ',').
 qtd = lambda v: f"{float(v):,.0f}".replace(',', '.')
 dt = lambda s: '/'.join(reversed(s[:10].split('-'))) if s else ''
 grupo = {}
-for g, v in res['C1 - 9 preços (principal)']['grupos'].items():
-    for i in v['ids']: grupo[i] = g
+for k, g in res['kmeans_2026_atualizado']['atribuicao'].items():
+    grupo[int(k)] = f'Grupo {g}'
 grupo2 = {}
-for g, v in res['C2 - sem outlier IQR (8 preços)']['grupos'].items():
-    for i in v['ids']: grupo2[i] = g
+for g in res['cenarios_detalhe']['C2 - sem outlier IQR | Atualizado ' + res['data_base_ipca']]:
+    for item in g['Preços do grupo'].split('; '):
+        grupo2[int(item.split(' ')[1])] = g['Grupo'].split(' (')[0]
 A = [r for r in rows if r['classificacao'].startswith('AMOSTRA A')]
+DOCS = os.path.join(RAIZ, '3. Evidências', 'Documentos PNCP')
+def pncp(r):
+    pasta = os.path.join(DOCS, f"Ref_{int(r['id']):02d} - {APELIDO[int(r['id'])]} - PF {float(r['preco_unitario_pf']):,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
+    info = {'pasta': os.path.relpath(pasta, RAIZ), 'resultado': None, 'registro': None, 'arquivos': [], 'prints': []}
+    if os.path.exists(os.path.join(pasta, 'resultado_item.json')):
+        res = json.load(open(os.path.join(pasta, 'resultado_item.json'), encoding='utf-8'))
+        info['resultado'] = (res or [None])[0]
+    if os.path.exists(os.path.join(pasta, '_registro.json')):
+        info['registro'] = json.load(open(os.path.join(pasta, '_registro.json'), encoding='utf-8'))
+    for raiz_, _, arqs in os.walk(pasta):
+        for a in arqs:
+            caminho = os.path.relpath(os.path.join(raiz_, a), pasta)
+            if a.lower().endswith('.pdf'):
+                info['arquivos'].append(caminho)
+            if a.lower().endswith('.png') and 'prints' in raiz_:
+                info['prints'].append(caminho)
+    return info
 for r in A:
     i = int(r['id']); p = f"{float(r['preco_unitario_pf']):,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
     r['_nome'] = f"Ref_{i:02d} - {APELIDO[i]} - PF {p}"
@@ -72,23 +90,32 @@ ws1 = wb.create_sheet('1 Rastreabilidade Java')
 cab = ['Ref.', 'Preço unitário na origem (R$/PF)', 'Quantidade (PF)', 'Data da compra', 'Mês-base', 'Fator IPCA até 10/2026', 'Preço atualizado (R$/PF)',
        'Órgão', 'Unidade compradora (UASG)', 'UF', 'Fornecedor', 'CNPJ do fornecedor', 'Modalidade', 'Registro de preços', 'Nº da compra', 'Processo',
        'Identificador da compra', 'Item', 'Nº de controle PNCP', 'Link PNCP', 'Link Compras.gov.br', 'Link API (registro bruto)', 'Arquivo de evidência',
-       'Dentro de 13 meses', 'Houve disputa de preço', 'Grupo K-Means (9 preços)', 'Grupo K-Means (sem outlier)', 'Objeto da compra', 'Observação']
+       'Dentro de 13 meses', 'Houve disputa de preço', 'Grupo K-Means (9 preços)', 'Grupo K-Means (sem outlier)', 'Objeto da compra', 'Observação',
+       'Preço homologado no PNCP (R$/PF)', 'Confere com o PNCP', 'Documentos oficiais baixados', 'Páginas com o preço destacado', 'Pasta dos documentos']
 lin = [[int(r['id']), float(r['preco_unitario_pf']), float(r['quantidade_pf']), dt(r['data_compra']), r['mes_base_preco'], float(r['fator_ipca']), float(r['preco_atualizado_pf']),
         r['orgao'], f"{r['uasg']} - {r['uasg_nome']}", r['uf'], r['fornecedor'], r['cnpj_fornecedor'], r['modalidade_nome'], r['srp'], r['numero_compra'], r['processo'],
         r['id_compra'], int(r['item']), r['numero_controle_pncp'], r['link_pncp'], r['link_compras_gov'], r['link_api_item'], f"3. Evidências/Fichas/{r['_nome']}.pdf",
-        r['dentro_13_meses'], r['disputa_de_preco'], grupo.get(int(r['id']), ''), grupo2.get(int(r['id']), 'Excluído (outlier)'), r['objeto'], OBS[int(r['id'])]] for r in A]
-folha(ws1, cab, lin, [6, 14, 11, 12, 10, 11, 14, 30, 34, 5, 32, 17, 18, 10, 10, 22, 20, 6, 28, 30, 30, 30, 36, 10, 10, 20, 20, 60, 46],
-      moeda=('Preço unitário na origem (R$/PF)', 'Preço atualizado (R$/PF)'), link=('Link PNCP', 'Link Compras.gov.br', 'Link API (registro bruto)'),
+        r['dentro_13_meses'], r['disputa_de_preco'], grupo.get(int(r['id']), ''), grupo2.get(int(r['id']), 'Excluído (outlier)'), r['objeto'], OBS[int(r['id'])],
+        *(lambda i: [float(i['resultado']['valorUnitarioHomologado']) if i['resultado'] else '',
+                     ('Sim' if i['resultado'] and abs(float(i['resultado']['valorUnitarioHomologado']) - float(r['preco_unitario_pf'])) < 0.005 else 'Não conferido'),
+                     len(i['arquivos']), len(i['prints']), i['pasta']])(pncp(r))] for r in A]
+folha(ws1, cab, lin, [6, 14, 11, 12, 10, 11, 14, 30, 34, 5, 32, 17, 18, 10, 10, 22, 20, 6, 28, 30, 30, 30, 36, 10, 10, 20, 20, 60, 46, 14, 12, 12, 12, 40],
+      moeda=('Preço unitário na origem (R$/PF)', 'Preço atualizado (R$/PF)', 'Preço homologado no PNCP (R$/PF)'), link=('Link PNCP', 'Link Compras.gov.br', 'Link API (registro bruto)'),
       titulo='Rastreabilidade dos 9 preços Java medidos em ponto de função', nota='Do preço unitário até a compra de origem. Preço atualizado = preço na origem x fator IPCA.')
+CFG = json.load(open(f'{RAIZ}/config_pesquisa.json', encoding='utf-8'))['contrato_referencia']
+wsc = wb.create_sheet('0 Contrato 014-2022')
+folha(wsc, ['Ato', 'Preço por PF (R$)', 'Referência'], [[h['ato'], h['preco_pf'], h['referencia']] for h in CFG['historico']], [34, 16, 40],
+      moeda=('Preço por PF (R$)',), titulo='Objeto de referência: Contrato nº 014/2022/SEPLAG',
+      nota=f"{CFG['origem']}. Preço vigente: R$ {CFG['preco_vigente_pf']:.2f} ({CFG['ato_vigente']}, processo {CFG['processo_ato_vigente']}).".replace('.', ',', 0))
 ws2 = wb.create_sheet('2 Grupos K-Means')
-cab = ['Cenário', 'Qtde de preços', 'Referências', 'Média geral', 'Mediana geral', 'Coef. de variação (%)', 'Grupo', 'Qtde no grupo', 'Referências do grupo', 'Mínimo', 'Máximo', 'Média do grupo', 'Mediana do grupo']
+cab = ['Cenário', 'Base de preços', 'Grupo', 'Qtde no grupo', 'Preços do grupo', 'Mínimo', 'Mediana', 'Centroide (média)', 'Máximo']
 lin = []
-for nome, v in res.items():
-    if nome.startswith('_'): continue
-    for g, x in v['grupos'].items():
-        lin.append([nome, v['n'], ', '.join(map(str, v['ids'])), v['media'], v['mediana'], round(v['coef_variacao_pct'], 1), g, x['n'], ', '.join(map(str, x['ids'])), x['minimo'], x['maximo'], x['media'], x['mediana']])
-folha(ws2, cab, lin, [34, 9, 20, 13, 13, 11, 24, 9, 16, 13, 13, 14, 14], moeda=('Média geral', 'Mediana geral', 'Mínimo', 'Máximo', 'Média do grupo', 'Mediana do grupo'),
-      titulo='Agrupamento K-Means em 3 grupos, preços atualizados pelo IPCA até 10/2026', nota='Fonte: notebook Analise_Precos_PF-2026.ipynb (pasta 5. Análise Estatística).')
+for nome, grupos in res['cenarios_detalhe'].items():
+    cen, base = nome.split(' | ')
+    for g in grupos:
+        lin.append([cen, base, g['Grupo'], g['Qtde de preços'], g['Preços do grupo'], g['Mínimo'], g['Mediana'], g['Centroide (média)'], g['Máximo']])
+folha(ws2, cab, lin, [32, 18, 24, 9, 70, 13, 13, 15, 13], moeda=('Mínimo', 'Mediana', 'Centroide (média)', 'Máximo'),
+      titulo='Agrupamento K-Means em 3 grupos: preços originais e atualizados, em cada cenário', nota='Fonte: notebook Analise_Precos_PF-2026.ipynb (pasta 5. Análise Estatística).')
 def simples(nome, cls, titulo, nota):
     w = wb.create_sheet(nome)
     cab = ['Ref.', 'Preço unitário (R$/PF)', 'Quantidade (PF)', 'Data da compra', 'Preço atualizado (R$/PF)', 'Tecnologia (CatSer)', 'Órgão / unidade', 'UF', 'Fornecedor', 'Modalidade',
@@ -127,6 +154,20 @@ L = lambda u: f'<a href="{html.escape(u)}">{html.escape(u)}</a>' if u else ''
 os.makedirs('_fichas_html', exist_ok=True)
 for r in A:
     i = int(r['id'])
+    info = pncp(r); hr = info['resultado']
+    eventos = (info['registro'] or {}).get('eventos', [])
+    ev = next((e for e in eventos if 'resultados' in e.get('consulta', '')), {})
+    if hr:
+        confere = abs(float(hr['valorUnitarioHomologado']) - float(r['preco_unitario_pf'])) < 0.005
+        conf = (f"<tr><th>Preço unitário homologado no PNCP</th><td class='p'>{brl(hr['valorUnitarioHomologado'])} "
+                f"{'(confere com o mapa)' if confere else '(DIVERGE do mapa)'}</td></tr>"
+                f"<tr><th>Quantidade e valor total homologados</th><td>{qtd(hr['quantidadeHomologada'])} PF / {brl(hr['valorTotalHomologado'])}</td></tr>"
+                f"<tr><th>Fornecedor homologado</th><td>{html.escape(hr['nomeRazaoSocialFornecedor'])} - CNPJ {hr['niFornecedor']}</td></tr>"
+                f"<tr><th>Data do resultado / situação</th><td>{dt(hr.get('dataResultado') or '')} / {html.escape(str(hr.get('situacaoCompraItemResultadoNome', '')))}</td></tr>"
+                f"<tr><th>Consulta à API do PNCP</th><td>{L(ev.get('consulta', ''))}<br>em {ev.get('em', '')[:19].replace('T', ' ')} (UTC)</td></tr>"
+                f"<tr><th>Documentos oficiais baixados</th><td>{len(info['arquivos'])} arquivo(s) PDF; {len(info['prints'])} página(s) com o preço destacado.<br>Pasta: {html.escape(info['pasta'])}</td></tr>")
+    else:
+        conf = '<tr><th>Resultado no PNCP</th><td>Ainda não coletado. Executar 3. Evidências/coleta_documentos_pncp.py</td></tr>'
     h = f"""<html><head><meta charset="utf-8"><title>{r['_nome']}</title>{css}</head><body>
 <h1>Referência de preço nº {i:02d} - Ponto de Função</h1>
 <div class="sub">Inventário de Bens Intangíveis 2026 - SEPLAG/MT - Mapa Comparativo de Preços</div>
@@ -157,6 +198,9 @@ for r in A:
 <tr><th>PNCP (edital, ata, contrato e arquivos)</th><td>{L(r['link_pncp'])}</td></tr>
 <tr><th>Compras.gov.br (itens e valores homologados)</th><td>{L(r['link_compras_gov'])}</td></tr>
 <tr><th>API de dados abertos (registro bruto)</th><td>{L(r['link_api_item'])}</td></tr></table>
+<h2>Conferência no PNCP (fonte oficial)</h2><table>
+{conf}
+</table>
 <h2>Enquadramento na pesquisa</h2><table>
 <tr><th>Observação</th><td>{html.escape(OBS[i])}</td></tr>
 <tr><th>Dentro de 13 meses da pesquisa</th><td>{r['dentro_13_meses']} ({r['meses_ate_pesquisa']} meses)</td></tr>
@@ -173,3 +217,23 @@ campos = [k for k in rows[0] if not k.startswith('_')]
 w = csv.DictWriter(open(f'{RAIZ}/4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv', 'w', newline='', encoding='utf-8-sig'), fieldnames=campos, delimiter=';', lineterminator='\n', extrasaction='ignore')
 w.writeheader(); w.writerows(rows)
 print('planilha e', len(A), 'fichas geradas')
+
+# ---------------- PDF e imagem de cada ficha (Playwright/Chromium) ----------------
+import shutil
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+destino_pdf = Path(RAIZ) / '3. Evidências' / 'Fichas'
+destino_png = Path(RAIZ) / '3. Evidências' / 'Prints'
+destino_pdf.mkdir(parents=True, exist_ok=True); destino_png.mkdir(parents=True, exist_ok=True)
+for antigo in list(destino_pdf.glob('Ref_*.pdf')) + list(destino_png.glob('Ref_*.png')):
+    antigo.unlink()
+with sync_playwright() as pw:
+    nav = pw.chromium.launch()
+    pg = nav.new_context(viewport={'width': 1000, 'height': 1300}, device_scale_factor=2).new_page()
+    for h in sorted(Path('_fichas_html').glob('*.html')):
+        pg.goto(h.resolve().as_uri())
+        pg.pdf(path=str(destino_pdf / (h.stem + '.pdf')), prefer_css_page_size=True, print_background=True)
+        pg.screenshot(path=str(destino_png / (h.stem + '.png')), full_page=True)
+    nav.close()
+shutil.rmtree('_fichas_html')
+print('fichas em PDF e PNG gravadas em 3. Evidências')

@@ -1,6 +1,6 @@
 """Acrescenta ao mapa comparativo o número de controle PNCP, processo e links de cada referência.
 Fonte: API de Dados Abertos do Compras.gov.br (módulo Contratações PNCP 14.133 e módulo Legado)."""
-import csv, json, time, urllib.request, urllib.parse
+import csv, json, os, time, urllib.request, urllib.parse
 B = 'https://dadosabertos.compras.gov.br'
 CSV = '../4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv'
 def get(path, **q):
@@ -13,7 +13,9 @@ def get(path, **q):
             err = e; time.sleep(2 * (i + 1))
     return {'resultado': [], 'erro': str(err)}
 rows = list(csv.DictReader(open(CSV, encoding='utf-8-sig'), delimiter=';'))
-cache = {}
+CACHE = 'Dados_Brutos/contratacoes_pncp_por_id_compra.json'
+ATUALIZAR = os.environ.get('ATUALIZAR_DADOS') == '1'
+cache = json.load(open(CACHE, encoding='utf-8')) if os.path.exists(CACHE) and not ATUALIZAR else {}
 for r in rows:
     if r['classificacao'].startswith('DESCARTE'):
         continue
@@ -21,7 +23,7 @@ for r in rows:
     if idc not in cache:
         d = get('/modulo-contratacoes/1.1_consultarContratacoes_PNCP_14133_Id', tipo='idCompra', codigo=idc)
         cache[idc] = (d.get('resultado') or [None])[0]
-json.dump(cache, open('Dados_Brutos/contratacoes_pncp_por_id_compra.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(cache, open('Dados_Brutos/contratacoes_pncp_por_id_compra.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 novos = ['numero_controle_pncp', 'processo', 'numero_compra', 'modalidade_nome', 'srp', 'amparo_legal',
          'valor_total_homologado', 'link_pncp', 'link_compras_gov', 'link_api_item']
 for r in rows:

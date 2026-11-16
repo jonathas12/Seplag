@@ -1,7 +1,7 @@
 import json,glob,csv,sys
-nomes={c['codigoServico']:c['nomeServico'] for c in json.load(open('Dados_Brutos/catser_grupo_111.json'))}
+nomes={c['codigoServico']:c['nomeServico'] for c in json.load(open('Dados_Brutos/catser_grupo_111.json', encoding='utf-8'))}
 rows=[]
-for f in sorted(glob.glob('Dados_Brutos/precos_praticados_catser_*.json')): rows+=json.load(open(f))
+for f in sorted(glob.glob('Dados_Brutos/precos_praticados_catser_*.json')): rows+=json.load(open(f, encoding='utf-8'))
 pf=[r for r in rows if 'PONTO' in (r['nomeUnidadeMedida'] or '').upper()]
 out=[]
 for r in pf:

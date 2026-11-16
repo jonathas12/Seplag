@@ -1,13 +1,18 @@
 """Atualiza os preços pelo IPCA (série 433 do Banco Central) e acrescenta as colunas de rastreabilidade.
 Método igual ao da ferramenta Atualização_Monetária_IPCA.py: produto dos fatores mensais do mês da compra
 até o último mês publicado (data-base)."""
-import csv, json, urllib.request, datetime
+import csv, json, os, urllib.request, datetime
 CSV = '../4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv'
-DATA_PESQUISA = datetime.date(2026, 11, 16)
-u = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2024&dataFinal=16/11/2026'
-serie = json.load(urllib.request.urlopen(u, timeout=60))
-json.dump({'url': u, 'consultado_em': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'dados': serie},
-          open('Dados_Brutos/ipca_serie_433_bcb.json', 'w'), ensure_ascii=False, indent=1)
+CFG = json.load(open('../config_pesquisa.json', encoding='utf-8'))
+DATA_PESQUISA = datetime.date.fromisoformat(CFG['data_pesquisa'])
+CACHE = 'Dados_Brutos/ipca_serie_433_bcb.json'
+if os.path.exists(CACHE) and os.environ.get('ATUALIZAR_DADOS') != '1':
+    serie = json.load(open(CACHE, encoding='utf-8'))['dados']      # reprodução: usa a série gravada na data da pesquisa
+else:
+    u = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2024&dataFinal={DATA_PESQUISA:%d/%m/%Y}"
+    serie = json.load(urllib.request.urlopen(u, timeout=60))
+    json.dump({'url': u, 'consultado_em': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'dados': serie},
+              open(CACHE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 ipca = {(int(d['data'][6:]), int(d['data'][3:5])): float(d['valor']) for d in serie}
 base = max(ipca)
 def fator(ano, mes):

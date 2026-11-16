@@ -11,21 +11,36 @@ Inventário físico-financeiro dos bens intangíveis da Secretaria de Estado de 
 | Prazo da Portaria | 30/10/2026 (art. 6º) - vencido |
 | Data final replanejada | 27/11/2026 |
 | Prazo do setorial de patrimônio ao setor contábil | 15/12/2026 (IN 03/2022, art. 26, § 1º) |
+| Objeto de referência do preço do PF | Contrato nº 014/2022/SEPLAG - R$ 544,53 por PF (5º Termo de Apostilamento, SEPLAG-PRO-2026/09621) |
+
+## Como executar
+
+Veja `COMO_EXECUTAR.md`. Em resumo, na pasta `2026`:
+
+1. `configurar_ambiente.bat` (Windows) ou `bash configurar_ambiente.sh` (Linux/Mac): cria o ambiente `.venv` e instala as bibliotecas.
+2. `python executar.py --tudo`: refaz mapa, análise, evidências, manifestação e documentos, sem acessar a internet.
 
 ## Estrutura
 
-| Pasta | Conteúdo |
+| Pasta ou arquivo | Conteúdo |
 |---|---|
-| `_Modelo_Institucional` | Conversor dos documentos para Word no padrão da SEPLAG |
 | `0. Planejamento` | Plano de trabalho e cronograma, análise do inventário de 2025 e atas da comissão |
 | `1.Legislação_Normas` | IN Conjunta 03/2022 e Portaria de designação da comissão |
-| `2. Levantamento_Identificacao_Avaliacao` | Softwares adquiridos, softwares desenvolvidos internamente (medições em APF) e mapa comparativo de preços do ponto de função |
+| `2. Levantamento_Identificacao_Avaliacao` | Softwares adquiridos, softwares desenvolvidos internamente (APF) e pesquisa de preços do ponto de função |
 | `3. Analise de Dados` | Assets, dados e painel Power BI |
 | `4. Relatório Final` | Relatório final, laudos técnicos de avaliação e processo |
 | `5. Governança_Recomendações` | Nota técnica consultiva sobre gestão, contabilização e governança dos softwares |
+| `_Modelo_Institucional` | Gerador de documentos no padrão visual da CPPTI/SEPLAG (HTML, PDF e Word), logo e fontes |
+| `executar.py` | Executa as etapas do projeto na ordem certa |
+| `requirements.txt` | Bibliotecas Python com as versões fixadas |
+| `configurar_ambiente.*` | Instaladores do ambiente para Windows e Linux/Mac |
+| `.vscode` | Configurações e tarefas prontas para o VS Code |
 
-## Situação em 16/11/2026
+## Pesquisa de preços do ponto de função
 
-- Progresso informado pela presidência: 30%.
-- Concluído nesta data: ambiente de trabalho, plano e cronograma, análise de 2025, coleta de preços de ponto de função em fonte oficial.
-- Próximo marco: análise de agrupamento dos preços e parecer técnico do preço de referência (17/11/2026).
+Pasta `2. Levantamento_Identificacao_Avaliacao/2.3 Mapa Comparativo de Preços`. Leitura recomendada:
+
+1. `6. Parecer Técnico/MANIFESTACAO_TECNICA_Preco_Ponto-Funcao_2026.pdf`: resultados, gráficos e limitações.
+2. `4. Mapa Comparativo/Mapa_Comparativo_Precos_PF_2026.xlsx`: rastreabilidade de cada preço até a compra de origem.
+3. `3. Evidências`: ficha de cada preço e documentos oficiais baixados do PNCP.
+4. `5. Análise Estatística/Analise_Precos_PF-2026.ipynb`: notebook que reproduz a análise.

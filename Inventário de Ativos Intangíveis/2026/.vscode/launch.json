@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Executar etapa (executar.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/executar.py",
+      "args": [
+        "--tudo"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONUTF8": "1"
+      }
+    }
+  ]
+}

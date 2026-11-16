@@ -1,0 +1,19 @@
+# Bibliotecas do projeto Inventário de Ativos Intangíveis 2026 (SEPLAG/MT)
+# Versões fixadas para que os resultados sejam os mesmos em qualquer computador.
+# Requer Python 3.11 ou superior.
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+openpyxl==3.1.5
+xlrd==2.0.2
+python-docx==1.2.0
+pillow==12.3.0
+pymupdf==2.1
+playwright==1.63.0
+jupyter==1.1.1
+nbconvert==7.17.2
+nbformat==5.11.1
+ipykernel==7.4.0

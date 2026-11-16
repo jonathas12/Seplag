@@ -1,0 +1,99 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Configurar ambiente (Windows)",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File ${workspaceFolder}/configurar_ambiente.ps1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Refazer tudo (sem internet)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --tudo",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Mapa comparativo",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --mapa",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Análise estatística (notebook)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --analise",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Planilha e fichas de evidência",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --fichas",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Manifestação técnica",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --manifestacao",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Documentos no modelo institucional",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --documentos",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Baixar documentos oficiais do PNCP (internet)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --pncp",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Prints das telas dos portais (internet)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --prints",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Nova pesquisa: atualizar dados das APIs (internet)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} executar.py --atualizar-dados --tudo",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

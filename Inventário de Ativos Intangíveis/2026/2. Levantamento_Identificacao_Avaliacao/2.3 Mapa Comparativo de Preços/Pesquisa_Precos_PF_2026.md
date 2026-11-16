@@ -40,28 +40,47 @@ CatSer 25852 (Desenvolvimento de novo software — Java) e 25925 (Manutenção e
 | ID | Preço/PF (R$) | Qtde PF | Data | Órgão (UF) | Fornecedor | Compra / item | Observação |
 |---:|---:|---:|---|---|---|---|---|
 | 1 | 555,00 | 2.000 | 17/02/2025 | Casa da Moeda do Brasil (RJ) | M.I. Montreal Informática | 17908305900612024 / 1 | Pregão, registro de preços |
-| 2 | 565,15 | 350 | 09/06/2025 | Secretaria da Segurança Pública e Defesa Social (RN) | Sigma Dataserv Informática | 92553507001232025 / 2 | Desenvolvimento e manutenção por PF |
+| 2 | 565,15 | 350 | 09/06/2025 | Secretaria da Segurança Pública e Defesa Social (RN) | Sigma Dataserv Informática | 92553507001232025 / 2 | Inexigibilidade: sem competição |
 | 3 | 1.060,00 | 3.000 | 15/08/2025 | Pagadoria de Pessoal da Marinha (RJ) | Indra Brasil | 77320205900022025 / 1 | Pregão. Já constava da amostra de 2025 |
 | 4 | 735,00 | 5.000 | 14/11/2025 | Universidade Federal do Cariri (CE) | SIG Software & Consultoria | 15871905900072025 / 2 | Pregão |
-| 5 | 750,00 | 1.000 | 10/12/2025 | Ministério Público do Estado do Pará (PA) | Thema Informática | 92598007001142025 / 4 | Fornecedor exclusivo de solução proprietária: sem competição |
-| 6 | 2.192,73 | 17.324 | 23/12/2025 | INCRA (DF) | Serpro | 37308306001002025 / 1 | Contratação direta de empresa pública: sem competição |
+| 5 | 750,00 | 1.000 | 10/12/2025 | Ministério Público do Estado do Pará (PA) | Thema Informática | 92598007001142025 / 4 | Inexigibilidade, fornecedor exclusivo de solução proprietária |
+| 6 | 2.192,73 | 17.324 | 23/12/2025 | INCRA (DF) | Serpro | 37308306001002025 / 1 | Dispensa, contratação direta de empresa pública |
 | 7 | 1.264,22 | 1.000 | 07/01/2026 | Tribunal de Justiça do Pará (PA) | Siedos Sistemas | 92594205900282025 / 4 | Pregão para fornecimento e implantação de solução: PF acessório |
 | 8 | 538,00 | 7.000 | 26/02/2026 | Ministério do Desenvolvimento e Assistência Social (DF) | Ibrowse Consultoria | 55000505900182025 / 1 | Pregão |
-| 9 | 785,00 | 4.000 | 20/08/2026 | Secretaria Municipal da Educação de Salvador (BA) | Consórcio ASTEC IV | 92706307000382026 / 1 | Desenvolvimento e manutenção evolutiva e corretiva |
+| 9 | 785,00 | 4.000 | 20/08/2026 | Secretaria Municipal da Educação de Salvador (BA) | Consórcio ASTEC IV | 92706307000382026 / 1 | Inexigibilidade: sem competição |
 
-Evidências: `Dados_Abertos_Compras/Prints/` (captura do retorno da API por compra) e `Dados_Abertos_Compras/Dados_Brutos/` (retorno integral em JSON e registro das consultas com data e hora).
+Evidências: `Referencias_PDF/` (ficha em PDF por referência), `Dados_Abertos_Compras/Prints/` (captura do retorno da API por compra) e `Dados_Abertos_Compras/Dados_Brutos/` (retorno integral em JSON e registro das consultas com data e hora).
+
+### Links das referências da Amostra A
+
+| ID | Modalidade | Processo | Nº de controle PNCP | PNCP | Compras.gov.br |
+|---:|---|---|---|---|---|
+| 1 | Pregão - Eletrônico (SRP) | 104880/2023 | 34164319000174-1-000162/2024 | [abrir](https://pncp.gov.br/app/editais/34164319000174/2024/162) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=17908305900612024) |
+| 2 | Inexigibilidade | 00510027.001290/2024-72 | 00498299000156-1-000018/2025 | [abrir](https://pncp.gov.br/app/editais/00498299000156/2025/18) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92553507001232025) |
+| 3 | Pregão - Eletrônico | 63438014037202481 | 00394502000144-1-002579/2025 | [abrir](https://pncp.gov.br/app/editais/00394502000144/2025/2579) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=77320205900022025) |
+| 4 | Pregão - Eletrônico | 23507000052202547 | 18621825000199-1-000021/2025 | [abrir](https://pncp.gov.br/app/editais/18621825000199/2025/21) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=15871905900072025) |
+| 5 | Inexigibilidade | GEDOC Nº 165845/2025 | 05054960000158-1-000186/2025 | [abrir](https://pncp.gov.br/app/editais/05054960000158/2025/186) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92598007001142025) |
+| 6 | Dispensa | 54000.167145/2025-85 | 03204421000122-1-000418/2025 | [abrir](https://pncp.gov.br/app/editais/03204421000122/2025/418) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=37308306001002025) |
+| 7 | Pregão - Eletrônico | 0000622-60.2025.8 | 04567897000190-1-000099/2025 | [abrir](https://pncp.gov.br/app/editais/04567897000190/2025/99) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92594205900282025) |
+| 8 | Pregão - Eletrônico | 71000013915202417 | 05526783000165-1-000108/2025 | [abrir](https://pncp.gov.br/app/editais/05526783000165/2025/108) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=55000505900182025) |
+| 9 | Inexigibilidade | 177037/2026 | 13927801000653-1-000030/2026 | [abrir](https://pncp.gov.br/app/editais/13927801000653/2026/30) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92706307000382026) |
+
+No PNCP, a página da compra traz o edital, o termo de referência, a ata de registro de preços e o contrato, na aba de arquivos. As 61 referências das Amostras A e B têm os mesmos links nas colunas `link_pncp`, `link_compras_gov` e `link_api_item` do CSV e da planilha.
+
+PDFs: `Mapa_Comparativo_Precos_PF_2026.pdf` (mapa consolidado com links) e `Referencias_PDF/` (uma ficha por referência da Amostra A, com preço, objeto, fornecedor, processo e links). As fichas reproduzem os dados da API oficial e não substituem a ata ou o contrato.
 
 ### Estatísticas preliminares, valores nominais
 
 | Amostra | n | Mínimo | Mediana | Média | Máximo |
 |---|---:|---:|---:|---:|---:|
 | A (9 preços) | 9 | 538,00 | 750,00 | 938,34 | 2.192,73 |
-| A sem os itens 5, 6 e 7 | 6 | 538,00 | 650,08 | 706,36 | 1.060,00 |
+| A, apenas pregões (itens 1, 3, 4, 7 e 8) | 5 | 538,00 | 735,00 | 830,44 | 1.264,22 |
+| A, pregões de fábrica de software (itens 1, 3, 4 e 8) | 4 | 538,00 | 645,00 | 722,00 | 1.060,00 |
 | B (ampliada) | 52 | 206,00 | 599,50 | 750,55 | 2.336,13 |
 
 ## 5. Ressalvas para a decisão
 
-1. **Itens 5, 6 e 7** não vêm de disputa por fábrica de software. O item 6 (Serpro, R$ 2.192,73) é mais que o dobro do segundo maior preço e tende a formar sozinho um grupo. Recomenda-se justificar a manutenção ou a exclusão no parecer.
+1. **Modalidade.** Só cinco das nove referências vêm de pregão (itens 1, 3, 4, 7 e 8). Os itens 2, 5 e 9 são inexigibilidade e o item 6 é dispensa (Serpro), sem disputa de preço. O item 7 é pregão para fornecimento e implantação de solução, em que o PF é acessório. O item 6 (R$ 2.192,73) é mais que o dobro do segundo maior preço e tende a formar sozinho um grupo. Recomenda-se justificar no parecer a manutenção ou a exclusão de cada um.
 2. **Item 3** é a mesma contratação usada em 2025 (R$ 1.060,00). Mantê-lo é válido, sem duplicar com a fonte anterior.
 3. **Valores nominais.** Falta a correção pelo IPCA de cada data de compra até a data-base do estudo, com a ferramenta `Atualização_Monetária_IPCA.py`.
 4. **Amostra pequena.** Nove preços aderentes. A Amostra B serve para análise de sensibilidade, não para compor o preço de referência, por se tratar de tecnologias diferentes da padronizada na SITEC.

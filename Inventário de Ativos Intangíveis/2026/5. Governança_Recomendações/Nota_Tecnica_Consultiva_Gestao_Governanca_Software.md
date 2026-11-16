@@ -1,6 +1,6 @@
-# Nota Técnica Consultiva — Gestão, contabilização e governança dos softwares da SEPLAG
+# Nota Técnica Consultiva - Gestão, contabilização e governança dos softwares da SEPLAG
 
-Versão 0.1, de 16/11/2026. Elaboração: presidência da Comissão de Inventário e Avaliação de Bens Intangíveis.
+Versão 0.2, de 16/11/2026. Elaboração: presidência da Comissão de Inventário e Avaliação de Bens Intangíveis.
 
 **Natureza.** Documento consultivo e orientativo. Não altera os valores do inventário de 2026 nem cria obrigação para as unidades. Parte dos processos e documentos citados pode não existir ou não estar ao alcance da comissão; nesses casos, a nota indica o que seria necessário, sem presumir falha de quem executa.
 
@@ -68,7 +68,31 @@ Nada disso indica irregularidade: o método é o da norma estadual e foi aplicad
 
 O caso Americanas, divulgado em 2023, envolveu operações de financiamento de fornecedores não registradas como dívida e lançamentos redutores de custo sem lastro documental, mantidos por anos. A situação da SEPLAG é de natureza diferente: não há ocultação, e as limitações estão declaradas no próprio relatório de inventário. A lição que se aproveita é estrutural: saldo relevante sem documento de origem, sem teste periódico e sem conciliação independente acumula distorção sem que ninguém a perceba, até o ajuste ser grande. O remédio é o mesmo em qualquer setor: lastro, segregação de funções e revisão periódica.
 
-A conversa de pesquisa indicada pela presidência (modo IA da busca do Google) não pôde ser aberta a partir do ambiente de trabalho. Este item deve ser completado com os pontos daquela discussão.
+### 4.4 Riscos orçamentários
+
+A falta de distinção entre manutenção (custeio, grupo de natureza de despesa 3) e desenvolvimento ou evolução relevante (investimento, grupo 4) pode levar a erro de classificação na execução orçamentária, com efeito sobre indicadores fiscais e limites de gasto.
+
+### 4.5 Síntese dos argumentos para mobilizar as equipes
+
+Pontos trazidos da pesquisa de apoio feita pela presidência e conferidos com a IN 03/2022:
+
+1. **Ativos sem vida.** Sem amortização, sem teste de recuperabilidade e sem baixa, o intangível acumula sistemas desligados que continuam valendo milhões no balanço.
+2. **Custo real desconhecido.** Com toda a folha da engenharia de software e os contratos híbridos lançados como despesa indistinta, o Estado não sabe quanto custa desenvolver um sistema e quanto custa mantê-lo. Isso prejudica o sistema de custos do setor público (NBC TSP 34).
+3. **Envelhecimento invisível.** Um sistema de doze anos com o mesmo valor contábil de um recém-lançado não mostra à alta gestão a obsolescência do parque, o que dificulta justificar orçamento de modernização.
+4. **Sustentação contra evolução.** Sem a separação, a TI não demonstra quanto do esforço vai para manter e quanto gera entrega nova.
+5. **Custo total por produto.** Misturar entregas da fábrica de software com horas de servidores, sem critério de apropriação, impede apurar o custo total de propriedade de cada sistema e fragiliza a fiscalização dos contratos.
+6. **Controle externo.** Ausência de critério de mensuração, amortização e segregação de gastos é matéria de achado de auditoria e de ressalva nas contas.
+
+### 4.6 Ponto em aberto: vida útil indefinida ou vida útil padrão
+
+Há dois caminhos tecnicamente aceitos, e a escolha cabe à contabilidade:
+
+| Caminho | Como funciona | Vantagem | Exigência |
+|---|---|---|---|
+| Vida útil indefinida (posição atual) | Não amortiza. Testa a recuperabilidade todo ano e revisa a classificação | Coerente com sistemas estruturantes sem prazo previsível (IN, art. 15) | Teste anual efetivo e baixa dos desligados |
+| Vida útil padrão por norma interna | Fixa prazo para softwares próprios, por exemplo 5 anos, com revisão anual por laudo da TI | Simples, previsível, reduz o saldo de forma sistemática | Norma interna e parametrização no sistema patrimonial |
+
+A pesquisa de apoio recomenda o segundo caminho, por analogia com a depreciação de bens móveis. A IN 03/2022 admite os dois. O que ela não admite é a situação atual, sem amortização e sem teste.
 
 ## 5. Proposta de regulamentação
 
@@ -91,16 +115,22 @@ Referência técnica: ISO/IEC/IEEE 14764 (manutenção de software) e ISO/IEC/IE
 ### 5.2 Controles mínimos
 
 1. **Catálogo de sistemas** com identificador único, gestor de negócio, gestor técnico, situação, tecnologia, data de entrada em produção e data de desligamento.
-2. **Apontamento de esforço** da equipe interna por sistema e por classe de demanda. Basta o registro na ferramenta de gestão de demandas já usada.
+2. **Apontamento de esforço** da equipe interna por sistema e por classe de demanda. Basta uma marcação obrigatória na abertura da demanda, na ferramenta de gestão já usada pela TI, e o custo hora médio da categoria com encargos. Só as demandas de desenvolvimento e evolução geram custo de ativo; o restante é despesa do período.
 3. **Ordens de serviço da fábrica de software** com sistema e classe identificados, para que o custo contratado seja atribuído ao ativo correto.
 4. **Marco de entrada em produção** formal, que encerra a fase de desenvolvimento.
 5. **Termo de descontinuação**, que dispara a baixa do ativo e define o destino dos dados.
 6. **Linha de base em pontos de função** atualizada a cada entrega evolutiva, não uma vez por ano.
 7. **Revisão anual por sistema**: continua em uso, mantém vida útil indefinida, há indício de perda de valor.
 
-### 5.3 Indícios de perda de valor a verificar todo ano
+### 5.3 Verificação anual no inventário
 
-Queda relevante de uso; substituição planejada ou em curso; tecnologia sem suporte; mudança legal que elimina a finalidade; custo de sustentação crescente e desproporcional; indisponibilidade recorrente.
+O gestor de cada sistema responde a três perguntas no fechamento do inventário:
+
+1. O sistema está em produção e com usuários ativos? Se não, baixa contábil, ainda que o banco de dados fique em backup.
+2. Há previsão de descontinuidade nos próximos 12 meses? Se sim, registrar a perda por redução ao valor recuperável ou acelerar a amortização.
+3. O sistema atende aos requisitos atuais sem necessidade de reconstrução total?
+
+Outros indícios de perda de valor: queda relevante de uso; substituição em curso; tecnologia sem suporte; mudança legal que elimina a finalidade; custo de sustentação crescente e desproporcional; indisponibilidade recorrente.
 
 ### 5.4 Papéis
 
@@ -153,13 +183,13 @@ Pontos de atenção:
 ## 8. Referências
 
 - IN Conjunta nº 003/2022/SEPLAG/SEFAZ.
-- Instrução de Serviço nº 022/2020 — SACE/SEFAZ (registros contábeis de intangíveis).
-- NBC TSP 08 — Ativo Intangível; NBC TSP 09 e NBC TSP 10 — Redução ao Valor Recuperável.
+- Instrução de Serviço nº 022/2020 - SACE/SEFAZ (registros contábeis de intangíveis).
+- NBC TSP 08 - Ativo Intangível; NBC TSP 09 e NBC TSP 10 - Redução ao Valor Recuperável; NBC TSP 34 - Custos no Setor Público.
 - Manual de Contabilidade Aplicada ao Setor Público (MCASP), STN.
 - CPC 04 (R1) e CPC 01 (R1), como referência do setor privado.
 - Lei nº 4.320/1964, arts. 94 a 96.
 - Lei nº 9.609/1998 e Lei nº 9.279/1996.
 - ISO/IEC 20926 (IFPUG); ISO/IEC/IEEE 12207; ISO/IEC/IEEE 14764; ISO/IEC 19770 (gestão de ativos de software); ISO/IEC 38500; COBIT 2019.
-- COSO — Controle Interno, Estrutura Integrada.
+- COSO - Controle Interno, Estrutura Integrada.
 
 Os números de normas e dispositivos acima, exceto os da IN 03/2022, foram citados de memória técnica e devem ser conferidos no texto vigente antes de uso em documento oficial.

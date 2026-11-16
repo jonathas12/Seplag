@@ -1,90 +1,77 @@
-# PESQUISA DE PREÇOS DO PONTO DE FUNÇÃO - EXERCÍCIO 2026
+# Pesquisa de Preços do Ponto de Função - Exercício 2026
 
 Cuiabá/MT, 16/11/2026.
 
-## 1. OBJETIVO
+## 1. Objetivo
 
-Reunir, em um só lugar, a pesquisa de preços do ponto de função do Inventário de Bens Intangíveis de 2026: o objeto de referência, a coleta, as evidências, o mapa comparativo, a análise estatística e o parecer técnico.
+Reunir em um só lugar a pesquisa de preços do ponto de função do Inventário de Bens Intangíveis de 2026: objeto de referência, coleta, evidências oficiais, mapa comparativo, análise estatística e manifestação técnica.
 
-## 2. ORGANIZAÇÃO DA PASTA
+## 2. Objeto de referência
+
+O ponto de partida é o **Contrato nº 014/2022/SEPLAG** (KRP Consultoria em Tecnologia de Informação Ltda), firmado por adesão à Ata de Registro de Preços nº 033/2021 da Procuradoria-Geral de Justiça do Tocantins (Pregão Eletrônico nº 015/2021). O preço vigente é **R$ 544,53 por ponto de função**, fixado pelo 5º Termo de Apostilamento (processo SEPLAG-PRO-2026/09621).
+
+O contrato define o recorte da pesquisa porque reúne, no mesmo instrumento, o que os softwares inventariados têm: fábrica de software para desenvolvimento e manutenção, medição em ponto de função pelo IFPUG (Roteiro SISP e CPM 4.3, sem fator de ajuste), tecnologia Java (CatSer 25852) e execução sobre os sistemas da própria SEPLAG. A justificativa completa, com as ressalvas, está na seção 1 da manifestação técnica.
+
+| Ato | Preço por PF | Referência |
+|---|---|---|
+| Contrato | R$ 457,00 | 05/2022 |
+| 4º Termo de Apostilamento | R$ 519,99 | 05/2025 |
+| 5º Termo de Apostilamento | R$ 544,53 | 2026, processo SEPLAG-PRO-2026/09621 |
+
+> **Atenção:** o mês-base do 5º apostilamento ainda não foi informado. Enquanto o campo `mes_base_preco_vigente` de `config_pesquisa.json` estiver vazio, o preço do contrato é usado sem correção pelo IPCA.
+
+## 3. Organização da pasta
 
 | Pasta | Conteúdo |
 |---|---|
-| `1. Objeto de Referência` | Contrato nº 014/2022/SEPLAG, Edital do Pregão Eletrônico nº 015/2021 e ARP nº 033/2021 do Ministério Público do Tocantins |
-| `2. Coleta de Dados` | Scripts de coleta e os dados brutos devolvidos pela API oficial, com o registro de cada consulta |
-| `3. Evidências` | Ficha em PDF e print de cada um dos 9 preços; script para capturar prints e arquivos no PNCP e no Compras.gov.br |
-| `4. Mapa Comparativo` | Planilha com a rastreabilidade de cada preço e arquivo CSV com a base completa |
-| `5. Análise Estatística` | Notebook executado, gráficos e resultados |
-| `6. Parecer Técnico` | Manifestação técnica com os grupos de preços, as evidências e as limitações |
+| `1. Objeto de Referência` | Contrato nº 014/2022/SEPLAG, Edital do PE 015/2021 e ARP 033/2021 do MPTO |
+| `2. Coleta de Dados` | Scripts de coleta e de montagem do mapa; dados brutos das APIs oficiais, com o registro de cada consulta |
+| `3. Evidências` | Ficha em PDF e imagem de cada preço; documentos oficiais baixados do PNCP; script de prints das telas dos portais |
+| `4. Mapa Comparativo` | Planilha com a rastreabilidade de cada preço; base completa em CSV; preços da pesquisa de 2025 |
+| `5. Análise Estatística` | Notebook executado, gráficos, resultados em JSON e Excel |
+| `6. Parecer Técnico` | Manifestação técnica em HTML, PDF e Word, gerada a partir dos resultados |
+| `config_pesquisa.json` | Parâmetros da pesquisa: datas, contrato de referência, IPCA e K-Means |
 
-## 3. FONTE E PERÍODO
+## 4. Fonte e período
 
-API oficial de Dados Abertos do Compras.gov.br (`dadosabertos.compras.gov.br`), módulo de preços praticados, consultada em 16/11/2026. Compras de 01/01/2025 a 16/11/2026, nos 14 códigos do Catálogo de Serviços do grupo 111. Fundamento: Decreto Estadual nº 1.525/2022.
+API oficial de Dados Abertos do Compras.gov.br, módulo de preços praticados, consultada em 16/11/2026. Compras de 01/01/2025 a 16/11/2026, nos 14 códigos do Catálogo de Serviços do grupo 111. Fundamento: Decreto Estadual nº 1.525/2022.
 
-Resultado: 683 registros, dos quais 92 medidos em ponto de função. Destes, 9 em Java (amostra), 52 em outras linguagens (comparação) e 31 descartados.
+Resultado: 683 registros; 92 medidos em ponto de função; 9 em Java (amostra), 52 em outras linguagens (comparação) e 31 descartados.
 
-## 4. RASTREABILIDADE DOS PREÇOS
+## 5. Rastreabilidade e conferência no PNCP
 
-Cada preço percorre cinco passos, todos registrados na aba `1 Rastreabilidade Java` da planilha e na ficha da referência:
+Cada preço percorre cinco passos, registrados na aba `1 Rastreabilidade Java` da planilha e na ficha da referência: compra de origem, item homologado, preço unitário na origem, correção pelo IPCA e preço usado na análise.
 
-1. Compra de origem: órgão, modalidade, número da compra e processo.
-2. Item homologado: número do item, código do catálogo e quantidade.
-3. Preço unitário na origem, com a data da compra.
-4. Correção pelo IPCA até 10/2026, com o fator aplicado.
-5. Preço usado na análise.
+Os 9 preços foram conferidos com o resultado homologado publicado no Portal Nacional de Contratações Públicas, pela API pública do PNCP, que não exige login nem captcha. **Os 9 coincidem ao centavo.** Para cada referência foram baixados os arquivos oficiais da compra (edital, termo de referência, anexos) e dos contratos vinculados, e geradas imagens das páginas em que o preço aparece, com o valor destacado. Tudo está em `3. Evidências/Documentos PNCP`.
 
-| Ref. | Preço na origem (R$) | Preço atualizado (R$) | Órgão | Modalidade | Nº de controle PNCP | PNCP | Compras.gov.br |
-|---:|---:|---:|---|---|---|---|---|
-| 1 | 555,00 | 601,41 | Casa da Moeda do Brasil | Pregão (SRP) | 34164319000174-1-000162/2024 | [abrir](https://pncp.gov.br/app/editais/34164319000174/2024/162) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=17908305900612024) |
-| 2 | 565,15 | 597,00 | Segurança Pública do RN | Inexigibilidade | 00498299000156-1-000018/2025 | [abrir](https://pncp.gov.br/app/editais/00498299000156/2025/18) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92553507001232025) |
-| 3 | 1.060,00 | 1.114,16 | Pagadoria de Pessoal da Marinha | Pregão | 00394502000144-1-002579/2025 | [abrir](https://pncp.gov.br/app/editais/00394502000144/2025/2579) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=77320205900022025) |
-| 4 | 735,00 | 769,02 | Universidade Federal do Cariri | Pregão | 18621825000199-1-000021/2025 | [abrir](https://pncp.gov.br/app/editais/18621825000199/2025/21) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=15871905900072025) |
-| 5 | 750,00 | 783,30 | Ministério Público do Pará | Inexigibilidade | 05054960000158-1-000186/2025 | [abrir](https://pncp.gov.br/app/editais/05054960000158/2025/186) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92598007001142025) |
-| 6 | 2.192,73 | 2.290,10 | INCRA (Serpro) | Dispensa | 03204421000122-1-000418/2025 | [abrir](https://pncp.gov.br/app/editais/03204421000122/2025/418) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=37308306001002025) |
-| 7 | 1.264,22 | 1.316,01 | Tribunal de Justiça do Pará | Pregão | 04567897000190-1-000099/2025 | [abrir](https://pncp.gov.br/app/editais/04567897000190/2025/99) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92594205900282025) |
-| 8 | 538,00 | 558,20 | Ministério do Desenvolvimento Social | Pregão | 05526783000165-1-000108/2025 | [abrir](https://pncp.gov.br/app/editais/05526783000165/2025/108) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=55000505900182025) |
-| 9 | 785,00 | 790,01 | Secretaria da Educação de Salvador | Inexigibilidade | 13927801000653-1-000030/2026 | [abrir](https://pncp.gov.br/app/editais/13927801000653/2026/30) | [abrir](https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92706307000382026) |
+| Ref. | Órgão | Modalidade | Preço por PF | Nº de controle PNCP |
+|---|---|---|---|---|
+| 1 | Casa da Moeda do Brasil | Pregão (SRP) | R$ 555,00 | 34164319000174-1-000162/2024 |
+| 2 | Segurança Pública do RN | Inexigibilidade | R$ 565,15 | 00498299000156-1-000018/2025 |
+| 3 | Pagadoria de Pessoal da Marinha | Pregão | R$ 1.060,00 | 00394502000144-1-002579/2025 |
+| 4 | Universidade Federal do Cariri | Pregão | R$ 735,00 | 18621825000199-1-000021/2025 |
+| 5 | Ministério Público do Pará | Inexigibilidade | R$ 750,00 | 05054960000158-1-000186/2025 |
+| 6 | INCRA (Serpro) | Dispensa | R$ 2.192,73 | 03204421000122-1-000418/2025 |
+| 7 | Tribunal de Justiça do Pará | Pregão | R$ 1.264,22 | 04567897000190-1-000099/2025 |
+| 8 | Ministério do Desenvolvimento Social | Pregão | R$ 538,00 | 05526783000165-1-000108/2025 |
+| 9 | Secretaria da Educação de Salvador | Inexigibilidade | R$ 785,00 | 13927801000653-1-000030/2026 |
 
-## 5. EVIDÊNCIAS
+## 6. Reaproveitamento da pesquisa de 2025
 
-As fichas e os prints da pasta `3. Evidências` reproduzem os dados públicos devolvidos pela API oficial. Não substituem o edital, a ata ou o contrato.
+Critério da presidência: aproveitar preços com até 13 meses na data da pesquisa. Nenhum dos 13 preços de 2025 atende ao critério. A contratação da Marinha (R$ 1.060,00) já integra a amostra de 2026 como Ref. 3. A comparação completa entre 2025 e 2026 está na seção 7 da manifestação técnica.
 
-Os portais PNCP e Compras.gov.br exigem verificação hCaptcha antes de exibir os dados, o que impede a captura automática a partir do ambiente de trabalho em nuvem. Para obter os prints das telas e os arquivos oficiais, usar o script `3. Evidências/captura_evidencias_pncp.py` no computador do servidor, com o navegador visível. O script ainda não foi testado nos portais e pode exigir ajuste.
+## 7. Resultado
 
-## 6. REAPROVEITAMENTO DA PESQUISA DE 2025
+Os grupos formados pelo K-Means, com os preços originais e com os atualizados pelo IPCA, os cenários de sensibilidade e a comparação com 2025 estão na manifestação técnica, na pasta `6. Parecer Técnico`. A manifestação não indica preço: a escolha é da presidência da comissão, no Relatório Final.
 
-Critério informado pela presidência: aproveitar preços com até 13 meses na data da pesquisa, ou seja, a partir de 10/2025.
+## 8. Pendências
 
-Nenhum dos 13 preços de 2025 atende ao critério. As atas e os contratos federais são de 08 a 10/2024, e o contrato da SEPLAG foi atualizado em 05/2025. A contratação da Marinha (R$ 1.060,00, de 08/2025) já integra a amostra de 2026 como referência 3. As duas contratações do Banco de Preços sem data nos arquivos de 2025 (R$ 650,00 e R$ 1.182,09) dependem de verificação. O detalhe está na aba `5 Pesquisa 2025` da planilha.
+1. Informar o mês-base do 5º apostilamento em `config_pesquisa.json` e gerar novamente a análise.
+2. Tirar os prints das telas do PNCP e do Compras.gov.br com o script `3. Evidências/captura_telas_portais.py`, no computador da SEPLAG.
+3. Escolher o preço de referência e registrar a motivação no Relatório Final.
 
-Pelo mesmo critério, as referências 1, 2 e 3 da amostra de 2026 também ficam fora da janela. O cenário C3 da análise mostra o resultado só com os seis preços dentro da janela.
+## 9. Como reproduzir
 
-## 7. RESULTADO DA ANÁLISE
+Instruções em `COMO_EXECUTAR.md`, na pasta `2026`.
 
-| Cenário | Preços | Mediana (R$) | Grupo 1 (R$) | Grupo 2 (R$) | Grupo 3 (R$) |
-|---|---:|---:|---:|---:|---:|
-| C1 - 9 preços | 9 | 783,30 | 683,16 | 1.215,09 | 2.290,10 |
-| C2 - sem o outlier | 8 | 776,16 | 585,54 | 780,78 | 1.215,09 |
-| C3 - janela de 13 meses | 6 | 786,65 | 725,13 | 1.316,01 | 2.290,10 |
-| C4 - apenas pregões | 5 | 769,02 | 579,81 | 769,02 | 1.215,09 |
-
-Preços atualizados pelo IPCA até 10/2026. Os valores dos grupos são os centroides do K-Means. O detalhamento, os gráficos e as limitações estão na manifestação técnica da pasta `6. Parecer Técnico`.
-
-## 8. PENDÊNCIAS
-
-1. Capturar os prints e os arquivos oficiais no PNCP e no Compras.gov.br.
-2. Verificar se houve reajuste do Contrato nº 014/2022/SEPLAG em 2026.
-3. Verificar a data das duas contratações do Banco de Preços de 2025.
-4. Escolher o preço de referência e registrar a motivação no Relatório Final.
-
-## 9. COMO REPRODUZIR
-
-A partir da pasta `2. Coleta de Dados`, executar na ordem: `coleta_precos_compras_gov.py`, `gera_mapa_comparativo.py`, `enriquece_links_referencias.py`, `atualiza_ipca_rastreabilidade.py`. Em seguida, executar o notebook da pasta `5. Análise Estatística` e, por fim, `gera_planilha_e_fichas.py`.
-
-Elaboração:
-
-Jonathas G. Marques
-
-Gerente de projetos e cientista de dados (CPPTI/SITEC/SAAS/SEPLAG)
-
-Matrícula: 280193
+Elaboração: Jonathas G. Marques, Gerente de projetos e cientista de dados (CPPTI/SITEC/SAAS/SEPLAG), matrícula 280193.

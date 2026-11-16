@@ -1,0 +1,79 @@
+{
+ "resumo": {
+  "ref": 4,
+  "pasta": "Ref_04 - UFCA - PF 735,00",
+  "preco_mapa": 735.0,
+  "preco_homologado_pncp": 735.0,
+  "preco_confere": true,
+  "arquivos": 9,
+  "atas": 0,
+  "contratos": 1,
+  "paginas_com_preco": 1
+ },
+ "eventos": [
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/18621825000199/compras/2025/21/itens/2/resultados",
+   "em": "2026-11-16T17:44:01.328603+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/18621825000199/compras/2025/21/arquivos",
+   "em": "2026-11-16T17:44:01.823107+00:00",
+   "itens": 1
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/compras/2025/21/arquivos/1",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/compra/01 - Edital - 15871905900072025000.zip",
+   "bytes": 1890132,
+   "em": "2026-11-16T17:44:04.783247+00:00"
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=26449&dataVigenciaInicialMin=2025-11-14&dataVigenciaInicialMax=2026-11-13",
+   "em": "2026-11-16T17:44:07.841074+00:00"
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=26449&dataVigenciaInicialMin=2026-11-14&dataVigenciaInicialMax=2026-11-16",
+   "em": "2026-11-16T17:44:08.595793+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/18621825000199/contratos/2025/165/arquivos",
+   "em": "2026-11-16T17:44:09.095813+00:00",
+   "itens": 6
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/1",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/01 - Contrato - a66a0ZRiPX7bb29V9ymmCKGbrZcufDOIXAXhrQvg.pdf",
+   "bytes": 532922,
+   "em": "2026-11-16T17:44:11.004145+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/2",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/02 - Outros Documentos - hPhdD548D3EW6XDgf2h8sSeqfWiutQJKOka1ZErk.pdf",
+   "bytes": 678711,
+   "em": "2026-11-16T17:44:12.150916+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/3",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/03 - Outros Documentos - KGLUewp258QYQnwwRgVwzQiqYq0ccJdmXGfZhh21.pdf",
+   "bytes": 197865,
+   "em": "2026-11-16T17:44:13.030288+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/4",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/04 - Outros Documentos - 5W5YM9yHP1Mv83MZoIXtiacKzfUfmJlpAkZ3xAc8.pdf",
+   "bytes": 194170,
+   "em": "2026-11-16T17:44:14.022271+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/5",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/05 - Outros Documentos - GfSyQiwockv1NZY5UbQw4vKOwCY9XZ9o6NggoMIu.pdf",
+   "bytes": 1059772,
+   "em": "2026-11-16T17:44:16.143758+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/18621825000199/contratos/2025/165/arquivos/6",
+   "arquivo": "Ref_04 - UFCA - PF 735,00/contratos/Contrato 00024-2025/06 - Outros Documentos - 6mXLNyUFccPADld72d4BlfFpjGFEptYvT3R4bkFI.pdf",
+   "bytes": 197514,
+   "em": "2026-11-16T17:44:17.181691+00:00"
+  }
+ ]
+}

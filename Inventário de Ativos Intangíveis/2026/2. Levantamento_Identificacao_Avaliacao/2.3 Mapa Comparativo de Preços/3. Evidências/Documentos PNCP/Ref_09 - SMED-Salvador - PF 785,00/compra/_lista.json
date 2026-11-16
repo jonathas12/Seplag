@@ -1,0 +1,16 @@
+[
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/13927801000653/compras/2026/30/arquivos/1",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/13927801000653/compras/2026/30/arquivos/1",
+  "statusAtivo": true,
+  "cnpj": "13927801000653",
+  "anoCompra": 2026,
+  "sequencialCompra": 30,
+  "dataPublicacaoPncp": "2026-08-21T11:05:02",
+  "sequencialDocumento": 1,
+  "titulo": "autorizo consorcio astec IV - parte 1.pdf",
+  "tipoDocumentoId": 20,
+  "tipoDocumentoNome": "Ato que autoriza a Contratação Direta",
+  "tipoDocumentoDescricao": "Ato que autoriza a Contratação Direta"
+ }
+]

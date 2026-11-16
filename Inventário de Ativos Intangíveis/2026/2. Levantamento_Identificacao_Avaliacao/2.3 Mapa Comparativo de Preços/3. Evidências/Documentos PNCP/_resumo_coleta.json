@@ -1,0 +1,104 @@
+{
+ "gerado_em": "2026-11-16T17:45:38.754773+00:00",
+ "referencias": [
+  {
+   "ref": 1,
+   "pasta": "Ref_01 - Casa da Moeda - PF 555,00",
+   "preco_mapa": 555.0,
+   "preco_homologado_pncp": 555.0,
+   "preco_confere": true,
+   "arquivos": 3,
+   "atas": 0,
+   "contratos": 0,
+   "paginas_com_preco": 0
+  },
+  {
+   "ref": 2,
+   "pasta": "Ref_02 - SESED-RN - PF 565,15",
+   "preco_mapa": 565.15,
+   "preco_homologado_pncp": 565.15,
+   "preco_confere": true,
+   "arquivos": 5,
+   "atas": 0,
+   "contratos": 0,
+   "paginas_com_preco": 3
+  },
+  {
+   "ref": 3,
+   "pasta": "Ref_03 - Marinha-PAPEM - PF 1.060,00",
+   "preco_mapa": 1060.0,
+   "preco_homologado_pncp": 1060.0,
+   "preco_confere": true,
+   "arquivos": 3,
+   "atas": 0,
+   "contratos": 1,
+   "paginas_com_preco": 0
+  },
+  {
+   "ref": 4,
+   "pasta": "Ref_04 - UFCA - PF 735,00",
+   "preco_mapa": 735.0,
+   "preco_homologado_pncp": 735.0,
+   "preco_confere": true,
+   "arquivos": 9,
+   "atas": 0,
+   "contratos": 1,
+   "paginas_com_preco": 1
+  },
+  {
+   "ref": 5,
+   "pasta": "Ref_05 - MP-PA - PF 750,00",
+   "preco_mapa": 750.0,
+   "preco_homologado_pncp": 750.0,
+   "preco_confere": true,
+   "arquivos": 1,
+   "atas": 0,
+   "contratos": 0,
+   "paginas_com_preco": 0
+  },
+  {
+   "ref": 6,
+   "pasta": "Ref_06 - INCRA-Serpro - PF 2.192,73",
+   "preco_mapa": 2192.73,
+   "preco_homologado_pncp": 2192.73,
+   "preco_confere": true,
+   "arquivos": 12,
+   "atas": 0,
+   "contratos": 1,
+   "paginas_com_preco": 4
+  },
+  {
+   "ref": 7,
+   "pasta": "Ref_07 - TJ-PA - PF 1.264,22",
+   "preco_mapa": 1264.22,
+   "preco_homologado_pncp": 1264.22,
+   "preco_confere": true,
+   "arquivos": 3,
+   "atas": 0,
+   "contratos": 0,
+   "paginas_com_preco": 0
+  },
+  {
+   "ref": 8,
+   "pasta": "Ref_08 - MDS - PF 538,00",
+   "preco_mapa": 538.0,
+   "preco_homologado_pncp": 538.0,
+   "preco_confere": true,
+   "arquivos": 6,
+   "atas": 0,
+   "contratos": 2,
+   "paginas_com_preco": 1
+  },
+  {
+   "ref": 9,
+   "pasta": "Ref_09 - SMED-Salvador - PF 785,00",
+   "preco_mapa": 785.0,
+   "preco_homologado_pncp": 785.0,
+   "preco_confere": true,
+   "arquivos": 1,
+   "atas": 0,
+   "contratos": 0,
+   "paginas_com_preco": 0
+  }
+ ]
+}

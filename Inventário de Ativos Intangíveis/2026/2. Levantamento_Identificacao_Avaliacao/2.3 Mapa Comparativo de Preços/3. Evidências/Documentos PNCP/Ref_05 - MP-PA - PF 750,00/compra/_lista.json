@@ -1,0 +1,16 @@
+[
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/05054960000158/compras/2025/186/arquivos/1",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/05054960000158/compras/2025/186/arquivos/1",
+  "statusAtivo": true,
+  "cnpj": "05054960000158",
+  "anoCompra": 2025,
+  "sequencialCompra": 186,
+  "dataPublicacaoPncp": "2025-12-11T15:12:01",
+  "sequencialDocumento": 1,
+  "titulo": "DECISAO INEXIGIBILIDADE 74-2025.pdf",
+  "tipoDocumentoNome": "Ato que autoriza a Contratação Direta",
+  "tipoDocumentoDescricao": "Ato que autoriza a Contratação Direta",
+  "tipoDocumentoId": 20
+ }
+]

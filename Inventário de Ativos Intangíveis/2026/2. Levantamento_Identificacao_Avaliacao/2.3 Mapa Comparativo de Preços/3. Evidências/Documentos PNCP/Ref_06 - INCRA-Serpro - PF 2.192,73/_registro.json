@@ -1,0 +1,99 @@
+{
+ "resumo": {
+  "ref": 6,
+  "pasta": "Ref_06 - INCRA-Serpro - PF 2.192,73",
+  "preco_mapa": 2192.73,
+  "preco_homologado_pncp": 2192.73,
+  "preco_confere": true,
+  "arquivos": 12,
+  "atas": 0,
+  "contratos": 1,
+  "paginas_com_preco": 4
+ },
+ "eventos": [
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/03204421000122/compras/2025/418/itens/1/resultados",
+   "em": "2026-11-16T17:44:21.973725+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/03204421000122/compras/2025/418/arquivos",
+   "em": "2026-11-16T17:44:22.483250+00:00",
+   "itens": 11
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/1",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/01 - Ato que autoriza a Contratação Direta - SEI_26849571_Despacho_Decisorio_31681.pdf",
+   "bytes": 45084,
+   "em": "2026-11-16T17:44:23.123514+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/2",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/02 - Minuta do Contrato - CONTRATO373083_000006_2025__1_.pdf",
+   "bytes": 150477,
+   "em": "2026-11-16T17:44:24.003993+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/3",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/03 - Mapa de Riscos - MR373083_000060_2025.pdf",
+   "bytes": 80971,
+   "em": "2026-11-16T17:44:25.809272+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/4",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/04 - Outros Documentos - proposta_serpro.pdf",
+   "bytes": 3772151,
+   "em": "2026-11-16T17:44:30.508435+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/5",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/05 - Outros Documentos - Anexo+IV+-+Consultoria.pdf",
+   "bytes": 296419,
+   "em": "2026-11-16T17:44:31.666637+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/6",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/06 - Outros Documentos - Anexo+III+-+Desenvolvimento.pdf",
+   "bytes": 604197,
+   "em": "2026-11-16T17:44:33.183478+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/7",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/07 - Outros Documentos - Estimativa+Projetos+PGT+FA.zip",
+   "bytes": 19600,
+   "em": "2026-11-16T17:44:33.716043+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/8",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/08 - Outros Documentos - Anexo+I+-+Termo+de+Ciencia.pdf",
+   "bytes": 378014,
+   "em": "2026-11-16T17:44:34.968453+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/9",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/09 - Outros Documentos - Anexo+II+-+Termo+de+Compromisso+de+manutencao+de+sigilo.pdf",
+   "bytes": 643046,
+   "em": "2026-11-16T17:44:36.249731+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/10",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/10 - Termo de Referência - 145_2025.pdf",
+   "bytes": 296137,
+   "em": "2026-11-16T17:44:37.054740+00:00"
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/03204421000122/compras/2025/418/arquivos/11",
+   "arquivo": "Ref_06 - INCRA-Serpro - PF 2.192,73/compra/11 - Minuta do Contrato - 6_2025.pdf",
+   "bytes": 150584,
+   "em": "2026-11-16T17:44:37.852759+00:00"
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=22201&dataVigenciaInicialMin=2025-12-23&dataVigenciaInicialMax=2026-11-16",
+   "em": "2026-11-16T17:44:46.677557+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/03204421000122/contratos/2025/465/arquivos",
+   "em": "2026-11-16T17:44:47.241189+00:00",
+   "itens": 0
+  }
+ ]
+}

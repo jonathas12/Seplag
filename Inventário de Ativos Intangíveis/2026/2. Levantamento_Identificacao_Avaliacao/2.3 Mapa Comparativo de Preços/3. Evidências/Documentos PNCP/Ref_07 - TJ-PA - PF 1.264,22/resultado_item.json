@@ -1,0 +1,49 @@
+[
+ {
+  "indicadorSubcontratacao": false,
+  "niFornecedor": "01884133000130",
+  "dataCancelamento": null,
+  "dataAtualizacao": "2026-01-07T12:24:30",
+  "tipoPessoa": "PJ",
+  "nomeRazaoSocialFornecedor": "SIEDOS SISTEMAS E RESULTADOS LTDA",
+  "dataInclusao": "2026-01-07T12:24:30",
+  "numeroItem": 4,
+  "valorTotalHomologado": 1264220.0,
+  "reservaRemanescente": {
+   "codigo": 1,
+   "nome": "Não se aplica"
+  },
+  "timezoneCotacaoMoedaEstrangeira": null,
+  "moedaEstrangeira": null,
+  "valorNominalMoedaEstrangeira": null,
+  "dataCotacaoMoedaEstrangeira": null,
+  "codigoPais": "BRA",
+  "porteFornecedorId": 3,
+  "quantidadeHomologada": 1000.0,
+  "valorUnitarioHomologado": 1264.22,
+  "percentualDesconto": 0.0,
+  "amparoLegalMargemPreferencia": null,
+  "amparoLegalCriterioDesempate": {
+   "id": 145,
+   "nome": "Lei 14.133/2021, art. 60, I",
+   "descricao": "Critério de desempate: Estipula que, em caso de empate entre propostas de licitação, os licitantes envolvidos devem participar de uma disputa final onde podem apresentar novas propostas imediatamente após a classificação, proporcionando uma chance adicional para vencer a licitação.",
+   "statusAtivo": true
+  },
+  "paisOrigemProdutoServico": null,
+  "localidadeExterior": null,
+  "ordemClassificacaoSrp": null,
+  "dataResultado": "2026-01-07",
+  "motivoCancelamento": null,
+  "porteFornecedorNome": "Demais",
+  "situacaoCompraItemResultadoNome": "Informado",
+  "sequencialResultado": 1,
+  "naturezaJuridicaNome": "Sociedade Empresária Limitada",
+  "localidadeFornecedor": null,
+  "situacaoCompraItemResultadoId": 1,
+  "numeroControlePNCPCompra": "04567897000190-1-000099/2025",
+  "aplicacaoBeneficioMeEpp": false,
+  "aplicacaoCriterioDesempate": true,
+  "naturezaJuridicaId": "2062",
+  "aplicacaoMargemPreferencia": false
+ }
+]

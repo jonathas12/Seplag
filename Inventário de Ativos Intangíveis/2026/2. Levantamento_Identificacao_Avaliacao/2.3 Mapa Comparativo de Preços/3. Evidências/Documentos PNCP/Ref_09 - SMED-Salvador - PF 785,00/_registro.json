@@ -1,0 +1,34 @@
+{
+ "resumo": {
+  "ref": 9,
+  "pasta": "Ref_09 - SMED-Salvador - PF 785,00",
+  "preco_mapa": 785.0,
+  "preco_homologado_pncp": 785.0,
+  "preco_confere": true,
+  "arquivos": 1,
+  "atas": 0,
+  "contratos": 0,
+  "paginas_com_preco": 0
+ },
+ "eventos": [
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/13927801000653/compras/2026/30/itens/1/resultados",
+   "em": "2026-11-16T17:45:35.881743+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/13927801000653/compras/2026/30/arquivos",
+   "em": "2026-11-16T17:45:36.361821+00:00",
+   "itens": 1
+  },
+  {
+   "download": "https://pncp.gov.br/pncp-api/v1/orgaos/13927801000653/compras/2026/30/arquivos/1",
+   "arquivo": "Ref_09 - SMED-Salvador - PF 785,00/compra/01 - Ato que autoriza a Contratação Direta - autorizo+consorcio+astec+IV+-+parte+1.pdf",
+   "bytes": 125634,
+   "em": "2026-11-16T17:45:37.361291+00:00"
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=94935&dataVigenciaInicialMin=2026-08-20&dataVigenciaInicialMax=2026-11-16",
+   "em": "2026-11-16T17:45:38.720186+00:00"
+  }
+ ]
+}

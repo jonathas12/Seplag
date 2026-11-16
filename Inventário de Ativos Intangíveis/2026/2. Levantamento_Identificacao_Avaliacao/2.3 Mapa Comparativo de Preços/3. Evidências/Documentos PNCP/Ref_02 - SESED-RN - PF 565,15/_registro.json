@@ -1,0 +1,32 @@
+{
+ "resumo": {
+  "ref": 2,
+  "pasta": "Ref_02 - SESED-RN - PF 565,15",
+  "preco_mapa": 565.15,
+  "preco_homologado_pncp": 565.15,
+  "preco_confere": true,
+  "arquivos": 5,
+  "atas": 0,
+  "contratos": 0,
+  "paginas_com_preco": 3
+ },
+ "eventos": [
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/00498299000156/compras/2025/18/itens/2/resultados",
+   "em": "2026-11-16T17:42:19.727235+00:00"
+  },
+  {
+   "consulta": "https://pncp.gov.br/api/pncp/v1/orgaos/00498299000156/compras/2025/18/arquivos",
+   "em": "2026-11-16T17:42:20.235232+00:00",
+   "itens": 5
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=99786&dataVigenciaInicialMin=2025-06-09&dataVigenciaInicialMax=2026-06-08",
+   "em": "2026-11-16T17:42:21.379666+00:00"
+  },
+  {
+   "consulta": "https://dadosabertos.compras.gov.br/modulo-contratos/1_consultarContratos?pagina=1&tamanhoPagina=500&codigoOrgao=99786&dataVigenciaInicialMin=2026-06-09&dataVigenciaInicialMax=2026-11-16",
+   "em": "2026-11-16T17:42:21.708487+00:00"
+  }
+ ]
+}

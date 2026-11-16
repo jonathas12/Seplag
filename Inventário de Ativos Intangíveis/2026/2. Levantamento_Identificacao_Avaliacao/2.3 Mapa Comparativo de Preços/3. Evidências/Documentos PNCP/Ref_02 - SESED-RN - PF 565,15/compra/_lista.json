@@ -1,0 +1,72 @@
+[
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/1",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/1",
+  "statusAtivo": true,
+  "cnpj": "00498299000156",
+  "anoCompra": 2025,
+  "sequencialCompra": 18,
+  "dataPublicacaoPncp": "2025-06-10T14:57:14",
+  "sequencialDocumento": 1,
+  "titulo": "SEI_27856287_Pesquisa_de_Precos.pdf",
+  "tipoDocumentoNome": "Outros Documentos",
+  "tipoDocumentoDescricao": "Outros Documentos",
+  "tipoDocumentoId": 16
+ },
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/2",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/2",
+  "statusAtivo": true,
+  "cnpj": "00498299000156",
+  "anoCompra": 2025,
+  "sequencialCompra": 18,
+  "dataPublicacaoPncp": "2025-06-10T14:57:14",
+  "sequencialDocumento": 2,
+  "titulo": "ata_n29.pdf",
+  "tipoDocumentoNome": "Outros Documentos",
+  "tipoDocumentoDescricao": "Outros Documentos",
+  "tipoDocumentoId": 16
+ },
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/3",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/3",
+  "statusAtivo": true,
+  "cnpj": "00498299000156",
+  "anoCompra": 2025,
+  "sequencialCompra": 18,
+  "dataPublicacaoPncp": "2025-06-10T14:57:19",
+  "sequencialDocumento": 3,
+  "titulo": "1___Edital_Pregao_SRP_TIC__L14133_2021_.pdf",
+  "tipoDocumentoNome": "Edital",
+  "tipoDocumentoDescricao": "Edital",
+  "tipoDocumentoId": 2
+ },
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/4",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/4",
+  "statusAtivo": true,
+  "cnpj": "00498299000156",
+  "anoCompra": 2025,
+  "sequencialCompra": 18,
+  "dataPublicacaoPncp": "2025-06-10T14:57:23",
+  "sequencialDocumento": 4,
+  "titulo": "SEI_33564286_Estudo_Tecnico_Preliminar_da_Contratacao.pdf",
+  "tipoDocumentoNome": "Estudo Técnico Preliminar",
+  "tipoDocumentoDescricao": "Estudo Técnico Preliminar",
+  "tipoDocumentoId": 7
+ },
+ {
+  "uri": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/5",
+  "url": "https://pncp.gov.br/pncp-api/v1/orgaos/00498299000156/compras/2025/18/arquivos/5",
+  "statusAtivo": true,
+  "cnpj": "00498299000156",
+  "anoCompra": 2025,
+  "sequencialCompra": 18,
+  "dataPublicacaoPncp": "2025-06-10T14:57:27",
+  "sequencialDocumento": 5,
+  "titulo": "SEI_33569083_Termo_de_Referencia.pdf",
+  "tipoDocumentoNome": "Termo de Referência",
+  "tipoDocumentoDescricao": "Termo de Referência",
+  "tipoDocumentoId": 4
+ }
+]

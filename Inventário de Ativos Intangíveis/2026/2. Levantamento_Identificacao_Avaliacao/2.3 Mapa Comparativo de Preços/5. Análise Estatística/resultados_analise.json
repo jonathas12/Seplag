@@ -1,247 +1,941 @@
 {
- "C1 - 9 preços (principal)": {
-  "n": 9,
-  "ids": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   9
+ "data_base_ipca": "10/2026",
+ "contrato": {
+  "preco_vigente": 544.53,
+  "preco_na_analise_atualizada": 544.53,
+  "mes_base_informado": null
+ },
+ "preco_2025": 943.25,
+ "fator_ipca_2025_para_base": 1.0462836071797088,
+ "amostra_2026": [
+  {
+   "Ref": 1,
+   "Rotulo": "Ref 1 Casa da Moeda",
+   "Órgão": "Casa Da Moeda Do Brasil/Mf",
+   "Modalidade": "Pregão - Eletrônico",
+   "Data da compra": "17/02/2025",
+   "Preço original": 555.0,
+   "Mês da compra": "02/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.083626,
+   "Preço atualizado": 601.41,
+   "Dentro de 13 meses": "Não",
+   "Disputa de preço": "Sim",
+   "IPCA acumulado": 8.3626,
+   "Aumento (R$)": 46.41
+  },
+  {
+   "Ref": 2,
+   "Rotulo": "Ref 2 SESED-RN",
+   "Órgão": "Ern-Secret.Da Segurança Publ. E Defesa Social",
+   "Modalidade": "Inexigibilidade",
+   "Data da compra": "09/06/2025",
+   "Preço original": 565.15,
+   "Mês da compra": "06/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.056356,
+   "Preço atualizado": 597.0,
+   "Dentro de 13 meses": "Não",
+   "Disputa de preço": "Não",
+   "IPCA acumulado": 5.6356,
+   "Aumento (R$)": 31.85
+  },
+  {
+   "Ref": 3,
+   "Rotulo": "Ref 3 Marinha",
+   "Órgão": "Pagadoria De Pessoal Da Marinha - Com Marinha",
+   "Modalidade": "Pregão - Eletrônico",
+   "Data da compra": "15/08/2025",
+   "Preço original": 1060.0,
+   "Mês da compra": "08/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.051094,
+   "Preço atualizado": 1114.16,
+   "Dentro de 13 meses": "Não",
+   "Disputa de preço": "Sim",
+   "IPCA acumulado": 5.1094,
+   "Aumento (R$)": 54.16
+  },
+  {
+   "Ref": 4,
+   "Rotulo": "Ref 4 UFCA",
+   "Órgão": "Universidade Federal Do Cariri",
+   "Modalidade": "Pregão - Eletrônico",
+   "Data da compra": "14/11/2025",
+   "Preço original": 735.0,
+   "Mês da compra": "11/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.046284,
+   "Preço atualizado": 769.02,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Sim",
+   "IPCA acumulado": 4.6284,
+   "Aumento (R$)": 34.02
+  },
+  {
+   "Ref": 5,
+   "Rotulo": "Ref 5 MP-PA",
+   "Órgão": "Ministério Público Do Estado Do Pará",
+   "Modalidade": "Inexigibilidade",
+   "Data da compra": "10/12/2025",
+   "Preço original": 750.0,
+   "Mês da compra": "12/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.044404,
+   "Preço atualizado": 783.3,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Não",
+   "IPCA acumulado": 4.4404,
+   "Aumento (R$)": 33.3
+  },
+  {
+   "Ref": 6,
+   "Rotulo": "Ref 6 INCRA/Serpro",
+   "Órgão": "Incra-Sede/Df",
+   "Modalidade": "Dispensa",
+   "Data da compra": "23/12/2025",
+   "Preço original": 2192.73,
+   "Mês da compra": "12/2025",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.044404,
+   "Preço atualizado": 2290.1,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Não",
+   "IPCA acumulado": 4.4404,
+   "Aumento (R$)": 97.37
+  },
+  {
+   "Ref": 7,
+   "Rotulo": "Ref 7 TJ-PA",
+   "Órgão": "Tribunal De Justiça Do Estado Do Pará",
+   "Modalidade": "Pregão - Eletrônico",
+   "Data da compra": "07/01/2026",
+   "Preço original": 1264.22,
+   "Mês da compra": "01/2026",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.040968,
+   "Preço atualizado": 1316.01,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Sim",
+   "IPCA acumulado": 4.0968,
+   "Aumento (R$)": 51.79
+  },
+  {
+   "Ref": 8,
+   "Rotulo": "Ref 8 MDS",
+   "Órgão": "Subsecretaria De Assuntos Administrativos",
+   "Modalidade": "Pregão - Eletrônico",
+   "Data da compra": "26/02/2026",
+   "Preço original": 538.0,
+   "Mês da compra": "02/2026",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.037545,
+   "Preço atualizado": 558.2,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Sim",
+   "IPCA acumulado": 3.7545,
+   "Aumento (R$)": 20.2
+  },
+  {
+   "Ref": 9,
+   "Rotulo": "Ref 9 SMED Salvador",
+   "Órgão": "Secretaria Municipal Da Educação De Salvador",
+   "Modalidade": "Inexigibilidade",
+   "Data da compra": "20/08/2026",
+   "Preço original": 785.0,
+   "Mês da compra": "08/2026",
+   "Mês final": "10/2026",
+   "Fator IPCA": 1.006381,
+   "Preço atualizado": 790.01,
+   "Dentro de 13 meses": "Sim",
+   "Disputa de preço": "Não",
+   "IPCA acumulado": 0.6381,
+   "Aumento (R$)": 5.01
+  }
+ ],
+ "descritiva": {
+  "Preço original": {
+   "Quantidade": 9,
+   "Mínimo": 538.0,
+   "Primeiro quartil (Q1)": 565.15,
+   "Mediana": 750.0,
+   "Média": 938.3444444444444,
+   "Terceiro quartil (Q3)": 1060.0,
+   "Máximo": 2192.73,
+   "Desvio padrão": 529.3059035215626,
+   "Coeficiente de variação": 56.408486953310955,
+   "Limite inferior IQR": -177.1250000000001,
+   "Limite superior IQR": 1802.275,
+   "Outliers": [
+    2192.73
+   ]
+  },
+  "Preço atualizado": {
+   "Quantidade": 9,
+   "Mínimo": 558.2,
+   "Primeiro quartil (Q1)": 601.41,
+   "Mediana": 783.3,
+   "Média": 979.9122222222221,
+   "Terceiro quartil (Q3)": 1114.16,
+   "Máximo": 2290.1,
+   "Desvio padrão": 551.6450222919123,
+   "Coeficiente de variação": 56.295350724466374,
+   "Limite inferior IQR": -167.71500000000026,
+   "Limite superior IQR": 1883.2850000000003,
+   "Outliers": [
+    2290.1
+   ]
+  }
+ },
+ "outlier_refs": [
+  6
+ ],
+ "kmeans_2026_original": {
+  "silhueta": 0.6123145186523542,
+  "grupos": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 6,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Ref 1 Casa da Moeda: R$ 555,00; Ref 2 SESED-RN: R$ 565,15; Ref 4 UFCA: R$ 735,00; Ref 5 MP-PA: R$ 750,00; Ref 9 SMED Salvador: R$ 785,00",
+    "Mínimo": 538.0,
+    "Mediana": 650.075,
+    "Centroide (média)": 654.6916666667,
+    "Máximo": 785.0
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.060,00; Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1060.0,
+    "Mediana": 1162.11,
+    "Centroide (média)": 1162.11,
+    "Máximo": 1264.22
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.192,73",
+    "Mínimo": 2192.73,
+    "Mediana": 2192.73,
+    "Centroide (média)": 2192.73,
+    "Máximo": 2192.73
+   }
   ],
-  "minimo": 558.2,
-  "maximo": 2290.1,
-  "media": 979.9122222222221,
-  "mediana": 783.3,
-  "desvio_padrao": 551.6450222919123,
-  "coef_variacao_pct": 56.295350724466374,
+  "atribuicao": {
+   "1": 1,
+   "2": 1,
+   "3": 2,
+   "4": 1,
+   "5": 1,
+   "6": 3,
+   "7": 2,
+   "8": 1,
+   "9": 1
+  }
+ },
+ "kmeans_2026_atualizado": {
   "silhueta": 0.6391536375337528,
-  "grupos": {
-   "Grupo 1 (Entrada)": {
-    "n": 6,
-    "minimo": 558.2,
-    "maximo": 790.01,
-    "media": 683.1566666666666,
-    "mediana": 685.2149999999999,
-    "ids": [
-     1,
-     2,
-     4,
-     5,
-     8,
-     9
-    ]
+  "grupos": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 6,
+    "Preços do grupo": "Ref 8 MDS: R$ 558,20; Ref 2 SESED-RN: R$ 597,00; Ref 1 Casa da Moeda: R$ 601,41; Ref 4 UFCA: R$ 769,02; Ref 5 MP-PA: R$ 783,30; Ref 9 SMED Salvador: R$ 790,01",
+    "Mínimo": 558.2,
+    "Mediana": 685.215,
+    "Centroide (média)": 683.1566666667,
+    "Máximo": 790.01
    },
-   "Grupo 2 (Intermediário)": {
-    "n": 2,
-    "minimo": 1114.16,
-    "maximo": 1316.01,
-    "media": 1215.085,
-    "mediana": 1215.085,
-    "ids": [
-     3,
-     7
-    ]
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.114,16; Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1114.16,
+    "Mediana": 1215.085,
+    "Centroide (média)": 1215.085,
+    "Máximo": 1316.01
    },
-   "Grupo 3 (Premium)": {
-    "n": 1,
-    "minimo": 2290.1,
-    "maximo": 2290.1,
-    "media": 2290.1,
-    "mediana": 2290.1,
-    "ids": [
-     6
-    ]
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.290,10",
+    "Mínimo": 2290.1,
+    "Mediana": 2290.1,
+    "Centroide (média)": 2290.1,
+    "Máximo": 2290.1
    }
+  ],
+  "atribuicao": {
+   "1": 1,
+   "2": 1,
+   "3": 2,
+   "4": 1,
+   "5": 1,
+   "6": 3,
+   "7": 2,
+   "8": 1,
+   "9": 1
   }
  },
- "C2 - sem outlier IQR (8 preços)": {
-  "n": 8,
-  "ids": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   7,
-   8,
-   9
-  ],
-  "minimo": 558.2,
-  "maximo": 1316.01,
-  "media": 816.1387500000001,
-  "mediana": 776.16,
-  "desvio_padrao": 268.1502324890444,
-  "coef_variacao_pct": 32.85596137777362,
-  "silhueta": 0.7957456450940106,
-  "grupos": {
-   "Grupo 1 (Entrada)": {
-    "n": 3,
-    "minimo": 558.2,
-    "maximo": 601.41,
-    "media": 585.5366666666667,
-    "mediana": 597.0,
-    "ids": [
-     1,
-     2,
-     8
-    ]
-   },
-   "Grupo 2 (Intermediário)": {
-    "n": 3,
-    "minimo": 769.02,
-    "maximo": 790.01,
-    "media": 780.7766666666666,
-    "mediana": 783.3,
-    "ids": [
-     4,
-     5,
-     9
-    ]
-   },
-   "Grupo 3 (Premium)": {
-    "n": 2,
-    "minimo": 1114.16,
-    "maximo": 1316.01,
-    "media": 1215.085,
-    "mediana": 1215.085,
-    "ids": [
-     3,
-     7
-    ]
-   }
+ "cenarios": [
+  {
+   "Cenário": "C1 - 9 preços",
+   "Base": "Original",
+   "Qtde": 9,
+   "Mediana geral": 750.0,
+   "Silhueta": 0.61,
+   "G1 centroide": 654.6916666667,
+   "G1 qtde": 6,
+   "G2 centroide": 1162.11,
+   "G2 qtde": 2,
+   "G3 centroide": 2192.73,
+   "G3 qtde": 1
+  },
+  {
+   "Cenário": "C1 - 9 preços",
+   "Base": "Atualizado 10/2026",
+   "Qtde": 9,
+   "Mediana geral": 783.3,
+   "Silhueta": 0.64,
+   "G1 centroide": 683.1566666667,
+   "G1 qtde": 6,
+   "G2 centroide": 1215.085,
+   "G2 qtde": 2,
+   "G3 centroide": 2290.1,
+   "G3 qtde": 1
+  },
+  {
+   "Cenário": "C2 - sem outlier IQR",
+   "Base": "Original",
+   "Qtde": 8,
+   "Mediana geral": 742.5,
+   "Silhueta": 0.77,
+   "G1 centroide": 552.7166666667,
+   "G1 qtde": 3,
+   "G2 centroide": 756.6666666667,
+   "G2 qtde": 3,
+   "G3 centroide": 1162.11,
+   "G3 qtde": 2
+  },
+  {
+   "Cenário": "C2 - sem outlier IQR",
+   "Base": "Atualizado 10/2026",
+   "Qtde": 8,
+   "Mediana geral": 776.16,
+   "Silhueta": 0.8,
+   "G1 centroide": 585.5366666667,
+   "G1 qtde": 3,
+   "G2 centroide": 780.7766666667,
+   "G2 qtde": 3,
+   "G3 centroide": 1215.085,
+   "G3 qtde": 2
+  },
+  {
+   "Cenário": "C3 - até 13 meses",
+   "Base": "Original",
+   "Qtde": 6,
+   "Mediana geral": 767.5,
+   "Silhueta": 0.52,
+   "G1 centroide": 702.0,
+   "G1 qtde": 4,
+   "G2 centroide": 1264.22,
+   "G2 qtde": 1,
+   "G3 centroide": 2192.73,
+   "G3 qtde": 1
+  },
+  {
+   "Cenário": "C3 - até 13 meses",
+   "Base": "Atualizado 10/2026",
+   "Qtde": 6,
+   "Mediana geral": 786.655,
+   "Silhueta": 0.54,
+   "G1 centroide": 725.1325,
+   "G1 qtde": 4,
+   "G2 centroide": 1316.01,
+   "G2 qtde": 1,
+   "G3 centroide": 2290.1,
+   "G3 qtde": 1
+  },
+  {
+   "Cenário": "C4 - só pregões",
+   "Base": "Original",
+   "Qtde": 5,
+   "Mediana geral": 735.0,
+   "Silhueta": 0.56,
+   "G1 centroide": 546.5,
+   "G1 qtde": 2,
+   "G2 centroide": 735.0,
+   "G2 qtde": 1,
+   "G3 centroide": 1162.11,
+   "G3 qtde": 2
+  },
+  {
+   "Cenário": "C4 - só pregões",
+   "Base": "Atualizado 10/2026",
+   "Qtde": 5,
+   "Mediana geral": 769.02,
+   "Silhueta": 0.52,
+   "G1 centroide": 579.805,
+   "G1 qtde": 2,
+   "G2 centroide": 769.02,
+   "G2 qtde": 1,
+   "G3 centroide": 1215.085,
+   "G3 qtde": 2
+  },
+  {
+   "Cenário": "C5 - 9 preços + Contrato 014/2022",
+   "Base": "Original",
+   "Qtde": 10,
+   "Mediana geral": 742.5,
+   "Silhueta": 0.64,
+   "G1 centroide": 638.9542857143,
+   "G1 qtde": 7,
+   "G2 centroide": 1162.11,
+   "G2 qtde": 2,
+   "G3 centroide": 2192.73,
+   "G3 qtde": 1
+  },
+  {
+   "Cenário": "C5 - 9 preços + Contrato 014/2022",
+   "Base": "Atualizado 10/2026",
+   "Qtde": 10,
+   "Mediana geral": 776.16,
+   "Silhueta": 0.65,
+   "G1 centroide": 663.3528571429,
+   "G1 qtde": 7,
+   "G2 centroide": 1215.085,
+   "G2 qtde": 2,
+   "G3 centroide": 2290.1,
+   "G3 qtde": 1
   }
- },
- "C3 - janela de 13 meses (6 preços)": {
-  "n": 6,
-  "ids": [
-   4,
-   5,
-   6,
-   7,
-   8,
-   9
-  ],
-  "minimo": 558.2,
-  "maximo": 2290.1,
-  "media": 1084.44,
-  "mediana": 786.655,
-  "desvio_padrao": 642.0332295138625,
-  "coef_variacao_pct": 59.20412650896891,
-  "silhueta": 0.5396470348294723,
-  "grupos": {
-   "Grupo 1 (Entrada)": {
-    "n": 4,
-    "minimo": 558.2,
-    "maximo": 790.01,
-    "media": 725.1324999999999,
-    "mediana": 776.16,
-    "ids": [
-     4,
-     5,
-     8,
-     9
-    ]
+ ],
+ "cenarios_detalhe": {
+  "C1 - 9 preços | Original": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 6,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Ref 1 Casa da Moeda: R$ 555,00; Ref 2 SESED-RN: R$ 565,15; Ref 4 UFCA: R$ 735,00; Ref 5 MP-PA: R$ 750,00; Ref 9 SMED Salvador: R$ 785,00",
+    "Mínimo": 538.0,
+    "Mediana": 650.075,
+    "Centroide (média)": 654.6916666666667,
+    "Máximo": 785.0
    },
-   "Grupo 2 (Intermediário)": {
-    "n": 1,
-    "minimo": 1316.01,
-    "maximo": 1316.01,
-    "media": 1316.01,
-    "mediana": 1316.01,
-    "ids": [
-     7
-    ]
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.060,00; Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1060.0,
+    "Mediana": 1162.1100000000001,
+    "Centroide (média)": 1162.1100000000001,
+    "Máximo": 1264.22
    },
-   "Grupo 3 (Premium)": {
-    "n": 1,
-    "minimo": 2290.1,
-    "maximo": 2290.1,
-    "media": 2290.1,
-    "mediana": 2290.1,
-    "ids": [
-     6
-    ]
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.192,73",
+    "Mínimo": 2192.73,
+    "Mediana": 2192.73,
+    "Centroide (média)": 2192.73,
+    "Máximo": 2192.73
    }
-  }
- },
- "C4 - apenas pregões (5 preços)": {
-  "n": 5,
-  "ids": [
-   1,
-   3,
-   4,
-   7,
-   8
   ],
-  "minimo": 558.2,
-  "maximo": 1316.01,
-  "media": 871.76,
-  "mediana": 769.02,
-  "desvio_padrao": 330.9381838803132,
-  "coef_variacao_pct": 37.96207486926599,
-  "silhueta": 0.5166765783029406,
-  "grupos": {
-   "Grupo 1 (Entrada)": {
-    "n": 2,
-    "minimo": 558.2,
-    "maximo": 601.41,
-    "media": 579.8050000000001,
-    "mediana": 579.8050000000001,
-    "ids": [
-     1,
-     8
-    ]
+  "C1 - 9 preços | Atualizado 10/2026": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 6,
+    "Preços do grupo": "Ref 8 MDS: R$ 558,20; Ref 2 SESED-RN: R$ 597,00; Ref 1 Casa da Moeda: R$ 601,41; Ref 4 UFCA: R$ 769,02; Ref 5 MP-PA: R$ 783,30; Ref 9 SMED Salvador: R$ 790,01",
+    "Mínimo": 558.2,
+    "Mediana": 685.2149999999999,
+    "Centroide (média)": 683.1566666666668,
+    "Máximo": 790.01
    },
-   "Grupo 2 (Intermediário)": {
-    "n": 1,
-    "minimo": 769.02,
-    "maximo": 769.02,
-    "media": 769.02,
-    "mediana": 769.02,
-    "ids": [
-     4
-    ]
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.114,16; Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1114.16,
+    "Mediana": 1215.085,
+    "Centroide (média)": 1215.085,
+    "Máximo": 1316.01
    },
-   "Grupo 3 (Premium)": {
-    "n": 2,
-    "minimo": 1114.16,
-    "maximo": 1316.01,
-    "media": 1215.085,
-    "mediana": 1215.085,
-    "ids": [
-     3,
-     7
-    ]
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.290,10",
+    "Mínimo": 2290.1,
+    "Mediana": 2290.1,
+    "Centroide (média)": 2290.1,
+    "Máximo": 2290.1
    }
-  }
- },
- "_nominal": {
-  "media": 938.3444444444444,
-  "mediana": 750.0,
-  "desvio_padrao": 529.3059035215626,
-  "Q1": 565.15,
-  "Q3": 1060.0,
-  "IQR": 494.85,
-  "limite_inferior": -177.1250000000001,
-  "limite_superior": 1802.275,
-  "outliers": [
-   2192.73
   ],
-  "media_sem_outliers": 781.5462500000001,
-  "mediana_sem_outliers": 742.5
- },
- "_atualizado": {
-  "Q1": 601.41,
-  "Q3": 1114.16,
-  "IQR": 512.7500000000001,
-  "limite_inferior": -167.71500000000026,
-  "limite_superior": 1883.2850000000003,
-  "outliers": [
-   2290.1
+  "C2 - sem outlier IQR | Original": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 3,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Ref 1 Casa da Moeda: R$ 555,00; Ref 2 SESED-RN: R$ 565,15",
+    "Mínimo": 538.0,
+    "Mediana": 555.0,
+    "Centroide (média)": 552.7166666666667,
+    "Máximo": 565.15
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 3,
+    "Preços do grupo": "Ref 4 UFCA: R$ 735,00; Ref 5 MP-PA: R$ 750,00; Ref 9 SMED Salvador: R$ 785,00",
+    "Mínimo": 735.0,
+    "Mediana": 750.0,
+    "Centroide (média)": 756.6666666666666,
+    "Máximo": 785.0
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.060,00; Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1060.0,
+    "Mediana": 1162.1100000000001,
+    "Centroide (média)": 1162.1100000000001,
+    "Máximo": 1264.22
+   }
+  ],
+  "C2 - sem outlier IQR | Atualizado 10/2026": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 3,
+    "Preços do grupo": "Ref 8 MDS: R$ 558,20; Ref 2 SESED-RN: R$ 597,00; Ref 1 Casa da Moeda: R$ 601,41",
+    "Mínimo": 558.2,
+    "Mediana": 597.0,
+    "Centroide (média)": 585.5366666666667,
+    "Máximo": 601.41
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 3,
+    "Preços do grupo": "Ref 4 UFCA: R$ 769,02; Ref 5 MP-PA: R$ 783,30; Ref 9 SMED Salvador: R$ 790,01",
+    "Mínimo": 769.02,
+    "Mediana": 783.3,
+    "Centroide (média)": 780.7766666666666,
+    "Máximo": 790.01
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.114,16; Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1114.16,
+    "Mediana": 1215.085,
+    "Centroide (média)": 1215.085,
+    "Máximo": 1316.01
+   }
+  ],
+  "C3 - até 13 meses | Original": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 4,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Ref 4 UFCA: R$ 735,00; Ref 5 MP-PA: R$ 750,00; Ref 9 SMED Salvador: R$ 785,00",
+    "Mínimo": 538.0,
+    "Mediana": 742.5,
+    "Centroide (média)": 702.0,
+    "Máximo": 785.0
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1264.22,
+    "Mediana": 1264.22,
+    "Centroide (média)": 1264.22,
+    "Máximo": 1264.22
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.192,73",
+    "Mínimo": 2192.73,
+    "Mediana": 2192.73,
+    "Centroide (média)": 2192.73,
+    "Máximo": 2192.73
+   }
+  ],
+  "C3 - até 13 meses | Atualizado 10/2026": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 4,
+    "Preços do grupo": "Ref 8 MDS: R$ 558,20; Ref 4 UFCA: R$ 769,02; Ref 5 MP-PA: R$ 783,30; Ref 9 SMED Salvador: R$ 790,01",
+    "Mínimo": 558.2,
+    "Mediana": 776.16,
+    "Centroide (média)": 725.1324999999999,
+    "Máximo": 790.01
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1316.01,
+    "Mediana": 1316.01,
+    "Centroide (média)": 1316.01,
+    "Máximo": 1316.01
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.290,10",
+    "Mínimo": 2290.1,
+    "Mediana": 2290.1,
+    "Centroide (média)": 2290.1,
+    "Máximo": 2290.1
+   }
+  ],
+  "C4 - só pregões | Original": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Ref 1 Casa da Moeda: R$ 555,00",
+    "Mínimo": 538.0,
+    "Mediana": 546.5,
+    "Centroide (média)": 546.5,
+    "Máximo": 555.0
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 4 UFCA: R$ 735,00",
+    "Mínimo": 735.0,
+    "Mediana": 735.0,
+    "Centroide (média)": 735.0,
+    "Máximo": 735.0
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.060,00; Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1060.0,
+    "Mediana": 1162.1100000000001,
+    "Centroide (média)": 1162.1100000000001,
+    "Máximo": 1264.22
+   }
+  ],
+  "C4 - só pregões | Atualizado 10/2026": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 8 MDS: R$ 558,20; Ref 1 Casa da Moeda: R$ 601,41",
+    "Mínimo": 558.2,
+    "Mediana": 579.8050000000001,
+    "Centroide (média)": 579.8050000000001,
+    "Máximo": 601.41
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 4 UFCA: R$ 769,02",
+    "Mínimo": 769.02,
+    "Mediana": 769.02,
+    "Centroide (média)": 769.02,
+    "Máximo": 769.02
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.114,16; Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1114.16,
+    "Mediana": 1215.085,
+    "Centroide (média)": 1215.085,
+    "Máximo": 1316.01
+   }
+  ],
+  "C5 - 9 preços + Contrato 014/2022 | Original": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 7,
+    "Preços do grupo": "Ref 8 MDS: R$ 538,00; Contrato 014/2022: R$ 544,53; Ref 1 Casa da Moeda: R$ 555,00; Ref 2 SESED-RN: R$ 565,15; Ref 4 UFCA: R$ 735,00; Ref 5 MP-PA: R$ 750,00; Ref 9 SMED Salvador: R$ 785,00",
+    "Mínimo": 538.0,
+    "Mediana": 565.15,
+    "Centroide (média)": 638.9542857142858,
+    "Máximo": 785.0
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.060,00; Ref 7 TJ-PA: R$ 1.264,22",
+    "Mínimo": 1060.0,
+    "Mediana": 1162.1100000000001,
+    "Centroide (média)": 1162.1100000000001,
+    "Máximo": 1264.22
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.192,73",
+    "Mínimo": 2192.73,
+    "Mediana": 2192.73,
+    "Centroide (média)": 2192.73,
+    "Máximo": 2192.73
+   }
+  ],
+  "C5 - 9 preços + Contrato 014/2022 | Atualizado 10/2026": [
+   {
+    "Grupo": "Grupo 1 (Entrada)",
+    "Qtde de preços": 7,
+    "Preços do grupo": "Contrato 014/2022: R$ 544,53; Ref 8 MDS: R$ 558,20; Ref 2 SESED-RN: R$ 597,00; Ref 1 Casa da Moeda: R$ 601,41; Ref 4 UFCA: R$ 769,02; Ref 5 MP-PA: R$ 783,30; Ref 9 SMED Salvador: R$ 790,01",
+    "Mínimo": 544.53,
+    "Mediana": 601.41,
+    "Centroide (média)": 663.3528571428571,
+    "Máximo": 790.01
+   },
+   {
+    "Grupo": "Grupo 2 (Intermediário)",
+    "Qtde de preços": 2,
+    "Preços do grupo": "Ref 3 Marinha: R$ 1.114,16; Ref 7 TJ-PA: R$ 1.316,01",
+    "Mínimo": 1114.16,
+    "Mediana": 1215.085,
+    "Centroide (média)": 1215.085,
+    "Máximo": 1316.01
+   },
+   {
+    "Grupo": "Grupo 3 (Premium)",
+    "Qtde de preços": 1,
+    "Preços do grupo": "Ref 6 INCRA/Serpro: R$ 2.290,10",
+    "Mínimo": 2290.1,
+    "Mediana": 2290.1,
+    "Centroide (média)": 2290.1,
+    "Máximo": 2290.1
+   }
   ]
- }
+ },
+ "amostra_2025": [
+  {
+   "Ref": 1,
+   "Rotulo": "P1",
+   "Fonte": "Termo de Apostilamento nº 06/2024 da ARP nº 33/2024, item 35",
+   "Órgão": "MGI (Central de Compras)",
+   "Preço original": 943.26,
+   "Atualizado até 10/2025": 987.41,
+   "Atualizado até 10/2026": 1033.11
+  },
+  {
+   "Ref": 2,
+   "Rotulo": "P2",
+   "Fonte": "Termo de Apostilamento nº 05/2024 da ARP nº 32/2024, item 42",
+   "Órgão": "MGI (Central de Compras)",
+   "Preço original": 558.61,
+   "Atualizado até 10/2025": 584.76,
+   "Atualizado até 10/2026": 611.82
+  },
+  {
+   "Ref": 3,
+   "Rotulo": "P3",
+   "Fonte": "Termo de Apostilamento nº 01/2025 da ARP nº 31/2024, item 22",
+   "Órgão": "MGI (Central de Compras)",
+   "Preço original": 585.21,
+   "Atualizado até 10/2025": 612.6,
+   "Atualizado até 10/2026": 640.95
+  },
+  {
+   "Ref": 4,
+   "Rotulo": "P4",
+   "Fonte": "Termo de Apostilamento nº 04/2024 da ARP nº 30/2024, item 8",
+   "Órgão": "MGI (Central de Compras)",
+   "Preço original": 638.41,
+   "Atualizado até 10/2025": 668.29,
+   "Atualizado até 10/2026": 699.22
+  },
+  {
+   "Ref": 5,
+   "Rotulo": "P5",
+   "Fonte": "Termo de Apostilamento nº 03/2024 da ARP nº 29/2024, item 1",
+   "Órgão": "MGI (Central de Compras)",
+   "Preço original": 601.33,
+   "Atualizado até 10/2025": 629.48,
+   "Atualizado até 10/2026": 658.61
+  },
+  {
+   "Ref": 6,
+   "Rotulo": "P6",
+   "Fonte": "Contrato nº 14/2024, ARP nº 33/2024, item 35",
+   "Órgão": "Serviço Florestal Brasileiro",
+   "Preço original": 886.51,
+   "Atualizado até 10/2025": 933.2,
+   "Atualizado até 10/2026": 976.39
+  },
+  {
+   "Ref": 7,
+   "Rotulo": "P7",
+   "Fonte": "Contrato nº 024/2024, item 35",
+   "Órgão": "ANTT",
+   "Preço original": 886.51,
+   "Atualizado até 10/2025": 924.4,
+   "Atualizado até 10/2026": 967.18
+  },
+  {
+   "Ref": 8,
+   "Rotulo": "P8",
+   "Fonte": "Contrato nº 21/2024, item 1",
+   "Órgão": "SUFRAMA",
+   "Preço original": 707.64,
+   "Atualizado até 10/2025": 740.76,
+   "Atualizado até 10/2026": 775.05
+  },
+  {
+   "Ref": 9,
+   "Rotulo": "P9",
+   "Fonte": "Contrato nº 45/2024, item 35",
+   "Órgão": "ICMBio",
+   "Preço original": 886.51,
+   "Atualizado até 10/2025": 928.01,
+   "Atualizado até 10/2026": 970.96
+  },
+  {
+   "Ref": 10,
+   "Rotulo": "P10",
+   "Fonte": "Contrato nº 014/2022/SEPLAG, itens 1 e 2 (4º apostilamento)",
+   "Órgão": "SEPLAG/MT",
+   "Preço original": 519.99,
+   "Atualizado até 10/2025": 523.74,
+   "Atualizado até 10/2026": 547.98
+  },
+  {
+   "Ref": 11,
+   "Rotulo": "P11",
+   "Fonte": "Banco de Preços Públicos, menor preço, PE 90002/2025",
+   "Órgão": "Pagadoria de Pessoal da Marinha",
+   "Preço original": 1060.0,
+   "Atualizado até 10/2025": 1105.0,
+   "Atualizado até 10/2026": 1156.14
+  },
+  {
+   "Ref": 12,
+   "Rotulo": "P12",
+   "Fonte": "Banco de Preços Públicos, média saneada das propostas finais (TCU), PE 90061/2024",
+   "Órgão": "Casa da Moeda do Brasil",
+   "Preço original": 1182.0,
+   "Atualizado até 10/2025": 1244.0,
+   "Atualizado até 10/2026": 1301.58
+  },
+  {
+   "Ref": 13,
+   "Rotulo": "P13",
+   "Fonte": "Banco de Preços Públicos, mediana das 3 melhores propostas finais, PE 91180/2024",
+   "Órgão": "CNEN (MCTI)",
+   "Preço original": 650.0,
+   "Atualizado até 10/2025": 677.78,
+   "Atualizado até 10/2026": 709.15
+  }
+ ],
+ "kmeans_2025_original": [
+  {
+   "Grupo": "Grupo 1 (Entrada)",
+   "Qtde de preços": 7,
+   "Preços do grupo": "P10: R$ 519,99; P2: R$ 558,61; P3: R$ 585,21; P5: R$ 601,33; P4: R$ 638,41; P13: R$ 650,00; P8: R$ 707,64",
+   "Mínimo": 519.99,
+   "Mediana": 601.33,
+   "Centroide (média)": 608.7414285714,
+   "Máximo": 707.64
+  },
+  {
+   "Grupo": "Grupo 2 (Intermediário)",
+   "Qtde de preços": 4,
+   "Preços do grupo": "P6: R$ 886,51; P7: R$ 886,51; P9: R$ 886,51; P1: R$ 943,26",
+   "Mínimo": 886.51,
+   "Mediana": 886.51,
+   "Centroide (média)": 900.6975,
+   "Máximo": 943.26
+  },
+  {
+   "Grupo": "Grupo 3 (Premium)",
+   "Qtde de preços": 2,
+   "Preços do grupo": "P11: R$ 1.060,00; P12: R$ 1.182,00",
+   "Mínimo": 1060.0,
+   "Mediana": 1121.0,
+   "Centroide (média)": 1121.0,
+   "Máximo": 1182.0
+  }
+ ],
+ "kmeans_2025_atualizado_10_2025": [
+  {
+   "Grupo": "Grupo 1 (Entrada)",
+   "Qtde de preços": 7,
+   "Preços do grupo": "P10: R$ 523,74; P2: R$ 584,76; P3: R$ 612,60; P5: R$ 629,48; P4: R$ 668,29; P13: R$ 677,78; P8: R$ 740,76",
+   "Mínimo": 523.74,
+   "Mediana": 629.48,
+   "Centroide (média)": 633.9157142857,
+   "Máximo": 740.76
+  },
+  {
+   "Grupo": "Grupo 2 (Intermediário)",
+   "Qtde de preços": 4,
+   "Preços do grupo": "P7: R$ 924,40; P9: R$ 928,01; P6: R$ 933,20; P1: R$ 987,41",
+   "Mínimo": 924.4,
+   "Mediana": 930.605,
+   "Centroide (média)": 943.255,
+   "Máximo": 987.41
+  },
+  {
+   "Grupo": "Grupo 3 (Premium)",
+   "Qtde de preços": 2,
+   "Preços do grupo": "P11: R$ 1.105,00; P12: R$ 1.244,00",
+   "Mínimo": 1105.0,
+   "Mediana": 1174.5,
+   "Centroide (média)": 1174.5,
+   "Máximo": 1244.0
+  }
+ ],
+ "kmeans_2025_atualizado_base": [
+  {
+   "Grupo": "Grupo 1 (Entrada)",
+   "Qtde de preços": 7,
+   "Preços do grupo": "P10: R$ 547,98; P2: R$ 611,82; P3: R$ 640,95; P5: R$ 658,61; P4: R$ 699,22; P13: R$ 709,15; P8: R$ 775,05",
+   "Mínimo": 547.98,
+   "Mediana": 658.61,
+   "Centroide (média)": 663.2542857143,
+   "Máximo": 775.05
+  },
+  {
+   "Grupo": "Grupo 2 (Intermediário)",
+   "Qtde de preços": 4,
+   "Preços do grupo": "P7: R$ 967,18; P9: R$ 970,96; P6: R$ 976,39; P1: R$ 1.033,11",
+   "Mínimo": 967.18,
+   "Mediana": 973.675,
+   "Centroide (média)": 986.91,
+   "Máximo": 1033.11
+  },
+  {
+   "Grupo": "Grupo 3 (Premium)",
+   "Qtde de preços": 2,
+   "Preços do grupo": "P11: R$ 1.156,14; P12: R$ 1.301,58",
+   "Mínimo": 1156.14,
+   "Mediana": 1228.86,
+   "Centroide (média)": 1228.86,
+   "Máximo": 1301.58
+  }
+ ],
+ "comparacao_2025_2026": [
+  {
+   "Grupo": "Grupo 1 (Entrada)",
+   "2025 original": 608.7414285714,
+   "2026 original": 654.6916666667,
+   "2025 atualizado até 10/2025 (publicado)": 633.9157142857,
+   "2025 atualizado até 10/2026": 663.2542857143,
+   "2026 atualizado até 10/2026": 683.1566666667,
+   "Variação original (2026 / 2025)": 7.5484000166,
+   "Variação real, mesma data-base 10/2026": 3.0007165247
+  },
+  {
+   "Grupo": "Grupo 2 (Intermediário)",
+   "2025 original": 900.6975,
+   "2026 original": 1162.11,
+   "2025 atualizado até 10/2025 (publicado)": 943.255,
+   "2025 atualizado até 10/2026": 986.91,
+   "2026 atualizado até 10/2026": 1215.085,
+   "Variação original (2026 / 2025)": 29.0233402446,
+   "Variação real, mesma data-base 10/2026": 23.1201426675
+  },
+  {
+   "Grupo": "Grupo 3 (Premium)",
+   "2025 original": 1121.0,
+   "2026 original": 2192.73,
+   "2025 atualizado até 10/2025 (publicado)": 1174.5,
+   "2025 atualizado até 10/2026": 1228.86,
+   "2026 atualizado até 10/2026": 2290.1,
+   "Variação original (2026 / 2025)": 95.6048171276,
+   "Variação real, mesma data-base 10/2026": 86.3597155087
+  }
+ ]
 }

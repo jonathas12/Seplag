@@ -1,0 +1,247 @@
+{
+ "C1 - 9 preços (principal)": {
+  "n": 9,
+  "ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "minimo": 558.2,
+  "maximo": 2290.1,
+  "media": 979.9122222222221,
+  "mediana": 783.3,
+  "desvio_padrao": 551.6450222919123,
+  "coef_variacao_pct": 56.295350724466374,
+  "silhueta": 0.6391536375337528,
+  "grupos": {
+   "Grupo 1 (Entrada)": {
+    "n": 6,
+    "minimo": 558.2,
+    "maximo": 790.01,
+    "media": 683.1566666666666,
+    "mediana": 685.2149999999999,
+    "ids": [
+     1,
+     2,
+     4,
+     5,
+     8,
+     9
+    ]
+   },
+   "Grupo 2 (Intermediário)": {
+    "n": 2,
+    "minimo": 1114.16,
+    "maximo": 1316.01,
+    "media": 1215.085,
+    "mediana": 1215.085,
+    "ids": [
+     3,
+     7
+    ]
+   },
+   "Grupo 3 (Premium)": {
+    "n": 1,
+    "minimo": 2290.1,
+    "maximo": 2290.1,
+    "media": 2290.1,
+    "mediana": 2290.1,
+    "ids": [
+     6
+    ]
+   }
+  }
+ },
+ "C2 - sem outlier IQR (8 preços)": {
+  "n": 8,
+  "ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9
+  ],
+  "minimo": 558.2,
+  "maximo": 1316.01,
+  "media": 816.1387500000001,
+  "mediana": 776.16,
+  "desvio_padrao": 268.1502324890444,
+  "coef_variacao_pct": 32.85596137777362,
+  "silhueta": 0.7957456450940106,
+  "grupos": {
+   "Grupo 1 (Entrada)": {
+    "n": 3,
+    "minimo": 558.2,
+    "maximo": 601.41,
+    "media": 585.5366666666667,
+    "mediana": 597.0,
+    "ids": [
+     1,
+     2,
+     8
+    ]
+   },
+   "Grupo 2 (Intermediário)": {
+    "n": 3,
+    "minimo": 769.02,
+    "maximo": 790.01,
+    "media": 780.7766666666666,
+    "mediana": 783.3,
+    "ids": [
+     4,
+     5,
+     9
+    ]
+   },
+   "Grupo 3 (Premium)": {
+    "n": 2,
+    "minimo": 1114.16,
+    "maximo": 1316.01,
+    "media": 1215.085,
+    "mediana": 1215.085,
+    "ids": [
+     3,
+     7
+    ]
+   }
+  }
+ },
+ "C3 - janela de 13 meses (6 preços)": {
+  "n": 6,
+  "ids": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "minimo": 558.2,
+  "maximo": 2290.1,
+  "media": 1084.44,
+  "mediana": 786.655,
+  "desvio_padrao": 642.0332295138625,
+  "coef_variacao_pct": 59.20412650896891,
+  "silhueta": 0.5396470348294723,
+  "grupos": {
+   "Grupo 1 (Entrada)": {
+    "n": 4,
+    "minimo": 558.2,
+    "maximo": 790.01,
+    "media": 725.1324999999999,
+    "mediana": 776.16,
+    "ids": [
+     4,
+     5,
+     8,
+     9
+    ]
+   },
+   "Grupo 2 (Intermediário)": {
+    "n": 1,
+    "minimo": 1316.01,
+    "maximo": 1316.01,
+    "media": 1316.01,
+    "mediana": 1316.01,
+    "ids": [
+     7
+    ]
+   },
+   "Grupo 3 (Premium)": {
+    "n": 1,
+    "minimo": 2290.1,
+    "maximo": 2290.1,
+    "media": 2290.1,
+    "mediana": 2290.1,
+    "ids": [
+     6
+    ]
+   }
+  }
+ },
+ "C4 - apenas pregões (5 preços)": {
+  "n": 5,
+  "ids": [
+   1,
+   3,
+   4,
+   7,
+   8
+  ],
+  "minimo": 558.2,
+  "maximo": 1316.01,
+  "media": 871.76,
+  "mediana": 769.02,
+  "desvio_padrao": 330.9381838803132,
+  "coef_variacao_pct": 37.96207486926599,
+  "silhueta": 0.5166765783029406,
+  "grupos": {
+   "Grupo 1 (Entrada)": {
+    "n": 2,
+    "minimo": 558.2,
+    "maximo": 601.41,
+    "media": 579.8050000000001,
+    "mediana": 579.8050000000001,
+    "ids": [
+     1,
+     8
+    ]
+   },
+   "Grupo 2 (Intermediário)": {
+    "n": 1,
+    "minimo": 769.02,
+    "maximo": 769.02,
+    "media": 769.02,
+    "mediana": 769.02,
+    "ids": [
+     4
+    ]
+   },
+   "Grupo 3 (Premium)": {
+    "n": 2,
+    "minimo": 1114.16,
+    "maximo": 1316.01,
+    "media": 1215.085,
+    "mediana": 1215.085,
+    "ids": [
+     3,
+     7
+    ]
+   }
+  }
+ },
+ "_nominal": {
+  "media": 938.3444444444444,
+  "mediana": 750.0,
+  "desvio_padrao": 529.3059035215626,
+  "Q1": 565.15,
+  "Q3": 1060.0,
+  "IQR": 494.85,
+  "limite_inferior": -177.1250000000001,
+  "limite_superior": 1802.275,
+  "outliers": [
+   2192.73
+  ],
+  "media_sem_outliers": 781.5462500000001,
+  "mediana_sem_outliers": 742.5
+ },
+ "_atualizado": {
+  "Q1": 601.41,
+  "Q3": 1114.16,
+  "IQR": 512.7500000000001,
+  "limite_inferior": -167.71500000000026,
+  "limite_superior": 1883.2850000000003,
+  "outliers": [
+   2290.1
+  ]
+ }
+}

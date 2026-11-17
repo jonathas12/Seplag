@@ -72,6 +72,6 @@ Os grupos formados pelo K-Means, com os preços originais e com os atualizados p
 
 ## 9. Como reproduzir
 
-Instruções em `COMO_EXECUTAR.md`, na pasta `2026`.
+Instruções no documento "Como Executar o Projeto" (PDF), na pasta `2026`.
 
 Elaboração: Jonathas G. Marques, Gerente de projetos e cientista de dados (CPPTI/SITEC/SAAS/SEPLAG), matrícula 280193.

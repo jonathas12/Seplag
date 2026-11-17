@@ -7,15 +7,16 @@ Inventário físico-financeiro dos bens intangíveis da Secretaria de Estado de 
 | Ato de designação | Portaria nº 124/2026/SEPLAG, de 22/07/2026 (DOE/MT nº 29.279, de 23/07/2026, p. 5) |
 | Norma de regência | Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ |
 | Presidente | Jonathas Gomes Marques - matrícula 280193 |
-| Membros | João Vitor de Vasconcelos - matrícula 350093; Thiago Nascimento de Vasconcelos - matrícula 348164; Vanessa Camila Souza Viana - matrícula 301112 |
+| Membros designados | João Vitor de Vasconcelos - matrícula 350093; Thiago Nascimento de Vasconcelos - matrícula 348164; Vanessa Camila Souza Viana - matrícula 301112. Recusaram-se a exercer as atividades entre 12 e 17/11/2026 (Ata 001/2026, Atualização nº 2) |
 | Prazo da Portaria | 30/10/2026 (art. 6º) - vencido |
-| Data final replanejada | 27/11/2026 |
+| Data final de entrega | 27/11/2026, sem pedido de prorrogação |
+| Progresso em 17/11/2026 | 45% (pesquisa de preços concluída em 16/11/2026) |
 | Prazo do setorial de patrimônio ao setor contábil | 15/12/2026 (IN 03/2022, art. 26, § 1º) |
 | Objeto de referência do preço do PF | Contrato nº 014/2022/SEPLAG - R$ 544,53 por PF (5º Termo de Apostilamento, SEPLAG-PRO-2026/09621) |
 
 ## Como executar
 
-Veja `COMO_EXECUTAR.md`. Em resumo, na pasta `2026`:
+Veja o documento "Como Executar o Projeto" (`COMO_EXECUTAR.pdf`). Em resumo, na pasta `2026`:
 
 1. `configurar_ambiente.bat` (Windows) ou `bash configurar_ambiente.sh` (Linux/Mac): cria o ambiente `.venv` e instala as bibliotecas.
 2. `python executar.py --tudo`: refaz mapa, análise, evidências, manifestação e documentos, sem acessar a internet.

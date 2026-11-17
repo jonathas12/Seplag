@@ -6,7 +6,7 @@ Uso, na pasta 2026, com o ambiente ativado (.venv):
     python executar.py --analise           só o notebook de análise estatística
     python executar.py --fichas            só a planilha e as fichas de evidência
     python executar.py --manifestacao      só a manifestação técnica
-    python executar.py --documentos        só os documentos .md em HTML, PDF e Word
+    python executar.py --documentos        só os documentos (atas, plano, notas) em HTML, PDF e Word
     python executar.py --pncp              baixa do PNCP os documentos oficiais de cada preço (internet)
     python executar.py --prints            tira prints das telas do PNCP e do Compras.gov.br (internet, navegador visível)
     python executar.py --atualizar-dados   consulta de novo as APIs (Compras.gov.br e Banco Central) antes do mapa

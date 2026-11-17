@@ -294,7 +294,7 @@ d.tabela(['Ref.', 'Órgão / processo', 'Nº de controle PNCP', 'Compra e item',
 d.secao('📎', 'Anexo II - Reprodução da análise')
 d.p('Toda a análise é reproduzível em qualquer computador. Na pasta `2026`, executar `configurar_ambiente` (cria o ambiente Python e instala as bibliotecas) e, em seguida, '
     '`python executar.py --tudo`. O notebook `5. Análise Estatística/Analise_Precos_PF-2026.ipynb` refaz todas as tabelas e gráficos a partir de '
-    '`4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv`. Instruções em `COMO_EXECUTAR.md`.', alinhar='left')
+    '`4. Mapa Comparativo/Precos_Ponto_Funcao_2025-2026.csv`. Instruções no documento Como Executar o Projeto (`COMO_EXECUTAR.pdf`).', alinhar='left')
 d.assinatura('Elaboração:', 'Jonathas G. Marques', 'Gerente de projetos e cientista de dados (CPPTI/SITEC/SAAS/SEPLAG)', 'Presidente da Comissão de Inventário (Portaria nº 124/2026/SEPLAG)', 'Matrícula: 280193')
 
 if __name__ == '__main__':

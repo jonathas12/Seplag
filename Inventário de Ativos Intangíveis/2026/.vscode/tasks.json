@@ -94,6 +94,25 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Documento aberto: gerar PDF e Word",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} _Modelo_Institucional/gera_documentos.py \"${file}\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Documentos: gerar ao salvar (modo observação)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath} _Modelo_Institucional/gera_documentos.py --observar",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
     }
   ]
 }

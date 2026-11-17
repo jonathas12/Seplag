@@ -1,1 +1,9 @@
-{ "recommendations": ["ms-python.python", "ms-toolsai.jupyter", "mechatroniks.excel-viewer", "tomoki1207.pdf"] }
+{
+ "recommendations": [
+  "ms-python.python",
+  "ms-toolsai.jupyter",
+  "mechatroniks.excel-viewer",
+  "tomoki1207.pdf",
+  "yzhang.markdown-all-in-one"
+ ]
+}

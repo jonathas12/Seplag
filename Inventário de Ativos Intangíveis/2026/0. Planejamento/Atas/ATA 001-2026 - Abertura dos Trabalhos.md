@@ -2,12 +2,10 @@
 
 **Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) - SEPLAG/MT - Exercício 2026**
 
-> Minuta para conferência e assinatura. Os campos entre colchetes dependem de confirmação da presidência antes da juntada ao processo no SIGADOC.
-
 | Item | Informação |
 |---|---|
-| Data de abertura | 16 de outubro de 2026 |
-| Local | [Coordenadoria de Planejamento e Projetos de TI - SEPLAG, Cuiabá/MT] |
+| Data de abertura | 13 de outubro de 2026 |
+| Local | Coordenadoria de Planejamento e Projetos de TI - SEPLAG, Cuiabá/MT |
 | Ato de designação | Portaria nº 124/2026/SEPLAG, de 22/07/2026, publicada no DOE/MT nº 29.279, de 23/07/2026, p. 5 |
 | Norma de regência | Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ |
 | Última atualização | 17 de novembro de 2026 (Atualização nº 2) |
@@ -17,22 +15,21 @@
 | Função | Servidor | Matrícula | Situação em 17/11/2026 |
 |---|---|---|---|
 | Presidente | Jonathas Gomes Marques | 280193 | Em exercício |
-| Membro | João Vitor de Vasconcelos | 350093 | Recusou-se a exercer as atividades (Atualização nº 2) |
+| Membro | João Vitor de Vasconcelos | 350093 | Recusou-se a exercer as atividades (Atualização nº 2), mas forneceu um relatório de bens em 17/11/2026 |
 | Membro | Thiago Nascimento de Vasconcelos | 348164 | Recusou-se a exercer as atividades (Atualização nº 2) |
 | Membro | Vanessa Camila Souza Viana | 301112 | Recusou-se a exercer as atividades (Atualização nº 2) |
 
-Presentes na abertura: [confirmar].
 
 ## 2. Abertura
 
-Aos dezesseis dias do mês de outubro de dois mil e vinte e seis, o presidente declarou abertos os trabalhos do inventário físico-financeiro dos bens intangíveis da SEPLAG referente ao exercício de 2026.
+Aos treze dias do mês de outubro de dois mil e vinte e seis, o presidente declarou abertos os trabalhos do inventário físico-financeiro dos bens intangíveis da SEPLAG referente ao exercício de 2026.
 
 ## 3. Registros
 
 1. **Base legal.** Lei Federal nº 4.320/1964, arts. 94 a 96; Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ; Portaria nº 124/2026/SEPLAG, que fixa a composição da comissão (art. 2º), as competências (art. 3º), o dever de colaboração das unidades (art. 4º), a disponibilidade dos membros quando convocados (art. 5º), o prazo de 30/10/2026 (art. 6º) e o reflexo das alterações de valor no FIPLAN (art. 8º).
 2. **Referência.** O ponto de partida é o Relatório Final de 2025 (Processo SEPLAG-PRO-2025/27297): 50 bens, R$ 51.264.350,29, sendo 31 softwares medidos por pontos de função (26.660 PF, R$ 44.976.518,13) e 19 licenciados (R$ 6.287.832,16).
 3. **Escopo.** Mantidos os três grupos de 2025: softwares desenvolvidos internamente, softwares licenciados e softwares licenciados mantidos pela administração.
-4. **Apontamentos de 2025.** A comissão adota como diretriz sanar os apontamentos do inventário de 2025, registrados no documento "Análise do Inventário de 2025 e Apontamentos" (PDF), entre eles a falta de detalhamento do método, que motiva a seção 4 desta ata.
+4. **Apontamentos de 2025.** A comissão adota como diretriz sanar alguns dos apontamentos do inventário de 2025, registrados no documento "Análise do Inventário de 2025 e Apontamentos" (PDF), entre eles a falta de detalhamento do método, que motiva a seção 4 desta ata.
 5. **Repositório.** Os artefatos ficam no processo do SIGADOC e, como cópia de trabalho versionada, na pasta "Inventário de Ativos Intangíveis/2026" do repositório da SEPLAG.
 
 ## 4. Metodologia do inventário
@@ -54,8 +51,8 @@ Aos dezesseis dias do mês de outubro de dois mil e vinte e seis, o presidente d
 | Etapa | O que é feito | Base | Produto e evidência |
 |---|---|---|---|
 | 1. Planejamento | Plano de trabalho, cronograma, premissas, restrições e riscos; análise do inventário anterior | Portaria, art. 3º, IV | Plano de Trabalho e Cronograma (PDF); Análise do Inventário de 2025 (PDF) |
-| 2. Identificação | Levantamento de todos os softwares sob responsabilidade da SEPLAG, com situação (em produção, em desenvolvimento, descontinuado) e titularidade | IN, art. 5º, I, e art. 6º; Portaria, art. 3º, I | Relação de bens, enviada pelas equipes gestoras da CPPTI e pelo setorial de patrimônio |
-| 3. Análise documental | Exame de contratos, aditivos, apostilamentos, licenças, termos de cessão, documentação de requisitos e linhas de base de contagem anteriores | IN, art. 6º, parágrafo único, e art. 11, caput | Ficha de cada bem com a documentação de suporte |
+| 2. Identificação | Levantamento de todos os softwares sob responsabilidade da SEPLAG (intangíveis possíveis de identificação e mensuração com segurança), com situação (em produção, em desenvolvimento, descontinuado) e titularidade | IN, art. 5º, I, e art. 6º; Portaria, art. 3º, I | Relação de bens, enviada pelas equipes gestoras da CPPTI e pelo setorial de patrimônio |
+| 3. Análise documental | Exame (se documentação disponível) de contratos, aditivos, apostilamentos, licenças, termos de cessão, documentação de requisitos e linhas de base de contagem anteriores | IN, art. 6º, parágrafo único, e art. 11, caput | Ficha de cada bem com a documentação de suporte |
 | 4. Reconhecimento | Aplicação dos critérios de reconhecimento (benefício futuro, mensuração confiável, separabilidade ou direito legal) e de exclusão (licença vencida; software interno fora de uso por obsolescência) | IN, art. 2º, § 2º, e arts. 6º a 9º | Lista de bens reconhecidos e excluídos, com o motivo |
 | 5. Mensuração do tamanho funcional | Análise de Pontos de Função conforme a ISO/IEC 20926 (IFPUG), descrita no item 4.3 | IN, art. 11, §§ 1º a 3º | Planilha de contagem por sistema |
 | 6. Preço de referência do ponto de função | Pesquisa de preços de mercado descrita no item 4.4 | IN, art. 11, § 3º; Decreto nº 1.525/2022 | Manifestação Técnica da pesquisa de preços (PDF) |
@@ -97,16 +94,14 @@ A pesquisa foi desenhada para ser rastreável do preço até a compra de origem 
 | P12. Manifestação técnica | Consolidação dos resultados, evidências e limitações. A manifestação não indica preço | Manifestação Técnica (PDF), 16/11/2026 |
 | P13. Decisão | Escolha do preço de referência pela presidência, motivada no Relatório Final | Pendente |
 
-A reprodução foi verificada: a partir dos dados gravados, em um computador com o ambiente instalado do zero, os resultados saíram idênticos. As instruções estão no documento "Como Executar o Projeto" (PDF).
-
 ## 5. Encaminhamentos da abertura
 
 | # | Encaminhamento | Responsável | Prazo |
 |---|---|---|---|
-| 1 | Solicitar às equipes gestoras de produtos e fluxos da CPPTI a relação atualizada de sistemas, sua situação e documentação | Presidente | [confirmar] |
-| 2 | Solicitar à Coordenadoria de Patrimônio e Serviços a relação de licenças e contratos vigentes | Presidente | [confirmar] |
+| 1 | Solicitar às equipes gestoras de produtos e fluxos da CPPTI a relação atualizada de sistemas, sua situação e documentação | Presidente | 12/11/2026 |
+| 2 | Solicitar à Coordenadoria de Patrimônio e Serviços a relação de licenças e contratos vigentes | Presidente | 12/11/2026 |
 | 3 | Atualizar a pesquisa de preços do ponto de função | Presidente | Concluído em 16/11/2026 |
-| 4 | Revisar as linhas de base de medição de 2025 | [confirmar] | [confirmar] |
+| 4 | Revisar as linhas de base de medição de 2025 | Presidente | 25/11/2026 |
 
 ---
 
@@ -116,7 +111,7 @@ Presentes: [confirmar].
 
 1. **Andamento.** O progresso dos trabalhos é estimado em 30%.
 2. **Prazo.** O prazo de 30/10/2026 fixado no art. 6º da Portaria nº 124/2026/SEPLAG transcorreu sem a conclusão dos trabalhos. A entrega do Relatório Final é replanejada para **27/11/2026**, data que preserva o encaminhamento do setorial de patrimônio ao setor contábil até 15/12/2026 (IN, art. 26, § 1º).
-3. **Motivos do atraso.** [Descrever: por exemplo, acúmulo com atividades ordinárias, pendência de informações das unidades.]
+3. **Motivos do atraso.** Instabilidade com a conexão de internet comprometeu todos os trabalhos, tanto do cotidiano quanto do inventário de bens intangíveis, desde 14/07/2026 (o problema é crônico e ainda ocorre) documentado em SEPLAG-DIC-2026/59558-A, somada a outras demandas concorrentes da coordenadoria.
 
 ### Encaminhamentos
 
@@ -124,8 +119,8 @@ Presentes: [confirmar].
 |---|---|---|---|
 | 1 | Elaborar plano de trabalho e cronograma até 27/11/2026 | Presidente | 16/11/2026 |
 | 2 | Concluir a pesquisa de preços e a manifestação técnica do preço de referência | Presidente | 16/11/2026 |
-| 3 | Concluir medições e levantamento dos softwares adquiridos | Comissão | 24/11/2026 |
-| 4 | Relatório Final e laudos técnicos | Comissão | 26/11/2026 |
+| 3 | Concluir medições e levantamento dos softwares adquiridos | Comissão | 25/11/2026 |
+| 4 | Relatório Final e laudos técnicos | Comissão | 27/11/2026 |
 
 ---
 
@@ -141,7 +136,7 @@ Entre 12/11/2026 e 17/11/2026, os membros da comissão designados pela Portaria 
 | Membro | Thiago Nascimento de Vasconcelos | 348164 |
 | Membro | Vanessa Camila Souza Viana | 301112 |
 
-Segundo os envolvidos, a recusa fundamenta-se no envolvimento em outras ações, como o inventário de bens móveis.
+Segundo os envolvidos em conversa no chat institucional, a recusa fundamenta-se no envolvimento em outras ações, como o inventário de bens móveis.
 
 A decisão foi unilateral: não foi publicada em ato formal nem alinhada com a presidência desta comissão. A designação feita pela Portaria nº 124/2026/SEPLAG permanece em vigor, já que a composição da comissão só se altera por novo ato da autoridade que a designou.
 
@@ -157,6 +152,8 @@ A decisão foi unilateral: não foi publicada em ato formal nem alinhada com a p
 | Prestação de contas | O inventário é documento hábil para ajuste dos valores contábeis (IN, art. 22) e compõe a prestação de contas do órgão | Atraso ou fragilidade do inventário afeta a fidedignidade do balanço patrimonial e pode gerar apontamentos dos órgãos de controle |
 
 A eventual apuração de responsabilidade pela recusa compete à autoridade competente, não a esta comissão.
+
+A Unidade Setorial de Controle Interno – UNISECI/SEPLAG, encaminhou e-mail em 13 de ago. de 2026, 11:38 para conhecimento e ciência, a Portaria nº 124/2026/SEPLAG, que institui Comissão responsável pelo inventário e pela avaliação inicial dos bens intangíveis da Secretaria de Estado de Planejamento e Gestão de Mato Grosso – SEPLAG/MT, destaca-se a importância da colaboração de todos os servidores que compõe a referida portaria.
 
 ### 3. Medidas adotadas pela presidência
 
@@ -174,11 +171,11 @@ A eventual apuração de responsabilidade pela recusa compete à autoridade comp
 
 | # | Encaminhamento | Responsável | Prazo |
 |---|---|---|---|
-| 1 | Comunicar formalmente a recusa dos membros à autoridade que designou a comissão, com cópia desta ata, e juntar ao processo | Presidente | [confirmar] |
-| 2 | Solicitar às equipes gestoras da CPPTI a documentação dos sistemas | Presidente | 17/11/2026 |
-| 3 | Receber a documentação das equipes gestoras da CPPTI e do setorial de patrimônio | Equipes da CPPTI e CPS | 19/11/2026 |
-| 4 | Concluir medições e levantamento dos softwares adquiridos | Presidente | 24/11/2026 |
-| 5 | Relatório Final, laudos técnicos e escolha do preço de referência | Presidente | 26/11/2026 |
+| 1 | Comunicar formalmente a recusa dos membros à autoridade que designou a comissão, com cópia desta ata, e juntar ao processo | Presidente | [17/11/2026] |
+| 2 | Solicitar às equipes gestoras da CPPTI a documentação dos sistemas | Presidente | 12/11/2026 |
+| 3 | Receber a documentação das equipes gestoras da CPPTI e do setorial de patrimônio | Equipes da CPPTI e CPS | 18/11/2026 |
+| 4 | Concluir medições e levantamento dos softwares adquiridos | Presidente | 25/11/2026 |
+| 5 | Relatório Final, laudos técnicos e escolha do preço de referência | Presidente | 27/11/2026 |
 | 6 | Entregar o Relatório Final ao setorial de patrimônio | Presidente | 27/11/2026 |
 
 ---

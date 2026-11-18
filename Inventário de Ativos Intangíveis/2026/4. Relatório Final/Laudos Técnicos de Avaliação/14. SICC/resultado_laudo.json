@@ -1,0 +1,41 @@
+{
+ "sigla": "SICC",
+ "pf": 666.0,
+ "preco_pf": 1215.09,
+ "vt": 809249.94,
+ "vi": 0.5,
+ "va": 1213874.91,
+ "funcoes": 154,
+ "por_tipo": {
+  "ALI": [
+   11,
+   77.0
+  ],
+  "AIE": [
+   3,
+   15.0
+  ],
+  "EE": [
+   52,
+   208.0
+  ],
+  "CE": [
+   74,
+   296.0
+  ],
+  "SE": [
+   14,
+   70.0
+  ]
+ },
+ "por_modulo": {
+  "Tabelas, segurança e auditoria": 198.0,
+  "Legado, validação e importação": 126.0,
+  "Crédito Salarial e quitações": 138.0,
+  "Emissão Digital": 91.0,
+  "Certidão de Crédito (desmembramento e cessão)": 80.0,
+  "Movimentação (bloqueio e cancelamento)": 8.0,
+  "Estorno": 20.0,
+  "Integração com a PGE": 5.0
+ }
+}

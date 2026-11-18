@@ -1,0 +1,87 @@
+---
+name: laudo-avaliacao-intangivel
+description: Elabora o Laudo Técnico de Avaliação de um software (bem intangível) da SEPLAG/MT medido por pontos de função, conforme a IN Conjunta nº 003/2022/SEPLAG/SEFAZ, no modelo institucional (HTML, PDF e Word). Inclui análise da documentação (histórias de usuário), leitura e conferência da planilha de contagem APF (abas Contagem e Funções), preenchimento dos quadros "Escopo da Contagem" e "Documentação Utilizada na Análise", cálculo VA = VT + (VT x VI), vida útil e ressalvas. Use quando o usuário pedir o laudo de avaliação, laudo técnico ou laudo de pontos de função de um sistema do inventário de bens intangíveis.
+---
+
+# Laudo Técnico de Avaliação de software (IN 03/2022, art. 20)
+
+Um laudo por sistema, sempre com este fluxo. Tom técnico e formal. Nada é inventado: cada afirmação do laudo vem da
+documentação do sistema, da planilha de contagem, da Manifestação Técnica da pesquisa de preços ou do usuário.
+Decisões do usuário (preço do PF, Valor Institucional e sua justificativa, nível de detalhe, vida útil) não são
+alteradas nem "melhoradas"; se algo parecer errado, aponte na resposta e deixe a decisão com ele.
+
+Pasta de trabalho: `Inventário de Ativos Intangíveis/2026` (as ferramentas ficam em `_Modelo_Institucional`).
+Python: `.venv/bin/python` (Linux) ou `.venv\Scripts\python.exe` (Windows).
+
+## Entradas a obter do usuário
+
+| Entrada | Exemplo (SICC) |
+|---|---|
+| Pasta da documentação (Drive ou local) | histórias de usuário em PDF |
+| Pasta da APF e versão da linha de base | `Baseline-SICC 2.0-v1.3.xlsx` (usar a última versão) |
+| Preço do PF escolhido pela comissão | R$ 1.215,09 (Manifestação Técnica de 2026) |
+| Valor Institucional e justificativa | 0,50, com o motivo dado pelo usuário |
+| Nível de detalhe da medição | Estimativa (NESMA) |
+| Situação e vida útil | relação de sistemas, aba "Avaliação 2026" |
+| Número do sistema na pasta de medições | `14. SICC` (mesma numeração de 2025) |
+
+Se faltar uma entrada que muda o valor (preço, VI, tamanho), pergunte. As demais vêm da relação de sistemas.
+
+## Passos
+
+1. **Baixar os arquivos.** No Google Drive (`download_file_content`), os binários são gravados em disco; copie-os
+   para o scratchpad com nomes legíveis. Baixe também as linhas de base anteriores, para o histórico de medições.
+   Ignore duplicatas (mesmo nome e tamanho) e arquivos `~$...` (bloqueio do Excel).
+
+2. **Analisar a documentação.**
+   `python _Modelo_Institucional/extrai_historias.py <pasta_pdfs> <scratchpad>/historias.json`
+   Leia premissas e histórias para entender finalidade, módulos, perfis, integrações e regras de negócio.
+   Guarde os alertas (aprovação sem data, módulo não preenchido, código divergente): entram na resposta e, quando
+   afetam a avaliação, nas ressalvas.
+
+3. **Ler e conferir a contagem** (aba Funções; total em `Funções!L4`). Verifique e relate ao usuário, sem alterar a
+   contagem dele:
+   - soma das funções = total da planilha;
+   - toda história de usuário tem função contada e todo grupo contado tem documentação (ou vem da linha de base anterior);
+   - funções marcadas como de outra aplicação (fora da fronteira) e AIE possivelmente repetidos;
+   - grupos de dados mantidos pelas transações (EE) sem ALI correspondente (possível subcontagem);
+   - coerência do nível: na Estimativa NESMA, ALI = 7, AIE = 5, EE = 4, CE = 4, SE = 5.
+
+4. **Preencher a aba Contagem** (nível de detalhe F7, Escopo A17, Documentação A22) sem perder gráfico e imagem da planilha:
+   `python _Modelo_Institucional/preenche_contagem.py origem.xlsx destino.xlsx campos.json`
+   Destino: `2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/<nº. SIGLA>/`.
+   O Escopo diz: tipo e nível da contagem, normas, fronteira, módulos, histórias consideradas e o que está fora do escopo.
+   A Documentação lista as histórias por módulo com versão e data, mais linhas de base anteriores usadas.
+
+5. **Escrever a configuração do laudo** em `4. Relatório Final/Laudos Técnicos de Avaliação/<nº. SIGLA>/laudo_<SIGLA>.json`,
+   copiando a estrutura de `14. SICC/laudo_SICC.json`. Campos de texto (finalidade, VI, integrações, fora do escopo)
+   são escritos a partir da documentação e das falas do usuário. `documentos` leva código, nome, versão, data,
+   aprovação e link de cada história; `modulos` mapeia número da história para módulo; `grupos_sem_historia`
+   cobre grupos da planilha sem história.
+
+6. **Gerar o laudo**:
+   `python _Modelo_Institucional/laudo_apf.py "4. Relatório Final/Laudos Técnicos de Avaliação/<nº. SIGLA>/laudo_<SIGLA>.json"`
+   O script confere a soma, calcula VT, VA e a comparação com o inventário anterior, gera os gráficos e grava HTML, PDF,
+   Word e `resultado_laudo.json`.
+
+7. **Conferir visualmente** o PDF (cards, tabelas, gráficos, anexos) e a coerência dos números com a planilha.
+
+8. **Entregar**: commit semântico em nome do usuário (sem referência a IA), push na branch de trabalho, envio dos
+   arquivos (PDF, Word e planilha preenchida) e resposta com: valores (PF, preço, VT, VI, VA), a linha para a relação
+   de sistemas (aba Avaliação 2026) e os pontos de atenção da conferência (passos 2 e 3).
+
+## Estrutura do laudo (gerada pelo script)
+
+Cards de resumo; 1 Identificação (inclui identificação contábil, art. 20, II); 2 Descrição detalhada (finalidade,
+módulos, integrações e fronteira); 3 Reconhecimento (arts. 2º, 6º, 8º, 9º e 11); 4 Metodologia (etapas, APF, níveis,
+preço do PF sem expor parâmetros do K-Means, escala do VI, fórmula); 5 Mensuração (parâmetros, escopo, tipos, módulos,
+evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, comparação com o ano anterior); 7 Vida útil;
+8 Limitações e ressalvas; 9 Conclusão e assinatura (art. 20, V); Anexo I documentação; Anexo II funções contadas.
+
+## Regras
+
+- Não citar arquivos .md no laudo; referências a documentos apontam para PDF, planilha ou link.
+- Sem travessão longo.
+- O K-Means é descrito só conceitualmente, sem parâmetros.
+- O preço é decisão da comissão: descreva de onde ele vem (grupo, preços que o compõem, data-base), sem recomendar.
+- Composição da comissão abaixo do mínimo do art. 4º: manter a ressalva enquanto a situação persistir.

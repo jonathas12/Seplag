@@ -54,6 +54,7 @@ Os resultados devem sair idênticos aos publicados. Se algum número mudar, algu
 | `python executar.py --documentos` | Refazer só os documentos (atas, plano, análises e notas) |
 | `python executar.py --pncp` | Baixar de novo do PNCP os documentos oficiais de cada preço (internet) |
 | `python executar.py --prints` | Tirar prints das telas do PNCP e do Compras.gov.br (internet, navegador visível) |
+| `python _Modelo_Institucional/laudo_apf.py "4. Relatório Final/Laudos Técnicos de Avaliação/14. SICC/laudo_SICC.json"` | Gerar o Laudo Técnico de Avaliação de um sistema a partir da planilha de contagem e do arquivo de configuração do laudo |
 | `python executar.py --atualizar-dados --tudo` | Fazer uma nova pesquisa nas APIs oficiais (internet). Os números podem mudar |
 
 ## 5. Prints das telas e documentos oficiais

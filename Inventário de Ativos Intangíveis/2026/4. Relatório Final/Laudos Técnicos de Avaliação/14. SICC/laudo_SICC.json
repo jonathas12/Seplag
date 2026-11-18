@@ -1,0 +1,515 @@
+{
+ "sigla": "SICC",
+ "nome": "Sistema Integrado de Certidão de Crédito",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 18 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SICC_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/14. SICC/Baseline-SICC 2.0-v1.3.xlsx",
+ "baseline_nome": "Baseline-SICC 2.0-v1.3.xlsx",
+ "baseline_versao": "1.3",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "tipo_bem": "Software desenvolvido internamente (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "SEPLAG/MT, equipe interna de desenvolvimento (SITEC/SEPLAG, conforme o inventário de 2025)",
+ "areas_negocio": "Gerência de Créditos de Pessoal (GCP), Superintendência de Obrigações com Pessoal e Encargos Sociais (SOPES) e Gabinete do Secretário Adjunto de Gestão de Pagamento de Pessoal, que aprovam as histórias de usuário",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Centroide do Grupo 2 do agrupamento K-Means dos 9 preços de ponto de função para Java coletados em fontes oficiais (Compras.gov.br e PNCP) e atualizados pelo IPCA até 10/2026, conforme a Manifestação Técnica da pesquisa de preços de 2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01). A escolha do grupo é decisão da comissão.",
+ "vi": 0.5,
+ "vi_justificativa": [
+  "O SICC está em produção com as funcionalidades identificadas nesta análise e sustenta o ciclo das Certidões de Crédito: validação do legado, atualização do crédito salarial, emissão digital com aprovação e assinatura, desmembramento, cessão, transferência, bloqueio, cancelamento, estorno e quitações.",
+  "O sistema ainda não entrega o valor necessário quanto às quitações e compensações integradas aos demais entes, como a Procuradoria-Geral do Estado (PGE/MT) e o Tribunal de Justiça (TJ/MT), nem o extrato de movimentação das Certidões de Crédito, o documento de certidão negativa e a validade desse extrato, solicitados pelo Secretário de Estado de Planejamento e Gestão.",
+  "Nessas condições, a inoperância do SICC provocaria prejuízo de médio impacto na atividade do órgão, o que corresponde ao nível Importante, índice 0,50, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ."
+ ],
+ "finalidade": [
+  "O Sistema Integrado de Certidão de Crédito (SICC) é a solução da SEPLAG/MT para gerir os créditos salariais devidos pelo Estado a servidores e beneficiários e as Certidões de Crédito que formalizam o reconhecimento dessas dívidas, da origem do crédito até o encerramento do seu ciclo.",
+  "O sistema reúne em uma única base os registros que antes estavam dispersos em cargas legadas: SEPLAG (dados fornecidos pela MTI em 27/08/2020), SEFAZ-MT (carga de 18/09/2024) e PGE (carga de 11/04/2025). Esses registros passam por validação do beneficiário e da obrigação antes de serem importados.",
+  "A partir do crédito salarial atualizado, o SICC gera a minuta da Certidão de Crédito, com cálculo automático do valor de desconto (emolumentos, imposto de renda e honorários) e do valor líquido. A minuta segue um fluxo hierárquico de aprovação e assinatura digital, e a certidão emitida pode ter a autenticidade conferida publicamente no Portal do Servidor.",
+  "Depois de emitida, a certidão pode ser desmembrada em frações e cedida a cessionários, ter a titularidade transferida, ser bloqueada, desbloqueada ou cancelada com amparo legal, e ter movimentações estornadas mediante solicitação e aprovação. O sistema registra as quitações administrativa e por amortização (consignação em folha vinculada ao convênio habitacional com a Caixa Econômica Federal, Decretos nº 3.122/2004 e nº 4.440/2004), consulta a API da PGE sobre compensações e encerra o ciclo do crédito quitado integralmente.",
+  "A governança é feita por perfis de acesso configuráveis por funcionalidade e ação, cadastro de autorizadores para gerar, aprovar, assinar e rejeitar minutas, amparos legais e tipos de certidão parametrizados, e trilha de auditoria."
+ ],
+ "perfis": "Escriturário Central, Escriturário Setorial, Gestor Estratégico e Administrador do Sistema",
+ "integracoes": [
+  [
+   "SEAP (Sistema Estadual de Administração de Pessoas)",
+   "Dados de pessoal e consignações usados nas quitações administrativa e por amortização",
+   "Arquivo de Interface Externa (AIE)"
+  ],
+  [
+   "API da Procuradoria-Geral do Estado (PGE/MT)",
+   "Consulta da situação de compensação das certidões",
+   "Arquivo de Interface Externa (AIE)"
+  ],
+  [
+   "Manopla",
+   "Autenticação, perfis e cadastro de pessoas e cessionários",
+   "Referenciado pelas funções de transação"
+  ],
+  [
+   "Portal do Servidor",
+   "Validação pública da autenticidade da certidão emitida",
+   "Consulta externa disponibilizada pelo SICC"
+  ]
+ ],
+ "modulos": {
+  "Tabelas, segurança e auditoria": [
+   56,
+   72,
+   103,
+   104,
+   105
+  ],
+  "Legado, validação e importação": [
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   30,
+   37,
+   38,
+   99,
+   100,
+   101
+  ],
+  "Crédito Salarial e quitações": [
+   57,
+   58,
+   69,
+   70,
+   71,
+   109
+  ],
+  "Emissão Digital": [
+   43,
+   46,
+   47,
+   49,
+   50,
+   73
+  ],
+  "Certidão de Crédito (desmembramento e cessão)": [
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65
+  ],
+  "Movimentação (bloqueio e cancelamento)": [
+   39,
+   44
+  ],
+  "Estorno": [
+   66,
+   67,
+   68
+  ],
+  "Integração com a PGE": [
+   102
+  ]
+ },
+ "grupos_sem_historia": {
+  "Pessoa Jurídica": "Tabelas, segurança e auditoria",
+  "Segurança - Usuários": "Tabelas, segurança e auditoria",
+  "Empresa": "Tabelas, segurança e auditoria",
+  "Legado Seplag": "Legado, validação e importação",
+  "Legado - SEFAZ": "Legado, validação e importação"
+ },
+ "historico_medicoes": [
+  {
+   "versao": "1.1",
+   "data": "12/12/2023",
+   "pf": 276,
+   "nivel": "Detalhada (IFPUG)",
+   "uso": "Linha de base"
+  },
+  {
+   "versao": "1.2",
+   "data": "22/12/2024",
+   "pf": 301,
+   "nivel": "Detalhada (IFPUG)",
+   "uso": "Inventários de 2024 e 2025"
+  },
+  {
+   "versao": "1.3",
+   "data": "17/11/2026",
+   "pf": 666,
+   "nivel": "Estimativa (NESMA)",
+   "uso": "Inventário de 2026 (este laudo)"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 301,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Desenvolvimento"
+ },
+ "fora_do_escopo": [
+  "Integração das quitações e compensações com a PGE/MT e o TJ/MT, além da consulta de compensação já disponível.",
+  "Extrato de movimentação das Certidões de Crédito, documento de certidão negativa e validade do extrato.",
+  "Requisitos não funcionais (desempenho, segurança, disponibilidade) e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único)."
+ ],
+ "custo_incorrido": "A comissão não dispõe da apuração dos custos incorridos no desenvolvimento do SICC por produto (art. 10, III, da IN). Por isso o bem é avaliado pela metodologia do art. 11, com a documentação funcional disponibilizada pela equipe do projeto.",
+ "documentacao_fonte": "Histórias de usuário do SICC disponibilizadas pelo analista de requisitos responsável pelo projeto, em PDF, pasta do inventário de 2026 no Google Drive.",
+ "pasta_documentacao": "https://drive.google.com/drive/folders/1rP6DJf-yxxr01-RsBXVM9Rg_H8FlyDcv",
+ "pasta_apf": "https://drive.google.com/drive/folders/1c-snqVGyjlGLQT1R6ZQXnOs_-sGujHPH",
+ "documentos": [
+  {
+   "codigo": "US0011",
+   "nome": "Imprimir consulta Legado SEPLAG",
+   "versao": "3.0",
+   "data": "20/05/2026",
+   "link": "https://drive.google.com/file/d/19szOsLDtU5vKDszwJ90s9-3EM3FLVMHw/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0012",
+   "nome": "Imprimir consulta Legado SEFAZ-MT",
+   "versao": "3.1",
+   "data": "21/05/2026",
+   "link": "https://drive.google.com/file/d/1cuKnnVtzRpTL4bHdGrXBhhwAmYXFSa6C/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0013",
+   "nome": "Imprimir consulta Legado PGE",
+   "versao": "2.1.3",
+   "data": "29/04/2026",
+   "link": "https://drive.google.com/file/d/1eIvbF7_vODhgfN30stVZhfYNwNbeS508/view",
+   "aprovacao": "05/08/2025"
+  },
+  {
+   "codigo": "US0014",
+   "nome": "Listar certidões Legado PGE",
+   "versao": "2.1.3",
+   "data": "29/04/2026",
+   "link": "https://drive.google.com/file/d/1Uj_SR2qss-8Yq0RUtExIGK5oOJC2m5cG/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0015",
+   "nome": "Detalhar certidões Legado PGE",
+   "versao": "2.1.3",
+   "data": "29/04/2026",
+   "link": "https://drive.google.com/file/d/1KmFjJvuDI09xDMlHFTDBbiEK61v2J5Qj/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0016",
+   "nome": "Listar certidões Legado SEPLAG",
+   "versao": "3.0.1",
+   "data": "24/05/2026",
+   "link": "https://drive.google.com/file/d/1lAs0mgCYoCEYRshIBW0WUMO-Wz3bH9Ju/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0017",
+   "nome": "Consultar detalhes de certidão Legado SEPLAG",
+   "versao": "3.0.1",
+   "data": "26/05/2026",
+   "link": "https://drive.google.com/file/d/1PkFEn2v_6wezKkPyCB53S5xma-b6OYZe/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0030",
+   "nome": "Importar validado",
+   "versao": "2.1.5",
+   "data": "24/03/2026",
+   "link": "https://drive.google.com/file/d/1rM8cgShds10tn26NdMG9kyDkTIjVAQCj/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0037",
+   "nome": "Listar Legado SEFAZ-MT",
+   "versao": "3.0",
+   "data": "28/05/2026",
+   "link": "https://drive.google.com/file/d/178MItRTEfx7kIZ6qU1PhInK83M_dOTNq/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0038",
+   "nome": "Detalhar Legado SEFAZ-MT",
+   "versao": "3.0.1",
+   "data": "28/05/2026",
+   "link": "https://drive.google.com/file/d/1FQnkkll1tfjcjznSFMsB9yzlzlV9f_ds/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0039",
+   "nome": "Bloquear Certidão de Crédito",
+   "versao": "2.1.7",
+   "data": "06/07/2026",
+   "link": "https://drive.google.com/file/d/1QlCMlYgPclIJKK_dNTyuJjZtRT82GnUm/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0043",
+   "nome": "Gerar Minuta de Certidão de Crédito",
+   "versao": "2.1.8",
+   "data": "25/09/2026",
+   "link": "https://drive.google.com/file/d/1_UKVKxiQPWEmYFUvCeU578IrNQGKHpSw/view",
+   "aprovacao": "29/09/2026"
+  },
+  {
+   "codigo": "US0044",
+   "nome": "Cancelar Certidão de Crédito",
+   "versao": "2.1.5",
+   "data": "31/03/2026",
+   "link": "https://drive.google.com/file/d/1J2XZhgkg6EmwMEDKFxEC7GxzNMUeOP04/view",
+   "aprovacao": "14/04/2026"
+  },
+  {
+   "codigo": "US0046",
+   "nome": "Rejeitar Minuta de Crédito Salarial",
+   "versao": "2.1.10",
+   "data": "17/07/2026",
+   "link": "https://drive.google.com/file/d/1Fq29N7SmBG8mZXqZAdT_szxpLzyiO0Gz/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0047",
+   "nome": "Listar Minutas de Certidão de Crédito",
+   "versao": "2.1.8",
+   "data": "08/07/2026",
+   "link": "https://drive.google.com/file/d/1d5hg0EQqsyo-OMPpAgPJL3buge9_I63s/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0049",
+   "nome": "Aprovar Minuta de Certidão de Crédito",
+   "versao": "2.1.8",
+   "data": "16/07/2026",
+   "link": "https://drive.google.com/file/d/15vJ07zOIi7f_TzEs8IQgGN4ZdhRPAikU/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0050",
+   "nome": "Assinar Certidão de Crédito",
+   "versao": "2.1.8",
+   "data": "16/07/2026",
+   "link": "https://drive.google.com/file/d/1klQZj_71_eJKx84BiS5YSMm2MCPdgE5o/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0056",
+   "nome": "Manter autorizadores de Certidão de Crédito",
+   "versao": "3.0.1",
+   "data": "21/07/2026",
+   "link": "https://drive.google.com/file/d/1wLNFMp26ezmflAYTL725ZUjlpwyKRmDL/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0057",
+   "nome": "Listar Crédito Salarial",
+   "versao": "2.1.67",
+   "data": "25/09/2026",
+   "link": "https://drive.google.com/file/d/1o87YzCq3NbWAxcHJkzaR3CJ-IQjuJlQl/view",
+   "aprovacao": "29/09/2026"
+  },
+  {
+   "codigo": "US0058",
+   "nome": "Atualizar Crédito Salarial",
+   "versao": "2.1.6",
+   "data": "25/09/2026",
+   "link": "https://drive.google.com/file/d/1Gx4d1ldKDUdoHbF0VX2x1IRqyTHkIX7f/view",
+   "aprovacao": "29/09/2026"
+  },
+  {
+   "codigo": "US0059",
+   "nome": "Listar Certidões de Crédito",
+   "versao": "1.1",
+   "data": "10/08/2026",
+   "link": "https://drive.google.com/file/d/1t8kAJ78wUWxKf8Bkb3wu7VaNekzQUqW1/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0060",
+   "nome": "Visualizar dados da certidão digital emitida",
+   "versao": "3.3",
+   "data": "10/08/2026",
+   "link": "https://drive.google.com/file/d/1PTFPqhcXykQjcfJ4XJfb5Pmpd6c4AvjJ/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0061",
+   "nome": "Gerenciar frações e cessionários",
+   "versao": "3.0.3",
+   "data": "10/08/2026",
+   "link": "https://drive.google.com/file/d/19MCiupLEIXrTl9ucZF-DyKhTBOHOhQt-/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0062",
+   "nome": "Visualizar desdobramento",
+   "versao": "3.0",
+   "data": "22/06/2026",
+   "link": "https://drive.google.com/file/d/10GzJCKv6RI4MfKkDa6qE9DRo4UugdrUB/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0063",
+   "nome": "Imprimir relatório de desdobramento",
+   "versao": "3.0",
+   "data": "22/06/2026",
+   "link": "https://drive.google.com/file/d/1_-yPVqxG0OBS88iRUkmink7FhIoBTRjP/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0064",
+   "nome": "Transferir titularidade de Certidão de Crédito",
+   "versao": "3.1",
+   "data": "11/08/2026",
+   "link": "https://drive.google.com/file/d/1zrP9RevVi5FNS9tv5j7E9D4MpPqUyffU/view",
+   "aprovacao": "12/08/2026"
+  },
+  {
+   "codigo": "US0065",
+   "nome": "Cadastrar cessionário",
+   "versao": "1.1",
+   "data": "09/10/2026",
+   "link": "https://drive.google.com/file/d/18wXSG-9wzxkqM4zcTQXGcNUH-gTQ7GvK/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0066",
+   "nome": "Listar movimentações estornáveis",
+   "versao": "1.1",
+   "data": "22/09/2026",
+   "link": "https://drive.google.com/file/d/1w5wzjuaM0TzdJ0hmdKu9zYES2WTQM7IS/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0067",
+   "nome": "Solicitar estorno",
+   "versao": "1.1",
+   "data": "22/09/2026",
+   "link": "https://drive.google.com/file/d/1N4ZZ50MzPX7ahz1SoOtiW2IKH5NnnCvM/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0068",
+   "nome": "Aprovar ou rejeitar solicitação de estorno",
+   "versao": "1.2",
+   "data": "09/10/2026",
+   "link": "https://drive.google.com/file/d/1u32IOilwozQ322IUSD-E9hcaWTcqDyVz/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0069",
+   "nome": "Quitação administrativa",
+   "versao": "1.0",
+   "data": "15/09/2026",
+   "link": "https://drive.google.com/file/d/1MBpsNKA9_B0YB8FAdcaPX0Vr2gj8QIN6/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0070",
+   "nome": "Quitação por amortização",
+   "versao": "1.1",
+   "data": "13/10/2026",
+   "link": "https://drive.google.com/file/d/1ZG_cQXK4d-YLRaxxbzvYKjO6zd2I2JkI/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0071",
+   "nome": "Encerramento do ciclo da Certidão de Crédito",
+   "versao": "1.1",
+   "data": "14/10/2026",
+   "link": "https://drive.google.com/file/d/1cpdS7XTnWY5LMXkdHm_tVR7harobDI-Q/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0072",
+   "nome": "Perfis de acesso",
+   "versao": "1.0",
+   "data": "30/09/2026",
+   "link": "https://drive.google.com/file/d/15S9h6klDUBxC7ZOQlKmxLU3-Cmkwqib2/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0073",
+   "nome": "Autenticar Certidão de Crédito",
+   "versao": "1.0",
+   "data": "02/10/2026",
+   "link": "https://drive.google.com/file/d/1ICkaClXqAgMFM9xpF-y545Gs5qHlLQty/view",
+   "aprovacao": "14/10/2026"
+  },
+  {
+   "codigo": "US0099",
+   "nome": "Listar validação",
+   "versao": "2.1.3",
+   "data": "06/11/2025",
+   "link": "https://drive.google.com/file/d/1UPvxjiWj56raXujtkkFVdvg85-mmwXy7/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0100",
+   "nome": "Validar beneficiário da certidão",
+   "versao": "2.1.6",
+   "data": "18/05/2026",
+   "link": "https://drive.google.com/file/d/1qUjvGg4nJIb_Kf-0IrOchi0uRWCrnpX7/view",
+   "aprovacao": "18/05/2026"
+  },
+  {
+   "codigo": "US0101",
+   "nome": "Validar obrigação",
+   "versao": "2.1.4",
+   "data": "27/04/2026",
+   "link": "https://drive.google.com/file/d/19rfdF_H1ZiUecH2wJqyJTS2Kia2AIvTn/view",
+   "aprovacao": "28/04/2026"
+  },
+  {
+   "codigo": "US0102",
+   "nome": "Chamar API da PGE",
+   "versao": "2.1.8",
+   "data": "08/05/2026",
+   "link": "https://drive.google.com/file/d/1nsCSuQqqEo1MqMDB7PU9UGGbxFm1Elz1/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0103",
+   "nome": "Manter amparo legal",
+   "versao": "2.1.7",
+   "data": "14/08/2026",
+   "link": "https://drive.google.com/file/d/14HaHv0YyPgo1W0W4Icoab8NJMb5fCgFe/view",
+   "aprovacao": ""
+  },
+  {
+   "codigo": "US0104",
+   "nome": "Manter tipos de certidão",
+   "versao": "2.1.5",
+   "data": "20/03/2026",
+   "link": "https://drive.google.com/file/d/1IqasZxBTruXLK2emJaXhHO4DQJVmaacm/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0105",
+   "nome": "Listar tipos de certidão",
+   "versao": "2.1.6",
+   "data": "20/03/2026",
+   "link": "https://drive.google.com/file/d/1vxhrcYeTaE5_kfLfaK9wj77JQi2ZoKN4/view",
+   "aprovacao": "29/05/2026"
+  },
+  {
+   "codigo": "US0109",
+   "nome": "Criar obrigação",
+   "versao": "2.1.9",
+   "data": "16/07/2026",
+   "link": "https://drive.google.com/file/d/1qMi_d8PdwKlbBO63CZm9G3qJ7D8-pxk_/view",
+   "aprovacao": ""
+  }
+ ],
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG"
+ },
+ "ressalva_comissao": "Os três membros designados pela Portaria nº 124/2026/SEPLAG recusaram-se a exercer as atividades entre 12 e 17/11/2026 (Ata 001/2026, Atualização nº 2). Este laudo foi elaborado e é assinado pelo presidente da comissão, abaixo da composição mínima do art. 4º da IN, limitação registrada também no Relatório Final."
+}

@@ -197,15 +197,32 @@ def gerar(caminho_cfg):
     pasta = caminho_cfg.parent
     cfg = json.loads(caminho_cfg.read_text(encoding='utf-8'))
     medida = cfg.get('medida', 'PF IFPUG')
-    cab, funcoes = ler_baseline(pasta / cfg['baseline'], medida)
-    atribuir_modulos(funcoes, cfg)
+    comps = []
+    if cfg.get('composicao'):  # tamanho composto por partes (ex.: medição indicativa + projetos medidos em planilha)
+        funcoes = []
+        for comp in cfg['composicao']:
+            if comp.get('planilha'):
+                cab_i, f_i = ler_baseline(pasta / comp['planilha'], comp.get('medida', 'PF IFPUG'))
+                soma = round(sum(f['pf'] for f in f_i), 2)
+                if cab_i['pf_planilha'] not in (None, '') and abs(float(cab_i['pf_planilha']) - soma) > 0.01:
+                    raise SystemExit(f'{comp["nome"]}: soma das funções ({soma}) difere do total da planilha ({cab_i["pf_planilha"]}).')
+                for f in f_i:
+                    f['modulo'], f['us'] = comp['nome'], None
+                funcoes += f_i
+                comps.append(dict(comp, pf=soma, cab=cab_i, _funcoes=f_i))
+            else:
+                comps.append(dict(comp, cab=None))
+        cab = next(c['cab'] for c in reversed(comps) if c['cab'])
+    else:
+        cab, funcoes = ler_baseline(pasta / cfg['baseline'], medida)
+        atribuir_modulos(funcoes, cfg)
     graf = pasta / 'graficos'
     graf.mkdir(exist_ok=True)
     fus = cfg.get('formato_us', 'US{:04d}')
 
     sig, nome = cfg['sigla'], cfg['nome']
-    pf_total = round(sum(f['pf'] for f in funcoes), 2)
-    if cab['pf_planilha'] not in (None, '') and abs(float(cab['pf_planilha']) - pf_total) > 0.01:
+    pf_total = round(sum(c['pf'] for c in comps), 2) if comps else round(sum(f['pf'] for f in funcoes), 2)
+    if not comps and cab['pf_planilha'] not in (None, '') and abs(float(cab['pf_planilha']) - pf_total) > 0.01:
         raise SystemExit(f'Soma das funções ({pf_total}) difere do total da planilha ({cab["pf_planilha"]}).')
     preco, vi = cfg['preco_pf'], cfg['vi']
     vt_bruto = pf_total * preco  # sem arredondamento intermediário, como na planilha de avaliação
@@ -228,7 +245,7 @@ def gerar(caminho_cfg):
         por_tipo[f['tipo']][1] += f['pf']
     por_tipo = {k: v for k, v in por_tipo.items() if v[0]}
     por_mod = collections.OrderedDict()
-    for m in list(cfg['modulos']) + ['Outros']:
+    for m in ([c['nome'] for c in comps if c['cab']] if comps else list(cfg['modulos'])) + ['Outros']:
         itens = [f for f in funcoes if f['modulo'] == m]
         if itens:
             por_mod[m] = itens
@@ -241,11 +258,18 @@ def gerar(caminho_cfg):
         manuts[k][1] += f['pf_ifpug']
         manuts[k][2] += f['pf']
     so_inclusao = list(manuts) == ['I']
+    total_func = sum(v[0] for v in por_tipo.values())
+    comps_planilha = [c for c in comps if c['cab']]
+    n_hist = (10 + 2 * len(comps_planilha)) if comps else 11 + (not so_inclusao)
 
-    grafico_barras_h([NOME_TIPO[t] for t in por_tipo], [v[1] for v in por_tipo.values()],
-                     f'Tamanho funcional do {sig} por tipo de função', graf / 'G1_pf_por_tipo.png')
-    grafico_barras_h(list(por_mod), [sum(f['pf'] for f in v) for v in por_mod.values()],
-                     f'Tamanho funcional do {sig} por módulo', graf / 'G2_pf_por_modulo.png')
+    if comps:
+        grafico_barras_h([c.get('rotulo', c['nome']) for c in comps], [c['pf'] for c in comps],
+                         f'Composição do tamanho funcional do {sig}', graf / 'G1_composicao.png')
+    else:
+        grafico_barras_h([NOME_TIPO[t] for t in por_tipo], [v[1] for v in por_tipo.values()],
+                         f'Tamanho funcional do {sig} por tipo de função', graf / 'G1_pf_por_tipo.png')
+        grafico_barras_h(list(por_mod), [sum(f['pf'] for f in v) for v in por_mod.values()],
+                         f'Tamanho funcional do {sig} por módulo', graf / 'G2_pf_por_modulo.png')
     grafico_evolucao(cfg['historico_medicoes'], graf / 'G3_evolucao_baseline.png',
                      f'Evolução do tamanho funcional do {sig} nos inventários' if cfg['historico_medicoes'][0].get('inventario') else f'Evolução do tamanho funcional do {sig} nas medições')
 
@@ -276,7 +300,7 @@ def gerar(caminho_cfg):
         ['Base legal de uso', cfg['base_legal']] if cfg.get('base_legal') else None,
         ['Identificação contábil (IN, art. 20, II)', 'Ativo intangível, grupo Softwares (PCASP 1.2.4.1). Conta detalhada conforme a Instrução de Serviço nº 022/2020-SACE/SEFAZ, item 4.7, a confirmar pelo setor contábil'],
         ['Vida útil', cfg['vida_util']],
-        ['Planilha de contagem', f'{cfg["baseline_nome"]} ({"revisão" if cab["revisao"] else "criação"} de {revisao:%d/%m/%Y})'],
+        ['Planilha de contagem', cfg.get('planilha_identificacao') or f'{cfg["baseline_nome"]} ({"revisão" if cab["revisao"] else "criação"} de {revisao:%d/%m/%Y})'],
     ], legenda='Tabela 1 - Identificação do bem avaliado', larguras=[30, 70])
     d.blocos[-1] = d.blocos[-1][:2] + ([l for l in d.blocos[-1][2] if l],) + d.blocos[-1][3:]
 
@@ -285,17 +309,28 @@ def gerar(caminho_cfg):
     for par in cfg['finalidade']:
         d.p(par)
     d.subsecao('2.1 Módulos e funcionalidades')
-    linhas = []
-    for m, itens in por_mod.items():
-        uss = sorted({f['us'] for f in itens if f['us']})
-        linhas.append([m, ', '.join(fus.format(u) for u in uss) or 'Funções sem história de usuário associada',
-                       num(len(itens)), npf(sum(f['pf'] for f in itens))])
-    d.tabela(['Módulo', 'Histórias de usuário', 'Funções', 'PF'], linhas,
-             legenda='Tabela 2 - Módulos do sistema, histórias de usuário e tamanho funcional', numericas=[2, 3],
-             larguras=[30, 50, 10, 10])
+    if cfg.get('modulos_tabela'):
+        d.tabela(['Módulo', 'Funcionalidades'], cfg['modulos_tabela'], legenda='Tabela 2 - Módulos do sistema', larguras=[28, 72])
+    else:
+        linhas = []
+        for m, itens in por_mod.items():
+            uss = sorted({f['us'] for f in itens if f['us']})
+            linhas.append([m, ', '.join(fus.format(u) for u in uss) or 'Funções sem história de usuário associada',
+                           num(len(itens)), npf(sum(f['pf'] for f in itens))])
+        d.tabela(['Módulo', 'Histórias de usuário', 'Funções', 'PF'], linhas,
+                 legenda='Tabela 2 - Módulos do sistema, histórias de usuário e tamanho funcional', numericas=[2, 3],
+                 larguras=[30, 50, 10, 10])
     d.subsecao('2.2 Integrações e fronteira da aplicação')
     d.tabela(['Sistema ou serviço', 'Uso pelo ' + sig, 'Tratamento na contagem'], cfg['integracoes'],
              legenda='Tabela 3 - Sistemas com que o bem se relaciona', larguras=[28, 44, 28])
+    if cfg.get('contratos'):
+        d.subsecao('2.3 Contratos e direitos sobre o bem')
+        for par in cfg.get('texto_contratos_antes', []):
+            d.p(par)
+        d.tabela(['Instrumento', 'Objeto', 'Vigência ou data', 'Valor'], cfg['contratos'],
+                 legenda='Tabela 3A - Contratos relacionados ao bem', larguras=[20, 46, 16, 18])
+        for par in cfg.get('texto_contratos', []):
+            d.p(par)
 
     # 3. Enquadramento
     d.secao('⚖️', '3. Reconhecimento como ativo intangível')
@@ -305,7 +340,7 @@ def gerar(caminho_cfg):
         ['Em uso, sem obsolescência', 'art. 2º, § 2º, II', cfg.get('uso', f'{cfg["situacao"]}, com histórias de usuário revisadas em {cfg["exercicio"]}')],
         ['Gerador de benefícios ou potencial de serviços', 'art. 6º, parágrafo único, I', cfg['beneficio']],
         ['Mensuração confiável', 'art. 6º, parágrafo único, II', f'Tamanho funcional de {npf(pf_total)} PF medido por método normatizado (ISO/IEC 20926{"" if detalhada else " e ISO/IEC 24570"})'],
-        ['Fase de desenvolvimento, não de pesquisa', 'arts. 8º e 9º', 'Funcionalidades especificadas e em produção.' + (f' {txt_aprov}' if txt_aprov else '')],
+        ['Fase de desenvolvimento, não de pesquisa', 'arts. 8º e 9º', cfg.get('fase_texto', 'Funcionalidades especificadas e em produção.' + (f' {txt_aprov}' if txt_aprov else ''))],
         ['Documentação de custos insuficiente', 'art. 11', cfg['custo_incorrido']],
     ], legenda='Tabela 4 - Critérios de reconhecimento e enquadramento na metodologia do art. 11', larguras=[28, 20, 52])
     d.caixa('conclusao', 'Conclusão do reconhecimento:',
@@ -353,7 +388,9 @@ def gerar(caminho_cfg):
         ['Detalhada (IFPUG)', 'Identifica todas as funções e calcula a complexidade de cada uma por tipos de dados e registros', 'Especificação completa'],
     ], legenda='Tabela 7 - Níveis de detalhe da contagem', larguras=[20, 52, 28],
         destaque_linhas=[i for i, n in enumerate(niveis) if n in cfg['nivel_contagem']])
-    if detalhada:
+    if cfg.get('texto_nivel'):
+        d.p(cfg['texto_nivel'])
+    elif detalhada:
         d.p(f'O {sig} foi medido no nível **{cfg["nivel_contagem"]}**. Nesse nível, a complexidade de cada função (baixa, média '
             'ou alta) é determinada pelas tabelas do IFPUG: nas funções de dados, pela quantidade de tipos de dados (TD) e de '
             'tipos de registro (TR); nas funções de transação, pela quantidade de tipos de dados e de arquivos referenciados (AR). '
@@ -383,49 +420,21 @@ def gerar(caminho_cfg):
 
     # 5. Mensuração
     d.secao('📊', '5. Mensuração do tamanho funcional')
-    d.tabela(['Item', 'Definição na contagem'], [
-        ['Propósito', cfg.get('proposito', 'Criar a linha de base do produto para planejamento, acompanhamento, estimativa de custos e avaliação do ativo')],
-        ['Tipo de contagem', cab['tipo']],
-        ['Nível de detalhe', cab['nivel']],
-        ['Medida adotada', f'{medida} (total da aba Funções)'],
-        ['Versão do manual', f'IFPUG CPM {cab["guia"]}'],
-        ['Responsável e revisor', f'{cab["responsavel"]} / {cab["revisor"] or "não informado"}'],
-        ['Criação e última revisão', f'{cab["criacao"]:%d/%m/%Y}' + (f' e {cab["revisao"]:%d/%m/%Y}' if cab['revisao'] else ' (sem data de revisão)')],
-        ['Fronteira', 'Aplicação ' + sig + '. Os dados de outros sistemas apenas lidos foram contados como AIE (Tabela 3)'],
-        ['Documentação', cfg.get('documentacao_resumo', f'{len(docs)} histórias de usuário (Anexo I)')],
-    ], legenda='Tabela 9 - Parâmetros da contagem', larguras=[28, 72])
-    d.p('O escopo da contagem registrado na planilha é o seguinte:')
-    d.lista([re.sub(r'^\d+\s*-\s*', '', l).rstrip(';') for l in cab['escopo'].splitlines() if l.strip()])
-    total_func = sum(v[0] for v in por_tipo.values())
-    d.tabela(['Tipo de função', 'Quantidade', 'PF por função', 'Total de PF', '% do total'],
-             [[NOME_TIPO[t], num(q), num(p / q, 1), npf(p), pct(p / pf_total)] for t, (q, p) in por_tipo.items()] +
-             [['Total', num(total_func), '', npf(pf_total), '100,0%']],
-             legenda=f'Tabela 10 - Tamanho funcional do {sig} por tipo de função', numericas=[1, 2, 3, 4],
-             larguras=[38, 14, 16, 16, 16], destaque_linhas=[len(por_tipo)])
-    d.figura(graf / 'G1_pf_por_tipo.png', f'Figura 1 - Tamanho funcional do {sig} por tipo de função')
-    d.p(f'As funções de dados somam {npf(dados_pf)} PF ({pct(dados_pf / pf_total)}) e as de transação, '
-        f'{npf(pf_total - dados_pf)} PF ({pct(1 - dados_pf / pf_total)}).' + (' ' + cfg['texto_tipos'] if cfg.get('texto_tipos') else ''))
-    if not so_inclusao:
-        d.subsecao('5.1 Composição do tamanho por tipo de manutenção')
-        d.p(cfg.get('texto_manutencao', 'A planilha registra, para cada função, o tipo de manutenção. A medida adotada aplica os '
-                    'deflatores do Roteiro de Métricas do SISP a cada tipo:'))
-        d.tabela(['Tipo de manutenção', 'Funções', 'PF IFPUG', medida],
-                 [[NOME_MANUT.get(k, k), num(q), npf(pi), npf(pm)] for k, (q, pi, pm) in manuts.items()] +
-                 [['Total', num(sum(v[0] for v in manuts.values())), npf(sum(v[1] for v in manuts.values())), npf(pf_total)]],
-                 legenda='Tabela 11 - Tamanho por tipo de manutenção', numericas=[1, 2, 3], larguras=[40, 16, 22, 22],
-                 destaque_linhas=[len(manuts)])
-    sec = 2 if not so_inclusao else 1
-    d.figura(graf / 'G2_pf_por_modulo.png', f'Figura 2 - Tamanho funcional do {sig} por módulo')
+    if comps:
+        _secao5_composta(d, cfg, comps, pf_total, graf, sig)
+    else:
+        _secao5_simples(d, cfg, cab, medida, sig, docs, por_tipo, total_func, pf_total, dados_pf, so_inclusao, manuts, graf)
+    sec = (len([c for c in comps if c['cab']]) + 1) if comps else (2 if not so_inclusao else 1)
     d.subsecao(f'5.{sec} Evolução das medições')
     h = cfg['historico_medicoes']
     if h[0].get('inventario'):
         d.tabela(['Inventário', 'Data da mensuração', 'Situação', 'Nível', 'PF', 'Observação'],
                  [[str(x['inventario']), x['data'], x.get('situacao', ''), x['nivel'], npf(x['pf']), x.get('uso', '')] for x in h],
-                 legenda=f'Tabela {11 + (not so_inclusao)} - Medições do {sig} por inventário', numericas=[4],
+                 legenda=f'Tabela {n_hist} - Medições do {sig} por inventário', numericas=[4],
                  larguras=[11, 13, 15, 17, 10, 34], destaque_linhas=[len(h) - 1], fonte=cfg.get('fonte_historico'))
     else:
         d.tabela(['Versão', 'Data', 'Nível', 'PF', 'Uso'], [[x['versao'], x['data'], x['nivel'], npf(x['pf']), x['uso']] for x in h],
-                 legenda=f'Tabela {11 + (not so_inclusao)} - Medições do ' + sig, numericas=[3], larguras=[10, 14, 24, 12, 40], destaque_linhas=[len(h) - 1])
+                 legenda=f'Tabela {n_hist} - Medições do ' + sig, numericas=[3], larguras=[10, 14, 24, 12, 40], destaque_linhas=[len(h) - 1])
     d.figura(graf / 'G3_evolucao_baseline.png', f'Figura 3 - Evolução do tamanho funcional do {sig}')
     ant = h[-2]['pf']
     if h[0].get('inventario'):
@@ -437,14 +446,14 @@ def gerar(caminho_cfg):
             f'(+{pct(pf_total / ant - 1)}). ' + cfg.get('texto_evolucao', ''))
 
     # 6. Valor
-    nt = 12 + (not so_inclusao)
+    nt = n_hist + 1
     d.secao('🧮', '6. Determinação do valor')
     d.subsecao('6.1 Valor Institucional do ' + sig)
     for par in cfg['vi_justificativa']:
         d.p(par)
     d.subsecao('6.2 Cálculo')
     d.tabela(['Componente', 'Fórmula', 'Valor'], [
-        ['Tamanho funcional', f'Planilha de contagem, aba Funções ({medida})', f'{npf(pf_total)} PF'],
+        ['Tamanho funcional', cfg.get('formula_tamanho', f'Planilha de contagem, aba Funções ({medida})'), f'{npf(pf_total)} PF'],
         ['Preço do ponto de função', cfg.get('fonte_preco_curta', 'Manifestação Técnica da pesquisa de preços (data-base 10/2026)'), brl(preco)],
         ['Valor do tamanho do ativo (VT)', f'{npf(pf_total)} x {brl(preco)}', brl(vt)],
         ['Valor Institucional (VI)', f'{rotulo_vi} (art. 11, § 4º)', num(vi, 2)],
@@ -482,12 +491,16 @@ def gerar(caminho_cfg):
 
     # 7. Vida útil
     d.secao('📅', '7. Vida útil')
-    d.p(f'A vida útil do {sig} é classificada como **{cfg["vida_util"].lower()}** (IN, arts. 14 e 15). Pelos fatores do '
+    if cfg.get('texto_vida_util'):
+        for par in cfg['texto_vida_util']:
+            d.p(par)
+    else:
+      d.p(f'A vida útil do {sig} é classificada como **{cfg["vida_util"].lower()}** (IN, arts. 14 e 15). Pelos fatores do '
         'art. 14, § 1º: o uso é contínuo e previsto por tempo indeterminado; o sistema é mantido pela SEPLAG e pode '
         'ser gerido por outra equipe, pois o código-fonte pertence ao Estado; não há contrato de licença ou cessão que limite '
         f'o uso; a tecnologia ({cfg["tecnologia"]}) segue suportada; e o sistema continua em evolução. Não há limite previsível '
         'para o período em que o bem fornecerá potencial de serviços.')
-    d.p('Por isso o bem não é amortizado (art. 17) e deve passar anualmente pelo teste de redução ao valor recuperável (art. 18). '
+      d.p('Por isso o bem não é amortizado (art. 17) e deve passar anualmente pelo teste de redução ao valor recuperável (art. 18). '
         'A vida útil remanescente exigida pelo art. 20, IV, não se aplica, por se tratar de vida útil indefinida.')
 
     # 8. Ressalvas
@@ -539,7 +552,7 @@ def gerar(caminho_cfg):
                  legenda='Tabela A2 - Histórias de usuário' + (': última versão do histórico de revisões e data da aprovação pelas áreas de negócio' if tem_aprov else ''),
                  larguras=[10, 32, 26, 8, 11, 13] if tem_aprov else [10, 40, 30, 9, 11])
     d.secao('📎', 'Anexo II - Funções contadas')
-    d.p(f'Relação das {total_func} funções da aba Funções da planilha {cfg["baseline_nome"]}, agrupadas por módulo, '
+    d.p(cfg.get('texto_anexo2') or f'Relação das {total_func} funções da aba Funções da planilha {cfg["baseline_nome"]}, agrupadas por módulo, '
         f'com a contribuição de cada uma na medida adotada ({medida}).')
     for m, itens in por_mod.items():
         d.subsecao(f'{m} ({npf(sum(f["pf"] for f in itens))} PF)')
@@ -560,6 +573,85 @@ def gerar(caminho_cfg):
               'por_modulo': {m: round(sum(f['pf'] for f in v), 2) for m, v in por_mod.items()}}
     (pasta / 'resultado_laudo.json').write_text(json.dumps(resumo, ensure_ascii=False, indent=1), encoding='utf-8')
     return saidas, resumo
+
+
+def _secao5_simples(d, cfg, cab, medida, sig, docs, por_tipo, total_func, pf_total, dados_pf, so_inclusao, manuts, graf):
+    d.tabela(['Item', 'Definição na contagem'], [
+        ['Propósito', cfg.get('proposito', 'Criar a linha de base do produto para planejamento, acompanhamento, estimativa de custos e avaliação do ativo')],
+        ['Tipo de contagem', cab['tipo']],
+        ['Nível de detalhe', cab['nivel']],
+        ['Medida adotada', f'{medida} (total da aba Funções)'],
+        ['Versão do manual', f'IFPUG CPM {cab["guia"]}'],
+        ['Responsável e revisor', f'{cab["responsavel"]} / {cab["revisor"] or "não informado"}'],
+        ['Criação e última revisão', f'{cab["criacao"]:%d/%m/%Y}' + (f' e {cab["revisao"]:%d/%m/%Y}' if cab['revisao'] else ' (sem data de revisão)')],
+        ['Fronteira', 'Aplicação ' + sig + '. Os dados de outros sistemas apenas lidos foram contados como AIE (Tabela 3)'],
+        ['Documentação', cfg.get('documentacao_resumo', f'{len(docs)} histórias de usuário (Anexo I)')],
+    ], legenda='Tabela 9 - Parâmetros da contagem', larguras=[28, 72])
+    d.p('O escopo da contagem registrado na planilha é o seguinte:')
+    d.lista([re.sub(r'^\d+\s*-\s*', '', l).rstrip(';') for l in cab['escopo'].splitlines() if l.strip()])
+    d.tabela(['Tipo de função', 'Quantidade', 'PF por função', 'Total de PF', '% do total'],
+             [[NOME_TIPO[t], num(q), num(p / q, 1), npf(p), pct(p / pf_total)] for t, (q, p) in por_tipo.items()] +
+             [['Total', num(total_func), '', npf(pf_total), '100,0%']],
+             legenda=f'Tabela 10 - Tamanho funcional do {sig} por tipo de função', numericas=[1, 2, 3, 4],
+             larguras=[38, 14, 16, 16, 16], destaque_linhas=[len(por_tipo)])
+    d.figura(graf / 'G1_pf_por_tipo.png', f'Figura 1 - Tamanho funcional do {sig} por tipo de função')
+    d.p(f'As funções de dados somam {npf(dados_pf)} PF ({pct(dados_pf / pf_total)}) e as de transação, '
+        f'{npf(pf_total - dados_pf)} PF ({pct(1 - dados_pf / pf_total)}).' + (' ' + cfg['texto_tipos'] if cfg.get('texto_tipos') else ''))
+    if not so_inclusao:
+        d.subsecao('5.1 Composição do tamanho por tipo de manutenção')
+        d.p(cfg.get('texto_manutencao', 'A planilha registra, para cada função, o tipo de manutenção. A medida adotada aplica os '
+                    'deflatores do Roteiro de Métricas do SISP a cada tipo:'))
+        d.tabela(['Tipo de manutenção', 'Funções', 'PF IFPUG', medida],
+                 [[NOME_MANUT.get(k, k), num(q), npf(pi), npf(pm)] for k, (q, pi, pm) in manuts.items()] +
+                 [['Total', num(sum(v[0] for v in manuts.values())), npf(sum(v[1] for v in manuts.values())), npf(pf_total)]],
+                 legenda='Tabela 11 - Tamanho por tipo de manutenção', numericas=[1, 2, 3], larguras=[40, 16, 22, 22],
+                 destaque_linhas=[len(manuts)])
+    d.figura(graf / 'G2_pf_por_modulo.png', f'Figura 2 - Tamanho funcional do {sig} por módulo')
+
+
+def _secao5_composta(d, cfg, comps, pf_total, graf, sig):
+    """Tamanho composto: tabela de componentes e, para cada componente com planilha, parâmetros e tipos de função."""
+    for par in cfg.get('texto_composicao', []):
+        d.p(par)
+    d.tabela(['Componente', 'Fonte', 'Nível', 'Medida', 'PF'],
+             [[c['nome'], c['fonte'], c['nivel'], c.get('medida', 'PF IFPUG') if c['cab'] else c.get('medida', 'Indicativa'), npf(c['pf'])] for c in comps] +
+             [['Total', '', '', '', npf(pf_total)]],
+             legenda=f'Tabela 9 - Composição do tamanho funcional do {sig}', numericas=[4], larguras=[30, 30, 15, 13, 12],
+             destaque_linhas=[len(comps)])
+    d.figura(graf / 'G1_composicao.png', f'Figura 1 - Composição do tamanho funcional do {sig}')
+    nt, k = 10, 1
+    for c in comps:
+        if not c['cab']:
+            continue
+        cab = c['cab']
+        d.subsecao(f'5.{k} {c["nome"]}')
+        k += 1
+        d.tabela(['Item', 'Definição na contagem'], [
+            ['Projeto', cab['projeto']],
+            ['Tipo de contagem', cab['tipo']],
+            ['Nível de detalhe', cab['nivel']],
+            ['Medida adotada', f'{c.get("medida", "PF IFPUG")} (total da aba Funções: {npf(c["pf"])} PF; PF IFPUG: {npf(float(cab["pf_ifpug"] or 0))})'],
+            ['Responsável e revisor', f'{cab["responsavel"]} / {cab["revisor"] or "não informado"}'],
+            ['Criação e última revisão', f'{cab["criacao"]:%d/%m/%Y}' + (f' e {cab["revisao"]:%d/%m/%Y}' if cab['revisao'] else ' (sem data de revisão)')],
+            ['Escopo registrado', '; '.join(l.strip() for l in (cab['escopo'] or '').splitlines() if l.strip())],
+            ['Planilha', c['planilha'].split('/')[-1]],
+        ], legenda=f'Tabela {nt} - Parâmetros da contagem: {c["nome"]}', larguras=[26, 74])
+        nt += 1
+        for par in c.get('texto', []):
+            d.p(par)
+        man = collections.OrderedDict()
+        for f in c['_funcoes']:
+            key = (f['tipo'], f['manutencao'] or 'sem tipo')
+            man.setdefault(key, [0, 0.0, 0.0])
+            man[key][0] += 1
+            man[key][1] += f['pf_ifpug']
+            man[key][2] += f['pf']
+        d.tabela(['Tipo de função', 'Manutenção', 'Funções', 'PF IFPUG', c.get('medida', 'PF IFPUG')],
+                 [[NOME_TIPO[t], NOME_MANUT.get(m, m), num(q), npf(pi), npf(pm)] for (t, m), (q, pi, pm) in man.items()] +
+                 [['Total', '', num(sum(v[0] for v in man.values())), npf(sum(v[1] for v in man.values())), npf(c['pf'])]],
+                 legenda=f'Tabela {nt} - Funções por tipo e manutenção: {c["nome"]}', numericas=[2, 3, 4],
+                 larguras=[34, 22, 12, 16, 16], destaque_linhas=[len(man)])
+        nt += 1
 
 
 def _secao_custo(d, cp, sig, pf_total, preco, vt, va, sub, nt, graf):

@@ -1,0 +1,307 @@
+{
+ "sigla": "SIAG",
+ "nome": "Sistema Integrado de Aquisições Governamentais e Contratos",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 18 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIAG_2026",
+ "baseline_nome": "planilhas do Integrador APLIC (v1.1 e v2.0)",
+ "planilha_identificacao": "Composição de medições: Laudo de Pontos de Função da OS 14742, v1.1 (16/08/2023), e planilhas do Integrador APLIC v1.1 e v2.0 (revisão de 01/06/2026)",
+ "composicao": [
+  {
+   "nome": "SIAG: escopo de aquisições e contratos",
+   "rotulo": "SIAG (indicativa, 2023)",
+   "pf": 4095,
+   "nivel": "Indicativa (NESMA)",
+   "medida": "35 PF por ALI e 15 PF por AIE",
+   "fonte": "Laudo de Pontos de Função da OS 14742, v1.1, de 16/08/2023"
+  },
+  {
+   "nome": "Integrador APLIC: desenvolvimento",
+   "rotulo": "Integrador APLIC (v1.1)",
+   "planilha": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/26. SIAG/APF-Aplic_Integrador-v1.1.xlsx",
+   "medida": "PF Local da FS",
+   "nivel": "Estimativa (NESMA)",
+   "fonte": "APF-Aplic_Integrador-v1.1",
+   "texto": [
+    "Desenvolvimento do módulo integrador para envio de dados e documentos das aquisições ao APLIC - Licitações do TCE/MT: remessas, processos, Ata de Registro de Preços, alertas e prazos e painel inicial. As funções de dados Remessa e Ata de Registro de Preços alteram arquivos já existentes no SIAG e entram com alteração a 50%."
+   ]
+  },
+  {
+   "nome": "Integrador APLIC: melhoria (ata e unidades)",
+   "rotulo": "Integrador APLIC (v2.0)",
+   "planilha": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/26. SIAG/APF-Aplic_Integrador-v2.0 - Ata e Unidades.xlsx",
+   "medida": "PF Local da FS",
+   "nivel": "Estimativa (NESMA)",
+   "fonte": "APF-Aplic_Integrador-v2.0 - Ata e Unidades",
+   "texto": [
+    "Melhoria do integrador: inclusão de unidades de fornecimento e de medida, da minuta da ata e da carga desses dados, e alteração a 50% de funções de remessa e processos da versão anterior."
+   ]
+  }
+ ],
+ "texto_composicao": [
+  "Os 4.095 PF resultam da análise indicativa de pontos de função feita em 2023 (OS 14742, laudo versão 1.1, de 16/08/2023, processo SEPLAG-PRO-2023/05868) para o escopo funcional de um sistema de aquisições e contratos: fases interna e externa da aquisição, pregões presencial e eletrônico, gestão de atas de registro de preços, gestão de contratos, cadastro de fornecedores (E-Fornecedor) e acesso ao cidadão. A comissão adotou essa medição como tamanho funcional do SIAG, que atende esse mesmo escopo, porque desde então o sistema recebeu apenas serviços de sustentação, que não alteram o tamanho funcional nem compõem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Em 2026, o sistema recebeu o Integrador APLIC e melhorias associadas, que ampliaram o tamanho funcional. As duas medições da comissão, na medida PF Local da FS, somam 144,5 PF. O tamanho total é a soma das três parcelas (Tabela 9)."
+ ],
+ "nivel_contagem": "Indicativa e Estimativa (NESMA)",
+ "roteiro_sisp": "2.3",
+ "texto_nivel": "O tamanho do SIAG combina dois níveis de detalhe. A parcela de 4.095 PF é indicativa (NESMA), calculada pela regra do art. 11, § 2º, da IN, que atribui 35 PF a cada ALI e 15 PF a cada AIE do escopo. As parcelas do Integrador APLIC são estimativas (NESMA), com 7 PF por ALI, 4 PF por EE e CE e 5 PF por SE, sobre as quais incidem os deflatores do Roteiro de Métricas do SISP 2.3 para funções alteradas (50%) e para carga de dados.",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "tipo_bem": "Software fornecido e mantido por terceiro (AZ Informática Ltda.), de código-fonte fechado, com entrega dos códigos-fonte e cessão dos resultados ao Estado prevista em contrato; avaliado pela metodologia do art. 11 da IN",
+ "unidade_desenvolvimento": "AZ Informática Ltda., fornecedora exclusiva, por contratos de fornecimento, manutenção e customização; gestão do sistema pela SAAG/SEPLAG",
+ "areas_negocio": "SAAG/SEPLAG, por meio da Superintendência de Sistemas e Planejamento de Aquisições (SSPA) e da Coordenadoria de Sistemas de Aquisições e Contratos (CSAC); usuários de todos os órgãos e entidades do Poder Executivo",
+ "perfis": "Servidores dos órgãos e entidades que atuam no planejamento das aquisições, nas licitações e na gestão de atas e contratos; fornecedores, no cadastro (E-Fornecedor); cidadãos, nas consultas públicas",
+ "base_legal": "Lei nº 14.133/2021, regulamentada no Estado pelo Decreto nº 1.525/2022; Instrução Normativa nº 012/2023/SEPLAG, que dispõe sobre a obrigatoriedade de utilização do SIAG nas aquisições e contratações públicas dos órgãos e entidades do Poder Executivo",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SIAG é o principal e único sistema do Poder Executivo Estadual para o planejamento das aquisições, as licitações, a gestão de atas de registro de preços e de contratos, a transparência e a prestação de contas ao TCE/MT. Seu uso é obrigatório nas aquisições e contratações dos órgãos e entidades (Instrução Normativa nº 012/2023/SEPLAG) e o sistema está adequado à Lei nº 14.133/2021 e ao Decreto Estadual nº 1.525/2022.",
+  "A inoperância do SIAG paralisaria a instrução e a condução das aquisições e contratações de todo o Poder Executivo e comprometeria o envio das informações de licitações ao TCE/MT pelo APLIC.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto na atividade do órgão, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ."
+ ],
+ "finalidade": [
+  "O Sistema Integrado de Aquisições Governamentais e Contratos (SIAG), cuja versão atual é denominada pela fornecedora Solução Integrada de Gestão Administrativa (SIGA), é o sistema do Poder Executivo Estadual para o planejamento das aquisições, a instrução e a condução de licitações e contratações diretas, a gestão de atas de registro de preços e de contratos, a transparência e a prestação de contas ao Tribunal de Contas do Estado (TCE/MT).",
+  "O sistema está em uso no Estado desde, pelo menos, 2006, quando a então Secretaria de Estado de Administração contratou o desenvolvimento de funcionalidades do Sistema de Aquisições Governamentais (Contrato nº 093/2006/SAD). Seguiram-se contratos de manutenção adaptativa e evolutiva (Contratos nº 041/2009 e nº 042/2009/SAD), de suporte, manutenção e treinamento (Contrato nº 023/2014/SAD) e, em 2021, o de fornecimento da versão atualizada, com implantação, suporte, atualizações, manutenção, customizações e migração dos dados do SIAG e do SIAG-C (Contrato nº 019/2021/SEPLAG).",
+  "Em 2026, foi desenvolvido o Integrador APLIC, que envia os dados e documentos das aquisições ao APLIC - Licitações do TCE/MT, pelo Aplicativo Pré-Validador e pelo Portal das Unidades Gestoras (PUG), conforme o layout APLIC 2026, com melhorias na Ata de Registro de Preços e nas unidades de fornecimento e de medida. A mesma Ordem de Fornecimento de Serviço contratou o vínculo e a validação dos códigos de itens do TCE/MT no catálogo de materiais e serviços do SIAG."
+ ],
+ "modulos_tabela": [
+  [
+   "Solicitação de Compras",
+   "Termo de Referência, Projeto Básico e Estudo Técnico Preliminar"
+  ],
+  [
+   "Compras Públicas",
+   "Cadastro de Fornecedores (E-Fornecedor), Catálogo de Materiais e Serviços, Banco de Preços, Controle de Atas de Registro de Preços, Pregão Presencial, Compra Direta e Processo Licitatório"
+  ],
+  [
+   "Pregão Eletrônico",
+   "Condução do pregão na forma eletrônica"
+  ],
+  [
+   "Painel de Relatórios (BI)",
+   "Relatórios associados a todos os módulos"
+  ],
+  [
+   "Gestão de Contratos",
+   "Contratos e sua execução"
+  ],
+  [
+   "Integrador APLIC (2026)",
+   "Envio de dados e documentos das aquisições ao APLIC - Licitações do TCE/MT; Ata de Registro de Preços; unidades de fornecimento e de medida"
+  ]
+ ],
+ "modulos": {},
+ "integracoes": [
+  [
+   "APLIC - Licitações (TCE/MT), pelo Pré-Validador e pelo Portal das Unidades Gestoras (PUG)",
+   "Envio de dados e documentos das aquisições",
+   "Funções do Integrador APLIC (Tabelas 10 a 13)"
+  ],
+  [
+   "Catálogo de itens do TCE/MT",
+   "Vínculo e validação dos códigos de materiais e serviços do TCE no catálogo do SIAG",
+   "Arquivo de Interface Externa na parcela indicativa"
+  ],
+  [
+   "Fiplan (SEFAZ/MT) e cadastros corporativos (órgãos, servidores, fornecedores)",
+   "Dados orçamentários e cadastrais usados nas aquisições",
+   "Arquivos de Interface Externa na parcela indicativa"
+  ]
+ ],
+ "contratos": [
+  [
+   "Contrato nº 093/2006/SAD",
+   "Desenvolvimento de funcionalidades no Sistema de Aquisições Governamentais",
+   "2006",
+   "não informado no extrato"
+  ],
+  [
+   "Contrato nº 041/2009/SAD",
+   "Manutenção adaptativa do Sistema Informatizado de Aquisições Governamentais",
+   "12 meses (2009)",
+   "R$ 386.400,00 por ano"
+  ],
+  [
+   "Contrato nº 042/2009/SAD",
+   "Manutenção evolutiva do SIAG",
+   "12 meses (2009)",
+   "R$ 300.000,00 por ano"
+  ],
+  [
+   "Contrato nº 023/2014/SAD",
+   "Suporte técnico e operacional, manutenção contínua, manutenção evolutiva e adaptativa e treinamento no SIAG (inexigibilidade, processo 295842/2014)",
+   "12 meses, prorrogável",
+   "R$ 1.993.260,66 (12 meses)"
+  ],
+  [
+   "Contrato nº 019/2021/SEPLAG",
+   "Fornecimento da versão atualizada (SIGA), implantação, treinamento, suporte, atualização de versões, manutenção e customizações (inexigibilidade, processo 181715/2020)",
+   "Desde 06/2021, prorrogável até 60 meses; 5º Termo Aditivo",
+   "R$ 1.499.834,00 por ano (estimado)"
+  ],
+  [
+   "OFS nº 002/2026 (Contrato nº 019/2021/SEPLAG)",
+   "Integrador APLIC - Licitações e códigos de itens do TCE/MT no catálogo",
+   "23/07/2026; entrega até 17/09/2026",
+   "122 PF x R$ 683,67 = R$ 83.407,74 (Proposta 002/2026)"
+  ]
+ ],
+ "texto_contratos_antes": [
+  "Os contratos com a fornecedora definem os direitos do Estado sobre o sistema. A comissão analisou os instrumentos disponíveis:"
+ ],
+ "texto_contratos": [
+  "O Contrato nº 023/2014/SAD prevê, na Cláusula Décima Segunda, que a contratada cederá ao Estado o direito patrimonial e a propriedade intelectual, em caráter definitivo, dos resultados entregues, inclusive as fontes dos códigos dos programas, e que todos os produtos entregues serão de propriedade da contratante após a cedência, que se dará ao término do contrato; prevê também a entrega, ao fim do contrato, do produto final e dos fontes atualizados com todas as manutenções realizadas.",
+  "O Contrato nº 019/2021/SEPLAG prevê a entrega dos códigos-fonte dos módulos alterados após cada manutenção e, no mínimo, uma vez ao ano, podendo a contratante manter o sistema com equipe própria ou terceirizada (itens 7.7 e 7.8), e a entrega, ao fim do contrato, do produto final, dos códigos-fonte atualizados com todas as manutenções, dos artefatos e dos manuais (item 14.13). Por outro lado, a contratante não pode vender, ceder, alugar ou disponibilizar o sistema a terceiros sem anuência da contratada (item 15.20).",
+  "Com base nessas cláusulas, a comissão considera que o Estado detém o controle do bem, com os códigos-fonte entregues e a cessão dos resultados prevista em contrato, e que dele obtém benefícios econômicos futuros e potencial de serviços (IN, art. 2º, § 1º, e art. 6º, parágrafo único, I e IV). Nos contratos analisados, os valores remuneram serviços (implantação, treinamento, suporte, manutenção e customizações), sem preço de aquisição ou de licença do software em separado."
+ ],
+ "propriedade": "Códigos-fonte entregues à SEPLAG (módulos alterados, no mínimo anualmente, e versão completa ao fim do contrato), com cessão dos resultados prevista em contrato (Seção 2.3): códigos-fontes que são ou serão de propriedade do Estado",
+ "uso": "Em produção, de uso obrigatório nas aquisições e contratações do Poder Executivo (IN nº 012/2023/SEPLAG)",
+ "beneficio": "Instrução e gestão das aquisições e contratações de todo o Poder Executivo e prestação de contas ao TCE/MT; resulta de direitos contratuais (art. 6º, parágrafo único, IV)",
+ "fase_texto": "Sistema em produção. As funcionalidades do Integrador APLIC foram especificadas na Proposta 002/2026, analisadas pela comissão e contratadas pela OFS nº 002/2026.",
+ "custo_incorrido": "Os contratos com a fornecedora remuneram serviços de implantação, suporte, manutenção e customização, sem preço de aquisição do software em separado, de modo que o custo de aquisição (art. 10, I) não é mensurável com confiabilidade. Por isso o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do laudo indicativo de 2023, das planilhas de contagem do Integrador APLIC, do Relatório Técnico de APF da comissão, da Proposta 002/2026, da OFS nº 002/2026, dos contratos de 2006 a 2021 e das normas de uso do sistema",
+ "documentacao_resumo": "Laudo indicativo de 2023, planilhas do Integrador APLIC, proposta, ordem de fornecimento e contratos (Anexo I)",
+ "documentacao_fonte": "Documentos do SIAG reunidos pela comissão: medições, propostas, ordens de fornecimento e contratos.",
+ "outros_documentos": [
+  [
+   "Laudo de Pontos de Função - OS 14742, versão 1.1",
+   "Processo SEPLAG-PRO-2023/05868",
+   "16/08/2023",
+   "Tamanho indicativo de 4.095 PF"
+  ],
+  [
+   "Planilha 14742 - APF-SIAG-v1.0",
+   "Planilha de contagem",
+   "02/06/2023",
+   "Arquivos lógicos do escopo (73 ALI e 36 AIE)"
+  ],
+  [
+   "Planilhas APF-Aplic_Integrador v1.0, v1.1 e v2.0 - Ata e Unidades",
+   "Planilhas de contagem da comissão",
+   "20/05 a 01/06/2026",
+   "Tamanho do Integrador APLIC (v1.1 e v2.0 adotadas)"
+  ],
+  [
+   "Relatório Técnico de APF - Módulo Integrador APLIC",
+   "Análise da comissão",
+   "21/05/2026",
+   "Análise da Proposta 002/2026 e itens glosados"
+  ],
+  [
+   "Proposta 002/2026 - Serviço de Customização - SIGA",
+   "AZ Informática Ltda.",
+   "2026",
+   "Escopo do integrador; 122 PF a R$ 683,67"
+  ],
+  [
+   "Ordem de Fornecimento de Serviço nº 002/2026",
+   "Contrato nº 019/2021/SEPLAG",
+   "23/07/2026",
+   "Contratação do integrador e dos códigos do TCE/MT no catálogo"
+  ],
+  [
+   "Extratos dos Contratos nº 093/2006, 041/2009 e 042/2009/SAD e Contrato nº 023/2014/SAD",
+   "Contratos",
+   "2006 a 2014",
+   "Histórico do sistema e direitos sobre o bem"
+  ],
+  [
+   "Contrato nº 019/2021/SEPLAG",
+   "Contrato",
+   "06/2021",
+   "Objeto vigente, entrega dos códigos-fonte e restrição de cessão"
+  ],
+  [
+   "Lei nº 14.133/2021, Decreto Estadual nº 1.525/2022 e Instrução Normativa nº 012/2023/SEPLAG",
+   "Normas",
+   "-",
+   "Base legal e obrigatoriedade de uso"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho e valor do SIAG em cada inventário"
+  ]
+ ],
+ "ressalva_documentacao": "A avaliação foi feita com a documentação existente e disponibilizada à comissão. A planilha detalhada que embasou a medição indicativa de 4.095 PF não foi localizada; a planilha 14742 v1.0 relaciona 73 ALI e 36 AIE, que pela mesma regra somam 3.095 PF, e o laudo de 2023 registra 3.080 PF na versão 1.0 e 4.095 PF na versão 1.1, após a inclusão da fase externa da aquisição.",
+ "ressalvas_extras": [
+  "A parcela de 4.095 PF é indicativa; o laudo de 2023 registra variação possível de até 60% nesse nível. Uma contagem estimativa ou detalhada do sistema em produção pode resultar em tamanho diferente.",
+  "O Contrato nº 019/2021/SEPLAG veda à SEPLAG vender, ceder ou disponibilizar o sistema a terceiros sem anuência da contratada (item 15.20), o que limita a alienação do bem, mas não o seu uso e manutenção pelo Estado.",
+  "O Integrador APLIC foi contratado pela OFS nº 002/2026, com entrega prevista até 17/09/2026. As medições da comissão (144,5 PF) diferem do volume da OFS (122 PF), porque medem separadamente o desenvolvimento e a melhoria, na medida PF Local da FS."
+ ],
+ "fora_do_escopo": [
+  "Requisitos não funcionais e serviços de sustentação (suporte, manutenção corretiva e legal), que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único)."
+ ],
+ "texto_vida_util": [
+  "A vida útil do SIAG é classificada como **indefinida** (IN, arts. 14 e 15), por decisão da comissão: o sistema é o meio obrigatório para as aquisições do Poder Executivo, está em uso contínuo há mais de uma década e não há limite previsível para o período em que fornecerá potencial de serviços.",
+  "**Ressalva (IN, art. 16, § 2º):** quando se trata de software sob contrato de licenciamento ou cessão de uso, a vida útil não deve exceder a vigência do contrato. O SIAG é mantido pela AZ Informática por contratos sucessivos; o Contrato nº 019/2021/SEPLAG, assinado em junho de 2021 e prorrogável até 60 meses, está no 5º Termo Aditivo. A classificação como indefinida se apoia na entrega dos códigos-fonte e na cessão dos resultados prevista nos contratos (Seção 2.3) e deve ser revista se a continuidade do uso deixar de estar assegurada.",
+  "Classificada como indefinida, a vida útil não gera amortização (art. 17), e o bem deve passar anualmente pelo teste de redução ao valor recuperável (art. 18)."
+ ],
+ "exemplos_tipos": [
+  "Remessa; Minuta da Ata",
+  "Na parcela indicativa: órgãos, municípios, servidores, integrações com Fiplan e APLIC",
+  "Enviar e cancelar remessa; incluir minuta da ata",
+  "Listar processos; consultar lotes e itens",
+  "Alertas e prazos; painel inicial"
+ ],
+ "formula_tamanho": "Soma das parcelas (Tabela 9)",
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "16/08/2023",
+   "pf": 4095,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Laudo OS 14742 v1.1"
+  },
+  {
+   "inventario": 2024,
+   "data": "16/08/2023",
+   "pf": 4095,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Mesma medição"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 4095,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Mesma medição"
+  },
+  {
+   "inventario": 2026,
+   "data": "01/06/2026",
+   "pf": 4239.5,
+   "nivel": "Indicativa e Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "4.095 PF + Integrador APLIC (144,5 PF)"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "texto_evolucao": "O tamanho permaneceu em 4.095 PF de 2023 a 2025, período em que o sistema recebeu apenas sustentação; o acréscimo de 2026 corresponde ao Integrador APLIC.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 4095,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e do acréscimo de 144,5 PF do Integrador APLIC. A parcela indicativa e o Valor Institucional não mudaram.",
+ "texto_anexo2": "Relação das funções das planilhas do Integrador APLIC (versões 1.1 e 2.0), com a contribuição de cada uma na medida PF Local da FS. A parcela indicativa de 4.095 PF não tem relação de funções de transação (Seção 5).",
+ "texto_acompanham": "O laudo indicativo de 2023, as planilhas de contagem do Integrador APLIC, a proposta, a ordem de fornecimento e os contratos relacionados no Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "medida": "PF Local da FS"
+}

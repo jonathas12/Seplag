@@ -93,6 +93,12 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 
 ## Regras
 
+- Software de terceiro avaliado por PF (ex.: SIAG): ler os contratos e citar as cláusulas de entrega de código-fonte, cessão
+  de resultados e restrições de cessão a terceiros (seção 2.3 via `contratos`, `texto_contratos`); vida útil decidida pelo
+  usuário, com ressalva do art. 16, § 2º, em `texto_vida_util`. Tamanho composto por partes (medição indicativa sem
+  planilha + projetos medidos) vai em `composicao` (exemplo: `26. SIAG/laudo_SIAG.json`).
+- Quando houver vários números para o mesmo item (proposta, OFS, parecer, planilhas), apresentar ao usuário e perguntar.
+
 - Evolução do tamanho: usar o registro histórico das avaliações da comissão (`3. Analise de Dados/3.2. Dados/Dados.xlsx`,
   inventários de 2023 a 2025) em `historico_medicoes`, com `inventario`, `data`, `situacao`, `nivel`, `pf` e `uso`;
   não reconstruir a série pelas versões das baselines. Citar a fonte em `fonte_historico`.

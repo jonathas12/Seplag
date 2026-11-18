@@ -1,0 +1,49 @@
+{
+ "sigla": "SIAG",
+ "medida": "PF Local da FS",
+ "pf": 4239.5,
+ "preco_pf": 1215.09,
+ "vt": 5151374.06,
+ "vi": 1.0,
+ "va": 10302748.11,
+ "funcoes": 37,
+ "por_tipo": {
+  "ALI": [
+   6,
+   28.0
+  ],
+  "EE": [
+   11,
+   40.0
+  ],
+  "CE": [
+   17,
+   64.0
+  ],
+  "SE": [
+   3,
+   12.5
+  ]
+ },
+ "por_manutencao": {
+  "A50": [
+   9,
+   49.0,
+   24.5
+  ],
+  "I": [
+   27,
+   116.0,
+   116.0
+  ],
+  "ADS": [
+   1,
+   4.0,
+   4.0
+  ]
+ },
+ "por_modulo": {
+  "Integrador APLIC: desenvolvimento": 96.0,
+  "Integrador APLIC: melhoria (ata e unidades)": 48.5
+ }
+}

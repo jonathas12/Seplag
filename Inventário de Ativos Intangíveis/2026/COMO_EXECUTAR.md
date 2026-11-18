@@ -91,6 +91,8 @@ Cada documento tem um arquivo-fonte em texto simples (Markdown, extensão .md) e
 | Análise do Inventário de 2025 | `0. Planejamento/Analise_Inventario_2025_Apontamentos.md` | idem |
 | Pesquisa de Preços | `2. Levantamento_Identificacao_Avaliacao/2.3 Mapa Comparativo de Preços/Pesquisa_Precos_PF_2026.md` | idem |
 | Nota Técnica Consultiva | `5. Governança_Recomendações/Nota_Tecnica_Consultiva_Gestao_Governanca_Software.md` | idem |
+| Estudo de Custos e Governança dos Produtos de Software | `5. Governança_Recomendações/Estudo_Custos_Produtos_Software/Estudo_Custos_Governanca_Produtos_Software.md` | idem |
+| Minuta de IN Conjunta (custos e ciclo de vida) | `5. Governança_Recomendações/Estudo_Custos_Produtos_Software/Minuta_IN_Conjunta_Custos_Ciclo_Vida_Software.md` | idem |
 | Nova ata ou novo documento | Copie um arquivo-fonte existente, renomeie e edite | gerados ao lado |
 
 A Manifestação Técnica da pesquisa de preços é a exceção: ela é montada a partir dos resultados da análise, por `gera_manifestacao.py`, e não tem arquivo-fonte para editar.

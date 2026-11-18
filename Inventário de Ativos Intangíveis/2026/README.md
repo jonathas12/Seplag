@@ -30,7 +30,7 @@ Veja o documento "Como Executar o Projeto" (`COMO_EXECUTAR.pdf`). Em resumo, na 
 | `2. Levantamento_Identificacao_Avaliacao` | Softwares adquiridos, softwares desenvolvidos internamente (APF) e pesquisa de preços do ponto de função |
 | `3. Analise de Dados` | Assets, dados e painel Power BI |
 | `4. Relatório Final` | Relatório final, laudos técnicos de avaliação e processo |
-| `5. Governança_Recomendações` | Nota técnica consultiva sobre gestão, contabilização e governança dos softwares |
+| `5. Governança_Recomendações` | Nota técnica consultiva; estudo de custos, contabilização e governança dos produtos de software, com minuta de IN Conjunta e referências oficiais |
 | `_Modelo_Institucional` | Gerador de documentos no padrão visual da CPPTI/SEPLAG (HTML, PDF e Word), logo e fontes |
 | `executar.py` | Executa as etapas do projeto na ordem certa |
 | `requirements.txt` | Bibliotecas Python com as versões fixadas |

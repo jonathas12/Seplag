@@ -6,19 +6,65 @@
  "preco_por_extenso": "mil duzentos e quinze reais e nove centavos",
  "cidade_data": "Cuiabá/MT, 18 de novembro de 2026.",
  "documentos_sigadoc": [
-  {"documento": "Manifestação Técnica - Pesquisa de Preços do Ponto de Função 2026", "arquivo": "MANIFESTACAO_TECNICA_Preco_Ponto-Funcao_2026.pdf", "codigo": ""},
-  {"documento": "Mapa Comparativo de Preços do Ponto de Função 2026", "arquivo": "Mapa_Comparativo_Precos_PF_2026.xlsx", "codigo": ""},
-  {"documento": "Fichas de evidência dos 9 preços (Ref. 01 a 09)", "arquivo": "3. Evidências/Fichas", "codigo": ""},
-  {"documento": "Resultados da análise estatística", "arquivo": "Resultados_Analise_PF_2026.xlsx", "codigo": ""},
-  {"documento": "Contrato nº 014/2022/SEPLAG e 5º Termo de Apostilamento", "arquivo": "Processo SEPLAG-PRO-2026/09621", "codigo": "SEPLAG-PRO-2026/09621"},
-  {"documento": "Manifestação Técnica - Aprovação do Preço do Ponto de Função 2026 (este documento)", "arquivo": "MANIFESTACAO_TECNICA_Aprovacao_Preco_PF_2026.pdf", "codigo": ""}
+  {
+   "documento": "Pesquisa de Preços do Ponto de Função 2026 (processo que reúne objeto de referência, coleta, evidências, mapa, análise e manifestação)",
+   "arquivo": "Documento de juntada",
+   "codigo": "SEPLAG-DIC-2026/59836-A"
+  },
+  {
+   "documento": "Manifestação Técnica - Pesquisa de Preços do Ponto de Função 2026",
+   "arquivo": "MANIFESTACAO_TECNICA_Preco_Ponto-Funcao_2026.pdf",
+   "codigo": "SEPLAG-DIC-2026/59842-A"
+  },
+  {
+   "documento": "Mapa Comparativo de Preços do Ponto de Função 2026",
+   "arquivo": "Mapa_Comparativo_Precos_PF_2026.xlsx",
+   "codigo": "Arquivos auxiliares de SEPLAG-DIC-2026/59836"
+  },
+  {
+   "documento": "Resultados da análise estatística",
+   "arquivo": "Resultados_Analise_PF_2026.xlsx",
+   "codigo": "Arquivos auxiliares de SEPLAG-DIC-2026/59842"
+  },
+  {
+   "documento": "Fichas de evidência dos 9 preços (Ref. 01 a 09)",
+   "arquivo": "3. Evidências/Fichas",
+   "codigo": "Tabela 3"
+  },
+  {
+   "documento": "Contrato nº 014/2022/SEPLAG e 5º Termo de Apostilamento",
+   "arquivo": "Processo",
+   "codigo": "SEPLAG-PRO-2026/09621"
+  },
+  {
+   "documento": "Manifestação Técnica - Aprovação do Preço do Ponto de Função 2026",
+   "arquivo": "MANIFESTACAO_TECNICA_Aprovacao_Preco_PF_2026.pdf",
+   "codigo": "Este documento"
+  }
  ],
  "rga": {
-  "percentual": 5.40,
+  "percentual": 5.4,
   "percentual_proposta_inicial": 4.26,
   "indice_proposta_inicial": "INPC 2025",
   "ato": "Projeto de Lei nº 21/2026, de autoria do Poder Executivo, aprovado pela Assembleia Legislativa em 21/01/2026, com efeito na folha de janeiro de 2026",
   "fonte": "https://www.al.mt.gov.br/midia/texto/deputados-se-unem-aprovam-recomposicao-salarial-de-5-40-ja-para-o-salario-de-janeiro/visualizar"
  },
- "responsavel": {"nome": "Jonathas Gomes Marques", "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)", "portaria": "Portaria nº 124/2026/SEPLAG", "matricula": "280193"}
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "matricula": "280193",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "fichas_sigadoc": {
+  "1": "SEPLAG-CAP-2026/73360-A",
+  "2": "SEPLAG-CAP-2026/73356-A",
+  "3": "SEPLAG-CAP-2026/73353-A",
+  "4": "SEPLAG-CAP-2026/73350-A",
+  "5": "SEPLAG-CAP-2026/73349-A",
+  "6": "SEPLAG-CAP-2026/73344-A",
+  "7": "SEPLAG-CAP-2026/73339-A",
+  "8": "SEPLAG-CAP-2026/73338-A",
+  "9": "SEPLAG-CAP-2026/73336-A"
+ }
 }

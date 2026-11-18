@@ -82,6 +82,8 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 ## Regras
 
 - Métodos: IFPUG CPM 4.3.1 (ISO/IEC 20926), NESMA (ISO/IEC 24570) e Roteiro de Métricas do SISP versão 2.3 (a do Contrato 014/2022), campo `roteiro_sisp`.
+- Assinatura: Jonathas Gomes Marques, Presidente da CIABI, "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)" (campo `responsavel.funcao`), Portaria nº 124/2026/SEPLAG, matrícula 280193. Não usar mais a sigla CPPTI/SITEC/SAAS/SEPLAG.
+- Preço do PF: citar a pesquisa (Sigadoc SEPLAG-DIC-2026/59836-A), a Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A), a Manifestação de Aprovação do Preço (nº do Sigadoc quando informado) e as fichas dos preços do grupo (Ref. 3 SEPLAG-CAP-2026/73353-A; Ref. 7 SEPLAG-CAP-2026/73339-A). Ver `7. Aprovação do Preço/aprovacao_preco.json`.
 - Sem links para o Google Drive particular do usuário; documentos são citados por código e, quando houver, pelo código do Sigadoc.
 - Não citar arquivos .md no laudo; referências a documentos apontam para PDF, planilha ou link.
 - Sem travessão longo.

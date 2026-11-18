@@ -340,7 +340,7 @@ def gerar(caminho_cfg):
     d.subsecao('6.2 Cálculo')
     d.tabela(['Componente', 'Fórmula', 'Valor'], [
         ['Tamanho funcional', 'Planilha de contagem, aba Funções', f'{num(pf_total)} PF'],
-        ['Preço do ponto de função', 'Manifestação Técnica da pesquisa de preços (data-base 10/2026)', brl(preco)],
+        ['Preço do ponto de função', cfg.get('fonte_preco_curta', 'Manifestação Técnica da pesquisa de preços (data-base 10/2026)'), brl(preco)],
         ['Valor do tamanho do ativo (VT)', f'{num(pf_total)} x {brl(preco)}', brl(vt)],
         ['Valor Institucional (VI)', f'{rotulo_vi} (art. 11, § 4º)', num(vi, 2)],
         ['Parcela institucional', f'VT x VI = {brl(vt)} x {num(vi, 2)}', brl(round(vt * vi, 2))],
@@ -398,8 +398,9 @@ def gerar(caminho_cfg):
     d.p('A planilha de contagem e as histórias de usuário que fundamentam este laudo acompanham o processo do inventário '
         'para conferência.')
     d.p('É o laudo.')
-    d.assinatura('Responsável pela mensuração (IN, art. 20, V)', resp['nome'],
-                 f'{resp["cargo"]}', f'{resp["portaria"]} - matrícula {resp["matricula"]}', cfg['cidade_data'])
+    d.assinatura('Responsável pela mensuração (IN, art. 20, V)', resp['nome'], resp['cargo'],
+                 *([resp['funcao']] if resp.get('funcao') else []),
+                 f'{resp["portaria"]} - matrícula {resp["matricula"]}', cfg['cidade_data'])
 
     # Anexos
     d.quebra()

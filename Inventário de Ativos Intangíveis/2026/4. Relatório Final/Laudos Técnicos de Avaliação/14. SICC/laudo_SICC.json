@@ -15,7 +15,7 @@
  "areas_negocio": "Gerência de Créditos de Pessoal (GCP), Superintendência de Obrigações com Pessoal e Encargos Sociais (SOPES) e Gabinete do Secretário Adjunto de Gestão de Pagamento de Pessoal, que aprovam as histórias de usuário",
  "vida_util": "Indefinida",
  "preco_pf": 1215.09,
- "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [a registrar]): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [nº a incluir]), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
  "vi": 0.5,
  "vi_justificativa": [
   "O SICC está em produção com as funcionalidades identificadas nesta análise e sustenta o ciclo das Certidões de Crédito: validação do legado, atualização do crédito salarial, emissão digital com aprovação e assinatura, desmembramento, cessão, transferência, bloqueio, cancelamento, estorno e quitações.",
@@ -464,8 +464,10 @@
   "nome": "Jonathas Gomes Marques",
   "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
   "matricula": "280193",
-  "portaria": "Portaria nº 124/2026/SEPLAG"
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
  },
  "roteiro_sisp": "2.3",
- "registro_preco": "Manifestação Técnica da pesquisa de preços e Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [a registrar])"
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [nº a incluir])",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [nº a incluir]), data-base 10/2026"
 }

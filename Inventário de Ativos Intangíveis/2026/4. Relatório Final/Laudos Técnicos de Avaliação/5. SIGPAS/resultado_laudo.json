@@ -1,0 +1,66 @@
+{
+ "sigla": "SIGPAS",
+ "medida": "PF Local da FS",
+ "pf": 1601.6,
+ "preco_pf": 1215.09,
+ "vt": 1946088.14,
+ "vi": 1.0,
+ "va": 3892176.28,
+ "funcoes": 334,
+ "por_tipo": {
+  "ALI": [
+   15,
+   116.0
+  ],
+  "AIE": [
+   22,
+   115.0
+  ],
+  "EE": [
+   100,
+   488.0
+  ],
+  "CE": [
+   155,
+   606.6
+  ],
+  "SE": [
+   42,
+   276.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   329,
+   1598.0,
+   1598.0
+  ],
+  "E": [
+   2,
+   6.0,
+   2.4000000000000004
+  ],
+  "sem tipo": [
+   1,
+   4.0,
+   0.0
+  ],
+  "COS": [
+   2,
+   7.0,
+   1.2
+  ]
+ },
+ "por_modulo": {
+  "Cadastros e parametrização": 407.4,
+  "Servidores, lotação, escalas e eventos": 247.0,
+  "Ocorrências e justificativas": 305.0,
+  "Registro e processamento da frequência": 76.0,
+  "Folha de frequência": 67.0,
+  "Banco de horas e trabalho extraordinário": 52.0,
+  "Dispositivos e biometria": 122.0,
+  "Integração com o SEAP": 53.0,
+  "Relatórios": 224.0,
+  "Página inicial, notificações e termo de ciência": 48.2
+ }
+}

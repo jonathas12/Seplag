@@ -1,0 +1,299 @@
+{
+ "sigla": "SIGPAS",
+ "nome": "Sistema de Gestão de Assiduidade",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 18 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGPAS_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/5. SIGPAS/APF- Baseline do WEBPONTO - v0.25.xlsx",
+ "baseline_nome": "APF- Baseline do WEBPONTO - v0.25.xlsx",
+ "baseline_versao": "0.25",
+ "medida": "PF Local da FS",
+ "formato_us": "US{:02d}",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "tipo_bem": "Software desenvolvido pela SEPLAG em conjunto com a fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "SEPLAG/MT (SSCPG/SAPGD/SEPLAG): requisitos, gestão de produto e de projeto, arquitetura, banco de dados, infraestrutura e DevOps; fábrica de software do Contrato nº 014/2022/SEPLAG: código-fonte, scripts de banco de dados e testes unitários e funcionais",
+ "areas_negocio": "Unidade Central de Gestão de Pessoas da SEPLAG e unidades de gestão de pessoas dos órgãos e entidades do Poder Executivo (Decreto nº 554/2020)",
+ "perfis": "Administrador do Sistema, Gestor do Sistema (chefia imediata) e Usuário (servidor), conforme o art. 2º do Decreto nº 554/2020",
+ "base_legal": "Decreto Estadual nº 554, de 03/07/2020: o WEBPonto é a ferramenta oficial de verificação de frequência do Poder Executivo, vedado outro meio de controle (art. 3º), e compete à SEPLAG seu desenvolvimento, gestão e disponibilização a todos os órgãos e entidades (art. 4º)",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SIGPAS é a versão 2.0 do WEBPonto, sistema que o Decreto nº 554/2020 define como a ferramenta oficial de verificação de frequência, assiduidade e pontualidade dos servidores do Poder Executivo, vedada a utilização de outro meio de controle (art. 3º). Seu uso é obrigatório por todos os órgãos e entidades para o registro de frequência e das justificativas de ausência (art. 5º, § 1º).",
+  "O controle de frequência mensal fechado no sistema é a base para a apuração de faltas e descontos na folha de pagamento, com integração ao SEAP para importação de ocorrências e envio de faltas. A inoperância do SIGPAS obrigaria os órgãos ao registro manual de frequência previsto no próprio decreto, comprometeria a apuração da jornada e dos descontos de todo o Poder Executivo e a atuação do controle interno.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto na atividade do órgão, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ."
+ ],
+ "finalidade": [
+  "O Sistema de Gestão de Assiduidade (SIGPAS), desenvolvido como Web Ponto 2.0 e renomeado em 2024, é a nova geração do WEBPonto, ferramenta oficial de controle de frequência, assiduidade e pontualidade dos servidores do Poder Executivo do Estado de Mato Grosso, nos termos do Decreto nº 554/2020. Atende servidores efetivos, comissionados, requisitados, cedidos, temporários, militares e, no que couber, empregados públicos e estagiários.",
+  "A demanda foi formalizada em junho de 2022 por Documento de Oficialização da Demanda (DOD). Entre os objetivos registrados está a integração do controle de frequência ao SEAP para o desconto automático de faltas, ponto sobre o qual a Controladoria-Geral do Estado pediu prazo de desenvolvimento. O desenvolvimento começou com a Ordem de Serviço nº 07, de 27/02/2023, do Contrato nº 014/2022/SEPLAG.",
+  "O sistema reúne: cadastros e parametrização (órgão, cargo, setor, horário de trabalho, códigos de ocorrência, mensagens, feriados municipais, jornadas e modelos de escala); escalas e eventos de cada servidor; registro de frequência por coletor biométrico e por estação de trabalho; processamento das jornadas de 6 e 8 horas, de plantonistas e da educação; justificativas de ocorrência (atestado, teletrabalho, coletivas, ajuste e troca de evento, dispensa) e sua análise pela chefia; geração e assinatura da folha de frequência pelo servidor e pelo gestor; banco de horas (convocação para trabalho extraordinário, saldo, compensação e extrato); cadastro de dispositivos e de biometria; relatórios gerenciais; notificações, termo de ciência e responsabilidade; e integração com o SEAP para importação de ocorrências e envio de faltas.",
+  "O produto é desenvolvido em conjunto: a equipe da SEPLAG responde por requisitos, gestão de produto e de projeto, arquitetura de software, banco de dados, infraestrutura de data center e DevOps; a fábrica de software contratada desenvolve o código-fonte, os scripts de banco de dados e os testes unitários e funcionais."
+ ],
+ "integracoes": [
+  [
+   "SEAP (Sistema Estadual de Administração de Pessoas)",
+   "Servidor, lotação e função; importação de ocorrências e envio de faltas para desconto",
+   "Arquivos de Interface Externa (AIE) e transações de integração"
+  ],
+  [
+   "Manopla",
+   "Tipo de usuário e termo de ciência",
+   "Arquivo de Interface Externa (AIE)"
+  ],
+  [
+   "Base de integração do WebPonto",
+   "Dados de biometria",
+   "Arquivo de Interface Externa (AIE)"
+  ],
+  [
+   "Base de dados Politec",
+   "Registro de frequência por estação de trabalho",
+   "Arquivo de Interface Externa (AIE)"
+  ],
+  [
+   "Coletores biométricos",
+   "Registros de ponto capturados",
+   "Dados mantidos no ALI Evento Executado"
+  ]
+ ],
+ "modulos": {
+  "Cadastros e parametrização": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13
+  ],
+  "Servidores, lotação, escalas e eventos": [
+   1,
+   2,
+   14,
+   15
+  ],
+  "Ocorrências e justificativas": [
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   58,
+   62,
+   66
+  ],
+  "Registro e processamento da frequência": [
+   24,
+   28,
+   29,
+   31,
+   43,
+   48,
+   55,
+   69
+  ],
+  "Folha de frequência": [
+   25,
+   26,
+   27
+  ],
+  "Banco de horas e trabalho extraordinário": [
+   33,
+   34,
+   35,
+   36
+  ],
+  "Dispositivos e biometria": [
+   37,
+   39,
+   40,
+   42
+  ],
+  "Integração com o SEAP": [
+   41,
+   44,
+   67
+  ],
+  "Relatórios": [
+   46,
+   50,
+   51,
+   52,
+   56,
+   57,
+   59,
+   60,
+   61,
+   63,
+   64,
+   65
+  ],
+  "Página inicial, notificações e termo de ciência": [
+   30,
+   38,
+   49,
+   68
+  ]
+ },
+ "grupos_sem_historia": {
+  "Aba Órgão": "Cadastros e parametrização",
+  "Aba Tipo de Vínculo": "Cadastros e parametrização",
+  "Aba Jornada de Trabalho": "Cadastros e parametrização"
+ },
+ "propriedade": "Desenvolvido pela SEPLAG com a fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
+ "uso": "Em produção, de uso obrigatório pelos órgãos e entidades do Poder Executivo (Decreto nº 554/2020)",
+ "beneficio": "Controle oficial da frequência dos servidores do Poder Executivo e base para a apuração de faltas e descontos em folha",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato (Seção 6.4), mas o custo da equipe interna (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das histórias de usuário registradas na planilha de contagem (US01 a US69), da Ordem de Serviço nº 07, das mensagens de abertura do projeto e do Decreto nº 554/2020",
+ "documentacao_resumo": "Histórias de usuário US01 a US69 registradas na planilha, Ordem de Serviço nº 07 e Decreto nº 554/2020 (Anexo I)",
+ "documentacao_fonte": "Planilha de contagem com as histórias de usuário do SIGPAS, documentos de abertura do projeto e norma de regência.",
+ "outros_documentos": [
+  [
+   "Ordem de Serviço nº 07 - Desenvolvimento do produto Web Ponto 2.0 (Contrato nº 014/2022/SEPLAG)",
+   "Sigadoc SEPLAG-DIC-2023/04485",
+   "27/02/2023",
+   "Abertura do desenvolvimento; Grupo II (construção, testes e homologação) a 75% do esforço; estimativa inicial de 125 PF (Sprint 1)"
+  ],
+  [
+   "Mensagem de abertura da Ordem de Serviço do Web Ponto 2.0, com as histórias de usuário da Sprint 1",
+   "E-mail institucional",
+   "27/02/2023",
+   "Escopo inicial e analista responsável pelos requisitos"
+  ],
+  [
+   "Mensagem de pedido de abertura da OS para o Grupo II do projeto WEBPONTO",
+   "E-mail institucional",
+   "27/02/2023",
+   "Divisão de atividades entre a SEPLAG e a fábrica de software"
+  ],
+  [
+   "Documento de Oficialização da Demanda (DOD) WEBPONTO e mensagens de alinhamento",
+   "E-mail institucional",
+   "27 e 28/06/2022",
+   "Origem da demanda e objetivo de integração com o SEAP"
+  ],
+  [
+   "Decreto Estadual nº 554, de 03/07/2020",
+   "Norma estadual",
+   "03/07/2020",
+   "Finalidade, obrigatoriedade de uso, perfis e importância institucional"
+  ],
+  [
+   "Linhas de base anteriores (versões 0.4, 0.10 e 0.17)",
+   "Planilhas de contagem do inventário de 2025",
+   "2023 a 2025",
+   "Evolução do tamanho funcional"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software (projeto SIGPAS)",
+   "Painel da fiscalização do contrato",
+   "TRDs até 07/2026",
+   "Custo do projeto com a contratada (Seção 6.4)"
+  ]
+ ],
+ "ressalva_documentacao": "As histórias de usuário foram analisadas pelos títulos e funções registrados na planilha de contagem; os documentos completos são mantidos pela equipe do projeto, responsável por seu conteúdo e qualidade.",
+ "texto_tipos": "A predominância das transações reflete um sistema de registro, justificativa e processamento de eventos de frequência.",
+ "texto_manutencao": "A contagem é de projeto de desenvolvimento e registra o tipo de manutenção de cada função. A medida adotada (PF Local da FS) aplica os deflatores do Roteiro de Métricas do SISP 2.3, previstos no Contrato nº 014/2022/SEPLAG: inclusão a 100%, exclusão a 40% e manutenção cosmética a 0,6 PF por função. A função sem tipo de manutenção (linha 180, que aciona a US58) não contribui para essa medida.",
+ "texto_evolucao": "O crescimento acompanha as entregas sucessivas do projeto desde a Ordem de Serviço nº 07 (125 PF estimados para a Sprint 1, em 2023). A versão 0.25 é a primeira contagem detalhada (IFPUG); as anteriores foram estimativas (NESMA). Os valores das versões anteriores são os usados nos inventários (coluna PF IFPUG).",
+ "exemplos_tipos": [
+  "Jornada de trabalho, escala, ocorrência, folha de frequência",
+  "Servidor, lotação e função (SEAP); tipo de usuário (Manopla)",
+  "Cadastrar biometria; justificar ocorrência",
+  "Visualizar registro de ponto; consultar log de registros",
+  "Processar jornadas; extrato de horas com cálculo de saldo"
+ ],
+ "historico_medicoes": [
+  {
+   "versao": "0.4",
+   "data": "26/06/2023",
+   "pf": 692,
+   "nivel": "Estimativa (NESMA)",
+   "uso": "Primeira linha de base"
+  },
+  {
+   "versao": "0.10",
+   "data": "23/08/2024",
+   "pf": 991,
+   "nivel": "Estimativa (NESMA)",
+   "uso": "Inventário de 2024"
+  },
+  {
+   "versao": "0.17",
+   "data": "04/12/2025",
+   "pf": 1302,
+   "nivel": "Estimativa (NESMA)",
+   "uso": "Inventário de 2025"
+  },
+  {
+   "versao": "0.25",
+   "data": "27/08/2026",
+   "pf": 1601.6,
+   "nivel": "Detalhada (IFPUG)",
+   "uso": "Inventário de 2026, PF Local da FS (1.615 PF IFPUG)"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 1302,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do aumento do tamanho funcional, com a primeira contagem detalhada, e do novo preço do ponto de função apurado na pesquisa de 2026. O Valor Institucional permanece 1,00. Em 2025 foi usada a coluna PF IFPUG da versão 0.17; em 2026, a coluna PF Local da FS da versão 0.25.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Os sistemas Web Ponto e Web Ponto Client Biometria, avaliados separadamente no inventário."
+ ],
+ "texto_acompanham": "A planilha de contagem, a Ordem de Serviço nº 07 e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIGPAS é desenvolvido com a fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. Esse custo permite comparar o que foi pago pela construção com o valor atribuído ao ativo. O contrato está em execução desde 07/2022 e os dados abaixo consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
+  "componentes": [
+   [
+    "Projeto (desenvolvimento)",
+    1272139.38
+   ],
+   [
+    "Tickets",
+    27111.25
+   ],
+   [
+    "Pontos de função de teste",
+    7331.86
+   ]
+  ],
+  "custo_total": 1306582.49,
+  "componentes_construcao": [
+   "Projeto (desenvolvimento)"
+  ],
+  "pf_faturado": 3513.65,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "fator_grupo_contratado": 0.75,
+  "interpretacao": [
+   "Os pontos de função faturados (3.513,65 PF) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo do projeto: funções incluídas e depois alteradas em novas sprints são medidas de novo, com os deflatores do contrato, e os testes têm medida própria. O tamanho funcional do ativo conta cada função existente uma única vez.",
+   "O custo médio por PF faturado fica abaixo do preço vigente do contrato porque a contratada recebe apenas a parcela do Grupo II e porque parte do projeto foi paga aos preços de 2022 a 2025. Os tickets (2,1% do custo) são demandas avulsas; se corresponderem a manutenção, não integram o valor do ativo (IN, art. 10, parágrafo único)."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps), cujo custo não é apurado por produto. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo.",
+  "fonte_fator": "Conforme a Ordem de Serviço nº 07 (Sigadoc SEPLAG-DIC-2023/04485)"
+ },
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ }
+}

@@ -1,5 +1,6 @@
 {
  "sigla": "SICC",
+ "medida": "PF IFPUG",
  "pf": 666.0,
  "preco_pf": 1215.09,
  "vt": 809249.94,
@@ -26,6 +27,13 @@
   "SE": [
    14,
    70.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   154,
+   666.0,
+   666.0
   ]
  },
  "por_modulo": {

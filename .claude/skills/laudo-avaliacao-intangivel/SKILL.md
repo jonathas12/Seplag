@@ -24,7 +24,8 @@ Python: `.venv/bin/python` (Linux) ou `.venv\Scripts\python.exe` (Windows).
 | Valor Institucional e justificativa | 0,50, com o motivo dado pelo usuário |
 | Nível de detalhe da medição | Estimativa (NESMA) |
 | Situação e vida útil | relação de sistemas, aba "Avaliação 2026" |
-| Número do sistema na pasta de medições | `14. SICC` (mesma numeração de 2025) |
+| Número do sistema na pasta de medições | `14. SICC`, `5. SIGPAS` (mesma numeração de 2025) |
+| Custo do projeto (se feito com a fábrica de software) | painel "Custos de Projetos - Fábrica de Software": custo total, componentes, PF faturados, data-base |
 
 Se faltar uma entrada que muda o valor (preço, VI, tamanho), pergunte. As demais vêm da relação de sistemas.
 
@@ -46,7 +47,13 @@ Se faltar uma entrada que muda o valor (preço, VI, tamanho), pergunte. As demai
    - toda história de usuário tem função contada e todo grupo contado tem documentação (ou vem da linha de base anterior);
    - funções marcadas como de outra aplicação (fora da fronteira) e AIE possivelmente repetidos;
    - grupos de dados mantidos pelas transações (EE) sem ALI correspondente (possível subcontagem);
-   - coerência do nível: na Estimativa NESMA, ALI = 7, AIE = 5, EE = 4, CE = 4, SE = 5.
+   - coerência do nível: na Estimativa NESMA, ALI = 7, AIE = 5, EE = 4, CE = 4, SE = 5;
+   - tipo de contagem: se for "Projeto de Desenvolvimento" com tipos de manutenção (I, E, COS...), há três números
+     possíveis (só inclusões; PF Local da FS, em `Funções!L6`; PF IFPUG, em `L4`). Pergunte ao usuário qual usar
+     (no SIGPAS ele escolheu PF Local da FS) e registre em `medida`;
+   - a faixa de linhas somada pela fórmula do total (ex.: `SUM(L11:L846)`): linhas fora dela não entram;
+   - grupos com código em formato diferente (ex.: "[US_63]") também são histórias e precisam de módulo;
+   - AIE que podem ser dados de código (tipos, unidades, municípios) e AIE repetidos.
 
 4. **Preencher a aba Contagem** (nível de detalhe F7, Escopo A17, Documentação A22) sem perder gráfico e imagem da planilha:
    `python _Modelo_Institucional/preenche_contagem.py origem.xlsx destino.xlsx campos.json`
@@ -59,6 +66,11 @@ Se faltar uma entrada que muda o valor (preço, VI, tamanho), pergunte. As demai
    são escritos a partir da documentação e das falas do usuário. `documentos` leva código, nome, versão, data,
    aprovação e link de cada história; `modulos` mapeia número da história para módulo; `grupos_sem_historia`
    cobre grupos da planilha sem história.
+
+   Campos opcionais (ver o cabeçalho de `laudo_apf.py`): `medida`, `formato_us` (ex.: "US{:02d}"), `base_legal`,
+   `outros_documentos` (OS, e-mails, normas), `custo_projeto` (sistemas feitos com a fábrica de software do Contrato
+   014/2022: componentes do painel de custos, PF faturados, fator do Grupo II da OS), textos específicos do sistema
+   (`beneficio`, `texto_tipos`, `texto_evolucao`, `exemplos_tipos`, `motivo_variacao`). Exemplo completo: `5. SIGPAS/laudo_SIGPAS.json`.
 
 6. **Gerar o laudo**:
    `python _Modelo_Institucional/laudo_apf.py "4. Relatório Final/Laudos Técnicos de Avaliação/<nº. SIGLA>/laudo_<SIGLA>.json"`

@@ -469,5 +469,16 @@
  },
  "roteiro_sisp": "2.3",
  "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
- "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026"
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "beneficio": "Sustenta o ciclo das Certidões de Crédito e dos créditos salariais devidos pelo Estado",
+ "texto_tipos": "A predominância das transações reflete um sistema orientado a fluxos de trabalho: emissão, aprovação, assinatura, movimentação e quitação de certidões.",
+ "texto_evolucao": "O acréscimo corresponde às funcionalidades descritas nas histórias de usuário revisadas entre 2025 e 2026, sobretudo emissão digital, desmembramento e cessão, estorno, quitações e perfis de acesso, que não existiam nas linhas de base anteriores.",
+ "exemplos_tipos": [
+  "Amparo Legal, Crédito Salarial, Minuta de Certidão",
+  "Dados do SEAP; consulta de compensação na API da PGE",
+  "Solicitar estorno; salvar minuta",
+  "Listar e pesquisar; visualizar documento",
+  "Cálculo do valor de desconto; gerar a certidão"
+ ],
+ "motivo_variacao": "A variação decorre de três fatores, todos documentados: o aumento do tamanho funcional (Seção 5.1), o novo preço do ponto de função apurado na pesquisa de 2026 e a reclassificação do Valor Institucional, de 0,25 para 0,50, com a entrada do sistema em produção."
 }

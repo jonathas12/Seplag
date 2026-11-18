@@ -244,7 +244,7 @@ def gerar(caminho_cfg):
         ['2. Reconhecimento', 'Verificação dos critérios dos arts. 2º, 6º, 8º, 9º e 11 da IN', 'Tabela 4 deste laudo'],
         ['3. Análise documental', f'Leitura das {len(cfg["documentos"])} histórias de usuário: premissas, critérios de aceitação, regras de negócio, protótipos, histórico de versões e aprovações', 'Anexo I'],
         ['4. Mensuração do tamanho funcional', 'Contagem de pontos de função das funções de dados e de transação', f'{cfg["baseline_nome"]}, abas Contagem e Funções; Anexo II'],
-        ['5. Preço do ponto de função', 'Pesquisa de preços em fontes oficiais, atualização monetária e análise de agrupamento', 'Manifestação Técnica da pesquisa de preços de 2026'],
+        ['5. Preço do ponto de função', 'Pesquisa de preços em fontes oficiais, atualização monetária, análise de agrupamento e aprovação do preço pela comissão', cfg.get('registro_preco', 'Manifestação Técnica da pesquisa de preços de 2026')],
         ['6. Valor Institucional', 'Classificação do grau de importância do bem (art. 11, § 4º)', 'Seção 6 deste laudo'],
         ['7. Valor e vida útil', 'Cálculo VA = VT + (VT x VI) e classificação da vida útil', 'Seções 6 e 7 deste laudo'],
         ['8. Laudo', 'Consolidação neste documento (art. 20)', 'Este laudo'],
@@ -254,7 +254,8 @@ def gerar(caminho_cfg):
     d.p('A Análise de Pontos de Função (APF) mede o tamanho do software pelas funcionalidades que ele entrega ao usuário, '
         'independentemente da linguagem, da tecnologia ou de quem o desenvolveu. A medição segue o Manual de Práticas de '
         'Contagem do IFPUG (CPM 4.3.1), publicado como norma ISO/IEC 20926:2009, e o Roteiro de Métricas de Software do '
-        'SISP, versão 3.0 (Portaria SGD/MGI nº 3.656/2026), que reconhece também o método NESMA (ISO/IEC 24570:2018).')
+        f'SISP, versão {cfg.get("roteiro_sisp", "2.3")}, adotado no Contrato nº 014/2022/SEPLAG. Os níveis indicativo e estimativo seguem '
+        'o método da NESMA (ISO/IEC 24570:2018).')
     d.tabela(['Tipo de função', 'O que representa', 'Exemplo no ' + sig], [
         ['Arquivo Lógico Interno (ALI)', 'Grupo de dados mantido pela aplicação', 'Amparo Legal, Crédito Salarial, Minuta de Certidão'],
         ['Arquivo de Interface Externa (AIE)', 'Grupo de dados de outra aplicação, apenas lido', 'Dados do SEAP; consulta de compensação na API da PGE'],
@@ -283,7 +284,7 @@ def gerar(caminho_cfg):
         'de cada preço com o resultado homologado e os documentos da contratação; (4) atualização monetária pelo IPCA até a '
         'data-base; (5) identificação de valores atípicos pelo intervalo interquartil; (6) agrupamento dos preços em faixas '
         'pelo algoritmo K-Means, técnica de aprendizado de máquina que reúne valores próximos e separa valores distantes, '
-        'sem impor faixas definidas previamente; (7) escolha do preço pela comissão.')
+        'sem impor faixas definidas previamente; (7) escolha e fundamentação do preço pela comissão.')
     d.p(cfg['preco_fundamento'])
     d.subsecao('4.4 Valor Institucional')
     d.tabela(['Valor Institucional', 'Conceituação (IN, art. 11, § 4º)', 'Índice'],
@@ -386,8 +387,7 @@ def gerar(caminho_cfg):
            'As funcionalidades correspondentes foram consideradas por estarem em produção.' if sem_aprov else ''),
         'O preço do ponto de função é referência de mercado para fins de inventário e registro contábil (IN, art. 13); '
         'não se destina a contratação.',
-        cfg['ressalva_comissao'],
-    ])
+    ] + ([cfg['ressalva_comissao']] if cfg.get('ressalva_comissao') else []))
 
     # 9. Conclusão
     d.secao('✅', '9. Conclusão')
@@ -404,11 +404,10 @@ def gerar(caminho_cfg):
     # Anexos
     d.quebra()
     d.secao('📎', 'Anexo I - Documentação utilizada na análise')
-    d.p(f'{cfg["documentacao_fonte"]} Pasta: [Documentação do {sig}]({cfg["pasta_documentacao"]}). '
-        f'Planilha de contagem: [pasta APF]({cfg["pasta_apf"]}).')
+    d.p(f'{cfg["documentacao_fonte"]} Planilha de contagem: {cfg["baseline_nome"]}.')
     mod_de = {n: m for m, l in cfg['modulos'].items() for n in l}
     d.tabela(['Código', 'História de usuário', 'Módulo', 'Versão', 'Data', 'Aprovação'],
-             [[f'[{x["codigo"]}]({x["link"]})', x['nome'], mod_de.get(int(x['codigo'][2:]), ''), x['versao'], x['data'],
+             [[f'[{x["codigo"]}]({x["link"]})' if x.get('link') else x['codigo'], x['nome'], mod_de.get(int(x['codigo'][2:]), ''), x['versao'], x['data'],
                x.get('aprovacao') or 'sem registro'] for x in docs],
              legenda='Tabela A1 - Histórias de usuário: última versão do histórico de revisões e data da aprovação pelas áreas de negócio',
              larguras=[10, 32, 26, 8, 11, 13])

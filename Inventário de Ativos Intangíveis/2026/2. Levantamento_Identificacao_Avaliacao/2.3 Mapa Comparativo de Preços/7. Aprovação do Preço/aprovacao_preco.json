@@ -1,0 +1,24 @@
+{
+ "_descricao": "Decisão da comissão sobre o preço do ponto de função. Os números vêm de 5. Análise Estatística/resultados_analise.json. Preencha os códigos do Sigadoc e rode: python gera_aprovacao_preco.py",
+ "cenario": "C5 - 9 preços + Contrato 014/2022",
+ "base": "Atualizado 10/2026",
+ "grupo": 2,
+ "preco_por_extenso": "mil duzentos e quinze reais e nove centavos",
+ "cidade_data": "Cuiabá/MT, 18 de novembro de 2026.",
+ "documentos_sigadoc": [
+  {"documento": "Manifestação Técnica - Pesquisa de Preços do Ponto de Função 2026", "arquivo": "MANIFESTACAO_TECNICA_Preco_Ponto-Funcao_2026.pdf", "codigo": ""},
+  {"documento": "Mapa Comparativo de Preços do Ponto de Função 2026", "arquivo": "Mapa_Comparativo_Precos_PF_2026.xlsx", "codigo": ""},
+  {"documento": "Fichas de evidência dos 9 preços (Ref. 01 a 09)", "arquivo": "3. Evidências/Fichas", "codigo": ""},
+  {"documento": "Resultados da análise estatística", "arquivo": "Resultados_Analise_PF_2026.xlsx", "codigo": ""},
+  {"documento": "Contrato nº 014/2022/SEPLAG e 5º Termo de Apostilamento", "arquivo": "Processo SEPLAG-PRO-2026/09621", "codigo": "SEPLAG-PRO-2026/09621"},
+  {"documento": "Manifestação Técnica - Aprovação do Preço do Ponto de Função 2026 (este documento)", "arquivo": "MANIFESTACAO_TECNICA_Aprovacao_Preco_PF_2026.pdf", "codigo": ""}
+ ],
+ "rga": {
+  "percentual": 5.40,
+  "percentual_proposta_inicial": 4.26,
+  "indice_proposta_inicial": "INPC 2025",
+  "ato": "Projeto de Lei nº 21/2026, de autoria do Poder Executivo, aprovado pela Assembleia Legislativa em 21/01/2026, com efeito na folha de janeiro de 2026",
+  "fonte": "https://www.al.mt.gov.br/midia/texto/deputados-se-unem-aprovam-recomposicao-salarial-de-5-40-ja-para-o-salario-de-janeiro/visualizar"
+ },
+ "responsavel": {"nome": "Jonathas Gomes Marques", "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)", "portaria": "Portaria nº 124/2026/SEPLAG", "matricula": "280193"}
+}

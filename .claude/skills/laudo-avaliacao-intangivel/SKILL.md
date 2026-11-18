@@ -19,7 +19,8 @@ Python: `.venv/bin/python` (Linux) ou `.venv\Scripts\python.exe` (Windows).
 |---|---|
 | Pasta da documentação (Drive ou local) | histórias de usuário em PDF |
 | Pasta da APF e versão da linha de base | `Baseline-SICC 2.0-v1.3.xlsx` (usar a última versão) |
-| Preço do PF escolhido pela comissão | R$ 1.215,09 (Manifestação Técnica de 2026) |
+| Preço do PF aprovado pela comissão | R$ 1.215,09 (Manifestação Técnica de Aprovação do Preço do PF 2026, `2.3 Mapa Comparativo de Preços/7. Aprovação do Preço`) |
+| Códigos Sigadoc | da pesquisa e da aprovação do preço, para citar no laudo (`registro_preco`, `preco_fundamento`) |
 | Valor Institucional e justificativa | 0,50, com o motivo dado pelo usuário |
 | Nível de detalhe da medição | Estimativa (NESMA) |
 | Situação e vida útil | relação de sistemas, aba "Avaliação 2026" |
@@ -80,8 +81,10 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 
 ## Regras
 
+- Métodos: IFPUG CPM 4.3.1 (ISO/IEC 20926), NESMA (ISO/IEC 24570) e Roteiro de Métricas do SISP versão 2.3 (a do Contrato 014/2022), campo `roteiro_sisp`.
+- Sem links para o Google Drive particular do usuário; documentos são citados por código e, quando houver, pelo código do Sigadoc.
 - Não citar arquivos .md no laudo; referências a documentos apontam para PDF, planilha ou link.
 - Sem travessão longo.
 - O K-Means é descrito só conceitualmente, sem parâmetros.
 - O preço é decisão da comissão: descreva de onde ele vem (grupo, preços que o compõem, data-base), sem recomendar.
-- Composição da comissão abaixo do mínimo do art. 4º: manter a ressalva enquanto a situação persistir.
+- A ressalva sobre a composição da comissão não entra no laudo (decisão do usuário); o campo `ressalva_comissao` é opcional.

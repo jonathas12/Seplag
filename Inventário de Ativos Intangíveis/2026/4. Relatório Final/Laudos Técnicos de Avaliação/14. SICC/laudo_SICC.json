@@ -15,7 +15,7 @@
  "areas_negocio": "Gerência de Créditos de Pessoal (GCP), Superintendência de Obrigações com Pessoal e Encargos Sociais (SOPES) e Gabinete do Secretário Adjunto de Gestão de Pagamento de Pessoal, que aprovam as histórias de usuário",
  "vida_util": "Indefinida",
  "preco_pf": 1215.09,
- "preco_fundamento": "Centroide do Grupo 2 do agrupamento K-Means dos 9 preços de ponto de função para Java coletados em fontes oficiais (Compras.gov.br e PNCP) e atualizados pelo IPCA até 10/2026, conforme a Manifestação Técnica da pesquisa de preços de 2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01). A escolha do grupo é decisão da comissão.",
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [a registrar]): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
  "vi": 0.5,
  "vi_justificativa": [
   "O SICC está em produção com as funcionalidades identificadas nesta análise e sustenta o ciclo das Certidões de Crédito: validação do legado, atualização do crédito salarial, emissão digital com aprovação e assinatura, desmembramento, cessão, transferência, bloqueio, cancelamento, estorno e quitações.",
@@ -156,16 +156,13 @@
   "Requisitos não funcionais (desempenho, segurança, disponibilidade) e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único)."
  ],
  "custo_incorrido": "A comissão não dispõe da apuração dos custos incorridos no desenvolvimento do SICC por produto (art. 10, III, da IN). Por isso o bem é avaliado pela metodologia do art. 11, com a documentação funcional disponibilizada pela equipe do projeto.",
- "documentacao_fonte": "Histórias de usuário do SICC disponibilizadas pelo analista de requisitos responsável pelo projeto, em PDF, pasta do inventário de 2026 no Google Drive.",
- "pasta_documentacao": "https://drive.google.com/drive/folders/1rP6DJf-yxxr01-RsBXVM9Rg_H8FlyDcv",
- "pasta_apf": "https://drive.google.com/drive/folders/1c-snqVGyjlGLQT1R6ZQXnOs_-sGujHPH",
+ "documentacao_fonte": "Histórias de usuário do SICC, em PDF, disponibilizadas pelo analista de requisitos responsável pelo projeto.",
  "documentos": [
   {
    "codigo": "US0011",
    "nome": "Imprimir consulta Legado SEPLAG",
    "versao": "3.0",
    "data": "20/05/2026",
-   "link": "https://drive.google.com/file/d/19szOsLDtU5vKDszwJ90s9-3EM3FLVMHw/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -173,7 +170,6 @@
    "nome": "Imprimir consulta Legado SEFAZ-MT",
    "versao": "3.1",
    "data": "21/05/2026",
-   "link": "https://drive.google.com/file/d/1cuKnnVtzRpTL4bHdGrXBhhwAmYXFSa6C/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -181,7 +177,6 @@
    "nome": "Imprimir consulta Legado PGE",
    "versao": "2.1.3",
    "data": "29/04/2026",
-   "link": "https://drive.google.com/file/d/1eIvbF7_vODhgfN30stVZhfYNwNbeS508/view",
    "aprovacao": "05/08/2025"
   },
   {
@@ -189,7 +184,6 @@
    "nome": "Listar certidões Legado PGE",
    "versao": "2.1.3",
    "data": "29/04/2026",
-   "link": "https://drive.google.com/file/d/1Uj_SR2qss-8Yq0RUtExIGK5oOJC2m5cG/view",
    "aprovacao": ""
   },
   {
@@ -197,7 +191,6 @@
    "nome": "Detalhar certidões Legado PGE",
    "versao": "2.1.3",
    "data": "29/04/2026",
-   "link": "https://drive.google.com/file/d/1KmFjJvuDI09xDMlHFTDBbiEK61v2J5Qj/view",
    "aprovacao": ""
   },
   {
@@ -205,7 +198,6 @@
    "nome": "Listar certidões Legado SEPLAG",
    "versao": "3.0.1",
    "data": "24/05/2026",
-   "link": "https://drive.google.com/file/d/1lAs0mgCYoCEYRshIBW0WUMO-Wz3bH9Ju/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -213,7 +205,6 @@
    "nome": "Consultar detalhes de certidão Legado SEPLAG",
    "versao": "3.0.1",
    "data": "26/05/2026",
-   "link": "https://drive.google.com/file/d/1PkFEn2v_6wezKkPyCB53S5xma-b6OYZe/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -221,7 +212,6 @@
    "nome": "Importar validado",
    "versao": "2.1.5",
    "data": "24/03/2026",
-   "link": "https://drive.google.com/file/d/1rM8cgShds10tn26NdMG9kyDkTIjVAQCj/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -229,7 +219,6 @@
    "nome": "Listar Legado SEFAZ-MT",
    "versao": "3.0",
    "data": "28/05/2026",
-   "link": "https://drive.google.com/file/d/178MItRTEfx7kIZ6qU1PhInK83M_dOTNq/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -237,7 +226,6 @@
    "nome": "Detalhar Legado SEFAZ-MT",
    "versao": "3.0.1",
    "data": "28/05/2026",
-   "link": "https://drive.google.com/file/d/1FQnkkll1tfjcjznSFMsB9yzlzlV9f_ds/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -245,7 +233,6 @@
    "nome": "Bloquear Certidão de Crédito",
    "versao": "2.1.7",
    "data": "06/07/2026",
-   "link": "https://drive.google.com/file/d/1QlCMlYgPclIJKK_dNTyuJjZtRT82GnUm/view",
    "aprovacao": ""
   },
   {
@@ -253,7 +240,6 @@
    "nome": "Gerar Minuta de Certidão de Crédito",
    "versao": "2.1.8",
    "data": "25/09/2026",
-   "link": "https://drive.google.com/file/d/1_UKVKxiQPWEmYFUvCeU578IrNQGKHpSw/view",
    "aprovacao": "29/09/2026"
   },
   {
@@ -261,7 +247,6 @@
    "nome": "Cancelar Certidão de Crédito",
    "versao": "2.1.5",
    "data": "31/03/2026",
-   "link": "https://drive.google.com/file/d/1J2XZhgkg6EmwMEDKFxEC7GxzNMUeOP04/view",
    "aprovacao": "14/04/2026"
   },
   {
@@ -269,7 +254,6 @@
    "nome": "Rejeitar Minuta de Crédito Salarial",
    "versao": "2.1.10",
    "data": "17/07/2026",
-   "link": "https://drive.google.com/file/d/1Fq29N7SmBG8mZXqZAdT_szxpLzyiO0Gz/view",
    "aprovacao": ""
   },
   {
@@ -277,7 +261,6 @@
    "nome": "Listar Minutas de Certidão de Crédito",
    "versao": "2.1.8",
    "data": "08/07/2026",
-   "link": "https://drive.google.com/file/d/1d5hg0EQqsyo-OMPpAgPJL3buge9_I63s/view",
    "aprovacao": ""
   },
   {
@@ -285,7 +268,6 @@
    "nome": "Aprovar Minuta de Certidão de Crédito",
    "versao": "2.1.8",
    "data": "16/07/2026",
-   "link": "https://drive.google.com/file/d/15vJ07zOIi7f_TzEs8IQgGN4ZdhRPAikU/view",
    "aprovacao": ""
   },
   {
@@ -293,7 +275,6 @@
    "nome": "Assinar Certidão de Crédito",
    "versao": "2.1.8",
    "data": "16/07/2026",
-   "link": "https://drive.google.com/file/d/1klQZj_71_eJKx84BiS5YSMm2MCPdgE5o/view",
    "aprovacao": ""
   },
   {
@@ -301,7 +282,6 @@
    "nome": "Manter autorizadores de Certidão de Crédito",
    "versao": "3.0.1",
    "data": "21/07/2026",
-   "link": "https://drive.google.com/file/d/1wLNFMp26ezmflAYTL725ZUjlpwyKRmDL/view",
    "aprovacao": ""
   },
   {
@@ -309,7 +289,6 @@
    "nome": "Listar Crédito Salarial",
    "versao": "2.1.67",
    "data": "25/09/2026",
-   "link": "https://drive.google.com/file/d/1o87YzCq3NbWAxcHJkzaR3CJ-IQjuJlQl/view",
    "aprovacao": "29/09/2026"
   },
   {
@@ -317,7 +296,6 @@
    "nome": "Atualizar Crédito Salarial",
    "versao": "2.1.6",
    "data": "25/09/2026",
-   "link": "https://drive.google.com/file/d/1Gx4d1ldKDUdoHbF0VX2x1IRqyTHkIX7f/view",
    "aprovacao": "29/09/2026"
   },
   {
@@ -325,7 +303,6 @@
    "nome": "Listar Certidões de Crédito",
    "versao": "1.1",
    "data": "10/08/2026",
-   "link": "https://drive.google.com/file/d/1t8kAJ78wUWxKf8Bkb3wu7VaNekzQUqW1/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -333,7 +310,6 @@
    "nome": "Visualizar dados da certidão digital emitida",
    "versao": "3.3",
    "data": "10/08/2026",
-   "link": "https://drive.google.com/file/d/1PTFPqhcXykQjcfJ4XJfb5Pmpd6c4AvjJ/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -341,7 +317,6 @@
    "nome": "Gerenciar frações e cessionários",
    "versao": "3.0.3",
    "data": "10/08/2026",
-   "link": "https://drive.google.com/file/d/19MCiupLEIXrTl9ucZF-DyKhTBOHOhQt-/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -349,7 +324,6 @@
    "nome": "Visualizar desdobramento",
    "versao": "3.0",
    "data": "22/06/2026",
-   "link": "https://drive.google.com/file/d/10GzJCKv6RI4MfKkDa6qE9DRo4UugdrUB/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -357,7 +331,6 @@
    "nome": "Imprimir relatório de desdobramento",
    "versao": "3.0",
    "data": "22/06/2026",
-   "link": "https://drive.google.com/file/d/1_-yPVqxG0OBS88iRUkmink7FhIoBTRjP/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -365,7 +338,6 @@
    "nome": "Transferir titularidade de Certidão de Crédito",
    "versao": "3.1",
    "data": "11/08/2026",
-   "link": "https://drive.google.com/file/d/1zrP9RevVi5FNS9tv5j7E9D4MpPqUyffU/view",
    "aprovacao": "12/08/2026"
   },
   {
@@ -373,7 +345,6 @@
    "nome": "Cadastrar cessionário",
    "versao": "1.1",
    "data": "09/10/2026",
-   "link": "https://drive.google.com/file/d/18wXSG-9wzxkqM4zcTQXGcNUH-gTQ7GvK/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -381,7 +352,6 @@
    "nome": "Listar movimentações estornáveis",
    "versao": "1.1",
    "data": "22/09/2026",
-   "link": "https://drive.google.com/file/d/1w5wzjuaM0TzdJ0hmdKu9zYES2WTQM7IS/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -389,7 +359,6 @@
    "nome": "Solicitar estorno",
    "versao": "1.1",
    "data": "22/09/2026",
-   "link": "https://drive.google.com/file/d/1N4ZZ50MzPX7ahz1SoOtiW2IKH5NnnCvM/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -397,7 +366,6 @@
    "nome": "Aprovar ou rejeitar solicitação de estorno",
    "versao": "1.2",
    "data": "09/10/2026",
-   "link": "https://drive.google.com/file/d/1u32IOilwozQ322IUSD-E9hcaWTcqDyVz/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -405,7 +373,6 @@
    "nome": "Quitação administrativa",
    "versao": "1.0",
    "data": "15/09/2026",
-   "link": "https://drive.google.com/file/d/1MBpsNKA9_B0YB8FAdcaPX0Vr2gj8QIN6/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -413,7 +380,6 @@
    "nome": "Quitação por amortização",
    "versao": "1.1",
    "data": "13/10/2026",
-   "link": "https://drive.google.com/file/d/1ZG_cQXK4d-YLRaxxbzvYKjO6zd2I2JkI/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -421,7 +387,6 @@
    "nome": "Encerramento do ciclo da Certidão de Crédito",
    "versao": "1.1",
    "data": "14/10/2026",
-   "link": "https://drive.google.com/file/d/1cpdS7XTnWY5LMXkdHm_tVR7harobDI-Q/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -429,7 +394,6 @@
    "nome": "Perfis de acesso",
    "versao": "1.0",
    "data": "30/09/2026",
-   "link": "https://drive.google.com/file/d/15S9h6klDUBxC7ZOQlKmxLU3-Cmkwqib2/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -437,7 +401,6 @@
    "nome": "Autenticar Certidão de Crédito",
    "versao": "1.0",
    "data": "02/10/2026",
-   "link": "https://drive.google.com/file/d/1ICkaClXqAgMFM9xpF-y545Gs5qHlLQty/view",
    "aprovacao": "14/10/2026"
   },
   {
@@ -445,7 +408,6 @@
    "nome": "Listar validação",
    "versao": "2.1.3",
    "data": "06/11/2025",
-   "link": "https://drive.google.com/file/d/1UPvxjiWj56raXujtkkFVdvg85-mmwXy7/view",
    "aprovacao": ""
   },
   {
@@ -453,7 +415,6 @@
    "nome": "Validar beneficiário da certidão",
    "versao": "2.1.6",
    "data": "18/05/2026",
-   "link": "https://drive.google.com/file/d/1qUjvGg4nJIb_Kf-0IrOchi0uRWCrnpX7/view",
    "aprovacao": "18/05/2026"
   },
   {
@@ -461,7 +422,6 @@
    "nome": "Validar obrigação",
    "versao": "2.1.4",
    "data": "27/04/2026",
-   "link": "https://drive.google.com/file/d/19rfdF_H1ZiUecH2wJqyJTS2Kia2AIvTn/view",
    "aprovacao": "28/04/2026"
   },
   {
@@ -469,7 +429,6 @@
    "nome": "Chamar API da PGE",
    "versao": "2.1.8",
    "data": "08/05/2026",
-   "link": "https://drive.google.com/file/d/1nsCSuQqqEo1MqMDB7PU9UGGbxFm1Elz1/view",
    "aprovacao": ""
   },
   {
@@ -477,7 +436,6 @@
    "nome": "Manter amparo legal",
    "versao": "2.1.7",
    "data": "14/08/2026",
-   "link": "https://drive.google.com/file/d/14HaHv0YyPgo1W0W4Icoab8NJMb5fCgFe/view",
    "aprovacao": ""
   },
   {
@@ -485,7 +443,6 @@
    "nome": "Manter tipos de certidão",
    "versao": "2.1.5",
    "data": "20/03/2026",
-   "link": "https://drive.google.com/file/d/1IqasZxBTruXLK2emJaXhHO4DQJVmaacm/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -493,7 +450,6 @@
    "nome": "Listar tipos de certidão",
    "versao": "2.1.6",
    "data": "20/03/2026",
-   "link": "https://drive.google.com/file/d/1vxhrcYeTaE5_kfLfaK9wj77JQi2ZoKN4/view",
    "aprovacao": "29/05/2026"
   },
   {
@@ -501,7 +457,6 @@
    "nome": "Criar obrigação",
    "versao": "2.1.9",
    "data": "16/07/2026",
-   "link": "https://drive.google.com/file/d/1qMi_d8PdwKlbBO63CZm9G3qJ7D8-pxk_/view",
    "aprovacao": ""
   }
  ],
@@ -511,5 +466,6 @@
   "matricula": "280193",
   "portaria": "Portaria nº 124/2026/SEPLAG"
  },
- "ressalva_comissao": "Os três membros designados pela Portaria nº 124/2026/SEPLAG recusaram-se a exercer as atividades entre 12 e 17/11/2026 (Ata 001/2026, Atualização nº 2). Este laudo foi elaborado e é assinado pelo presidente da comissão, abaixo da composição mínima do art. 4º da IN, limitação registrada também no Relatório Final."
+ "roteiro_sisp": "2.3",
+ "registro_preco": "Manifestação Técnica da pesquisa de preços e Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc [a registrar])"
 }

@@ -18,6 +18,7 @@ Campos opcionais da configuração (além dos usados pelo SICC):
 """
 import collections
 import json
+from decimal import Decimal, ROUND_HALF_UP
 import re
 import sys
 from pathlib import Path
@@ -62,6 +63,11 @@ def num(v, casas=0):
 def npf(v):
     """Pontos de função: sem casas quando inteiro, com uma casa quando fracionário."""
     return num(v, 0 if abs(v - round(v)) < 1e-9 else 1)
+
+
+def r2(v):
+    """Arredonda para centavos (meio para cima), como o Excel."""
+    return float(Decimal(repr(v)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))
 
 
 def pct(v):
@@ -170,7 +176,7 @@ def grafico_valores(rotulos, valores, cores, titulo, arquivo):
 def grafico_evolucao(historico, arquivo, titulo):
     _estilo()
     fig, ax = plt.subplots(figsize=(8.6, 3.2))
-    rot = [f"v{h['versao']}\n{h['data']}" for h in historico]
+    rot = [(f"Inventário {h['inventario']}" if h.get('inventario') else f"v{h['versao']}") + f"\n{h['data']}" for h in historico]
     val = [h['pf'] for h in historico]
     ax.bar(rot, val, color=[CINZA] * (len(val) - 1) + [AZUL], width=0.5)
     for i, v in enumerate(val):
@@ -202,8 +208,9 @@ def gerar(caminho_cfg):
     if cab['pf_planilha'] not in (None, '') and abs(float(cab['pf_planilha']) - pf_total) > 0.01:
         raise SystemExit(f'Soma das funções ({pf_total}) difere do total da planilha ({cab["pf_planilha"]}).')
     preco, vi = cfg['preco_pf'], cfg['vi']
-    vt = round(pf_total * preco, 2)
-    va = round(vt + vt * vi, 2)
+    vt_bruto = pf_total * preco  # sem arredondamento intermediário, como na planilha de avaliação
+    vt = r2(vt_bruto)
+    va = r2(vt_bruto * vi + vt_bruto)
     rotulo_vi = next(r for r, _, i in VI_TABELA if abs(i - vi) < 1e-9)
     docs = cfg.get('documentos', [])
     tem_aprov = any('aprovacao' in x for x in docs)
@@ -240,7 +247,7 @@ def gerar(caminho_cfg):
     grafico_barras_h(list(por_mod), [sum(f['pf'] for f in v) for v in por_mod.values()],
                      f'Tamanho funcional do {sig} por módulo', graf / 'G2_pf_por_modulo.png')
     grafico_evolucao(cfg['historico_medicoes'], graf / 'G3_evolucao_baseline.png',
-                     f'Evolução do tamanho funcional do {sig} nas medições')
+                     f'Evolução do tamanho funcional do {sig} nos inventários' if cfg['historico_medicoes'][0].get('inventario') else f'Evolução do tamanho funcional do {sig} nas medições')
 
     resp = cfg['responsavel']
     d = Documento(f'Laudo Técnico de Avaliação - {sig}',
@@ -411,12 +418,23 @@ def gerar(caminho_cfg):
     d.figura(graf / 'G2_pf_por_modulo.png', f'Figura 2 - Tamanho funcional do {sig} por módulo')
     d.subsecao(f'5.{sec} Evolução das medições')
     h = cfg['historico_medicoes']
-    d.tabela(['Versão', 'Data', 'Nível', 'PF', 'Uso'], [[x['versao'], x['data'], x['nivel'], npf(x['pf']), x['uso']] for x in h],
-             legenda=f'Tabela {11 + (not so_inclusao)} - Medições do ' + sig, numericas=[3], larguras=[10, 14, 24, 12, 40], destaque_linhas=[len(h) - 1])
+    if h[0].get('inventario'):
+        d.tabela(['Inventário', 'Data da mensuração', 'Situação', 'Nível', 'PF', 'Observação'],
+                 [[str(x['inventario']), x['data'], x.get('situacao', ''), x['nivel'], npf(x['pf']), x.get('uso', '')] for x in h],
+                 legenda=f'Tabela {11 + (not so_inclusao)} - Medições do {sig} por inventário', numericas=[4],
+                 larguras=[11, 13, 15, 17, 10, 34], destaque_linhas=[len(h) - 1], fonte=cfg.get('fonte_historico'))
+    else:
+        d.tabela(['Versão', 'Data', 'Nível', 'PF', 'Uso'], [[x['versao'], x['data'], x['nivel'], npf(x['pf']), x['uso']] for x in h],
+                 legenda=f'Tabela {11 + (not so_inclusao)} - Medições do ' + sig, numericas=[3], larguras=[10, 14, 24, 12, 40], destaque_linhas=[len(h) - 1])
     d.figura(graf / 'G3_evolucao_baseline.png', f'Figura 3 - Evolução do tamanho funcional do {sig}')
     ant = h[-2]['pf']
-    d.p(f'O tamanho passou de {npf(ant)} PF na versão {h[-2]["versao"]} para {npf(pf_total)} PF na versão {h[-1]["versao"]} '
-        f'(+{pct(pf_total / ant - 1)}). ' + cfg.get('texto_evolucao', ''))
+    if h[0].get('inventario'):
+        d.p(f'O tamanho passou de {npf(h[0]["pf"])} PF no inventário de {h[0]["inventario"]} para {npf(pf_total)} PF no de '
+            f'{h[-1]["inventario"]} ({pct(pf_total / h[0]["pf"] - 1)}), e de {npf(ant)} PF no inventário anterior '
+            f'({"+" if pf_total >= ant else ""}{pct(pf_total / ant - 1)}). ' + cfg.get('texto_evolucao', ''))
+    else:
+        d.p(f'O tamanho passou de {npf(ant)} PF na versão {h[-2]["versao"]} para {npf(pf_total)} PF na versão {h[-1]["versao"]} '
+            f'(+{pct(pf_total / ant - 1)}). ' + cfg.get('texto_evolucao', ''))
 
     # 6. Valor
     nt = 12 + (not so_inclusao)
@@ -430,15 +448,18 @@ def gerar(caminho_cfg):
         ['Preço do ponto de função', cfg.get('fonte_preco_curta', 'Manifestação Técnica da pesquisa de preços (data-base 10/2026)'), brl(preco)],
         ['Valor do tamanho do ativo (VT)', f'{npf(pf_total)} x {brl(preco)}', brl(vt)],
         ['Valor Institucional (VI)', f'{rotulo_vi} (art. 11, § 4º)', num(vi, 2)],
-        ['Parcela institucional', f'VT x VI = {brl(vt)} x {num(vi, 2)}', brl(round(vt * vi, 2))],
+        ['Parcela institucional', f'VT x VI = {brl(vt)} x {num(vi, 2)}', brl(r2(vt_bruto * vi))],
         ['Valor do ativo (VA)', 'VT + (VT x VI)', brl(va)],
-    ], legenda=f'Tabela {nt} - Cálculo do valor do ativo', numericas=[2], larguras=[30, 46, 24], destaque_linhas=[5])
+    ], legenda=f'Tabela {nt} - Cálculo do valor do ativo', numericas=[2], larguras=[30, 46, 24], destaque_linhas=[5],
+        fonte='Cálculo sem arredondamento intermediário, como na planilha de avaliação: os valores exibidos são arredondados '
+              'para centavos só no fim, por isso a soma das parcelas exibidas pode diferir do VA em um centavo.' if r2(vt) + r2(vt_bruto * vi) != va else None)
     nt += 1
     a = cfg.get('avaliacao_anterior')
     sub = 3
     if a:
-        vt0 = round(a['pf'] * a['preco_pf'], 2)
-        va0 = round(vt0 + vt0 * a['vi'], 2)
+        vt0_bruto = a['pf'] * a['preco_pf']
+        vt0 = r2(vt0_bruto)
+        va0 = r2(vt0_bruto * a['vi'] + vt0_bruto)
         d.subsecao(f'6.{sub} Comparação com o inventário de ' + str(a['exercicio']))
         sub += 1
         d.tabela(['Componente', f'Inventário {a["exercicio"]}', f'Inventário {cfg["exercicio"]}', 'Variação'], [

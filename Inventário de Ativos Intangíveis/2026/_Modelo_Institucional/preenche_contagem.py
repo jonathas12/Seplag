@@ -6,8 +6,10 @@ Este script altera apenas o XML das células indicadas (texto inline), preservan
 Uso:
     python preenche_contagem.py origem.xlsx destino.xlsx campos.json
 
-campos.json: {"F7": "Estimativa (NESMA)", "A17": "texto...", "A22": "texto..."}
+campos.json: {"F7": "Estimativa (NESMA)", "A17": "texto...", "A22": "texto...", "R10": "2026-11-01"}
+(valores no formato AAAA-MM-DD são gravados como data)
 """
+import datetime
 import json
 import re
 import shutil
@@ -30,6 +32,15 @@ def _caminho_aba(z, nome_aba):
 
 
 def _troca_celula(xml, ref, texto):
+    m_data = re.fullmatch(r'(\d{4})-(\d{2})-(\d{2})', str(texto))
+    if m_data:  # data: grava o número de série do Excel, mantendo o formato de data da célula
+        serial = (datetime.date(*map(int, m_data.groups())) - datetime.date(1899, 12, 30)).days
+        padrao = re.compile(r'<c r="%s"(?P<attrs>[^>]*?)(?:/>|>(?P<corpo>.*?)</c>)' % ref, re.S)
+        m = padrao.search(xml)
+        if not m:
+            raise SystemExit(f'Célula {ref} não existe na aba (crie-a no Excel antes).')
+        attrs = re.sub(r'\s+t="[^"]*"', '', m.group('attrs'))
+        return xml[:m.start()] + f'<c r="{ref}"{attrs}><v>{serial}</v></c>' + xml[m.end():]
     valor = escape(texto).replace('\n', '&#10;')
     nova_is = f'<is><t xml:space="preserve">{valor}</t></is>'
     padrao = re.compile(r'<c r="%s"(?P<attrs>[^>]*?)(?:/>|>(?P<corpo>.*?)</c>)' % ref, re.S)

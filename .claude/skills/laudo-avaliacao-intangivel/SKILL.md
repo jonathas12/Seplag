@@ -93,6 +93,16 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 
 ## Regras
 
+- Evolução do tamanho: usar o registro histórico das avaliações da comissão (`3. Analise de Dados/3.2. Dados/Dados.xlsx`,
+  inventários de 2023 a 2025) em `historico_medicoes`, com `inventario`, `data`, `situacao`, `nivel`, `pf` e `uso`;
+  não reconstruir a série pelas versões das baselines. Citar a fonte em `fonte_historico`.
+- Centavos: VT e VA são calculados sem arredondamento intermediário, como na planilha de avaliação
+  (`=SOMA((M*N);M)`); o laudo precisa bater centavo a centavo com a aba Avaliação.
+- Data de revisão da baseline: se R10 estiver vazia, perguntar ao usuário e gravar com `preenche_contagem.py`
+  (valor "AAAA-MM-DD" é gravado como data).
+- Histórias de usuário organizadas por sprint: listar a pasta inteira e usar a versão mais recente de cada história;
+  conferir se há histórias sem funções na planilha (ex.: US32 do SIGPAS) e registrar em `ressalvas_extras`.
+
 - Métodos: IFPUG CPM 4.3.1 (ISO/IEC 20926), NESMA (ISO/IEC 24570) e Roteiro de Métricas do SISP versão 2.3 (a do Contrato 014/2022), campo `roteiro_sisp`.
 - Unidade de desenvolvimento dos sistemas internos: SSCPG/SAPGD/SEPLAG (não usar SITEC).
 - Assinatura: Jonathas Gomes Marques, Presidente da CIABI, "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)" (campo `responsavel.funcao`), Portaria nº 124/2026/SEPLAG, matrícula 280193. Não usar mais a sigla CPPTI/SITEC/SAAS/SEPLAG.

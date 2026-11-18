@@ -16,7 +16,7 @@
  "tipo_bem": "Software desenvolvido pela SEPLAG em conjunto com a fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
  "unidade_desenvolvimento": "SEPLAG/MT (SSCPG/SAPGD/SEPLAG): requisitos, gestão de produto e de projeto, arquitetura, banco de dados, infraestrutura e DevOps; fábrica de software do Contrato nº 014/2022/SEPLAG: código-fonte, scripts de banco de dados e testes unitários e funcionais",
  "areas_negocio": "Unidade Central de Gestão de Pessoas da SEPLAG e unidades de gestão de pessoas dos órgãos e entidades do Poder Executivo (Decreto nº 554/2020)",
- "perfis": "Administrador do Sistema, Gestor do Sistema (chefia imediata) e Usuário (servidor), conforme o art. 2º do Decreto nº 554/2020",
+ "perfis": "Usuário (servidor), Gestor (chefia imediata), Gestor especial, Administrador setorial e Administrador central, conforme as histórias de usuário; o Decreto nº 554/2020 (art. 2º) define os perfis de Administrador, Gestor e Usuário",
  "base_legal": "Decreto Estadual nº 554, de 03/07/2020: o WEBPonto é a ferramenta oficial de verificação de frequência do Poder Executivo, vedado outro meio de controle (art. 3º), e compete à SEPLAG seu desenvolvimento, gestão e disponibilização a todos os órgãos e entidades (art. 4º)",
  "vida_util": "Indefinida",
  "preco_pf": 1215.09,
@@ -32,7 +32,7 @@
  "finalidade": [
   "O Sistema de Gestão de Assiduidade (SIGPAS), desenvolvido como Web Ponto 2.0 e renomeado em 2024, é a nova geração do WEBPonto, ferramenta oficial de controle de frequência, assiduidade e pontualidade dos servidores do Poder Executivo do Estado de Mato Grosso, nos termos do Decreto nº 554/2020. Atende servidores efetivos, comissionados, requisitados, cedidos, temporários, militares e, no que couber, empregados públicos e estagiários.",
   "A demanda foi formalizada em junho de 2022 por Documento de Oficialização da Demanda (DOD). Entre os objetivos registrados está a integração do controle de frequência ao SEAP para o desconto automático de faltas, ponto sobre o qual a Controladoria-Geral do Estado pediu prazo de desenvolvimento. O desenvolvimento começou com a Ordem de Serviço nº 07, de 27/02/2023, do Contrato nº 014/2022/SEPLAG.",
-  "O sistema reúne: cadastros e parametrização (órgão, cargo, setor, horário de trabalho, códigos de ocorrência, mensagens, feriados municipais, jornadas e modelos de escala); escalas e eventos de cada servidor; registro de frequência por coletor biométrico e por estação de trabalho; processamento das jornadas de 6 e 8 horas, de plantonistas e da educação; justificativas de ocorrência (atestado, teletrabalho, coletivas, ajuste e troca de evento, dispensa) e sua análise pela chefia; geração e assinatura da folha de frequência pelo servidor e pelo gestor; banco de horas (convocação para trabalho extraordinário, saldo, compensação e extrato); cadastro de dispositivos e de biometria; relatórios gerenciais; notificações, termo de ciência e responsabilidade; e integração com o SEAP para importação de ocorrências e envio de faltas.",
+  "O sistema reúne: cadastros e parametrização (órgão, cargo, setor, horário de trabalho, códigos de ocorrência, mensagens, feriados municipais, jornadas e modelos de escala); escalas e eventos de cada servidor; registro de frequência por coletor biométrico e por estação de trabalho; processamento das jornadas de 6 e 8 horas, de plantonistas da Saúde (SES) e das jornadas de apoio, gestão escolar e regência da Educação (SEDUC); justificativas de ocorrência (atestado, teletrabalho, coletivas, ajuste e troca de evento, dispensa) e sua análise pela chefia; geração e assinatura da folha de frequência pelo servidor e pelo gestor; banco de horas (convocação para trabalho extraordinário, saldo, compensação e extrato); cadastro de dispositivos e de biometria; relatórios gerenciais (ficha do usuário, faltas e descontos, avaliação de desempenho, folhas assinadas, justificativas, plantão, adicional noturno, abandono de cargo, inassiduidade habitual e extrato de horas); notificações, termo de ciência e responsabilidade; e integração com o SEAP para importação de ocorrências e envio de faltas.",
   "O produto é desenvolvido em conjunto: a equipe da SEPLAG responde por requisitos, gestão de produto e de projeto, arquitetura de software, banco de dados, infraestrutura de data center e DevOps; a fábrica de software contratada desenvolve o código-fonte, os scripts de banco de dados e os testes unitários e funcionais."
  ],
  "integracoes": [
@@ -110,6 +110,7 @@
    27
   ],
   "Banco de horas e trabalho extraordinário": [
+   32,
    33,
    34,
    35,
@@ -156,10 +157,22 @@
  "uso": "Em produção, de uso obrigatório pelos órgãos e entidades do Poder Executivo (Decreto nº 554/2020)",
  "beneficio": "Controle oficial da frequência dos servidores do Poder Executivo e base para a apuração de faltas e descontos em folha",
  "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato (Seção 6.4), mas o custo da equipe interna (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
- "analise_documental": "Leitura das histórias de usuário registradas na planilha de contagem (US01 a US69), da Ordem de Serviço nº 07, das mensagens de abertura do projeto e do Decreto nº 554/2020",
- "documentacao_resumo": "Histórias de usuário US01 a US69 registradas na planilha, Ordem de Serviço nº 07 e Decreto nº 554/2020 (Anexo I)",
- "documentacao_fonte": "Planilha de contagem com as histórias de usuário do SIGPAS, documentos de abertura do projeto e norma de regência.",
+ "analise_documental": "Leitura das 66 histórias de usuário (versões de 2023 a 2026), do glossário do projeto, da Ordem de Serviço nº 07, das mensagens de abertura do projeto e do Decreto nº 554/2020",
+ "documentacao_resumo": "66 histórias de usuário, glossário do projeto, Ordem de Serviço nº 07 e Decreto nº 554/2020 (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário do SIGPAS, organizadas por sprint (Sprints 2 a 36), elaboradas pela analista de requisitos responsável pelo projeto, Ercilene Mello. Considerou-se a versão mais recente de cada história.",
  "outros_documentos": [
+  [
+   "Histórias de usuário US01 a US69 (66 documentos, versão mais recente de cada)",
+   "Pasta do projeto, Sprints 2 a 36",
+   "16/02/2023 a 17/09/2026",
+   "Finalidade, regras de negócio, perfis e integrações (Tabela A2)"
+  ],
+  [
+   "Glossário WebPonto",
+   "Pasta do projeto, Sprint 2",
+   "11/05/2023",
+   "Conceitos de perfil, vínculo, lotação e órgão e estruturas de dados do SEAP e do Manopla"
+  ],
   [
    "Ordem de Serviço nº 07 - Desenvolvimento do produto Web Ponto 2.0 (Contrato nº 014/2022/SEPLAG)",
    "Sigadoc SEPLAG-DIC-2023/04485",
@@ -191,22 +204,22 @@
    "Finalidade, obrigatoriedade de uso, perfis e importância institucional"
   ],
   [
-   "Linhas de base anteriores (versões 0.4, 0.10 e 0.17)",
-   "Planilhas de contagem do inventário de 2025",
-   "2023 a 2025",
-   "Evolução do tamanho funcional"
-  ],
-  [
    "Painel Custos de Projetos - Fábrica de Software (projeto SIGPAS)",
    "Painel da fiscalização do contrato",
    "TRDs até 07/2026",
    "Custo do projeto com a contratada (Seção 6.4)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SIGPAS em cada inventário"
   ]
  ],
- "ressalva_documentacao": "As histórias de usuário foram analisadas pelos títulos e funções registrados na planilha de contagem; os documentos completos são mantidos pela equipe do projeto, responsável por seu conteúdo e qualidade.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. As histórias registram o histórico de versões e a autoria, mas não têm seção de aprovação formal pelas áreas de negócio; as funcionalidades foram consideradas por estarem em produção.",
  "texto_tipos": "A predominância das transações reflete um sistema de registro, justificativa e processamento de eventos de frequência.",
  "texto_manutencao": "A contagem é de projeto de desenvolvimento e registra o tipo de manutenção de cada função. A medida adotada (PF Local da FS) aplica os deflatores do Roteiro de Métricas do SISP 2.3, previstos no Contrato nº 014/2022/SEPLAG: inclusão a 100%, exclusão a 40% e manutenção cosmética a 0,6 PF por função. A função sem tipo de manutenção (linha 180, que aciona a US58) não contribui para essa medida.",
- "texto_evolucao": "O crescimento acompanha as entregas sucessivas do projeto desde a Ordem de Serviço nº 07 (125 PF estimados para a Sprint 1, em 2023). A versão 0.25 é a primeira contagem detalhada (IFPUG); as anteriores foram estimativas (NESMA). Os valores das versões anteriores são os usados nos inventários (coluna PF IFPUG).",
+ "texto_evolucao": "O crescimento acompanha as entregas sucessivas do projeto, desenvolvido em sprints desde a Ordem de Serviço nº 07, de 27/02/2023 (125 PF estimados para a Sprint 1).",
  "exemplos_tipos": [
   "Jornada de trabalho, escala, ocorrência, folha de frequência",
   "Servidor, lotação e função (SEAP); tipo de usuário (Manopla)",
@@ -216,32 +229,36 @@
  ],
  "historico_medicoes": [
   {
-   "versao": "0.4",
-   "data": "26/06/2023",
-   "pf": 692,
-   "nivel": "Estimativa (NESMA)",
-   "uso": "Primeira linha de base"
+   "inventario": 2023,
+   "data": "05/12/2023",
+   "pf": 688.4,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Web Ponto 2.0; VI 0,75"
   },
   {
-   "versao": "0.10",
+   "inventario": 2024,
    "data": "23/08/2024",
    "pf": 991,
-   "nivel": "Estimativa (NESMA)",
-   "uso": "Inventário de 2024"
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Renomeado de Web Ponto 2.0 para SIGPAS"
   },
   {
-   "versao": "0.17",
+   "inventario": 2025,
    "data": "04/12/2025",
    "pf": 1302,
-   "nivel": "Estimativa (NESMA)",
-   "uso": "Inventário de 2025"
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.17"
   },
   {
-   "versao": "0.25",
-   "data": "27/08/2026",
+   "inventario": 2026,
+   "data": "01/11/2026",
    "pf": 1601.6,
    "nivel": "Detalhada (IFPUG)",
-   "uso": "Inventário de 2026, PF Local da FS (1.615 PF IFPUG)"
+   "situacao": "Em produção",
+   "uso": "Baseline v0.25, PF Local da FS (1.615 PF IFPUG)"
   }
  ],
  "avaliacao_anterior": {
@@ -251,12 +268,12 @@
   "vi": 1.0,
   "situacao": "Em produção"
  },
- "motivo_variacao": "A variação decorre do aumento do tamanho funcional, com a primeira contagem detalhada, e do novo preço do ponto de função apurado na pesquisa de 2026. O Valor Institucional permanece 1,00. Em 2025 foi usada a coluna PF IFPUG da versão 0.17; em 2026, a coluna PF Local da FS da versão 0.25.",
+ "motivo_variacao": "A variação decorre do aumento do tamanho funcional, com as entregas das Sprints realizadas entre os inventários, e do novo preço do ponto de função apurado na pesquisa de 2026. O Valor Institucional permanece 1,00. Em 2025 foi usada a coluna PF IFPUG da baseline v0.17; em 2026, a coluna PF Local da FS da baseline v0.25.",
  "fora_do_escopo": [
   "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
   "Os sistemas Web Ponto e Web Ponto Client Biometria, avaliados separadamente no inventário."
  ],
- "texto_acompanham": "A planilha de contagem, a Ordem de Serviço nº 07 e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, a Ordem de Serviço nº 07 e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
  "custo_projeto": {
   "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
   "contexto": "Como o SIGPAS é desenvolvido com a fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. Esse custo permite comparar o que foi pago pela construção com o valor atribuído ao ativo. O contrato está em execução desde 07/2022 e os dados abaixo consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
@@ -295,5 +312,407 @@
   "matricula": "280193",
   "portaria": "Portaria nº 124/2026/SEPLAG",
   "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
- }
+ },
+ "documentos": [
+  {
+   "codigo": "US01",
+   "nome": "Consultar usuário",
+   "versao": "1.9",
+   "data": "23/07/2026"
+  },
+  {
+   "codigo": "US02",
+   "nome": "Consultar Evento de Lotação (Vacância, Remoção, Cessão)",
+   "versao": "1.21",
+   "data": "17/08/2026"
+  },
+  {
+   "codigo": "US03",
+   "nome": "Consultar órgão",
+   "versao": "1.2",
+   "data": "11/06/2024"
+  },
+  {
+   "codigo": "US04",
+   "nome": "Consultar cargo",
+   "versao": "1.1",
+   "data": "15/04/2025"
+  },
+  {
+   "codigo": "US05",
+   "nome": "Consultar setor",
+   "versao": "1.8",
+   "data": "11/09/2026"
+  },
+  {
+   "codigo": "US06",
+   "nome": "Cadastrar horário de trabalho do órgão",
+   "versao": "1.9",
+   "data": "25/05/2026"
+  },
+  {
+   "codigo": "US07",
+   "nome": "Manter códigos de ocorrência",
+   "versao": "1.15",
+   "data": "24/07/2026"
+  },
+  {
+   "codigo": "US08",
+   "nome": "Parametrizar funcionalidades",
+   "versao": "1.37",
+   "data": "25/08/2026"
+  },
+  {
+   "codigo": "US10",
+   "nome": "Manter Parâmetro de Mensagem",
+   "versao": "1.7",
+   "data": "21/05/2025"
+  },
+  {
+   "codigo": "US11",
+   "nome": "Manter Parâmetro de feriado municipal",
+   "versao": "1.7",
+   "data": "30/04/2026"
+  },
+  {
+   "codigo": "US12",
+   "nome": "Manter Jornada de Trabalho",
+   "versao": "1.10",
+   "data": "22/09/2026"
+  },
+  {
+   "codigo": "US13",
+   "nome": "Manter Template Modelo Escala de Trabalho",
+   "versao": "1.7",
+   "data": "05/11/2025"
+  },
+  {
+   "codigo": "US14",
+   "nome": "Cadastrar escala de trabalho",
+   "versao": "1.41",
+   "data": "25/06/2026"
+  },
+  {
+   "codigo": "US15",
+   "nome": "Eventos do usuário",
+   "versao": "1.32",
+   "data": "16/09/2026"
+  },
+  {
+   "codigo": "US16",
+   "nome": "Justificar ocorrência – Atestado de comparecimento",
+   "versao": "1.47",
+   "data": "16/09/2026"
+  },
+  {
+   "codigo": "US17",
+   "nome": "Justificar ocorrência",
+   "versao": "1.46",
+   "data": "16/09/2026"
+  },
+  {
+   "codigo": "US18",
+   "nome": "Visualizar ocorrências - usuário",
+   "versao": "1.8",
+   "data": "01/09/2026"
+  },
+  {
+   "codigo": "US19",
+   "nome": "Manter justificativa de ocorrência - Teletrabalho",
+   "versao": "1.33",
+   "data": "17/09/2026"
+  },
+  {
+   "codigo": "US20",
+   "nome": "Manter justificativa de ocorrência individual",
+   "versao": "1.38",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US21",
+   "nome": "Manter justificativa de ocorrência individual",
+   "versao": "1.42",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US22",
+   "nome": "Manter justificativa de ocorrência coletiva",
+   "versao": "1.40",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US23",
+   "nome": "Analisar justificativa de ocorrência",
+   "versao": "1.47",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US24",
+   "nome": "Visualizar registro de ponto",
+   "versao": "1.14",
+   "data": "04/04/2025"
+  },
+  {
+   "codigo": "US25",
+   "nome": "Assinar folha de frequência",
+   "versao": "1.30",
+   "data": "25/09/2026"
+  },
+  {
+   "codigo": "US26",
+   "nome": "Imprimir folha de frequência",
+   "versao": "1.11",
+   "data": "28/09/2026"
+  },
+  {
+   "codigo": "US27",
+   "nome": "Assinar folha de frequência - gestor",
+   "versao": "1.13",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US28",
+   "nome": "Regras gerais jornada 6 horas diárias",
+   "versao": "1.28",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US29",
+   "nome": "Regras gerais jornada 8 horas diárias",
+   "versao": "1.28",
+   "data": "25/08/2026"
+  },
+  {
+   "codigo": "US30",
+   "nome": "Visualizar notificações do sistema",
+   "versao": "1.22",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US31",
+   "nome": "Reprocessar registros de frequência",
+   "versao": "1.39",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US32",
+   "nome": "Incluir convocação eleitoral",
+   "versao": "1.3",
+   "data": "09/05/2024"
+  },
+  {
+   "codigo": "US33",
+   "nome": "Incluir convocação para trabalho extraordinário",
+   "versao": "1.23",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US34",
+   "nome": "Gerar crédito convocação",
+   "versao": "1.4",
+   "data": "11/09/2026"
+  },
+  {
+   "codigo": "US35",
+   "nome": "Compensar saldo de horas",
+   "versao": "1.10",
+   "data": "11/06/2026"
+  },
+  {
+   "codigo": "US36",
+   "nome": "Visualizar extrato saldo",
+   "versao": "1.22",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US37",
+   "nome": "Cadastrar dispositivo",
+   "versao": "1.18",
+   "data": "25/05/2026"
+  },
+  {
+   "codigo": "US38",
+   "nome": "Visualizar página inicial",
+   "versao": "1.4",
+   "data": "14/07/2025"
+  },
+  {
+   "codigo": "US39",
+   "nome": "Vincular dispositivo",
+   "versao": "1.10",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US40",
+   "nome": "Consultar log de registros",
+   "versao": "1.17",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US41",
+   "nome": "Justificar ocorrências – Integração SEAP",
+   "versao": "1.1",
+   "data": "01/08/2024"
+  },
+  {
+   "codigo": "US42",
+   "nome": "Cadastrar biometria",
+   "versao": "1.5",
+   "data": "29/01/2025"
+  },
+  {
+   "codigo": "US43",
+   "nome": "Regras gerais jornada 6 horas diárias Apoio/TAE SEDUC",
+   "versao": "1.8",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US44",
+   "nome": "Reprocessar integração",
+   "versao": "1.23",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US46",
+   "nome": "Relatório ficha dos usuários",
+   "versao": "1.8",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US48",
+   "nome": "Registrar frequência estação de trabalho",
+   "versao": "1.7",
+   "data": "06/05/2026"
+  },
+  {
+   "codigo": "US49",
+   "nome": "Personalizar ícones menu",
+   "versao": "1.2",
+   "data": "29/09/2025"
+  },
+  {
+   "codigo": "US50",
+   "nome": "Relatório de faltas e descontos",
+   "versao": "1.15",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US51",
+   "nome": "Relatório de Avaliação de Desempenho",
+   "versao": "1.11",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US52",
+   "nome": "Imprimir relatório consolidado para avaliação de desempenho",
+   "versao": "1.3",
+   "data": "21/02/2025"
+  },
+  {
+   "codigo": "US53",
+   "nome": "Regras gerais jornada 8 horas diárias Diretor/Coordenador/Secretário SEDUC",
+   "versao": "1.12",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US54",
+   "nome": "Regras gerais jornada Regência SEDUC",
+   "versao": "1.12",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US55",
+   "nome": "Regras gerais jornada Plantonista SES",
+   "versao": "1.12",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US56",
+   "nome": "Relatório Assinaturas de folha de frequência",
+   "versao": "1.5",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US57",
+   "nome": "Relatório Justificativas por código de ocorrência",
+   "versao": "1.15",
+   "data": "25/09/2026"
+  },
+  {
+   "codigo": "US58",
+   "nome": "Justificar Ocorrência – Ajuste de evento",
+   "versao": "1.6",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US59",
+   "nome": "Imprimir relatório faltas e descontos",
+   "versao": "1.1",
+   "data": "01/06/2026"
+  },
+  {
+   "codigo": "US60",
+   "nome": "Relatório Plantão",
+   "versao": "1.5",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US61",
+   "nome": "Relatório Adicional noturno",
+   "versao": "1.5",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US62",
+   "nome": "Justificar Ocorrência – Troca de evento",
+   "versao": "1.4",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US63",
+   "nome": "Relatório Abandono de cargo",
+   "versao": "1.2",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US64",
+   "nome": "Relatório Inassiduidade Habitual",
+   "versao": "1.3",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US65",
+   "nome": "Relatório Extrato de horas",
+   "versao": "1.2",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US66",
+   "nome": "Manter justificativa de ocorrência – Dispensa Qualificação Profissional",
+   "versao": "1.5",
+   "data": "18/09/2026"
+  },
+  {
+   "codigo": "US67",
+   "nome": "Integração de Faltas - SEAP",
+   "versao": "1.1",
+   "data": "26/08/2026"
+  },
+  {
+   "codigo": "US68",
+   "nome": "Visualizar Termo de Ciência e responsabilidade página inicial",
+   "versao": "1.1",
+   "data": "08/09/2026"
+  },
+  {
+   "codigo": "US69",
+   "nome": "Criar endpoint execução evento",
+   "versao": "1.0",
+   "data": "17/09/2026"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "ressalvas_extras": [
+  "A US32 (Incluir convocação eleitoral, versão 1.3, de 09/05/2024) tem documento na pasta do projeto, mas não tem funções na planilha de contagem; não integra o tamanho funcional deste laudo."
+ ]
 }

@@ -20,7 +20,7 @@ Python: `.venv/bin/python` (Linux) ou `.venv\Scripts\python.exe` (Windows).
 | Pasta da documentação (Drive ou local) | histórias de usuário em PDF |
 | Pasta da APF e versão da linha de base | `Baseline-SICC 2.0-v1.3.xlsx` (usar a última versão) |
 | Preço do PF aprovado pela comissão | R$ 1.215,09 (Manifestação Técnica de Aprovação do Preço do PF 2026, `2.3 Mapa Comparativo de Preços/7. Aprovação do Preço`) |
-| Códigos Sigadoc | da pesquisa e da aprovação do preço, para citar no laudo (`registro_preco`, `preco_fundamento`) |
+| Códigos Sigadoc | pesquisa SEPLAG-DIC-2026/59836-A; Manifestação da pesquisa SEPLAG-DIC-2026/59842-A; Aprovação do Preço SEPLAG-DIC-2026/59859 (campos `registro_preco`, `fonte_preco_curta`, `preco_fundamento`; copiar de `14. SICC/laudo_SICC.json`) |
 | Valor Institucional e justificativa | 0,50, com o motivo dado pelo usuário |
 | Nível de detalhe da medição | Estimativa (NESMA) |
 | Situação e vida útil | relação de sistemas, aba "Avaliação 2026" |
@@ -82,8 +82,9 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 ## Regras
 
 - Métodos: IFPUG CPM 4.3.1 (ISO/IEC 20926), NESMA (ISO/IEC 24570) e Roteiro de Métricas do SISP versão 2.3 (a do Contrato 014/2022), campo `roteiro_sisp`.
+- Unidade de desenvolvimento dos sistemas internos: SSCPG/SAPGD/SEPLAG (não usar SITEC).
 - Assinatura: Jonathas Gomes Marques, Presidente da CIABI, "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)" (campo `responsavel.funcao`), Portaria nº 124/2026/SEPLAG, matrícula 280193. Não usar mais a sigla CPPTI/SITEC/SAAS/SEPLAG.
-- Preço do PF: citar a pesquisa (Sigadoc SEPLAG-DIC-2026/59836-A), a Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A), a Manifestação de Aprovação do Preço (nº do Sigadoc quando informado) e as fichas dos preços do grupo (Ref. 3 SEPLAG-CAP-2026/73353-A; Ref. 7 SEPLAG-CAP-2026/73339-A). Ver `7. Aprovação do Preço/aprovacao_preco.json`.
+- Preço do PF: citar a pesquisa (Sigadoc SEPLAG-DIC-2026/59836-A), a Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A), a Manifestação de Aprovação do Preço (Sigadoc SEPLAG-DIC-2026/59859) e as fichas dos preços do grupo (Ref. 3 SEPLAG-CAP-2026/73353-A; Ref. 7 SEPLAG-CAP-2026/73339-A). Ver `7. Aprovação do Preço/aprovacao_preco.json`.
 - Sem links para o Google Drive particular do usuário; documentos são citados por código e, quando houver, pelo código do Sigadoc.
 - Não citar arquivos .md no laudo; referências a documentos apontam para PDF, planilha ou link.
 - Sem travessão longo.

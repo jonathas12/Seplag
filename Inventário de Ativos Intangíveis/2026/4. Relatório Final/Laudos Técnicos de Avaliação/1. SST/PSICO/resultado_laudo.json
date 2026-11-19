@@ -1,0 +1,46 @@
+{
+ "sigla": "PSICO",
+ "medida": "PF Local da FS",
+ "pf": 734.0,
+ "preco_pf": 1215.09,
+ "vt": 891876.06,
+ "vi": 1.0,
+ "va": 1783752.12,
+ "funcoes": 144,
+ "por_tipo": {
+  "ALI": [
+   4,
+   55.0
+  ],
+  "AIE": [
+   11,
+   55.0
+  ],
+  "EE": [
+   39,
+   209.0
+  ],
+  "CE": [
+   53,
+   236.0
+  ],
+  "SE": [
+   37,
+   179.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   144,
+   734.0,
+   734.0
+  ]
+ },
+ "por_modulo": {
+  "Cadastro, origem e encaminhamento do acompanhamento": 254.0,
+  "Atendimento e plano de acompanhamento": 155.0,
+  "Risco de suicídio": 56.0,
+  "Agenda dos profissionais": 90.0,
+  "Relatórios e painéis": 179.0
+ }
+}

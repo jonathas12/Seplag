@@ -1,0 +1,53 @@
+{
+ "sigla": "SIG-SST",
+ "medida": "PF Local da FS",
+ "pf": 2416.8,
+ "preco_pf": 1215.09,
+ "vt": 2936629.51,
+ "vi": 1.0,
+ "va": 5873259.02,
+ "funcoes": 542,
+ "por_tipo": {
+  "ALI": [
+   48,
+   385.8
+  ],
+  "AIE": [
+   12,
+   60.0
+  ],
+  "EE": [
+   202,
+   847.8000000000001
+  ],
+  "CE": [
+   262,
+   1033.2
+  ],
+  "SE": [
+   18,
+   90.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   537,
+   2408.0,
+   2408.0
+  ],
+  "E": [
+   5,
+   22.0,
+   8.8
+  ]
+ },
+ "por_modulo": {
+  "Avaliação Ambiental: demandas, setores e ambientes": 563.4,
+  "Formulários do LTCAT": 551.0,
+  "Formulários do PGR e plano de ação": 373.0,
+  "Produtos LTCAT e PGR, ART e assinaturas": 105.0,
+  "Pesquisa/Diagnóstico": 335.0,
+  "PCMSO": 133.0,
+  "Cadastros e configurações": 356.4
+ }
+}

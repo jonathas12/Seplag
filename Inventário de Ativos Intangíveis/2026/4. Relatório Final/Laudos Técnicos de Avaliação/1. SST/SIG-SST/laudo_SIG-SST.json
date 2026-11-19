@@ -1,0 +1,605 @@
+{
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 19 de novembro de 2026.",
+ "medida": "PF Local da FS",
+ "formato_us": "US_{}",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "propriedade": "Desenvolvido para a SEPLAG pela fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
+ "tipo_bem": "Software desenvolvido para a SEPLAG pela fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG (especificação e desenvolvimento desde 2022); desde 2025, a gestão dos requisitos (Grupo de Atividades I) e do desenvolvimento (Grupo de Atividades II) é feita pela equipe da SEPLAG (SSCPG/SAPGD/SEPLAG)",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato, mas o custo da equipe interna da SEPLAG (gestão de requisitos e de desenvolvimento, infraestrutura e banco de dados) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade das equipes que as elaboraram. As histórias registram histórico de versões, autoria e versões aprovadas, mas a linha \"Versão Aprovada\" não traz data; a data indicada no Anexo I é a da última revisão registrada. A avaliação foi feita com a documentação existente e disponibilizada à comissão.",
+ "base_legal": "Decreto nº 1.919/2013 (Política de Saúde e Segurança no Trabalho dos servidores da Administração Direta, Autárquica e Fundacional); Decreto nº 393/2016 (Manual de Saúde e Segurança no Trabalho); Instrução Normativa nº 014/2023, que formaliza o Sig-SST e o Protocolo de Prevenção ao Risco de Suicídio",
+ "texto_manutencao": "A contagem é de projeto de desenvolvimento e registra o tipo de manutenção de cada função. A medida adotada (PF Local da FS) aplica os deflatores do Roteiro de Métricas do SISP 2.3, previstos no Contrato nº 014/2022/SEPLAG: inclusão a 100% e exclusão a 40%.",
+ "sigla": "SIG-SST",
+ "nome": "Sistema de Saúde e Segurança no Trabalho",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIG-SST_2026",
+ "baseline": "../../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/1. SST/APF- Baseline do SST - v0.15.xlsx",
+ "baseline_nome": "APF- Baseline do SST - v0.15.xlsx",
+ "baseline_versao": "0.15",
+ "areas_negocio": "Coordenadoria de Gestão da Saúde e Segurança no Trabalho (CGSST/SUDVSS/SEPLAG) e unidades de saúde e segurança no trabalho e de gestão de pessoas dos órgãos e entidades do Poder Executivo",
+ "perfis": "Perfis CENTRAL e SETORIAL atribuídos no sistema Manopla; responsáveis técnicos cadastrados por órgão, com as funções de engenheiro, técnico, médico do trabalho, psicólogo, assistente social e estagiário; gestores dos setores, que identificam ambientes e cargos; gestor do órgão, que assina o PGR; servidores, que respondem às pesquisas",
+ "vi_justificativa": [
+  "O SIG-SST é a ferramenta da Política de Saúde e Segurança no Trabalho dos servidores do Poder Executivo (Decreto nº 1.919/2013 e Manual instituído pelo Decreto nº 393/2016), formalizada pela Instrução Normativa nº 014/2023. Nele são realizadas as avaliações ambientais dos órgãos e gerados o Laudo Técnico das Condições Ambientais do Trabalho (LTCAT) e o Programa de Gerenciamento de Riscos (PGR), documentos exigidos pela legislação trabalhista e previdenciária e alinhados ao eSocial, conforme o Documento de Oficialização da Demanda de 2024.",
+  "O sistema também sustenta o PCMSO (credenciamento de clínicas e médico coordenador) e as pesquisas de diagnóstico aplicadas aos servidores. A inoperância interromperia a produção dos laudos e programas de riscos ambientais de todo o Poder Executivo, com risco de descumprimento de obrigações legais, e o registro das avaliações já realizadas.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice do inventário de 2025."
+ ],
+ "finalidade": [
+  "O Sistema de Saúde e Segurança no Trabalho (SIG-SST) apoia a Coordenadoria de Gestão da Saúde e Segurança no Trabalho da SEPLAG e os órgãos e entidades do Poder Executivo na execução da Política de Saúde e Segurança no Trabalho dos servidores (Decreto nº 1.919/2013) e do Manual de Saúde e Segurança no Trabalho (Decreto nº 393/2016). O projeto começou em 2022 como SST - Saúde e Segurança no Trabalho e recebeu da área de negócio o nome Sig-SST. O sistema foi lançado oficialmente em 29/09/2023, com início de uso em 02/10/2023, e a Instrução Normativa nº 014/2023 formalizou o Sig-SST e o Protocolo de Prevenção ao Risco de Suicídio.",
+  "O sistema reúne: a Avaliação Ambiental, com demandas por órgão (LTCAT ou PGR), setores, notificação dos gestores dos setores, identificação de ambientes, cargos, mobiliário e equipamentos, imagens e checklist; os formulários do LTCAT (características físicas do ambiente, medições, riscos físicos, químicos e biológicos, EPI, EPC, periculosidade, cargos expostos e conclusões); os formulários do PGR (instalações elétricas, incêndio e explosão, agentes ambientais, ergonomia e outros riscos), a classificação dos riscos e o plano de ação; a geração dos produtos LTCAT e PGR, com anexação da ART, assinatura do responsável técnico e do gestor do órgão e consulta de autenticidade da assinatura; a Pesquisa/Diagnóstico, com formulários, pesquisas por órgão, envio de link por e-mail, respostas dos servidores, escores, dimensões, dashboards e relatórios; o PCMSO (credenciamento de clínicas, médico coordenador e itens de primeiros socorros); e os cadastros de responsáveis técnicos, riscos ambientais, categorias, CNAE do órgão, carga horária e pessoas físicas e jurídicas.",
+  "O projeto foi especificado e desenvolvido pela fábrica de software do Contrato nº 014/2022/SEPLAG: a Ordem de Serviço nº 01, de 14/06/2022, contratou o Grupo de Atividades I (requisitos, análise e projeto, 25% do esforço) sobre 594 PF estimados, e a Ordem de Serviço nº 02, de 16/08/2022, o Grupo de Atividades II (construção, testes e homologação). Em 2024 a área de negócio formalizou ajustes e novas histórias (DOD de ajustes e novas US, com a notificação automática dos gestores e o formulário DAS 21), e os requisitos entregues em 14/05/2024 foram homologados pela Coordenadoria de Saúde e Segurança no Trabalho. Desde 2025, a gestão dos requisitos e do desenvolvimento é feita pela equipe da SEPLAG.",
+  "O módulo de acompanhamento psicossocial, que integra o mesmo sistema na prática, tem linha de base e Ordem de Serviço próprias (OS nº 05) e é avaliado em laudo separado (PSICO), como nos inventários anteriores."
+ ],
+ "integracoes": [
+  [
+   "SEAP (base Thanos)",
+   "Pessoas, cargos, vínculos, servidores e chefia (gestor do órgão que assina o PGR)",
+   "AIE Pessoa, Cargo, Vínculo, Servidor e Chefia SEAP"
+  ],
+  [
+   "Manopla",
+   "Usuário e perfil de acesso (CENTRAL ou SETORIAL)",
+   "AIE Usuário e Perfil"
+  ],
+  [
+   "Bases corporativas do Estado",
+   "Órgão, entidade e endereço, CNAE e vínculo de atividade e servidor",
+   "AIE"
+  ],
+  [
+   "Serviço de e-mail institucional",
+   "Notificações aos gestores, link das pesquisas e envio de relatórios",
+   "Transações de notificação e configuração de e-mail (US_3844)"
+  ],
+  [
+   "PSICO (acompanhamento psicossocial)",
+   "Módulo do mesmo sistema avaliado em laudo próprio",
+   "Fora da fronteira desta contagem"
+  ]
+ ],
+ "modulos": {
+  "Avaliação Ambiental: demandas, setores e ambientes": [
+   163,
+   164,
+   165,
+   166,
+   191,
+   201,
+   202,
+   203,
+   204,
+   206,
+   207,
+   208,
+   219,
+   220,
+   221,
+   222,
+   245,
+   249,
+   20
+  ],
+  "Formulários do LTCAT": [
+   246,
+   248,
+   482,
+   571,
+   587,
+   588,
+   589,
+   590,
+   591,
+   594,
+   646,
+   817
+  ],
+  "Formulários do PGR e plano de ação": [
+   1700,
+   1707,
+   1781,
+   1796,
+   1894,
+   1799,
+   2202,
+   2233,
+   7407
+  ],
+  "Produtos LTCAT e PGR, ART e assinaturas": [
+   205,
+   1260,
+   1798,
+   2244,
+   2245,
+   932,
+   933,
+   1263
+  ],
+  "Pesquisa/Diagnóstico": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   21,
+   22,
+   23
+  ],
+  "PCMSO": [
+   7284,
+   7285,
+   7286
+  ],
+  "Cadastros e configurações": [
+   133,
+   134,
+   135,
+   137,
+   150,
+   199,
+   213,
+   3844,
+   5863,
+   7282,
+   7283
+  ]
+ },
+ "beneficio": "Produção dos laudos e programas de riscos ambientais (LTCAT e PGR), PCMSO e diagnóstico das condições de trabalho dos servidores do Poder Executivo",
+ "uso": "Em produção desde 02/10/2023 (lançamento oficial em 29/09/2023)",
+ "analise_documental": "Leitura das 49 histórias de usuário (histórico de versões, perfis, integrações e regras de negócio), das Ordens de Serviço nº 01 e 02, do DOD de ajustes e novas histórias de 2024, da entrega de requisitos de 14/05/2024 e das normas de saúde e segurança no trabalho",
+ "documentacao_resumo": "49 histórias de usuário localizadas (de 75), ordens de serviço, DOD e normas (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário do SIG-SST disponibilizadas na pasta do projeto, na versão mais recente de cada uma (a versão é a do nome do arquivo e a data é a da última revisão registrada no histórico de versões).",
+ "documentos": [
+  {
+   "codigo": "US_133",
+   "nome": "Login",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_134",
+   "nome": "Manter Riscos Ambientais",
+   "versao": "2.00",
+   "data": "24/07/2025"
+  },
+  {
+   "codigo": "US_135",
+   "nome": "Manter Categorias",
+   "versao": "2.00",
+   "data": "24/07/2025"
+  },
+  {
+   "codigo": "US_137",
+   "nome": "Manter Checklist de Avaliação Ambiental",
+   "versao": "2.00",
+   "data": "06/08/2025"
+  },
+  {
+   "codigo": "US_150",
+   "nome": "Manter Responsável Técnico",
+   "versao": "7.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_163",
+   "nome": "Demanda de Avaliação Ambiental",
+   "versao": "5.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_164",
+   "nome": "Notificar Gestores dos Setores",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_166",
+   "nome": "Detalhes da Demanda de Avaliação Ambiental",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_204",
+   "nome": "Listar Notificações Enviadas",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_213",
+   "nome": "Manter Carga Horária",
+   "versao": "2.00",
+   "data": "06/08/2025"
+  },
+  {
+   "codigo": "US_220",
+   "nome": "Cargos do Ambiente",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_222",
+   "nome": "Setores da Demanda",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_246",
+   "nome": "Formulário - Características Físicas do Ambiente (Ambos)",
+   "versao": "2.00",
+   "data": "16/05/2025"
+  },
+  {
+   "codigo": "US_248",
+   "nome": "Formulário - Medições (LTCAT)",
+   "versao": "2.00",
+   "data": "16/05/2025"
+  },
+  {
+   "codigo": "US_587",
+   "nome": "Formulário - Riscos Fisicos (LTCAT)",
+   "versao": "3.00",
+   "data": "16/05/2025"
+  },
+  {
+   "codigo": "US_588",
+   "nome": "Formulário - RISCOS QUÍMICOS (LTCAT)",
+   "versao": "3.00",
+   "data": "16/05/2025"
+  },
+  {
+   "codigo": "US_589",
+   "nome": "Formulário - RISCOS BIOLÓGICOS (LTCAT)",
+   "versao": "3.00",
+   "data": "16/05/2025"
+  },
+  {
+   "codigo": "US_594",
+   "nome": "Formulário - Cargos Expostos a Riscos (LTCAT)",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_1260",
+   "nome": "Visualizar Revisar Avaliação LTCAT",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_1700",
+   "nome": "Formulário - Instalações Elétricas Riscos (PGR)",
+   "versao": "4.00",
+   "data": "03/09/2025"
+  },
+  {
+   "codigo": "US_1707",
+   "nome": "Formulário - Adicionar Outros Riscos (PGR)",
+   "versao": "3.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_1781",
+   "nome": "Formulário - Incêndio e Explosão (PGR)",
+   "versao": "4.00",
+   "data": "03/09/2025"
+  },
+  {
+   "codigo": "US_1894",
+   "nome": "Formulário - Agentes Ambientais (PGR)",
+   "versao": "4.00",
+   "data": "03/09/2025"
+  },
+  {
+   "codigo": "US_1796",
+   "nome": "Formulário - Ergonomia (PGR)",
+   "versao": "4.00",
+   "data": "03/09/2025"
+  },
+  {
+   "codigo": "US_1799",
+   "nome": "Plano de Ação PGR - Listagem de Questões",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_2233",
+   "nome": "Incluir Plano de Ação PGR",
+   "versao": "8.00",
+   "data": "09/10/2025"
+  },
+  {
+   "codigo": "US_2244",
+   "nome": "Gerar Produto PGR: Relatório",
+   "versao": "2.00",
+   "data": "28/05/2024"
+  },
+  {
+   "codigo": "US_2245",
+   "nome": "Assinatura do Gestor do Órgão",
+   "versao": "2.00",
+   "data": "23/05/2025"
+  },
+  {
+   "codigo": "US_3844",
+   "nome": "Configurar Email De Notificações SST",
+   "versao": "2.00",
+   "data": "28/05/2024"
+  },
+  {
+   "codigo": "US_5863",
+   "nome": "ÓRGÃO CNAE - Manter CNAE Secundário",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_10",
+   "nome": "Gerenciar Formulários",
+   "versao": "7.00",
+   "data": "03/09/2025"
+  },
+  {
+   "codigo": "US_11",
+   "nome": "Gerenciar Pesquisa",
+   "versao": "4.00",
+   "data": "10/10/2025"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "Gerenciar Pesquisa - Órgão",
+   "versao": "3.00",
+   "data": "09/10/2025"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "Gerenciar Pesquisa - Formulário",
+   "versao": "4.00",
+   "data": "14/10/2025"
+  },
+  {
+   "codigo": "US_14",
+   "nome": "Envio de Notificação com Link para Formulário",
+   "versao": "2.00",
+   "data": "10/10/2025"
+  },
+  {
+   "codigo": "US_15",
+   "nome": "Acesso e Envio de Formulário",
+   "versao": "6.00",
+   "data": "31/10/2025"
+  },
+  {
+   "codigo": "US_16",
+   "nome": "Dashboard - Gerenciamento das Pesquisas",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_17",
+   "nome": "Dashboard - Resultado da Pesquisa",
+   "versao": "4.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_18",
+   "nome": "Relatório da Pesquisa",
+   "versao": "4.00",
+   "data": "16/07/2025"
+  },
+  {
+   "codigo": "US_19",
+   "nome": "Enviar Relatório do Resultado da Pesquisa",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_20",
+   "nome": "Avaliação Ambiental - Consultar Resultado da Pesquisa",
+   "versao": "3.00",
+   "data": "01/06/2025"
+  },
+  {
+   "codigo": "US_21",
+   "nome": "Gerenciar Score",
+   "versao": "3.00",
+   "data": "06/08/2025"
+  },
+  {
+   "codigo": "US_22",
+   "nome": "Gerenciar Tipos de Respostas",
+   "versao": "4.00",
+   "data": "06/08/2025"
+  },
+  {
+   "codigo": "US_23",
+   "nome": "Relatório da Pesquisa - Órgão",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_7285",
+   "nome": "Credenciamento Clínicas",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_7283",
+   "nome": "Manter Pessoas Físicas",
+   "versao": "2.00",
+   "data": "24/07/2025"
+  },
+  {
+   "codigo": "US_7282",
+   "nome": "Manter Pessoas Jurídicas",
+   "versao": "2.00",
+   "data": "24/07/2025"
+  },
+  {
+   "codigo": "US_7284",
+   "nome": "Itens de Primeiros Socorros",
+   "versao": "2.00",
+   "data": "06/08/2025"
+  },
+  {
+   "codigo": "US_7286",
+   "nome": "Médico Coordenador PCMSO",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  }
+ ],
+ "texto_tipos": "A predominância das transações reflete um sistema de formulários de avaliação, cadastros e geração de produtos técnicos.",
+ "texto_evolucao": "A linha de base v0.15 é a mesma usada no inventário de 2025 (arquivo idêntico, com revisão de 04/12/2025). A diferença entre 2025 e 2026 está na medida adotada: em 2025 foi usada a coluna PF IFPUG (2.430 PF); em 2026, a coluna PF Local da FS (2.416,8 PF), que aplica o deflator de 40% às 5 funções de exclusão.",
+ "exemplos_tipos": [
+  "Demanda de avaliação, ambiente, formulário, plano de ação",
+  "Pessoa, cargo e chefia (SEAP); perfil (Manopla); CNAE",
+  "Incluir demanda, preencher formulário, assinar documento",
+  "Listar demandas, consultar notificações",
+  "Gerar produto LTCAT e PGR, dashboards da pesquisa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "26/07/2023",
+   "pf": 2015,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "VI 0,75"
+  },
+  {
+   "inventario": 2024,
+   "data": "18/07/2024",
+   "pf": 2044,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Nome atualizado de SST para SIG-SST; VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 2430,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.15, PF IFPUG; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "04/12/2025",
+   "pf": 2416.8,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.15, PF Local da FS (2.430 PF IFPUG); VI 1,00"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 2430,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional é o da mesma linha de base de 2025; a pequena redução (de 2.430 para 2.416,8 PF) resulta da adoção da medida PF Local da FS, que aplica o deflator de exclusão do contrato. O Valor Institucional permanece 1,00.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "O módulo de acompanhamento psicossocial, avaliado no laudo do PSICO."
+ ],
+ "outros_documentos": [
+  [
+   "Ordem de Serviço nº 01 - Desenvolvimento do produto SST (Grupo I, 25%; 594 PF estimados; R$ 67.864,50)",
+   "Sigadoc, documento nº 2602090-7176",
+   "14/06/2022",
+   "Início do projeto e divisão de atividades com a fábrica de software"
+  ],
+  [
+   "Mensagens de abertura da OS nº 01 e da OS nº 02 (Grupo II) do projeto SST",
+   "E-mail institucional",
+   "14/06/2022 e 16/08/2022",
+   "Contratação dos Grupos de Atividades I e II"
+  ],
+  [
+   "DOD - Ajustes e novas histórias de usuário do Sig-SST (CGSST/SUDVSS/SEPLAG)",
+   "Documento de Oficialização da Demanda",
+   "2024",
+   "Alterações, notificação automática dos gestores e formulário DAS 21; alinhamento ao eSocial"
+  ],
+  [
+   "Entrega de requisitos de 14/05/2024 e homologação pela Coordenadoria de Saúde e Segurança no Trabalho",
+   "E-mail institucional",
+   "14/05/2024 a 28/05/2024",
+   "Alterações nas histórias do LTCAT e do PGR"
+  ],
+  [
+   "Decreto nº 1.919/2013 (notícia de 02/09/2013) e Decreto nº 393, de 15/01/2016",
+   "Normas estaduais",
+   "2013 e 2016",
+   "Política e Manual de Saúde e Segurança no Trabalho"
+  ],
+  [
+   "Notícia \"Governo de Mato Grosso lança novo Sistema de Saúde e Segurança no Trabalho\"",
+   "Portal da SECOM/MT",
+   "29/09/2023",
+   "Lançamento do Sig-SST e Instrução Normativa nº 014/2023"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software (produto SIG-SST, linha SST)",
+   "Painel da fiscalização do contrato",
+   "TRDs até 07/2026",
+   "Custo do projeto com a contratada (Seção 6)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SIG-SST em cada inventário"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, as ordens de serviço e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Das 75 histórias com funções contadas, 26 não foram localizadas na pasta de documentação disponibilizada: US_165 Atribuir Responsável Técnico da Demanda (35 PF); US_191 Anexar Documentos da Demanda (36 PF); US_199 Manter CNAE (29 PF); US_202 Visualizar Dados Gerais da Demanda (7 PF); US_203 Identificar Ambientes (42 PF); US_206 Anotações da Demanda (28 PF); US_207 Histórico de Andamento (7 PF); US_208 Avaliação Ambiental - Listagem de Ambientes (29 PF); US_219 Mobiliário e Equipamentos do Ambiente (44 PF); US_221 Identificação de Ambientes - Visualizar/Imprimir (6 PF); US_245 Imagens do Ambiente - Avaliação Ambiental (12 PF); US_249 Imagens do Formulário- Avaliação Ambiental (12 PF); US_482 Formulários da Avaliação Ambiental (19 PF); US_590 Formulário - EPI (LTCAT) (54 PF); US_646 PERICULOSIDADE (LTCAT) (34 PF); US_817 Formulário - EPC's (LTCAT) (37 PF); US_201 Dashboard da Demanda (57 PF); US_205 Gerar Produto LTCAT (16 PF); US_571 Checklist da Avaliação Ambiental (20 PF); US_591 Formulário - Conclusões (LTCAT) (35 PF); US_932 Anexar ART (17 PF); US_933 Assinar Documento (6 PF); US_1263 Consultar Autenticidade de Assinatura (4 PF); US_1798 Gerar Produto PGR (22 PF); US_2202 Manter Ações de Plano de Ação (PGR) (28 PF); US_7407 Classificar Riscos PGR (31 PF). Somam 667 PF (27,6% do tamanho). Foram mantidas por constarem da linha de base revisada pela equipe do projeto e usada no inventário de 2025; a documentação correspondente deve ser juntada ao processo do inventário.",
+  "A linha de base v0.15 não registra data de revisão (célula R10 da aba Contagem). Adotou-se 04/12/2025, data da mensuração registrada na relação de sistemas para o SIG-SST."
+ ],
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIG-SST foi especificado e desenvolvido pela fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. O painel agrupa o SST e o PSICOSSOCIAL no produto SIG-SST; aqui se considera a linha SST, que corresponde à linha de base avaliada neste laudo. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto SST)",
+    1427831.6
+   ],
+   [
+    "Tickets",
+    16015.69
+   ]
+  ],
+  "custo_total": 1443847.29,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto SST)"
+  ],
+  "pf_faturado": 6348.9,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "interpretacao": [
+   "Os pontos de função faturados (6.348,90 PF) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo do projeto, por grupo de atividades e por ordem de serviço: funções incluídas e depois alteradas são medidas de novo, com os deflatores do contrato. O tamanho funcional do ativo conta cada função existente uma única vez.",
+   "O custo médio por PF faturado fica abaixo do preço unitário do contrato (R$ 457,00 em 2022). Essa diferença não foi decomposta neste laudo: depende da parcela de esforço contratada em cada ordem de serviço (Grupos de Atividades I e II) e dos deflatores aplicados às entregas, que podem ser conferidos nas ordens de serviço do painel. Os tickets (1,1% do custo) são demandas avulsas; se corresponderem a manutenção, não integram o valor do ativo (IN, art. 10, parágrafo único)."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG, que desde 2025 conduz a gestão dos requisitos e do desenvolvimento, nem infraestrutura e banco de dados, cujo custo não é apurado por produto. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo."
+ }
+}

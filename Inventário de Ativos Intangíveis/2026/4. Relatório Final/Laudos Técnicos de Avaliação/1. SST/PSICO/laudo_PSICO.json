@@ -1,0 +1,438 @@
+{
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 19 de novembro de 2026.",
+ "medida": "PF Local da FS",
+ "formato_us": "US_{}",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "propriedade": "Desenvolvido para a SEPLAG pela fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
+ "tipo_bem": "Software desenvolvido para a SEPLAG pela fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG (especificação e desenvolvimento desde 2022); desde 2025, a gestão dos requisitos (Grupo de Atividades I) e do desenvolvimento (Grupo de Atividades II) é feita pela equipe da SEPLAG (SSCPG/SAPGD/SEPLAG)",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato, mas o custo da equipe interna da SEPLAG (gestão de requisitos e de desenvolvimento, infraestrutura e banco de dados) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade das equipes que as elaboraram. As histórias registram histórico de versões, autoria e versões aprovadas, mas a linha \"Versão Aprovada\" não traz data; a data indicada no Anexo I é a da última revisão registrada. A avaliação foi feita com a documentação existente e disponibilizada à comissão.",
+ "base_legal": "Decreto nº 1.919/2013 (Política de Saúde e Segurança no Trabalho dos servidores da Administração Direta, Autárquica e Fundacional); Decreto nº 393/2016 (Manual de Saúde e Segurança no Trabalho); Instrução Normativa nº 014/2023, que formaliza o Sig-SST e o Protocolo de Prevenção ao Risco de Suicídio",
+ "texto_manutencao": "A contagem é de projeto de desenvolvimento e todas as funções são de inclusão, contadas a 100% na medida PF Local da FS.",
+ "sigla": "PSICO",
+ "nome": "Sistema de Saúde e Segurança no Trabalho - Psicossocial",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_PSICO_2026",
+ "baseline": "../../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/1. SST/APF- Baseline do PSICO - v0.9.xlsx",
+ "baseline_nome": "APF- Baseline do PSICO - v0.9.xlsx",
+ "baseline_versao": "0.9",
+ "areas_negocio": "Coordenadoria de Gestão da Saúde e Segurança no Trabalho (CGSST/SUDVSS/SEPLAG) e equipes psicossociais (psicólogos e assistentes sociais) dos órgãos e entidades do Poder Executivo",
+ "perfis": "Responsáveis técnicos cadastrados no órgão com a função de psicólogo ou assistente social, que acompanham e atendem os servidores; perfis CENTRAL e SETORIAL atribuídos no sistema Manopla, que definem o alcance por órgão; servidores e chefias, que solicitam acompanhamento pelo Portal do Servidor",
+ "vi_justificativa": [
+  "O PSICO é o módulo de acompanhamento psicossocial do SIG-SST e operacionaliza o Protocolo de Prevenção ao Risco de Suicídio entre servidores públicos estaduais, formalizado com o Sig-SST pela Instrução Normativa nº 014/2023 e lançado em 29/09/2023 como prática padronizada para todos os órgãos e entidades. Nele são registrados o acolhimento, o encaminhamento, os atendimentos por psicólogos e assistentes sociais, a estratificação do risco de suicídio e os encaminhamentos externos.",
+  "A inoperância interromperia o acompanhamento de servidores em situação de vulnerabilidade, inclusive com indícios de risco de suicídio, e a continuidade dos planos de atendimento, com impacto direto sobre a saúde dos servidores e sobre os afastamentos que o protocolo busca reduzir.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice do inventário de 2025."
+ ],
+ "finalidade": [
+  "O PSICO é o módulo de acompanhamento e atendimento psicossocial do Sistema de Saúde e Segurança no Trabalho (SIG-SST). Ele dá suporte ao Protocolo de Prevenção ao Risco de Suicídio, lançado com o Sig-SST em 29/09/2023 e formalizado pela Instrução Normativa nº 014/2023: ao servidor em situação adversa, o sistema permite oferecer acolhimento, escuta qualificada, orientações e encaminhamento para tratamento, por demanda da chefia ou por demanda espontânea do próprio servidor.",
+  "O módulo reúne: o cadastro do acompanhamento psicossocial, com a origem da demanda (inclusive solicitações institucionais e espontâneas feitas no Portal do Servidor); o encaminhamento para atendimento e o painel de encaminhamentos do órgão; a estrutura e os detalhes do acompanhamento, os planos de atendimento do psicólogo e do assistente social, o histórico de atendimentos, as anotações e o encerramento; a estratificação e o formulário de risco de suicídio; o encaminhamento externo para profissional especializado; a agenda dos profissionais (agendamentos, ausências e configuração); a pesquisa de satisfação; e os relatórios e painéis de acompanhamentos e atendimentos, inclusive por classe de CID.",
+  "O módulo foi especificado e desenvolvido pela fábrica de software do Contrato nº 014/2022/SEPLAG na Ordem de Serviço nº 05 (Acompanhamento e Atendimento do Psicossocial, aberta em 01/11/2022 e enviada em 16/12/2022), com os Grupos de Atividades I e II (100% do esforço) sobre 350 PF estimados. Em 2024 o DOD de ajustes e novas histórias alterou o cadastro, o encaminhamento e a estrutura do acompanhamento. Desde 2025, a gestão dos requisitos e do desenvolvimento é feita pela equipe da SEPLAG.",
+  "Na prática, o PSICO compõe o mesmo sistema do SIG-SST, mas tem linha de base e Ordem de Serviço próprias e é avaliado em laudo separado, como nos inventários anteriores."
+ ],
+ "integracoes": [
+  [
+   "SEAP e bases corporativas do Estado",
+   "Servidor, pessoa, órgão, cargo, vínculo, escolaridade, município, estado civil e CID",
+   "AIE"
+  ],
+  [
+   "SIG-SST",
+   "Categorias (tipo de entrada e demais tabelas do cadastro de categorias) e responsáveis técnicos",
+   "AIE Categoria"
+  ],
+  [
+   "Manopla",
+   "Perfil de acesso (CENTRAL ou SETORIAL)",
+   "AIE Perfil"
+  ],
+  [
+   "Portal do Servidor",
+   "Solicitação de acompanhamento por demanda institucional ou espontânea",
+   "Consulta dos dados da origem (US_3063 e US_3064); a tela de solicitação é desenvolvida no Portal do Servidor"
+  ],
+  [
+   "Serviço de e-mail institucional",
+   "Pesquisa de satisfação enviada aos servidores acompanhados",
+   "Dados consolidados no dashboard (US_3062)"
+  ]
+ ],
+ "modulos": {
+  "Cadastro, origem e encaminhamento do acompanhamento": [
+   2416,
+   3051,
+   3054,
+   3056,
+   3063,
+   3064
+  ],
+  "Atendimento e plano de acompanhamento": [
+   3001,
+   3048,
+   3543,
+   3057,
+   3058,
+   3059,
+   3060,
+   3061
+  ],
+  "Risco de suicídio": [
+   3052,
+   3053
+  ],
+  "Agenda dos profissionais": [
+   3055,
+   3849,
+   3850,
+   3851
+  ],
+  "Relatórios e painéis": [
+   3062,
+   4045,
+   4049,
+   4093,
+   4131,
+   4135,
+   4174,
+   4322,
+   4358,
+   4362,
+   4363
+  ]
+ },
+ "grupos_sem_historia": {
+  "Notificação via E-mail": "Atendimento e plano de acompanhamento"
+ },
+ "beneficio": "Acompanhamento psicossocial dos servidores e execução do Protocolo de Prevenção ao Risco de Suicídio em todo o Poder Executivo",
+ "uso": "Em produção desde 02/10/2023, com o Sig-SST",
+ "analise_documental": "Leitura das 30 histórias de usuário (histórico de versões, perfis, integrações e regras de negócio), da Ordem de Serviço nº 05 e da mensagem de abertura, do DOD de ajustes e novas histórias de 2024 e das normas de saúde e segurança no trabalho",
+ "documentacao_resumo": "30 histórias de usuário localizadas (de 31), Ordem de Serviço nº 05, DOD e normas (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário do módulo psicossocial disponibilizadas na pasta do projeto, na versão mais recente de cada uma (a versão é a do nome do arquivo e a data é a da última revisão registrada no histórico de versões).",
+ "documentos": [
+  {
+   "codigo": "US_2416",
+   "nome": "Cadastro de Acompanhamento Psicossocial",
+   "versao": "7.00",
+   "data": "21/10/2025"
+  },
+  {
+   "codigo": "US_3051",
+   "nome": "Encaminhamento de Acompanhamento Para Atendimento",
+   "versao": "2.00",
+   "data": "27/06/2024"
+  },
+  {
+   "codigo": "US_3048",
+   "nome": "Estrutura/Detalhes do Acompanhamento Psicossocial",
+   "versao": "3.00",
+   "data": "27/06/2024"
+  },
+  {
+   "codigo": "US_3054",
+   "nome": "Painel de Encaminhamentos do Órgão",
+   "versao": "2.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3001",
+   "nome": "Home - Acompanhamento Psicossocial",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3058",
+   "nome": "Plano de Acompanhamento - Atendimento Psicólogo.",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3059",
+   "nome": "Plano de Acompanhamento - Atendimento Assistente Social.",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3053",
+   "nome": "Formulário de Risco de Suicídio",
+   "versao": "3.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3056",
+   "nome": "Encaminhamento Externo",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3057",
+   "nome": "Histórico de Atendimentos",
+   "versao": "2.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3060",
+   "nome": "Anotações Gerais do Acompanhamento",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3055",
+   "nome": "Minha Agenda - Agendamentos",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3850",
+   "nome": "Minha Agenda - Agendar",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3849",
+   "nome": "Minha Agenda - Ausências",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3851",
+   "nome": "Minha Agenda - Configurar",
+   "versao": "2.00",
+   "data": "28/07/2025"
+  },
+  {
+   "codigo": "US_3052",
+   "nome": "Estratificação de Riscos de Suicídio",
+   "versao": "2.00",
+   "data": "13/10/2025"
+  },
+  {
+   "codigo": "US_3061",
+   "nome": "Encerrar Acompanhamento",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3062",
+   "nome": "Dashboard - Pesquisa de Satisfação",
+   "versao": "2.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3064",
+   "nome": "Portal do Servidor: Solicitação de Acompanhamento - Demanda Espontânea",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_3063",
+   "nome": "Portal do Servidor: Solicitação de Acompanhamento - Demanda Institucional",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_4045",
+   "nome": "Relatório - Tipos de Entrada - Por Acompanhamentos e Servidores",
+   "versao": "2.00",
+   "data": "25/07/2025"
+  },
+  {
+   "codigo": "US_4049",
+   "nome": "Relatório- Linha do Tempo de Cadastro de Acompanhamentos",
+   "versao": "2.00",
+   "data": "29/07/2025"
+  },
+  {
+   "codigo": "US_4093",
+   "nome": "Relatório- Linha do Tempo de Atendimentos Mensal",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_4131",
+   "nome": "Relatório - Atendimentos Por Tipo de Serviço",
+   "versao": "2.00",
+   "data": "25/07/2025"
+  },
+  {
+   "codigo": "US_4135",
+   "nome": "Relatório - Perfil de Acompanhamentos",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_4174",
+   "nome": "Relatório Geral - Acompanhamentos / Atendimentos",
+   "versao": "2.00",
+   "data": "29/07/2025"
+  },
+  {
+   "codigo": "US_4322",
+   "nome": "Relatório - Atestado Médico /Encaminhamentos / Classe de CID's",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_4358",
+   "nome": "Relatório CID's Principal, Secundário e Terciário",
+   "versao": "1.00",
+   "data": "sem data"
+  },
+  {
+   "codigo": "US_4362",
+   "nome": "Relatório/Dashboard de Acompanhamentos",
+   "versao": "2.00",
+   "data": "04/08/2025"
+  },
+  {
+   "codigo": "US_4363",
+   "nome": "Relatório Individual - Acompanhamentos/Atendimentos",
+   "versao": "2.00",
+   "data": "06/08/2025"
+  }
+ ],
+ "texto_tipos": "A predominância das transações reflete um módulo de registro e acompanhamento de atendimentos, com muitas consultas e relatórios.",
+ "texto_evolucao": "A linha de base v0.9 é a mesma usada no inventário de 2025 (arquivo idêntico). Em 2025 foi registrado o total da célula PF IFPUG (699 PF), cuja fórmula soma apenas até a linha 202 e deixa de fora as funções das US_4362 e US_4363 (35 PF); a coluna PF Local da FS soma todas as funções (734 PF).",
+ "exemplos_tipos": [
+  "Acompanhamento, atendimento, plano de acompanhamento, agenda",
+  "Servidor, órgão, cargo e CID (bases corporativas); perfil (Manopla); categoria (SIG-SST)",
+  "Cadastrar acompanhamento, encaminhar, registrar atendimento",
+  "Painel de encaminhamentos, histórico de atendimentos",
+  "Estratificação de risco de suicídio, relatórios por CID"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "26/05/2023",
+   "pf": 724,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "18/07/2024",
+   "pf": 695,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 699,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.9, célula PF IFPUG; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "04/12/2025",
+   "pf": 734,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.9, PF Local da FS; VI 1,00"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 699,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da correção do tamanho: a linha de base é a mesma de 2025, mas o total de 699 PF usado naquele inventário omitia 35 PF das US_4362 e US_4363 por causa da faixa da fórmula; a medida PF Local da FS soma todas as funções (734 PF). O Valor Institucional permanece 1,00.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "As demais funcionalidades do SIG-SST, avaliadas no laudo do SIG-SST.",
+  "A tela de solicitação de acompanhamento desenvolvida no Portal do Servidor."
+ ],
+ "outros_documentos": [
+  [
+   "Ordem de Serviço nº 05 - Acompanhamento e Atendimento do Psicossocial (Grupos I e II, 100%; 350 PF estimados; R$ 159.950,00)",
+   "Sigadoc, documento nº 6029961-2122",
+   "01/11/2022 (abertura); 16/12/2022 (assinatura)",
+   "Contratação do módulo com a fábrica de software"
+  ],
+  [
+   "Mensagem de abertura da OS nº 05",
+   "E-mail institucional",
+   "16/12/2022",
+   "Módulo componente do SST, aceito pela contratada"
+  ],
+  [
+   "DOD - Ajustes e novas histórias de usuário do Sig-SST (CGSST/SUDVSS/SEPLAG)",
+   "Documento de Oficialização da Demanda",
+   "2024",
+   "Alterações nas US_2416, US_3051 e US_3048"
+  ],
+  [
+   "Notícia \"Governo de Mato Grosso lança novo Sistema de Saúde e Segurança no Trabalho\"",
+   "Portal da SECOM/MT",
+   "29/09/2023",
+   "Protocolo de Prevenção ao Risco de Suicídio e Instrução Normativa nº 014/2023"
+  ],
+  [
+   "Decreto nº 1.919/2013 (notícia de 02/09/2013) e Decreto nº 393, de 15/01/2016",
+   "Normas estaduais",
+   "2013 e 2016",
+   "Política e Manual de Saúde e Segurança no Trabalho"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software (produto SIG-SST, linha PSICOSSOCIAL)",
+   "Painel da fiscalização do contrato",
+   "TRDs até 07/2026",
+   "Custo do projeto com a contratada (Seção 6)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do PSICO em cada inventário"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, a Ordem de Serviço nº 05 e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Das 31 histórias com funções contadas, 1 não foi localizada na pasta de documentação disponibilizada: US_3543 Estrutura de Atendimentos (35 PF). Foi mantida por constar da linha de base e ser referenciada por outras histórias (US_3056, US_4093, US_4174, US_4363); a documentação correspondente deve ser juntada ao processo do inventário.",
+  "A linha de base v0.9 não registra data de revisão (célula R10 da aba Contagem). Adotou-se 04/12/2025, data da mensuração registrada na relação de sistemas para o PSICO.",
+  "A célula PF IFPUG da planilha (Funções!L4) soma apenas as linhas 8 a 202 e registra 699 PF; as funções das US_4362 e US_4363 (35 PF) ficam fora dela. Este laudo usa a medida PF Local da FS (Funções!L6), que soma todas as funções."
+ ],
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o PSICO foi especificado e desenvolvido pela fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. O painel agrupa o SST e o PSICOSSOCIAL no produto SIG-SST; aqui se considera a linha PSICOSSOCIAL, que corresponde à linha de base avaliada neste laudo. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto PSICOSSOCIAL)",
+    429853.76
+   ]
+  ],
+  "custo_total": 429853.76,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto PSICOSSOCIAL)"
+  ],
+  "pf_faturado": 1786.4,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "interpretacao": [
+   "Os pontos de função faturados (1.786,40 PF) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo do projeto, por grupo de atividades e por ordem de serviço: funções incluídas e depois alteradas são medidas de novo, com os deflatores do contrato. O tamanho funcional do ativo conta cada função existente uma única vez.",
+   "O custo médio por PF faturado fica abaixo do preço unitário do contrato (R$ 457,00 em 2022). Essa diferença não foi decomposta neste laudo: depende da parcela de esforço contratada em cada ordem de serviço (Grupos de Atividades I e II) e dos deflatores aplicados às entregas, que podem ser conferidos nas ordens de serviço do painel. O painel não registra tickets nem pontos de função de teste para este projeto."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG, que desde 2025 conduz a gestão dos requisitos e do desenvolvimento, nem infraestrutura e banco de dados, cujo custo não é apurado por produto. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo."
+ }
+}

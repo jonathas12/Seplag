@@ -119,3 +119,50 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
 - O K-Means é descrito só conceitualmente, sem parâmetros.
 - O preço é decisão da comissão: descreva de onde ele vem (grupo, preços que o compõem, data-base), sem recomendar.
 - A ressalva sobre a composição da comissão não entra no laudo (decisão do usuário); o campo `ressalva_comissao` é opcional.
+
+## Sistemas da fábrica de software (Contrato nº 014/2022/SEPLAG) - lições do SISPAT, SIG-SST, PSICO e SIGED
+
+Registro dos laudos de 2026 já entregues (não alterar laudos nem arquivos já gerados de outros sistemas; cada projeto tem sua
+especificidade):
+
+| Sistema | Pasta | Medida | PF | VI | VA |
+|---|---|---|---|---|---|
+| SISPAT | `3. SISPAT` | PF Local da FS (baseline v0.47) | 5.375 | 1,00 | R$ 13.062.217,50 |
+| SIG-SST | `1. SST/SIG-SST` | PF Local da FS (baseline v0.15) | 2.416,8 | 1,00 | R$ 5.873.259,02 |
+| PSICO | `1. SST/PSICO` | PF Local da FS (baseline v0.9) | 734 | 1,00 | R$ 1.783.752,12 |
+| SIGED | `6. SIGED` | PF Local da FS (baseline v0.14) | 1.565,8 | 0,75 | R$ 3.329.528,86 |
+
+Fluxo e regras que se repetiram:
+
+- **Fontes a ler**: processo/DOD no Sigadoc, Ordens de Serviço (Grupo I = requisitos, análise e projeto, 25%; Grupo II =
+  construção, testes e homologação, 75%), e-mails de abertura e aceite, documento de escopo (DES), comunicações de
+  disponibilização em produção, notícias e normas do sistema. PDFs de e-mail e páginas web costumam ser imagem: converter
+  com `pdftoppm` e ler as páginas.
+- **Histórias de usuário (docx)**: baixar todas pelo Drive; mapear arquivo ↔ história pelo par `fileId → blob` devolvido
+  no download (o código dentro do texto não identifica a história). Versão = nome do arquivo; data = última revisão
+  registrada no histórico de versões (a linha "Versão Aprovada" costuma vir sem data). Ler o docx pelo XML
+  (`word/document.xml`), porque o python-docx falha quando faltam imagens no pacote.
+- **Conferência da baseline**: comparar com a baseline do inventário anterior (hash MD5; o SIG-SST e o PSICO de 2026 eram
+  idênticos aos de 2025); conferir a faixa das fórmulas `L4`/`L6` (no PSICO a `L4` parava na linha 202; no SIGED a US_28
+  ficou fora de `L11:L753`); funções sem complexidade (não pontuam; relatar a possível subcontagem); grupos sem funções
+  ("mesmo processo da US x"); AIE de dados do próprio sistema; ALI repetidos; campo Projeto (F8) incoerente.
+- **Histórias contadas sem documento na pasta**: listar com os PF em `ressalvas_extras` e o percentual do tamanho
+  (SIG-SST 27,6%; SIGED 53,4%).
+- **R10 vazia**: usar a data de mensuração registrada na relação de sistemas (aba Avaliação 2026) e registrar em ressalva.
+- **Medida**: PF Local da FS (`Funções!L6`); se o inventário anterior usou PF IFPUG, explicar a diferença em
+  `texto_evolucao` e `motivo_variacao`.
+- **VI**: decisão do usuário, mesmo quando difere da relação de sistemas (SISPAT 0,75 → 1,00; SIGED 0,50 na relação →
+  0,75); escrever a justificativa com fatos documentados (produção, usuários, normas, reconhecimentos externos como o
+  XI CNA) e apontar a divergência na resposta.
+- **Custo do projeto** (`custo_projeto`): dados do painel "Custos de Projetos - Fábrica de Software" (desenvolvimento,
+  tickets, PF de teste, PF faturados, base TRDs). Usar `fator_grupo_contratado` só quando a fábrica executou apenas o
+  Grupo II; quando executou os Grupos I e II, omitir o fator e dizer que a diferença entre custo médio e preço do contrato
+  não foi decomposta. Não usar a "economia vs mercado" do painel (preço de mercado diferente do aprovado pela comissão).
+  Se o usuário não enviar o painel, pedir antes de entregar.
+- **Sistemas que são um só na prática mas têm baselines e OS separadas** (SIG-SST e PSICO): um laudo por baseline, com o
+  vínculo explicado na finalidade e no fora do escopo; a separação das histórias segue a baseline.
+- **Gerador**: `laudo_apf.py` (geral) não deve ser alterado. `laudo_apf_sispat.py` é a cópia com módulos por seção da
+  planilha (`secoes`, `modulos_grupo`, `ordem_modulos`, `descricao_modulos`, `quebrar_rotulos_grafico`) e tolera funções
+  sem complexidade; foi usado no SISPAT e no SIGED.
+- **Entrega**: commit só dos arquivos novos do sistema (conferir `git status` e restaurar arquivos de outros sistemas
+  regerados em testes).

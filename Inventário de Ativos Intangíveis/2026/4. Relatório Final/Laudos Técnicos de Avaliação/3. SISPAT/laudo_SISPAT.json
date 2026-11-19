@@ -1,0 +1,1868 @@
+{
+ "sigla": "SISPAT",
+ "nome": "Sistema de Gestão Patrimonial",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 19 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SISPAT_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/3. SISPAT/APF- Baseline do SIABI - CELAD, SISPAT e Inventario de Bens - v0.47.xlsx",
+ "baseline_nome": "APF- Baseline do SIABI - CELAD, SISPAT e Inventario de Bens - v0.47.xlsx",
+ "baseline_versao": "0.47",
+ "medida": "PF Local da FS",
+ "formato_us": "US{:02d}",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "tipo_bem": "Software desenvolvido pela SEPLAG em conjunto com a fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "SEPLAG/MT (SSCPG/SAPGD/SEPLAG): requisitos, gestão de produto e de projeto, arquitetura, banco de dados, infraestrutura e DevOps; fábrica de software do Contrato nº 014/2022/SEPLAG: código-fonte, scripts de banco de dados e testes unitários e funcionais",
+ "areas_negocio": "Superintendência de Patrimônio Público (SPP) da Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), órgão central de gestão patrimonial (Lei nº 11.109/2020); Centro Estadual de Logística, Abastecimento e Distribuição (CELAD); unidades de patrimônio, almoxarifado e contabilidade dos órgãos e entidades do Poder Executivo",
+ "perfis": "Gestores patrimoniais central e setoriais, avaliadores, comissões e subcomissões de inventário, almoxarifes e unidades requisitantes, responsáveis por unidades de localização, detentores de bens, gestores de bens do CELAD e equipes de regularização imobiliária, conforme as histórias de usuário",
+ "base_legal": "Lei Estadual nº 11.109/2020 (gestão patrimonial da administração estadual); Decreto nº 2.151/2009 (Política de Modernização da Gestão Patrimonial e sistema corporativo de gestão patrimonial, o SIGPAT, que o SISPAT substitui); IN Conjunta nº 001/2022/SEPLAG/SEFAZ (avaliação dos bens imóveis a valor referencial de mercado) e IN Conjunta nº 001/2023/SEPLAG/SEFAZ (reconhecimento patrimonial e contábil dos imóveis e obras em andamento)",
+ "vida_util": "Indefinida",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SISPAT é o sistema corporativo de gestão do patrimônio imobiliário e mobiliário do Poder Executivo, em substituição ao SIGPAT instituído pelo Decreto nº 2.151/2009, cujas finalidades são dotar o Estado de sistema único e integrado de gestão patrimonial e registrar, gerenciar, manter e fiscalizar os imóveis de que o Estado é titular de domínio ou de ocupação (art. 7º). Nele são feitos o cadastro, a avaliação a valor referencial de mercado (IN Conjunta nº 001/2022/SEPLAG/SEFAZ), a contabilização, a depreciação e o inventário dos imóveis do Estado.",
+  "Os módulos Imobiliário e Inventário de Bens Imóveis estão em produção e em uso pela SEPLAG e por outras secretarias, e a integração com a plataforma ArcGIS (GeoDados MT) está em produção, com o SISPAT fornecendo os dados dos imóveis à camada geográfica do Estado. Os registros do sistema sustentam o inventário anual, a avaliação e os lançamentos contábeis dos imóveis no balanço patrimonial do Estado.",
+  "A inoperância do SISPAT interromperia o cadastro, a avaliação, a contabilização e o inventário dos imóveis, comprometeria a evidenciação do patrimônio imobiliário no balanço do Estado e a integração com o geoprocessamento, e obrigaria o retorno a controles manuais. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ. Na relação de sistemas o índice registrado era 0,75; a comissão o elevou para 1,00 pelos motivos acima."
+ ],
+ "finalidade": [
+  "O Sistema de Gestão Patrimonial (SISPAT) é a ferramenta do Estado de Mato Grosso para o controle e a gestão do patrimônio imobiliário e mobiliário do Poder Executivo: imóveis (terrenos e edificações), bens móveis permanentes (equipamentos, veículos, mobiliário) e bens de consumo. Substitui o legado SIGPAT, sistema corporativo de gestão patrimonial instituído pelo Decreto nº 2.151/2009, composto pelos módulos de Almoxarifado, Patrimônio Mobiliário e Patrimônio Imobiliário (art. 6º).",
+  "O sistema nasceu em 2022 como SIABI (Sistema de Avaliação de Bens Imóveis), para operacionalizar a avaliação dos imóveis do Estado a valor referencial de mercado, regulamentada pela IN Conjunta nº 001/2022/SEPLAG/SEFAZ, que regulamenta a Lei nº 11.109/2020 para fins de inventário, registro contábil e regularização documental. O desenvolvimento começou com as Ordens de Serviço nº 03 (22/08/2022) e nº 04 (18/11/2022) do Contrato nº 014/2022/SEPLAG.",
+  "O SIABI evoluiu para o cadastro completo dos imóveis: localização, matrícula originária e vínculo de matrículas, documentação e histórico, terrenos e edificações, contabilização e depreciação, inventário anual dos imóveis, responsável patrimonial e tipo de uso. Depois passou a se chamar SISPAT (a alteração de nome e de logotipo está registrada na Sprint 08, de 07/2023), com escopo ampliado para todo o patrimônio do Poder Executivo: bens de consumo (requisição de materiais, almoxarifado, catálogo, entradas por compra com e sem XML de nota fiscal, estoque e fechamento mensal), bens móveis permanentes (incorporação, avaliação, depreciação e amortização, termos de responsabilidade e de detentor, transferências e baixa), inventário de bens móveis com levantamento físico pelo APP Seplag, CELAD (armazenamento e distribuição) e regularização imobiliária (matrícula, remembramento e desmembramento).",
+  "Os requisitos são elaborados pela SEPLAG. Em 2023 e 2024 a especificação dos módulos Imobiliário, Bens de Consumo, Bens Móveis e Inventário foi feita pela SEPLAG com a fábrica de software (CRP Tecnologia); em 2025 a SEPLAG especificou sozinha Bens de Consumo, Inventário, Bens Permanentes e Levantamento Físico integrado ao APP Seplag, e a fábrica tratou de mudanças pontuais no Imobiliário. O produto é desenvolvido em conjunto: a equipe da SEPLAG responde por requisitos, gestão de produto e de projeto, arquitetura de software, banco de dados, infraestrutura de data center e DevOps; a fábrica de software desenvolve o código-fonte, os scripts de banco de dados e os testes unitários e funcionais.",
+  "Inovação de destaque é a integração do módulo Imobiliário com a plataforma ArcGIS do Estado (ArcGIS Enterprise, ArcGIS Pro e GeoDados MT), concluída no fim de 2025. O SISPAT disponibiliza por API os dados de cada imóvel (identificação, RIP, matrícula, áreas, situação, órgão, responsável patrimonial, coordenadas, laudo e valores de terreno e edificação); um serviço do ArcGIS consome essa API diariamente e mantém a camada de pontos dos imóveis no geodatabase corporativo do Estado (PostgreSQL), ao lado da camada de polígonos migrada do geodatabase da MTI. A integração incluiu um localizador (geocodificação) baseado na base de arruamento da OpenStreetMap e a capacitação dos desenvolvedores do SISPAT na API JavaScript do ArcGIS, para substituir o mapa do sistema (Ordem de Serviço nº 010 do Contrato nº 036/2024/SEPLAG, com a Imagem Geosistemas). Com ela, o patrimônio imobiliário do Estado passa a ser visto e analisado no território, com dados cadastrais e contábeis atualizados a partir do sistema de origem.",
+  "O sistema consulta as contas contábeis e a estrutura orçamentária do FIPLAN (FIP62) para a contabilização e a depreciação dos bens; no módulo Mobiliário, consulta no SIAG e no SIAG-C os contratos vigentes, os produtos e itens com a descrição do material e as notas de empenho, e sincroniza o catálogo de materiais; busca no SEAP as unidades de localização e as chefias responsáveis vigentes no momento da consulta; e recebe os dados do levantamento físico coletados pelo APP Seplag."
+ ],
+ "integracoes": [
+  [
+   "FIPLAN (Sistema Integrado de Planejamento, Contabilidade e Finanças)",
+   "Contas contábeis e de depreciação (FIP62), unidade orçamentária, elemento e subelemento de despesa",
+   "Arquivos de Interface Externa (AIE)"
+  ],
+  [
+   "SIAG / SIAG-C (aquisições e contratos)",
+   "Módulo Mobiliário: consulta de contratos vigentes, produtos e itens (material e sua descrição) e notas de empenho; sincronização do catálogo de materiais",
+   "AIE Contrato (view), Fornecedor (view), Unidade ADM e Material API SIAG; ALI Histórico Integração"
+  ],
+  [
+   "SEAP (Sistema Estadual de Administração de Pessoas)",
+   "Unidades de localização (UL) e chefias responsáveis vigentes na data da consulta",
+   "Transações Sincronizar e Sincronizar Automático das unidades de localização; não há AIE próprio do SEAP na planilha"
+  ],
+  [
+   "ArcGIS Enterprise / GeoDados MT",
+   "Camada geográfica dos imóveis alimentada pela API do SISPAT; mapa e localização de endereços",
+   "AIE ArcGIS - Endereço (exclusão) e consulta Ver Mapa ArcGIS; a API de dados geográficos não tem função própria na planilha"
+  ],
+  [
+   "APP Seplag (coleta do levantamento físico)",
+   "Inventário coletado em campo",
+   "Transação Gerenciar Inventário Coletado do App"
+  ],
+  [
+   "Bases corporativas do Estado",
+   "Órgão, unidade, município, entidade e pessoa",
+   "AIE"
+  ],
+  [
+   "ViaCEP",
+   "Consulta de endereço pelo CEP",
+   "AIE"
+  ],
+  [
+   "Base de dados de carga (STAGE)",
+   "Importação de dados de bens",
+   "Transação Importação de Dados da STAGE"
+  ]
+ ],
+ "secoes": {
+  "SIABI": "Imobiliário: cadastro, documentação e avaliação",
+  "SISPAT": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+  "CELAD": "CELAD - armazenamento e distribuição",
+  "Inventário de Bens": "Bens móveis: unidades de localização, inventário e levantamento físico",
+  "Regularização Imobiliária": "Regularização imobiliária"
+ },
+ "modulos_grupo": [
+  [
+   "Ações Menu",
+   "Estrutura comum (menu do sistema)"
+  ],
+  [
+   "Posição de Estoque",
+   "Bens de consumo: requisição, almoxarifado e estoque",
+   "SIABI"
+  ],
+  [
+   "Contabiliza|Deprecia|Conta Cont",
+   "Imobiliário: contabilização e depreciação",
+   "SIABI"
+  ],
+  [
+   "Invent|Comiss|Notificar|Email De Notifica|OBRAS EM ANDAMENTO",
+   "Inventário de bens imóveis",
+   "SIABI"
+  ],
+  [
+   "Importar Nfe|lotes na entrada|entrada de Materiais|Entrada_|Entrada  Incorpora|nota de recebimento|Entrada de Terceiro|Documento de Entrada|Materiais de Entrada|Entrada de Bens",
+   "Entradas e incorporação de bens e materiais",
+   "SISPAT"
+  ],
+  [
+   "Parâmetros de Características|Cadastro de Materiais|Variações do Material|cadastro do material|Locais com este material|Catálogo|Observações|API do SIAG|Sincronizado SIAG|Detalhes do cadastro",
+   "Catálogo e cadastro de materiais",
+   "SISPAT"
+  ],
+  [
+   "RMF|Almoxarifado|Endereço de Entrega|Requisi|Controlar lote|Fechamento do M|Baixa de Consumo|Devolução de Materiais|contrato e nota de empenho",
+   "Bens de consumo: requisição, almoxarifado e estoque",
+   "SISPAT"
+  ],
+  [
+   "Inventário Coletado do App",
+   "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "SISPAT"
+  ],
+  [
+   "Relatório UL e ULV|Membros UL",
+   "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "SISPAT"
+  ]
+ ],
+ "ordem_modulos": [
+  "Imobiliário: cadastro, documentação e avaliação",
+  "Imobiliário: contabilização e depreciação",
+  "Inventário de bens imóveis",
+  "Regularização imobiliária",
+  "Bens de consumo: requisição, almoxarifado e estoque",
+  "Catálogo e cadastro de materiais",
+  "Entradas e incorporação de bens e materiais",
+  "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+  "Bens móveis: unidades de localização, inventário e levantamento físico",
+  "CELAD - armazenamento e distribuição",
+  "Estrutura comum (menu do sistema)"
+ ],
+ "descricao_modulos": {
+  "Imobiliário: cadastro, documentação e avaliação": "Dados, identificação (proprietário, responsável, ocupante), localização com mapa, buscas, vínculos, vistorias, registro e matrícula originária, cartórios, pessoas e avaliadores, documentos e processos, históricos, avaliação interna e externa e relatório de avaliação",
+  "Imobiliário: contabilização e depreciação": "Contabilização do terreno e da edificação, vínculo de tipos de unidade e conta contábil, depreciação da edificação",
+  "Inventário de bens imóveis": "Demanda, parametrização e gestão do inventário de imóveis, comissão e subcomissão, notificações, inventário de imóveis e de obras em andamento, finalização e relatório final",
+  "Regularização imobiliária": "Solicitação de regularização, equipes de trabalho, modelos de atividades, gestão do processo e tarefas",
+  "Bens de consumo: requisição, almoxarifado e estoque": "Consulta de contratos vigentes e notas de empenho (SIAG-C), requisição de materiais (RMF), almoxarifados, endereços de entrega, unidades e requisições, atendimento, lotes, fechamento do mês, posição de estoque, baixa de consumo e transferências entre almoxarifados",
+  "Catálogo e cadastro de materiais": "Catálogo, parâmetros de características, cadastro e variações de materiais, observações e integração com o SIAG",
+  "Entradas e incorporação de bens e materiais": "Importação de NF-e, entrada por compra com e sem XML, lotes, nota de recebimento, entrada de terceiros e incorporação de bens, inclusive intangíveis",
+  "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação": "Avaliação, reavaliação, depreciação e amortização, detalhes e histórico do bem, termos de responsabilidade e de detentor, transferências externas, saída temporária, retorno e devolução, unidade orçamentária, estrutura organizacional e importação de dados",
+  "Bens móveis: unidades de localização, inventário e levantamento físico": "Unidades de localização (UL e ULV), comissão inventariante, levantamento físico e coleta pelo APP, consolidação, intercorrências, acervo, plaquetas e intervalos patrimoniais, transferências entre UL e entre órgãos, baixa patrimonial e notificações",
+  "CELAD - armazenamento e distribuição": "Depósitos, endereçamento de armazenagem, requisições de armazenamento, análise, recebimento e conferência, estocagem, prorrogação, retirada, conferência por amostragem e de bens permanentes",
+  "Estrutura comum (menu do sistema)": "Ações do menu do SISPAT"
+ },
+ "modulos": {},
+ "propriedade": "Desenvolvido pela SEPLAG com a fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
+ "uso": "Em produção (módulos Imobiliário e Inventário de Bens Imóveis em uso pela SEPLAG e por outras secretarias; integração com o ArcGIS em produção)",
+ "beneficio": "Controle, avaliação, contabilização e inventário do patrimônio imobiliário e mobiliário do Estado, base dos registros patrimoniais e contábeis dos imóveis e bens móveis",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato (Seção 6.4), mas o custo da equipe interna (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "documentos": [
+  {
+   "codigo": "US_1",
+   "nome": "Dados do Imóvel - Dados do imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "17.00",
+   "data": "25/09/2026"
+  },
+  {
+   "codigo": "US_02",
+   "nome": "Identificação (Proprietário/Responsável/Ocupante)",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "17.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_3",
+   "nome": "Localização - Localização",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "13.00",
+   "data": "10/2024"
+  },
+  {
+   "codigo": "US_4",
+   "nome": "Buscas - Filtros de Buscas",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "14.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_5",
+   "nome": "Buscar por Matrícula",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.02",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US_6",
+   "nome": "Vínculos - Vínculos do Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "4.00",
+   "data": "03/2024"
+  },
+  {
+   "codigo": "US_7",
+   "nome": "Vistorias - Vistorias do Imóvel (Edificado)",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "10",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_7 (edição)",
+   "nome": "Editar Vistoria do Imóvel Edificado",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "10",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_09",
+   "nome": "Registro do Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "5.00",
+   "data": "08/2024"
+  },
+  {
+   "codigo": "US_10",
+   "nome": "Cadastro de Cartório",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "3.00",
+   "data": "12/2024"
+  },
+  {
+   "codigo": "US_23509",
+   "nome": "Relatório de Avaliação (interna)",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.5",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "Vistorias - Vistorias do Imóvel Não Edificado",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.2",
+   "data": "11/2022"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "Relatório de Avaliação - Assinar Relatório de Avaliação",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.2",
+   "data": "11/2022"
+  },
+  {
+   "codigo": "US_14",
+   "nome": "Relatório de Avaliação - Gerar Relatório de Avaliação Assinado",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.1",
+   "data": "01/2023"
+  },
+  {
+   "codigo": "US_017",
+   "nome": "Manter Pessoas",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.1",
+   "data": "12/2022"
+  },
+  {
+   "codigo": "US_018",
+   "nome": "Manter Avaliador",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.1",
+   "data": "12/2022"
+  },
+  {
+   "codigo": "US_016",
+   "nome": "Processos Vinculados ao Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "2.00",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_015",
+   "nome": "Manter Documento Vinculados ao Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "4.00",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_019",
+   "nome": "Manter Tipos de Documento",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.0",
+   "data": "11/2022"
+  },
+  {
+   "codigo": "US_021",
+   "nome": "Manter Pessoas Jurídicas",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "1.0",
+   "data": "12/2022"
+  },
+  {
+   "codigo": "US_022",
+   "nome": "Manter Contabilização do Terreno",
+   "modulo": "Imobiliário: contabilização e depreciação",
+   "versao": "3.00",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US_023",
+   "nome": "Manter Contabilização da Edificação",
+   "modulo": "Imobiliário: contabilização e depreciação",
+   "versao": "3.00",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US058",
+   "nome": "Posição de Estoque - Final",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "5.0",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US_5566",
+   "nome": "Matrícula Originária",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "2.00",
+   "data": "03/2024"
+  },
+  {
+   "codigo": "US_5579",
+   "nome": "Históricos",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "2.00",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_6313",
+   "nome": "Estrutura de Telas  Detalhes do Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "4.00",
+   "data": "08/2024"
+  },
+  {
+   "codigo": "US_7596",
+   "nome": "Vinculo- Tipos de Unidade e Conta Contábil",
+   "modulo": "Imobiliário: contabilização e depreciação",
+   "versao": "1.00",
+   "data": "03/2023"
+  },
+  {
+   "codigo": "US_7633",
+   "nome": "Depreciação da Edificação",
+   "modulo": "Imobiliário: contabilização e depreciação",
+   "versao": "2.00",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US_7736",
+   "nome": "Demanda de Inventário - Imóveis",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "7.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_7737",
+   "nome": "Comissão do Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "12/2024"
+  },
+  {
+   "codigo": "US_7738",
+   "nome": "Inventariar Imóveis - Anexos do Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "5.00",
+   "data": "11/2024"
+  },
+  {
+   "codigo": "US_9256",
+   "nome": "Parametrização de Inventários",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "3.0",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US_9982",
+   "nome": "Calculo de Depreciação da Edificação",
+   "modulo": "Imobiliário: contabilização e depreciação",
+   "versao": "2.00",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US_10185",
+   "nome": "Gestão de Inventário de Imóveis",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_10187",
+   "nome": "Notificar Responsáveis (Inventário)",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "12/2023"
+  },
+  {
+   "codigo": "US_10327",
+   "nome": "SUB Comissão de Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "4.00",
+   "data": "12/2024"
+  },
+  {
+   "codigo": "US_10426",
+   "nome": "Configurar Email De Notificações SIABI",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_10477",
+   "nome": "Estrutura de tela da Gestão de Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "1.00",
+   "data": "04/2023"
+  },
+  {
+   "codigo": "US_10504",
+   "nome": "Inventariar Imóvel",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "14.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_10626",
+   "nome": "Inventariar Imóveis Acessar-Inicio",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "5.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_10668",
+   "nome": "Relação de Imóveis do Inventário-Revisar",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "3.00",
+   "data": "11/2024"
+  },
+  {
+   "codigo": "US_11065",
+   "nome": "Notificar Comissão",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "12/2023"
+  },
+  {
+   "codigo": "US_11047",
+   "nome": "Finalizar Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "5.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US_11080",
+   "nome": "Notificar SUB Comissão",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "12/2023"
+  },
+  {
+   "codigo": "US_14368",
+   "nome": "Relatório Final De Inventário",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "3.00",
+   "data": "12/2024"
+  },
+  {
+   "codigo": "US_14369",
+   "nome": "Inventariar Imóvel - OBRAS EM ANDAMENTO",
+   "modulo": "Inventário de bens imóveis",
+   "versao": "2.00",
+   "data": "11/2024"
+  },
+  {
+   "codigo": "US_21222",
+   "nome": "Avaliação Externa",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "4.00",
+   "data": "11/2024"
+  },
+  {
+   "codigo": "US_11121",
+   "nome": "Dados do Imóvel - Valor do Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "2.00",
+   "data": "09/2023"
+  },
+  {
+   "codigo": "US_25234",
+   "nome": "Dados Público do Imóvel",
+   "modulo": "Imobiliário: cadastro, documentação e avaliação",
+   "versao": "3.00",
+   "data": "02/2025"
+  },
+  {
+   "codigo": "US01",
+   "nome": "Pesquisar contrato e nota de empenho",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.2",
+   "data": "06/2024"
+  },
+  {
+   "codigo": "US02",
+   "nome": "Criar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.3",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US03",
+   "nome": "Listar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.2",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US04",
+   "nome": "Editar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.1",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US05",
+   "nome": "Visualizar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.1",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US07",
+   "nome": "Assinar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "05/2023"
+  },
+  {
+   "codigo": "US08",
+   "nome": "Cancelar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "05/2023"
+  },
+  {
+   "codigo": "US12",
+   "nome": "Cadastrar Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US13",
+   "nome": "Listar Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US14",
+   "nome": "Excluir Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US15",
+   "nome": "Editar Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US06",
+   "nome": "Imprimir RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US09",
+   "nome": "Enviar RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US10",
+   "nome": "Notificar Protocolo da RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US11",
+   "nome": "Confirmar recebimento da RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "08/2023"
+  },
+  {
+   "codigo": "US016",
+   "nome": "Adicionar histórico manual da RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "11/2023"
+  },
+  {
+   "codigo": "US017",
+   "nome": "Adicionar histórico automático da RMF",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "11/2023"
+  },
+  {
+   "codigo": "US022",
+   "nome": "Adicionar Endereço de Entrega",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US023",
+   "nome": "Editar Endereço de Entrega",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US024",
+   "nome": "Consultar Endereço de Entrega",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US025",
+   "nome": "Excluir Endereço de Entrega",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US026",
+   "nome": "Adicionar Catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US027",
+   "nome": "Consultar Catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US028",
+   "nome": "Editar Catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US029",
+   "nome": "Excluir Catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US030",
+   "nome": "Pesquisar e adicionar material no catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US031",
+   "nome": "Pesquisar e adicionar subelementos de despesas no catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US032",
+   "nome": "Pesquisar e adicionar unidades requisitantes no catálogo",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_43",
+   "nome": "Parâmetros de Características",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "1.00",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US_44",
+   "nome": "Cadastro de Materiais",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "4.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US_45",
+   "nome": "Variações do Material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "4.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US033",
+   "nome": "Consultar o Cadastro do material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US034",
+   "nome": "Consultar Detalhes do cadastro de material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US035",
+   "nome": "Consultar Locais com este material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US036",
+   "nome": "Consultar Catálogos com este material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "2.00",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US037",
+   "nome": "Consultar Observações do cadastro do material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US038",
+   "nome": "Adicionar  Observações  do material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US039",
+   "nome": "Editar Observações do material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US040",
+   "nome": "Excluir  Observações  do material",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "n/i",
+   "data": "02/2024"
+  },
+  {
+   "codigo": "US041",
+   "nome": "Importar Nfe",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "n/i",
+   "data": "03/2024"
+  },
+  {
+   "codigo": "US042",
+   "nome": "Adicionar lotes na entrada de Materiais Bens",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "n/i",
+   "data": "03/2024"
+  },
+  {
+   "codigo": "US046",
+   "nome": "Registrar entrada de Materiais Bens por arquivo XML",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "n/i",
+   "data": "03/2024"
+  },
+  {
+   "codigo": "US_48",
+   "nome": "Entrada  Compra Sem RMF (Sem XML)",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "10.02",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_49",
+   "nome": "UNIDADE DE REQUISIÇÃO (UR)",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US047",
+   "nome": "Visualizar nota de recebimento",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "1.1",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US050",
+   "nome": "Consultar Requisição de Materiais",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.02",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US051",
+   "nome": "Adicionar Nova Requisição",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.03",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US052",
+   "nome": "Alterar Requisição",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.03",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US053",
+   "nome": "Excluir Requisição",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US055",
+   "nome": "Atender Requisições de Materiais",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US056",
+   "nome": "Controlar lote",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "n/i",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US057",
+   "nome": "Finalizar requisição",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "2.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US059",
+   "nome": "Fechamento do Mês - Final",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "1.2",
+   "data": "10/2024"
+  },
+  {
+   "codigo": "US_200",
+   "nome": "Entrada  Incorporação",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "17.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_201",
+   "nome": "Entrada  Incorporação - Intangível",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "17.0",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_202",
+   "nome": "Avaliação do Material",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "1.01",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_203",
+   "nome": "Reavaliação e Depreciação de Bens",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "4.00",
+   "data": "03/2025"
+  },
+  {
+   "codigo": "US_205",
+   "nome": "Entrada  Compra Com e Sem XML - ADICIONAR SELECIONAR MATERIAL)",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "3.04",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_206",
+   "nome": "Integração com a API do SIAG   Materiais",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "1.00",
+   "data": "03/2025"
+  },
+  {
+   "codigo": "US_207",
+   "nome": "Consultar Material Sincronizado SIAG",
+   "modulo": "Catálogo e cadastro de materiais",
+   "versao": "1.00",
+   "data": "03/2025"
+  },
+  {
+   "codigo": "US_208",
+   "nome": "Depreciação de Bens",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "6.01",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US_209",
+   "nome": "Amortização de Bens",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "5.01",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US_210",
+   "nome": "Relatório UL e ULV",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.01",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US_211",
+   "nome": "Histórico de Membros UL ULV",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US_212",
+   "nome": "Detalhes do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "4.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_213",
+   "nome": "Características do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US_214",
+   "nome": "Características Exclusiva do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US_215",
+   "nome": "Avaliações do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US_218",
+   "nome": "Levantamentos do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US061",
+   "nome": "Consultar Entrada de Terceiros",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "3.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US062",
+   "nome": "Cadastrar Entrada de Terceiro",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "3.02",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US063",
+   "nome": "Cadastrar Documento de Entrada de Terceiro",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "1.0",
+   "data": "03/2025"
+  },
+  {
+   "codigo": "US064",
+   "nome": "Adicionar Materiais de Entrada de Terceiro",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "1.9",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US074",
+   "nome": "Consultar Termo de Responsabilidade",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "5.01",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US075",
+   "nome": "Gerar Termo de Responsabilidade",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "5.01",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US076",
+   "nome": "Assinatura do Responsável pela UL ULV",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "1.0",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US077",
+   "nome": "Relatório Termo de Responsabilidade",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "1.0",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US078",
+   "nome": "Enviar Notificação de Termo de Responsabilidade",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "1.0",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US094",
+   "nome": "Relatório Entrada de Bens por Incorporação",
+   "modulo": "Entradas e incorporação de bens e materiais",
+   "versao": "2.0",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US095",
+   "nome": "Gerenciar Inventário Coletado do App",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.01",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US096",
+   "nome": "Importação de Dados da STAGE",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "3.0",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US_301",
+   "nome": "Unidade Orçamentária - UO",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US065",
+   "nome": "Consultar Cadastro de Detentor",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "3.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US066",
+   "nome": "Cadastrar Detentor do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US097",
+   "nome": "Mapear Estrutura Organizacional",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "3.01",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US060",
+   "nome": "Emitir Relatório de Movimentação",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "2.03",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US098",
+   "nome": "Enviar Notificação de Transferência Interna",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "1.0",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US070",
+   "nome": "Consultar Transferência Externa",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US071",
+   "nome": "Cadastrar Transferência Externa",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US073",
+   "nome": "Modificar Registro Patrimonial",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US092",
+   "nome": "Termo de Saída Temporária",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US112",
+   "nome": "Consultar Baixa de Consumo",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US113",
+   "nome": "Cadastrar Baixa de Consumo",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US114",
+   "nome": "Relatório: Termo de Baixa de Consumo",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US072",
+   "nome": "Registrar Retorno do Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US102",
+   "nome": "Consultar Transferência entre Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US103",
+   "nome": "Cadastrar Transferência entre Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US104",
+   "nome": "Enviar Notificação de Transferência entre Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US105",
+   "nome": "Autorizar Transferência entre Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US106",
+   "nome": "Registrar Devolução de Materiais (Adm Direta)",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US107",
+   "nome": "Relatório: Termo de Transferência entre Almoxarifado",
+   "modulo": "Bens de consumo: requisição, almoxarifado e estoque",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US067",
+   "nome": "Enviar Notificação de Assinatura do Termo de Detentor",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "3.0",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US068",
+   "nome": "Assinar Termo de Detentor",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US093",
+   "nome": "Relatório: Termo de Detentor",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US115",
+   "nome": "Registrar Devolução de Bem",
+   "modulo": "Bens móveis permanentes: avaliação, depreciação, responsabilidade e movimentação",
+   "versao": "-",
+   "data": "não localizada"
+  },
+  {
+   "codigo": "US_02",
+   "nome": "Depósitos CELAD",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_03",
+   "nome": "Endereçamento de Armazenagem",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_04",
+   "nome": "Configurar Gestor de Bens",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_05",
+   "nome": "Requisições de Armazenamento",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "5.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_06",
+   "nome": "Status da Requisição",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_07",
+   "nome": "Analise de Requisição",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_08",
+   "nome": "Receber Conferir Material",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "Imprimir Requisição",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "Conferência de Volumes da Requisição",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_15",
+   "nome": "1.00 Imprimir Conferencia",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_10",
+   "nome": "Prorrogar Armazenamento",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_09",
+   "nome": "Estocagem de Material",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_11",
+   "nome": "Retirada de Material",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "2.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_14",
+   "nome": "Conferência Por Amostragem",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_16",
+   "nome": "Gestão de Estocagem",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_18",
+   "nome": "Conferência de Bens Permanentes",
+   "modulo": "CELAD - armazenamento e distribuição",
+   "versao": "1.00",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US_01",
+   "nome": "UL  GESTÃO DE UNIDADES DE LOCALIZAÇÃO",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "13.0",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US_02",
+   "nome": "ULV  UNIDADES DE LOCALIZAÇÃO VINCULADAS",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "6.0",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US_03",
+   "nome": "INVENTÁRIO DE BENS MÓVEIS PERMANENTES",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "4.01",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_04",
+   "nome": "ESTRUTURA DE TELA   INVENTÁRIO DE PERMANENTES",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_05",
+   "nome": "COMISSÃO INVENTÁRIANTE",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_06",
+   "nome": "NOTIFICAR COMISSÃO INVENTARIANTE",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_07",
+   "nome": "GESTÃO DE LEVANTAMENTO FISICO",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "6.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_08",
+   "nome": "INVENTARIAR BENS MÓVEIS PERMANENTES",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "9.02",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_10",
+   "nome": "VISTORIAR ULV - LEVANTAMENTO FÍSICO",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "05/2024"
+  },
+  {
+   "codigo": "US_11",
+   "nome": "Assinar Levantamento Físico",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "05/2024"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "ACERVO PATRIMONIAL",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "10.01",
+   "data": "10/2025"
+  },
+  {
+   "codigo": "US_19",
+   "nome": "Consultar Autenticidade de Assinatura",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "06/2024"
+  },
+  {
+   "codigo": "US_09",
+   "nome": "Consolidar Levantamento",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "06/2024"
+  },
+  {
+   "codigo": "US_16",
+   "nome": "Avaliação Inicial do Bem",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "06/2024"
+  },
+  {
+   "codigo": "US_22",
+   "nome": "INTERCORRÊNCIAS E INCONSISTÊNCIAS",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "Relatórios de Levantamento Físico",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US_14",
+   "nome": "Transferencia entre UL",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "9.01",
+   "data": "11/2025"
+  },
+  {
+   "codigo": "US_15",
+   "nome": "Transferências Entre Órgão UG",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "5.04",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_26",
+   "nome": "Relatório Termo de Transferência Entre UL's",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "4.0",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_27",
+   "nome": "Relatório Termo de Transferência Entre Órgão UG",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.0",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_28",
+   "nome": "Solicitar Transferência UG",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.01",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_29",
+   "nome": "Autorizar Transferência",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.0",
+   "data": "06/2025"
+  },
+  {
+   "codigo": "US_25",
+   "nome": "Baixa Patrimonial de Bens",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "09/2024"
+  },
+  {
+   "codigo": "US_30",
+   "nome": "Termo de Baixa",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "09/2024"
+  },
+  {
+   "codigo": "US_31",
+   "nome": "Consultar Notificações",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.0",
+   "data": "05/2025"
+  },
+  {
+   "codigo": "US_32",
+   "nome": "Histórico de Eventos do Bem",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "4.02",
+   "data": "04/2025"
+  },
+  {
+   "codigo": "US_33",
+   "nome": "Consultar Solicitações de Plaquetas",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.00",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_34",
+   "nome": "Solicitar Plaqueta",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.02",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_35",
+   "nome": "Analisar solicitação de Plaquetas",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.00",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_36",
+   "nome": "Consultar Intervalo Patrimonial",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.00",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_37",
+   "nome": "Incluir Intervalo Patrimoniais 01-EMPLAQUETADO",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.02",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_38",
+   "nome": "Incluir  Intervalo de N° Patrimoniais 02 NÃO EMPLAQUETADO e 03 TERCEIROS",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "3.02",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_39",
+   "nome": "Gerar Termo de Entrega do Intervalo de N° Patrimoniais",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "2.00",
+   "data": "07/2025"
+  },
+  {
+   "codigo": "US_40",
+   "nome": "Imprimir Termo de Entrega do Intervalo de N° Patrimoniais",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US_41",
+   "nome": "Visualizar Histórico do Intervalo de N° Patrimoniais",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US099",
+   "nome": "Autorizar Transferência Interna",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.01",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US100",
+   "nome": "Registrar Devolução de Bem (transferência interna)",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.01",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US101",
+   "nome": "Registrar Devolução de Bem Transferido (Admin Direta)",
+   "modulo": "Bens móveis: unidades de localização, inventário e levantamento físico",
+   "versao": "1.01",
+   "data": "12/2025"
+  },
+  {
+   "codigo": "US_60",
+   "nome": "Regularização Imobiliária",
+   "modulo": "Regularização imobiliária",
+   "versao": "2.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US_61",
+   "nome": "Equipes de Trabalho",
+   "modulo": "Regularização imobiliária",
+   "versao": "1.00",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US_62",
+   "nome": "Template de Atividades",
+   "modulo": "Regularização imobiliária",
+   "versao": "1.00",
+   "data": "07/2024"
+  },
+  {
+   "codigo": "US_63",
+   "nome": "Gestão de Processo",
+   "modulo": "Regularização imobiliária",
+   "versao": "1.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US_64",
+   "nome": "Tarefas do Processo",
+   "modulo": "Regularização imobiliária",
+   "versao": "1.00",
+   "data": "01/2025"
+  },
+  {
+   "codigo": "US020",
+   "nome": "Ações Menu do SISPAT",
+   "modulo": "Estrutura comum (menu do sistema)",
+   "versao": "1.6",
+   "data": "03/2025"
+  }
+ ],
+ "ressalvas_extras": [
+  "Das 214 histórias com funções contadas, 24 não foram localizadas na pasta de documentação disponibilizada, que reúne as sprints até 12/2025: US_211 Histórico de Membros UL ULV (7 PF); US_213 Características do Bem (4 PF); US_214 Características Exclusiva do Bem (4 PF); US_215 Avaliações do Bem (4 PF); US_218 Levantamentos do Bem (4 PF); US_301 Unidade Orçamentária - UO (10 PF); US066 Cadastrar Detentor do Bem (22 PF); US070 Consultar Transferência Externa (9 PF); US071 Cadastrar Transferência Externa (31 PF); US073 Modificar Registro Patrimonial (8 PF); US092 Termo de Saída Temporária (7 PF); US112 Consultar Baixa de Consumo (9 PF); US113 Cadastrar Baixa de Consumo (21 PF); US114 Relatório: Termo de Baixa de Consumo (7 PF); US072 Registrar Retorno do Bem (7 PF); US102 Consultar Transferência entre Almoxarifado (9 PF); US103 Cadastrar Transferência entre Almoxarifado (31 PF); US104 Enviar Notificação de Transferência entre Almoxarifado (7 PF); US105 Autorizar Transferência entre Almoxarifado (7 PF); US106 Registrar Devolução de Materiais (Adm Direta) (7 PF); US107 Relatório: Termo de Transferência entre Almoxarifado (14 PF); US068 Assinar Termo de Detentor (13 PF); US093 Relatório: Termo de Detentor (7 PF); US115 Registrar Devolução de Bem (7 PF). Somam 256 PF (4,8% do tamanho). Foram mantidas por constarem da linha de base revisada pela equipe do projeto em 11/11/2026; a documentação correspondente deve ser juntada ao processo do inventário.",
+  "As funções das linhas 989 (ALI Baixa de Consumo) e 990 (EE Cadastrar Baixa de Consumo), da US113, estão na planilha sem complexidade calculada e não pontuam. Pela tabela IFPUG, com os TD e AR registrados, somariam 13 PF (7 + 6). O tamanho deste laudo segue o total da planilha (5.375 PF), sem esse acréscimo.",
+  "A integração com o ArcGIS foi executada pela Imagem Geosistemas na Ordem de Serviço nº 010 do Contrato nº 036/2024/SEPLAG. Os serviços, as camadas e o localizador publicados no ArcGIS Enterprise são produtos daquela plataforma e não integram o tamanho nem o custo do SISPAT apresentados neste laudo."
+ ],
+ "outros_documentos": [
+  [
+   "Histórias de usuário do SISPAT (versão mais recente de cada uma)",
+   "Pasta do projeto, Sprints 00 a 41 e pastas da fábrica (Imóveis, Permanente e CELAD)",
+   "09/2022 a 12/2025",
+   "Finalidade, módulos, regras de negócio e integrações (Tabela A2)"
+  ],
+  [
+   "Ordem de Serviço nº 03 - Contrato nº 014/2022/SEPLAG (Grupo II, 75%; 58 PF estimados)",
+   "Sigadoc, documento nº 3757855-9090",
+   "22/08/2022",
+   "Início do desenvolvimento do SIABI com a fábrica de software"
+  ],
+  [
+   "Ordem de Serviço nº 04 - SIABI [Concepção] (Grupo I, 25%; 277,50 PF; complementar da OS 03)",
+   "Sigadoc, documento nº 5479791-949",
+   "18/11/2022",
+   "Divisão de atividades entre a SEPLAG e a fábrica de software"
+  ],
+  [
+   "DOD - Evolução do SISPAT Imóveis (CI nº 00273/2024/SPP/SEPLAG)",
+   "Sigadoc, documento nº 14715161-2405",
+   "31/01/2024",
+   "Melhorias do Imobiliário, integração geoespacial e com o FIPLAN"
+  ],
+  [
+   "DOD - Regularização Fundiária",
+   "SEPLAG-DIC-2024/15017",
+   "14/06/2024",
+   "Origem do módulo de Regularização Imobiliária"
+  ],
+  [
+   "Mensagem de abertura da OS nº 15 - Regularização Imobiliária (293 PF)",
+   "E-mail institucional",
+   "23/07/2024",
+   "Tamanho e aceite do módulo"
+  ],
+  [
+   "DOD - Melhoria do módulo Imobiliário",
+   "SEPLAG-DIC-2024/18765",
+   "22/07/2024",
+   "Melhorias do cadastro, conta contábil, UG e UO"
+  ],
+  [
+   "DOD - Melhoria do módulo Imobiliário (obras em andamento)",
+   "SEPLAG-DIC-2024/18760",
+   "22/07/2024",
+   "Ambiente de obras em andamento e integração com o FIPLAN"
+  ],
+  [
+   "Ordem de Serviço nº 010 - Integração ArcGIS com SISPAT (revisões 4 e 7) e mensagens da integração GIS x SISPAT",
+   "Contrato nº 036/2024/SEPLAG (Imagem Geosistemas)",
+   "04/04/2025 a 15/10/2025",
+   "Escopo e arquitetura da integração com o ArcGIS"
+  ],
+  [
+   "Decreto Estadual nº 2.151, de 22/09/2009",
+   "Norma estadual",
+   "22/09/2009",
+   "Política de Modernização da Gestão Patrimonial e SIGPAT"
+  ],
+  [
+   "Instruções normativas da SEAPS (imobiliário e mobiliário) e notícia de 20/04/2022 sobre a IN Conjunta nº 001/2022/SEPLAG/SEFAZ",
+   "Portal da SEPLAG",
+   "20/04/2022",
+   "Base normativa da avaliação e do inventário dos bens"
+  ],
+  [
+   "Página do SISPAT no portal da SEPLAG",
+   "Portal da SEPLAG",
+   "2026",
+   "Finalidade e canais de suporte por módulo"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software (projetos Imobiliário, CELAD e Regularização)",
+   "Painel da fiscalização do contrato",
+   "TRDs até 07/2026",
+   "Custo do projeto com a contratada (Seção 6.4)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SISPAT em cada inventário"
+  ]
+ ],
+ "analise_documental": "Leitura dos títulos, versões e organização das 214 histórias da linha de base nas pastas do projeto, das Ordens de Serviço nº 03, 04 e 15 do Contrato nº 014/2022, dos DODs de 2024, da Ordem de Serviço nº 010 do Contrato nº 036/2024 (ArcGIS), do Decreto nº 2.151/2009 e das normas da SEAPS",
+ "documentacao_resumo": "190 histórias de usuário localizadas (de 214), ordens de serviço, DODs e normas (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário do SISPAT organizadas por sprint (Sprints 00, de 09/2022, a 41, de 12/2025) e pastas de histórias da fábrica de software (Imóveis, Permanente e CELAD). Considerou-se a versão mais recente de cada história; a data é a da sprint em que ela foi entregue ou, nas pastas da fábrica, a do arquivo.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade das equipes que as elaboraram (SEPLAG e fábrica de software). A avaliação foi feita com a documentação existente e disponibilizada à comissão; as funcionalidades foram consideradas por estarem em produção.",
+ "texto_tipos": "A predominância das transações reflete um sistema de cadastro, movimentação e controle de bens, com muitas consultas, relatórios e termos.",
+ "texto_manutencao": "A contagem é de projeto de desenvolvimento e registra o tipo de manutenção de cada função. A medida adotada (PF Local da FS) aplica os deflatores do Roteiro de Métricas do SISP 2.3, previstos no Contrato nº 014/2022/SEPLAG: inclusão a 100%, exclusão a 40% e manutenção cosmética a 0,6 PF por função. A função sem tipo de manutenção (linha 606, AIE registrado só como referência) não contribui para a medida.",
+ "texto_evolucao": "O sistema já constava do inventário de 2022 como SIABI. O crescimento acompanha a ampliação do escopo, do Imobiliário para bens de consumo, bens permanentes, inventário de bens móveis, CELAD e regularização imobiliária.",
+ "exemplos_tipos": [
+  "Imóvel, edificação, inventário, requisição de materiais, bem patrimonial",
+  "Contas contábeis e unidade orçamentária (FIPLAN), material (SIAG), endereço (ArcGIS, ViaCEP)",
+  "Cadastrar imóvel, registrar entrada por XML, transferir bem",
+  "Listar imóveis, consultar catálogo, consultar termos",
+  "Relatório de avaliação, termo de responsabilidade, posição de estoque"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "10/08/2023",
+   "pf": 1850,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em homologação",
+   "uso": "VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "27/08/2024",
+   "pf": 4068,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "VI 0,75"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 5222,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "VI 0,75"
+  },
+  {
+   "inventario": 2026,
+   "data": "11/11/2026",
+   "pf": 5375,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.47, PF Local da FS (5.510 PF IFPUG); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 5222,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre de três fatores: o aumento do tamanho funcional (de 5.222 para 5.375 PF), o novo preço do ponto de função apurado na pesquisa de 2026 e a elevação do Valor Institucional de 0,75 para 1,00, pelo uso em produção dos módulos Imobiliário e Inventário de Bens Imóveis por secretarias do Estado e pela integração com o ArcGIS em produção (Seção 6.1).",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "O sistema legado SIGPAT, que o SISPAT substitui.",
+  "Os serviços, camadas e aplicações publicados na plataforma ArcGIS, que pertencem àquela plataforma."
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, as ordens de serviço e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SISPAT é desenvolvido com a fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. O painel separa o projeto principal (registrado como Imobiliário, que reúne o Imobiliário e os módulos de bens móveis e de consumo), o CELAD e a Regularização Imobiliária; os três integram a linha de base avaliada e entram na comparação. O contrato está em execução desde 07/2022 e os dados abaixo consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
+  "componentes": [
+   [
+    "Desenvolvimento - projeto principal (Imobiliário)",
+    3114672.8
+   ],
+   [
+    "Desenvolvimento - CELAD",
+    365747.08
+   ],
+   [
+    "Desenvolvimento - Regularização Imobiliária",
+    146530.5
+   ],
+   [
+    "Tickets",
+    116961.12
+   ],
+   [
+    "Pontos de função de teste",
+    816.8
+   ]
+  ],
+  "custo_total": 3744728.3,
+  "componentes_construcao": [
+   "Desenvolvimento - projeto principal (Imobiliário)",
+   "Desenvolvimento - CELAD",
+   "Desenvolvimento - Regularização Imobiliária"
+  ],
+  "pf_faturado": 14222.6,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "interpretacao": [
+   "Os pontos de função faturados (14.222,60 PF; 13.620,90 PF do projeto principal e do CELAD e 601,70 PF da Regularização) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo do projeto: funções incluídas e depois alteradas em novas sprints são medidas de novo, com os deflatores do contrato, e os testes têm medida própria. O tamanho funcional do ativo conta cada função existente uma única vez.",
+   "A divisão de atividades variou ao longo do projeto: no início do SIABI, a fábrica executou o Grupo II (construção, testes e homologação, 75% do esforço, OS nº 03) e, por OS complementar, o Grupo I (requisitos, análise e projeto, 25%, OS nº 04); em 2023 e 2024 a especificação foi feita pela SEPLAG com a fábrica; em 2025, só pela SEPLAG. Por isso não se aplica um fator único para estimar o custo de construção completo, e o custo médio por PF faturado (R$ 263,29) fica abaixo do preço do contrato. Os tickets (3,1% do custo) são demandas avulsas; se corresponderem a manutenção, não integram o valor do ativo (IN, art. 10, parágrafo único)."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps) nem a integração com o ArcGIS, contratada à parte. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo."
+ },
+ "quebrar_rotulos_grafico": 42
+}

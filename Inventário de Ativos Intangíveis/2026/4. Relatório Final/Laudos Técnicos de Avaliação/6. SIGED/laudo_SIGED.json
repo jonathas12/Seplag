@@ -155,7 +155,7 @@
  "propriedade": "Desenvolvido para a SEPLAG pela a fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
  "uso": "Em produção desde 15/05/2026; versão 1.18.0 desde 23/10/2026",
  "beneficio": "Redução do tempo de busca e do espaço físico de guarda, controle do ciclo de vida dos documentos pela tabela de temporalidade, eliminação autorizada de documentos e controle da transferência dos acervos dos órgãos para o CELAD",
- "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato, mas o custo da equipe da SEPLAG (gestão do projeto, infraestrutura e banco de dados) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato (Seção 6), mas o custo da equipe da SEPLAG (gestão do projeto, infraestrutura e banco de dados) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
  "analise_documental": "Leitura das 34 histórias de usuário (histórico de versões e regras de negócio), do Documento de Escopo, do processo SEPLAG-PRO-2023/08459 (CI e DOD), da Ordem de Serviço e das mensagens de abertura, das comunicações de disponibilização em produção e do resultado dos trabalhos aprovados no XI CNA",
  "documentacao_resumo": "34 histórias de usuário localizadas (de 68), Documento de Escopo, processo SEPLAG-PRO-2023/08459, Ordem de Serviço e comunicações de produção (Anexo I)",
  "documentacao_fonte": "Histórias de usuário do SIGED disponibilizadas na pasta do projeto, na versão mais recente de cada uma (a versão é a do nome do arquivo e a data é a da última revisão registrada no histórico de versões).",
@@ -462,6 +462,12 @@
    "Trabalho nº 199 sobre o SIGED, Eixo 6 - Gestão de Documentos Arquivísticos"
   ],
   [
+   "Painel Custos de Projetos - Fábrica de Software (projeto SIGED)",
+   "Painel da fiscalização do contrato",
+   "TRDs até 07/2026",
+   "Custo do projeto com a contratada (Seção 6)"
+  ],
+  [
    "Registro histórico das avaliações (Dados.xlsx)",
    "Planilha da comissão",
    "2023 a 2025",
@@ -482,5 +488,35 @@
   "A função da linha 444 (consulta implícita ao abrir a tela, na US_62) está na planilha sem complexidade calculada e não pontua.",
   "A função da US_28 (Organizar menu, linha 9, manutenção cosmética de 0,6 PF) está fora da faixa somada pela fórmula do total (Funções!L11:L753) e não integra o tamanho funcional; por isso o módulo de acesso não aparece na composição por módulo.",
   "A linha de base v0.14 não registra data de revisão (célula R10 da aba Contagem). Adotou-se 18/08/2026, data da mensuração registrada na relação de sistemas para o SIGED."
- ]
+ ],
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIGED foi contratado e desenvolvido integralmente pela fábrica de software do Contrato nº 014/2022/SEPLAG, a fiscalização do contrato registra o custo do projeto com a contratada. Esse custo permite comparar o que foi pago pela construção com o valor atribuído ao ativo. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto SIGED)",
+    1110393.74
+   ],
+   [
+    "Tickets",
+    11067.03
+   ],
+   [
+    "Pontos de função de teste",
+    6473.87
+   ]
+  ],
+  "custo_total": 1127934.64,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto SIGED)"
+  ],
+  "pf_faturado": 4558.85,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "interpretacao": [
+   "Os pontos de função faturados (4.558,85 PF) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo do projeto: funções incluídas e depois alteradas em novas sprints são medidas de novo, com os deflatores do contrato, e os testes têm medida própria. O próprio painel indica 18% de retrabalho no projeto. O tamanho funcional do ativo conta cada função existente uma única vez.",
+   "O custo médio por PF faturado (R$ 247,42) fica abaixo do preço vigente do contrato (R$ 544,53). Essa diferença não foi decomposta neste laudo: depende dos deflatores aplicados às entregas e dos preços vigentes em cada período do contrato, que podem ser conferidos nas ordens de serviço do painel. Os tickets (1,0% do custo) são demandas avulsas; se corresponderem a manutenção, não integram o valor do ativo (IN, art. 10, parágrafo único)."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG (gestão do projeto, infraestrutura e banco de dados), cujo custo não é apurado por produto. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo."
+ }
 }

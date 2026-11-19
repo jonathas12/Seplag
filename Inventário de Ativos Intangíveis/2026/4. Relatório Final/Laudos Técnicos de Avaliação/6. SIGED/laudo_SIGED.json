@@ -1,0 +1,486 @@
+{
+ "sigla": "SIGED",
+ "nome": "Sistema de Gestão Eletrônica de Documentos",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 19 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGED_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/6. SIGED/APF- Baseline SIGED - v0.14.xlsx",
+ "baseline_nome": "APF- Baseline SIGED - v0.14.xlsx",
+ "baseline_versao": "0.14",
+ "medida": "PF Local da FS",
+ "formato_us": "US_{:02d}",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java (Spring) e React, banco de dados Oracle",
+ "vida_util": "Indefinida",
+ "tipo_bem": "Software desenvolvido para a SEPLAG pela fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG, com os Grupos de Atividades I (requisitos, análise e projeto) e II (construção, testes e homologação); gestão do projeto e fiscalização do contrato pela SEPLAG (SSCPG/SAPGD/SEPLAG)",
+ "areas_negocio": "Superintendência de Arquivo Público da Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), Coordenadoria de Gestão de Documentos, Centro Estadual de Logística, Abastecimento e Distribuição (CELAD) e unidades de arquivo e protocolo dos órgãos e entidades do Poder Executivo",
+ "perfis": "Administrador SIGED, Administrador Central SIGED, Administrador Central e Administrador Setorial, configurados no sistema Manopla; o acesso usa o usuário do Portal do Servidor (MT Login). Os perfis de auditoria e de chefia ainda não estavam configurados na entrada em produção",
+ "base_legal": "Lei nº 12.527/2011 (Acesso à Informação), Lei nº 12.682/2012 (digitalização), Lei nº 13.709/2018 (LGPD), Decreto Estadual nº 511/2020, Resoluções CONARQ nº 28/2009 (NOBRADE) e nº 43/2015 (RDC-Arq) e o modelo e-ARQ Brasil, conforme o Documento de Oficialização da Demanda",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 0.75,
+ "vi_justificativa": [
+  "O SIGED é o sistema de gestão de documentos físicos e digitalizados dos órgãos e entidades do Poder Executivo, sob a coordenação da Superintendência de Arquivo Público. Ele controla os depósitos físicos e as caixas, a captura e a digitalização, o empréstimo, a transferência dos acervos para o arquivo e a eliminação de documentos conforme a tabela de temporalidade. A entrada em produção, em 15/05/2026, alcançou 72 usuários gestores do órgão central e dos setoriais, e a versão 1.18.0, de 23/10/2026, incluiu a carga da classificação e da temporalidade de documentos e do cadastro de depósito físico do CELAD.",
+  "O sistema está diretamente alinhado à formalização e ao início da transferência dos acervos arquivísticos dos órgãos e entidades para o CELAD, motivo pelo qual a implantação foi tratada como urgente. A inoperância comprometeria o controle dos acervos em transferência e guarda, os empréstimos e as eliminações autorizadas, com retorno a controles manuais.",
+  "O desenvolvimento e a implantação do SIGED foram aprovados como relato de experiência para apresentação no XI Congresso Nacional de Arquivologia (XI CNA), no Eixo 6 - Gestão de Documentos Arquivísticos, com o trabalho \"Desenvolvimento e implantação do SIGED: integração e otimização da gestão de documentos físicos e digitalizados dos órgãos e entidades do Poder Executivo do Estado de Mato Grosso\" (trabalho nº 199, modalidade pôster; resultado publicado em Manaus, 29/08/2026). O reconhecimento externo confirma o sistema como boa prática de gestão documental.",
+  "Nessas condições, a inoperância provocaria prejuízo de alto impacto, o que corresponde ao nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ. Em 2025, com o sistema em desenvolvimento, o índice foi 0,25."
+ ],
+ "finalidade": [
+  "O Sistema de Gestão Eletrônica de Documentos (SIGED), chamado anteriormente de GED e de SIG2D, é a ferramenta da Superintendência de Arquivo Público, vinculada à Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), para o gerenciamento, a guarda, o controle e a disponibilização de documentos digitalizados e físicos dos órgãos e entidades do Poder Executivo Estadual. A demanda foi formalizada em 16/08/2023 (CI nº 03383/2023/SAP/SEPLAG e Documento de Oficialização da Demanda, processo SEPLAG-PRO-2023/08459), com o objetivo de organizar e indexar os documentos, reduzir o tempo de busca e a necessidade de espaço físico, controlar o ciclo de vida dos documentos pela tabela de temporalidade e preservar o patrimônio documental do Estado.",
+  "O sistema reúne: os cadastros de depósitos físicos, salas, caixas, requisitos mínimos da digitalização, mapa topográfico do depósito e sequências de etiquetas por órgão, inclusive as etiquetas do CELAD; a demanda de captura e digitalização, com conjunto documental, responsáveis, captura de arquivos, conferência do representante digital e de qualidade, etiqueta de identificação, assinatura eletrônica, consulta de autenticidade e gestão de volumes; a consulta e a gestão de documentos digitalizados; o empréstimo documental, com análise, termo de responsabilidade, prorrogação, devolução e checklist; a transferência documental para o arquivo, com termos de responsabilidade, análise, parecer, recebimento e guarda, inclusive em lote, e importação de planilhas de processos, dossiês, documentos avulsos e caixas; e a eliminação documental, com prazo de guarda no arquivo intermediário, listagens de eliminação, assinatura, validação e eliminação aprovada.",
+  "O projeto foi contratado e desenvolvido integralmente pela fábrica de software do Contrato nº 014/2022/SEPLAG, com os Grupos de Atividades I e II (100% do esforço), na Ordem de Serviço de 17/08/2023 sobre 780 PF estimados por contagem indicativa (R$ 356.460,00). A ordem foi emitida como OS nº 10 e reemitida como OS nº 11 em 19/10/2023, sem outra alteração, por conflito de numeração com outro projeto. O escopo foi detalhado no Documento de Escopo aprovado em 15/09/2023, com o sistema Manopla para usuários e permissões e a estrutura Thanos para órgãos e unidades.",
+  "O SIGED entrou em produção em 15/05/2026, com 72 usuários gestores do órgão central e dos setoriais. Em 23/10/2026 o ambiente de produção foi atualizado para a versão 1.18.0, com as funcionalidades homologadas até a Sprint 16, a carga da classificação, documentação e temporalidade de documentos e a carga do cadastro de depósito físico do CELAD; em 27/10/2026 foi publicada a melhoria de ordenação das etiquetas do CELAD, encerrando as entregas prioritárias para o uso do sistema em produção."
+ ],
+ "integracoes": [
+  [
+   "Manopla",
+   "Cadastro de usuários, perfis e permissões de acesso",
+   "Fora da fronteira (funcionalidade do Manopla)"
+  ],
+  [
+   "MT Login (usuário do Portal do Servidor)",
+   "Autenticação dos usuários por API REST",
+   "Fora da fronteira"
+  ],
+  [
+   "Estrutura Thanos e bases corporativas do Estado",
+   "Órgão, setor e unidade, entidade e empresa, servidor, município, CEP e tipo de logradouro",
+   "AIE"
+  ],
+  [
+   "Plano de classificação e tabela de temporalidade",
+   "Classificação documental e exercício",
+   "AIE Classificação Documental e Exercício"
+  ],
+  [
+   "CELAD",
+   "Depósito físico e etiquetas dos acervos transferidos",
+   "Dados mantidos pelo SIGED (cadastros e etiquetas)"
+  ],
+  [
+   "SIGADOC",
+   "Integração prevista no DOD, excluída do escopo pelo Documento de Escopo",
+   "Fora do escopo"
+  ]
+ ],
+ "modulos": {
+  "Acesso": [
+   28
+  ],
+  "Cadastros: depósitos, salas, caixas e etiquetas": [
+   1,
+   2,
+   3,
+   9,
+   31,
+   71,
+   72,
+   75
+  ],
+  "Demanda de captura e digitalização": [
+   6,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   14,
+   16,
+   17,
+   18,
+   19,
+   26
+  ],
+  "Gestão de documentos digitalizados": [
+   21,
+   23
+  ],
+  "Empréstimo documental": [
+   24,
+   29,
+   30,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40
+  ],
+  "Transferência documental e recebimento no arquivo": [
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   61,
+   67,
+   68,
+   69,
+   73,
+   74,
+   76
+  ],
+  "Eliminação documental": [
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   62,
+   63,
+   64,
+   65,
+   70
+  ]
+ },
+ "propriedade": "Desenvolvido para a SEPLAG pela a fábrica de software do Contrato nº 014/2022/SEPLAG, que cede ao Estado os direitos de propriedade intelectual e autorais da solução",
+ "uso": "Em produção desde 15/05/2026; versão 1.18.0 desde 23/10/2026",
+ "beneficio": "Redução do tempo de busca e do espaço físico de guarda, controle do ciclo de vida dos documentos pela tabela de temporalidade, eliminação autorizada de documentos e controle da transferência dos acervos dos órgãos para o CELAD",
+ "custo_incorrido": "Os pagamentos à fábrica de software são conhecidos pela fiscalização do contrato, mas o custo da equipe da SEPLAG (gestão do projeto, infraestrutura e banco de dados) não é apurado por produto. Como o custo incorrido total (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das 34 histórias de usuário (histórico de versões e regras de negócio), do Documento de Escopo, do processo SEPLAG-PRO-2023/08459 (CI e DOD), da Ordem de Serviço e das mensagens de abertura, das comunicações de disponibilização em produção e do resultado dos trabalhos aprovados no XI CNA",
+ "documentacao_resumo": "34 histórias de usuário localizadas (de 68), Documento de Escopo, processo SEPLAG-PRO-2023/08459, Ordem de Serviço e comunicações de produção (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário do SIGED disponibilizadas na pasta do projeto, na versão mais recente de cada uma (a versão é a do nome do arquivo e a data é a da última revisão registrada no histórico de versões).",
+ "documentos": [
+  {
+   "codigo": "US_01",
+   "nome": "Depósito Físico",
+   "versao": "4.00",
+   "data": "26/11/2025"
+  },
+  {
+   "codigo": "US_02",
+   "nome": "Sala(s) do Depósito Físico",
+   "versao": "8.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_03",
+   "nome": "Cadastro de Caixas",
+   "versao": "9.00",
+   "data": "03/06/2026"
+  },
+  {
+   "codigo": "US_06",
+   "nome": "Estrutura de Tela  Demanda de Captura",
+   "versao": "2.00",
+   "data": "25/10/2023"
+  },
+  {
+   "codigo": "US_09",
+   "nome": "Requisitos Mínimos da Digitalização",
+   "versao": "3.00",
+   "data": "19/11/2025"
+  },
+  {
+   "codigo": "US_17",
+   "nome": "Consultar Autenticidade de Assinatura",
+   "versao": "1.00",
+   "data": "31/10/2023"
+  },
+  {
+   "codigo": "US_18",
+   "nome": "Assinatura Eletrônica",
+   "versao": "1.00",
+   "data": "01/11/2023"
+  },
+  {
+   "codigo": "US_19",
+   "nome": "Gestão de Volume",
+   "versao": "1.00",
+   "data": "30/10/2023"
+  },
+  {
+   "codigo": "US_23",
+   "nome": "Gerenciar Documento Digitalizado",
+   "versao": "2.00",
+   "data": "19/11/2025"
+  },
+  {
+   "codigo": "US_21",
+   "nome": "Consultar Pesquisar Documentos Digitalizados",
+   "versao": "3.00",
+   "data": "19/11/2025"
+  },
+  {
+   "codigo": "US_29",
+   "nome": "Especificar Empréstimo Documental",
+   "versao": "1.00",
+   "data": "26/06/2024"
+  },
+  {
+   "codigo": "US_30",
+   "nome": "Analisar Solicitação de Empréstimo Documental",
+   "versao": "2.00",
+   "data": "26/07/2024"
+  },
+  {
+   "codigo": "US_33",
+   "nome": "Gerar Termo de Responsabilidade",
+   "versao": "2.00",
+   "data": "07/10/2025"
+  },
+  {
+   "codigo": "US_34",
+   "nome": "Assinar Termo de Responsabilidade",
+   "versao": "1.00",
+   "data": "26/07/2024"
+  },
+  {
+   "codigo": "US_35",
+   "nome": "Imprimir Termo de Responsabilidade",
+   "versao": "1.00",
+   "data": "26/07/2024"
+  },
+  {
+   "codigo": "US_37",
+   "nome": "Analisar Prorrogação",
+   "versao": "2.00",
+   "data": "24/10/2025"
+  },
+  {
+   "codigo": "US_39",
+   "nome": "Checklist da Devolução Documental Física",
+   "versao": "1.00",
+   "data": "26/07/2024"
+  },
+  {
+   "codigo": "US_40",
+   "nome": "Notificar Responsável pela Empréstimo Documental",
+   "versao": "3.00",
+   "data": "24/10/2025"
+  },
+  {
+   "codigo": "US_41",
+   "nome": "Consultar Transferência Documental",
+   "versao": "5.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_46",
+   "nome": "Imprimir Termo de Responsabilidade de Transferência de Documentos",
+   "versao": "1.00",
+   "data": "26/08/2024"
+  },
+  {
+   "codigo": "US_49",
+   "nome": "Recebimento Guarda dos Documentos",
+   "versao": "11.00",
+   "data": "18/06/2026"
+  },
+  {
+   "codigo": "US_53",
+   "nome": "Consultar Prazo de Guarda no Arquivo Intermediário",
+   "versao": "5.00",
+   "data": "30/01/2026"
+  },
+  {
+   "codigo": "US_55",
+   "nome": "Gerar Listagem de Eliminação",
+   "versao": "2.00",
+   "data": "19/11/2025"
+  },
+  {
+   "codigo": "US_58",
+   "nome": "Consultar Listagem de Eliminação",
+   "versao": "4.00",
+   "data": "13/01/2026"
+  },
+  {
+   "codigo": "US_61",
+   "nome": "Assinar Termo de Responsabilidade para Recebimento e Guarda de Documentos Transferidos",
+   "versao": "1.00",
+   "data": "22/08/2025"
+  },
+  {
+   "codigo": "US_63",
+   "nome": "Validar Listagem - Assinar",
+   "versao": "1.00",
+   "data": "07/11/2025"
+  },
+  {
+   "codigo": "US_65",
+   "nome": "Assinatura da Validação da Listagem de Eliminação",
+   "versao": "1.00",
+   "data": "07/11/2025"
+  },
+  {
+   "codigo": "US_67",
+   "nome": "Importar Planilha -  Processo",
+   "versao": "4.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_68",
+   "nome": "Importar Planilha - Dossiê",
+   "versao": "4.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_69",
+   "nome": "Importar Planilha - Documento avulso",
+   "versao": "4.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_72",
+   "nome": "Cadastrar Sequências de Etiquetas por Órgão",
+   "versao": "4.00",
+   "data": "18/06/2026"
+  },
+  {
+   "codigo": "US_73",
+   "nome": "Importar Caixas Documentos em Lote",
+   "versao": "4.00",
+   "data": "03/08/2026"
+  },
+  {
+   "codigo": "US_74",
+   "nome": "Visualizar Log da Importação - Caixas Documentos",
+   "versao": "1.00",
+   "data": "27/02/2026"
+  },
+  {
+   "codigo": "US_76",
+   "nome": "Recebimento/Guarda dos Documentos - Em Lote",
+   "versao": "1.00",
+   "data": "08/06/2026"
+  }
+ ],
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade das equipes que as elaboraram. A avaliação foi feita com a documentação existente e disponibilizada à comissão.",
+ "texto_tipos": "A predominância das transações reflete um sistema de cadastro, movimentação e controle de documentos e caixas, com muitos termos, listagens e consultas.",
+ "texto_manutencao": "A contagem é de projeto de desenvolvimento e registra o tipo de manutenção de cada função. A medida adotada (PF Local da FS) aplica os deflatores do Roteiro de Métricas do SISP 2.3, previstos no Contrato nº 014/2022/SEPLAG: inclusão a 100%, exclusão a 40% e manutenção cosmética a 0,6 PF por função.",
+ "texto_evolucao": "O crescimento acompanha as entregas sucessivas do projeto, aberto em 08/2023 com 780 PF estimados, até a entrada em produção em 2026. Nos inventários de 2023 a 2025 foi usado o PF IFPUG; em 2026, o PF Local da FS (na baseline v0.8, de 2025, o PF Local da FS era de 1.296,8 PF).",
+ "exemplos_tipos": [
+  "Depósito físico, sala, caixa, demanda de digitalização, empréstimo, transferência, listagem de eliminação",
+  "Órgão, unidade, servidor e município (Thanos); classificação documental",
+  "Cadastrar caixa, capturar arquivos, transferir documentos",
+  "Consultar documentos digitalizados, consultar transferências",
+  "Termos de responsabilidade, etiquetas, listagem de eliminação"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "07/12/2023",
+   "pf": 710.2,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "23/08/2024",
+   "pf": 1082,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 1392,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Baseline v0.8, PF IFPUG; VI 0,25"
+  },
+  {
+   "inventario": 2026,
+   "data": "18/08/2026",
+   "pf": 1565.8,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.14, PF Local da FS (1.603 PF IFPUG); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 1392,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Em desenvolvimento"
+ },
+ "motivo_variacao": "A variação decorre de três fatores: o aumento do tamanho funcional com as entregas até a entrada em produção (de 1.392 PF IFPUG em 2025 para 1.565,8 PF Local da FS em 2026), o novo preço do ponto de função apurado na pesquisa de 2026 e a elevação do Valor Institucional de 0,25 para 0,75, com o sistema em produção e o reconhecimento no XI Congresso Nacional de Arquivologia (Seção 6.1).",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Cadastro de usuários, permissões e autenticação, mantidos no Manopla e no MT Login.",
+  "Integração com o SIGADOC, excluída pelo Documento de Escopo."
+ ],
+ "outros_documentos": [
+  [
+   "Processo SEPLAG-PRO-2023/08459: CI nº 03383/2023/SAP/SEPLAG e Documento de Oficialização da Demanda do Sistema GED",
+   "Sigadoc SEPLAG-PRO-2023/08459 (DOD SEPLAG-DIC-2023/19804-A)",
+   "16/08/2023",
+   "Origem da demanda, objetivos, justificativa, normas e escopo do produto"
+  ],
+  [
+   "Mensagem de recebimento do DOD e designação da equipe do projeto",
+   "E-mail institucional",
+   "17 e 18/08/2023",
+   "Abertura do projeto"
+  ],
+  [
+   "Ordem de Serviço do projeto GED - Gestão Eletrônica de Documentos (Grupos I e II, 100%; 780 PF; R$ 356.460,00), emitida como OS nº 10 e reemitida como OS nº 11",
+   "Sigadoc, documento nº 11048291-6879",
+   "17/08/2023 e 19/10/2023",
+   "Contratação com a fábrica de software; aceite em 20/10/2023"
+  ],
+  [
+   "Documento de Escopo (DES_01) v1.00",
+   "Pasta do projeto",
+   "15/09/2023",
+   "Módulos, integrações, atores e priorização"
+  ],
+  [
+   "Comunicações \"[SIGED] Disponível em Produção\" e \"Disponibilização em Produção - Versão 1.18.0\"",
+   "E-mail institucional",
+   "15/05/2026, 23/10/2026 e 27/10/2026",
+   "Entrada em produção, usuários, perfis e cargas de dados"
+  ],
+  [
+   "Resultado dos trabalhos aprovados para apresentação no XI Congresso Nacional de Arquivologia",
+   "Comissão Organizadora do XI CNA",
+   "29/08/2026",
+   "Trabalho nº 199 sobre o SIGED, Eixo 6 - Gestão de Documentos Arquivísticos"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SIGED em cada inventário"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, o processo SEPLAG-PRO-2023/08459, a Ordem de Serviço e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "ressalvas_extras": [
+  "Das 68 histórias da planilha, 34 não foram localizadas na pasta de documentação disponibilizada: US_28 Menu de Acesso (0,6 PF, fora do total); US_07 Demandar Captura/Digitalização (61 PF); US_08 Conjunto Documental da Demanda (69 PF); US_10 Responsáveis pela Digitalização (72 PF); US_14 Notificar Responsáveis (19 PF); US_11 Capturar Arquivos da Demanda (81,2 PF); US_12 Visualiza Conferir Representante Digital (7 PF); US_13 Etiqueta de Identificação  Conferência (27 PF); US_16 Conferência de Qualidade (22 PF); US_26 Capturar Avulsa (70 PF); US_24 Empréstimo de Documentos (57 PF); US_32 Responsável pela Solicitação (15 PF); US_36 Solicitar Prorrogação do Empréstimo (12 PF); US_38 Devolver Documento Físico (22 PF); US_42 Solicitar Transferência Documental (69 PF); US_43 Adicionar Documentos à Caixa (72 PF); US_44 Gerar Termo de Responsabilidade de Transferência de Documento (6 PF); US_45 Assinar Termo de Responsabilidade de Transferência de Documentos (3 PF); US_47 Analisar Transferência Documental (21 PF); US_48 Visualizar Parecer da Análise Transferência Documental (18 PF); US_50 Gerar Termo de Responsabilidade para Recebimento e Guarda de Documentos Transferidos (7,2 PF); US_51 Imprimir Termo de Responsabilidade para Recebimento e Guarda de Documentos Transferidos (6 PF); US_52 Notificar Responsável pela Transferência Documental (6 PF); US_54 Listagem de Eliminação de Documentos (16 PF); US_56 Assinar Listagem (3 PF); US_57 Imprimir Listagem de Eliminação (6 PF); US_59 Validar Listagem de Eliminação de Documentos (15 PF); US_60 Eliminação de Documentos  Listagem Aprovada (9 PF); US_31 Mapa Topográfico do Deposito Físico (14 PF); US_62 Corrigir Listagem de Eliminação (3 PF); US_64 Validar Listagem - Imprimir (0 PF); US_70 Alterar Prazo de Guarda no Arquivo Intermediário (7 PF); US_71 Etiquetas CELAD - Visualizar Imprimir (7 PF); US_75 Cadastro de Caixas do Depósito Físico (14 PF). Somam 836,4 PF (53,4% do tamanho). Foram mantidas por constarem da linha de base revisada pela equipe do projeto; a documentação correspondente deve ser juntada ao processo do inventário.",
+  "As US_63, US_64 e US_65 não têm funções próprias na planilha: segundo as anotações da contagem, reutilizam o processo das US_56 e US_57, já contadas.",
+  "A função da linha 444 (consulta implícita ao abrir a tela, na US_62) está na planilha sem complexidade calculada e não pontua.",
+  "A função da US_28 (Organizar menu, linha 9, manutenção cosmética de 0,6 PF) está fora da faixa somada pela fórmula do total (Funções!L11:L753) e não integra o tamanho funcional; por isso o módulo de acesso não aparece na composição por módulo.",
+  "A linha de base v0.14 não registra data de revisão (célula R10 da aba Contagem). Adotou-se 18/08/2026, data da mensuração registrada na relação de sistemas para o SIGED."
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "sigla": "SIGED",
+ "medida": "PF Local da FS",
+ "pf": 1565.8,
+ "preco_pf": 1215.09,
+ "vt": 1902587.92,
+ "vi": 0.75,
+ "va": 3329528.86,
+ "funcoes": 351,
+ "por_tipo": {
+  "ALI": [
+   17,
+   149.0
+  ],
+  "AIE": [
+   9,
+   45.0
+  ],
+  "EE": [
+   143,
+   608.4000000000001
+  ],
+  "CE": [
+   170,
+   698.2
+  ],
+  "SE": [
+   12,
+   65.2
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   316,
+   1465.0,
+   1465.0
+  ],
+  "E": [
+   35,
+   138.0,
+   100.80000000000003
+  ]
+ },
+ "por_modulo": {
+  "Cadastros: depósitos, salas, caixas e etiquetas": 385.4,
+  "Demanda de captura e digitalização": 478.2,
+  "Gestão de documentos digitalizados": 41.0,
+  "Empréstimo documental": 221.0,
+  "Transferência documental e recebimento no arquivo": 351.2,
+  "Eliminação documental": 89.0
+ }
+}

@@ -166,3 +166,17 @@ Fluxo e regras que se repetiram:
   sem complexidade; foi usado no SISPAT e no SIGED.
 - **Entrega**: commit só dos arquivos novos do sistema (conferir `git status` e restaurar arquivos de outros sistemas
   regerados em testes).
+
+## Sistemas internos com contagem indicativa (ex.: SICAD, `12. SICAD`, 905 PF, VI 1,00, VA R$ 2.199.312,90)
+
+- Na contagem Indicativa (NESMA) o tamanho está em `'Sumário 1'!G47` (35 PF por ALI e 15 PF por AIE); a aba Funções traz
+  valores IFPUG de complexidade baixa, que não são a medida. Gerador: `laudo_apf_indicativa.py` (medida
+  "Indicativa (NESMA)", `modulo_por_tipo`, `medida_descricao`, `formula_tamanho`, `texto_nivel`).
+- Sem histórias de usuário: `documentos` vazio; fundamentar finalidade, base legal e integrações em normas, orientações
+  técnicas, especificações de integração e no laudo anterior (`outros_documentos`).
+- Demandas sem requisitos (processo sem objeto descrito, despacho de "atendimento" sem conteúdo) não alteram a linha de
+  base; registrar a análise em `ressalvas_extras`. Funcionalidades de login e perfis (Manopla, arquitetura corporativa)
+  ficam fora da fronteira.
+- Sem custo de desenvolvimento registrado: dizer isso no laudo e recomendar à gestão de TI a apuração do custo por produto.
+- Conferir órgão emissor e datas das normas citadas pelo usuário (ex.: a OT 0011/2024 é da CGE; o Decreto nº 1.487 é de
+  21/09/2022) e corrigir textos de planilha herdados de outros sistemas (A22 do SICAD citava o WEBPonto).

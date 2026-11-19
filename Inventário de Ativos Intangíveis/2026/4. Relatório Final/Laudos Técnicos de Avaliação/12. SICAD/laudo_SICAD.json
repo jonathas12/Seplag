@@ -1,0 +1,225 @@
+{
+ "sigla": "SICAD",
+ "nome": "Sistema de Concessão de Adiantamento",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 19 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SICAD_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/12. SICAD/APF-SICAD-v2.1.xlsx",
+ "baseline_nome": "APF-SICAD-v2.1.xlsx",
+ "baseline_versao": "2.1",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47)",
+ "formula_tamanho": "19 ALI x 35 PF + 16 AIE x 15 PF (planilha APF-SICAD-v2.1, aba Sumário 1, célula G47)",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "texto_nivel": "O SICAD foi medido no nível Indicativo (NESMA), que identifica apenas as funções de dados do sistema e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE). As transações (entradas, consultas e saídas) não são identificadas uma a uma; seu peso está embutido nesses valores médios. O nível foi adotado por ausência de documentação funcional do sistema: a medição foi feita por observação do analista de métricas durante a apresentação do sistema pela área de negócio. A planilha registra as funções na aba Funções com os valores IFPUG de complexidade baixa (213 PF), que não são a medida do sistema; o tamanho indicativo está na aba Sumário 1, célula G47.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Equipe interna de desenvolvimento da SEPLAG (SSCPG/SAPGD/SEPLAG), tecnologia Java",
+ "areas_negocio": "Coordenadoria de Serviços da Superintendência de Gestão de Serviços, vinculada à Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), gestora funcional do sistema; órgãos e entidades da Administração Pública Estadual direta, autárquica e fundacional, que concedem e prestam contas de suprimento de fundos",
+ "perfis": "Servidores solicitantes (supridos), chefias, ordenadores de despesa, unidades contábeis e financeiras e equipe de suporte do SICAD; os usuários e perfis de acesso são administrados no sistema Manopla",
+ "base_legal": "Decreto Estadual nº 1.487, de 21/09/2022 (atualizado pelo Decreto nº 1.707/2025): o SICAD é o sistema oficial para a gestão da concessão e prestação de contas do suprimento de fundos (art. 2º), e compete à SEPLAG seu desenvolvimento, gestão e disponibilização a todos os órgãos e entidades (art. 2º, parágrafo único); Lei Estadual nº 11.648/2021; Orientações Técnicas da CGE nº 0011/2024 e nº 2026.02.0106",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SICAD é, por força do Decreto nº 1.487/2022 (art. 2º), o sistema oficial para a gestão da concessão e da prestação de contas do suprimento de fundos (adiantamento) em toda a Administração Pública Estadual direta, autárquica e fundacional. A Orientação Técnica nº 0011/2024 da Controladoria Geral do Estado orienta que a solicitação, a concessão, a aplicação e a prestação de contas sejam executadas obrigatória e exclusivamente por meio do SICAD, e a Orientação Técnica nº 2026.02.0106 (julho de 2026) reafirma o uso obrigatório do sistema em todo o fluxo, a prestação de contas no SICAD em até 30 dias e o bloqueio, no sistema, do servidor com pendências.",
+  "O SICAD envia ao FIPLAN, por webservice REST, o documento de Concessão de Adiantamento (CAD) para inclusão e autorização automática. A inoperância do sistema interromperia a concessão de adiantamentos para despesas de viagens, serviços, obras e compras de pequeno vulto em todos os órgãos, a prestação de contas e os controles exigidos pela CGE, com impacto direto na execução financeira e na prestação de serviços públicos.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice dos inventários de 2024 e 2025."
+ ],
+ "finalidade": [
+  "O Sistema de Concessão de Adiantamento (SICAD) é o sistema oficial para a gestão da concessão e da prestação de contas do suprimento de fundos, também denominado adiantamento, no âmbito da Administração Pública Estadual direta, autárquica e fundacional do Poder Executivo, nos termos do Decreto nº 1.487/2022, proporcionando maior agilidade, transparência, economicidade e segurança da informação. Foi desenvolvido pela equipe interna da SEPLAG, em Java, e está disponível via internet a todos os órgãos e entidades, com base oficial e base de treinamento, manual e vídeos de uso.",
+  "Pelas funções de dados identificadas na contagem, o sistema mantém as solicitações de adiantamento, orçamentos, modalidades de concessão, formas de recebimento, tipos e caráter de despesas, amparo legal, restrições de solicitação e pagamento, projetos/atividades e elementos de despesa, contas bancárias, execução de recursos, prestação de contas e análise contábil, registro de ocorrências e penalidades, gerências e chefias regionais, tipos de arquivo e o histórico da movimentação de cada processo.",
+  "O SICAD lê dados de outros sistemas: exercício, órgão, unidade orçamentária, unidade gestora, fonte de recurso, notas de empenho, ordenador de despesas e unidades contábeis e financeiras (FIPLAN); pessoa, cargo, chefia e férias (SEAP); documentos (Sigadoc); patrimônio mobiliário; e dados de auditoria. Envia ao FIPLAN o documento de Concessão de Adiantamento (CAD) por webservice REST, conforme a especificação de integração da MTI (versão 4, de 30/09/2024).",
+  "A gestão funcional é da Coordenadoria de Serviços da Superintendência de Gestão de Serviços (Secretaria Adjunta de Patrimônio e Serviços), que atende os usuários pelo canal de suporte do SICAD."
+ ],
+ "integracoes": [
+  [
+   "FIPLAN",
+   "Exercício, órgão, unidade orçamentária e gestora, fonte de recurso, notas de empenho, ordenador de despesas e unidades contábeis; inclusão da CAD por webservice REST",
+   "AIE (dados lidos); o envio da CAD é transação, não identificada na contagem indicativa"
+  ],
+  [
+   "SEAP",
+   "Pessoa, cargo, chefia e férias do servidor",
+   "AIE"
+  ],
+  [
+   "Sigadoc",
+   "Documentos do processo",
+   "AIE"
+  ],
+  [
+   "Manopla e login corporativo",
+   "Usuários, perfis de acesso e autenticação",
+   "Fora da fronteira (arquitetura corporativa)"
+  ],
+  [
+   "Patrimônio mobiliário e auditoria",
+   "Dados consultados pelo SICAD",
+   "AIE"
+  ]
+ ],
+ "modulos": {},
+ "modulo_por_tipo": {
+  "ALI": "Dados mantidos pelo SICAD (ALI)",
+  "AIE": "Dados de outros sistemas lidos pelo SICAD (AIE)"
+ },
+ "ordem_modulos": [
+  "Dados mantidos pelo SICAD (ALI)",
+  "Dados de outros sistemas lidos pelo SICAD (AIE)"
+ ],
+ "descricao_modulos": {
+  "Dados mantidos pelo SICAD (ALI)": "Solicitações, orçamentos, modalidades, formas de recebimento, despesas, amparo legal, contas, execução, prestação de contas, análise contábil, ocorrências e penalidades",
+  "Dados de outros sistemas lidos pelo SICAD (AIE)": "Dados do FIPLAN, do SEAP, do Sigadoc, do patrimônio mobiliário e de auditoria"
+ },
+ "propriedade": "Desenvolvido internamente pela SEPLAG, que detém o código-fonte (Decreto nº 1.487/2022, art. 2º, parágrafo único)",
+ "uso": "Em produção, de uso obrigatório por todos os órgãos e entidades do Poder Executivo (Decreto nº 1.487/2022; Orientações Técnicas da CGE nº 0011/2024 e nº 2026.02.0106)",
+ "beneficio": "Gestão obrigatória da concessão e prestação de contas do suprimento de fundos de todo o Poder Executivo, com integração automática ao FIPLAN",
+ "fase_texto": "Sistema em produção, com funcionalidades em uso pelos órgãos e entidades",
+ "custo_incorrido": "O SICAD foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 1.487/2022, das Orientações Técnicas da CGE nº 0011/2024 e nº 2026.02.0106, da especificação de integração FIPLAN - WS REST Incluir CAD, da página institucional do sistema, do Laudo de Pontos de Função de 01/07/2024 (SEPLAG-CAP-2024/25972) e dos processos SEPLAG-PRO-2026/01027 e SEPLAG-PRO-2026/18170",
+ "documentacao_resumo": "Planilha de contagem v2.1, laudo de 2024, normas, Orientações Técnicas da CGE, especificação de integração com o FIPLAN e processos de 2026 (Anexo I). Não há histórias de usuário nem especificação funcional do sistema",
+ "documentacao_fonte": "O SICAD não dispõe de histórias de usuário ou especificação funcional. A medição foi feita por observação do analista de métricas durante a apresentação do sistema pela área de negócio (Coordenadoria de Serviços), e os documentos abaixo fundamentam a finalidade, a base legal, as integrações e a análise das demandas de 2026.",
+ "documentos": [],
+ "ressalva_documentacao": "O SICAD não possui histórias de usuário nem especificação funcional disponibilizada à comissão. A ausência de documentação motivou a contagem indicativa, mantida desde então; a avaliação foi feita com a documentação existente e disponibilizada.",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "texto_evolucao": "Em 2023 a baseline v2.0 registrava 19 ALI e 14 AIE (875 PF); a v2.1, de 01/07/2024, acrescentou dois AIE (905 PF) e fundamentou o Laudo de Pontos de Função de 01/07/2024 (SEPLAG-CAP-2024/25972). Desde então não foram encontrados registros de evoluções do sistema que alterem a linha de base: a v2.1 é a mesma planilha usada nos inventários de 2024 e 2025.",
+ "exemplos_tipos": [
+  "Solicitação de adiantamento, prestação de contas, orçamentos, penalidades",
+  "Órgão, unidade orçamentária, notas de empenho (FIPLAN); pessoa e chefia (SEAP)",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "12/12/2023",
+   "pf": 875,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v2.0; VI 0,75"
+  },
+  {
+   "inventario": 2024,
+   "data": "01/07/2024",
+   "pf": 905,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v2.1; VI 1,00 (laudo SEPLAG-CAP-2024/25972)"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 905,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v2.1; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "01/07/2024",
+   "pf": 905,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v2.1 (sem alteração); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 905,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre apenas do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (905 PF, contagem indicativa) e o Valor Institucional (1,00) permanecem os mesmos de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Cadastro de usuários, perfis de acesso e autenticação, administrados no Manopla e no login corporativo, que fazem parte da arquitetura corporativa compartilhada por todos os sistemas.",
+  "As demandas dos processos SEPLAG-PRO-2026/01027 e SEPLAG-PRO-2026/18170, que não alteram a linha de base (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Laudo de Pontos de Função do SICAD (905 PF, indicativa; VI 1,00; R$ 1.277.136,00)",
+   "Sigadoc SEPLAG-CAP-2024/25972",
+   "01/07/2024",
+   "Medição de referência e avaliação de 2024"
+  ],
+  [
+   "Planilhas de contagem APF-SICAD v2.0 e v2.1 e Análise Indicativa de PF v1.0 e v1.1",
+   "Pasta do sistema",
+   "12/12/2023 e 01/07/2024",
+   "Funções de dados e tamanho indicativo"
+  ],
+  [
+   "Decreto Estadual nº 1.487, de 21/09/2022",
+   "Norma estadual",
+   "21/09/2022",
+   "SICAD como sistema oficial; competência da SEPLAG"
+  ],
+  [
+   "Orientação Técnica nº 0011/2024 - Concessão de Suprimento de Fundos",
+   "CGE-MT, Sigadoc CGE-SCI-2024/01812-A",
+   "07/2024 (assinada em 14/11/2024)",
+   "Uso obrigatório e exclusivo do SICAD"
+  ],
+  [
+   "Orientação Técnica nº 2026.02.0106 - Suprimento de Fundos (Adiantamento)",
+   "CGE-MT, Sigadoc CGE-SCI-2026/00794-A",
+   "07/2026 (assinada em 24/08/2026)",
+   "Uso obrigatório do SICAD em todo o fluxo; Decreto nº 1.707/2025"
+  ],
+  [
+   "Especificação de Integração FIPLAN - WS REST Incluir CAD, versão 4",
+   "MTI/DTIC/UGSOF",
+   "30/09/2024",
+   "Integração do SICAD com o FIPLAN"
+  ],
+  [
+   "Página \"Sistema de Concessão de Adiantamento - SICAD\"",
+   "Portal da SEPLAG",
+   "2026",
+   "Finalidade, bases oficial e de treinamento, manual e suporte"
+  ],
+  [
+   "Processo \"Portal Transparência - SICAD\" (CI nº 00291/2026/SGS/SEPLAG e Despacho nº 15476/2026/CPPTI/SEPLAG)",
+   "Sigadoc SEPLAG-PRO-2026/01027",
+   "20/01/2026 a 16/04/2026",
+   "Demanda sem descrição do objeto (Seção 8)"
+  ],
+  [
+   "DOD - Perfil de acesso temporário para estagiários e residentes técnicos no SICAD",
+   "Sigadoc SEPLAG-PRO-2026/18170 (DOD SEPLAG-FOR-2026/01467)",
+   "07/10/2026",
+   "Demanda analisada como sustentação (Seção 8)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SICAD em cada inventário"
+  ]
+ ],
+ "texto_anexo2": "Relação das 35 funções de dados da aba Funções da planilha APF-SICAD-v2.1.xlsx, com a contribuição de cada uma na contagem indicativa (35 PF por ALI e 15 PF por AIE). A coluna Complex. registra a complexidade usada na aba Funções, que não se aplica à medida indicativa.",
+ "texto_acompanham": "A planilha de contagem, o laudo de 2024, as normas, as Orientações Técnicas da CGE, a especificação de integração e os processos do Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "ressalvas_extras": [
+  "Processo SEPLAG-PRO-2026/01027 (Portal Transparência - SICAD): a CI nº 00291/2026/SGS/SEPLAG, de 20/01/2026, pede informações sobre o estágio da demanda, mas o processo não descreve o objeto nem as características solicitadas; o Despacho nº 15476/2026/CPPTI/SEPLAG, de 15/04/2026, informa o atendimento sem indicar o que foi implementado. Não há, portanto, segurança técnica para identificar e medir eventual alteração do tamanho funcional.",
+  "Processo SEPLAG-PRO-2026/18170 (DOD de 07/10/2026): a criação de perfis de acesso temporários para estagiários e residentes técnicos, com termo de responsabilidade, autorização em duas etapas no primeiro acesso, bloqueio automático e trilha de auditoria, foi analisada pela comissão como sustentação e evolução que, em princípio, não altera a linha de base: perfis e usuários são administrados no Manopla, e o login é compartilhado por todos os sistemas e faz parte da arquitetura corporativa. A mudança de lógica no login e em funções de transação do SICAD não tem, até o momento, requisitos que deem clareza e segurança à medição.",
+  "A contagem é indicativa e foi feita por observação, sem documentação funcional. O valor depende da completude da identificação das funções de dados nessa observação; recomenda-se a elaboração de documentação funcional e a migração para contagem estimativa ou detalhada.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto do SICAD, o que impede a comparação entre custo e valor feita para os sistemas da fábrica de software. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação.",
+  "O campo de documentação da aba Contagem da planilha v2.1 (A22) mencionava o ambiente de homologação do WEBPonto, referência que não pertence ao SICAD; o quadro foi substituído na cópia da planilha que acompanha este laudo."
+ ]
+}

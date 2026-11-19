@@ -1,0 +1,31 @@
+{
+ "sigla": "SICAD",
+ "medida": "Indicativa (NESMA)",
+ "pf": 905.0,
+ "preco_pf": 1215.09,
+ "vt": 1099656.45,
+ "vi": 1.0,
+ "va": 2199312.9,
+ "funcoes": 35,
+ "por_tipo": {
+  "ALI": [
+   19,
+   665.0
+  ],
+  "AIE": [
+   16,
+   240.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   35,
+   213.0,
+   905.0
+  ]
+ },
+ "por_modulo": {
+  "Dados mantidos pelo SICAD (ALI)": 665.0,
+  "Dados de outros sistemas lidos pelo SICAD (AIE)": 240.0
+ }
+}

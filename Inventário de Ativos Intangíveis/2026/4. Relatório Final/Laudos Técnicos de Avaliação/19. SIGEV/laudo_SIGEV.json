@@ -1,0 +1,223 @@
+{
+ "sigla": "SIGEV",
+ "nome": "Sistema de Gestão de Viagens",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 20 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGEV_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/19. SIGEV/Baseline-GV-v1.1.xlsx",
+ "baseline_nome": "Baseline-GV-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "PHP",
+ "vida_util": "Indefinida",
+ "texto_nivel": "O SIGEV foi medido no nível Detalhado (IFPUG), com identificação de cada função de dados e de transação e cálculo da complexidade. Por ausência de requisitos funcionais documentados, a contagem foi feita por navegação no sistema (ambiente de homologação, em 09/06/2022, para a versão 1.0.0, e revisão em 12/12/2023). A planilha também registra, na aba Sumário 1, o total que resultaria da fórmula indicativa aplicada às funções de dados (890 PF); essa medida não foi adotada, por ser menos precisa que a contagem detalhada disponível e por romper a série dos inventários de 2023 a 2025.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Equipe interna de desenvolvimento da SEPLAG (SSCPG/SAPGD/SEPLAG), que o mantém; tecnologia PHP",
+ "areas_negocio": "Secretaria Adjunta de Transporte e Gestão de Frotas (SATGF/SEPLAG), órgão central da gestão dos serviços corporativos de transporte, com a Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), gestoras funcionais; unidades setoriais dos órgãos e entidades do Poder Executivo",
+ "perfis": "Solicitantes (servidores viajantes), chefias imediatas (aprovadores), ordenadores de despesa e administradores setoriais, segundo o manual do sistema disponível em base pública; a planilha registra perfis, papéis e permissões mantidos no próprio sistema",
+ "base_legal": "Decreto Estadual nº 189, de 27/03/2023 (institui o SIGEV como sistema oficial para a concessão e prestação de contas de diárias; nenhuma viagem ou diária pode ser autorizada, concedida ou paga sem registro no SIGEV, art. 2º, § 1º; compete à SEPLAG o desenvolvimento, a gestão e a disponibilização do sistema, art. 2º, § 2º); Decreto nº 2.121, de 14/05/2026 (novos valores de diárias); Instrução de Procedimento nº 001/2026/SATGF/SEPLAG",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SIGEV é, por força do Decreto nº 189/2023, o sistema oficial para a gestão da concessão e da prestação de contas de diárias em toda a Administração Pública direta e indireta do Poder Executivo, e nenhuma viagem ou diária pode ser autorizada, concedida ou paga, ainda que por indenização, sem a solicitação e o registro no SIGEV (art. 2º, § 1º). A solicitação, a autorização pelo ordenador de despesas e a prestação de contas, no prazo de 10 dias úteis após a viagem, são feitas exclusivamente no sistema (arts. 10, 11 e 13), que também envia as ordens de serviço e os relatórios de viagem ao FIPLAN.",
+  "A inoperância do SIGEV impediria a concessão e o pagamento de diárias a todos os servidores do Poder Executivo, interrompendo viagens a serviço em todas as áreas, inclusive as de segurança pública, e a prestação de contas exigida pelo decreto.",
+  "Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice dos inventários de 2023 a 2025."
+ ],
+ "finalidade": [
+  "O Sistema de Gestão de Viagens (SIGEV) é o sistema oficial para a gestão da concessão e da prestação de contas de diárias no âmbito da Administração Pública direta e indireta do Poder Executivo Estadual, instituído pelo Decreto nº 189, de 27/03/2023, proporcionando maior agilidade, transparência, economicidade, sustentabilidade ambiental, segurança, integridade e acesso à informação. Foi desenvolvido e é mantido pela equipe interna da SEPLAG, em PHP, e a gestão funcional é da Secretaria Adjunta de Transporte e Gestão de Frotas (SATGF/SEPLAG), com a SEAPS/SEPLAG.",
+  "Pelo decreto e pelas funções identificadas na contagem, o fluxo do sistema é: o servidor solicita as diárias com antecedência mínima de quatro dias úteis, com a ordem de serviço eletrônica; a chefia imediata aprova; o ordenador de despesas autoriza, com a dotação orçamentária; a ordem de serviço é enviada ao FIPLAN; após a viagem, o servidor assina o termo de responsabilidade e registra o relatório de viagem e os comprovantes, aprovados pela chefia e enviados ao FIPLAN; e, quando cabível, é registrada a devolução de diárias. O sistema mantém ainda cadastros orçamentários, de veículos, de localidades, de cargos e setores, a parametrização dos valores e tipos de diária, bloqueios de viajantes e de órgãos, perfis e permissões, painel gerencial, ranking de órgãos e relatórios.",
+  "O Decreto nº 2.121, de 14/05/2026 (publicado em 15/05/2026), alterou o Anexo Único do Decreto nº 189/2023, com novos valores de diárias conforme o destino da viagem, e a Instrução de Procedimento nº 001/2026/SATGF/SEPLAG, de 13/11/2026, orientou o registro de viagens com múltiplos destinos, com o cálculo proporcional das diárias de cada trecho pelo SIGEV."
+ ],
+ "integracoes": [
+  [
+   "FIPLAN",
+   "Consulta de dados orçamentários e financeiros; envio das ordens de serviço e dos relatórios de viagem",
+   "AIE Consulta FIPLAN; transações de envio contadas como EE"
+  ],
+  [
+   "Dados de banco do viajante",
+   "Lista de bancos",
+   "Dado de código (DC), sem pontuação"
+  ]
+ ],
+ "modulos": {
+  "Acesso, perfis e segurança": [],
+  "Cadastros e parametrização": [],
+  "Bloqueios": [],
+  "Diárias: solicitação, aprovação, prestação de contas e devolução": [],
+  "Painel, consultas e relatórios": []
+ },
+ "grupos_sem_historia": {
+  "Login": "Acesso, perfis e segurança",
+  "Usuário Perfil": "Acesso, perfis e segurança",
+  "Segurança": "Acesso, perfis e segurança",
+  "Cadastros": "Cadastros e parametrização",
+  "Dados Orçamentários": "Cadastros e parametrização",
+  "Veículo/Frota": "Cadastros e parametrização",
+  "Por Órgão": "Cadastros e parametrização",
+  "Parametrização de Diárias": "Cadastros e parametrização",
+  "Localidade": "Cadastros e parametrização",
+  "Viajante": "Cadastros e parametrização",
+  "Parâmetro": "Cadastros e parametrização",
+  "Parametrização Categoria": "Cadastros e parametrização",
+  "Bloqueio": "Bloqueios",
+  "Diárias": "Diárias: solicitação, aprovação, prestação de contas e devolução",
+  "Consulta FIPLAN": "Diárias: solicitação, aprovação, prestação de contas e devolução",
+  "Solicitações em Lote": "Diárias: solicitação, aprovação, prestação de contas e devolução",
+  "Home - Dashbord": "Painel, consultas e relatórios",
+  "Relatórios": "Painel, consultas e relatórios",
+  "Calendário": "Painel, consultas e relatórios",
+  "Órgãos": "Painel, consultas e relatórios",
+  "Unidades": "Painel, consultas e relatórios",
+  "Setores": "Painel, consultas e relatórios",
+  "Órgãos Ranking": "Painel, consultas e relatórios",
+  "Órgãos Ranking - Consumida": "Painel, consultas e relatórios"
+ },
+ "modulos_tabela": [
+  [
+   "Acesso, perfis e segurança",
+   "Login e recuperação de senha, perfis de usuário, papéis, permissões e auditoria (25 funções, 120 PF)"
+  ],
+  [
+   "Cadastros e parametrização",
+   "Dados orçamentários (unidade orçamentária e gestora, programa, projeto/atividade, elemento de despesa), veículos e marcas, parametrização de diárias (categoria, motivo, tipo de diária, de documento e de transporte, valor), municípios e países, cargos e setores do viajante e parâmetros (84 funções, 349 PF)"
+  ],
+  [
+   "Bloqueios",
+   "Bloqueio e desbloqueio de viajantes e de órgãos, com justificativa (10 funções, 43 PF)"
+  ],
+  [
+   "Diárias: solicitação, aprovação, prestação de contas e devolução",
+   "Solicitação e cancelamento de diárias, aprovação e recusa pela chefia e pelo ordenador, dotação orçamentária, envio ao FIPLAN, termo de responsabilidade, relatório de viagem e prestação de contas, devolução de diárias e consulta ao FIPLAN (21 funções, 113 PF)"
+  ],
+  [
+   "Painel, consultas e relatórios",
+   "Painel de ordens de serviço e diárias, calendário, consulta global, consultas por órgão, unidade e setor, ranking de órgãos e relatórios de diárias, transporte, prestação de contas, ordens de serviço e solicitações intempestivas (28 funções, 124 PF)"
+  ]
+ ],
+ "propriedade": "Desenvolvido e mantido pela equipe interna da SEPLAG, que detém o código-fonte (Decreto nº 189/2023, art. 2º, § 2º)",
+ "uso": "Em produção, de uso obrigatório para toda concessão de diárias do Poder Executivo (Decreto nº 189/2023, art. 2º, § 1º)",
+ "beneficio": "Gestão obrigatória da concessão, do pagamento e da prestação de contas de diárias de todo o Poder Executivo, com integração ao FIPLAN",
+ "fase_texto": "Sistema em produção, com funcionalidades em uso por todos os órgãos e entidades",
+ "custo_incorrido": "O SIGEV foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 189/2023, do Decreto nº 2.121/2026, da Instrução de Procedimento nº 001/2026/SATGF/SEPLAG, de informações públicas sobre o sistema e das planilhas de contagem v1.0 e v1.1",
+ "documentacao_resumo": "Planilhas de contagem v1.0 e v1.1, decretos, instrução de procedimento e informações públicas (Anexo I). Não há histórias de usuário nem requisitos funcionais documentados",
+ "documentacao_fonte": "Não foram disponibilizadas à comissão informações sobre os requisitos funcionais nem outra documentação do sistema. A comissão dispôs das planilhas de contagem, feitas por navegação no sistema, e de consultas a bases públicas, relacionadas abaixo.",
+ "documentos": [],
+ "ressalva_documentacao": "Não foram disponibilizados requisitos funcionais nem outra documentação do SIGEV. A contagem foi feita por navegação no sistema e a avaliação, com a documentação existente e disponibilizada.",
+ "texto_tipos": "A predominância das transações reflete um sistema de fluxo de solicitação, aprovação e prestação de contas, com muitos cadastros de parametrização e relatórios gerenciais.",
+ "texto_evolucao": "A contagem da versão 1.0.0, de 09/06/2022, somava 595 PF; a revisão de 12/12/2023 (v1.1) chegou a 749 PF, valor mantido nos inventários de 2023 a 2025. A planilha não foi revisada desde então.",
+ "exemplos_tipos": [
+  "Diárias, parametrização de diárias, veículos, dados orçamentários, bloqueios",
+  "Consulta ao FIPLAN",
+  "Solicitar diárias, aprovar, enviar ao FIPLAN, registrar prestação de contas",
+  "Acompanhar diárias, consultar devoluções, filtros",
+  "Painel de ordens de serviço, ranking de órgãos, relatório de diárias"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "12/12/2023",
+   "pf": 749,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2024,
+   "data": "12/12/2023",
+   "pf": 749,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 749,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "12/12/2023",
+   "pf": 749,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1 (sem alteração); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 749,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre apenas do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (749 PF) e o Valor Institucional (1,00) permanecem os mesmos de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "As alterações decorrentes do Decreto nº 2.121/2026, tratadas como sustentação sem alteração da linha de base (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 189, de 27/03/2023",
+   "Diário Oficial nº 28.466, de 28/03/2023",
+   "27/03/2023",
+   "Institui o SIGEV; obrigatoriedade; competência da SEPLAG; fluxo de solicitação, autorização e prestação de contas"
+  ],
+  [
+   "Decreto Estadual nº 2.121, de 14/05/2026",
+   "Publicado em 15/05/2026 (Legislação SEFAZ-MT)",
+   "14/05/2026",
+   "Novos valores de diárias conforme o destino"
+  ],
+  [
+   "Instrução de Procedimento nº 001/2026/SATGF/SEPLAG",
+   "Sigadoc SEPLAG-DIC-2026/59227",
+   "13/11/2026",
+   "Registro e cálculo de diárias com múltiplos destinos no SIGEV"
+  ],
+  [
+   "Manual do SIGEV 1.0 e página \"Gestão de Viagens\" da SESP",
+   "Bases públicas (pt.scribd.com/document/859690330/MANUAL-SIGEV-1-0; www.sesp.mt.gov.br/gestao-de-viagens)",
+   "consulta em 11/2026",
+   "Perfis de usuário e prestação de contas"
+  ],
+  [
+   "Planilhas de contagem Baseline-GV v1.0 e v1.1",
+   "Pasta do sistema",
+   "09/06/2022 e 12/12/2023",
+   "Funções de dados e de transação"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional e valor do SIGEV em cada inventário"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, os decretos, a instrução de procedimento e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "ressalvas_extras": [
+  "Ausência de documentação funcional: não há requisitos funcionais, histórias de usuário ou lista de requisitos do SIGEV, e a contagem foi feita por navegação no sistema. Recomenda-se fortemente à unidade setorial de TI e à área de negócio gestora (SATGF/SEPLAG) elaborar e manter essa documentação, porque: (i) ela é a base para conferir o tamanho funcional e dar confiabilidade à mensuração do ativo (IN, art. 6º, parágrafo único); (ii) sem ela não é possível distinguir com segurança sustentação de evolução nem medir as evoluções do sistema, como no caso das alterações decorrentes do Decreto nº 2.121/2026; (iii) ela preserva o conhecimento das regras de negócio de um sistema obrigatório para todo o Poder Executivo, reduzindo a dependência das pessoas que o desenvolveram; e (iv) ela é necessária para a manutenção, os testes, a auditoria e o atendimento aos órgãos de controle.",
+  "Alterações posteriores à última revisão da planilha (12/12/2023): o Decreto nº 2.121/2026 estabeleceu valores de diárias conforme o destino, e a Instrução de Procedimento nº 001/2026/SATGF/SEPLAG indica que o SIGEV calcula proporcionalmente as diárias de cada trecho em viagens com múltiplos destinos. Não há detalhes sobre a implementação; pelas informações disponíveis, trata-se provavelmente de sustentação (atualização de tabela de valores e de regra de cálculo em funções existentes), que não altera a linha de base. Recomenda-se à TI confirmar essa avaliação ao documentar o sistema.",
+  "A célula Sumário 1!G47 da planilha registra 890 PF pela fórmula indicativa aplicada às funções de dados; o laudo adota a contagem detalhada (749 PF), registrada na mesma planilha e usada nos inventários anteriores.",
+  "A função \"Viajante - Banco\" está registrada como dado de código (DC) e não pontua, conforme o manual de práticas de contagem.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação."
+ ]
+}

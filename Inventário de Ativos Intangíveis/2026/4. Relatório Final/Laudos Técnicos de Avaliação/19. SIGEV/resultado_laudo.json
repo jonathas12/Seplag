@@ -1,0 +1,46 @@
+{
+ "sigla": "SIGEV",
+ "medida": "PF IFPUG",
+ "pf": 749.0,
+ "preco_pf": 1215.09,
+ "vt": 910102.41,
+ "vi": 1.0,
+ "va": 1820204.82,
+ "funcoes": 168,
+ "por_tipo": {
+  "ALI": [
+   25,
+   181.0
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   82,
+   321.0
+  ],
+  "CE": [
+   39,
+   147.0
+  ],
+  "SE": [
+   21,
+   95.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   168,
+   749.0,
+   749.0
+  ]
+ },
+ "por_modulo": {
+  "Acesso, perfis e segurança": 120.0,
+  "Cadastros e parametrização": 349.0,
+  "Bloqueios": 43.0,
+  "Diárias: solicitação, aprovação, prestação de contas e devolução": 113.0,
+  "Painel, consultas e relatórios": 124.0
+ }
+}

@@ -186,3 +186,11 @@ Fluxo e regras que se repetiram:
   comissão (Portaria nº 124/2026/SEPLAG, art. 3º: solicita, consolida, faz diligências) apenas recomenda.
 - Titularidade em sistemas feitos pela SEPLAG para outra entidade (ex.: MTPrev): registrar o entendimento da comissão e
   recomendar termo de cessão e diligências das unidades de contabilidade e patrimônio para evitar duplo registro.
+- **Entrega no Drive (padrão a partir do SIGEV)**: ao final, enviar o laudo (PDF e Word) e a planilha com a aba Contagem
+  preenchida para a mesma pasta do Google Drive em que o usuário deixou a documentação do sistema (`create_file` com
+  `parentId` da pasta, `disableConversionToGoogleType: true` e referência `sha256:<hash>:<caminho>`); a planilha vai com
+  título distinto do original, por exemplo "Baseline-GV-v1.1 (Contagem preenchida - laudo 2026).xlsx".
+- Quando a planilha traz contagem detalhada e o usuário indica a célula da indicativa (G47), apresentar os dois números e
+  perguntar (no SIGEV ficou a detalhada, 749 PF, série de 2023 a 2025).
+- Alterações por norma sem detalhes de implementação (ex.: Decreto nº 2.121/2026 no SIGEV) são tratadas como sustentação
+  provável, sem alterar a linha de base, com recomendação à TI.

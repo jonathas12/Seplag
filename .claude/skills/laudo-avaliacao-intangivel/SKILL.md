@@ -180,3 +180,9 @@ Fluxo e regras que se repetiram:
 - Sem custo de desenvolvimento registrado: dizer isso no laudo e recomendar à gestão de TI a apuração do custo por produto.
 - Conferir órgão emissor e datas das normas citadas pelo usuário (ex.: a OT 0011/2024 é da CGE; o Decreto nº 1.487 é de
   21/09/2022) e corrigir textos de planilha herdados de outros sistemas (A22 do SICAD citava o WEBPonto).
+- Aplicações derivadas (ex.: Censo, adaptado do Recadastramento): são aplicações distintas quando têm bases de dados,
+  usuários e objetivos de negócio próprios; cada uma tem fronteira própria na APF e as funções de mesma natureza contam
+  nas duas, sem dupla contagem. O laudo deve afirmar isso; a definição dos produtos cabe à TI e ao demandante, e a
+  comissão (Portaria nº 124/2026/SEPLAG, art. 3º: solicita, consolida, faz diligências) apenas recomenda.
+- Titularidade em sistemas feitos pela SEPLAG para outra entidade (ex.: MTPrev): registrar o entendimento da comissão e
+  recomendar termo de cessão e diligências das unidades de contabilidade e patrimônio para evitar duplo registro.

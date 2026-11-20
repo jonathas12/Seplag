@@ -117,6 +117,8 @@ def ler_baseline(caminho, medida='PF IFPUG', secoes=()):
             continue
         if tipo not in TIPOS or not (ini <= r <= fim):
             continue
+        if indicativa and tipo not in ('ALI', 'AIE'):  # a contagem indicativa só identifica funções de dados
+            continue
         complexidade = f.cell(r, 6).value
         pf_ifpug = f.cell(r, 8).value
         if pf_ifpug in (None, ''):  # sem valor calculado: usa a tabela IFPUG; sem complexidade, a função não pontua

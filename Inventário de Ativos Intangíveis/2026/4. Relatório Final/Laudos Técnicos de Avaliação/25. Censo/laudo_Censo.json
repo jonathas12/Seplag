@@ -1,0 +1,204 @@
+{
+ "sigla": "Censo",
+ "nome": "Sistema do Censo Previdenciário",
+ "exercicio": 2026,
+ "cidade_data": "Cuiabá/MT, 20 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_CENSO_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/25. Censo/APF-Censo-v1.1.xlsx",
+ "baseline_nome": "APF-Censo-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47)",
+ "formula_tamanho": "18 ALI x 35 PF + 10 AIE x 15 PF (planilha APF-Censo-v1.1, aba Sumário 1, célula G47)",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "texto_nivel": "O Censo foi medido no nível Indicativo (NESMA), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE); o peso das transações está embutido nesses valores. Não foram disponibilizadas histórias de usuário nem outra documentação funcional: a medição foi feita por navegação e análise do sistema de Recadastramento, do qual o Censo deriva, com acréscimos e ajustes pontuais para o Censo. A aba Funções da planilha registra também 15 transações (EE e CE) observadas na navegação e os valores IFPUG de complexidade baixa (236 PF), que não compõem a medida; o tamanho indicativo está na aba Sumário 1, célula G47.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG para uso do Mato Grosso Previdência (MTPrev), derivado do sistema de Recadastramento; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG): análise de requisitos, arquitetura, banco de dados, DevOps e testes; o MTPrev atuou como gestor do produto (requisitos funcionais, regras de negócio, parâmetros, planejamento da implantação e normas)",
+ "areas_negocio": "Mato Grosso Previdência (MTPrev), gestor do RPPS/MT e do SPSM/MT e responsável pela organização e execução do Censo (Decreto nº 468/2023, art. 5º); unidades de gestão de pessoas dos Poderes e Órgãos Autônomos",
+ "perfis": "Segurados ativos, aposentados e pensionistas do RPPS/MT e militares ativos, da reserva, reformados e pensionistas do SPSM/MT (autocadastramento on-line); equipes do MTPrev e das unidades de gestão de pessoas, que validam os dados, monitoram a prova de vida e atendem as solicitações; o acesso exige cadastro no MT Login",
+ "base_legal": "Decreto Estadual nº 468, de 27/09/2023 (Censo Previdenciário, atualização permanente e obrigatória da base cadastral do MTPrev, na forma de autocadastramento on-line); Instrução Normativa nº 04/2023/MTPREV (Censo 2023/2024); Lei Federal nº 10.887/2004, art. 9º, II (recenseamento previdenciário com periodicidade mínima de cinco anos); Decretos Estaduais nº 556/2020 e nº 692/2020 (atualização cadastral obrigatória); Resolução nº 45/2023 do Conselho de Previdência do RPPS-MT",
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O Censo Previdenciário é a atualização permanente da base de dados cadastral, previdenciária, funcional e financeira do MTPrev, de caráter obrigatório e pessoal para todos os segurados do RPPS/MT e do SPSM/MT, de todos os Poderes e Órgãos Autônomos, realizada na forma de autocadastramento on-line (Decreto nº 468/2023, arts. 2º e 7º). O segurado que não o realiza no prazo tem suspenso o pagamento da remuneração, dos proventos ou da pensão até a regularização (art. 12), e o recenseamento é exigido pela Lei Federal nº 10.887/2004 e pelo Programa de Certificação Institucional Pró-Gestão RPPS (a cada dois anos para aposentados e pensionistas e a cada cinco anos para ativos, conforme os considerandos do decreto).",
+  "O uso do sistema foi, até aqui, concentrado nos períodos do Censo: o Censo de 2020/2021 foi presencial, com agendamento (Portaria nº 140/2020/MTPREV), e o de 2023/2024, realizado de 11/12/2023 a 29/02/2024, foi o primeiro com o sistema (Instrução Normativa nº 04/2023/MTPREV), alcançando cerca de 46 mil aposentados e pensionistas. Para 2027, o MTPrev anuncia o Censo no mês de aniversário do titular do benefício (página \"Censo Previdenciário 2027\", atualizada em 28/10/2026), o que distribui a utilização ao longo de todo o ano e afasta o caráter sazonal.",
+  "A inoperância do sistema impediria o autocadastramento obrigatório, com risco de suspensão de pagamentos de servidores, aposentados e pensionistas, comprometeria a avaliação atuarial, a compensação previdenciária e a certificação do RPPS, e obrigaria o MTPrev a contratar empresa para o recenseamento, despesa que a SEPLAG estimou em R$ 6 milhões por ciclo. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice do inventário de 2025."
+ ],
+ "finalidade": [
+  "O Sistema do Censo Previdenciário (Censo) é a ferramenta de autocadastramento on-line do Censo Previdenciário dos segurados ativos, aposentados e pensionistas do Regime Próprio de Previdência Social do Estado (RPPS/MT) e dos militares estaduais ativos, da reserva remunerada, reformados e pensionistas do Sistema de Proteção Social dos Militares (SPSM/MT), realizado pelo Mato Grosso Previdência (MTPrev). O Decreto nº 468/2023 define o Censo como a atualização permanente da base de dados cadastral, previdenciária, funcional e financeira do MTPrev, obrigatória para os segurados de todos os Poderes e Órgãos Autônomos, com integração de sistemas e bases de dados, validação dos dados e melhoria da qualidade cadastral para a avaliação atuarial e a compensação previdenciária.",
+  "O sistema foi desenvolvido pela equipe técnica da SEPLAG a partir do sistema de Recadastramento anual dos servidores ativos: segundo a notícia \"Seplag desenvolve sistema para o Censo Previdenciário e gera economia de R$ 6 milhões\" (Portal da SEPLAG, 18/12/2023), a SEPLAG adaptou o sistema do recadastramento para o Censo realizado pelo MTPrev a cada dois anos, o que evitou a contratação de empresa e gerou economia estimada de R$ 6 milhões por ciclo. O próprio Decreto nº 468/2023 (art. 17) considerou o recadastramento dos servidores ativos do Poder Executivo de 01/05/2023 a 30/06/2023 (Instrução Normativa nº 006/2023/SEPLAG) como a primeira fase do Censo 2023.",
+  "O acesso é feito pelo site do MTPrev, pelo Portal de Serviços de MT (Portal do Governo) ou pelo aplicativo MT Cidadão, na opção \"Censo Previdenciário\", com cadastro no MT Login (Instrução Normativa nº 04/2023/MTPREV e notícia de 18/12/2023). Pelas funções de dados identificadas na contagem, o sistema mantém ciclos e etapas do Censo, público-alvo, usuários e perfis, validação de documentos e de vínculos, regularização de servidores, cadastros de chefia e de unidades, órgãos vinculados, importação de bases externas, dados da Prefeitura de Cuiabá, monitoramento da prova de vida e solicitações de atendimento, e lê dados de servidores, órgãos, unidades, endereços, exercício e auditoria, a prova de vida do aplicativo GOV.BR e dados do MT Cidadão e do Portal do Servidor/Governo.",
+  "Quanto à temporalidade: o Censo de 2020/2021 foi presencial (Portaria nº 140/2020/MTPREV, de 01/12/2020 a 16/04/2021); o Censo 2023/2024, o primeiro com o sistema, ocorreu de 11/12/2023 a 29/02/2024 (Instrução Normativa nº 04/2023/MTPREV); e o Censo de 2027 será feito no mês de aniversário do titular do benefício, segundo o MTPrev, com dados do SEAP e dos sistemas de folha dos Poderes e Órgãos Autônomos."
+ ],
+ "integracoes": [
+  [
+   "SEAP e sistemas de gestão de pessoas dos Poderes e Órgãos Autônomos",
+   "Servidor, órgão, unidade, endereço e bases cadastrais enviadas pelos Poderes",
+   "AIE (Servidor, Órgãos, Unidade, Endereço) e ALI Importação - Bases Externas"
+  ],
+  [
+   "Prova de Vida GOV.BR (aplicativo do Governo Federal)",
+   "Resultado da prova de vida dos beneficiários",
+   "AIE"
+  ],
+  [
+   "MT Cidadão (aplicativo)",
+   "Canal de acesso ao Censo e dados compartilhados",
+   "AIE (acrescentado na v1.1)"
+  ],
+  [
+   "Portal do Servidor/Portal do Governo (Portal de Serviços de MT)",
+   "Canal de acesso ao Censo e dados compartilhados",
+   "AIE (acrescentado na v1.1)"
+  ],
+  [
+   "MT Login",
+   "Autenticação dos usuários",
+   "Fora da fronteira (arquitetura corporativa)"
+  ],
+  [
+   "Sistema de Recadastramento (SEPLAG)",
+   "Sistema de origem do Censo; compartilha as funções de dados identificadas na contagem",
+   "Ver Seção 8 (sobreposição com o Recadastramento)"
+  ]
+ ],
+ "modulos": {},
+ "modulo_por_tipo": {
+  "ALI": "Dados mantidos pelo sistema (ALI)",
+  "AIE": "Dados de outros sistemas lidos pelo sistema (AIE)"
+ },
+ "ordem_modulos": [
+  "Dados mantidos pelo sistema (ALI)",
+  "Dados de outros sistemas lidos pelo sistema (AIE)"
+ ],
+ "descricao_modulos": {
+  "Dados mantidos pelo sistema (ALI)": "Ciclos, etapas, usuários e perfis, validação de documentos e vínculos, regularização, chefias, unidades, órgãos vinculados, importação de bases externas, Prefeitura de Cuiabá, prova de vida e solicitações de atendimento",
+  "Dados de outros sistemas lidos pelo sistema (AIE)": "Exercício, público-alvo, órgãos, servidor, endereço, unidade, auditoria, prova de vida GOV.BR, MT Cidadão e Portal do Servidor/Governo"
+ },
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido, hospedado e evoluído pela SEPLAG; o MTPrev é o demandante e gestor do negócio (ver Seção 8 sobre a titularidade patrimonial)",
+ "uso": "Em produção; utilizado no Censo 2023/2024 e previsto para o Censo de 2027, realizado no mês de aniversário do titular",
+ "beneficio": "Potencial de serviço para o Estado: atualização obrigatória da base cadastral do RPPS/MT e do SPSM/MT sem contratação de empresa (economia estimada de R$ 6 milhões por ciclo); o benefício operacional é obtido pelo MTPrev",
+ "fase_texto": "Sistema em produção, utilizado no Censo 2023/2024",
+ "custo_incorrido": "O Censo foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 468/2023, da Instrução Normativa nº 04/2023/MTPREV, da Portaria nº 140/2020/MTPREV, da notícia oficial de 18/12/2023, da página \"Censo Previdenciário 2027\" do MTPrev e das planilhas de contagem do Censo (v1.0 e v1.1) e do Recadastramento (v1.0)",
+ "documentacao_resumo": "Planilhas de contagem v1.0 e v1.1, normas do Censo, notícia oficial e página do MTPrev (Anexo I). Não há histórias de usuário nem especificação funcional",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário, especificação funcional nem documentos sobre a responsabilidade patrimonial do sistema até a data de fechamento deste laudo. A medição foi feita por navegação e análise do sistema de Recadastramento, com ajustes para o Censo, e os documentos abaixo fundamentam a finalidade, a base legal, a temporalidade e as integrações.",
+ "documentos": [],
+ "ressalva_documentacao": "Não foram disponibilizadas histórias de usuário nem especificação funcional do Censo. A ausência de documentação motivou a contagem indicativa; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "texto_evolucao": "A baseline v1.0, de 09/12/2025, registrava 18 ALI e 8 AIE (750 PF). A v1.1 acrescentou dois AIE, MT Cidadão e Portal do Servidor/Governo (780 PF), com base na notícia oficial de 18/12/2023 e na Instrução Normativa nº 04/2023/MTPREV, que indicam esses canais de acesso ao sistema.",
+ "exemplos_tipos": [
+  "Ciclo, etapas, validação de vínculo, prova de vida, solicitação de atendimento",
+  "Servidor, órgão, unidade (SEAP); prova de vida GOV.BR; MT Cidadão",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "09/12/2025",
+   "pf": 750,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 1,00; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "20/11/2026",
+   "pf": 780,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1 (+2 AIE); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 750,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e do acréscimo de dois Arquivos de Interface Externa (MT Cidadão e Portal do Servidor/Governo), que elevou o tamanho de 750 para 780 PF. O Valor Institucional permanece 1,00.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Autenticação (MT Login) e os sistemas de origem dos dados lidos (SEAP, aplicativos e portais).",
+  "As 15 transações (EE e CE) registradas na aba Funções, cujo peso está embutido na contagem indicativa."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 468, de 27/09/2023 (Censo Previdenciário)",
+   "Diário Oficial nº 28.593, de 28/09/2023, p. 15-18",
+   "27/09/2023",
+   "Finalidade, obrigatoriedade, autocadastramento on-line, suspensão de pagamento, primeira fase pelo recadastramento"
+  ],
+  [
+   "Instrução Normativa nº 04/2023/MTPREV",
+   "Diário Oficial nº 28.637, p. 141-142",
+   "publicada em 07/12/2023",
+   "Censo 2023/2024 (11/12/2023 a 29/02/2024); canais de acesso (site do MTPrev, Portal de Serviços, MT Cidadão)"
+  ],
+  [
+   "Portaria nº 140/2020/MTPREV",
+   "Diário Oficial nº 27.868, p. 56",
+   "publicada em 29/10/2020",
+   "Censo 2020/2021 presencial, com agendamento"
+  ],
+  [
+   "Notícia \"Seplag desenvolve sistema para o Censo Previdenciário e gera economia de R$ 6 milhões\"",
+   "Portal da SEPLAG (Inácio de Paula)",
+   "18/12/2023",
+   "Origem no Recadastramento, economia por ciclo, canais de acesso e MT Login"
+  ],
+  [
+   "Página \"Censo Previdenciário 2027\"",
+   "Portal do MTPrev",
+   "atualizada em 28/10/2026",
+   "Censo de 2027 no mês de aniversário do titular; obrigatoriedade; fontes de dados"
+  ],
+  [
+   "Planilhas de contagem APF-Censo v1.0 e v1.1",
+   "Pasta do sistema",
+   "09/12/2025 e 20/11/2026",
+   "Funções de dados e tamanho indicativo"
+  ],
+  [
+   "Planilha de contagem APF-Recadastramento v1.0",
+   "Inventário de 2025 (11. Recadastramento)",
+   "11/12/2023",
+   "Comparação das funções de dados com o Censo (Seção 8)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho funcional e valor do Censo e do Recadastramento"
+  ]
+ ],
+ "texto_anexo2": "Relação das 28 funções de dados da aba Funções da planilha APF-Censo-v1.1.xlsx, com a contribuição de cada uma na contagem indicativa (35 PF por ALI e 15 PF por AIE). As 15 transações registradas na planilha não compõem a medida. A coluna Complex. registra a complexidade usada na aba Funções, que não se aplica à medida indicativa.",
+ "texto_acompanham": "As planilhas de contagem, as normas e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "ressalvas_extras": [
+  "Titularidade patrimonial: a SEPLAG executou a engenharia de software (requisitos, arquitetura, banco de dados, DevOps e testes) e mantém, hospeda e evolui o sistema; o MTPrev, autarquia com autonomia administrativa, financeira e patrimonial (Lei Complementar nº 560/2014), é o demandante, o gestor do produto (requisitos, regras de negócio, parâmetros e implantação) e quem obtém o benefício operacional do Censo. A comissão entende que o código-fonte pertence ao Estado de Mato Grosso, sob a titularidade e a gestão técnica da SEPLAG, e que o MTPrev atua como usuário e gestor do negócio. Não foi localizado termo de cessão de uso, de tecnologia ou de propriedade intelectual entre a SEPLAG e o MTPrev. Recomenda-se que os entes formalizem esse termo e que as unidades centrais de contabilidade e de patrimônio da SEPLAG façam análises e diligências junto ao MTPrev para evitar o duplo registro patrimonial e contábil do mesmo ativo.",
+  "Sobreposição com o sistema de Recadastramento: as 23 funções de dados da baseline do Recadastramento (APF-Recadastramento-v1.0, 665 PF, inventariado separadamente) também constam da baseline do Censo; são exclusivas do Censo apenas 2 ALI (Monitoramento da Prova de Vida e Solicitação de Atendimento) e 3 AIE (Prova de Vida GOV.BR, MT Cidadão e Portal do Servidor/Governo), que somam 115 PF. Os dois sistemas compartilham, portanto, 665 PF de funções de dados nos inventários da SEPLAG. Recomenda-se que a comissão e a área de TI avaliem se o Censo e o Recadastramento são produtos distintos ou o mesmo código-fonte com configurações diferentes, para evitar a contagem em duplicidade do mesmo ativo.",
+  "Entre as funções compartilhadas há cinco ALI referentes à Prefeitura de Cuiabá (175 PF), herdadas do Recadastramento; sua pertinência ao Censo Previdenciário deve ser confirmada com a documentação funcional.",
+  "Os dois AIE acrescentados na v1.1 (MT Cidadão e Portal do Servidor/Governo) foram incluídos com base em fontes oficiais que indicam esses canais de acesso ao sistema (notícia de 18/12/2023 e Instrução Normativa nº 04/2023/MTPREV); a natureza da leitura ou do compartilhamento de dados com esses sistemas deve ser confirmada com a documentação técnica.",
+  "A contagem é indicativa e foi feita por navegação no sistema de Recadastramento, sem documentação funcional do Censo. Recomenda-se a elaboração de documentação funcional e a migração para contagem estimativa ou detalhada.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação.",
+  "A aba Contagem da planilha registrava nível \"Detalhada (IFPUG)\" e, no quadro de documentação (A22), o ambiente de homologação do WEBPonto, referências que não correspondem à medição indicativa do Censo; os campos foram ajustados na cópia da planilha que acompanha este laudo, com data de revisão 20/11/2026 (inclusão dos dois AIE)."
+ ]
+}

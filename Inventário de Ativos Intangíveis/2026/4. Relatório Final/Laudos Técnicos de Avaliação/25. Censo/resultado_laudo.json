@@ -1,0 +1,31 @@
+{
+ "sigla": "Censo",
+ "medida": "Indicativa (NESMA)",
+ "pf": 780.0,
+ "preco_pf": 1215.09,
+ "vt": 947770.2,
+ "vi": 1.0,
+ "va": 1895540.4,
+ "funcoes": 28,
+ "por_tipo": {
+  "ALI": [
+   18,
+   630.0
+  ],
+  "AIE": [
+   10,
+   150.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   28,
+   176.0,
+   780.0
+  ]
+ },
+ "por_modulo": {
+  "Dados mantidos pelo sistema (ALI)": 630.0,
+  "Dados de outros sistemas lidos pelo sistema (AIE)": 150.0
+ }
+}

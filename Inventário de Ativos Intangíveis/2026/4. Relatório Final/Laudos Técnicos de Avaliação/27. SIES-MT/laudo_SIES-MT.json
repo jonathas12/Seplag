@@ -1,0 +1,205 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "sigla": "SIES-MT",
+ "nome": "Sistema Estadual de Seleção de Mato Grosso",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIES-MT_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/27. SIES-MT/APF-SIES-v1.0.xlsx",
+ "baseline_nome": "APF-SIES-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "PHP",
+ "texto_nivel": "O SIES-MT foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Não havia documentação funcional: a contagem foi feita no inventário de 2025, a partir da apresentação do sistema pela equipe técnica no ambiente de treinamento. O tamanho adotado é o da aba Funções (célula L4, 699 PF), o mesmo do inventário de 2025. A aba Sumário 1 (célula G47) registra o equivalente indicativo, 575 PF (16 ALI x 35 + 1 AIE x 15), que não foi adotado para manter o nível e a medida da avaliação anterior.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG), em PHP",
+ "areas_negocio": "Secretaria Adjunta de Gestão de Pessoas da SEPLAG, unidade central de gestão de pessoas (UCGP), que trata os casos omissos e as adequações do sistema solicitadas pelas comissões (IN nº 005/2025/SEPLAG, arts. 2º, V, 16, parágrafo único, e 42); unidades setoriais de gestão de pessoas (USGP) e Comissões Organizadoras dos processos seletivos dos órgãos e entidades demandantes (arts. 12, 16 e 20)",
+ "perfis": "Candidatos, com acesso pelo MT Login ou pelo Gov.BR (IN nº 005/2025/SEPLAG, art. 3º, § 2º); integrantes das Comissões Organizadoras e administradores de processo seletivo dos órgãos e entidades; administradores da SEPLAG (cadastros, perfis, usuários e permissões, conforme as funções da contagem)",
+ "base_legal": "Lei Complementar Estadual nº 600, de 19/12/2017 (contratação por tempo determinado para atender necessidade temporária de excepcional interesse público, art. 37, IX, da Constituição Federal, e art. 129, VI, da Constituição Estadual); Instrução Normativa nº 005/2025/SEPLAG, de 12/05/2025 (orientações e procedimentos da contratação por tempo determinado e instituição do Sies-MT), alterada pela Instrução Normativa nº 007/2025/SEPLAG; Lei Complementar Estadual nº 114/2002 e Lei nº 11.995/2023 (reserva de vagas para pessoas com deficiência); Decreto Estadual nº 141/2023 (publicação de admissão e distrato de contratados temporários); Resolução Normativa nº 03/2015 do TCE/MT (remessa de documentos)",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "A Instrução Normativa nº 005/2025/SEPLAG institui o Sies-MT \"como ferramenta tecnológica oficial para a operacionalização e gestão dos processos de seleção de pessoal, a ser utilizado pelos órgãos e entidades do Poder Executivo Estadual\" (art. 3º) e torna sua utilização obrigatória para o processo seletivo simplificado de contratação de temporários, residentes técnicos, estagiários ou outras modalidades similares (art. 3º, § 1º). A Comissão Organizadora de cada PSS deve usar o sistema para divulgar os editais, receber as inscrições, sendo vedada a inscrição por outros meios físicos ou digitais fora da plataforma, salvo exceções justificadas, fazer as comunicações aos candidatos, analisar a documentação, publicar os resultados preliminares e finais e as retificações e publicar os editais de chamamento e convocação (art. 20).",
+  "As instituições especializadas contratadas para realizar um PSS são obrigadas a fornecer todas as informações do certame ao Sies-MT por meio de API (art. 13, § 2º), e o órgão responsável pelo processo seletivo deve manter no sistema as informações dos seletivos em andamento, mesmo quando operacionalizados em outra plataforma (art. 3º, § 4º). O sistema pode ainda ser disponibilizado a outros Poderes, Órgãos Autônomos e entes da Federação, por termo de cooperação (art. 3º, § 5º).",
+  "A inoperância do sistema paralisaria as inscrições, avaliações, resultados e convocações dos processos seletivos simplificados de todo o Poder Executivo Estadual, que dependem exclusivamente da plataforma, e afetaria as contratações temporárias que eles alimentam. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ. No inventário de 2025 foi adotado 0,75; a elevação decorre da obrigatoriedade de uso instituída pela IN nº 005/2025/SEPLAG."
+ ],
+ "finalidade": [
+  "O Sistema Estadual de Seleção de Mato Grosso (SIES-MT) é a plataforma oficial de operacionalização e gestão dos processos seletivos de pessoal dos órgãos e entidades da Administração Direta, Autárquica e Fundacional do Poder Executivo Estadual, instituída pela Instrução Normativa nº 005/2025/SEPLAG (arts. 1º e 3º). Seu uso é obrigatório nos processos seletivos simplificados (PSS) de contratação de temporários, residentes técnicos, estagiários ou outras modalidades similares, para que os candidatos acompanhem o status da inscrição, os resultados e as convocações, e para que os gestores disponham de relatórios atualizados em tempo real sobre o andamento das inscrições e o perfil dos candidatos (art. 3º, § 1º). Na linha de base de 2025 o sistema aparece como SIES (Sistema Estadual de Seleção); a IN nº 005/2025/SEPLAG adotou a denominação Sies-MT.",
+  "O acesso é feito pelo endereço seletivo.seplag.mt.gov.br, com cadastro no MT Login ou no Gov.BR (art. 3º, § 2º). Compete à SEPLAG o desenvolvimento, a gestão e a disponibilização do sistema para todos os órgãos e entidades do Poder Executivo (art. 3º, § 3º), e ao órgão ou entidade responsável por cada processo seletivo registrar e atualizar as informações dos seletivos em andamento (art. 3º, § 4º).",
+  "No fluxo da contratação temporária, que tem nove fases formalizadas no SIGADOC (art. 4º), o sistema atua na realização do PSS: a Comissão Organizadora solicita à SEPLAG, com pelo menos 10 dias de antecedência do início das inscrições, o acesso e o treinamento para cadastrar no Sies-MT a descrição do cargo ou função, os requisitos mínimos, o barema de avaliação, o prazo de inscrições e o cronograma (art. 16); o edital publicado no Diário Oficial é disponibilizado no sistema (art. 19); e a comissão o utiliza para divulgação, inscrições, comunicações, análise documental, resultados, retificações e convocações (art. 20). As informações pessoais e profissionais dos candidatos são usadas exclusivamente para seleção e contratação temporária, conforme a legislação de proteção de dados (art. 20, § 2º).",
+  "Pelas funções identificadas na contagem, o sistema mantém cargos, órgãos, cotas, locais, perfis, usuários e permissões de acesso, processos seletivos com suas fases, vagas, requisitos básicos e baremas de experiência, titulação e prova, a avaliação dos candidatos (requisitos, situação da inscrição, baremas e recursos), as inscrições dos candidatos em etapas (dados pessoais, vaga, requisitos, experiência, titulação e confirmação), as impugnações de edital, o perfil do candidato (inscrições ativas e canceladas), perguntas frequentes e páginas de conteúdo, além de relatórios gerais e relatórios de candidatos por fase em PDF e HTML."
+ ],
+ "integracoes": [
+  [
+   "MT Login",
+   "Autenticação e cadastro dos usuários (IN nº 005/2025, art. 3º, § 2º)",
+   "AIE"
+  ],
+  [
+   "Gov.BR",
+   "Autenticação alternativa dos candidatos (art. 3º, § 2º)",
+   "Não contado na baseline de 2025 (ver Seção 8)"
+  ],
+  [
+   "Sistemas de instituições especializadas contratadas",
+   "Envio das informações do certame ao Sies-MT por API, obrigatório quando o PSS é realizado por instituição contratada (art. 13, § 2º)",
+   "Não contado na baseline de 2025 (ver Seção 8)"
+  ],
+  [
+   "SIGADOC e SEAP",
+   "Processo administrativo da contratação (art. 4º) e registro funcional do contratado",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^(Login|Perfis|Usuários|Permissões de Acesso)",
+   "Acesso e segurança"
+  ],
+  [
+   "^(Cargos|Órgãos|Cotas|Locais|FAQ|Página)",
+   "Cadastros e conteúdo"
+  ],
+  [
+   "^(Processo Seletivo|Vagas|Dashbord)",
+   "Gestão do processo seletivo"
+  ],
+  [
+   "^Avaliação",
+   "Avaliação e recursos"
+  ],
+  [
+   "^(Inscrever-se|Impugnações|Perfil do Candidato)",
+   "Área do candidato"
+  ]
+ ],
+ "ordem_modulos": [
+  "Gestão do processo seletivo",
+  "Área do candidato",
+  "Avaliação e recursos",
+  "Cadastros e conteúdo",
+  "Acesso e segurança"
+ ],
+ "quebrar_rotulos_grafico": 22,
+ "modulos_tabela": [
+  [
+   "Gestão do processo seletivo",
+   "Cadastro e consulta de processos seletivos (situação, inscrição externa, impugnação de edital, limites de idade, órgão), fases e candidatos por fase (consulta, avaliação individual, lista ordenada, edição de fase), relatórios de candidatos por situação e nota em PDF e HTML, vagas, requisitos básicos e baremas de experiência, titulação e prova; relatórios gerais (dashboard)"
+  ],
+  [
+   "Área do candidato",
+   "Inscrição em etapas (dados pessoais, dados da vaga, requisitos básicos, experiência, titulação e confirmação), impugnações de edital e perfil do candidato (inscrições ativas e canceladas, situação da inscrição, baremas, cancelamento)"
+  ],
+  [
+   "Avaliação e recursos",
+   "Avaliação das inscrições: requisitos básicos, situação da inscrição (bloquear ou liberar), mudança de situação e de fase, aprovação ou reprovação de baremas, histórico de avaliações e julgamento de recursos"
+  ],
+  [
+   "Cadastros e conteúdo",
+   "Cargos, órgãos, cotas, locais, perguntas frequentes (FAQ) e páginas de conteúdo"
+  ],
+  [
+   "Acesso e segurança",
+   "Perfis, usuários (integrantes de comissão, administradores de processo seletivo e inscritos), permissões de acesso e autenticação pelo MT Login"
+  ]
+ ],
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido, hospedado e evoluído pela SEPLAG (IN nº 005/2025/SEPLAG, art. 3º, § 3º)",
+ "uso": "Em produção; uso obrigatório nos processos seletivos simplificados do Poder Executivo Estadual desde a IN nº 005/2025/SEPLAG (vigência em 13/05/2025)",
+ "beneficio": "Potencial de serviço para o Estado: plataforma única e obrigatória para os processos seletivos simplificados do Poder Executivo, com inscrição digital, análise documental, resultados e convocações, que padroniza o processo e dá transparência aos candidatos",
+ "fase_texto": "Sistema em produção, de uso obrigatório nos processos seletivos simplificados",
+ "custo_incorrido": "O SIES-MT foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura da Instrução Normativa nº 005/2025/SEPLAG (com as alterações da IN nº 007/2025/SEPLAG) e da planilha de contagem APF-SIES-v1.0, elaborada a partir da apresentação do sistema no inventário de 2025",
+ "documentacao_resumo": "Planilha de contagem v1.0 e IN nº 005/2025/SEPLAG (Anexo I). Não há histórias de usuário nem especificação funcional",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário, requisitos nem especificação funcional até a data de fechamento deste laudo. A medição foi feita a partir da apresentação do sistema pela equipe técnica no inventário de 2025, e a instrução normativa abaixo fundamenta a finalidade, o uso obrigatório, as competências e as funcionalidades exigidas.",
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "ressalva_documentacao": "Não foram disponibilizadas histórias de usuário, requisitos nem especificação funcional do SIES-MT. A contagem foi feita a partir da apresentação do sistema; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A baseline v1.0, de 10/12/2025, foi a primeira medição do sistema e é a mesma usada neste inventário: 699 PF no nível Estimativo. Na revisão de 23/11/2026 foram preenchidos os quadros de escopo e documentação da aba Contagem e corrigida a tecnologia (PHP); as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Processo seletivo, fases, vagas, avaliação, inscrição, impugnações",
+  "MT Login",
+  "Cadastrar processo seletivo, inscrever-se, aprovar ou reprovar barema, julgar recurso",
+  "Consultar processo seletivo, listar candidatos da fase, gerar relatório em PDF",
+  "Lista ordenada de candidatos, relatórios gerais, dados dos baremas"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "10/12/2025",
+   "pf": 699,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,75; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 699,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0 (Contagem revisada); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 699,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da elevação do Valor Institucional de 0,75 para 1,00, motivada pela obrigatoriedade de uso do sistema instituída pela IN nº 005/2025/SEPLAG. O tamanho funcional permanece 699 PF.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Os sistemas SIGADOC e SEAP, a autenticação Gov.BR e os sistemas das instituições especializadas que enviam dados por API.",
+  "As funções de outras aplicações apenas lidas pelo sistema, salvo o MT Login, contado como AIE."
+ ],
+ "outros_documentos": [
+  [
+   "Instrução Normativa nº 005/2025/SEPLAG",
+   "Assinada pelo Secretário de Estado de Planejamento e Gestão; Diário Oficial, p. 64",
+   "12/05/2025; publicada em 13/05/2025",
+   "Instituição do Sies-MT, uso obrigatório, acesso, competências, funcionalidades exigidas (arts. 1º a 3º, 13, 16, 19 e 20) e fluxo da contratação temporária"
+  ],
+  [
+   "Instrução Normativa nº 007/2025/SEPLAG",
+   "Altera a IN nº 005/2025/SEPLAG (art. 32 e art. 33), com efeitos a partir de 13/05/2025",
+   "2025",
+   "Redação vigente da IN nº 005/2025"
+  ],
+  [
+   "Planilha de contagem APF-SIES v1.0",
+   "Pasta do sistema",
+   "10/12/2025; Contagem revisada em 23/11/2026",
+   "Funções de dados e de transação e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho, preço, VI e valor do inventário de 2025"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e a instrução normativa do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "A IN nº 005/2025/SEPLAG prevê o acesso pelo Gov.BR (art. 3º, § 2º) e o recebimento de dados por API das instituições contratadas (art. 13, § 2º), funcionalidades que não constam da baseline de 2025. Recomenda-se à TI confirmar sua implantação e, se for o caso, atualizar a baseline.",
+  "Duas consultas da funcionalidade FAQ (Consultar Pergunta Candidato/Comissão e Categoria) estão registradas na aba Funções sem complexidade e não pontuam; se pontuassem como as demais consultas do nível estimativo (4 PF cada), o tamanho seria 707 PF. O tamanho de 699 PF da planilha foi mantido.",
+  "A aba Contagem registrava a tecnologia Java, divergente do registro da comissão e da informação da área (PHP); o campo foi corrigido na revisão de 23/11/2026. O nível de detalhe da planilha (Estimativa, NESMA) foi mantido, assim como a medida de 699 PF do inventário de 2025; a célula G47 da aba Sumário 1 registra o equivalente indicativo de 575 PF.",
+  "A contagem foi feita sem documentação funcional. Recomenda-se à TI e à Secretaria Adjunta de Gestão de Pessoas a elaboração de histórias de usuário ou especificação funcional do sistema, que tem uso obrigatório por todos os órgãos e entidades do Poder Executivo.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação."
+ ]
+}

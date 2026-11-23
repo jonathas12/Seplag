@@ -1,0 +1,46 @@
+{
+ "sigla": "SIES-MT",
+ "medida": "PF IFPUG",
+ "pf": 699.0,
+ "preco_pf": 1215.09,
+ "vt": 849347.91,
+ "vi": 1.0,
+ "va": 1698695.82,
+ "funcoes": 163,
+ "por_tipo": {
+  "ALI": [
+   16,
+   112.0
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   58,
+   232.0
+  ],
+  "CE": [
+   82,
+   320.0
+  ],
+  "SE": [
+   6,
+   30.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   163,
+   699.0,
+   699.0
+  ]
+ },
+ "por_modulo": {
+  "Gestão do processo seletivo": 218.0,
+  "Área do candidato": 185.0,
+  "Avaliação e recursos": 72.0,
+  "Cadastros e conteúdo": 150.0,
+  "Acesso e segurança": 74.0
+ }
+}

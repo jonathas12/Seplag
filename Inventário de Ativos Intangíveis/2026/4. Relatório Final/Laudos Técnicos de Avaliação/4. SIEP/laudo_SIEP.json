@@ -1,0 +1,415 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "SIEP",
+ "nome": "Sistema Estadual de Produtividade",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIEP_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/4. SIEP/APF-Baseline-SIEP-v0.16.xlsx",
+ "baseline_nome": "APF-Baseline-SIEP-v0.16.xlsx",
+ "baseline_versao": "0.16",
+ "medida": "PF Local da FS",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "texto_nivel": "O SIEP foi medido no nível Detalhado (IFPUG CPM 4.3.1): cada função tem os tipos de dados e os arquivos ou registros referenciados identificados e a complexidade calculada. Como a contagem é de projeto de desenvolvimento, a planilha registra o tipo de cada função (133 inclusões, 12 exclusões e 4 manutenções cosméticas) e aplica os deflatores do Roteiro de Métricas do SISP 2.3. A medida adotada é o PF Local da FS (Funções, célula L6, 657,2 PF), o mesmo critério do laudo do SIGPAS, desenvolvido no mesmo modelo; o PF IFPUG da planilha é de 699 PF (célula L4).",
+ "tipo_bem": "Software desenvolvido pela SEPLAG em conjunto com a fábrica de software do Contrato nº 014/2022/SEPLAG (código-fonte de propriedade do Estado)",
+ "unidade_desenvolvimento": "Desenvolvimento híbrido, no mesmo modelo do SIGPAS: a SEPLAG/MT (SSCPG/SAPGD/SEPLAG) fez o levantamento de requisitos, a análise e o projeto (Grupo de Atividades I com 0% na OS nº 10), além da gestão do produto e do projeto, arquitetura, banco de dados, infraestrutura e DevOps; a fábrica de software do Contrato nº 014/2022/SEPLAG fez a construção, os testes e a homologação (Grupo de Atividades II, 75%, Perfil 4)",
+ "areas_negocio": "Secretaria Adjunta de Gestão de Pessoas da SEPLAG, por meio da Coordenadoria de Desenvolvimento e Produtividade (SAGP/SEPLAG), responsável pela capacitação e acompanhamento da implantação (Portaria Conjunta nº 024/2025/SEPLAG/CGE, arts. 3º e 4º); demanda original da Coordenadoria de Gestão do Conhecimento e Desenvolvimento e da Superintendência de Desenvolvimento, Valorização e Saúde do Servidor (DOD de 22/12/2022); Superintendência de Modernização Organizacional/SAPGD/SEPLAG, gestora do catálogo de produtos do SGO",
+ "perfis": "Servidores e demais agentes públicos (efetivos, exclusivamente comissionados, contratados temporários, residentes técnicos, estagiários e, no que couber, terceirizados), que registram e executam o plano de atividades; chefias imediatas, que vinculam, aprovam e acompanham as atividades e a produtividade da equipe; administradores central e setorial, que mantêm parâmetros, mensagens, liberação de acesso e remoção de atividades (Portaria Conjunta nº 024/2025, art. 5º, § 1º; histórias de usuário)",
+ "base_legal": "Decreto nº 1.303, de 03/03/2022 (avaliação anual de desempenho dos servidores civis do Poder Executivo) e Instrução Normativa nº 15/2022 (DOD do SIEP); Lei Complementar nº 807, de 20/12/2024, art. 4º (gestão da produtividade dos agentes públicos estaduais); Portaria Conjunta nº 024/2025/SEPLAG/CGE, de 12/08/2025 (diretrizes de implantação do SIEP e do SGO na CGE); Lei nº 12.771, de 20/12/2024 (governança e eficiência da gestão pública), regulamentada pelo Decreto nº 1.853/2026 (IGEF-MT)",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O SIEP foi criado para gerir a produtividade dos servidores civis do Poder Executivo para fins da avaliação anual de desempenho, reformulada pelo Decreto nº 1.303/2022 e pela IN nº 15/2022, que instituíram o pilar \"Comprometimento e Produtividade\" (DOD de 22/12/2022). A Lei Complementar nº 807/2024 (art. 4º) autoriza o Poder Executivo a implementar a gestão da produtividade dos agentes públicos estaduais, mensurando o cumprimento de metas, resultados e entregas, e a Portaria Conjunta nº 024/2025/SEPLAG/CGE estabelece que a produtividade será mensurada pelo Plano de Atividade constante no SIEP (art. 5º).",
+  "O sistema está em uso na SEPLAG e em expansão para outros órgãos: a Portaria Conjunta nº 024/2025 fixou o cronograma de implantação na CGE a partir de agosto de 2025, e a CGE e a SEFAZ participam como órgãos-piloto da nova etapa, após a SEPLAG ter iniciado o uso (notícia da CGE de 19/08/2025). As informações registradas servem de base para a avaliação anual de desempenho dos servidores (notícia da CGE).",
+  "A inoperância do sistema comprometeria o registro e a validação das entregas dos servidores, a mensuração da produtividade e a avaliação anual de desempenho nos órgãos que o utilizam. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ (0,75 nos inventários de 2023 a 2025)."
+ ],
+ "finalidade": [
+  "O Sistema Estadual de Produtividade (SIEP) é a plataforma do Poder Executivo de Mato Grosso, desenvolvida e gerida pela SEPLAG, para mensurar e gerenciar a produtividade individual e coletiva das equipes. A demanda foi oficializada pelo DOD aprovado em 22/12/2022, diante da falta de sistema informatizado para gerir a produtividade dos servidores civis do Poder Executivo, a partir dos parâmetros do Decreto nº 1.303/2022 e da IN nº 15/2022; por decisão estratégica, o uso não se restringiu aos servidores em avaliação, mas a todos os servidores civis do Poder Executivo, com acesso via web e integração com o SEAP.",
+  "Pelas histórias de usuário, o servidor registra o regime de trabalho, consulta o catálogo de atividades e monta seu plano de atividades, com complexidade, meta e prazo; registra o andamento e a execução das atividades, com anexos, e acompanha seu histórico; a chefia imediata vincula atividades ao plano dos subordinados e aprova, aprova parcialmente ou reprova as situações informadas (US02 a US10, US16 e US27). O sistema calcula métricas e a nota de produtividade do servidor e da equipe, com relatórios em PDF (US11, US21 e US22), oferece quadros Kanban individual e da equipe (US18 e US23), notificações, mensagens e parâmetros configuráveis (US17 e US24 a US26), liberação de acesso e página inicial com atalhos (US15 e US19).",
+  "A Portaria Conjunta nº 024/2025/SEPLAG/CGE, de 12/08/2025, instituiu as diretrizes para a implantação do SIEP e do Sistema de Gestão Organizacional (SGO) na Controladoria Geral do Estado: o catálogo de produtos é mantido no SGO pelos NGERs e unidades centrais, e a produtividade é mensurada pelo Plano de Atividade no SIEP, abrangendo servidores, comissionados, contratados temporários, residentes técnicos, estagiários e, no que couber, terceirizados, com validação das atividades pela chefia imediata ou mediata (arts. 2º e 5º).",
+  "O SIEP também expõe uma API de integração (documentação da API do SIEP) usada pelo SIGADOC para registrar atividades nos planos dos servidores. As histórias da Sprint 16 (US31, US33 e US34), que tratariam de histórico do De-Para de importação, auditoria de integração e consulta de assinatura De-Para, foram especificadas mas não desenvolvidas."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Servidor, chefia imediata e regime de trabalho (DOD: integração com o SEAP)",
+   "AIE (Servidor, Chefia Imediata SEAP, Regime de trabalho do Servidor)"
+  ],
+  [
+   "Manopla (controle de acesso)",
+   "Perfis de acesso e chefia imediata",
+   "AIE (Chefia Imediata Manopla)"
+  ],
+  [
+   "SGO (Sistema de Gestão Organizacional)",
+   "Catálogo de produtos organizacionais das unidades (Portaria Conjunta nº 024/2025, art. 2º)",
+   "AIE (Produto)"
+  ],
+  [
+   "SIGADOC",
+   "Envio de registros do SIGADOC como atividades do plano do servidor, pela API de integração do SIEP",
+   "Fora da fronteira: o SIGADOC é aplicação externa, que apenas troca dados e serviços com o SIEP; suas funções pertencem à aplicação de origem e não compõem o tamanho do SIEP"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^Login$|US01|US15|US19",
+   "Acesso, regime de trabalho e página inicial"
+  ],
+  [
+   "US17 – Manter",
+   "Atividades e plano de atividades"
+  ],
+  [
+   "US11|US21|US22",
+   "Métricas e produtividade"
+  ],
+  [
+   "US18|US23",
+   "Quadros Kanban"
+  ],
+  [
+   "US17|US2[456]",
+   "Notificações, mensagens e parâmetros"
+  ],
+  [
+   "US28",
+   "Sistemas integrados"
+  ],
+  [
+   "US0[2-9]|US10|US16|US_27",
+   "Atividades e plano de atividades"
+  ]
+ ],
+ "ordem_modulos": [
+  "Atividades e plano de atividades",
+  "Métricas e produtividade",
+  "Quadros Kanban",
+  "Notificações, mensagens e parâmetros",
+  "Acesso, regime de trabalho e página inicial",
+  "Sistemas integrados"
+ ],
+ "documentos": [
+  {
+   "codigo": "US01",
+   "nome": "Regime de trabalho",
+   "modulo": "Acesso, regime de trabalho e página inicial",
+   "versao": "",
+   "data": "documento não disponibilizado"
+  },
+  {
+   "codigo": "US02",
+   "nome": "Consulta Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.13",
+   "data": "12/12/2024"
+  },
+  {
+   "codigo": "US03",
+   "nome": "Manter Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.15",
+   "data": "13/01/2024"
+  },
+  {
+   "codigo": "US06",
+   "nome": "Consultar Acompanhamento do Plano de Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.28",
+   "data": "18/02/2026"
+  },
+  {
+   "codigo": "US07",
+   "nome": "Manter Vínculo Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.19",
+   "data": "10/09/2026"
+  },
+  {
+   "codigo": "US08",
+   "nome": "Consulta da Execução do Plano de Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.28",
+   "data": "30/03/2026"
+  },
+  {
+   "codigo": "US09",
+   "nome": "Manter Execução do Plano de Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.16",
+   "data": "18/11/2025"
+  },
+  {
+   "codigo": "US10",
+   "nome": "Manter Aprovação do Vínculo da Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.20",
+   "data": "05/02/2026"
+  },
+  {
+   "codigo": "US11",
+   "nome": "Consultar Métricas",
+   "modulo": "Métricas e produtividade",
+   "versao": "1.23",
+   "data": "03/03/2026"
+  },
+  {
+   "codigo": "US15",
+   "nome": "Manter Liberação de Acesso",
+   "modulo": "Acesso, regime de trabalho e página inicial",
+   "versao": "1.7",
+   "data": "30/06/2025"
+  },
+  {
+   "codigo": "US16",
+   "nome": "Manter Histórico Acompanhamento do Plano de Atividade",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.19",
+   "data": "25/10/2024"
+  },
+  {
+   "codigo": "US17",
+   "nome": "Visualizar notificações (a baseline usa o mesmo código para Manter Histórico da Atividade)",
+   "modulo": "Notificações, mensagens e parâmetros",
+   "versao": "1.6",
+   "data": "03/02/2026"
+  },
+  {
+   "codigo": "US18",
+   "nome": "Manter Meu Quadro Kanban",
+   "modulo": "Quadros Kanban",
+   "versao": "1.16",
+   "data": "19/02/2026"
+  },
+  {
+   "codigo": "US19",
+   "nome": "Página Inicial",
+   "modulo": "Acesso, regime de trabalho e página inicial",
+   "versao": "1.1",
+   "data": "11/03/2025"
+  },
+  {
+   "codigo": "US21",
+   "nome": "Produtividade da Equipe",
+   "modulo": "Métricas e produtividade",
+   "versao": "1.8",
+   "data": "09/07/2025"
+  },
+  {
+   "codigo": "US22",
+   "nome": "Consultar Nota da Produtividade",
+   "modulo": "Métricas e produtividade",
+   "versao": "1.7",
+   "data": "26/11/2025"
+  },
+  {
+   "codigo": "US23",
+   "nome": "Quadro Kanban da Equipe",
+   "modulo": "Quadros Kanban",
+   "versao": "1.7",
+   "data": "05/02/2026"
+  },
+  {
+   "codigo": "US24",
+   "nome": "Manter Parâmetro da Cor - Aba Notificação",
+   "modulo": "Notificações, mensagens e parâmetros",
+   "versao": "1.1",
+   "data": "03/03/2026"
+  },
+  {
+   "codigo": "US25",
+   "nome": "Manter Mensagem",
+   "modulo": "Notificações, mensagens e parâmetros",
+   "versao": "1.3",
+   "data": "09/04/2026"
+  },
+  {
+   "codigo": "US26",
+   "nome": "Manter Parâmetro - Aba Geral",
+   "modulo": "Notificações, mensagens e parâmetros",
+   "versao": "1.2",
+   "data": "26/02/2026"
+  },
+  {
+   "codigo": "US27",
+   "nome": "Manter Remoção de Atividades",
+   "modulo": "Atividades e plano de atividades",
+   "versao": "1.3",
+   "data": "15/04/2026"
+  },
+  {
+   "codigo": "US28",
+   "nome": "Manter sistema integrado",
+   "modulo": "Sistemas integrados",
+   "versao": "",
+   "data": "documento não disponibilizado"
+  }
+ ],
+ "formato_us": "US{:02d}",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela SEPLAG com a fábrica de software do Contrato nº 014/2022/SEPLAG e mantido pela SEPLAG",
+ "uso": "Em produção na SEPLAG e em implantação na CGE (a partir de agosto de 2025), com SEFAZ e PGE como órgãos-piloto",
+ "beneficio": "Potencial de serviço para o Estado: gestão da produtividade individual e coletiva por plano de atividades, base da avaliação anual de desempenho e da gestão por resultados",
+ "fase_texto": "Sistema em produção, desenvolvido em sprints (01 a 15)",
+ "custo_incorrido": "O SIEP foi desenvolvido pela SEPLAG com a fábrica de software do Contrato nº 014/2022/SEPLAG. O custo pago à contratada está registrado no painel de custos (Seção 6.4), mas não inclui a equipe da SEPLAG (requisitos, análise, projeto e infraestrutura), cujo custo não é apurado por produto; por isso o bem é avaliado pela metodologia do art. 11.",
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIEP é desenvolvido com a fábrica de software do Contrato nº 014/2022/SEPLAG (Ordem de Serviço nº 10, de 13/06/2023), a fiscalização do contrato registra o custo do projeto com a contratada. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026; os pagamentos ocorreram de 2023 a 2026, com maior volume em 2025.",
+  "componentes": [
+   [
+    "Projeto (desenvolvimento)",
+    483062.64
+   ],
+   [
+    "Tickets",
+    16602.54
+   ]
+  ],
+  "custo_total": 499665.18,
+  "componentes_construcao": [
+   "Projeto (desenvolvimento)"
+  ],
+  "pf_faturado": 1342.9,
+  "preco_contrato": 544.53,
+  "nota_preco_contrato": "R$ 457,00 em 2022; R$ 519,99 em 05/2025; R$ 544,53 no 5º Termo de Apostilamento",
+  "fator_grupo_contratado": 0.75,
+  "fonte_fator": "Conforme a Ordem de Serviço nº 10 (Sigadoc SEPLAGCAP202322763): Grupo I com 0% e Grupo II com 75%",
+  "interpretacao": [
+   "Os pontos de função faturados (1.342,9 PF) superam o tamanho do ativo porque o faturamento mede cada entrega ao longo das sprints: funções incluídas e depois alteradas são medidas de novo, com os deflatores do contrato. O tamanho funcional do ativo conta cada função existente uma única vez. O painel não indica retrabalho no projeto.",
+   "O custo médio por PF faturado (R$ 372,08) fica abaixo do preço vigente do contrato porque a contratada recebe apenas a parcela do Grupo II (75%) e porque parte do projeto foi paga aos preços de 2023 a 2025. Os tickets (3,3% do custo) são demandas avulsas; se corresponderem a manutenção, não integram o valor do ativo (IN, art. 10, parágrafo único)."
+  ],
+  "conclusao": "O custo pago à contratada é custo incorrido parcial: não inclui a equipe da SEPLAG (requisitos, análise, projeto, arquitetura, banco de dados, infraestrutura e DevOps), cujo custo não é apurado por produto. Por isso não serve como mensuração inicial completa (art. 10, III), e o valor do ativo segue o art. 11. Ele serve como referência de coerência: o valor do tamanho (VT) supera o custo pago à contratada, o que é esperado, porque o VT reflete o preço de mercado de todas as atividades do ponto de função e o contrato foi licitado abaixo do valor estimado no edital. A diferença entre o VA e o custo inclui ainda a parcela institucional (VI), que não é custo."
+ },
+ "analise_documental": "Leitura das 20 histórias de usuário disponibilizadas na versão vigente (e das versões anteriores das pastas de sprint), do DOD, da OS nº 10 e do e-mail de abertura, da documentação da API de integração, da Portaria Conjunta nº 024/2025/SEPLAG/CGE, da Lei nº 12.771/2024 e da notícia da CGE de 19/08/2025, e conferência da planilha APF-Baseline-SIEP-v0.16",
+ "documentacao_resumo": "Histórias de usuário US01 a US28 (Anexo I), DOD, OS nº 10, Portaria Conjunta nº 024/2025 e documentação da API",
+ "documentacao_fonte": "As histórias evoluíram ao longo das sprints, com versões sucessivas do mesmo código e, em um caso, o mesmo código para conteúdos distintos (US17). A tabela A2 traz a versão vigente de cada história e a data da última alteração registrada no histórico de versões; US01 e US28 não foram disponibilizadas.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. As histórias US01 (Regime de trabalho) e US28 (Manter sistema integrado) têm funções na planilha, mas o documento não foi disponibilizado.",
+ "texto_evolucao": "A planilha de contagem evoluiu com as sprints do projeto: v0.2 (277,8 PF Local da FS, inventário de 2023), v0.6 (336 PF IFPUG, inventário de 2024), v0.13 (555 PF IFPUG, inventário de 2025) e v0.16 (699 PF IFPUG e 657,2 PF Local da FS), adotada neste inventário. Os inventários anteriores usaram medidas diferentes da mesma planilha (ver Seção 8).",
+ "exemplos_tipos": [
+  "Atividade, plano de atividade, execução, notificação",
+  "Servidor e chefia imediata (SEAP), produto (SGO)",
+  "Manter atividade, aprovar vínculo, registrar execução",
+  "Consultar métricas, consultar nota da produtividade, quadro Kanban",
+  "Relatório PPS em PDF, produtividade da equipe"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "03/10/2023",
+   "pf": 277.8,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Baseline v0.2 (PF Local da FS); VI 0,75"
+  },
+  {
+   "inventario": 2024,
+   "data": "11/07/2024",
+   "pf": 336,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.6 (PF IFPUG); VI 0,75"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 555,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.13 (PF IFPUG); VI 0,75"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 657.2,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.16 (PF Local da FS); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 555,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do aumento do tamanho funcional com as sprints entregues após a baseline v0.13 (de 555 para 657,2 PF, já com a medida PF Local da FS), do novo preço do ponto de função apurado na pesquisa de 2026 e da elevação do Valor Institucional de 0,75 para 1,00, com a Portaria Conjunta nº 024/2025/SEPLAG/CGE e a expansão do uso a outros órgãos.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "A integração com o SIGADOC: o SIGADOC é aplicação externa à fronteira do SIEP, que apenas compartilha dados e serviços com ele; as funções do sistema de origem pertencem a ele e não são mensuradas no SIEP.",
+  "As histórias da Sprint 16 (US31, US33 e US34), especificadas e não desenvolvidas.",
+  "O SEAP, o Manopla e o SGO, apenas lidos e contados como AIE."
+ ],
+ "outros_documentos": [
+  [
+   "Documento de Oficialização da Demanda (DOD) - Sistema Estadual de Produtividade",
+   "Coordenadoria de Gestão do Conhecimento e Desenvolvimento, SDVSS e Secretaria Adjunta de Gestão de Pessoas",
+   "aprovado em 22/12/2022",
+   "Problema, objetivo, justificativa (Decreto nº 1.303/2022 e IN nº 15/2022), público e integração com o SEAP"
+  ],
+  [
+   "Ordem de Serviço nº 10 do Contrato nº 014/2022/SEPLAG",
+   "Sigadoc SEPLAGCAP202322763; aceite da contratada em 13/06/2023",
+   "13/06/2023",
+   "270 PF indicativos, R$ 92.542,50, Grupo I com 0% e Grupo II com 75%"
+  ],
+  [
+   "Portaria Conjunta nº 024/2025/SEPLAG/CGE",
+   "Diário Oficial; assinada pelo Secretário de Estado de Planejamento e Gestão e pelo Secretário Controlador-Geral do Estado",
+   "12/08/2025",
+   "Diretrizes e cronograma de implantação do SIEP e do SGO na CGE"
+  ],
+  [
+   "Notícia \"CGE inicia implantação de sistemas para mensurar produtividade e entregas institucionais\"",
+   "Portal da CGE-MT",
+   "19/08/2025",
+   "Órgãos-piloto, público e uso na avaliação de desempenho"
+  ],
+  [
+   "Lei nº 12.771, de 20/12/2024",
+   "DOE, edição extra nº 2, p. 11-13",
+   "20/12/2024",
+   "Diretrizes de governança e eficiência da gestão pública"
+  ],
+  [
+   "Documentação da API de integração do SIEP",
+   "Equipe do projeto",
+   "2026",
+   "Endpoints de integração (catálogo por código SEAP, criar atividade)"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software",
+   "Fiscalização do Contrato nº 014/2022/SEPLAG",
+   "TRDs até 07/2026",
+   "Custo do projeto e PF faturados"
+  ],
+  [
+   "Planilhas de contagem APF-Baseline do SIEP v0.2, v0.6, v0.13 e v0.16",
+   "Pasta do sistema",
+   "2023 a 2026; Contagem revisada em 23/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Medida adotada: neste inventário adota-se o PF Local da FS da v0.16 (657,2 PF), critério do SIGPAS; o registro histórico mostra que os inventários anteriores usaram o PF Local da FS (2023) e o PF IFPUG (2024 e 2025) da mesma planilha. Recomenda-se manter o PF Local da FS nos próximos inventários, para comparabilidade.",
+  "A aba Contagem registrava nível \"Estimativa (NESMA)\", embora as funções tenham tipos de dados e registros referenciados identificados e complexidades calculadas, o que caracteriza contagem detalhada, nível que consta no registro histórico da comissão; o campo foi corrigido na cópia da planilha que acompanha este laudo, com data de revisão 23/11/2026, e o escopo (A17) foi preenchido.",
+  "O código US17 é usado na planilha para dois conteúdos distintos (Manter Histórico da Atividade e Visualizar notificações); recomenda-se à equipe do projeto renumerar as histórias para manter a rastreabilidade entre documentação e contagem.",
+  "A integração com o SIGADOC foi tratada como fronteira externa. Recomenda-se, na próxima revisão da baseline, avaliar se os serviços expostos pela API do SIEP (como o registro de atividades enviadas pelo SIGADOC) constituem processos elementares do próprio SIEP, a serem contados na sua fronteira."
+ ]
+}

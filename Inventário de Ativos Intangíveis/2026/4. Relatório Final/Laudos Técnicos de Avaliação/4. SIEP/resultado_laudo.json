@@ -1,0 +1,57 @@
+{
+ "sigla": "SIEP",
+ "medida": "PF Local da FS",
+ "pf": 657.2,
+ "preco_pf": 1215.09,
+ "vt": 798557.15,
+ "vi": 1.0,
+ "va": 1597114.3,
+ "funcoes": 149,
+ "por_tipo": {
+  "ALI": [
+   9,
+   69.0
+  ],
+  "AIE": [
+   7,
+   35.0
+  ],
+  "EE": [
+   42,
+   175.8
+  ],
+  "CE": [
+   79,
+   296.4
+  ],
+  "SE": [
+   12,
+   81.0
+  ]
+ },
+ "por_manutencao": {
+  "COS": [
+   4,
+   16.0,
+   2.4
+  ],
+  "I": [
+   133,
+   636.0,
+   636.0
+  ],
+  "E": [
+   12,
+   47.0,
+   18.8
+  ]
+ },
+ "por_modulo": {
+  "Atividades e plano de atividades": 272.4,
+  "Métricas e produtividade": 82.4,
+  "Quadros Kanban": 104.2,
+  "Notificações, mensagens e parâmetros": 104.0,
+  "Acesso, regime de trabalho e página inicial": 88.2,
+  "Sistemas integrados": 6.0
+ }
+}

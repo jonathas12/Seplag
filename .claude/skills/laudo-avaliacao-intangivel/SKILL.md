@@ -194,3 +194,13 @@ Fluxo e regras que se repetiram:
   perguntar (no SIGEV ficou a detalhada, 749 PF, série de 2023 a 2025).
 - Alterações por norma sem detalhes de implementação (ex.: Decreto nº 2.121/2026 no SIGEV) são tratadas como sustentação
   provável, sem alterar a linha de base, com recomendação à TI.
+
+## Incremento de melhoria na baseline (Monitora/RAG, 2026)
+
+- Melhoria medida em contagem estimativa separada: acrescentar à baseline só as funções novas (sem duplicar as existentes),
+  em linhas vazias da aba Funções dentro da faixa do `SUM`, com `_Modelo_Institucional/incrementa_baseline.py`
+  (origem, destino, linhas.json). O script marca recálculo ao abrir; para o gerador ler o total novo (G47/L4), recalcular com
+  `soffice --headless --calc --convert-to xlsx` e conferir que gráficos e imagens foram mantidos; depois preencher a Contagem.
+- Na medida indicativa, só os ALI/AIE novos entram (ex.: 72 PF estimativos viraram 2 ALI = 70 PF); as transações ficam
+  registradas na planilha e o laudo diz isso no texto do nível e no Anexo II.
+- `quebrar_rotulos_grafico` é a largura em caracteres (ex.: 22), não booleano. Sem histórias de usuário, usar `modulos_tabela`.

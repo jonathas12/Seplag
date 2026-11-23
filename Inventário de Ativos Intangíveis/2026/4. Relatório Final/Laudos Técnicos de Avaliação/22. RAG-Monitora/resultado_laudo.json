@@ -1,0 +1,33 @@
+{
+ "sigla": "Monitora/RAG",
+ "medida": "Indicativa (NESMA)",
+ "pf": 740.0,
+ "preco_pf": 1215.09,
+ "vt": 899166.6,
+ "vi": 1.0,
+ "va": 1798333.2,
+ "funcoes": 24,
+ "por_tipo": {
+  "ALI": [
+   19,
+   665.0
+  ],
+  "AIE": [
+   5,
+   75.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   24,
+   158.0,
+   740.0
+  ]
+ },
+ "por_modulo": {
+  "Monitoramento (PTA)": 360.0,
+  "RAG (Relatório Anual de Gestão)": 210.0,
+  "Segurança e acesso": 100.0,
+  "Gestão de Riscos (melhoria 2026)": 70.0
+ }
+}

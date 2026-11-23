@@ -1,0 +1,253 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47)",
+ "sigla": "Monitora/RAG",
+ "nome": "Sistema Monitora (Monitoramento das Ações Governamentais e Relatório Anual de Gestão)",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_MONITORA_RAG_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/22. RAG-Monitora/APF-RAG-Monitora-v1.1.xlsx",
+ "baseline_nome": "APF-RAG-Monitora-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "formula_tamanho": "19 ALI x 35 PF + 5 AIE x 15 PF (planilha APF-RAG-Monitora-v1.1, aba Sumário 1, célula G47)",
+ "texto_nivel": "O Monitora/RAG foi medido no nível Indicativo (NESMA), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE); o peso das transações está embutido nesses valores. A linha de base v1.0 (13/12/2023) foi feita sem histórias de usuário, por análise do sistema em produção. Na v1.1 foram incorporadas as funções da melhoria Gestão de Riscos, especificada na história de usuário US-MTR - Manter Andamento da Subação (versão 1.2) e medida em contagem estimativa de 04/09/2025: os dois ALI novos (Gestão de Riscos e Resposta ao Risco) entram na medida; as 15 transações da melhoria (EE, CE e SE) foram registradas na aba Funções, mas não compõem o tamanho indicativo, que está na aba Sumário 1, célula G47.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Secretaria Adjunta de Planejamento e Governo Digital (SAPGD), Superintendência do Planejamento Estadual (SUPLAN) e Coordenadoria de Monitoramento e Avaliação do Planejamento Estadual (CMAPE), que coordena o processo do RAG e define metodologia e ferramentas (IN nº 009/2025/SEPLAG, art. 3º, IV); Superintendência de Governança para Resultados, Eficiência e Inovação (SUGEFI), na análise das avaliações dos programas e indicadores",
+ "perfis": "Administrador Seplag, Administrador Setorial e Usuário Geral (material orientativo de Lançamento de Dados); no Monitoramento, os responsáveis por itens monitoráveis (ações, produtos e subações), como editores ou visualizadores, e os Núcleos de Gestão Estratégica para Resultados (NGERs); no RAG, os responsáveis por programas e por ações dos órgãos do Poder Executivo, da Defensoria Pública e das entidades da Administração Pública Estadual (IN nº 009/2025/SEPLAG, art. 5º)",
+ "base_legal": "Constituição do Estado de Mato Grosso, art. 66, X (citado na IN nº 009/2025/SEPLAG); Lei Complementar Federal nº 101/2000 (Lei de Responsabilidade Fiscal); Lei nº 12.432, de 09/02/2024 (PPA 2024-2027); Lei nº 12.702, de 21/10/2024 (LDO 2025), art. 42; Instrução Normativa nº 001/2021/SEPLAG, de 17/02/2021 (monitoramento); Instruções Normativas anuais do RAG: nº 015/2023, nº 010/2024 e nº 009/2025/SEPLAG",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O módulo RAG é a ferramenta obrigatória de registro da avaliação de desempenho dos Programas e Ações do PTA e do Orçamento Anual pelos órgãos do Poder Executivo, pela Defensoria Pública e pelas entidades da Administração Pública Estadual (IN nº 009/2025/SEPLAG, art. 2º). O Relatório Anual de Gestão consolidado é encaminhado à SEFAZ para compor, como anexo, a Prestação de Contas do Balanço Anual do Estado (art. 3º, I, c), apresentado em audiência pública (art. 3º, II, f) e publicado no site da SEPLAG; o descumprimento de procedimentos ou prazos sujeita as Unidades Orçamentárias ao regime orçamentário e financeiro cautelar (art. 6º, § 2º).",
+  "O módulo de Monitoramento é a ferramenta informatizada da sistemática de monitoramento da execução do PTA e das ações prioritárias definidas na LDO, integrada aos órgãos e entidades do Poder Executivo (material orientativo de Lançamento de Dados, 2025). Dele resultam a apresentação semestral à Assembleia Legislativa do desempenho das metas físicas das ações prioritárias, conforme a LDO, e os relatórios de monitoramento para a Alta Administração (Sistemática de Monitoramento, 2025); os resultados das ações prioritárias são publicados em painel (BI) no Portal da SEPLAG.",
+  "A inoperância do sistema impediria o cumprimento de prazos legais da prestação de contas anual e do monitoramento semestral das prioridades da LDO, com efeito sobre todas as Unidades Orçamentárias do Poder Executivo. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice do inventário de 2025 (em 2023 e 2024 foi adotado 0,75)."
+ ],
+ "finalidade": [
+  "O Sistema Monitora é o sistema oficial da SEPLAG para o monitoramento e a avaliação do planejamento estadual. Ao abrir o sistema, o usuário escolhe um de seus dois módulos: Monitoramento e RAG (material orientativo Monitoramento do Planejamento Estadual - Lançamento de Dados, SEPLAG, atualizado em 2025). O acesso é feito pela web, pelo endereço app.seplag.mt.gov.br/monitora.",
+  "O módulo de Monitoramento foi desenvolvido para o acompanhamento, a sistematização e a padronização da execução das ações, subações e etapas planejadas no Plano de Trabalho Anual (PTA) e daquelas priorizadas na LDO, conforme a Lei nº 12.702/2024 (LDO 2025), a Instrução Normativa nº 001/2021/SEPLAG e a Lei nº 12.432/2024 (PPA 2024-2027). Os itens monitoráveis (ações, produtos e subações) seguem a formulação do PTA, carregada do FIPLAN por webservice; o usuário trabalha por Unidade Orçamentária, Programa e ciclo de monitoramento, e só edita dados com o ciclo aberto. Na ação, registra a unidade de execução e análises dos indicadores e consulta a execução orçamentária (índices PPD e COFD, atualizados via webservice do FIPLAN); no produto e na subação, informa a meta física realizada, as datas de início e término realizadas, as análises de andamento (com anexos de comprovação) e as restrições com suas providências. O status dos itens (Início Atrasado, Em Andamento, Concluído, Término Atrasado) decorre das datas informadas nas subações; a marcação de ação prioritária é exclusiva do Administrador Seplag (material orientativo de Lançamento de Dados, 2025).",
+  "O módulo RAG registra a avaliação anual de desempenho dos Programas e Ações do PTA e do Orçamento, base do Relatório Anual de Gestão (até 2023, Relatório da Ação Governamental). O processo é instituído a cada ano por instrução normativa da SEPLAG (nº 015/2023, nº 010/2024 e nº 009/2025): no RAG 2025, o módulo foi aberto em 28/11/2025 e fechado em 02/03/2026, com períodos sucessivos de avaliação e análise das ações, dos indicadores e dos programas, atendimento de recomendações, consolidação, envio à SEFAZ em 16/03/2026 e publicação em 06/04/2026 (IN nº 009/2025/SEPLAG, Anexo I). Os questionários de avaliação de Programa, Indicador e Ação identificados na contagem correspondem a essas etapas.",
+  "Em 2026 a contagem incorporou a melhoria Gestão de Riscos, especificada na aba Riscos do Andamento da Subação (US-MTR - Manter Andamento da Subação, versão 1.2): o responsável registra a data, a natureza do risco (ambiental, financeira, gerencial, judicial e de controle, licitatória, orçamentária, política, tecnológica ou outra), a probabilidade (quase certo, alta, média, baixa, raro), o impacto (gravíssimo, grave, médio, leve, sem impacto) e a descrição; o sistema calcula o nível do risco pela matriz probabilidade x impacto (extremo, alto, moderado ou baixo, com indicação em cores) e exige o cadastro das respostas ao risco, com o que fazer antes (prevenção) e depois (solução) da ocorrência."
+ ],
+ "integracoes": [
+  [
+   "FIPLAN (SEFAZ)",
+   "Carga do PTA por webservice (ações, produtos, subações e etapas) e dados de execução orçamentária (PPD e COFD); responsáveis por programas e ações atualizados no FIPLAN; itens incluídos ou alterados no PTA Gerencial (PTA-G) do FIPLAN",
+   "AIE (Órgão, U.O. e PTA)"
+  ],
+  [
+   "Ecossistema ERP Seplag e Manopla",
+   "Integração informada pela área; a contagem registra Vínculos e Cargo como dados lidos de outra aplicação",
+   "AIE (Vínculos e Cargo); integração sem documentação técnica"
+  ],
+  [
+   "Painel Power BI",
+   "Painel de resultados das ações prioritárias publicado no Portal da SEPLAG, alimentado pelos dados do sistema",
+   "Fora da fronteira (consumidor dos dados)"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^Monitoramento$",
+   "Monitoramento (PTA)"
+  ],
+  [
+   "^RAG$",
+   "RAG (Relatório Anual de Gestão)"
+  ],
+  [
+   "^Segurança$",
+   "Segurança e acesso"
+  ],
+  [
+   "Gestão de Riscos|Resposta ao Risco",
+   "Gestão de Riscos (melhoria 2026)"
+  ]
+ ],
+ "ordem_modulos": [
+  "Monitoramento (PTA)",
+  "RAG (Relatório Anual de Gestão)",
+  "Segurança e acesso",
+  "Gestão de Riscos (melhoria 2026)"
+ ],
+ "descricao_modulos": {
+  "Monitoramento (PTA)": "Exercício, ação, produto, subação, etapas, lançamentos, andamentos, ciclo e permissões; lê Órgão, U.O. e PTA",
+  "RAG (Relatório Anual de Gestão)": "Lançamentos de dados, permissões, exercício e questionários de avaliação de Programa, Indicador e Ação",
+  "Segurança e acesso": "Identificação e perfil de acesso; lê Vínculos e Cargo",
+  "Gestão de Riscos (melhoria 2026)": "Riscos da subação e respostas ao risco"
+ },
+ "quebrar_rotulos_grafico": 22,
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido, hospedado e evoluído pela SEPLAG",
+ "uso": "Em produção; módulo de Monitoramento em uso contínuo nos ciclos do PTA e módulo RAG aberto anualmente conforme a instrução normativa do RAG",
+ "beneficio": "Potencial de serviço para o Estado: registro, acompanhamento e avaliação da execução do planejamento estadual por todos os órgãos do Poder Executivo, base do monitoramento semestral das prioridades da LDO e do Relatório Anual de Gestão que integra a prestação de contas anual",
+ "fase_texto": "Sistema em produção, com a melhoria Gestão de Riscos incorporada à linha de base em 2026",
+ "custo_incorrido": "O Monitora/RAG foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo das melhorias. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das planilhas de contagem APF-RAG-Monitora v1.0 e APF-Monitora-Gestao_Riscos, da história de usuário US-MTR - Manter Andamento da Subação (v1.2), dos materiais orientativos de Lançamento de Dados e da Sistemática de Monitoramento (2025), da IN nº 009/2025/SEPLAG e das páginas Relatório Anual de Gestão e Monitoramento das Ações Governamentais - 2025 do Portal da SEPLAG",
+ "documentacao_resumo": "Planilhas de contagem, história de usuário da Gestão de Riscos, materiais orientativos, normas e páginas oficiais (Anexo I). Não há histórias de usuário da linha de base",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário nem especificação funcional da linha de base do sistema até a data de fechamento deste laudo. A única história de usuário disponível é a da melhoria Gestão de Riscos. Os documentos abaixo fundamentam a finalidade, a base legal, as funcionalidades e as integrações.",
+ "documentos": [],
+ "ressalva_documentacao": "Não foram disponibilizadas histórias de usuário nem especificação funcional da linha de base do Monitora/RAG; há história de usuário apenas para a melhoria Gestão de Riscos. A ausência de documentação motivou a contagem indicativa; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "texto_evolucao": "A baseline v1.0, de 13/12/2023, registrava 17 ALI e 5 AIE (670 PF) e foi usada nos inventários de 2023 a 2025. A v1.1, de 23/11/2026, incorporou a melhoria Gestão de Riscos a partir da contagem estimativa APF-Monitora-Gestao_Riscos (Projeto de Melhoria, 04/09/2025, 72 PF no nível estimativo): foram acrescentados os ALI Gestão de Riscos e Resposta ao Risco, que não existiam na linha de base, sem duplicar funções; o tamanho passou a 19 ALI e 5 AIE (740 PF).",
+ "exemplos_tipos": [
+  "Ação, produto, subação, andamentos, questionários do RAG, gestão de riscos",
+  "Órgão, U.O. e PTA (FIPLAN); Vínculos e Cargo",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "13/12/2023",
+   "pf": 670,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,75"
+  },
+  {
+   "inventario": 2024,
+   "data": "13/12/2023",
+   "pf": 670,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,75 (registro indica nível Detalhada, ver Seção 8)"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 670,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 740,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1 (+2 ALI da Gestão de Riscos); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 670,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e do acréscimo de dois Arquivos Lógicos Internos da melhoria Gestão de Riscos, que elevou o tamanho de 670 para 740 PF. O Valor Institucional permanece 1,00.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Os sistemas de origem dos dados lidos (FIPLAN e ecossistema ERP Seplag), a autenticação e o painel Power BI alimentado pelo sistema.",
+  "As 15 transações (EE, CE e SE) da melhoria Gestão de Riscos registradas na aba Funções, cujo peso está embutido na contagem indicativa."
+ ],
+ "outros_documentos": [
+  [
+   "Instrução Normativa nº 009/2025/SEPLAG (RAG 2025)",
+   "Diário Oficial nº 29.092, p. 243-244",
+   "09/10/2025 (assinada em 08/10/2025)",
+   "Registro no Sistema Monitora - Módulo RAG, atribuições, prestação de contas, regime cautelar e cronograma"
+  ],
+  [
+   "Página \"Relatório Anual de Gestão\"",
+   "Portal da SEPLAG",
+   "consulta em 2026",
+   "Instruções normativas anuais do RAG (2019 a 2025) e base legal (LRF e LDOs)"
+  ],
+  [
+   "Página \"Monitoramento das Ações Governamentais - 2025\"",
+   "Portal da SEPLAG",
+   "consulta em 2026",
+   "Acesso ao Sistema Monitora, base legal, painel (BI) das ações prioritárias, materiais orientativos"
+  ],
+  [
+   "Monitoramento do Planejamento Estadual - Lançamento de Dados (passo a passo)",
+   "Material orientativo da SEPLAG",
+   "atualizado em 2025",
+   "Módulos, perfis, ciclo, itens monitoráveis, carga do FIPLAN e funcionalidades"
+  ],
+  [
+   "Sistemática de Monitoramento",
+   "Material orientativo da SEPLAG",
+   "2025",
+   "Produtos do monitoramento, atores, procedimentos e ferramentas"
+  ],
+  [
+   "História de usuário US-MTR - Manter Andamento da Subação",
+   "Versão 1.2 (aba Riscos); aprovada pela Coordenadora de Monitoramento e Avaliação de Programas e Ações",
+   "09/04/2025; aprovação em 04/08/2025",
+   "Requisitos da melhoria Gestão de Riscos"
+  ],
+  [
+   "E-mail \"Solicitação de Análise no DOD para Execução do Projeto\"",
+   "SEPLAG, área de monitoramento",
+   "03/09/2025",
+   "Pedido de análise do DOD do projeto Monitora"
+  ],
+  [
+   "Planilha de contagem estimativa APF-Monitora-Gestao_Riscos",
+   "Projeto de Melhoria, Estimativa (NESMA)",
+   "04/09/2025",
+   "Funções da melhoria incorporadas à baseline"
+  ],
+  [
+   "Planilhas de contagem APF-RAG-Monitora v1.0 e v1.1",
+   "Pasta do sistema",
+   "13/12/2023 e 23/11/2026",
+   "Funções de dados e tamanho indicativo"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho funcional, preço, VI e valor dos inventários anteriores"
+  ]
+ ],
+ "texto_anexo2": "Relação das 24 funções de dados da aba Funções da planilha APF-RAG-Monitora-v1.1.xlsx, com a contribuição de cada uma na contagem indicativa (35 PF por ALI e 15 PF por AIE). As 15 transações da melhoria Gestão de Riscos registradas na planilha não compõem a medida. A coluna Complex. registra a complexidade usada na aba Funções, que não se aplica à medida indicativa.",
+ "texto_acompanham": "As planilhas de contagem, a história de usuário, as normas e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Melhoria Gestão de Riscos: as funções foram incorporadas à linha de base a partir da contagem estimativa de 04/09/2025 e da história de usuário US-MTR (versão 1.2, aprovada em 04/08/2025), como melhoria de 2026 informada pela área. Dos 72 PF da contagem estimativa, a medida indicativa considera apenas os dois ALI novos (70 PF); as transações da melhoria ficam registradas na planilha. Não foi apresentado documento de aceite da entrega em produção; recomenda-se à TI confirmar a implantação e manter a linha de base atualizada a cada melhoria.",
+  "A contagem é indicativa e a linha de base foi feita sem documentação funcional. Recomenda-se à TI e à área de monitoramento a elaboração de histórias de usuário ou especificação funcional dos módulos de Monitoramento e RAG, que permita a migração para contagem estimativa ou detalhada e dê suporte à manutenção do sistema, que tem uso obrigatório por todos os órgãos do Poder Executivo.",
+  "As integrações com o ecossistema ERP Seplag e com o Manopla foram informadas pela área, mas não há documentação técnica que descreva os dados trocados; recomenda-se à TI documentá-las e confirmar se há funções de dados lidas ou mantidas que não constam da contagem.",
+  "Não há registro do custo de desenvolvimento nem do custo das melhorias. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação.",
+  "O registro histórico da comissão (Dados.xlsx) indica nível \"Detalhada (IFPUG)\" para o inventário de 2024, embora o tamanho (670 PF) seja o da contagem indicativa da baseline v1.0; a divergência é de registro e não altera os valores.",
+  "A aba Contagem da baseline v1.0 citava, no quadro de documentação (A22), o ambiente de homologação do WEBPonto, referência que não corresponde a esta aplicação; o campo foi corrigido na v1.1, com data de revisão 23/11/2026."
+ ],
+ "modulos_tabela": [
+  [
+   "Monitoramento (PTA): 12 funções de dados, 360 PF",
+   "Seleção de Unidade Orçamentária, Programa e ciclo; árvore de itens monitoráveis (ação, produto, subação, etapas) carregada do PTA; atributos, indicadores e análises de indicadores, execução orçamentária, meta física e datas realizadas, análises de andamento com anexos, restrições e providências; status dos itens; permissões. Lê Órgão, U.O. e PTA (FIPLAN)"
+  ],
+  [
+   "RAG (Relatório Anual de Gestão): 6 funções de dados, 210 PF",
+   "Lançamento de dados e permissões por exercício; questionários de avaliação de Programa, Indicador e Ação, preenchidos pelos responsáveis por programas e por ações no período definido pela instrução normativa anual do RAG"
+  ],
+  [
+   "Segurança e acesso: 4 funções de dados, 100 PF",
+   "Identificação dos usuários e perfis de acesso (Administrador Seplag, Administrador Setorial, Usuário Geral). Lê Vínculos e Cargo"
+  ],
+  [
+   "Gestão de Riscos (melhoria 2026): 2 funções de dados, 70 PF",
+   "Aba Riscos do Andamento da Subação: cadastro, alteração, exclusão e consulta de riscos (natureza, probabilidade, impacto, descrição), nível do risco pela matriz probabilidade x impacto e respostas ao risco (prevenção e solução)"
+  ]
+ ]
+}

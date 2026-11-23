@@ -1,0 +1,49 @@
+{
+ "sigla": "SINOVA",
+ "medida": "PF IFPUG",
+ "pf": 593.0,
+ "preco_pf": 1215.09,
+ "vt": 720548.37,
+ "vi": 1.0,
+ "va": 1441096.74,
+ "funcoes": 136,
+ "por_tipo": {
+  "ALI": [
+   8,
+   56.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   35,
+   140.0
+  ],
+  "CE": [
+   68,
+   272.0
+  ],
+  "SE": [
+   23,
+   115.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   136,
+   593.0,
+   593.0
+  ]
+ },
+ "por_modulo": {
+  "Gestão do Prêmio (edições, fases, categorias e perguntas)": 120.0,
+  "Inscrição e Resumo Executivo (1ª etapa)": 136.0,
+  "Triagem de conformidade e recursos": 74.0,
+  "Distribuição e avaliação (1ª e 2ª etapas)": 118.0,
+  "Relato da prática (2ª etapa)": 13.0,
+  "Entrevista e Pitch (3ª e 4ª etapas)": 64.0,
+  "Relatórios": 63.0,
+  "Acesso": 5.0
+ }
+}

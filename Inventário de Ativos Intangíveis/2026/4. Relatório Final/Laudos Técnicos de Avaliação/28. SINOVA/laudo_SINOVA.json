@@ -1,0 +1,507 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "PHP",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "SINOVA",
+ "nome": "Sistema do Prêmio Eficiência e Inovação em Práticas Públicas",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SINOVA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/28. SINOVA/APF-SINOVA-v1.0.xlsx",
+ "baseline_nome": "APF-SINOVA-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "texto_nivel": "O SINOVA foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). A contagem foi feita no inventário de 2025 a partir das 36 histórias de usuário do sistema e é a mesma usada neste inventário (Funções, célula L4, 593 PF). Para 2026 não foram disponibilizadas documentação atualizada, novos requisitos nem informações das equipes responsáveis pelo projeto.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG), em PHP",
+ "areas_negocio": "Unidade administrativa da SEPLAG responsável pela inovação em práticas públicas, a quem compete coordenar e executar a premiação (Decreto nº 1.200/2021, art. 5º, § 3º, VII); no 3º Prêmio, a Superintendência de Governança para Resultados, Eficiência e Inovação em Práticas Públicas (SUGEFI) e a Comissão Organizadora Central instituída pela Portaria nº 169/2025/SEPLAG (Edital nº 001/2025/SEPLAG/MT, item 1.1)",
+ "perfis": "Administrador do Sistema, Administrador Central, Avaliador da Triagem, Avaliador da 1ª e 2ª Etapa, Avaliador da 3ª Etapa, Avaliador da 4ª Etapa, Candidato Líder e Candidato Membro (matrizes de permissões das histórias de usuário); candidatos são servidores e empregados públicos do Poder Executivo, inscritos em grupos de 2 a 5 integrantes (Edital nº 001/2025/SEPLAG/MT, itens 5.1 e 5.3)",
+ "base_legal": "Decreto Estadual nº 1.200, de 16/12/2021 (institui a Política de Inovação em Práticas Públicas, o Sistema Central de Inovação em Práticas Públicas (SINOVA) e o Prêmio Inovação em Práticas Públicas, arts. 4º, 5º e 7º a 10); Lei Complementar Estadual nº 612/2019; Edital de Abertura de Seleção nº 001/2025/SEPLAG/MT, de 08/07/2025 (3º Prêmio Eficiência e Inovação em Práticas Públicas) e editais complementares",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O Decreto nº 1.200/2021 institui o Prêmio Inovação em Práticas Públicas como instrumento da Política de Inovação em Práticas Públicas (art. 3º, § 3º, II), atribui à SEPLAG promovê-lo ao menos uma vez por ano, com abrangência a todos os servidores, empregados públicos e militares do Poder Executivo (art. 8º), e atribui à unidade de inovação da SEPLAG coordenar e executar a premiação (art. 5º, § 3º, VII). O sistema avaliado é a ferramenta que operacionaliza o prêmio de ponta a ponta: no 3º Prêmio, as inscrições foram exclusivamente on-line, de 01/12/2025 a 31/01/2026 (Edital nº 001/2025/SEPLAG/MT, item 6.1), e as quatro etapas eliminatórias (resumo executivo, relato, entrevista e pitch) são registradas e avaliadas no sistema.",
+  "O ciclo de cada edição ocupa a maior parte do ano: o edital do 3º Prêmio foi publicado em 08/07/2025, as inscrições ocorreram entre dezembro de 2025 e janeiro de 2026, e o Edital Complementar nº 005, publicado em 07/05/2026, convocou as práticas classificadas na segunda etapa para a entrevista, nas cinco categorias (A, B1, B2, C e D). A premiação prevê, por categoria, até R$ 200 mil, R$ 170 mil e R$ 150 mil às três primeiras práticas, além de passagens aéreas e do selo \"Servidor Eficiente e Inovador em Práticas Públicas\" (item 4.3).",
+  "A inoperância do sistema impediria a realização do prêmio previsto em decreto, com inscrições, avaliações e classificações que dependem da plataforma, e comprometeria a transparência e a rastreabilidade de uma premiação em dinheiro a servidores públicos. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice do inventário de 2025."
+ ],
+ "finalidade": [
+  "O Sistema Central de Inovação em Práticas Públicas (SINOVA), instituído pelo Decreto nº 1.200/2021 (art. 4º), articula pessoas e instituições públicas e privadas para atuarem de forma coletiva e colaborativa no estímulo ao intraempreendedorismo e às práticas inovadoras no setor público, sob a governança da SEPLAG (art. 5º, § 2º). Entre seus instrumentos está o Prêmio Inovação em Práticas Públicas, forma de incentivo e reconhecimento dos servidores públicos civis e militares que desenvolvem e entregam os melhores produtos, serviços ou processos (art. 7º). O software avaliado neste laudo, registrado no inventário como Sistema Prêmio Eficiência e Inovação e identificado nas histórias de usuário como sistema SINOVA, é a ferramenta da rede SINOVA para a gestão do Prêmio Eficiência e Inovação em Práticas Públicas.",
+  "Pelas 36 histórias de usuário, o sistema permite: cadastrar e configurar cada edição do prêmio, com suas fases, categorias e perguntas dos formulários (HU_41 a HU_45); o acesso pelo MT Login (HU_07); a inscrição da prática pelo candidato líder, com os dados da equipe validados por CPF na base do SEAP e o resumo executivo, além da consulta, alteração e cancelamento da inscrição (HU_01, HU_08 a HU_12); a triagem de conformidade pela comissão e o recurso do candidato (HU_02 a HU_04); a distribuição das inscrições aos grupos de avaliadores e a avaliação, pergunta a pergunta, do resumo executivo (1ª etapa) e do relato da prática (2ª etapa), com cálculo de notas e envio das práticas mais bem classificadas à etapa seguinte (HU_05, HU_06, HU_13, HU_14, HU_18, HU_19, HU_40); a submissão do relato pelo candidato (HU_15 a HU_17); o registro da entrevista (3ª etapa) e da posição das práticas no pitch (4ª etapa) (HU_20 a HU_22 e HU_25); e relatórios de inconformidades, de participantes que não constam no SEAP, de inscrições ativas e canceladas, de práticas não implementadas no interstício exigido, de práticas avaliadas e não avaliadas e de perguntas e respostas por fase (HU_24, HU_27 a HU_30, HU_33, HU_36).",
+  "No 3º Prêmio (Edital de Abertura nº 001/2025/SEPLAG/MT, de 08/07/2025), as práticas implementadas entre 01/01/2024 e 31/12/2025 concorreram nas categorias A (Transformação Digital), B1 (Pequenas Economias), B2 (Grandes Economias ou Melhoria da Receita), C (Satisfação do Cidadão) e D (Melhoria da Gestão Pública), em quatro etapas eliminatórias: resumo executivo, relato da prática, entrevista e apresentação de pitch (itens 1.2.1, 2.1 e 3.1). As inscrições foram exclusivamente on-line, gratuitas, em grupos de 2 a 5 servidores (itens 5.3 e 6.1)."
+ ],
+ "integracoes": [
+  [
+   "MT Login",
+   "Autenticação dos usuários (HU_07)",
+   "AIE"
+  ],
+  [
+   "SEAP",
+   "Consulta do CPF, nome e matrícula dos integrantes das equipes e verificação do vínculo; relatório dos participantes que não constam no SEAP (HU_01, HU_27, HU_41)",
+   "AIE (CPF - SEAP)"
+  ],
+  [
+   "Site institucional do SINOVA (Google Sites)",
+   "Divulgação dos editais, regulamentos e resultados (Edital nº 001/2025, item 3.3)",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "HU_\\s*07",
+   "Acesso"
+  ],
+  [
+   "HU_\\s*4[1-5]|^Fase$",
+   "Gestão do Prêmio (edições, fases, categorias e perguntas)"
+  ],
+  [
+   "HU_\\s*(24|27|28|29|30|33|36)",
+   "Relatórios"
+  ],
+  [
+   "HU_\\s*(0[234])|^Triagem$|^Recurso$",
+   "Triagem de conformidade e recursos"
+  ],
+  [
+   "HU_\\s*(05|06|13|18|19|40)|^Avaliar$|^Distribuir",
+   "Distribuição e avaliação (1ª e 2ª etapas)"
+  ],
+  [
+   "HU_\\s*(15|16|17)",
+   "Relato da prática (2ª etapa)"
+  ],
+  [
+   "HU_\\s*(20|21|22|25)",
+   "Entrevista e Pitch (3ª e 4ª etapas)"
+  ],
+  [
+   "HU_\\s*(01|08|09|10|11|12|14)|^Inscrição",
+   "Inscrição e Resumo Executivo (1ª etapa)"
+  ]
+ ],
+ "ordem_modulos": [
+  "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+  "Inscrição e Resumo Executivo (1ª etapa)",
+  "Triagem de conformidade e recursos",
+  "Distribuição e avaliação (1ª e 2ª etapas)",
+  "Relato da prática (2ª etapa)",
+  "Entrevista e Pitch (3ª e 4ª etapas)",
+  "Relatórios",
+  "Acesso"
+ ],
+ "descricao_modulos": {
+  "Gestão do Prêmio (edições, fases, categorias e perguntas)": "Cadastro e edição das edições do prêmio, fases, categorias e perguntas dos formulários",
+  "Inscrição e Resumo Executivo (1ª etapa)": "Inscrição da prática e da equipe (validada no SEAP), resumo executivo, consulta, alteração, cancelamento e nota ao candidato",
+  "Triagem de conformidade e recursos": "Triagem de conformidade (deferir ou indeferir), recurso do candidato e julgamento do recurso",
+  "Distribuição e avaliação (1ª e 2ª etapas)": "Cadastro de avaliadores, distribuição das inscrições, avaliação do resumo executivo e do relato, nota final e envio à etapa seguinte",
+  "Relato da prática (2ª etapa)": "Submissão, alteração e consulta do relato da prática pelo candidato",
+  "Entrevista e Pitch (3ª e 4ª etapas)": "Envio à 3ª etapa, registro da entrevista e posição das práticas no pitch",
+  "Relatórios": "Relatórios de inconformidades, participantes fora do SEAP, inscrições ativas e canceladas, práticas não implementadas, avaliadas e não avaliadas e perguntas por fase",
+  "Acesso": "Login pelo MT Login"
+ },
+ "documentos": [
+  {
+   "codigo": "HU_01",
+   "nome": "Inscrição Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "2.0",
+   "data": "03/11/2025",
+   "aprovacao": "03/11/2025"
+  },
+  {
+   "codigo": "HU_02",
+   "nome": "Avaliar inscrição (Triagem de Conformidade)",
+   "modulo": "Triagem de conformidade e recursos",
+   "versao": "1.5",
+   "data": "10/11/2025",
+   "aprovacao": "10/11/2025"
+  },
+  {
+   "codigo": "HU_03",
+   "nome": "Recorrer Avaliação (Recurso da Triagem)",
+   "modulo": "Triagem de conformidade e recursos",
+   "versao": "1.2",
+   "data": "12/11/2024"
+  },
+  {
+   "codigo": "HU_04",
+   "nome": "Avaliar Recurso da Triagem",
+   "modulo": "Triagem de conformidade e recursos",
+   "versao": "1.2",
+   "data": "10/11/2025",
+   "aprovacao": "10/11/2025"
+  },
+  {
+   "codigo": "HU_05",
+   "nome": "Distribuir inscrições para os avaliadores",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.2",
+   "data": "11/12/2024"
+  },
+  {
+   "codigo": "HU_06",
+   "nome": "Avaliar Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.5",
+   "data": "30/09/2025"
+  },
+  {
+   "codigo": "HU_07",
+   "nome": "Realizar Login",
+   "modulo": "Acesso",
+   "versao": "1.0",
+   "data": "25/10/2024"
+  },
+  {
+   "codigo": "HU_08",
+   "nome": "Consultar Inscrição Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "1.0",
+   "data": "26/10/2024"
+  },
+  {
+   "codigo": "HU_09",
+   "nome": "Alterar Inscrição Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "2.0",
+   "data": "03/11/2025",
+   "aprovacao": "03/11/2025"
+  },
+  {
+   "codigo": "HU_10",
+   "nome": "Cancelar Inscrição Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "1.0",
+   "data": "25/10/2024"
+  },
+  {
+   "codigo": "HU_11",
+   "nome": "Inscrição Cancelada Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "1.0",
+   "data": "25/10/2024"
+  },
+  {
+   "codigo": "HU_12",
+   "nome": "Dados do Usuário - Inscrições Resumo Executivo da PPI (Primeira Etapa)",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "2.0",
+   "data": "03/11/2025",
+   "aprovacao": "03/11/2025"
+  },
+  {
+   "codigo": "HU_13",
+   "nome": "Enviar Prática Públicas para 2ª Etapa",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.0",
+   "data": "11/12/2024"
+  },
+  {
+   "codigo": "HU_14",
+   "nome": "Disponibilização da nota ao candidato Resumo Executivo",
+   "modulo": "Inscrição e Resumo Executivo (1ª etapa)",
+   "versao": "1.0",
+   "data": "17/01/2025"
+  },
+  {
+   "codigo": "HU_15",
+   "nome": "Realizar/Submeter Relato Executivo (Segunda Etapa)",
+   "modulo": "Relato da prática (2ª etapa)",
+   "versao": "1.0",
+   "data": "08/01/2025"
+  },
+  {
+   "codigo": "HU_16",
+   "nome": "Alterar Relato Executivo (Segunda Etapa)",
+   "modulo": "Relato da prática (2ª etapa)",
+   "versao": "1.0",
+   "data": "06/01/2025"
+  },
+  {
+   "codigo": "HU_17",
+   "nome": "Visualizar Relato Executivo (Segunda Etapa)",
+   "modulo": "Relato da prática (2ª etapa)",
+   "versao": "1.0",
+   "data": "17/01/2025"
+  },
+  {
+   "codigo": "HU_18",
+   "nome": "Distribuir inscrições para os avaliadores Relato Executivo",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.0",
+   "data": "17/01/2025"
+  },
+  {
+   "codigo": "HU_19",
+   "nome": "Avaliar Relato Executivo da PPI (Segunda Etapa)",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.0",
+   "data": "15/01/2025"
+  },
+  {
+   "codigo": "HU_20",
+   "nome": "Enviar Práticas Pública para 3ª Etapa",
+   "modulo": "Entrevista e Pitch (3ª e 4ª etapas)",
+   "versao": "1.0",
+   "data": "20/01/2025"
+  },
+  {
+   "codigo": "HU_21",
+   "nome": "Avaliar Entrevista (Terceira Etapa)",
+   "modulo": "Entrevista e Pitch (3ª e 4ª etapas)",
+   "versao": "2.0",
+   "data": "28/04/2025"
+  },
+  {
+   "codigo": "HU_22",
+   "nome": "Visualizar Práticas Pública da Entrevista",
+   "modulo": "Entrevista e Pitch (3ª e 4ª etapas)",
+   "versao": "2.0",
+   "data": "28/04/2025"
+  },
+  {
+   "codigo": "HU_24",
+   "nome": "Relatório de Inconformidade",
+   "modulo": "Relatórios",
+   "versao": "1.0",
+   "data": "20/01/2025"
+  },
+  {
+   "codigo": "HU_25",
+   "nome": "Inserir Avaliação das Práticas Pública na 4ª Etapa",
+   "modulo": "Entrevista e Pitch (3ª e 4ª etapas)",
+   "versao": "3.0",
+   "data": "19/05/2025"
+  },
+  {
+   "codigo": "HU_27",
+   "nome": "Relatório de Participantes que Não constam no SEAP",
+   "modulo": "Relatórios",
+   "versao": "2.0",
+   "data": "03/10/2025",
+   "aprovacao": "03/10/2025"
+  },
+  {
+   "codigo": "HU_28",
+   "nome": "Relatório de Inscrições Ativas",
+   "modulo": "Relatórios",
+   "versao": "2.0",
+   "data": "03/11/2025",
+   "aprovacao": "03/11/2025"
+  },
+  {
+   "codigo": "HU_29",
+   "nome": "Relatório de Inscrições Canceladas",
+   "modulo": "Relatórios",
+   "versao": "2.0",
+   "data": "03/11/2025",
+   "aprovacao": "03/11/2025"
+  },
+  {
+   "codigo": "HU_30",
+   "nome": "Relatório das Práticas Não Implementadas no Interstício Exigido",
+   "modulo": "Relatórios",
+   "versao": "1.1",
+   "data": "10/11/2025",
+   "aprovacao": "10/11/2025"
+  },
+  {
+   "codigo": "HU_33",
+   "nome": "Relatório das Práticas Avaliadas e Não avaliadas",
+   "modulo": "Relatórios",
+   "versao": "1.1",
+   "data": "10/11/2025",
+   "aprovacao": "10/11/2025"
+  },
+  {
+   "codigo": "HU_36",
+   "nome": "Relatório das perguntas e respostas por fase",
+   "modulo": "Relatórios",
+   "versao": "1.0",
+   "data": "23/09/2025",
+   "aprovacao": "23/09/2025"
+  },
+  {
+   "codigo": "HU_40",
+   "nome": "Distribuir inscrições para os avaliadores",
+   "modulo": "Distribuição e avaliação (1ª e 2ª etapas)",
+   "versao": "1.0",
+   "data": "04/12/2025",
+   "aprovacao": "04/12/2025"
+  },
+  {
+   "codigo": "HU_41",
+   "nome": "Gerenciar Prêmio Cadastrar nova Edição",
+   "modulo": "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+   "versao": "1.0",
+   "data": "15/10/2025"
+  },
+  {
+   "codigo": "HU_42",
+   "nome": "Gerenciar Prêmio Editar Prêmio de Inovação",
+   "modulo": "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+   "versao": "1.0",
+   "data": "15/10/2025"
+  },
+  {
+   "codigo": "HU_43",
+   "nome": "Gerenciar Prêmio Visualizar Prêmio (Fase do Prêmio)",
+   "modulo": "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+   "versao": "1.0",
+   "data": "15/10/2025"
+  },
+  {
+   "codigo": "HU_44",
+   "nome": "Gerenciar Prêmio Visualizar Prêmio (Categorias do Prêmio)",
+   "modulo": "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+   "versao": "1.0",
+   "data": "15/10/2025"
+  },
+  {
+   "codigo": "HU_45",
+   "nome": "Gerenciar Prêmio Visualizar Prêmio (Perguntas do Formulário)",
+   "modulo": "Gestão do Prêmio (edições, fases, categorias e perguntas)",
+   "versao": "1.0",
+   "data": "15/10/2025"
+  }
+ ],
+ "formato_us": "HU_{:02d}",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido e hospedado pela SEPLAG",
+ "uso": "Em produção; utilizado no 3º Prêmio Eficiência e Inovação em Práticas Públicas (inscrições de 01/12/2025 a 31/01/2026 e etapas de avaliação em 2026)",
+ "beneficio": "Potencial de serviço para o Estado: operacionalização digital do prêmio previsto no Decreto nº 1.200/2021, com inscrição, triagem, avaliação em quatro etapas, recursos e relatórios, que dá rastreabilidade a uma premiação em dinheiro a servidores públicos",
+ "fase_texto": "Sistema em produção, utilizado no 3º Prêmio",
+ "custo_incorrido": "O SINOVA foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das 36 histórias de usuário do sistema (premissas, critérios de aceitação, regras de negócio, matrizes de permissões, histórico de alterações e aprovações), do Decreto nº 1.200/2021, do Edital de Abertura nº 001/2025/SEPLAG/MT (compilado) e do Edital Complementar nº 005/2026, e conferência da planilha de contagem APF-SINOVA-v1.0",
+ "documentacao_resumo": "36 histórias de usuário (Anexo I), as mesmas do inventário de 2025, mais o decreto e os editais do 3º Prêmio",
+ "documentacao_fonte": "As histórias de usuário são as mesmas do inventário de 2025; para 2026 não foram compartilhadas documentação atualizada, novos requisitos ou informações pelas equipes responsáveis pelo projeto. A tabela A2 traz a última versão de cada história e, quando registrada no histórico de alterações, a data da aprovação pelo gestor funcional.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. Para 2026 não foram disponibilizadas documentação atualizada, novos requisitos nem informações das equipes responsáveis; a avaliação foi feita com a documentação existente e disponibilizada.",
+ "texto_evolucao": "A baseline v1.0, de 10/12/2025, foi a primeira medição do sistema e é a mesma usada neste inventário: 593 PF no nível Estimativo. Na revisão de 23/11/2026 foram preenchidos os quadros de escopo e documentação da aba Contagem e corrigida a tecnologia (PHP); as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Edições do prêmio, fase, inscrição, triagem, recurso, avaliação, avaliadores",
+  "MT Login; CPF - SEAP",
+  "Cadastrar categorias, deferir ou indeferir triagem, registrar entrevista",
+  "Consultar inscrição, listar práticas, exportar PDF/XLS",
+  "Calcular nota final, enviar práticas em lote, relatórios de inscrições"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "10/12/2025",
+   "pf": 593,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 1,00; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 593,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0 (Contagem revisada); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 593,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre exclusivamente do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (593 PF) e o Valor Institucional (1,00) permanecem os do inventário de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "O site institucional do SINOVA e as demais ações da rede SINOVA (plano estratégico de inovação, laboratório de inovação, programas de aceleração e capacitação), que não são suportadas pelas funções do sistema avaliado.",
+  "Os sistemas MT Login e SEAP, apenas lidos e contados como AIE."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 1.200, de 16/12/2021",
+   "Institui a Política de Inovação em Práticas Públicas",
+   "16/12/2021",
+   "SINOVA (arts. 4º e 5º) e Prêmio Inovação em Práticas Públicas (arts. 7º a 10)"
+  ],
+  [
+   "Edital de Abertura de Seleção nº 001/2025/SEPLAG/MT (compilado até o Edital Complementar nº 001, de 12/11/2025)",
+   "3º Prêmio Eficiência e Inovação em Práticas Públicas",
+   "08/07/2025",
+   "Categorias, etapas, premiação, público e inscrição on-line"
+  ],
+  [
+   "Edital Complementar nº 005 ao Edital nº 001/2025/SEPLAG/MT",
+   "Diário Oficial nº 29.227, p. 4",
+   "07/05/2026",
+   "Convocação das práticas para a 3ª etapa (entrevista), uso do sistema em 2026"
+  ],
+  [
+   "Planilha de contagem APF-SINOVA v1.0",
+   "Pasta do sistema",
+   "10/12/2025; Contagem revisada em 23/11/2026",
+   "Funções de dados e de transação e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho, preço, VI e valor do inventário de 2025"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Abrangência do sistema: o SINOVA do Decreto nº 1.200/2021 é um sistema institucional de articulação de unidades e pessoas, com frentes como o plano estratégico de inovação, o laboratório central de inovação e programas de aceleração e capacitação. As histórias de usuário e a contagem cobrem apenas a gestão do Prêmio Eficiência e Inovação em Práticas Públicas; o valor deste laudo refere-se a esse software, e não às demais ações da rede SINOVA.",
+  "Várias histórias de usuário de 2024 mencionam o 2º Prêmio e não foram revisadas para o 3º Prêmio. Recomenda-se à equipe do projeto atualizar as histórias e registrar sua aprovação a cada edição.",
+  "Na planilha, o grupo da HU_12 está identificado como \"HU_11 - Dados do Usuário\", e há funções de mesmo nome registradas em mais de uma história (por exemplo, \"Enviar Prática Pública em Lote pela Comissão Julgadora Central\" e \"Avaliar Prática Pública - Enviar Avaliação em Lote\" nas HU_19 e HU_20, e \"Edições do Prêmio - Listar\" nas HU_41 e HU_42). Recomenda-se ao analista de métricas confirmar, na próxima revisão da baseline, se são processos elementares distintos; o tamanho de 593 PF da planilha foi mantido.",
+  "A aba Contagem registrava a tecnologia Java, divergente do registro da comissão e da informação da área (PHP); o campo foi corrigido na revisão de 23/11/2026.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação."
+ ],
+ "modulos_tabela": [
+  [
+   "Gestão do Prêmio (edições, fases, categorias e perguntas): 28 funções, 120 PF",
+   "Cadastro e edição das edições do prêmio, fases, categorias e perguntas dos formulários (HU_41 a HU_45)"
+  ],
+  [
+   "Inscrição e Resumo Executivo (1ª etapa): 32 funções, 136 PF",
+   "Inscrição da prática e da equipe (validada no SEAP), resumo executivo, consulta, alteração, cancelamento e nota ao candidato (HU_01, HU_08 a HU_12 e HU_14)"
+  ],
+  [
+   "Triagem de conformidade e recursos: 17 funções, 74 PF",
+   "Triagem de conformidade (deferir ou indeferir), recurso do candidato e julgamento do recurso (HU_02 a HU_04)"
+  ],
+  [
+   "Distribuição e avaliação (1ª e 2ª etapas): 26 funções, 118 PF",
+   "Cadastro de avaliadores, distribuição das inscrições, avaliação do resumo executivo e do relato, nota final e envio à etapa seguinte (HU_05, HU_06, HU_13, HU_18, HU_19 e HU_40)"
+  ],
+  [
+   "Relato da prática (2ª etapa): 3 funções, 13 PF",
+   "Submissão, alteração e consulta do relato da prática pelo candidato (HU_15 a HU_17)"
+  ],
+  [
+   "Entrevista e Pitch (3ª e 4ª etapas): 15 funções, 64 PF",
+   "Envio à 3ª etapa, registro da entrevista e posição das práticas no pitch (HU_20 a HU_22 e HU_25)"
+  ],
+  [
+   "Relatórios: 14 funções, 63 PF",
+   "Relatórios de inconformidades, participantes fora do SEAP, inscrições ativas e canceladas, práticas não implementadas, avaliadas e não avaliadas e perguntas por fase (HU_24, HU_27 a HU_30, HU_33 e HU_36)"
+  ],
+  [
+   "Acesso: 1 funções, 5 PF",
+   "Login pelo MT Login (HU_07)"
+  ]
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "sigla": "Recadastramento",
+ "medida": "Indicativa (NESMA)",
+ "pf": 665.0,
+ "preco_pf": 1215.09,
+ "vt": 808034.85,
+ "vi": 0.75,
+ "va": 1414060.99,
+ "funcoes": 23,
+ "por_tipo": {
+  "ALI": [
+   16,
+   560.0
+  ],
+  "AIE": [
+   7,
+   105.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   23,
+   147.0,
+   665.0
+  ]
+ },
+ "por_modulo": {
+  "Dados mantidos pelo sistema (ALI)": 560.0,
+  "Dados de outros sistemas lidos pelo sistema (AIE)": 105.0
+ }
+}

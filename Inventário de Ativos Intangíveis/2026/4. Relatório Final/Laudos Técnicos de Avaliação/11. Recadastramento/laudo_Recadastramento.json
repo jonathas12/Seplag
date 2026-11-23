@@ -1,0 +1,200 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47)",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "texto_acompanham": "As planilhas de contagem, as normas e os demais documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "sigla": "Recadastramento",
+ "nome": "Sistema de Recadastramento (Atualização Cadastral Periódica)",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_RECADASTRAMENTO_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/11. Recadastramento/APF-Recadastramento-v1.0.xlsx",
+ "baseline_nome": "APF-Recadastramento-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "formula_tamanho": "16 ALI x 35 PF + 7 AIE x 15 PF (planilha APF-Recadastramento-v1.0, aba Sumário 1, célula G47)",
+ "texto_nivel": "O Recadastramento foi medido no nível Indicativo (NESMA), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE); o peso das transações está embutido nesses valores. Não foram disponibilizadas histórias de usuário nem outra documentação funcional: a medição foi feita por navegação no sistema, em 11/12/2023, e é a mesma usada nos inventários de 2023 a 2025. O tamanho indicativo está na aba Sumário 1, célula G47.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Secretaria Adjunta de Gestão de Pessoas da SEPLAG, por meio da Coordenadoria de Monitoramento de Pessoal (CMP), que analisa as regularizações extemporâneas, retira a suspensão do pagamento no SEAP e disponibiliza os relatórios da atualização cadastral (IN nº 008/2025/SEPLAG, arts. 13 a 16); unidades setoriais de gestão de pessoas dos órgãos e entidades (arts. 8º e 9º)",
+ "perfis": "Servidores e empregados públicos ativos da Administração Direta e Indireta do Poder Executivo, que acessam com o usuário e a senha do Portal do Servidor (IN nº 008/2025/SEPLAG, arts. 1º, parágrafo único, e 3º); chefias imediatas, que validam o vínculo e o efetivo exercício e conferem os documentos (art. 8º); unidades setoriais de gestão de pessoas e a Coordenadoria de Monitoramento de Pessoal da SEPLAG",
+ "base_legal": "Decreto Estadual nº 692, de 19/10/2020 (atualização cadastral periódica obrigatória dos servidores da Administração Direta e Indireta do Poder Executivo); Instrução Normativa nº 008/2025/SEPLAG, de 25/09/2025 (DOE de 29/09/2025), alterada pela Instrução Normativa nº 007/2026/SEPLAG, que revogou a IN nº 008/2024/SEPLAG; Leis Complementares nº 04/1990, nº 112/2002, nº 207/2004, nº 555/2014 e nº 118/2002 (deveres funcionais); Lei Estadual nº 7.692/2002, arts. 38 a 42; Decreto nº 466/2023 (TCAC)",
+ "vi": 0.75,
+ "vi_justificativa": [
+  "A atualização cadastral periódica é obrigatória para os servidores públicos da Administração Direta e Indireta do Poder Executivo, incluindo efetivos, comissionados, requisitados, cedidos, permutados, afastados, licenciados, militares, empregados públicos, contratados temporários, residentes técnicos e estagiários (Decreto nº 692/2020; IN nº 008/2025/SEPLAG, art. 1º). O servidor que não a realiza no prazo é considerado inadimplente e tem suspenso o pagamento da remuneração mensal ou das verbas rescisórias a partir da folha seguinte, sem prejuízo de apuração disciplinar (art. 10), e o órgão que descumpre os prazos fica sujeito a regime cautelar de bloqueio de seus sistemas corporativos (art. 18).",
+  "O uso do sistema é sazonal, concentrado no período anual de atualização cadastral (de 01/10/2025 a 30/11/2025 na redação original da IN nº 008/2025 e de 01/11/2026 a 30/12/2026 na redação dada pela IN nº 007/2026, art. 2º), o que motivou o índice 0,50 nos inventários de 2023 a 2025. Nesta avaliação, porém, o ciclo de 2026 está em curso (notícia de 29/10/2026) e a norma vigente reforça a obrigatoriedade e as consequências do descumprimento.",
+  "A inoperância do sistema durante o ciclo impediria a atualização obrigatória de todos os servidores ativos do Poder Executivo, com risco de suspensão de pagamentos e de comprometimento do controle de lotação e de efetivo exercício (art. 9º). Nessas condições, a inoperância provocaria prejuízo de alto impacto, o que corresponde ao nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ."
+ ],
+ "finalidade": [
+  "O Sistema de Recadastramento é a plataforma digital da atualização cadastral periódica obrigatória dos servidores públicos ativos da Administração Direta e Indireta do Poder Executivo de Mato Grosso, instituída pelo Decreto nº 692/2020 e regulamentada pela IN nº 008/2025/SEPLAG. O objetivo é corrigir, atualizar e ampliar os dados cadastrais de natureza pessoal e funcional, com foco na eficiência, na transparência e na moralidade da Administração (art. 1º), e comprovar o efetivo exercício dos servidores (notícia de 29/10/2026).",
+  "O acesso é feito pelo site da SEPLAG, no link do Recadastramento, ou pelo Portal do Servidor, com o mesmo usuário e senha do portal; a recuperação de senha usa o e-mail cadastrado no Sistema Estadual de Administração de Pessoas (SEAP) (art. 3º). A atualização tem nove etapas (art. 5º): 1) dados pessoais, com foto 3x4 opcional, vedado o uso de recursos de inteligência artificial que alterem as características faciais (redação da IN nº 007/2026); 2) documentação pessoal, com anexos obrigatórios; 3) endereço e telefones, com comprovante de endereço; 4) formações acadêmicas; 5) cursos de capacitação; 6) habilidades e experiências profissionais; 7) dependentes; 8) questionário de saúde e bem-estar, facultativo; e 9) informações funcionais e indicação da chefia imediata para validação do vínculo. O servidor pode salvar e retomar o preenchimento, e a atualização é concluída com a validação do vínculo pela chefia e a emissão do comprovante com número de protocolo (arts. 5º, § 2º, e 7º).",
+  "A chefia imediata, ou a unidade setorial de gestão de pessoas, confere os documentos anexados e valida ou não o efetivo exercício em até 2 dias úteis (art. 8º); a unidade setorial usa as informações para regularizar a lotação no SEAP e identificar servidores sem chefia vinculada (art. 9º); e a Secretaria Adjunta de Gestão de Pessoas disponibiliza relatórios da atualização cadastral e trata as regularizações extemporâneas, requeridas no SIGADOC (arts. 13 e 14). As informações do recadastramento também atualizam o Banco de Talentos e o Currículo Gov.MT, disponível no Portal do Servidor (notícia de 29/10/2026).",
+  "O sistema deu origem ao Censo Previdenciário do MTPrev: o Decreto nº 468/2023 (art. 17) considerou o recadastramento dos servidores ativos de 2023 como primeira fase do Censo 2023, e a SEPLAG adaptou o código do Recadastramento para o Censo (notícia de 18/12/2023, citada no laudo do Censo). Desde então são aplicações distintas, com bases de dados, usuários e objetivos de negócio próprios."
+ ],
+ "integracoes": [
+  [
+   "SEAP (Sistema Estadual de Administração de Pessoas)",
+   "Servidor, órgãos, unidades, endereço, exercício, público-alvo e e-mail para recuperação de senha; regularização de lotação e da suspensão de pagamento",
+   "AIE (Servidor, Órgãos, Unidade, Endereço, Exercício, Público Alvo) e ALI Importação - Bases Externas"
+  ],
+  [
+   "Portal do Servidor",
+   "Canal de acesso e credenciais (IN nº 008/2025, art. 3º)",
+   "Fora da fronteira"
+  ],
+  [
+   "Banco de Talentos e Currículo Gov.MT",
+   "Recebem as formações, capacitações e experiências informadas (notícia de 29/10/2026)",
+   "Fora da fronteira (consumidores dos dados)"
+  ],
+  [
+   "Sistema do Censo Previdenciário (MTPrev)",
+   "Aplicação derivada do Recadastramento",
+   "Fora da fronteira: aplicação distinta, avaliada em laudo próprio"
+  ]
+ ],
+ "modulos": {},
+ "modulo_por_tipo": {
+  "ALI": "Dados mantidos pelo sistema (ALI)",
+  "AIE": "Dados de outros sistemas lidos pelo sistema (AIE)"
+ },
+ "ordem_modulos": [
+  "Dados mantidos pelo sistema (ALI)",
+  "Dados de outros sistemas lidos pelo sistema (AIE)"
+ ],
+ "descricao_modulos": {
+  "Dados mantidos pelo sistema (ALI)": "Ciclos, etapas, regularização de servidores, usuários e perfis, validação de documentos e de vínculo, cadastros de chefia, de UECMP e de órgãos vinculados, importação de bases externas e dados da Prefeitura de Cuiabá",
+  "Dados de outros sistemas lidos pelo sistema (AIE)": "Exercício, público-alvo, órgãos, servidor, endereço, auditoria e unidade"
+ },
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido, hospedado e evoluído pela SEPLAG",
+ "uso": "Em produção; uso anual obrigatório, com o ciclo de 2026 em curso (01/11/2026 a 30/12/2026)",
+ "beneficio": "Potencial de serviço para o Estado: atualização obrigatória dos dados pessoais e funcionais de todos os servidores ativos do Poder Executivo, comprovação de efetivo exercício e controle de lotação",
+ "fase_texto": "Sistema em produção, com ciclos anuais de atualização cadastral",
+ "custo_incorrido": "O Recadastramento foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 692/2020 (citado na IN), da IN nº 008/2025/SEPLAG com as alterações da IN nº 007/2026/SEPLAG e da notícia de 29/10/2026, e conferência da planilha de contagem APF-Recadastramento-v1.0",
+ "documentacao_resumo": "Planilha de contagem v1.0, IN nº 008/2025/SEPLAG e notícia oficial (Anexo I). Não há histórias de usuário nem especificação funcional",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário nem especificação funcional até a data de fechamento deste laudo. A medição foi feita por navegação no sistema, e os documentos abaixo fundamentam a finalidade, as etapas, a base legal e as integrações.",
+ "documentos": [],
+ "ressalva_documentacao": "Não foram disponibilizadas histórias de usuário nem especificação funcional do Recadastramento. A ausência de documentação motivou a contagem indicativa; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A baseline v1.0, de 11/12/2023, registra 16 ALI e 7 AIE (665 PF) e foi usada nos inventários de 2023 a 2026. Na revisão de 23/11/2026 foram corrigidos o nível de detalhe e o quadro de documentação da aba Contagem; as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Ciclo, etapas, regularização, validação de vínculo e de documentos, chefia",
+  "Servidor, órgãos, unidade, endereço (SEAP)",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "11/12/2023",
+   "pf": 665,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,50"
+  },
+  {
+   "inventario": 2024,
+   "data": "11/12/2023",
+   "pf": 665,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,50"
+  },
+  {
+   "inventario": 2025,
+   "data": "09/12/2025",
+   "pf": 665,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0; VI 0,50"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 665,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.0 (Contagem revisada); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 665,
+  "preco_pf": 943.25,
+  "vi": 0.5,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da elevação do Valor Institucional de 0,50 para 0,75, pelo ciclo de atualização cadastral em curso e pela norma vigente. O tamanho funcional permanece 665 PF.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "O Portal do Servidor (autenticação), o SEAP e os sistemas que consomem os dados (Banco de Talentos, Currículo Gov.MT).",
+  "As transações (EE, CE e SE), cujo peso está embutido na contagem indicativa."
+ ],
+ "outros_documentos": [
+  [
+   "Instrução Normativa nº 008/2025/SEPLAG, alterada pela IN nº 007/2026/SEPLAG",
+   "Diário Oficial, p. 66; assinada pelo Secretário de Estado de Planejamento e Gestão",
+   "25/09/2025; publicada em 29/09/2025",
+   "Obrigatoriedade, público, etapas, prazos, responsabilidades, suspensão do pagamento e regularização"
+  ],
+  [
+   "Decreto Estadual nº 692, de 19/10/2020",
+   "Citado nos considerandos da IN nº 008/2025",
+   "19/10/2020",
+   "Atualização cadastral periódica obrigatória"
+  ],
+  [
+   "Notícia \"Servidores ativos de MT têm até 30 de dezembro para realizar recadastramento obrigatório de 2026\"",
+   "Portal da SEPLAG",
+   "29/10/2026",
+   "Ciclo de 2026, público, etapas, Banco de Talentos e Currículo Gov.MT"
+  ],
+  [
+   "Planilha de contagem APF-Recadastramento v1.0",
+   "Pasta do sistema",
+   "11/12/2023; Contagem revisada em 23/11/2026",
+   "Funções de dados e tamanho indicativo"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ]
+ ],
+ "texto_anexo2": "Relação das 23 funções de dados da aba Funções da planilha APF-Recadastramento-v1.0.xlsx, com a contribuição de cada uma na contagem indicativa (35 PF por ALI e 15 PF por AIE). A coluna Complex. registra a complexidade usada na aba Funções, que não se aplica à medida indicativa.",
+ "ressalvas_extras": [
+  "Relação com o Censo Previdenciário: o Recadastramento e o Censo são aplicações distintas, com bases de dados, usuários e objetivos de negócio próprios; o código-fonte do Recadastramento foi adaptado para o Censo. As 23 funções de dados do Recadastramento têm correspondentes na baseline do Censo, o que decorre da origem comum e não configura dupla contagem do mesmo ativo. A definição dos produtos cabe à área de TI e aos demandantes; a comissão recomenda que documentem a separação entre os dois produtos.",
+  "Entre as funções de dados há cinco ALI referentes à Prefeitura de Cuiabá (175 PF); recomenda-se à TI confirmar, na documentação funcional, sua pertinência ao escopo do Recadastramento dos servidores do Poder Executivo.",
+  "A contagem é indicativa e foi feita por navegação no sistema, sem documentação funcional; a versão de 11/12/2023 não reflete eventuais alterações dos ciclos de 2024 a 2026 (como as regras da IN nº 007/2026). Recomenda-se à TI e à Secretaria Adjunta de Gestão de Pessoas a elaboração de documentação funcional e a atualização da baseline.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação.",
+  "A aba Contagem registrava nível \"Detalhada (IFPUG)\" e, no quadro de documentação (A22), o ambiente de homologação do WEBPonto, referências que não correspondem a esta contagem; os campos foram corrigidos na cópia da planilha que acompanha este laudo, com data de revisão 23/11/2026."
+ ],
+ "modulos_tabela": [
+  [
+   "Dados mantidos pelo sistema (ALI): 16 funções, 560 PF",
+   "Ciclos, etapas, regularização de servidores, usuários e perfis, validação de documentos e de vínculo, cadastros de chefia, de UECMP e de órgãos vinculados, importação de bases externas e dados da Prefeitura de Cuiabá"
+  ],
+  [
+   "Dados de outros sistemas lidos pelo sistema (AIE): 7 funções, 105 PF",
+   "Exercício, público-alvo, órgãos, servidor, endereço, auditoria e unidade"
+  ]
+ ]
+}

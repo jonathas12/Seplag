@@ -1,0 +1,283 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "Portal do Servidor",
+ "nome": "Portal do Servidor - Serviços",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_PORTAL_DO_SERVIDOR_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/9. Portal do Servidor/Baseline-Portal do Servidor-v1.5.xlsx",
+ "baseline_nome": "Baseline-Portal do Servidor-v1.5.xlsx",
+ "baseline_versao": "1.5",
+ "medida": "PF Local da FS",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "vida_util": "Indefinida",
+ "texto_nivel": "O Portal do Servidor foi medido no nível Detalhado (IFPUG CPM 4.3.1): as funções têm tipos de dados e arquivos ou registros referenciados identificados e complexidade calculada. A medida adotada é o PF Local da FS (Funções, célula L6, 513,2 PF), mesmo critério dos laudos do SIGPAS e do SIEP; o PF IFPUG da planilha é de 524 PF (célula L4). A diferença vem das quatro cargas de dados (EE do tipo AER), deflacionadas pelo Roteiro de Métricas do SISP.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Secretaria Adjunta de Gestão de Pessoas da SEPLAG e unidades setoriais de gestão de pessoas (folha de pagamento, férias, licenças, certidões e saúde e segurança no trabalho); Coordenadoria de Gestão de Saúde e Segurança no Trabalho, aprovadora das especificações da CAT",
+ "perfis": "Servidores ativos, aposentados e pensionistas (autoatendimento); chefias imediatas (aprovação de férias e licença-prêmio, escalas); unidades de gestão de pessoas e de saúde e segurança no trabalho; público geral, na emissão e verificação de autenticidade de certidões (UC0003 e UC0004). As funcionalidades exibidas dependem do perfil de acesso de cada usuário",
+ "base_legal": "Instrução Normativa nº 003/2025/SEPLAG (processamento de eventos no ciclo mensal da folha de pagamento e conformidade dos contracheques, art. 11); Instrução Normativa nº 008/2025/SEPLAG (o acesso ao Recadastramento usa as credenciais do Portal do Servidor, art. 3º, § 1º); Decreto nº 393, de 15/01/2016 (Manual de Saúde e Segurança no Trabalho, base da CAT); Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais)",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O Portal do Servidor é o canal de autoatendimento comum a todos os servidores ativos, aposentados e pensionistas do Poder Executivo: nele são emitidos o holerite, a ficha financeira e a Cédula C (comprovante de rendimentos para o Imposto de Renda), consultados os dados pessoais, o retrato funcional e o extrato previdenciário, e solicitadas e aprovadas as férias e a licença-prêmio. Também emite certidões funcionais com verificação de autenticidade por QR Code, inclusive para o público geral, e recebe a Comunicação de Acidente de Trabalho (CAT), com o número do recibo no eSocial.",
+  "O portal é ainda a porta de autenticação de outros serviços da SEPLAG: a IN nº 008/2025/SEPLAG determina que o recadastramento anual obrigatório use o mesmo usuário e senha do Portal do Servidor (art. 3º, § 1º), e o portal dá acesso, por atalho, à Declaração de Bens e Valores, ao agendamento de perícia médica e ao Banco de Talentos.",
+  "A inoperância do portal impediria o acesso dos servidores a documentos financeiros e funcionais de uso cotidiano, os fluxos de férias e licenças e o acesso aos serviços que dependem de suas credenciais. Nessas condições, a inoperância provocaria prejuízo de altíssimo impacto, o que corresponde ao nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ (1,00 no inventário de 2024 e 0,75 nos de 2023 e 2025)."
+ ],
+ "finalidade": [
+  "O Portal do Servidor é a plataforma digital de autoatendimento e consulta funcional do Poder Executivo de Mato Grosso, desenvolvida e gerida pela SEPLAG para servidores ativos, aposentados e pensionistas. Funciona como um hub de serviços: as funcionalidades exibidas a cada usuário dependem do perfil de acesso atribuído, e as informações funcionais e financeiras vêm do Sistema Estadual de Administração de Pessoas (SEAP).",
+  "Pela contagem, o portal oferece ao servidor: dados pessoais e vínculo; holerite, ficha financeira e Cédula C; retrato funcional; extrato previdenciário; extrato, agendamento e aprovação de férias e de licença-prêmio; e emissão de certidões. Para as chefias e unidades de gestão de pessoas, oferece gestão de pessoas, controle de chefias e de perfis de chefia, gestão de escalas e de férias, liberação de férias, controle de data limite, órgãos vinculados, relatórios e a solicitação de indenização de professores temporários da SEDUC.",
+  "As certidões foram especificadas nos casos de uso UC0001 a UC0005 (2021 e 2022): emissão de certidões negativa disciplinar, de vínculo funcional e de vínculo previdenciário por servidores ativos e inativos e pelo público geral, com QR Code, e verificação de autenticidade. A Comunicação de Acidente de Trabalho (CAT), especificada com base no Manual de Saúde e Segurança no Trabalho (Decreto nº 393/2016), permite ao servidor ou testemunha preencher a comunicação em etapas, consultar dados pessoais, visualizar o número do recibo do eSocial e gerar o relatório em PDF (Sprint 1, aprovada em 07/02/2023).",
+  "O portal dá acesso, por atalho autenticado, a sistemas que têm fronteira própria e não compõem seu tamanho: Recadastramento, Declaração de Bens e Valores (DBV), agendamento de perícia médica, Banco de Talentos, consulta da tabela salarial e agendamento de psicoterapia on-line."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Dados funcionais, financeiros, de férias, licenças e certidões",
+   "AIE"
+  ],
+  [
+   "eSocial",
+   "Número do recibo da CAT informado ao eSocial",
+   "Registrado na CAT (Sprint 1)"
+  ],
+  [
+   "Recadastramento, DBV, Perícia Médica e Banco de Talentos",
+   "Acesso por atalho autenticado com as credenciais do portal",
+   "Fora da fronteira: aplicações com laudo próprio"
+  ],
+  [
+   "Tabela salarial e psicoterapia on-line",
+   "Acesso por atalho",
+   "Fora da fronteira; para a tabela salarial não há informação suficiente para identificar a aplicação"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^(Dados Pessoais|Vínculo|Holerite|Ficha Financeira|Cédula C|Retrato Funcional|Extrato Previdenciário|Bens e Valores)$",
+   "Consultas funcionais e financeiras"
+  ],
+  [
+   "^(Férias|Licença Prêmio|Gestão de Férias|Liberação de Férias|Controle Data Limite)",
+   "Férias e licença-prêmio"
+  ],
+  [
+   "^(Certidões|UC000)",
+   "Certidões"
+  ],
+  [
+   "CAT",
+   "Comunicação de Acidente de Trabalho (CAT)"
+  ],
+  [
+   "^(Gestão de Pessoas|Chefia|Gestão de Escala|Controle Perfil Chefia|Órgão Vinculado|Órgãos Vinculados|Solicitação de Indenização)",
+   "Gestão de pessoas e chefias"
+  ],
+  [
+   "^(Login do Usuário|Perfil Usuários|Relatórios|Carga de dados)",
+   "Acesso, perfis e cargas de dados"
+  ]
+ ],
+ "ordem_modulos": [
+  "Consultas funcionais e financeiras",
+  "Férias e licença-prêmio",
+  "Certidões",
+  "Comunicação de Acidente de Trabalho (CAT)",
+  "Gestão de pessoas e chefias",
+  "Acesso, perfis e cargas de dados"
+ ],
+ "documentos": [
+  {
+   "codigo": "UC0001",
+   "nome": "Emitir Certidões - Servidor Ativo",
+   "modulo": "Certidões",
+   "versao": "1.0",
+   "data": "24/01/2022",
+   "aprovacao": "08/10/2021"
+  },
+  {
+   "codigo": "UC0002",
+   "nome": "Emitir Certidões - Servidor Inativo",
+   "modulo": "Certidões",
+   "versao": "1.0",
+   "data": "24/01/2022",
+   "aprovacao": "08/10/2021"
+  },
+  {
+   "codigo": "UC0003",
+   "nome": "Emitir Certidões - Público Geral",
+   "modulo": "Certidões",
+   "versao": "1.0",
+   "data": "24/01/2022",
+   "aprovacao": "08/10/2021"
+  },
+  {
+   "codigo": "UC0004",
+   "nome": "Verificar Autenticidade Certidões",
+   "modulo": "Certidões",
+   "versao": "1.0",
+   "data": "14/09/2021"
+  },
+  {
+   "codigo": "UC0005",
+   "nome": "Emitir Certidão Negativa Disciplinar no SEAP",
+   "modulo": "Certidões",
+   "versao": "1.0",
+   "data": "07/03/2022"
+  },
+  {
+   "codigo": "CAT-S1",
+   "nome": "Preenchimento da CAT - Sprint 1",
+   "modulo": "Comunicação de Acidente de Trabalho (CAT)",
+   "versao": "1.0",
+   "data": "02/02/2023",
+   "aprovacao": "07/02/2023"
+  },
+  {
+   "codigo": "CAT-S2",
+   "nome": "CAT - Sprint 2 (não medida)",
+   "modulo": "Fora da medida",
+   "versao": "1.1",
+   "data": "27/02/2024",
+   "aprovacao": "14/09/2023"
+  }
+ ],
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido, hospedado e evoluído pela SEPLAG",
+ "uso": "Em produção; uso contínuo por servidores ativos, aposentados e pensionistas",
+ "beneficio": "Potencial de serviço para o Estado: autoatendimento funcional e financeiro de todos os servidores, certidões com verificação de autenticidade, CAT e acesso autenticado a outros serviços",
+ "fase_texto": "Sistema em produção",
+ "custo_incorrido": "O Portal do Servidor foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura dos casos de uso UC0001 a UC0005 (certidões), das especificações da CAT (Sprints 1 e 2), das Instruções Normativas nº 003/2025 e nº 008/2025/SEPLAG, e conferência das planilhas de contagem v1.2 a v1.5",
+ "documentacao_resumo": "Casos de uso das certidões e especificações da CAT (Anexo I); as demais funcionalidades não têm documentação funcional disponibilizada",
+ "documentacao_fonte": "Só há documentação funcional para as certidões (UC0001 a UC0005) e para a CAT. As demais funcionalidades foram medidas por navegação no sistema, e a governança por perfil de acesso limita a visão de todas as funções disponíveis.",
+ "ressalva_documentacao": "A documentação funcional do portal não foi disponibilizada até a data de fechamento deste laudo, exceto para as certidões e a CAT. Como as funcionalidades exibidas dependem do perfil de acesso, a medição por navegação pode não alcançar todas as funções existentes; o tamanho pode estar subestimado.",
+ "texto_evolucao": "A planilha evoluiu da v1.2 (485,4 PF Local da FS, inventário de 2023) para a v1.3 (536 PF IFPUG, inventários de 2024 e 2025) e, em 2026, para a v1.4, que excluiu as contagens de manutenção cosmética (cards de atalho) e incluiu as certidões e a CAT, e para a v1.5, que removeu quatro funções duplicadas do grupo Certidões (19 PF). A v1.5 tem 524 PF IFPUG e 513,2 PF Local da FS.",
+ "exemplos_tipos": [
+  "Dados pessoais, agendamento de licença-prêmio, gestão de pessoas, perfis",
+  "Holerite, férias, Cédula C, retrato funcional (SEAP)",
+  "Solicitar férias, liberar férias, preencher a CAT",
+  "Consultar dados pessoais, verificar autenticidade de certidão",
+  "Emitir holerite, ficha financeira, certidões"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "11/12/2023",
+   "pf": 485.4,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.2 (PF Local da FS); VI 0,75"
+  },
+  {
+   "inventario": 2024,
+   "data": "20/12/2024",
+   "pf": 536,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.3 (PF IFPUG); VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "09/12/2025",
+   "pf": 536,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.3 (PF IFPUG); VI 0,75"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 513.2,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.5 (PF Local da FS); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 536,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Em produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026, da elevação do Valor Institucional de 0,75 para 1,00 e da revisão do tamanho (de 536 PF IFPUG para 513,2 PF Local da FS): saíram as contagens de manutenção cosmética e as funções duplicadas das certidões, e entraram as certidões documentadas e a CAT.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais, atividades de sustentação e manutenções cosméticas, como os cards de atalho, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Os sistemas acessados por atalho (Recadastramento, DBV, Perícia Médica, Banco de Talentos, serviços de saúde) e a tabela salarial, sem informação suficiente para identificar a aplicação.",
+  "A CAT Sprint 2, cuja documentação não permitiu medição segura."
+ ],
+ "outros_documentos": [
+  [
+   "Instrução Normativa nº 003/2025/SEPLAG",
+   "Diário Oficial, p. 44 a 47 (protocolo 1674335)",
+   "publicada em 14/03/2025",
+   "Ciclo mensal da folha de pagamento e conformidade dos contracheques"
+  ],
+  [
+   "Instrução Normativa nº 008/2025/SEPLAG",
+   "DOE de 29/09/2025",
+   "25/09/2025",
+   "Credenciais do Portal do Servidor no Recadastramento (art. 3º, § 1º)"
+  ],
+  [
+   "Planilhas de contagem Baseline-Portal do Servidor v1.2 a v1.5",
+   "Pasta do sistema",
+   "2023 a 2026; v1.5 de 23/11/2026",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ]
+ ],
+ "texto_acompanham": "As planilhas de contagem, os casos de uso, as especificações da CAT e as normas do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Duplicações removidas: a v1.4 mantinha o grupo antigo Certidões e incluía os casos de uso UC0001 a UC0005, o que contava duas vezes a emissão das certidões negativa disciplinar, de vínculo funcional e de vínculo previdenciário e o arquivo de dados disciplinares do SEAP. A v1.5 removeu as quatro funções do grupo antigo (19 PF) e manteve as funções documentadas nos casos de uso; as remoções estão registradas na coluna Observações da aba Funções.",
+  "Medida adotada: neste inventário adota-se o PF Local da FS (critério do SIGPAS e do SIEP); os inventários anteriores usaram o PF Local da FS (2023) e o PF IFPUG (2024 e 2025). Recomenda-se manter o PF Local da FS nos próximos inventários.",
+  "A CAT Sprint 2 e a tabela salarial não foram medidas por falta de informação suficiente; recomenda-se à TI documentar essas funcionalidades e confirmar a qual aplicação pertence a tabela salarial.",
+  "Não há registro do custo de desenvolvimento nem do custo do projeto. Recomenda-se à gestão de TI apurar e registrar, por produto, o esforço e o custo da equipe interna de desenvolvimento e sustentação."
+ ],
+ "modulos_tabela": [
+  [
+   "Consultas funcionais e financeiras: 14 funções, 81 PF",
+   "Dados pessoais, vínculo, holerite, ficha financeira, Cédula C, retrato funcional, extrato previdenciário e acesso à Declaração de Bens e Valores"
+  ],
+  [
+   "Férias e licença-prêmio: 36 funções, 149 PF",
+   "Extrato, agendamento e consulta de férias e de licença-prêmio; gestão, liberação e validação de férias; controle de data limite"
+  ],
+  [
+   "Certidões: 8 funções, 32 PF",
+   "Emissão de certidões negativa disciplinar, de vínculo funcional e de vínculo previdenciário, com QR Code, e verificação de autenticidade (UC0001 a UC0005)"
+  ],
+  [
+   "Comunicação de Acidente de Trabalho (CAT): 5 funções, 21 PF",
+   "Consulta de dados pessoais, preenchimento do formulário, número do recibo do eSocial e relatório em PDF (CAT Sprint 1)"
+  ],
+  [
+   "Gestão de pessoas e chefias: 43 funções, 188 PF",
+   "Gestão de pessoas, chefias e perfil de chefia, escalas, órgãos vinculados, aprovações e solicitação de indenização de professores temporários da SEDUC"
+  ],
+  [
+   "Acesso, perfis e cargas de dados: 14 funções, 42,2 PF",
+   "Login, perfis de usuários, relatórios e cargas de dados (férias, vínculos, usuários, chefias e dados pessoais)"
+  ]
+ ]
+}

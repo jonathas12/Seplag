@@ -1,0 +1,52 @@
+{
+ "sigla": "Portal do Servidor",
+ "medida": "PF Local da FS",
+ "pf": 513.2,
+ "preco_pf": 1215.09,
+ "vt": 623584.19,
+ "vi": 1.0,
+ "va": 1247168.38,
+ "funcoes": 120,
+ "por_tipo": {
+  "ALI": [
+   11,
+   80.0
+  ],
+  "AIE": [
+   17,
+   89.0
+  ],
+  "EE": [
+   32,
+   118.2
+  ],
+  "CE": [
+   47,
+   165.0
+  ],
+  "SE": [
+   13,
+   61.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   116,
+   512.0,
+   512.0
+  ],
+  "AER": [
+   4,
+   12.0,
+   1.2
+  ]
+ },
+ "por_modulo": {
+  "Consultas funcionais e financeiras": 81.0,
+  "Férias e licença-prêmio": 149.0,
+  "Certidões": 32.0,
+  "Comunicação de Acidente de Trabalho (CAT)": 21.0,
+  "Gestão de pessoas e chefias": 188.0,
+  "Acesso, perfis e cargas de dados": 42.2
+ }
+}

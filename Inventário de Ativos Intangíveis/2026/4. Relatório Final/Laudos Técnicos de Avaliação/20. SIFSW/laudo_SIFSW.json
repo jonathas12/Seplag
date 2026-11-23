@@ -1,0 +1,533 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "cidade_data": "Cuiabá/MT, 23 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "SIFSW",
+ "nome": "Sistema da Inteligência de Competências de Fábrica de Software",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIFSW_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/20. SIFSW/APF-Baseline-SIFSW-v0.7.xlsx",
+ "baseline_nome": "APF-Baseline-SIFSW-v0.7.xlsx",
+ "baseline_versao": "0.7",
+ "situacao": "Em desenvolvimento (suspenso)",
+ "tecnologia": "Java (back-end Spring) e React (front-end)",
+ "vida_util": "Indefinida",
+ "excluir_grupos": [
+  "\\[US_(22|24|25|26|27|28|29|32|33|34)\\]"
+ ],
+ "medida_descricao": "PF IFPUG das histórias entregues (Sprints 1 e 2): 612 PF dos 837 PF da aba Funções; os 225 PF das histórias sem entrega ficam fora da medida",
+ "texto_nivel": "O SIFSW foi medido no nível Detalhado (IFPUG CPM 4.3.1): cada função tem os tipos de dados (TD) e os arquivos ou registros referenciados (AR/TR) identificados e a complexidade calculada (baixa, média ou alta). A planilha APF-Baseline-SIFSW-v0.7 conta 837 PF para as histórias US_02 a US_35, tamanho adotado no inventário de 2025. Para 2026, a comissão adotou apenas as histórias entregues pela contratada no repositório da SEPLAG (Sprints 1 e 2), que somam 612 PF; as histórias previstas para a Sprint 3 (225 PF) não têm entrega registrada.",
+ "tipo_bem": "Software em desenvolvimento, contratado pela SEPLAG e construído pela fábrica de software do Contrato nº 014/2022/SEPLAG (Ordem de Serviço nº 14); código-fonte entregue no repositório da SEPLAG",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG (CRP Tecnologia), Grupos de Atividades I (levantamento de requisitos, análise e projeto, 25%) e II (construção, testes e homologação, 75%), conforme a OS nº 14; gestão do contrato e do projeto pela SEPLAG",
+ "areas_negocio": "Superintendência de Governança Digital e Inovação em Práticas Públicas (SUGDIPP), demandante (DOD de 01/11/2023), com gestor funcional designado em 10/11/2023; Coordenadoria de Gestão Estratégica de TIC (CGETIC/SUGDIPP); coordenação de planejamento e projetos de TI da SEPLAG, gestora da fábrica de software",
+ "perfis": "Administrador, Gestor de Contrato, Fiscal de Contrato e Observador de Projetos, com acesso configurado no sistema Manopla (Documento de Escopo DES_01, seção Atores); público-alvo do DOD: equipe da Governança Digital, órgãos e secretarias que aderirem aos serviços, MTI e parceiro da MTI",
+ "base_legal": "Contrato nº 014/2022/SEPLAG (fábrica de software) e Ordem de Serviço nº 14, de 05/01/2024; Documento de Oficialização da Demanda de 01/11/2023 (Sigadoc SEPLAGDIC202325863); IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 2º, § 1º, 9º, 18 e 23",
+ "vi": 0.25,
+ "vi_justificativa": [
+  "O SIFSW não está em produção nem em uso. As funcionalidades entregues nas Sprints 1 (15/03/2024) e 2 (31/10/2024) foram disponibilizadas apenas em ambiente de teste da SEPLAG. Em 28/08/2025 a coordenação de planejamento e projetos de TI informou a retomada do projeto com a Sprint 3 e a previsão da Sprint 4, a última, para outubro de 2025; em 05/09/2025, a mesma coordenação informou que, por necessidade de rever as demandas da fábrica, o projeto deu lugar ao SIGPAS e seria retomado após as pendências mais críticas, sem nova data.",
+  "Nessas condições, a inoperância do sistema não causa prejuízo às atividades do órgão, que não dependem dele; o potencial de serviço é apenas futuro e condicionado à conclusão do projeto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice dos inventários de 2024 e 2025."
+ ],
+ "finalidade": [
+  "O SIFSW (Gestão por Competências de Fábrica de Software) nasceu do Documento de Oficialização da Demanda da Superintendência de Governança Digital e Inovação em Práticas Públicas (SUGDIPP), assinado em 01/11/2023, para suprir a ausência de estimativa, aferição, gestão e conferência do planejamento e da contratação de serviços de desenvolvimento, manutenção e sustentação de software por Unidade de Serviço Técnico (UST). O objetivo é uma ferramenta que permita estimar, aferir, gerir e conferir os resultados dos projetos, formatar propostas comerciais, controlar mudanças, manter histórico e servir de mecanismo de governança das fábricas de software, com vantajosidade nas aquisições de TIC. O DOD lista 18 requisitos mínimos, entre eles multiempresa, visão sistêmica, contratos, unidades de medida (UST e pontos de função), catálogo de serviços, projetos, propostas, estimativas, ordens de serviço, níveis mínimos de serviço, cálculo da remuneração e garantias.",
+  "O Documento de Escopo (DES_01, aprovado em 20/12/2023) organizou o projeto em: acesso (pelo MT Login e pelo Manopla), cadastros (órgãos, unidades, unidades de medida e fábricas a partir da estrutura Thanos), gerenciamento do catálogo de serviços, de propostas, de projetos, de contratos e de ordens de serviço, nessa ordem de prioridade. A execução foi autorizada em 08/11/2023 e contratada pela Ordem de Serviço nº 14 do Contrato nº 014/2022/SEPLAG, de 05/01/2024, com 490 PF indicativos e orçamento de R$ 223.930,00, aceita pela contratada no mesmo dia.",
+  "Pelas histórias de usuário entregues, o sistema permite: manter o catálogo de serviços, suas categorias, aplicações, serviços, atividades, entregáveis e tipos de complexidade (US_02 a US_07 e US_35); manter propostas comerciais com cenários, serviços e estimativa, enviá-las para validação, aprovar, reprovar, cancelar, gerar nova versão e registrar e consultar o histórico (US_08 a US_18); e manter projetos, com partes interessadas, profissionais e histórico (US_19 a US_21, US_30 e US_31). As histórias de compromissos, riscos, arquivos e anotações, iterações, entregas, indicadores e mudança de situação do projeto (US_22, US_24 a US_29 e US_32 a US_34) foram especificadas e aprovadas, mas não têm entrega registrada; os gerenciamentos de contratos e de ordens de serviço não chegaram a ser especificados em histórias de usuário.",
+  "Situação: o código das Sprints 1 e 2 está no repositório Gitlab da SEPLAG (branches OS14_2023_Entrega_1_versao_1.1.0 e OS14_2023_Entrega_2_versao_1.2.0) e as funcionalidades foram apresentadas aos usuários em ambiente de teste. Em julho de 2025 a fiscalização do contrato propôs concluir o SIFSW com 168,75 PF do Grupo II; a Sprint 3 foi submetida à fábrica em agosto de 2025 e suspensa em 05/09/2025, quando o projeto deu lugar ao SIGPAS."
+ ],
+ "integracoes": [
+  [
+   "MT Login",
+   "Autenticação de usuários (DES_01, Integrações)",
+   "Fora da fronteira"
+  ],
+  [
+   "Manopla",
+   "Cadastro de usuários, perfis e permissões (DES_01, Premissas e Atores)",
+   "AIE (Usuário)"
+  ],
+  [
+   "Thanos (ERP SEPLAG)",
+   "Órgãos, unidades, pessoas físicas e jurídicas, cargos e funções (DES_01; US_02, US_05, US_20, US_21, US_22)",
+   "AIE (Órgão, Cargo/Função, Pessoa, Função)"
+  ],
+  [
+   "Sistema de Contratos (SIAG-C)",
+   "Dados dos contratos, por REST API ou views (DES_01, Integrações); não especificado em história de usuário",
+   "Não contado"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "\\[US_(0[2-7]|35)\\]",
+   "Catálogo de serviços"
+  ],
+  [
+   "\\[US_(0[89]|1[0-8])\\]",
+   "Propostas comerciais"
+  ],
+  [
+   "\\[US_(19|2[01]|3[01])\\]",
+   "Projetos"
+  ]
+ ],
+ "ordem_modulos": [
+  "Catálogo de serviços",
+  "Propostas comerciais",
+  "Projetos"
+ ],
+ "modulos_tabela": [
+  [
+   "Catálogo de serviços: 64 funções, 250 PF",
+   "Catálogo, categorias, aplicações, serviços, atividades, entregáveis e tipos de complexidade (US_02 a US_07 e US_35)"
+  ],
+  [
+   "Propostas comerciais: 33 funções, 149 PF",
+   "Proposta, cenários, serviços do cenário, estimativa, envio para validação, aprovação, reprovação, cancelamento, nova versão e histórico (US_08 a US_18)"
+  ],
+  [
+   "Projetos: 57 funções, 213 PF",
+   "Projeto, partes interessadas, profissionais e histórico do projeto (US_19 a US_21, US_30 e US_31)"
+  ],
+  [
+   "Não entregue (fora da medida): 59 funções, 225 PF",
+   "Compromissos e histórico, riscos, arquivos e anotações, iterações, entregas, indicadores, executar, concluir e retornar situação do projeto (US_22, US_24 a US_29 e US_32 a US_34)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US_02",
+   "nome": "Manter Catálogo de Serviços",
+   "versao": "2.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_03",
+   "nome": "Manter Categorias do Catálogo",
+   "versao": "2.0",
+   "data": "05/02/2024",
+   "aprovacao": "05/02/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_04",
+   "nome": "Manter Aplicações do Catálogo",
+   "versao": "3.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_05",
+   "nome": "Manter Serviços do Catálogo",
+   "versao": "4.0",
+   "data": "01/08/2024",
+   "aprovacao": "01/08/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_06",
+   "nome": "Manter Atividades do Serviço",
+   "versao": "2.0",
+   "data": "05/02/2024",
+   "aprovacao": "05/02/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_07",
+   "nome": "Manter Entregáveis do Serviço",
+   "versao": "2.0",
+   "data": "05/02/2024",
+   "aprovacao": "05/02/2024",
+   "modulo": "Catálogo de serviços"
+  },
+  {
+   "codigo": "US_08",
+   "nome": "Manter Proposta",
+   "versao": "2.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_09",
+   "nome": "Manter Cenários da Proposta",
+   "versao": "1.0",
+   "data": "01/02/2024",
+   "aprovacao": "01/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_10",
+   "nome": "Manter Serviços do Cenário",
+   "versao": "2.0",
+   "data": "01/08/2024",
+   "aprovacao": "01/08/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_11",
+   "nome": "(Proposta) Enviar para Validação",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "(Proposta) Cancelar",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "(Proposta) Aprovar",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_14",
+   "nome": "(Proposta) Reprovar",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_15",
+   "nome": "(Proposta) Gerar nova versão",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_16",
+   "nome": "Gerar Histórico da Proposta",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_17",
+   "nome": "Visualizar Histórico da Proposta",
+   "versao": "1.0",
+   "data": "21/02/2024",
+   "aprovacao": "21/02/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_19",
+   "nome": "Manter Projeto",
+   "modulo": "Projetos",
+   "versao": "2.0",
+   "data": "documento não disponibilizado"
+  },
+  {
+   "codigo": "US_18",
+   "nome": "(Proposta) Manter Estimativa",
+   "versao": "2.0",
+   "data": "17/10/2024",
+   "aprovacao": "17/10/2024",
+   "modulo": "Propostas comerciais"
+  },
+  {
+   "codigo": "US_20",
+   "nome": "Manter Partes Interessadas do Projeto",
+   "versao": "3.0",
+   "data": "28/10/2024",
+   "aprovacao": "28/10/2024",
+   "modulo": "Projetos"
+  },
+  {
+   "codigo": "US_21",
+   "nome": "Manter Profissionais do Projeto",
+   "versao": "2.0",
+   "data": "31/10/2024",
+   "aprovacao": "31/10/2024",
+   "modulo": "Projetos"
+  },
+  {
+   "codigo": "US_22",
+   "nome": "Manter Compromissos do Projeto",
+   "versao": "1.0",
+   "data": "25/03/2024",
+   "aprovacao": "25/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_23",
+   "nome": "Gerar Histórico do Compromisso",
+   "versao": "1.0",
+   "data": "25/03/2024",
+   "aprovacao": "25/03/2024",
+   "modulo": "Projetos"
+  },
+  {
+   "codigo": "US_24",
+   "nome": "Visualizar Histórico do Compromisso",
+   "versao": "1.0",
+   "data": "25/03/2024",
+   "aprovacao": "25/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_25",
+   "nome": "Manter Riscos do Projeto",
+   "versao": "1.0",
+   "data": "28/03/2024",
+   "aprovacao": "28/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_26",
+   "nome": "Manter Arquivos/Anotações do Projeto",
+   "versao": "1.0",
+   "data": "28/03/2024",
+   "aprovacao": "28/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_27",
+   "nome": "Manter Iterações do Projeto",
+   "versao": "1.0",
+   "data": "28/03/2024",
+   "aprovacao": "28/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_28",
+   "nome": "Manter Entregas do Projeto",
+   "versao": "1.0",
+   "data": "28/03/2024",
+   "aprovacao": "28/03/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_29",
+   "nome": "Visualizar Indicadores do Projeto",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_30",
+   "nome": "Gerar Histórico do Projeto",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Projetos"
+  },
+  {
+   "codigo": "US_31",
+   "nome": "Visualizar Histórico do Projeto",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Projetos"
+  },
+  {
+   "codigo": "US_32",
+   "nome": "(Projeto) Executar",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_33",
+   "nome": "(Projeto) Concluir",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_34",
+   "nome": "(Projeto) Retornar para a Situação Anterior",
+   "versao": "1.0",
+   "data": "24/04/2024",
+   "aprovacao": "24/04/2024",
+   "modulo": "Não entregue (Sprint 3 suspensa)"
+  },
+  {
+   "codigo": "US_35",
+   "nome": "Manter Tipos de Complexidades",
+   "versao": "1.0",
+   "data": "01/08/2024",
+   "aprovacao": "01/08/2024",
+   "modulo": "Catálogo de serviços"
+  }
+ ],
+ "formato_us": "US_{:02d}",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, produzido pela contratada no âmbito do Contrato nº 014/2022/SEPLAG e entregue no repositório Gitlab da SEPLAG (e-mails de entrega das Sprints 1 e 2)",
+ "rotulo_uso": "Uso e obsolescência",
+ "uso": "Não está em uso: as funcionalidades entregues estão em ambiente de teste e o projeto está suspenso desde 05/09/2025; não há obsolescência tecnológica declarada (o art. 2º, § 2º, II, trata de sistemas fora de uso por obsolescência ou defasagem tecnológica)",
+ "beneficio": "Potencial de serviço futuro, condicionado à conclusão do projeto: gestão do catálogo de serviços, das propostas comerciais e dos projetos das fábricas de software",
+ "rotulo_fase": "Ativo em desenvolvimento",
+ "fase_texto": "Projeto em fase de desenvolvimento, com 612 PF entregues e suspenso. O art. 9º exige, para o reconhecimento, que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos para concluí-lo; a intenção foi registrada em julho e agosto de 2025, mas a suspensão de setembro de 2025 deixou o projeto sem previsão de retomada (Seção 8)",
+ "conclusao_reconhecimento": "O SIFSW é mantido no inventário como ativo em desenvolvimento (art. 2º, § 1º), avaliado pela metodologia do art. 11 sobre as funcionalidades entregues, com a ressalva da Seção 8: o atendimento ao art. 9º depende da decisão da TI e da área de negócio sobre a conclusão do projeto.",
+ "custo_incorrido": "O SIFSW foi construído pela fábrica de software do Contrato nº 014/2022/SEPLAG e o custo pago à contratada está registrado no painel de custos (Seção 6.4). Esse custo não inclui a equipe da SEPLAG (gestão do projeto e do contrato e infraestrutura), cujo custo não é apurado por produto; por isso o bem é avaliado pela metodologia do art. 11, e o custo serve de referência de coerência.",
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIFSW foi contratado e desenvolvido integralmente pela fábrica de software do Contrato nº 014/2022/SEPLAG (OS nº 14, Grupos de Atividades I e II), a fiscalização do contrato registra o custo do projeto com a contratada. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026; os pagamentos do SIFSW concentram-se de janeiro a outubro de 2024.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto SIFSW)",
+    345673.29
+   ]
+  ],
+  "custo_total": 345673.29,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto SIFSW)"
+  ],
+  "pf_faturado": 1602.8,
+  "preco_contrato": 493.72,
+  "nota_preco_contrato": "preço atual do PF indicado no painel; R$ 457,00 na abertura da OS nº 14 (05/01/2024)",
+  "interpretacao": [
+   "Os pontos de função faturados (1.602,8 PF) superam o tamanho medido porque o faturamento mede cada entrega ao longo do projeto, com os deflatores do contrato e os percentuais de cada grupo de atividades: o Grupo I (levantamento de requisitos, análise e projeto) remunerou a especificação de todas as histórias, inclusive as que não foram construídas. O painel indica 4% de retrabalho e nenhum ticket.",
+   "O custo médio por PF faturado (R$ 215,67) fica abaixo do preço atual do PF no painel (R$ 493,72); o painel estima economia de R$ 163.734,63 (32,1%) em relação ao mercado."
+  ],
+  "conclusao": "O custo pago à contratada (R$ 345.673,29) inclui a especificação das histórias não entregues e é inferior ao valor do tamanho entregue (VT). Com o projeto suspenso, esse gasto só se converte em potencial de serviço se o sistema for concluído e colocado em uso; caso contrário, o valor do ativo deve ser reduzido ao valor recuperável (art. 18)."
+ },
+ "analise_documental": "Leitura do DOD, do Documento de Escopo DES_01, da OS nº 14, das 33 histórias de usuário disponibilizadas, dos e-mails de entrega das Sprints 1 e 2 e dos e-mails de 2023 a 2025 sobre a autorização, a retomada e a suspensão do projeto, e conferência da planilha APF-Baseline-SIFSW-v0.7",
+ "documentacao_resumo": "33 histórias de usuário, DOD, Documento de Escopo, OS nº 14 e e-mails do projeto (Anexo I)",
+ "documentacao_fonte": "A tabela A2 traz a última versão de cada história e a data de aprovação registrada no histórico de versões. A coluna Módulo indica as histórias sem entrega registrada, que ficam fora da medida.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. A US_19 (Manter Projeto), entregue na Sprint 2, não foi disponibilizada; suas funções foram consideradas com base na planilha e no e-mail de entrega.",
+ "texto_tamanho_ref": "O tamanho refere-se às funcionalidades entregues pela contratada no repositório da SEPLAG (Sprints 1 e 2), ainda não em produção.",
+ "texto_evolucao": "A planilha de contagem passou da v0.6 (836 PF, inventário de 2024) para a v0.7 (837 PF, inventário de 2025), ambas com as histórias US_02 a US_35. Neste inventário a planilha foi mantida e a medida passou a considerar só as histórias entregues (612 PF).",
+ "exemplos_tipos": [
+  "Catálogo, serviços, proposta, cenário, projeto, partes interessadas",
+  "Usuário (Manopla); Órgão, Pessoa, Cargo/Função (Thanos)",
+  "Incluir serviço, aprovar proposta, gerar nova versão",
+  "Pesquisar propostas, visualizar histórico",
+  "Estimativa da proposta, relatórios"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2024,
+   "data": "14/08/2024",
+   "pf": 836,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em homologação",
+   "uso": "Baseline v0.6; VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 837,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Baseline v0.7; VI 0,25"
+  },
+  {
+   "inventario": 2026,
+   "data": "23/11/2026",
+   "pf": 612,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento (suspenso)",
+   "uso": "Baseline v0.7, só histórias entregues; VI 0,25"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2024 e 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 837,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Em desenvolvimento"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da redução do tamanho adotado, de 837 para 612 PF, pela exclusão das histórias sem entrega registrada. O Valor Institucional permanece 0,25.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "As histórias US_22, US_24 a US_29 e US_32 a US_34 (225 PF), sem entrega registrada.",
+  "Os gerenciamentos de contratos e de ordens de serviço, previstos no DOD e no DES_01 mas não especificados.",
+  "Os sistemas MT Login, Manopla, Thanos e SIAG-C."
+ ],
+ "texto_vida_util": [
+  "A vida útil do SIFSW é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. Como o bem ainda não está disponível para uso, a contagem da vida útil não começou (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da suspensão do projeto (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Documento de Oficialização da Demanda - Gestão por Competências de Fábrica de Software",
+   "Sigadoc SEPLAGDIC202325863, assinado pelo Superintendente da SUGDIPP",
+   "01/11/2023",
+   "Problema, objetivo, justificativa, requisitos mínimos e público-alvo"
+  ],
+  [
+   "E-mail \"PROJETO - Gestão por Competências de Fábrica de Software\"",
+   "Coordenação de planejamento e projetos de TI",
+   "08/11/2023 a 10/11/2023",
+   "Recebimento do DOD, autorização, registro no Redmine e designação do gestor funcional"
+  ],
+  [
+   "Documento de Escopo [DES_01] v1.00",
+   "Contratada",
+   "aprovado em 20/12/2023",
+   "Escopo, prioridades, integrações, atores e requisitos não funcionais"
+  ],
+  [
+   "Ordem de Serviço nº 14 do Contrato nº 014/2022/SEPLAG",
+   "Sigadoc SEPLAGCAP202400206",
+   "05/01/2024",
+   "490 PF indicativos, R$ 223.930,00, Grupos I (25%) e II (75%); aceite da contratada em 05/01/2024"
+  ],
+  [
+   "E-mails de entrega das Sprints 1 e 2",
+   "Contratada",
+   "15/03/2024 e 31/10/2024",
+   "Histórias entregues, ambiente de teste e branches no Gitlab da SEPLAG"
+  ],
+  [
+   "E-mail \"[CONTINUAR PROJETOS] SIGED, SIFSW e SIGS\"",
+   "Fiscalização do contrato",
+   "15/07/2025 e 24/07/2025",
+   "Intenção de concluir o SIFSW (168,75 PF do Grupo II) e recomendação de revisar o backlog"
+  ],
+  [
+   "E-mails \"Re: Backlog SIFSW\"",
+   "Coordenação de planejamento e projetos de TI e área demandante",
+   "13/12/2024 a 05/09/2025",
+   "Retomada com a Sprint 3 (28/08/2025) e suspensão em favor do SIGPAS (05/09/2025)"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software",
+   "Fiscalização do Contrato nº 014/2022/SEPLAG",
+   "TRDs até 07/2026",
+   "Custo do projeto e PF faturados"
+  ],
+  [
+   "Planilhas de contagem APF-Baseline-SIFSW v0.6 e v0.7",
+   "Pasta do sistema",
+   "2024 e 2025; Contagem revisada em 23/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, o DOD, a OS nº 14 e os e-mails do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Continuidade do projeto e reconhecimento: a IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º), desde que a entidade tenha condições de demonstrar a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos técnicos, financeiros e outros para concluí-lo (art. 9º, I, II e V). O SIFSW não está em uso, e a última manifestação registrada (05/09/2025) suspendeu o projeto sem data de retomada. Sem a demonstração desses requisitos, o bem não gera benefícios econômicos futuros nem potencial de serviços, e caberia a baixa patrimonial e contábil ou o reconhecimento da perda por redução ao valor recuperável (art. 18). Como não foram disponibilizadas informações que assegurem essa decisão, a comissão mantém o SIFSW no inventário com esta ressalva e recomenda à área de TI e à área de negócio (SUGDIPP) que decidam formalmente pela conclusão do projeto, com cronograma e recursos, ou pelo seu encerramento; a decisão deve ser comunicada ao setor contábil (art. 23).",
+  "Tamanho adotado: das 837 PF da planilha, 225 PF correspondem a histórias especificadas e aprovadas (US_22, US_24 a US_29 e US_32 a US_34) sem entrega registrada; essas funções ficam fora da medida, e as entregues somam 612 PF. A conferência baseou-se nos e-mails de entrega das Sprints 1 e 2; recomenda-se à fiscalização do contrato confirmar, nos Termos de Recebimento Definitivo, as histórias efetivamente recebidas.",
+  "A aba Contagem da planilha registrava nível \"Estimativa (NESMA)\" (F7) e, no campo Aplicação (F5), \"Web Ponto 2.0\". Todas as 213 funções têm TD e AR/TR preenchidos e complexidades calculadas, o que caracteriza contagem detalhada, nível que consta no registro histórico da comissão (Dados.xlsx). Os dois campos foram corrigidos na revisão de 23/11/2026; as correções não alteram o tamanho."
+ ]
+}

@@ -204,3 +204,14 @@ Fluxo e regras que se repetiram:
 - Na medida indicativa, só os ALI/AIE novos entram (ex.: 72 PF estimativos viraram 2 ALI = 70 PF); as transações ficam
   registradas na planilha e o laudo diz isso no texto do nível e no Anexo II.
 - `quebrar_rotulos_grafico` é a largura em caracteres (ex.: 22), não booleano. Sem histórias de usuário, usar `modulos_tabela`.
+
+## Projeto suspenso ou não entregue (SIFSW, 2026)
+
+- Cruzar a baseline com os e-mails de entrega das sprints (histórias entregues no Git da SEPLAG). Funções de histórias sem
+  entrega registrada ficam fora da medida, por decisão do usuário: `_Modelo_Institucional/laudo_apf_entregue.py` aceita
+  `excluir_grupos` (regex sobre o grupo) e confere entregue + excluído = total da planilha, sem alterar a baseline.
+  Campos extras: `medida_descricao`, `texto_tamanho_ref`, `rotulo_uso`, `rotulo_fase`, `conclusao_reconhecimento`.
+- Ativo em desenvolvimento sem uso: citar IN 03/2022, art. 2º, § 1º (reconhecimento de projetos em desenvolvimento), art. 9º,
+  I, II e V (viabilidade, intenção e recursos para concluir), art. 18 (redução ao valor recuperável) e art. 23 (comunicar
+  ao setor contábil). A comissão recomenda a decisão (concluir ou encerrar); não decide a baixa.
+- Conferir o nível da contagem pela planilha, não só pelo F7: TD e AR/TR preenchidos e complexidades variadas = Detalhada.

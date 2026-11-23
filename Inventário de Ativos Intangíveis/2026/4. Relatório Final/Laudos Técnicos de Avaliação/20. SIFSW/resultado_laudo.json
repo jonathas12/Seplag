@@ -1,0 +1,44 @@
+{
+ "sigla": "SIFSW",
+ "medida": "PF IFPUG",
+ "pf": 612.0,
+ "preco_pf": 1215.09,
+ "vt": 743635.08,
+ "vi": 0.25,
+ "va": 929543.85,
+ "funcoes": 154,
+ "por_tipo": {
+  "ALI": [
+   14,
+   101.0
+  ],
+  "AIE": [
+   5,
+   25.0
+  ],
+  "EE": [
+   79,
+   287.0
+  ],
+  "CE": [
+   54,
+   185.0
+  ],
+  "SE": [
+   2,
+   14.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   154,
+   612.0,
+   612.0
+  ]
+ },
+ "por_modulo": {
+  "Catálogo de serviços": 250.0,
+  "Propostas comerciais": 149.0,
+  "Projetos": 213.0
+ }
+}

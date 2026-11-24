@@ -1,0 +1,39 @@
+{
+ "sigla": "SINER",
+ "medida": "PF IFPUG",
+ "pf": 456.0,
+ "preco_pf": 1215.09,
+ "vt": 554081.04,
+ "vi": 0.75,
+ "va": 969641.82,
+ "funcoes": 109,
+ "por_tipo": {
+  "ALI": [
+   17,
+   125.0
+  ],
+  "EE": [
+   62,
+   226.0
+  ],
+  "CE": [
+   30,
+   105.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   109,
+   456.0,
+   456.0
+  ]
+ },
+ "por_modulo": {
+  "Reeducandos": 70.0,
+  "Vagas, seleção e acompanhamento": 86.0,
+  "Empresas e instituições": 71.0,
+  "Cadastros de apoio": 192.0,
+  "Relatórios e solicitações": 14.0,
+  "Usuários e acesso": 23.0
+ }
+}

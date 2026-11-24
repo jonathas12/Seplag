@@ -1,0 +1,357 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "cidade_data": "Cuiabá/MT, 24 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "SIGS",
+ "nome": "Sistema de Inteligência de Gestão de Serviços",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGS_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/7. SIGS/APF- Baseline SIGS - v0.6.xlsx",
+ "baseline_nome": "APF- Baseline SIGS - v0.6.xlsx",
+ "baseline_versao": "0.6",
+ "situacao": "Em produção, sem uso (desenvolvimento interrompido)",
+ "tecnologia": "Java (back-end Spring Boot) e React (front-end), banco de dados Oracle",
+ "vida_util": "Indefinida",
+ "excluir_grupos": [
+  "\\[US_(09|1[014-9]|2[014-9]|3[0-3])\\]"
+ ],
+ "medida_descricao": "PF IFPUG das 8 histórias desenvolvidas e entregues na Sprint 1: 293 PF dos 659 PF da aba Funções (v0.6); os 366 PF das histórias não desenvolvidas ficam fora da medida",
+ "texto_nivel": "O SIGS foi medido no nível Detalhado (IFPUG CPM 4.3.1): cada função tem os tipos de dados (TD) e os arquivos ou registros referenciados (AR/TR) identificados e a complexidade calculada (baixa, média ou alta). A planilha APF- Baseline SIGS v0.5 conta 685 PF para as histórias US_04 a US_33, tamanho adotado nos inventários de 2024 e 2025. Na revisão de 24/11/2026 (v0.6) a comissão removeu 3 funções contadas em duplicidade e 2 funções retiradas das histórias antes da entrega (26 PF), e a planilha passou a 659 PF. Para 2026 a comissão adotou apenas as 8 histórias desenvolvidas e formalizadas na Sprint 1, que somam 293 PF; as demais histórias foram especificadas no Grupo de Atividades I, mas não foram desenvolvidas.",
+ "tipo_bem": "Software contratado pela SEPLAG e construído pela fábrica de software do Contrato nº 014/2022/SEPLAG (Ordem de Serviço nº 12); código-fonte entregue no repositório Gitlab da SEPLAG; funcionalidades da Sprint 1 em produção desde 03/09/2024",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG (CRP Tecnologia), Grupos de Atividades I (levantamento de requisitos, análise e projeto, 25%) e II (construção, testes e homologação, 75%), conforme a OS nº 12; gestão do contrato e do projeto pela SEPLAG",
+ "areas_negocio": "Coordenadoria de Transportes (COT) e Superintendência de Gestão de Serviços (SGS), da Secretaria Adjunta de Patrimônio e Serviços, demandantes (CI nº 04356/2023/COT/SEPLAG e DOD de 03/10/2023); coordenação de planejamento e projetos de TI da SEPLAG, gestora da fábrica de software",
+ "perfis": "Administrador e usuários com permissão de acesso às funcionalidades, configurados no sistema Manopla (DES_01, Premissas e Atores); condutor, que assina o termo de responsabilidade pelo link enviado por e-mail (US_22)",
+ "base_legal": "Contrato nº 014/2022/SEPLAG (fábrica de software) e Ordem de Serviço nº 12, de 24/10/2023; processo Sigadoc SEPLAG-PRO-2023/10247 (CI nº 04356/2023/COT/SEPLAG e DOD, de 03/10/2023); Decreto nº 2.067/2009 e IN nº 003/SEPLAG/2019 (recadastramento anual de condutores, citados no e-mail de modelagem de 08/05/2024); IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 2º, § 1º, 9º, 18 e 23",
+ "vi": 0.25,
+ "vi_justificativa": [
+  "As funcionalidades da Sprint 1 (cadastro e avaliação de condutores, cadastro de veículos, configuração de documentos e parâmetros do módulo e termo de responsabilidade do condutor) foram disponibilizadas em produção em 03/09/2024, mas o sistema não está em uso pela área de negócio. As funcionalidades que dariam sentido operacional ao módulo de frotas (requisição, avaliação, reserva, prestação de contas e cancelamento de uso de veículos e equipamentos, recadastramento e inativação) foram especificadas e não foram desenvolvidas. Em 06/08/2026 a contratada entregou a atualização tecnológica das histórias da Sprint 1 (Java 21, Spring Boot 4.1 e React 19), sem registro de homologação ou de uso pela equipe gestora de TI.",
+  "Nessas condições, a inoperância do sistema não causa prejuízo às atividades do órgão, que não dependem dele; o potencial de serviço é apenas futuro e condicionado à continuidade do projeto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice dos inventários de 2023 a 2025."
+ ],
+ "finalidade": [
+  "O SIGS nasceu da CI nº 04356/2023/COT/SEPLAG, de 03/10/2023, da Coordenadoria de Transportes e da Superintendência de Gestão de Serviços, que abriu o processo Sigadoc SEPLAG-PRO-2023/10247 e encaminhou o Documento de Oficialização da Demanda (DOD) e o estudo do sistema de gerenciamento de frota. A premissa era um sistema corporativo para a gestão dos serviços corporativos do Poder Executivo Estadual (telefonia, energia, água, veículos e outros), construído em módulos independentes, a começar pelo módulo 1, de gestão da frota. O DOD, aprovado pela Secretaria Adjunta de Patrimônio e Serviços em 04/10/2023, prevê o cadastro de usuários, veículos e condutores, integrações com os sistemas de combustível, manutenção, rastreamento, FIPLAN e SIAG-C, notificações aos gestores e o registro de valores liquidados dos serviços.",
+  "O Documento de Escopo (DES_01, aprovado em 24/01/2024) delimitou o Módulo 01 - Gerenciamento de Frota: acesso pelo Manopla, cadastros de veículos (integração com SISPAT e Detrannet) e condutores (consulta de CNH no Detrannet), órgãos e unidades da estrutura Thanos, gerenciamento de solicitações de veículos com termo de responsabilidade, análise e liberação, dados de abastecimento e manutenção, notificações, comparativo de gastos e relatórios. A execução foi contratada pela Ordem de Serviço nº 12 do Contrato nº 014/2022/SEPLAG, aberta em 24/10/2023 com 575 PF indicativos e custo estimado de R$ 262.775,00 e aceita pela contratada em 26/10/2023.",
+  "Pelas histórias de usuário da Sprint 1, o sistema permite: manter condutores, com consulta de pessoa no Thanos e de CNH, avaliar, corrigir e exibir o histórico do cadastro do condutor e controlar a assinatura do termo de responsabilidade (US_04, US_05, US_12, US_13 e US_22); manter veículos, com consulta de dados do Detran e do SISPAT (US_08); e configurar os documentos exigidos de condutores e veículos e os parâmetros do módulo, como os períodos de recadastramento (US_06 e US_23). As demais histórias (US_09 a US_11, US_14 a US_21 e US_24 a US_33), de solicitação de serviços, requisição, avaliação, reserva, prestação de contas e cancelamento de veículos e equipamentos, recadastramento e inativação, foram especificadas e aprovadas no Grupo de Atividades I, mas não foram desenvolvidas.",
+  "Situação: a Sprint 1 foi planejada em 02/05/2024 (8 histórias, 313 PF), entregue pela contratada em 24/05/2024 no Gitlab da SEPLAG (branch OS12_2023_Entrega_01_versao_1.1.0) e disponibilizada em produção em 03/09/2024. Em 15/07/2025 a fiscalização do contrato registrou a intenção de concluir o SIGS - Módulo Frotas (278,25 PF do Grupo II), sem andamento posterior. Em 15/07/2026 a analista de requisitos informou a retomada das análises, dependente da priorização pelo novo secretário adjunto; em 06/08/2026 a contratada entregou a atualização tecnológica (branch OS12_2023_Entrega_02_versao_1.2.0), ainda sem homologação nem uso."
+ ],
+ "integracoes": [
+  [
+   "Manopla",
+   "Autenticação, usuários, perfis e permissões (DES_01, Premissas); subunidades do condutor (US_04)",
+   "AIE (Usuário, Subunidade)"
+  ],
+  [
+   "Thanos (ERP SEPLAG)",
+   "Pessoas, órgãos, unidades e locadoras (US_04, US_08, US_23)",
+   "AIE (Pessoa, Órgão, Unidade, Locadora)"
+  ],
+  [
+   "Detrannet (Detran-MT)",
+   "Dados de CNH e de veículos, marcas e modelos (US_04, US_08); a integração não existe e os dados foram carregados por planilha em tabelas próprias do SIGS (e-mail de entrega da Sprint 1)",
+   "AIE (CNH, Veículo, Marca, Modelo)"
+  ],
+  [
+   "SISPAT",
+   "Dados patrimoniais dos veículos da frota própria (US_08)",
+   "AIE (Veículo - SISPAT)"
+  ],
+  [
+   "Abastecimento, manutenção, rastreamento, FIPLAN e SIAG-C",
+   "Previstas no DOD e no DES_01; dependem de terceiros e não foram especificadas nas histórias desenvolvidas",
+   "Não contado"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "\\[US_(0[45]|1[23]|22)\\]",
+   "Condutores"
+  ],
+  [
+   "\\[US_08\\]",
+   "Veículos"
+  ],
+  [
+   "\\[US_(06|23)\\]",
+   "Configurações"
+  ]
+ ],
+ "ordem_modulos": [
+  "Condutores",
+  "Veículos",
+  "Configurações"
+ ],
+ "modulos_tabela": [
+  [
+   "Condutores: 28 funções, 130 PF",
+   "Manter, avaliar e corrigir o cadastro de condutor, exibir o histórico e controlar a assinatura do termo de responsabilidade (US_04, US_05, US_12, US_13 e US_22)"
+  ],
+  [
+   "Veículos: 27 funções, 116 PF",
+   "Manter veículo, com consultas ao Detran e ao SISPAT (US_08)"
+  ],
+  [
+   "Configurações: 12 funções, 47 PF",
+   "Configurar documentos de condutores e veículos e parâmetros do módulo de frotas (US_06 e US_23)"
+  ],
+  [
+   "Não desenvolvido (fora da medida): 70 funções, 366 PF",
+   "Solicitação e gestão de serviços, requisição, avaliação, reserva, prestação de contas e cancelamento de veículos e equipamentos, histórico e correção de veículo, recadastramento e inativação de condutores e veículos (US_09 a US_11, US_14 a US_21 e US_24 a US_33)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US_04",
+   "nome": "Manter Condutor",
+   "versao": "5.0",
+   "data": "06/08/2024",
+   "aprovacao": "06/08/2024",
+   "modulo": "Condutores"
+  },
+  {
+   "codigo": "US_05",
+   "nome": "Avaliar Cadastro de Condutor",
+   "versao": "2.0",
+   "data": "01/03/2024",
+   "aprovacao": "01/03/2024",
+   "modulo": "Condutores"
+  },
+  {
+   "codigo": "US_06",
+   "nome": "Configurar Documentos",
+   "versao": "2.0",
+   "data": "13/12/2023",
+   "aprovacao": "13/12/2023",
+   "modulo": "Configurações"
+  },
+  {
+   "codigo": "US_08",
+   "nome": "Manter Veículo",
+   "versao": "4.0",
+   "data": "06/08/2024",
+   "aprovacao": "06/08/2024",
+   "modulo": "Veículos"
+  },
+  {
+   "codigo": "US_12",
+   "nome": "Corrigir Cadastro de Condutor",
+   "versao": "2.0",
+   "data": "01/03/2024",
+   "aprovacao": "01/03/2024",
+   "modulo": "Condutores"
+  },
+  {
+   "codigo": "US_13",
+   "nome": "Exibir Histórico de Condutor",
+   "versao": "1.0",
+   "data": "19/12/2023",
+   "aprovacao": "19/12/2023",
+   "modulo": "Condutores"
+  },
+  {
+   "codigo": "US_22",
+   "nome": "Controlar Assinatura do Termo de Responsabilidade do Condutor",
+   "versao": "1.0",
+   "data": "01/03/2024",
+   "aprovacao": "01/03/2024",
+   "modulo": "Condutores"
+  },
+  {
+   "codigo": "US_23",
+   "nome": "Módulo de Frotas - Configurações",
+   "versao": "2.0",
+   "data": "18/03/2024",
+   "aprovacao": "18/03/2024",
+   "modulo": "Configurações"
+  }
+ ],
+ "formato_us": "US_{:02d}",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, produzido pela contratada no âmbito do Contrato nº 014/2022/SEPLAG e entregue no repositório Gitlab da SEPLAG (e-mails de entrega de 24/05/2024 e 06/08/2026)",
+ "rotulo_uso": "Uso e obsolescência",
+ "uso": "Não está em uso: as funcionalidades da Sprint 1 estão em produção desde 03/09/2024 sem utilização pela área de negócio, e o desenvolvimento das demais histórias não ocorreu; a atualização tecnológica de 06/08/2026 afasta a obsolescência das bibliotecas, mas não foi homologada (o art. 2º, § 2º, II, trata de sistemas fora de uso por obsolescência ou defasagem tecnológica)",
+ "beneficio": "Potencial de serviço futuro, condicionado à continuidade do projeto e ao uso pela área de negócio: cadastro e controle de condutores e veículos da frota estadual, base para a requisição e a prestação de contas do uso de veículos",
+ "rotulo_fase": "Ativo com desenvolvimento interrompido",
+ "fase_texto": "Funcionalidades da Sprint 1 (293 PF) em produção, sem uso, e demais histórias não desenvolvidas. O art. 9º exige, para o reconhecimento do que está em desenvolvimento, que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos para concluí-lo; a intenção foi registrada em 15/07/2025 e a retomada das análises em 15/07/2026, sem priorização formal nem cronograma (Seção 8)",
+ "conclusao_reconhecimento": "O SIGS é mantido no inventário (art. 2º, § 1º), avaliado pela metodologia do art. 11 sobre as funcionalidades desenvolvidas e formalizadas na Sprint 1, com a ressalva da Seção 8: a manutenção do bem depende da decisão da TI e da área de negócio sobre a continuidade do projeto ou a baixa.",
+ "custo_incorrido": "O SIGS foi construído pela fábrica de software do Contrato nº 014/2022/SEPLAG e o custo pago à contratada está registrado no painel de custos (Seção 6.4). Esse custo não inclui a equipe da SEPLAG (gestão do projeto e do contrato e infraestrutura), cujo custo não é apurado por produto; por isso o bem é avaliado pela metodologia do art. 11, e o custo serve de referência de coerência.",
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SIGS foi contratado e desenvolvido integralmente pela fábrica de software do Contrato nº 014/2022/SEPLAG (OS nº 12, Grupos de Atividades I e II), a fiscalização do contrato registra o custo do projeto com a contratada. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026; os pagamentos do SIGS vão de novembro de 2023 a julho de 2024, com o maior valor em maio de 2024, mês da entrega da Sprint 1.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto SIGS)",
+    205591.79
+   ]
+  ],
+  "custo_total": 205591.79,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto SIGS)"
+  ],
+  "pf_faturado": 1099.9,
+  "preco_contrato": 493.72,
+  "nota_preco_contrato": "preço atual do PF indicado no painel; R$ 457,00 na abertura da OS nº 12 (24/10/2023)",
+  "interpretacao": [
+   "Os pontos de função faturados (1.099,9 PF) superam o tamanho medido porque o faturamento mede cada entrega ao longo do projeto, com os deflatores do contrato e os percentuais de cada grupo de atividades: o Grupo I (levantamento de requisitos, análise e projeto, 25%) remunerou a especificação de todas as histórias US_04 a US_33, inclusive as que não foram construídas, e o Grupo II (75%) remunerou a construção da Sprint 1. O painel indica 5% de retrabalho e nenhum ticket.",
+   "O custo médio por PF faturado (R$ 186,92) fica abaixo do preço atual do PF no painel (R$ 493,72); o painel estima economia de R$ 103.443,37 (33,5%) em relação ao mercado."
+  ],
+  "conclusao": "O custo pago à contratada (R$ 205.591,79) inclui a especificação das histórias não desenvolvidas e é inferior ao valor do tamanho entregue (VT). Sem uso e sem continuidade do projeto, esse gasto só se converte em potencial de serviço se o sistema for homologado, concluído e colocado em uso; caso contrário, o valor do ativo deve ser reduzido ao valor recuperável (art. 18) ou baixado."
+ },
+ "analise_documental": "Leitura do processo Sigadoc SEPLAG-PRO-2023/10247 (CI, DOD e estudo do sistema), do Documento de Escopo DES_01, da OS nº 12, das 8 histórias de usuário da Sprint 1, dos e-mails de abertura da OS, de planejamento, entrega e disponibilização em produção da Sprint 1, de continuidade (2025), de retomada das análises e de atualização tecnológica (2026), e conferência da planilha APF- Baseline SIGS v0.5, revisada na v0.6",
+ "documentacao_resumo": "8 histórias de usuário da Sprint 1, processo SEPLAG-PRO-2023/10247 (DOD), Documento de Escopo, OS nº 12 e e-mails do projeto (Anexo I)",
+ "documentacao_fonte": "A tabela A2 traz a última versão de cada história da Sprint 1 e a data de aprovação registrada no histórico de versões. As histórias não desenvolvidas constam da pasta do projeto e ficam fora da medida.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. As US_12 e US_13 não estavam na pasta de histórias do projeto e foram obtidas em outra pasta de documentação do SIGS; a versão adotada é a citada nos e-mails de entrega.",
+ "texto_tamanho_ref": "O tamanho refere-se às funcionalidades desenvolvidas e formalizadas na Sprint 1, em produção desde 03/09/2024, sem uso.",
+ "texto_evolucao": "A planilha de contagem passou da v0.1 (110 PF, inventário de 2023, histórias US_04 e US_06) para a v0.5 (685 PF, inventários de 2024 e 2025, histórias US_04 a US_33). Na revisão de 24/11/2026 (v0.6) foram removidas 5 funções (26 PF) e a medida passou a considerar só as histórias da Sprint 1 (293 PF).",
+ "exemplos_tipos": [
+  "Condutor, veículo, configuração de documentos, configurações do módulo",
+  "Pessoa, órgão, unidade, locadora (Thanos); usuário, subunidade (Manopla); CNH, veículo, marca, modelo (Detran); veículo (SISPAT)",
+  "Incluir condutor, aprovar ou reprovar cadastro, assinar termo de responsabilidade",
+  "Consultar condutores e veículos, exibir histórico, exportar listas",
+  "Não há saídas externas nas histórias da Sprint 1"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "07/12/2023",
+   "pf": 110,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Baseline v0.1; VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "21/05/2024",
+   "pf": 685,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.5; VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 685,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Desenvolvimento",
+   "uso": "Baseline v0.5; VI 0,25"
+  },
+  {
+   "inventario": 2026,
+   "data": "24/11/2026",
+   "pf": 293,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção, sem uso",
+   "uso": "Baseline v0.6, só histórias da Sprint 1; VI 0,25"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 685,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Desenvolvimento"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da redução do tamanho adotado, de 685 para 293 PF: a medida passou a considerar só as histórias desenvolvidas e formalizadas na Sprint 1, e a revisão da planilha removeu funções duplicadas e funções retiradas das histórias. O Valor Institucional permanece 0,25.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "As histórias US_09 a US_11, US_14 a US_21 e US_24 a US_33 (366 PF), especificadas e não desenvolvidas.",
+  "As cargas de dados de condutores e veículos feitas pela contratada na Sprint 1 (itens não previstos nas histórias).",
+  "A atualização tecnológica de 06/08/2026 (manutenção adaptativa, sem alteração funcional).",
+  "Os sistemas Manopla, Thanos, Detrannet e SISPAT, e as integrações de abastecimento, manutenção, rastreamento, FIPLAN e SIAG-C."
+ ],
+ "texto_vida_util": [
+  "A vida útil do SIGS é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. As funcionalidades da Sprint 1 estão disponíveis para uso em produção desde 03/09/2024 (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de uso e de continuidade do projeto (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Processo SEPLAG-PRO-2023/10247: CI nº 04356/2023/COT/SEPLAG",
+   "Sigadoc SEPLAGCIN202304356A, Coordenadoria de Transportes e Superintendência de Gestão de Serviços",
+   "03/10/2023",
+   "Solicitação de criação do sistema e premissa do sistema corporativo modular"
+  ],
+  [
+   "Documento de Oficialização da Demanda - Sistema de Gestão dos Serviços Corporativos, Módulo I - Gestão de Frotas",
+   "Sigadoc SEPLAGDIC202323675A",
+   "03/10/2023 (aprovado em 04/10/2023)",
+   "Problema, objetivo, justificativa e resultados esperados"
+  ],
+  [
+   "Estudo \"Sistema de Gerenciamento - Ambiente de Gerenciamento de Frota\"",
+   "Sigadoc SEPLAGDIC202323676A",
+   "03/10/2023",
+   "Necessidades, integrações, notificações e relatórios"
+  ],
+  [
+   "Ordem de Serviço nº 12 do Contrato nº 014/2022/SEPLAG",
+   "Fiscalização do contrato",
+   "24/10/2023 (aceite em 26/10/2023)",
+   "575 PF indicativos, R$ 262.775,00, Grupos I (25%) e II (75%)"
+  ],
+  [
+   "Documento de Escopo [DES_01] v1.0",
+   "Contratada",
+   "aprovado em 24/01/2024",
+   "Escopo, integrações, premissas e requisitos não funcionais"
+  ],
+  [
+   "E-mails de planejamento e de entrega da Sprint 1",
+   "Contratada",
+   "02/05/2024 e 24/05/2024",
+   "Histórias da Sprint 1 (313 PF planejados), branch no Gitlab da SEPLAG, cargas de dados e pendências (Manopla e Detran)"
+  ],
+  [
+   "E-mail \"[ENTREGA] SIGS - Módulo de Frotas - Produção\"",
+   "Coordenação de planejamento e projetos de TI",
+   "03/09/2024",
+   "Disponibilização em produção das funcionalidades da Sprint 1"
+  ],
+  [
+   "E-mail \"[CONTINUAR PROJETOS] SIGED, SIFSW e SIGS\"",
+   "Fiscalização do contrato",
+   "15/07/2025",
+   "Intenção de concluir o SIGS - Módulo Frotas (278,25 PF do Grupo II)"
+  ],
+  [
+   "E-mail \"[SIGS] Retomada das análises do Projeto SIGS\"",
+   "Analista de requisitos",
+   "15/07/2026 (encaminhado em 22/07/2026)",
+   "Retomada das análises condicionada à priorização pelo secretário adjunto"
+  ],
+  [
+   "E-mail \"[SEPLAG][SIGS] - Entrega Atualização Frameworks Java e React\"",
+   "Contratada",
+   "06/08/2026",
+   "Atualização tecnológica das histórias da Sprint 1"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software",
+   "Fiscalização do Contrato nº 014/2022/SEPLAG",
+   "TRDs até 07/2026",
+   "Custo do projeto e PF faturados"
+  ],
+  [
+   "Planilhas de contagem APF- Baseline SIGS v0.1, v0.5 e v0.6",
+   "Pasta do sistema",
+   "2023, 2024 e 24/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, o processo SEPLAG-PRO-2023/10247, a OS nº 12 e os e-mails do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Continuidade do projeto e reconhecimento: a IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º), desde que a entidade tenha condições de demonstrar a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos técnicos, financeiros e outros para concluí-lo (art. 9º, I, II e V). O SIGS está em produção desde 03/09/2024, mas não é usado; as tentativas de continuidade registradas (15/07/2025 e 15/07/2026) não tiveram priorização formal, e a atualização tecnológica de 06/08/2026 não foi homologada. Se a instituição não pretende dar continuidade ao projeto, o bem não gera benefícios econômicos futuros nem potencial de serviços, e cabe a baixa patrimonial e contábil ou o reconhecimento da perda por redução ao valor recuperável (art. 18). Como não há decisão formal nesse sentido, a comissão mantém o SIGS no inventário com esta ressalva e recomenda à equipe gestora de TI da SEPLAG, em conjunto com a área de negócio demandante (Coordenadoria de Transportes e Superintendência de Gestão de Serviços), que decidam formalmente pela continuidade do projeto, com homologação, cronograma e recursos, ou pela baixa; a decisão deve ser comunicada ao setor contábil (art. 23).",
+  "Tamanho adotado: a planilha v0.5 contava 685 PF para as histórias US_04 a US_33. Na revisão de 24/11/2026 (v0.6) foram removidas 3 funções contadas em duplicidade (ALI Condutor na US_05, já contado na US_04; AIE Órgão e Unidade do Thanos na US_08, já contados na US_04) e 2 funções de exclusão (Ativar/Inativar da US_04 e da US_08), retiradas das histórias nas versões 2.01 e 1.01 e inexistentes no produto entregue, totalizando 26 PF; a planilha passou a 659 PF. Dessas, 366 PF correspondem a histórias especificadas no Grupo de Atividades I e não desenvolvidas, que ficam fora da medida; as 8 histórias da Sprint 1 somam 293 PF (o planejamento da sprint indicava 313 PF). Recomenda-se à fiscalização do contrato confirmar, nos Termos de Recebimento Definitivo, as histórias efetivamente recebidas.",
+  "Integrações contadas como AIE: o e-mail de entrega da Sprint 1 informa que a estrutura de subunidades no Manopla não foi disponibilizada (o campo ficou como texto obrigatório) e que a integração com o Detran não existe; os dados de condutores e veículos do Detran foram carregados por planilha em tabelas próprias do SIGS. A contagem mantém esses grupos como AIE, conforme as histórias aprovadas; a comissão não alterou essa classificação, que deve ser revista se o projeto continuar."
+ ]
+}

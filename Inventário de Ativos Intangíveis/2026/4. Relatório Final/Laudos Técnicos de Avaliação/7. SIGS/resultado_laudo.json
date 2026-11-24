@@ -1,0 +1,40 @@
+{
+ "sigla": "SIGS",
+ "medida": "PF IFPUG",
+ "pf": 293.0,
+ "preco_pf": 1215.09,
+ "vt": 356021.37,
+ "vi": 0.25,
+ "va": 445026.71,
+ "funcoes": 67,
+ "por_tipo": {
+  "ALI": [
+   4,
+   34.0
+  ],
+  "AIE": [
+   11,
+   55.0
+  ],
+  "EE": [
+   17,
+   74.0
+  ],
+  "CE": [
+   35,
+   130.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   67,
+   293.0,
+   293.0
+  ]
+ },
+ "por_modulo": {
+  "Condutores": 130.0,
+  "Veículos": 116.0,
+  "Configurações": 47.0
+ }
+}

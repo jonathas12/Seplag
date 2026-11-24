@@ -1,0 +1,44 @@
+{
+ "sigla": "SEI",
+ "medida": "PF IFPUG",
+ "pf": 353.0,
+ "preco_pf": 1215.09,
+ "vt": 428926.77,
+ "vi": 0.25,
+ "va": 536158.46,
+ "funcoes": 76,
+ "por_tipo": {
+  "ALI": [
+   5,
+   46.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   21,
+   84.0
+  ],
+  "CE": [
+   46,
+   199.0
+  ],
+  "SE": [
+   2,
+   14.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   76,
+   353.0,
+   353.0
+  ]
+ },
+ "por_modulo": {
+  "Propostas e análises": 220.0,
+  "Indicadores": 109.0,
+  "Relatórios": 24.0
+ }
+}

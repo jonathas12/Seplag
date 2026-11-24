@@ -1,0 +1,383 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "cidade_data": "Cuiabá/MT, 24 de novembro de 2026.",
+ "quebrar_rotulos_grafico": 22,
+ "sigla": "SEI",
+ "nome": "Sistema Estadual de Indicadores",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SEI_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/2. SEI/APF- Baseline do SEI- v0.2.xlsx",
+ "baseline_nome": "APF- Baseline do SEI- v0.2.xlsx",
+ "baseline_versao": "0.2",
+ "situacao": "Em produção, sem uso (desenvolvimento interrompido)",
+ "tecnologia": "Java (back-end) e front-end web, na arquitetura corporativa da SEPLAG (ERP Thanos)",
+ "vida_util": "Indefinida",
+ "excluir_grupos": [
+  "\\[US_(8137|8139|8140|8141|18013|18389|18498|18515)\\]"
+ ],
+ "medida_descricao": "PF IFPUG das histórias entregues em produção em 10/08/2023: 353 PF dos 542 PF da aba Funções; os 189 PF das histórias não entregues ficam fora da medida",
+ "texto_nivel": "O SEI foi medido no nível Detalhado (IFPUG CPM 4.3.1): cada função tem os tipos de dados (TD) e os arquivos ou registros referenciados (AR/TR) identificados e a complexidade calculada. A planilha APF- Baseline do SEI v0.2 conta 542 PF para 18 histórias de usuário, tamanho adotado nos inventários de 2023 a 2025. Para 2026, a comissão adotou apenas as histórias entregues em produção em 10/08/2023, que somam 353 PF; as histórias de alteração de indicador, metas e resultados (189 PF) não constam da entrega.",
+ "tipo_bem": "Software contratado pela SEPLAG e construído pela fábrica de software do Contrato nº 014/2022/SEPLAG (Ordem de Serviço nº 08); funcionalidades entregues em produção em 10/08/2023",
+ "unidade_desenvolvimento": "Fábrica de software do Contrato nº 014/2022/SEPLAG (CRP Tecnologia), Grupos de Atividades I (levantamento de requisitos, análise e projeto, 25%) e II (construção, testes e homologação, 75%), conforme a OS nº 08; gestão do contrato e do projeto pela SEPLAG",
+ "areas_negocio": "Coordenadoria de Estudos e Indicadores Socioeconômicos (CEIS/SISOT/SAPGPP/SEPLAG), demandante e responsável pelo projeto (DOD assinado em 15/02/2023); Superintendência de Informações e Ordenamento Territorial; coordenação de planejamento e projetos de TI da SEPLAG, gestora da fábrica de software",
+ "perfis": "Responsável pelo Indicador, Analista Negocial, Analista Metodológico e Administrador, com perfis e permissões no sistema Manopla (histórias de usuário); a Visão do Produto prevê ainda usuários de planejamento, processos e gestão institucional, Gestor Master setorial, Gestor Master SEPLAG e o cidadão (consulta pública)",
+ "base_legal": "Contrato nº 014/2022/SEPLAG (fábrica de software) e Ordem de Serviço nº 08, de 07/03/2023; DOD e Visão do Produto do SEI-MT (Sigadoc SEPLAGDIC202303613A e SEPLAGDIC202303610A, assinados em 15/02/2023), que citam a Lei Complementar nº 101/2000 (art. 4º, I, e), a Lei nº 11.071/2019 (PPA 2020-2023, art. 15), o Decreto nº 1.375/2018 e a Lei Complementar nº 612/2019 (art. 24); IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 2º, 9º, 18 e 23",
+ "vi": 0.25,
+ "vi_justificativa": [
+  "O SEI foi disponibilizado em produção em 10/08/2023, com as funcionalidades do ciclo da proposta de indicadores, mas não foi operacionalizado nem é usado pela área de negócio. As funcionalidades de alteração de indicadores, metas, apuração e avaliação de resultados, que dariam ao sistema o gerenciamento do ciclo de vida previsto no DOD, não foram entregues. A continuidade do produto foi discutida diante da possibilidade de desenvolver sistema igual ou similar na nova versão do FIPLAN (e-mail \"[ATA REUNIÃO] Sistema Estadual de Indicadores - SEI x FIPLAN\"), sem confirmação de seu desenvolvimento e implantação.",
+  "Nessas condições, a inoperância do sistema não causa prejuízo às atividades do órgão, que não dependem dele; o potencial de serviço é apenas futuro e condicionado a uma decisão sobre o uso ou a continuidade do produto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, mesmo índice dos inventários de 2023 a 2025."
+ ],
+ "finalidade": [
+  "O Sistema Estadual de Indicadores (SEI-MT) foi demandado pela Coordenadoria de Estudos e Indicadores Socioeconômicos (CEIS/SISOT/SAPGPP/SEPLAG) por meio do Documento de Oficialização da Demanda e da Visão do Produto, assinados pela coordenadora da CEIS em 15/02/2023. O DOD aponta a necessidade de integrar os sistemas do Governo que usam indicadores para monitoramento e avaliação de resultados, evitando retrabalho e redundância de dados, e tem por objetivo uma ferramenta de coleta, tratamento, armazenamento e disponibilização de dados de indicadores integrável aos sistemas corporativos (FIPLAN/PPA, Monitora/RAG, gestão por processos, projetos e governança). Como características mínimas, prevê o gerenciamento do ciclo de vida dos indicadores (cadastro, apuração, monitoramento, avaliação e divulgação), transparência, segurança, integração e extração de dados. A Visão do Produto (julho de 2021) define a ficha de metadados do indicador e as fichas de análise negocial e metodológica, com base na Lei Complementar nº 101/2000, no PPA 2020-2023 (Lei nº 11.071/2019, art. 15), no Decreto nº 1.375/2018 e na Lei Complementar nº 612/2019.",
+  "A execução foi contratada pela Ordem de Serviço nº 08 do Contrato nº 014/2022/SEPLAG, aberta em 07/03/2023 (enviada e aceita em 03/03/2023), com 249,80 PF estimados e custo de R$ 114.158,60, Grupos de Atividades I e II; o projeto foi indicado como priorizado pelo Secretário da SEPLAG. Na reunião de 20/03/2023 definiu-se o uso do ERP SEPLAG para cadastros compartilhados, a estrutura de órgãos do FIPLAN e a prioridade para a parte cadastral (proposta de indicador), deixando alterações e gestão por resultados e metas para etapas posteriores; a integração com o FIPLAN não era premissa naquele momento.",
+  "Em 10/08/2023 o sistema foi disponibilizado em produção após 2 sprints, com as funcionalidades do ciclo de vida da proposta de indicadores: cadastrar e consultar propostas de indicadores com a ficha de metadados, realizar as análises negocial e metodológica, solicitar a ativação ou inativação de indicadores, consultar os indicadores concebidos e o seu histórico, acompanhar o status da proposta e emitir os relatórios da proposta e das análises (US_8096, US_8070, US_8071, US_17206, US_8072, US_8206, US_11830, US_11831 a US_11833). As histórias de alteração de indicador, metas e resultados, apuração e avaliação de resultados (US_8137, US_8139, US_8140, US_8141, US_18013, US_18389, US_18498 e US_18515) foram especificadas, mas não constam da entrega.",
+  "Situação: o sistema está em produção (servicos.seplag.mt.gov.br/sei), sem uso nem operacionalização pela área de negócio. A continuidade foi tratada na reunião registrada no e-mail \"[ATA REUNIÃO] Sistema Estadual de Indicadores - SEI x FIPLAN\", encaminhado aos gestores de TI da época, em que as discussões se orientaram para desenvolver e usar um sistema igual ou similar na nova versão do FIPLAN, sem confirmação do seu desenvolvimento e implantação."
+ ],
+ "integracoes": [
+  [
+   "Manopla",
+   "Usuários, perfis e permissões (histórias de usuário)",
+   "Fora da fronteira"
+  ],
+  [
+   "ERP SEPLAG (Thanos)",
+   "Órgãos, entidades, unidades de medida e dados geográficos compartilhados (reunião de 20/03/2023)",
+   "Conforme a contagem"
+  ],
+  [
+   "FIPLAN",
+   "Estrutura de órgãos e PPA; integração futura, não era premissa do projeto (reunião de 20/03/2023)",
+   "Não contado"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "\\[US_(8096|8070|8071|11830)\\]",
+   "Propostas e análises"
+  ],
+  [
+   "\\[US_(8072|8206|17206)\\]",
+   "Indicadores"
+  ],
+  [
+   "\\[US_1183[123]\\]",
+   "Relatórios"
+  ]
+ ],
+ "ordem_modulos": [
+  "Propostas e análises",
+  "Indicadores",
+  "Relatórios"
+ ],
+ "modulos_tabela": [
+  [
+   "Propostas e análises",
+   "Propostas de indicadores com a ficha de metadados, análise negocial, análise metodológica e status da proposta (US_8096, US_8070, US_8071, US_11830)"
+  ],
+  [
+   "Indicadores",
+   "Indicadores concebidos, histórico do indicador e solicitações de desativar e reativar (US_8072, US_8206, US_17206)"
+  ],
+  [
+   "Relatórios",
+   "Relatórios da proposta de indicador e das análises negocial e metodológica atuais (US_11831 a US_11833)"
+  ],
+  [
+   "Não entregue (fora da medida): 189 PF",
+   "Alterar indicador, relatórios de resumo da alteração e dados do indicador, metas e resultados, estrutura de tela, analisar proposta de metas, apuração e avaliação de resultados (US_8137, US_8139, US_8140, US_8141, US_18013, US_18389, US_18498, US_18515)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US_8096",
+   "nome": "Propostas de Indicadores",
+   "versao": "2.0",
+   "data": "",
+   "modulo": "Propostas e análises"
+  },
+  {
+   "codigo": "US_8070",
+   "nome": "Análise Negocial",
+   "versao": "2.0",
+   "data": "",
+   "modulo": "Propostas e análises"
+  },
+  {
+   "codigo": "US_8071",
+   "nome": "Análise Metodológica",
+   "versao": "2.0",
+   "data": "",
+   "modulo": "Propostas e análises"
+  },
+  {
+   "codigo": "US_11830",
+   "nome": "Status da Proposta",
+   "versao": "2.0",
+   "data": "",
+   "modulo": "Propostas e análises"
+  },
+  {
+   "codigo": "US_11831",
+   "nome": "Relatório - Proposta de Indicador",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Relatórios"
+  },
+  {
+   "codigo": "US_11832",
+   "nome": "Relatório - Análise Negocial Atual",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Relatórios"
+  },
+  {
+   "codigo": "US_11833",
+   "nome": "Relatório - Análise Metodológica Atual",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Relatórios"
+  },
+  {
+   "codigo": "US_8072",
+   "nome": "Indicadores",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Indicadores"
+  },
+  {
+   "codigo": "US_8206",
+   "nome": "Histórico do Indicador",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Indicadores"
+  },
+  {
+   "codigo": "US_8137",
+   "nome": "Alterar Indicador - Proposta de Alteração",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_8139",
+   "nome": "Relatório - Resumo da Proposta de Alteração",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_8140",
+   "nome": "Relatório - Dados do Indicador",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_8141",
+   "nome": "Metas e Resultados",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_18013",
+   "nome": "Estrutura de Tela - Indicadores",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_18389",
+   "nome": "Analisar Proposta de Metas",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_18498",
+   "nome": "Apuração de Resultados",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  },
+  {
+   "codigo": "US_18515",
+   "nome": "Avaliação do Resultado",
+   "versao": "1.0",
+   "data": "",
+   "modulo": "Não entregue (fora da medida)"
+  }
+ ],
+ "formato_us": "US_{}",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, produzido pela contratada no âmbito do Contrato nº 014/2022/SEPLAG e disponibilizado em produção pela SEPLAG",
+ "rotulo_uso": "Uso e obsolescência",
+ "uso": "Não está em uso: em produção desde 10/08/2023, sem operacionalização pela área de negócio; não há obsolescência tecnológica declarada (o art. 2º, § 2º, II, trata de sistemas fora de uso por obsolescência ou defasagem tecnológica)",
+ "beneficio": "Potencial de serviço futuro, condicionado ao uso ou à continuidade do produto: gestão centralizada das propostas e da ficha de metadados dos indicadores do Estado",
+ "rotulo_fase": "Ativo sem uso e com desenvolvimento interrompido",
+ "fase_texto": "Funcionalidades do ciclo da proposta de indicadores (353 PF) em produção, sem uso; alteração, metas e resultados não entregues. A continuidade foi discutida diante de solução similar na nova versão do FIPLAN, sem confirmação (Seção 8)",
+ "conclusao_reconhecimento": "O SEI é mantido no inventário (art. 2º, § 1º), avaliado pela metodologia do art. 11 sobre as funcionalidades entregues em produção, com a ressalva da Seção 8: a manutenção do bem depende da decisão da TI e da área de negócio sobre o uso, a continuidade ou a baixa.",
+ "custo_incorrido": "O SEI foi construído pela fábrica de software do Contrato nº 014/2022/SEPLAG e o custo pago à contratada está registrado no painel de custos (Seção 6.4). Esse custo não inclui a equipe da SEPLAG (gestão do projeto e do contrato e infraestrutura), cujo custo não é apurado por produto; por isso o bem é avaliado pela metodologia do art. 11, e o custo serve de referência de coerência.",
+ "custo_projeto": {
+  "fonte": "painel Custos de Projetos - Fábrica de Software, base: TRDs até 07/2026",
+  "contexto": "Como o SEI foi contratado e desenvolvido integralmente pela fábrica de software do Contrato nº 014/2022/SEPLAG (OS nº 08, Grupos de Atividades I e II), a fiscalização do contrato registra o custo do projeto com a contratada. O contrato está em execução desde 07/2022 e os dados consideram os Termos de Recebimento Definitivo (TRD) até 07/2026; os pagamentos do SEI vão de abril a julho de 2023, com o maior valor em maio de 2023.",
+  "componentes": [
+   [
+    "Desenvolvimento (projeto SEI)",
+    264260.25
+   ]
+  ],
+  "custo_total": 264260.25,
+  "componentes_construcao": [
+   "Desenvolvimento (projeto SEI)"
+  ],
+  "pf_faturado": 1158.0,
+  "preco_contrato": 457.0,
+  "nota_preco_contrato": "preço do PF indicado no painel, o mesmo da abertura da OS nº 08 (07/03/2023)",
+  "interpretacao": [
+   "Os pontos de função faturados (1.158,0 PF) superam o tamanho medido porque o faturamento mede cada entrega ao longo do projeto, com os deflatores do contrato e os percentuais de cada grupo de atividades: o Grupo I (levantamento de requisitos, análise e projeto, 25%) remunerou a especificação de todas as histórias, inclusive as que não foram entregues, e o Grupo II (75%) remunerou a construção. O painel indica 2% de retrabalho e nenhum ticket.",
+   "O custo médio por PF faturado (R$ 228,20) fica abaixo do preço do PF no painel (R$ 457,00); o painel estima economia de R$ 143.752,95 (35,2%) em relação ao mercado."
+  ],
+  "conclusao": "O custo pago à contratada (R$ 264.260,25) inclui a especificação das histórias não entregues e é inferior ao valor do tamanho entregue (VT). Sem uso e sem continuidade do produto, esse gasto só se converte em potencial de serviço se o sistema for operacionalizado; caso contrário, o valor do ativo deve ser reduzido ao valor recuperável (art. 18) ou baixado."
+ },
+ "analise_documental": "Leitura do DOD e da Visão do Produto do SEI-MT, do levantamento de requisitos, da OS nº 08, de 17 histórias de usuário e dos e-mails de abertura da OS, da segunda reunião do projeto e da entrega em produção, e conferência da planilha APF- Baseline do SEI v0.2",
+ "documentacao_resumo": "17 histórias de usuário, DOD e Visão do Produto, OS nº 08 e e-mails do projeto (Anexo I)",
+ "documentacao_fonte": "A tabela A2 traz a versão de cada história indicada no nome do arquivo; as histórias não registram data de aprovação. A coluna Módulo indica as histórias não entregues em produção, que ficam fora da medida.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. A US_17206 (Solicitações de Desativar-Reativar Indicador), entregue segundo o e-mail de produção, não foi disponibilizada; suas funções foram consideradas com base na planilha. O e-mail \"[ATA REUNIÃO] Sistema Estadual de Indicadores - SEI x FIPLAN\" excede o limite de leitura da ferramenta de análise e foi considerado conforme informado pelo presidente da comissão.",
+ "texto_tamanho_ref": "O tamanho refere-se às funcionalidades entregues em produção em 10/08/2023, sem uso.",
+ "texto_evolucao": "A planilha APF- Baseline do SEI v0.2, criada em 10/05/2023 pela contratada, conta 542 PF e foi usada nos inventários de 2023 a 2025. Neste inventário a planilha foi mantida e a medida passou a considerar só as histórias entregues em produção (353 PF).",
+ "exemplos_tipos": [
+  "Proposta de indicador, análise negocial, análise metodológica, indicador, histórico",
+  "Dados de outros sistemas lidos pelo SEI, conforme a contagem",
+  "Incluir proposta, registrar análise negocial e metodológica, solicitar desativação",
+  "Consultar propostas e indicadores, status da proposta",
+  "Relatórios da proposta e das análises"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "11/08/2023",
+   "pf": 542,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.2; VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "11/08/2023",
+   "pf": 541,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v0.2; VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 542,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Produção",
+   "uso": "Baseline v0.2; VI 0,25"
+  },
+  {
+   "inventario": 2026,
+   "data": "24/11/2026",
+   "pf": 353,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção, sem uso",
+   "uso": "Baseline v0.2, só histórias entregues; VI 0,25"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 542,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da redução do tamanho adotado, de 542 para 353 PF, pela exclusão das histórias não entregues em produção. O Valor Institucional permanece 0,25.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "As histórias US_8137, US_8139, US_8140, US_8141, US_18013, US_18389, US_18498 e US_18515 (189 PF), não entregues em produção.",
+  "Funcionalidades previstas no DOD e na Visão do Produto sem história de usuário (consulta pública pelo cidadão, painéis, integrações com FIPLAN e Monitora/RAG).",
+  "Os sistemas Manopla, ERP SEPLAG e FIPLAN."
+ ],
+ "texto_vida_util": [
+  "A vida útil do SEI é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. As funcionalidades entregues estão disponíveis para uso em produção desde 10/08/2023 (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de uso e de continuidade do produto (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Visão do Projeto - Sistema Estadual de Indicadores v1.0",
+   "Sigadoc SEPLAGDIC202303610A, CEIS/SISOT/SAPGPP/SEPLAG",
+   "julho de 2021; assinada em 15/02/2023",
+   "Visão estratégica, escopo, base legal, benefícios, usuários, características funcionais e ficha de metadados"
+  ],
+  [
+   "Documento de Oficialização da Demanda - SEI/MT",
+   "Sigadoc SEPLAGDIC202303613A, assinado pela coordenadora da CEIS",
+   "15/02/2023",
+   "Problema, objetivo, justificativa, resultados esperados, premissas, restrições e características mínimas"
+  ],
+  [
+   "Levantamento e Análise de Requisitos e Prototipação de Interfaces",
+   "Sigadoc SEPLAGDIC202303614A",
+   "2022; assinado em 15/02/2023",
+   "Requisitos funcionais RF001 em diante e protótipos"
+  ],
+  [
+   "Ordem de Serviço nº 08 do Contrato nº 014/2022/SEPLAG",
+   "SEPLAGDIC202305061",
+   "07/03/2023 (enviada e aceita em 03/03/2023)",
+   "249,80 PF estimados, R$ 114.158,60, Grupos I (25%) e II (75%)"
+  ],
+  [
+   "E-mail \"[Projeto SEI] Segunda Reunião 20/03/2023\"",
+   "Fiscalização do contrato",
+   "20/03/2023",
+   "Escopo, prioridades, uso do ERP SEPLAG e integração futura com o FIPLAN"
+  ],
+  [
+   "E-mail \"Entrega em Produção - SEI - 10/08/2023\"",
+   "Fiscalização do contrato",
+   "10/08/2023",
+   "Funcionalidades entregues em 2 sprints e acesso em produção"
+  ],
+  [
+   "E-mail \"[ATA REUNIÃO] Sistema Estadual de Indicadores - SEI x FIPLAN\"",
+   "Coordenação de planejamento e projetos de TI",
+   "não lido (arquivo acima do limite da ferramenta)",
+   "Continuidade do SEI diante de solução similar no novo FIPLAN (informação do presidente da comissão)"
+  ],
+  [
+   "Painel Custos de Projetos - Fábrica de Software",
+   "Fiscalização do Contrato nº 014/2022/SEPLAG",
+   "TRDs até 07/2026",
+   "Custo do projeto e PF faturados"
+  ],
+  [
+   "Planilha de contagem APF- Baseline do SEI v0.2",
+   "Pasta do sistema",
+   "10/05/2023; Contagem revisada em 24/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, o DOD e a Visão do Produto, a OS nº 08 e os e-mails do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Uso, continuidade e reconhecimento: a IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento do software de propriedade do Estado e dos projetos em desenvolvimento (art. 2º, § 1º), desde que a entidade tenha condições de demonstrar a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos para concluí-lo (art. 9º, I, II e V). O SEI está em produção desde 10/08/2023, mas não foi operacionalizado nem é usado; a continuidade foi discutida diante de sistema igual ou similar na nova versão do FIPLAN, sem confirmação do seu desenvolvimento e implantação. Se a instituição não pretende usar nem dar continuidade ao produto, o bem não gera benefícios econômicos futuros nem potencial de serviços, e cabe a baixa patrimonial e contábil ou o reconhecimento da perda por redução ao valor recuperável (art. 18). Como não há decisão formal, a comissão mantém o SEI no inventário com esta ressalva e recomenda à área de TI da SEPLAG, em conjunto com a área de negócio demandante (CEIS/SISOT/SAPGPP), que informem o uso, os recursos e o interesse na continuidade, na evolução e na geração de benefícios do sistema, ou a sua substituição pelo FIPLAN, para a devida regularização patrimonial e contábil; a decisão deve ser comunicada ao setor contábil (art. 23).",
+  "Tamanho adotado: das 542 PF da planilha, 189 PF correspondem a histórias especificadas (alteração de indicador, metas, apuração e avaliação de resultados) que não constam do e-mail de entrega em produção de 10/08/2023; essas funções ficam fora da medida, e as entregues somam 353 PF. O e-mail cita o relatório de resumo entre os entregues; a comissão não incluiu a US_8139 (Resumo da Proposta de Alteração), que depende da alteração de indicador não entregue. Recomenda-se à fiscalização do contrato confirmar, nos Termos de Recebimento Definitivo, as histórias efetivamente recebidas.",
+  "A fórmula do total da aba Funções (L4) soma a faixa H6:H298, que inclui as linhas de cabeçalho, e a célula G47 da aba Sumário 1 apresenta erro de referência; nenhum dos dois afeta o tamanho."
+ ]
+}

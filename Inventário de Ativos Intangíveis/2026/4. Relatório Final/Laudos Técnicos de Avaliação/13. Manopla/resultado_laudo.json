@@ -1,0 +1,44 @@
+{
+ "sigla": "MANOPLA",
+ "medida": "PF IFPUG",
+ "pf": 380.0,
+ "preco_pf": 1215.09,
+ "vt": 461734.2,
+ "vi": 1.0,
+ "va": 923468.4,
+ "funcoes": 79,
+ "por_tipo": {
+  "ALI": [
+   17,
+   119.0
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   33,
+   132.0
+  ],
+  "CE": [
+   16,
+   64.0
+  ],
+  "SE": [
+   12,
+   60.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   79,
+   380.0,
+   380.0
+  ]
+ },
+ "por_modulo": {
+  "Usuários, perfis e autorizações": 154.0,
+  "Cadastros compartilhados": 129.0,
+  "Logs e relatórios": 97.0
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 24 de novembro de 2026.",
+ "sigla": "MANOPLA",
+ "nome": "Manopla - Gestão de Usuários, Perfis de Acesso e Segurança dos Sistemas Corporativos",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_MANOPLA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/13. Manopla/CONTAGEM_PF_MANOPLA-v1.1.xlsx",
+ "baseline_nome": "CONTAGEM_PF_MANOPLA-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "formato_us": "US {:03d}",
+ "texto_nivel": "O Manopla foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). A planilha registrava o nível Detalhada (IFPUG), mas nenhuma função tem tipos de dados ou arquivos referenciados preenchidos e todas têm a complexidade padrão da estimativa; o nível foi corrigido na revisão de 24/11/2026, sem alteração do tamanho. O tamanho adotado é o da aba Funções (célula L4, 380 PF), o mesmo do inventário de 2025.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Área de TI da SEPLAG, gestora da arquitetura corporativa; equipes dos sistemas corporativos desenvolvidos internamente e pela fábrica de software do Contrato nº 014/2022/SEPLAG, que usam o Manopla para cadastro de usuários e controle de acesso",
+ "perfis": "Administradores da TI da SEPLAG e gestores de acesso dos sistemas corporativos, que mantêm usuários, vínculos, lotações, perfis de acesso e autorizações; usuários dos sistemas corporativos, autenticados e autorizados pelo Manopla (Documentos de Escopo do SIGS e do SIFSW)",
+ "base_legal": "IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 2º, § 1º, 6º e 11; não foi informada norma específica que institua o sistema",
+ "vi": 1.0,
+ "vi_justificativa": [
+  "O Manopla é o sistema de cadastro de usuários e controle de acesso dos sistemas corporativos do Poder Executivo Estadual desenvolvidos na arquitetura corporativa da SEPLAG, pela equipe interna e pela fábrica de software do Contrato nº 014/2022/SEPLAG. Os Documentos de Escopo do SIGS e do SIFSW registram como premissa que o Manopla gerencia o cadastro de usuários e o controle de acesso aos sistemas da secretaria, de modo que essas funcionalidades não precisam ser desenvolvidas em cada sistema, e que a configuração das funcionalidades e ações permitidas a cada ator é feita no Manopla. Além disso, o sistema mantém cadastros compartilhados entre os sistemas: calendário, feriados, parâmetros, termos, órgãos vinculados e notificações.",
+  "A inoperância do Manopla impediria o acesso e o controle de permissões de todos os sistemas que dependem dele, com prejuízo de altíssimo impacto às atividades dos órgãos usuários. A comissão adota o nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, o mesmo dos inventários de 2023 a 2025."
+ ],
+ "finalidade": [
+  "O Manopla é o sistema de uso interno da SEPLAG para gestão e administração dos usuários, perfis de acesso, permissões e segurança dos sistemas corporativos do Poder Executivo Estadual de Mato Grosso desenvolvidos na arquitetura corporativa da SEPLAG. Funciona como um hub: concentra o cadastro de usuários, seus vínculos e lotações, os perfis de acesso e as autorizações, de modo que cada sistema consome esses recursos em vez de implementá-los. Abrange os sistemas desenvolvidos internamente e em conjunto com a fábrica de software do Contrato nº 014/2022/SEPLAG; sistemas de terceiros, de prateleira ou construídos em outras arquiteturas, em regra, não são administrados por ele.",
+  "Os Documentos de Escopo do SIGS (aprovado em 24/01/2024) e do SIFSW (aprovado em 20/12/2023) registram esse papel: o cadastro de usuário e o controle de permissão e nível de acesso são realizados e mantidos no Manopla, o login é feito por integração com ele, e a configuração das funcionalidades acessadas e das ações permitidas a cada ator é definida no Manopla. A estrutura Thanos (ERP SEPLAG) fornece os dados de órgãos e unidades usados pelos sistemas.",
+  "Pela contagem de pontos de função (versão 1.8.0), o sistema permite: manter usuários, com vínculos, perfis de acesso e unidades de lotação (US 010); manter perfis de acesso, com clonagem, importação e exportação (US 009), e autorizações (US 008); manter os cadastros compartilhados entre os sistemas: termos (US 001), parâmetros (US 003), feriados (US 004), calendário (US 005), órgãos vinculados (US 006) e notificações (US 007); e consultar logs de acesso e de processo (US 011 e US 012), configurar relatórios (US 002) e emitir os relatórios de situação cadastral e de tipo de usuário (US 013 e US 014)."
+ ],
+ "integracoes": [
+  [
+   "Sistemas corporativos da arquitetura SEPLAG (ex.: SIGS, SIFSW)",
+   "Autenticação, cadastro de usuários, perfis e permissões consumidos pelos sistemas (Documentos de Escopo do SIGS e do SIFSW)",
+   "Fora da fronteira (sistemas clientes)"
+  ],
+  [
+   "Thanos (ERP SEPLAG)",
+   "Órgãos e unidades da estrutura corporativa",
+   "Não identificado como AIE na contagem; órgãos vinculados e unidades de lotação são ALI do Manopla"
+  ],
+  [
+   "Arquivo de perfis importado",
+   "Importação de perfis de acesso (US 009)",
+   "AIE"
+  ]
+ ],
+ "modulos": {
+  "Usuários, perfis e autorizações": [
+   8,
+   9,
+   10
+  ],
+  "Cadastros compartilhados": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "Logs e relatórios": [
+   2,
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "ordem_modulos": [
+  "Usuários, perfis e autorizações",
+  "Cadastros compartilhados",
+  "Logs e relatórios"
+ ],
+ "modulos_tabela": [
+  [
+   "Usuários, perfis e autorizações: 33 funções, 154 PF",
+   "Usuários (consulta, inclusão, alteração, visualização), vínculos, perfis de acesso do usuário e unidades de lotação (incluir, alterar, copiar, excluir); perfis de acesso (incluir, alterar, excluir, clonar, importar, exportar); autorizações (US 008 a US 010)"
+  ],
+  [
+   "Cadastros compartilhados: 27 funções, 129 PF",
+   "Termos, parâmetros, feriados, calendário, órgãos vinculados e notificações usados pelos sistemas corporativos (US 001 e US 003 a US 007)"
+  ],
+  [
+   "Logs e relatórios: 19 funções, 97 PF",
+   "Logs de acesso e de processo, configuração de relatórios e relatórios de situação cadastral e de tipo de usuário (US 002 e US 011 a US 014)"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido por servidores da SEPLAG no exercício de suas funções e mantido e hospedado pela SEPLAG",
+ "uso": "Em produção e de uso compartilhado pelos sistemas corporativos da arquitetura SEPLAG",
+ "beneficio": "Potencial de serviço para o Estado: gestão centralizada de usuários, perfis e permissões, que evita o desenvolvimento dessas funções em cada sistema e padroniza a segurança de acesso dos sistemas corporativos",
+ "fase_texto": "Sistema em produção, componente compartilhado da arquitetura corporativa da SEPLAG",
+ "custo_incorrido": "O Manopla foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Conferência da planilha CONTAGEM_PF_MANOPLA (revisada na v1.1), leitura dos Documentos de Escopo do SIGS e do SIFSW quanto ao uso do Manopla e das informações da área de TI",
+ "documentacao_resumo": "Planilha de contagem v1.1 e Documentos de Escopo do SIGS e do SIFSW (Anexo I). Não há documentação funcional do Manopla",
+ "documentacao_fonte": "Não foram disponibilizados documentos de requisitos, histórias de usuário nem especificação funcional do Manopla até a data de fechamento deste laudo. A finalidade e o uso foram descritos a partir das informações da área de TI, das funções da planilha e dos documentos de outros sistemas que dependem do Manopla.",
+ "ressalva_documentacao": "Não foram disponibilizados documentos funcionais do Manopla. As funções da planilha estão identificadas como US 001 a US 014, mas as histórias correspondentes não foram apresentadas. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "Nos inventários de 2023 e 2024 o sistema foi medido no nível Indicativo (335 PF). No inventário de 2025 passou a ser medido no nível Estimativo, com 380 PF (planilha CONTAGEM_PF_MANOPLA, versão 1.8.0 do sistema). Na revisão de 24/11/2026 (v1.1) a aba de funções foi renomeada para Funções, o nível de detalhe foi corrigido e foram preenchidos os quadros de escopo e documentação; as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Usuário, vínculo, perfil de acesso, autorização, calendário, parâmetro",
+  "Arquivo de perfis de acesso importado",
+  "Adicionar usuário, clonar perfil de acesso, copiar unidade de lotação",
+  "Consultar usuários, logs e perfis",
+  "Exportar perfis, imprimir relatório de situação cadastral, visualizar log"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "12/12/2023",
+   "pf": 335,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "VI 1,00"
+  },
+  {
+   "inventario": 2024,
+   "data": "12/12/2023",
+   "pf": 335,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 380,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Produção",
+   "uso": "Planilha CONTAGEM_PF_MANOPLA; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "24/11/2026",
+   "pf": 380,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.1 (revisada); VI 1,00"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 380,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre apenas do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (380 PF) e o Valor Institucional (1,00) permanecem os do inventário de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação, que não compõem o tamanho funcional nem o valor do ativo (IN, art. 10, parágrafo único).",
+  "Os sistemas corporativos que consomem o Manopla e a estrutura Thanos.",
+  "Funcionalidades não contadas na planilha, como o cadastro de questionários informado pela área de TI (Seção 8)."
+ ],
+ "outros_documentos": [
+  [
+   "Planilha de contagem CONTAGEM_PF_MANOPLA",
+   "Pasta do sistema; responsável João Cleber",
+   "inventário de 2025 (versão 1.8.0); revisada em 24/11/2026 (v1.1)",
+   "Funções de dados e de transação e tamanho funcional"
+  ],
+  [
+   "Documento de Escopo [DES_01] do SIGS",
+   "Contratada (Contrato nº 014/2022/SEPLAG)",
+   "aprovado em 24/01/2024",
+   "Premissa de uso do Manopla para cadastro de usuários, controle de acesso e login"
+  ],
+  [
+   "Documento de Escopo [DES_01] do SIFSW",
+   "Contratada (Contrato nº 014/2022/SEPLAG)",
+   "aprovado em 20/12/2023",
+   "Acesso pelo Manopla e configuração dos atores"
+  ],
+  [
+   "Informações da área de TI",
+   "Informação prestada à comissão no inventário",
+   "24/11/2026",
+   "Finalidade, abrangência, uso compartilhado e situação do sistema"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, nível, preço, VI e valor dos inventários anteriores"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e os documentos do Anexo I acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "A planilha de 2025 tinha a aba de funções nomeada SPRINT1, o que deixava as referências da aba Contagem (Q4 a Q6) e das abas de sumário com erro (#REF!), e registrava o nível Detalhada (IFPUG), embora todas as funções tenham a complexidade padrão da estimativa. Na revisão de 24/11/2026 a aba foi renomeada para Funções, as referências da aba Contagem foram restabelecidas e o nível foi corrigido para Estimativa (NESMA). As fórmulas das abas Sumário 1 e Sumário 2 já continham a referência perdida e não foram refeitas; o tamanho de 380 PF não foi alterado. A data de criação (R9), vazia na planilha, foi preenchida com 04/12/2025, data da medição de 380 PF no registro histórico da comissão.",
+  "Possíveis inconsistências da contagem, mantidas por falta de documentação: (1) os relatórios de situação cadastral e de tipo de usuário (US 013 e US 014) e a configuração de relatórios (US 002) estão contados como ALI, e relatórios em geral não constituem grupos de dados mantidos pela aplicação; (2) a importação de perfis (US 009) está contada como AIE, e a funcionalidade de importação costuma ser uma entrada externa; (3) a US 012 tem duas funções com o nome Consulta, uma como CE e outra como SE. Recomenda-se à área de TI revisar a contagem com base na documentação do sistema.",
+  "A área de TI informou que o Manopla mantém também o cadastro de questionários, que não consta da planilha; o tamanho pode estar subestimado. Recomenda-se atualizar a contagem.",
+  "No registro histórico da comissão (Dados.xlsx) o sistema consta com a sigla Thanos e o nome Manopla. Thanos é a estrutura corporativa (ERP SEPLAG) de órgãos, unidades e pessoas, distinta do Manopla. Recomenda-se ajustar o registro para a sigla MANOPLA."
+ ]
+}

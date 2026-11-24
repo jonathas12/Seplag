@@ -215,3 +215,13 @@ Fluxo e regras que se repetiram:
   I, II e V (viabilidade, intenção e recursos para concluir), art. 18 (redução ao valor recuperável) e art. 23 (comunicar
   ao setor contábil). A comissão recomenda a decisão (concluir ou encerrar); não decide a baixa.
 - Conferir o nível da contagem pela planilha, não só pelo F7: TD e AR/TR preenchidos e complexidades variadas = Detalhada.
+
+## Geradores derivados (2026)
+
+- `laudo_apf_entregue.py`: `excluir_grupos` (histórias não entregues pela fábrica ficam fora da medida). SIFSW, SIGS, SEI.
+- `laudo_apf_modfuncao.py`: `modulos_funcao` (módulo pelo nome da função, quando os títulos de grupo da planilha não servem). Web Ponto.
+- `laudo_apf_indicativa_primeira.py`: contagem indicativa na primeira avaliação do sistema (uma medição, sem `avaliacao_anterior`). SIDBENS.
+- Sistema sem planilha de APF: usar a skill `contagem-indicativa-apf` (script `gera_contagem_indicativa.py`).
+- Planilha com problemas: corrigir em cópia de 2026 e registrar a correção nas ressalvas.
+  - Duplicadas: `remove_duplicadas.py`.
+  - Contagem de aplicação refeita a partir das histórias: limpar a aba Funções e gravar com `incrementa_baseline.py`, como no Revisa v1.2.

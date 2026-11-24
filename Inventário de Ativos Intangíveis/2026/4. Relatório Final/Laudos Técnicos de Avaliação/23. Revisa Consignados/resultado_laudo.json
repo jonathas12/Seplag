@@ -1,0 +1,48 @@
+{
+ "sigla": "Revisa",
+ "medida": "PF IFPUG",
+ "pf": 319.0,
+ "preco_pf": 1215.09,
+ "vt": 387613.71,
+ "vi": 1.0,
+ "va": 775227.42,
+ "funcoes": 70,
+ "por_tipo": {
+  "ALI": [
+   11,
+   77.0
+  ],
+  "AIE": [
+   3,
+   15.0
+  ],
+  "EE": [
+   34,
+   136.0
+  ],
+  "CE": [
+   19,
+   76.0
+  ],
+  "SE": [
+   3,
+   15.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   70,
+   319.0,
+   319.0
+  ]
+ },
+ "por_modulo": {
+  "Contratante": 62.0,
+  "Consignatárias": 70.0,
+  "Resposta da consignatária": 27.0,
+  "Força Tarefa": 55.0,
+  "SEPLAG": 44.0,
+  "PROCON": 39.0,
+  "Relatórios e controle": 22.0
+ }
+}

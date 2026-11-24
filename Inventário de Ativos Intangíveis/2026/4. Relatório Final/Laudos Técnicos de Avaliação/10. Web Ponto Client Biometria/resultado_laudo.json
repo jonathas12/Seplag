@@ -1,0 +1,40 @@
+{
+ "sigla": "Web Ponto Client",
+ "medida": "PF IFPUG",
+ "pf": 80.0,
+ "preco_pf": 1215.09,
+ "vt": 97207.2,
+ "vi": 0.75,
+ "va": 170112.6,
+ "funcoes": 14,
+ "por_tipo": {
+  "ALI": [
+   4,
+   28.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   7,
+   38.0
+  ],
+  "SE": [
+   1,
+   4.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   14,
+   80.0,
+   80.0
+  ]
+ },
+ "por_modulo": {
+  "Registro de frequência": 23.0,
+  "Biometria e servidores": 24.0,
+  "Configuração e sincronização": 33.0
+ }
+}

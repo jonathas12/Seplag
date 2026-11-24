@@ -1,0 +1,224 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 24 de novembro de 2026.",
+ "tecnologia": ".NET",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "situacao": "Legado, com sucessor (SIGPAS) sem cronograma de transição",
+ "vi": 0.75,
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe técnica da SEPLAG (à época, Superintendência de Tecnologia da Informação; hoje SSCPG/SAPGD/SEPLAG), em .NET",
+ "areas_negocio": "Unidade Central de Gestão de Pessoas da SEPLAG (Superintendência de Gestão de Pessoas) e unidades de Gestão de Pessoas dos órgãos e entidades (Decreto nº 554/2020, arts. 2º, V, e 24); chefias imediatas, responsáveis pelo controle e pelo fechamento mensal da frequência (arts. 10 e 21)",
+ "base_legal": "Decreto Estadual nº 554, de 03/07/2020, consolidado até o Decreto nº 1.482/2022 (o WEBPonto é a ferramenta oficial de verificação de frequência, vedado outro meio de controle, art. 3º; compete à SEPLAG seu desenvolvimento, gestão e disponibilização, art. 4º); referências informadas à comissão, sem texto anexado: Portaria nº 102/2014 da então Secretaria de Estado de Gestão (controle biométrico de assiduidade), Instrução Normativa nº 07/2019/SEPLAG (códigos de ocorrências), Instrução Normativa nº 05/GAB/SEPLAG/2020 (registro por senha na emergência em saúde pública), portarias setoriais (ex.: Portaria nº 353/2024/GS/SEDUC/MT) e manuais operacionais da SEPLAG",
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "modulos": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela SEPLAG, a quem compete o desenvolvimento, a gestão e a disponibilização do WEBPonto (Decreto nº 554/2020, art. 4º)",
+ "custo_incorrido": "O sistema foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "documentacao_fonte": "Não foram disponibilizados documentos funcionais nem informações da área de TI sobre o sistema até a data de fechamento deste laudo. A finalidade e a base legal foram descritas a partir do Decreto nº 554/2020, das funções da planilha e das informações prestadas à comissão.",
+ "ressalva_documentacao": "Não foram disponibilizados documentos funcionais nem informações da área de TI. A contagem foi feita em 2022 pela navegação no sistema e por documentos de instalação e telas; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_vida_util": [
+  "A vida útil é classificada como indefinida (IN, arts. 14 e 15), como nos inventários anteriores, e o bem não é amortizado (art. 17). A existência de um sucessor (SIGPAS) indica, porém, que o período de uso remanescente é limitado: a vida útil deve ser revista (art. 16) assim que a área de TI informar a data de encerramento do uso.",
+  "O bem deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da substituição pelo SIGPAS (Seção 8)."
+ ],
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da redução do Valor Institucional de 1,00 para 0,75, em razão da sucessão pelo SIGPAS. O tamanho funcional permanece o do inventário de 2025.",
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "sigla": "Web Ponto Client",
+ "nome": "Web Ponto Client Biometria (aplicação local de registro de frequência do WEBPonto)",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_WEBPONTO_CLIENT_BIOMETRIA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/10. Web Ponto/APF-WebPonto Client Biometria-v1.1.xlsx",
+ "baseline_nome": "APF-WebPonto Client Biometria-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "texto_nivel": "O Web Ponto Client Biometria foi medido no nível Detalhado (IFPUG CPM 4.3.1): as funções têm os tipos de dados (TD) e os arquivos ou registros referenciados (AR/TR) identificados e a complexidade calculada. A contagem foi feita em 30/06/2022 a partir do manual de instalação e das telas do sistema, e revisada em 11/12/2023. O tamanho adotado é o da aba Funções (célula L4, 80 PF), o mesmo dos inventários de 2023 a 2025.",
+ "perfis": "Servidores, que registram a frequência por biometria ou, quando autorizado, de forma manual (Decreto nº 554/2020, arts. 6º, § 5º, e 7º, § 3º); Administrador do Sistema do órgão, que captura as digitais e configura o órgão e o setor do equipamento (art. 7º)",
+ "vi_justificativa": [
+  "O Web Ponto Client Biometria integra o Sistema Biométrico de Controle de Frequência (WEBPonto), que o Decreto nº 554/2020 define como a ferramenta oficial de verificação de frequência dos servidores do Poder Executivo, vedado outro meio de controle (art. 3º), de uso obrigatório por todos os órgãos e entidades para o registro de frequência e de justificativas de ausência (art. 5º, § 1º). Por esse papel, o sistema foi avaliado com índice 1,00 nos inventários de 2023 a 2025.",
+  "O sistema tem um sucessor, o SIGPAS (Web Ponto 2.0), concebido como nova solução justamente porque a tecnologia do sistema atual não comportava as novas demandas (e-mails do DOD WEBPONTO, junho de 2022). Não há informação oficial sobre a substituição nem planejamento e cronograma de transição (cutover). Com a substituição prevista, a inoperância do sistema legado tende a ter impacto decrescente sobre as atividades dos órgãos. A comissão reduz o índice para 0,75, nível Muito importante da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, e recomenda a revisão para baixa (Seção 8)."
+ ],
+ "finalidade": [
+  "O Web Ponto Client Biometria é a aplicação local do Sistema Biométrico de Controle de Frequência (WEBPonto), desenvolvida pela SEPLAG em .NET e instalada nos computadores dos órgãos para o registro do ponto. Integra-se à aplicação web Web Ponto, de gestão, controle e relatórios; os usuários reconhecem as duas como um único sistema, mas são aplicações distintas, com arquiteturas e propósitos diferentes. O Decreto nº 554/2020 define a identificação biométrica como a leitura das impressões digitais confrontada com o banco de dados do sistema (art. 2º, III), determina a captura das digitais dos polegares e indicadores no cadastro do servidor, armazenadas em banco de dados único sob gestão da SEPLAG e usadas exclusivamente para o controle de assiduidade e pontualidade (art. 7º, §§ 1º e 2º), e prevê a instalação dos equipamentos em locais de circulação dos servidores, mantidos pelos órgãos (art. 6º).",
+  "O registro de frequência é pessoal e intransferível, feito no início da jornada, na saída e no retorno do intervalo e no término da jornada (art. 11). Na inoperância do leitor ou impossibilidade de leitura das digitais, o registro pode ser feito por senha pessoal (arts. 6º, § 5º, e 7º, § 3º).",
+  "Pela contagem de pontos de função, a aplicação permite: exibir relógio e data; registrar a frequência por biometria ou de forma manual; capturar a biometria e carregar os servidores; localizar o servidor; configurar o órgão e o setor do equipamento; e manter o log de registros locais, com envio dos registros ao Web Ponto e limpeza dos registros enviados. Os parâmetros e regras vêm do Web Ponto.",
+  "O Web Ponto tem como sucessor o SIGPAS (Sistema de Gestão de Assiduidade), desenvolvido como Web Ponto 2.0 pela fábrica de software do Contrato nº 014/2022/SEPLAG, em tecnologia moderna e adequada às regras de negócio e à base legal, e avaliado em laudo próprio neste inventário. A motivação está registrada na troca de e-mails do DOD WEBPONTO (27 e 28/06/2022): a área de gestão de pessoas informou que o WEBPONTO já existe e que demandava uma nova solução porque a TI não conseguia atender às novas demandas devido à estrutura da tecnologia; a CGE pediu documento com prazo de desenvolvimento do WEBPONTO 2.0, em especial da integração com o SEAP para o desconto automático de faltas; a STI registrou que a versão 2.0 operacionalizaria a gestão de assiduidade de todas as carreiras do Executivo; e a coordenação de projetos de TI recomendou que o novo projeto fosse uma nova solução, e não uma evolução da atual. Em março de 2023 a Manifestação Técnica de renovação do Contrato nº 014/2022/SEPLAG (1º Termo Aditivo) registrava o Web Ponto 2.0 nas fases iniciais de construção; em abril de 2024 a Manifestação Técnica do 2º Termo Aditivo (processo SEPLAG-PRO-2024/00330) registrava 6 sprints executadas, a sprint 7 em andamento, com entrega prevista para 26/04/2024, e o projeto oficializado em SEPLAG-CAP-2024/14413. Não há, porém, informação oficial sobre a substituição do Web Ponto pelo SIGPAS, nem planejamento e cronograma de transição e implantação (cutover)."
+ ],
+ "integracoes": [
+  [
+   "Web Ponto (aplicação web)",
+   "Parâmetros e regras, dados dos servidores e recepção dos registros de frequência",
+   "AIE (Web Ponto Web - Parâmetros e Regras; Manutenção de Servidores)"
+  ],
+  [
+   "Leitor biométrico",
+   "Captura das impressões digitais",
+   "Dispositivo; não contado"
+  ],
+  [
+   "SIGPAS",
+   "Sucessor do Web Ponto (Web Ponto 2.0)",
+   "Fora da fronteira; avaliado em laudo próprio"
+  ]
+ ],
+ "modulos_funcao": [
+  [
+   "^(Registrar Frequência|Relógio)",
+   "Registro de frequência"
+  ],
+  [
+   "^Manutenção d",
+   "Biometria e servidores"
+  ],
+  [
+   "^(Configurar|Log de Registros|Web Ponto Web)",
+   "Configuração e sincronização"
+  ]
+ ],
+ "ordem_modulos": [
+  "Registro de frequência",
+  "Biometria e servidores",
+  "Configuração e sincronização"
+ ],
+ "modulos_tabela": [
+  [
+   "Registro de frequência",
+   "Relógio e data, registro de frequência biométrico e manual"
+  ],
+  [
+   "Biometria e servidores",
+   "Captura da biometria, carga e localização dos servidores"
+  ],
+  [
+   "Configuração e sincronização",
+   "Configuração de órgão e setor do equipamento, log de registros locais (envio e limpeza) e parâmetros e regras do Web Ponto"
+  ]
+ ],
+ "uso": "Registrado como em produção no inventário de 2025; não há informação oficial sobre a substituição pelo SIGPAS nem cronograma de transição (cutover)",
+ "beneficio": "Potencial de serviço decrescente: registro biométrico da frequência enquanto o sistema estiver em uso, até a substituição pelo SIGPAS",
+ "fase_texto": "Sistema legado, com sucessor (SIGPAS) e recomendação de revisão para baixa",
+ "analise_documental": "Leitura do Decreto nº 554/2020, conferência da planilha APF-WebPonto Client Biometria v1.1, leitura do e-mail do DOD WEBPONTO (2022) e das Manifestações Técnicas de renovação do Contrato nº 014/2022/SEPLAG (2023 e 2024) e consulta ao laudo do SIGPAS 2026",
+ "documentacao_resumo": "Planilha de contagem v1.1, Decreto nº 554/2020, e-mail do DOD WEBPONTO e Manifestações Técnicas de 2023 e 2024 (Anexo I). Não há documentação funcional",
+ "texto_evolucao": "A baseline v1.0 foi criada em 30/06/2022 e revisada na v1.1 em 11/12/2023 (80 PF), usada nos inventários de 2023 a 2025. Na revisão de 24/11/2026 foram preenchidos a tecnologia, o revisor e os quadros de escopo e documentação; as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Digitais, órgão e setor, log de registros locais, registros de frequência",
+  "Parâmetros e regras do Web Ponto; servidores",
+  "Registrar frequência biométrica, capturar biometria, enviar registros",
+  "Não há consultas externas na contagem",
+  "Relógio e data"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "11/12/2023",
+   "pf": 80,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2024,
+   "data": "11/12/2023",
+   "pf": 80,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 80,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Produção",
+   "uso": "Baseline v1.1; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "24/11/2026",
+   "pf": 80,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Legado, com sucessor (SIGPAS)",
+   "uso": "Baseline v1.1 (Contagem revisada); VI 0,75"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 80,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Produção"
+ },
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "A aplicação web Web Ponto, avaliada em laudo próprio.",
+  "O leitor biométrico e o SIGPAS."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 554, de 03/07/2020",
+   "Diário Oficial de 06/07/2020 (republicado em 07/07/2020); texto consolidado até o Decreto nº 1.482/2022",
+   "03/07/2020",
+   "WEBPonto como ferramenta oficial e obrigatória, perfis, identificação biométrica, cadastro, justificativas, códigos de ocorrência e fechamento mensal"
+  ],
+  [
+   "Normas e manuais complementares informados (Portaria nº 102/2014; IN nº 07/2019/SEPLAG; IN nº 05/GAB/SEPLAG/2020; Portaria nº 353/2024/GS/SEDUC/MT; manual do WEBPonto)",
+   "Informação prestada à comissão; textos não anexados",
+   "2014 a 2024",
+   "Contexto normativo (não lidos)"
+  ],
+  [
+   "Planilha de contagem APF-WebPonto Client Biometria v1.0 e v1.1",
+   "Pasta do sistema (manual de instalação 2020 e telas do Client Biometria)",
+   "30/06/2022 e 11/12/2023; Contagem revisada em 24/11/2026",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "E-mail \"Fwd: DOD WEBPONTO\"",
+   "Coordenação de planejamento e projetos de TI, Superintendência de TI e área de gestão de pessoas da SEPLAG",
+   "27/06/2022 a 28/06/2022 (encaminhado em 27/02/2023)",
+   "DOD do WEBPONTO 2.0, pedido da CGE de prazo e integração com o SEAP, limitação tecnológica do sistema atual e recomendação de nova solução"
+  ],
+  [
+   "Manifestação Técnica de Renovação Contratual do Contrato nº 014/2022/SEPLAG (1º Termo Aditivo)",
+   "Processo Sigadoc SEPLAG-PRO-2023/00722",
+   "março de 2023",
+   "Web Ponto 2.0 nas fases iniciais de construção pela fábrica de software"
+  ],
+  [
+   "Manifestação Técnica de Renovação Contratual do Contrato nº 014/2022/SEPLAG (2º Termo Aditivo), v1.0",
+   "Processo Sigadoc SEPLAG-PRO-2024/00330",
+   "abril de 2024",
+   "Web Ponto 2.0 com 6 sprints executadas e sprint 7 em andamento (entrega prevista em 26/04/2024); projeto oficializado em SEPLAG-CAP-2024/14413"
+  ],
+  [
+   "Laudo Técnico de Avaliação do SIGPAS 2026",
+   "CIABI",
+   "2026",
+   "Sucessor do Web Ponto (Web Ponto 2.0)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e o Decreto nº 554/2020 acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Sucessão pelo SIGPAS e baixa: o Web Ponto Client Biometria é um sistema legado em .NET, sem documentação funcional nem informações da área de TI disponibilizadas, e tem como sucessor o SIGPAS. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ não admite o registro de software gerado internamente que não esteja em uso em virtude de obsolescência ou defasagem tecnológica (art. 2º, § 2º, II) e exige o reconhecimento da perda quando o valor contábil superar o valor recuperável (art. 18). Não há informação oficial sobre a substituição do Web Ponto pelo SIGPAS, nem planejamento e cronograma de transição e implantação (cutover); a sucessão é conhecida pelos registros do DOD WEBPONTO e pelas motivações do novo projeto. Por isso a comissão mantém o sistema no inventário com esta ressalva e recomenda à área de TI da SEPLAG, em conjunto com a área de negócio (Unidade Central de Gestão de Pessoas da SEPLAG), que formalizem o plano de transição para o SIGPAS, com cronograma de implantação e data de encerramento do Web Ponto e do Web Ponto Client Biometria, e, encerrado o uso, procedam à baixa patrimonial e contábil, com comunicação ao setor contábil (art. 23).",
+  "O Web Ponto e o Web Ponto Client Biometria são reconhecidos pelos usuários como um único sistema, mas são aplicações distintas, com arquiteturas e propósitos diferentes e contagens próprias; por isso são avaliados em laudos separados, com fronteira entre si (cada um vê o outro como AIE).",
+  "As normas complementares informadas à comissão (Portaria nº 102/2014, IN nº 07/2019/SEPLAG, IN nº 05/GAB/SEPLAG/2020, portarias setoriais e manuais operacionais) não foram anexadas à documentação e não foram lidas; a base legal do laudo apoia-se no Decreto nº 554/2020.",
+  "A função Log de Registros Locais - Apagar Registros (linha 23) não tem os tipos de dados preenchidos e foi pontuada como média (4 PF). O tamanho não foi alterado."
+ ]
+}

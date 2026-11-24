@@ -1,0 +1,48 @@
+{
+ "sigla": "Web Ponto",
+ "medida": "PF IFPUG",
+ "pf": 367.0,
+ "preco_pf": 1215.09,
+ "vt": 445938.03,
+ "vi": 0.75,
+ "va": 780391.55,
+ "funcoes": 73,
+ "por_tipo": {
+  "ALI": [
+   8,
+   65.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   26,
+   118.0
+  ],
+  "CE": [
+   27,
+   110.0
+  ],
+  "SE": [
+   10,
+   64.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   73,
+   367.0,
+   367.0
+  ]
+ },
+ "por_modulo": {
+  "Manutenção de frequência": 89.0,
+  "Cadastros e acesso": 135.0,
+  "Atestados e justificativas": 43.0,
+  "Relatórios": 48.0,
+  "Horas diárias e folha": 37.0,
+  "Registro de ponto": 11.0,
+  "Painel": 4.0
+ }
+}

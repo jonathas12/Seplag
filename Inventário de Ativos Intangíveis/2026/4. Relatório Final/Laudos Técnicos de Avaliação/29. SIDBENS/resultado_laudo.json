@@ -1,0 +1,29 @@
+{
+ "sigla": "SIDBENS",
+ "medida": "Indicativa (NESMA)",
+ "pf": 245.0,
+ "preco_pf": 1215.09,
+ "vt": 297697.05,
+ "vi": 0.75,
+ "va": 520969.84,
+ "funcoes": 7,
+ "por_tipo": {
+  "ALI": [
+   7,
+   245.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   7,
+   49.0,
+   245.0
+  ]
+ },
+ "por_modulo": {
+  "Bens e vitrine": 70.0,
+  "Reservas e certidões": 35.0,
+  "Cadastros de apoio": 105.0,
+  "Usuários e acesso": 35.0
+ }
+}

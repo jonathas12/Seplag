@@ -1,0 +1,187 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47); 7 ALI, 245 PF",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "PHP 8.2 (Laravel 11 e Livewire 3), banco de dados MySQL/MariaDB",
+ "vida_util": "Indefinida",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "texto_acompanham": "A planilha de contagem, a documentação técnica, o manual e a instrução normativa acompanham o processo do inventário para conferência.",
+ "sigla": "SIDBENS",
+ "nome": "Sistema Informatizado de Disponibilização de Bens",
+ "cidade_data": "Cuiabá/MT, 24 de novembro de 2026.",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIDBENS_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/29. SIDBENS/APF-SIDBENS-v1.0.xlsx",
+ "baseline_nome": "APF-SIDBENS-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "texto_nivel": "O SIDBENS não tinha contagem de pontos de função. A comissão fez, neste inventário, a contagem no nível Indicativo (NESMA, ISO/IEC 24570), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE); o peso das transações está embutido nesses valores. Os grupos de dados foram identificados no modelo de dados, nas rotas e nas regras de negócio da Documentação Técnica do Sistema (versão 2.0.0) e conferidos com o manual e a Instrução Normativa nº 003/2024/SEPLAG: 7 ALI e nenhum AIE, total de 245 PF (aba Sumário 1, célula G47).",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em PHP; repositório iniciado em 08/2022 (versão 1.x) e reescrito em 04/2024 sobre Laravel 11 e Livewire 3 (Documentação Técnica, §1.4)",
+ "areas_negocio": "Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG), órgão central de patrimônio e serviços, responsável pela orientação, gestão e disponibilização do sistema (IN nº 003/2024/SEPLAG, art. 2º, § 2º); setoriais de patrimônio dos órgãos e entidades do Poder Executivo, que devem manter no mínimo três servidores cadastrados (art. 2º, § 1º)",
+ "perfis": "Usuário (consulta a vitrine, reserva bens, acompanha suas reservas, emite e valida certidões), Responsável (gestor patrimonial do órgão: cadastra bens, gerencia reservas, usuários e relatórios do órgão) e Administrador (acesso global e tabelas de apoio), além do agendador que cancela reservas expiradas (Documentação Técnica, §1.2 e §7)",
+ "base_legal": "Lei Estadual nº 11.109/2020 (gestão patrimonial; ordem de preferência do art. 12), alterada pela Lei nº 12.227/2023; Instrução Normativa nº 003/2024/SEPLAG, de 24/04/2024 (uso obrigatório do SIDBENS para a disponibilização de bens inservíveis, prazos de 5 e 15 dias corridos, cadastro mínimo de três servidores por órgão e ciclo de desfazimento a cada 60 dias), que revogou as INs nº 005/2019/SEPLAG/SEAPS e nº 008/2019/SEPLAG; Decreto Estadual nº 194/2015 (gestão dos bens patrimoniais móveis)",
+ "vi": 0.75,
+ "vi_justificativa": [
+  "A Instrução Normativa nº 003/2024/SEPLAG determina que os órgãos e entidades do Poder Executivo utilizem o SIDBENS para a disponibilização de seus bens inservíveis (art. 2º) e que os bens classificados como inservíveis sejam nele disponibilizados, para cumprir a ordem de preferência de transferência ou permuta do art. 12, I, da Lei nº 11.109/2020, pelos prazos mínimos de 5 dias corridos (consumo) e 15 dias corridos (permanentes), antes da alienação por leilão, doação ou desfazimento (art. 4º). O sistema é, portanto, a etapa obrigatória de reaproveitamento dos bens móveis entre os órgãos, gerida pela SEAPS.",
+  "A inoperância do sistema interromperia a disponibilização obrigatória dos bens inservíveis e a sequência de destinação prevista na lei, com prejuízo de alto impacto à gestão patrimonial dos órgãos e ao ciclo de desfazimento a cada 60 dias (art. 11). A comissão adota o nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, como informado pelo presidente da comissão."
+ ],
+ "finalidade": [
+  "O SIDBENS (Sistema Informatizado de Disponibilização de Bens) é a aplicação web do Governo de Mato Grosso, mantida pela SEPLAG, que viabiliza o reaproveitamento de bens patrimoniais entre órgãos e setores da administração estadual: o setor que possui um bem ocioso o cadastra; servidores de outros setores consultam a vitrine de bens disponíveis e fazem a reserva; o responsável pelo órgão de origem conclui ou cancela a destinação, gerando certidão com código de validação (Documentação Técnica, §1). Seus objetivos são dar visibilidade, em catálogo único, aos bens disponíveis para redistribuição, controlar a reserva com prazo de expiração automática, emitir certidões, relatórios e certificados de pesquisa com rastreabilidade e manter trilha de auditoria.",
+  "A Instrução Normativa nº 003/2024/SEPLAG torna obrigatório o uso do SIDBENS pelos órgãos e entidades do Poder Executivo para a disponibilização dos bens inservíveis (ociosos, obsoletos, antieconômicos, irrecuperáveis ou recuperáveis, e de consumo ociosos, obsoletos ou inutilizados), atribui à SEAPS a gestão do sistema e define os prazos mínimos de disponibilização, após os quais os bens podem ser alienados, doados ou desfeitos na ordem do art. 12 da Lei nº 11.109/2020; a transferência é registrada depois no Sistema Oficial de Gestão Patrimonial e no FIPLAN (art. 5º). Segundo informação prestada à comissão, a ferramenta foi lançada em julho de 2019 com a IN nº 008/2019/SEPLAG, revogada pela IN nº 003/2024.",
+  "Pela documentação, o sistema permite: consultar a vitrine de bens com filtros e emitir o certificado de pesquisa, que comprova o resultado da busca na data; reservar bens e acompanhar as próprias reservas; ao responsável do órgão, cadastrar, editar, ativar, inativar e excluir bens com até três fotos, finalizar ou cancelar reservas, emitir certidões e relatórios do bem, de cancelamento, de bens disponíveis, reservados e finalizados; validar o código das certidões; manter categorias, órgãos, setores e usuários (bloqueio, ativação e redefinição de senha); e alterar os próprios dados e senha. Um processo agendado cancela as reservas não concluídas em 5 dias úteis (6 para uma categoria) e devolve o bem à vitrine. O acesso é feito em sidbens.seplag.mt.gov.br, com login por CPF."
+ ],
+ "integracoes": [
+  [
+   "SIGPAT / Sistema Oficial de Gestão Patrimonial",
+   "Registro da transferência ou baixa do bem após a destinação (IN nº 003/2024, art. 5º); o SIDBENS apenas oferece link de acesso",
+   "Fora da fronteira (não há troca de dados)"
+  ],
+  [
+   "FIPLAN",
+   "Registro da entrada do bem pelo órgão recebedor (IN nº 003/2024, art. 5º, § 3º)",
+   "Fora da fronteira"
+  ],
+  [
+   "Google Analytics",
+   "Métricas de uso no layout administrativo (Documentação Técnica, §15.3)",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "ordem_modulos": [
+  "Bens e vitrine",
+  "Reservas e certidões",
+  "Cadastros de apoio",
+  "Usuários e acesso"
+ ],
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG (repositório próprio, branches main e v2.0.0; Documentação Técnica, §1.4)",
+ "uso": "Em produção, de uso obrigatório pelos órgãos e entidades do Poder Executivo para a disponibilização dos bens inservíveis (IN nº 003/2024/SEPLAG, art. 2º)",
+ "beneficio": "Potencial de serviço para o Estado: reaproveitamento de bens móveis entre os órgãos antes da alienação ou do desfazimento, com redução de compras e de descarte e transparência da destinação",
+ "fase_texto": "Sistema em produção, de uso obrigatório (IN nº 003/2024/SEPLAG)",
+ "custo_incorrido": "O SIDBENS foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura da Documentação Técnica do Sistema (versão 2.0.0), do Manual de Utilização e da Instrução Normativa nº 003/2024/SEPLAG; identificação das funções de dados e elaboração da contagem indicativa APF-SIDBENS v1.0",
+ "documentacao_resumo": "Documentação Técnica v2.0.0, Manual de Utilização e IN nº 003/2024/SEPLAG (Anexo I); não há histórias de usuário",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário nem especificação funcional. A contagem e a descrição se apoiam na documentação geral abaixo.",
+ "documentos": [],
+ "ressalva_documentacao": "A documentação disponibilizada é geral (técnica e de uso) e não especifica as funcionalidades em nível de transação; por isso a contagem foi feita no nível indicativo. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "O SIDBENS não tinha medição em pontos de função nem avaliação nos inventários de 2023 a 2025. A planilha APF-SIDBENS v1.0 (24/11/2026) é a primeira contagem, no nível indicativo: 245 PF.",
+ "exemplos_tipos": [
+  "Bens disponibilizados, reservas, registros de pesquisa, categorias, órgãos, setores, usuários",
+  "Não identificados (sem dados lidos de outros sistemas)",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "24/11/2026",
+   "pf": 245,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema pela comissão).",
+ "motivo_variacao": "Primeira avaliação do SIDBENS pela comissão; não há avaliação anterior para comparação.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "Estados de conservação e perfis de acesso, classificados como dados de código.",
+  "Tabelas técnicas do framework, auditoria e logs, sem consulta pelo usuário.",
+  "O SIGPAT, o Sistema Oficial de Gestão Patrimonial e o FIPLAN, nos quais se registra a transferência ou baixa do bem."
+ ],
+ "outros_documentos": [
+  [
+   "SIDBENS - Documentação Técnica do Sistema, versão 2.0.0",
+   "Superintendência de Tecnologia da Informação/SEPLAG",
+   "12/11/2026",
+   "Arquitetura, modelo de dados, perfis, módulos, regras, rotas, documentos, tarefas agendadas e débitos técnicos"
+  ],
+  [
+   "Manual de Utilização do Sistema de Distribuição de Bens",
+   "Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG)",
+   "sem data",
+   "Cadastro, consulta e reserva de bens e formulário de controle de acesso"
+  ],
+  [
+   "Instrução Normativa nº 003/2024/SEPLAG",
+   "Diário Oficial (protocolo 1573520, p. 36 a 38)",
+   "24/04/2024; publicada em 25/04/2024",
+   "Uso obrigatório do SIDBENS, prazos, responsabilidades e ciclo de desfazimento"
+  ],
+  [
+   "Relação de bens intangíveis do SIGPAT (registro N6500012)",
+   "Planilhas de trabalho dos inventários de 2023 e 2024 da comissão",
+   "10/08/2022 (incorporação)",
+   "Registro patrimonial do SIDBENS como software, valor de R$ 201.481,68"
+  ],
+  [
+   "Planilha de contagem APF-SIDBENS v1.0",
+   "Pasta do sistema",
+   "24/11/2026",
+   "Funções de dados e tamanho funcional indicativo"
+  ],
+  [
+   "Normas informadas à comissão (Lei nº 11.109/2020 e Lei nº 12.227/2023, IN nº 08/2019/SEPLAG, IN nº 05/2019/SEPLAG/SEAPS, Decreto nº 194/2015, Leis nº 8.039/2003, nº 9.347/2010 e nº 10.096/2014)",
+   "Informação prestada à comissão; textos não anexados",
+   "2003 a 2023",
+   "Contexto normativo (não lidas, exceto quando citadas na IN nº 003/2024)"
+  ]
+ ],
+ "ressalvas_extras": [
+  "Regularização do reconhecimento: o SIDBENS consta da relação de bens intangíveis do SIGPAT como software (registro N6500012, \"SIDBENS SISTEMA DE DISPONIBILIZACAO DE BENS INSERVIVEIS\", incorporado em 10/08/2022, R$ 201.481,68), mas não foi avaliado no inventário de 2025, porque a comissão não obteve em tempo hábil as informações necessárias ao seu reconhecimento, o que motivou apontamentos das equipes de patrimônio setorial e corporativo da SEPLAG. Este laudo atende a esse apontamento: reconhece o SIDBENS como ativo intangível gerado internamente (arts. 2º, § 1º, e 6º) e o avalia pela metodologia do art. 11. A origem do valor registrado no SIGPAT não foi informada à comissão; o setor contábil deve ajustar o registro ao valor deste laudo (art. 23).",
+  "Contagem indicativa: o tamanho de 245 PF considera só as funções de dados, com valores médios para as transações; uma contagem estimativa ou detalhada, com especificação das funcionalidades, pode resultar em tamanho diferente. Foram agrupadas as certidões como subgrupo das reservas e excluídos, por serem dados de código ou técnicos, os estados de conservação, os perfis, a auditoria e as tabelas do framework. Recomenda-se à área de TI documentar as funcionalidades para a próxima medição.",
+  "A Documentação Técnica registra débitos técnicos de segurança e funcionais, alguns de severidade crítica ou alta (controle de perfil nas telas administrativas, rotas de PDF sem verificação de propriedade, credenciais em arquivo versionado, códigos de certidão previsíveis, reserva concorrente do mesmo bem e erro no cadastro de órgãos), com recomendações de correção (§20). Esses pontos não alteram o tamanho funcional, mas afetam a confiabilidade e a segurança do serviço; recomenda-se à área de TI priorizar sua correção.",
+  "A Instrução Normativa nº 003/2024/SEPLAG revogou as Instruções Normativas nº 005/2019/SEPLAG/SEAPS e nº 008/2019/SEPLAG (art. 14), citadas à comissão como normas de origem do sistema. O manual de utilização disponibilizado é anterior à versão atual: descreve reserva por 5 dias corridos, enquanto a regra implementada é de 5 dias úteis (Documentação Técnica, §9.1)."
+ ],
+ "modulos_tabela": [
+  [
+   "Bens e vitrine: 2 ALI, 70 PF",
+   "Bens disponibilizados (cadastro com fotos, edição, ativação, inativação, exclusão, vitrine com filtros, ficha e certidão do bem) e registros de pesquisa (certificado de pesquisa)"
+  ],
+  [
+   "Reservas e certidões: 1 ALI, 35 PF",
+   "Reserva, acompanhamento, finalização com certidão e código de validação, cancelamento, expiração automática, validação de certidão e relatórios de reservas"
+  ],
+  [
+   "Cadastros de apoio: 3 ALI, 105 PF",
+   "Categorias, órgãos e setores (responsável e contato)"
+  ],
+  [
+   "Usuários e acesso: 1 ALI, 35 PF",
+   "Usuários com perfil, setor, CPF e matrícula, bloqueio, ativação, redefinição de senha e meu perfil"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "^Bens",
+   "Bens e vitrine"
+  ],
+  [
+   "^Reservas",
+   "Reservas e certidões"
+  ],
+  [
+   "^Cadastros",
+   "Cadastros de apoio"
+  ],
+  [
+   "^Usuários",
+   "Usuários e acesso"
+  ]
+ ],
+ "grupos_sem_historia": {}
+}

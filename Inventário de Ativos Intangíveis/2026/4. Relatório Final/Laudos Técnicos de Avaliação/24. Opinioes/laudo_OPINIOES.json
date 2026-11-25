@@ -1,0 +1,188 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "Opiniões",
+ "nome": "Sistema de Opiniões",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_OPINIOES_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/24. Opinioes/APF-Opinioes-v1.1.xlsx",
+ "baseline_nome": "APF-Opinioes-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "PHP",
+ "texto_nivel": "O Sistema de Opiniões foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Não havia documentação funcional: a contagem foi feita no inventário de 2025, a partir de apresentação do sistema pelo desenvolvedor em 09/12/2025 (271 PF). Na revisão de 25/11/2026 (v1.1) foi removido um AIE contado em duplicidade, e o tamanho adotado passou a 266 PF (aba Funções, célula L4).",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de tecnologia da informação da SEPLAG (SSCPG/SAPGD/SEPLAG), em PHP",
+ "areas_negocio": "Superintendência de Gestão do Ganha Tempo da SEPLAG, primeira área usuária (notícia da SEPLAG de 23/06/2023); SEPLAG, a quem compete disponibilizar e gerenciar o acesso ao sistema de avaliação da satisfação do usuário, e Controladoria Geral do Estado, que define com a SEPLAG a metodologia e os indicadores da avaliação continuada (Decreto nº 1.413/2025, arts. 9º e 10)",
+ "perfis": "Cidadão (avaliador), que acessa o formulário pelo QR Code e pode se identificar pelo MT Login; usuários dos órgãos e administradores, com papéis e permissões, que mantêm perguntas, categorias, serviços, páginas e avaliações e acompanham o painel (funções da contagem)",
+ "base_legal": "Lei Federal nº 13.460/2017 (participação, proteção e defesa dos direitos do usuário dos serviços públicos); Decreto Estadual nº 1.413, de 11/04/2025 (Avaliação Continuada de Serviços Públicos e Conselho de Usuários; competência da SEPLAG para disponibilizar e gerenciar o sistema de avaliação da satisfação do usuário, art. 9º, III); Decreto Estadual nº 797/2021 (Carta de Serviços ao Usuário) e Decreto Estadual nº 195/2019 (ouvidorias), citados no Decreto nº 1.413/2025; Lei Federal nº 13.709/2018 (LGPD), na coleta opcional de dados pessoais",
+ "vi": 0.75,
+ "vi_justificativa": [
+  "O Decreto nº 1.413/2025 institui a Avaliação Continuada dos Serviços Públicos no Poder Executivo Estadual e define como ferramenta as pesquisas de satisfação do usuário, para levantar a opinião e mensurar a qualidade do serviço prestado (art. 6º, I); os órgãos devem avaliar a satisfação do usuário e a qualidade do atendimento (art. 5º), os gestores devem acompanhar periodicamente os indicadores de satisfação (art. 7º) e compete à SEPLAG disponibilizar e gerenciar o acesso ao sistema de avaliação da satisfação do usuário (art. 9º, III). O Sistema de Opiniões cumpre esse papel nas unidades do Ganha Tempo e em outros serviços estaduais, com avaliação por QR Code.",
+  "A inoperância do sistema interromperia a coleta das avaliações de satisfação e os indicadores usados pelos gestores, com prejuízo de alto impacto à avaliação continuada dos serviços públicos. A comissão mantém o nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, adotado no inventário de 2025."
+ ],
+ "finalidade": [
+  "O Sistema de Opiniões é a ferramenta digital desenvolvida pela equipe de tecnologia da informação da SEPLAG para medir a satisfação dos cidadãos atendidos nas unidades do Ganha Tempo e em outros serviços públicos estaduais. Ao final do atendimento, o cidadão escaneia o QR Code disponibilizado, escolhe uma classificação de ruim a excelente e pode informar alguns dados pessoais e deixar críticas, elogios e sugestões; as opiniões são encaminhadas ao setor responsável e analisadas pela equipe gestora. Segundo a SEPLAG, o sistema começou a funcionar em junho de 2023 nas sete unidades do Ganha Tempo e registrou 2.575 avaliações nas primeiras semanas, com previsão de ser replicado em outros setores do Estado (notícia de 23/06/2023).",
+  "Não há decreto exclusivo para o software; ele se insere na Avaliação Continuada dos Serviços Públicos do Decreto nº 1.413/2025, que regulamenta, no Estado, a Lei Federal nº 13.460/2017. O decreto define os objetivos da avaliação continuada (art. 3º), os aspectos a avaliar, como satisfação do usuário e qualidade do atendimento (art. 5º), as pesquisas de satisfação como ferramenta (art. 6º, I) e atribui à SEPLAG a disponibilização e o gerenciamento do sistema de avaliação da satisfação do usuário (art. 9º, III).",
+  "Pela contagem de pontos de função, o sistema permite: ao cidadão, identificar-se pelo MT Login, escolher o órgão, gerar o QR Code e registrar a avaliação; aos usuários internos, cadastrar, editar, apagar, listar e acompanhar avaliações por cargo, unidade e serviço e consultar o painel de avaliações por órgão; manter perguntas e suas categorias e tipos, serviços e páginas; e manter usuários, papéis e permissões, com registro de auditoria."
+ ],
+ "integracoes": [
+  [
+   "MT Login",
+   "Autenticação e dados do cidadão que opta por se identificar",
+   "AIE (MT Login)"
+  ],
+  [
+   "Ouvidorias e Carta de Serviços",
+   "Tratamento de manifestações e padrões de qualidade (Decretos nº 195/2019 e nº 797/2021)",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "Visão Externa",
+   "Avaliação pelo cidadão"
+  ],
+  [
+   "^(Avaliações - Visão Interna|Dashbord)",
+   "Avaliações e painel"
+  ],
+  [
+   "^(Perguntas|Categoria de Perguntas|Serviços|Páginas)",
+   "Questionários e serviços"
+  ],
+  [
+   "^(Login|Usuário|Papeis|Permissões|Auditoria)",
+   "Acesso e segurança"
+  ]
+ ],
+ "ordem_modulos": [
+  "Avaliação pelo cidadão",
+  "Avaliações e painel",
+  "Questionários e serviços",
+  "Acesso e segurança"
+ ],
+ "modulos_tabela": [
+  [
+   "Avaliação pelo cidadão",
+   "Formulário acessado por QR Code: dados do usuário (MT Login), órgão, geração do QR Code e registro da avaliação"
+  ],
+  [
+   "Avaliações e painel",
+   "Avaliações internas (cadastrar, editar, apagar, listar e acompanhar por cargo, unidade e serviço) e painel de avaliações por órgão"
+  ],
+  [
+   "Questionários e serviços",
+   "Perguntas, categorias e tipos de perguntas, serviços e páginas"
+  ],
+  [
+   "Acesso e segurança",
+   "MT Login, usuários, papéis, permissões e auditoria"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe de tecnologia da informação da SEPLAG e mantido e hospedado pela SEPLAG (notícia da SEPLAG de 23/06/2023)",
+ "uso": "Em produção desde junho de 2023 nas unidades do Ganha Tempo, com previsão de uso em outros serviços estaduais",
+ "beneficio": "Potencial de serviço para o Estado: avaliação contínua da satisfação do cidadão, com indicadores para a melhoria dos serviços públicos (Decreto nº 1.413/2025)",
+ "fase_texto": "Sistema em produção, ferramenta de pesquisa de satisfação da avaliação continuada (Decreto nº 1.413/2025)",
+ "custo_incorrido": "O Sistema de Opiniões foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 1.413/2025 e da notícia da SEPLAG de 23/06/2023, e conferência da planilha de contagem APF-Opinioes v1.0, revisada na v1.1",
+ "documentacao_resumo": "Planilha de contagem v1.1, Decreto nº 1.413/2025 e notícia da SEPLAG (Anexo I). Não há documentação funcional",
+ "documentacao_fonte": "Não foram disponibilizados documentos funcionais nem artefatos do sistema nos inventários de 2025 e 2026. A contagem foi feita a partir de apresentação do sistema pelo desenvolvedor, e os documentos abaixo fundamentam a finalidade, o uso e a base legal.",
+ "ressalva_documentacao": "Não foram disponibilizados documentos funcionais nem os artefatos solicitados para a medição nos inventários de 2025 e 2026. A contagem foi feita por breve apresentação do sistema em 09/12/2025; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A planilha v1.0, de 09/12/2025, foi a primeira medição do sistema (271 PF, inventário de 2025). Na revisão de 25/11/2026 (v1.1) foi removido o AIE do MT Login contado em duplicidade e corrigidos rótulos de duas funções: 266 PF.",
+ "exemplos_tipos": [
+  "Perguntas, categorias, serviços, páginas, avaliações, usuários, papéis, permissões, auditoria",
+  "MT Login",
+  "Registrar avaliação, cadastrar pergunta, liberar ou bloquear permissão",
+  "Pesquisar por órgão, combos de cargo, unidade e serviço",
+  "Listar avaliações, gerar QR Code, acompanhar avaliações"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "09/12/2025",
+   "pf": 271,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Produção",
+   "uso": "Planilha v1.0; VI 0,75; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 266,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.1 (duplicidade removida); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 271,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da remoção de um AIE contado em duplicidade (de 271 para 266 PF). O Valor Institucional permanece 0,75.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "O MT Login, contado como AIE, e os sistemas das ouvidorias e da Carta de Serviços.",
+  "Funcionalidades não apresentadas na demonstração de 09/12/2025."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 1.413/2025",
+   "Governo do Estado de Mato Grosso",
+   "11/04/2025",
+   "Avaliação Continuada de Serviços Públicos, pesquisas de satisfação e competência da SEPLAG sobre o sistema de avaliação"
+  ],
+  [
+   "Notícia \"Mais de 94% da população avalia atendimento do Ganha Tempo como ótimo ou excelente\"",
+   "SEPLAG, Vitor Hugo Batista",
+   "23/06/2023",
+   "Funcionamento do Sistema de Opiniões, QR Code, unidades e número de avaliações"
+  ],
+  [
+   "Planilhas de contagem APF-Opinioes v1.0 e v1.1",
+   "Pasta do sistema",
+   "09/12/2025 e 25/11/2026",
+   "Funções de dados e de transação e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho, preço, VI e valor do inventário de 2025"
+  ],
+  [
+   "Normas informadas à comissão (Lei nº 13.460/2017, Decretos nº 797/2021 e nº 195/2019, LGPD)",
+   "Informação prestada à comissão; textos não anexados",
+   "2017 a 2021",
+   "Contexto normativo (citadas no Decreto nº 1.413/2025)"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, o decreto e a notícia acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Revisão da contagem: a planilha de 2025 contava duas vezes o MT Login como AIE (linhas 14 e 74, 5 PF cada) e trazia as funções de edição e exclusão de páginas rotuladas como \"Usuário - Editar\" e \"Usuário - Apagar\" (linhas 70 e 71). Na revisão de 25/11/2026 (v1.1) a linha repetida foi removida e os rótulos corrigidos; o tamanho passou de 271 para 266 PF.",
+  "Possíveis inconsistências mantidas por falta de documentação: listagens e visualizações contadas como saída externa (SE, 5 PF) em vez de consulta externa (CE, 4 PF) quando não há cálculo ou dado derivado; o ALI Auditoria sem transação de consulta; e o grupo \"Avaliações - Visão Interna - Pesquisa por Órgão\" sem funções. Recomenda-se à área de TI disponibilizar a documentação funcional para revisão da contagem.",
+  "O Decreto nº 1.413/2025 atribui à MTI o desenvolvimento de soluções tecnológicas e o funcionamento das plataformas de avaliação dos serviços (art. 11), enquanto o Sistema de Opiniões foi desenvolvido e é mantido pela SEPLAG; não foram informados à comissão os arranjos entre os dois órgãos."
+ ]
+}

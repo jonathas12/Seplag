@@ -1,0 +1,45 @@
+{
+ "sigla": "Opiniões",
+ "medida": "PF IFPUG",
+ "pf": 266.0,
+ "preco_pf": 1215.09,
+ "vt": 323213.94,
+ "vi": 0.75,
+ "va": 565624.4,
+ "funcoes": 56,
+ "por_tipo": {
+  "ALI": [
+   9,
+   63.0
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   21,
+   84.0
+  ],
+  "CE": [
+   11,
+   44.0
+  ],
+  "SE": [
+   14,
+   70.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   56,
+   266.0,
+   266.0
+  ]
+ },
+ "por_modulo": {
+  "Avaliação pelo cidadão": 17.0,
+  "Avaliações e painel": 50.0,
+  "Questionários e serviços": 123.0,
+  "Acesso e segurança": 76.0
+ }
+}

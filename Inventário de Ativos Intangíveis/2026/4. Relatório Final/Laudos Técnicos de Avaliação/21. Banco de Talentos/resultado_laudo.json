@@ -1,0 +1,44 @@
+{
+ "sigla": "Banco de Talentos",
+ "medida": "PF IFPUG",
+ "pf": 317.0,
+ "preco_pf": 1215.09,
+ "vt": 385183.53,
+ "vi": 0.5,
+ "va": 577775.29,
+ "funcoes": 71,
+ "por_tipo": {
+  "ALI": [
+   7,
+   49.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   14,
+   56.0
+  ],
+  "CE": [
+   38,
+   152.0
+  ],
+  "SE": [
+   10,
+   50.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   71,
+   317.0,
+   317.0
+  ]
+ },
+ "por_modulo": {
+  "Currículo Gov.MT": 200.0,
+  "Buscar talentos": 81.0,
+  "Auditoria": 36.0
+ }
+}

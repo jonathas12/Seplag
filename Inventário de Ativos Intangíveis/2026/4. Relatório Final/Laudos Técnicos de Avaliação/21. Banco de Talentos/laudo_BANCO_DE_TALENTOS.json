@@ -1,0 +1,248 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "Banco de Talentos",
+ "nome": "Sistema Banco de Talentos (Currículo Gov.MT)",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_BANCO_DE_TALENTOS_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/21. Banco de Talentos/APF-Banco de Talentos-v1.1.xlsx",
+ "baseline_nome": "APF-Banco de Talentos-v1.1.xlsx",
+ "baseline_versao": "1.1",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "formato_us": "US{:02d}",
+ "texto_nivel": "O Banco de Talentos foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). A planilha v1.0 (inventário de 2025) contava 281 PF. Na revisão de 25/11/2026 (v1.1), a partir das histórias de usuário atualizadas e do LEIA-ME da analista, foi incluída a US012 (Painel de Auditoria, 36 PF) e registradas as alterações das demais histórias, que não mudam o tamanho da aplicação: 317 PF (aba Funções, célula L4).",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java, com analistas de requisitos responsáveis pelas histórias de usuário",
+ "areas_negocio": "Unidade Central de Gestão de Pessoas (UCGP), representada pela Secretaria Adjunta de Gestão de Pessoas da SEPLAG, que gere o Banco de Talentos e o Currículo Gov.MT e atua no perfil de Administrador Central, e Unidades Setoriais de Gestão de Pessoas (USGP) dos órgãos e entidades, que usam o Banco de Talentos na movimentação de servidores (Decreto nº 1.854/2026, arts. 2º, 5º e 6º)",
+ "perfis": "Servidor, que mantém de forma facultativa o próprio Currículo Gov.MT no Portal do Servidor (art. 9º); Administrador Central (UCGP), que cadastra e capacita os administradores setoriais e indica servidores de outros órgãos (art. 7º, I); Administrador Setorial, no mínimo dois servidores da USGP, que identifica o perfil solicitado pelo gestor no próprio órgão (art. 7º, II); Chefia Imediata, que solicita o perfil à USGP e entrevista o candidato (art. 8º); Admin do Sistema, previsto nas histórias de usuário. Os administradores acessam o painel de auditoria (US012)",
+ "base_legal": "Decreto Estadual nº 1.854, de 22/01/2026 (DOE de 22/01/2026, Processo SEPLAG-PRO-2025/27678), que institui o Banco de Talentos e o Currículo Gov.MT como ferramentas gerenciais de gestão de pessoas na Administração Direta, Autárquica e Fundacional e atribui à SEPLAG o seu desenvolvimento, gestão e disponibilização (art. 13); Decreto nº 691/2020, art. 31-A, acrescentado pelo Decreto nº 1.175/2024, que autoriza a movimentação de servidores com uso do banco de talentos (citado nos considerandos do Decreto nº 1.854/2026); Lei Complementar nº 04/1990, arts. 51 e 119 (remoção e cessão). Normas correlatas informadas à comissão, sem texto anexado: Decreto nº 1.855/2026 e IN nº 005/2026/SEPLAG (capacitação e instrutoria na Escola de Governo), IN nº 008/2025/SEPLAG, compilada pela IN nº 007/2026/SEPLAG (atualização cadastral), e Lei Federal nº 13.709/2018 (LGPD)",
+ "vi": 0.5,
+ "vi_justificativa": [
+  "O Banco de Talentos e o Currículo Gov.MT foram instituídos pelo Decreto nº 1.854/2026 como ferramentas gerenciais de gestão de pessoas do Poder Executivo, com os objetivos de identificar o perfil profissional dos servidores, subsidiar a alocação e a movimentação, auxiliar a indicação técnica para funções de confiança e cargos em comissão, facilitar a formação de equipes para projetos e comissões e subsidiar o planejamento da capacitação (arts. 3º e 4º). Cabe à SEPLAG desenvolver, gerir e disponibilizar as ferramentas (art. 13).",
+  "O uso é de apoio à decisão: a atualização do currículo pelo servidor é facultativa (art. 9º), a consulta é interna às áreas de gestão de pessoas (art. 11) e as movimentações e indicações continuam decididas pelas autoridades competentes. A inoperância do sistema prejudicaria a identificação de perfis, com impacto médio sobre as atividades, que podem ser supridas por outros meios. A comissão mantém o nível Importante, índice 0,50, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, adotado no inventário de 2025."
+ ],
+ "finalidade": [
+  "O Sistema Banco de Talentos (Currículo Gov.MT) é a plataforma da SEPLAG em que o servidor mantém seu currículo e em que as áreas de gestão de pessoas identificam os perfis profissionais existentes no Poder Executivo. O Decreto nº 1.854, de 22/01/2026, instituiu o Banco de Talentos, ferramenta gerencial de identificação do perfil profissional e de aproveitamento das potencialidades dos servidores nas movimentações funcionais, e o Currículo Gov.MT, documento que consolida formação, capacitações, habilidades, experiências, área de atuação e cargos e funções do servidor, disponível no Portal do Servidor (arts. 1º e 2º). O banco é composto automaticamente pelos dados do sistema corporativo oficial de gestão de pessoas (matrícula, cargo, lotação, unidades e cargos ou funções no Poder Executivo) e pelos dados que o servidor insere no currículo (formação, capacitação, experiências inclusive em outros entes e na iniciativa privada, habilidades e atributos profissionais), sob sua responsabilidade (art. 10). A SEPLAG divulgou a disponibilização das funcionalidades no Portal do Servidor em 04/02/2026 (notícia do sítio da SEPLAG).",
+  "Pelas histórias de usuário, o servidor visualiza e baixa seu currículo oficial (dados pessoais, perfil, vínculos ativos, formação, capacitação, cargos e funções no Poder Executivo e em outros entes ou no setor privado, unidades de atuação e habilidades e experiência), com dados do SEAP e do Recadastramento somente para leitura, e mantém as seções editáveis: perfil, formação, capacitação, habilidades e experiência e cargos ou funções em outros entes (US01 a US05, US10 e US11). Os administradores (do sistema, central e setorial) buscam talentos por pesquisa simples, por competência (formação, capacitação, habilidades), ou avançada, por requisitos obrigatórios e desejáveis, visualizam e baixam currículos e exportam relatórios em PDF e Excel (US06 a US08). Em 2026 foi implementado o Painel de Auditoria de Acessos, Atualizações e Sessões Ativas (US012), com indicadores de volumetria, acessos por órgão e por usuário segmentados por perfil, identificação de quem apenas acessou ou atualizou o currículo, sessões ativas e exportação para Excel.",
+  "Nas demais histórias, a versão de 2026 incluiu regras novas, destacadas pela analista: identificação dos vínculos pelo código da empresa no SEAP (Poder Executivo e empresas públicas) sem duplicar registros, regras de digitação do perfil, coluna Perfil/Especialidade no grid e na exportação, nova consulta da pesquisa avançada por requisitos obrigatórios e desejáveis e a seção de cargos e funções em outros entes no currículo oficial."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Dados funcionais do sistema corporativo oficial de gestão de pessoas (Decreto nº 1.854/2026, art. 10, I): pessoais, vínculos, cargos, funções e unidades de atuação, somente leitura; código da empresa para identificar os vínculos",
+   "AIE (Público Alvo)"
+  ],
+  [
+   "Recadastramento",
+   "Município, perfil e categoria da unidade de atuação (US01)",
+   "AIE (Recadastramento)"
+  ],
+  [
+   "Portal do Servidor",
+   "Acesso do servidor ao currículo (Decreto nº 1.854/2026)",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^US_0[1-5]|^US_10|^US_111",
+   "Currículo Gov.MT"
+  ],
+  [
+   "^US_0[678]",
+   "Buscar talentos"
+  ],
+  [
+   "^US012",
+   "Auditoria"
+  ]
+ ],
+ "ordem_modulos": [
+  "Currículo Gov.MT",
+  "Buscar talentos",
+  "Auditoria"
+ ],
+ "modulos_tabela": [
+  [
+   "Currículo Gov.MT",
+   "Currículo oficial (visualização por seções e download), perfil, formação, capacitação, habilidades e experiência e cargos ou funções em outros entes (US01 a US05, US10, US11)"
+  ],
+  [
+   "Buscar talentos",
+   "Pesquisa simples por competência, pesquisa avançada por requisitos obrigatórios e desejáveis, visualização e download de currículos e relatórios em PDF e Excel (US06 a US08)"
+  ],
+  [
+   "Auditoria",
+   "Painel de Auditoria de Acessos, Atualizações e Sessões Ativas: indicadores, acessos por órgão e por usuário, sessões ativas e exportação (US012, 2026)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US01",
+   "nome": "Manter currículo oficial",
+   "versao": "2.0",
+   "data": "16/10/2025",
+   "modulo": "Currículo Gov.MT"
+  },
+  {
+   "codigo": "US02",
+   "nome": "Manter perfil",
+   "versao": "1.1",
+   "data": "25/04/2025",
+   "modulo": "Currículo Gov.MT"
+  },
+  {
+   "codigo": "US06",
+   "nome": "Buscar talentos - pesquisa simples",
+   "versao": "3.0",
+   "data": "16/10/2025",
+   "modulo": "Buscar talentos"
+  },
+  {
+   "codigo": "US07",
+   "nome": "Buscar talentos - pesquisa avançada",
+   "versao": "2.0",
+   "data": "04/06/2025",
+   "modulo": "Buscar talentos"
+  },
+  {
+   "codigo": "US08",
+   "nome": "Buscar talentos - relatório",
+   "versao": "1.2",
+   "data": "08/10/2024",
+   "modulo": "Buscar talentos"
+  },
+  {
+   "codigo": "US10",
+   "nome": "Baixar currículo Gov.MT",
+   "versao": "3.0",
+   "data": "24/11/2025",
+   "modulo": "Currículo Gov.MT"
+  },
+  {
+   "codigo": "US11",
+   "nome": "Manter Cargos/Funções em outros Entes Federativo/Poder ou Setor Privado",
+   "versao": "1.0",
+   "data": "10/10/2025",
+   "modulo": "Currículo Gov.MT"
+  },
+  {
+   "codigo": "US12",
+   "nome": "Painel de Auditoria de Acessos, Atualizações e Sessões Ativas",
+   "versao": "1.0",
+   "data": "29/05/2026",
+   "modulo": "Auditoria"
+  }
+ ],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG",
+ "uso": "Em produção, disponível no Portal do Servidor (notícia da SEPLAG de 04/02/2026); preenchimento do currículo facultativo pelo servidor e consulta interna às áreas de gestão de pessoas (Decreto nº 1.854/2026, arts. 9º e 11)",
+ "beneficio": "Potencial de serviço para o Estado: mapeamento de perfis e competências dos servidores para movimentações, indicações e planejamento da capacitação",
+ "fase_texto": "Sistema em produção, instituído pelo Decreto nº 1.854/2026",
+ "custo_incorrido": "O Banco de Talentos foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das histórias de usuário de 2026 (com as mudanças destacadas e riscadas) e do LEIA-ME da analista, conferência da planilha APF-Banco de Talentos v1.0 e atualização da contagem na v1.1",
+ "documentacao_resumo": "8 histórias de usuário de 2026, LEIA-ME da analista e planilha de contagem v1.1 (Anexo I)",
+ "documentacao_fonte": "A tabela A2 traz a versão e a data da última linha do histórico de versões de cada história. As versões dos nomes dos arquivos (ex.: US01 v.2.1, US06 v.3.1) são posteriores às do histórico, que não foi atualizado.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. As histórias US03 (formação), US04 (capacitação) e US05 (habilidades e experiência) não constam da pasta de 2026; suas funções são as da baseline de 2025. O histórico de versões de várias histórias não registra a versão indicada no nome do arquivo.",
+ "texto_evolucao": "A planilha v1.0, de 05/12/2025, mediu 281 PF (inventário de 2025). Na revisão de 25/11/2026 (v1.1) foram incluídas as 7 funções da US012 (36 PF) e anotadas as alterações das demais histórias; também foram corrigidos o tipo de contagem, o nome do projeto e a tecnologia na aba Contagem.",
+ "exemplos_tipos": [
+  "Currículo, perfil, formação, capacitação, habilidades, cargos em outros entes, log de auditoria",
+  "Público alvo e dados do servidor (SEAP), Recadastramento",
+  "Salvar perfil, adicionar formação, excluir capacitação",
+  "Pesquisar talentos, visualizar currículo, combos de órgão e competência",
+  "Vínculos e cargos com tempo calculado, painel de acessos, exportação Excel"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 281,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Produção",
+   "uso": "Planilha v1.0; VI 0,50; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 317,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.1 (US012 incluída); VI 0,50"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 281,
+  "preco_pf": 943.25,
+  "vi": 0.5,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e do aumento do tamanho funcional, de 281 para 317 PF, com a implementação do Painel de Auditoria (US012). O Valor Institucional permanece 0,50.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único), como padronização visual, brasão no cabeçalho e responsividade.",
+  "Alterações de regras de funções existentes (2026), que não mudam o tamanho da aplicação e estão registradas na coluna O da planilha.",
+  "Os sistemas SEAP, Recadastramento e Portal do Servidor."
+ ],
+ "outros_documentos": [
+  [
+   "LEIA-ME PRIMEIRO - BANCO DE TALENTOS",
+   "Analista de requisitos",
+   "17/11/2026",
+   "Implementação da US012 em 2026 e regras novas nas demais histórias"
+  ],
+  [
+   "Planilhas de contagem APF-Banco de Talentos v1.0 e v1.1",
+   "Pasta do sistema",
+   "05/12/2025 e 25/11/2026",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho, preço, VI e valor do inventário de 2025"
+  ],
+  [
+   "Decreto Estadual nº 1.854, de 22/01/2026",
+   "DOE de 22/01/2026 (cópia da base de legislação da SEFAZ-MT)",
+   "22/01/2026",
+   "Instituição, objetivos, competências, perfis e composição dos dados"
+  ],
+  [
+   "Notícia \"Seplag-MT cria nova plataforma para atualizar informações profissionais dos servidores\"",
+   "Sítio da SEPLAG",
+   "04/02/2026",
+   "Disponibilização no Portal do Servidor e gestão das ferramentas"
+  ],
+  [
+   "Decreto nº 1.855/2026, IN nº 005/2026/SEPLAG, IN nº 008/2025/SEPLAG (compilada pela IN nº 007/2026/SEPLAG) e LGPD",
+   "Informação prestada à comissão; textos não anexados",
+   "2018 a 2026",
+   "Normas correlatas (não lidas)"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, as histórias de usuário, o LEIA-ME da analista e o Decreto nº 1.854/2026 acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Atualização da contagem: a US012 (Painel de Auditoria de Acessos, Atualizações e Sessões Ativas), implementada em 2026, foi contada como 1 ALI (log de auditoria de acessos e atualizações), 5 SE (painéis por órgão, por usuário e de sessões ativas, com dados calculados, e duas exportações para Excel) e 1 CE (filtro de órgão), total de 36 PF. As regras novas das US01, US02, US06, US07, US08, US10 e US11 alteram funções existentes e não aumentam o tamanho da aplicação; foram registradas na coluna O das funções afetadas.",
+  "A aba Contagem da planilha de 2025 registrava o tipo Projeto de Desenvolvimento, o projeto \"Serviço de Agendamento do SGA\" (de outro sistema) e não informava a tecnologia; foram corrigidos na v1.1 para Aplicação, Banco de Talentos e Java. Na baseline também há função de exclusão de formação classificada como CE e exportação da pesquisa simples como EE; as classificações foram mantidas, pois não alteram o tamanho no nível estimativo (4 PF cada).",
+  "O Decreto nº 1.854/2026 foi lido na cópia da base de legislação da SEFAZ-MT, que tem caráter informativo; o texto oficial é o publicado no Diário Oficial de 22/01/2026. As normas correlatas (Decreto nº 1.855/2026, IN nº 005/2026/SEPLAG, IN nº 008/2025/SEPLAG e IN nº 007/2026/SEPLAG) foram informadas à comissão, mas seus textos não foram anexados; recomenda-se anexá-los ao processo do inventário."
+ ]
+}

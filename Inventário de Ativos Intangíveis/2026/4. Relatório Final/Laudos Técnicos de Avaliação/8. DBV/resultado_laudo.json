@@ -1,0 +1,50 @@
+{
+ "sigla": "DBV",
+ "medida": "PF Local da FS",
+ "pf": 181.7,
+ "preco_pf": 1215.09,
+ "vt": 220781.85,
+ "vi": 0.5,
+ "va": 331172.78,
+ "funcoes": 44,
+ "por_tipo": {
+  "ALI": [
+   5,
+   28.7
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   16,
+   61.0
+  ],
+  "CE": [
+   17,
+   63.0
+  ],
+  "SE": [
+   5,
+   24.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   43,
+   181.0,
+   181.0
+  ],
+  "AER": [
+   1,
+   7.0,
+   0.7000000000000001
+  ]
+ },
+ "por_modulo": {
+  "Declaração do agente público": 70.0,
+  "Acompanhamento e relatórios": 34.0,
+  "Auditoria": 15.0,
+  "Segurança, exercícios e carga de dados": 62.7
+ }
+}

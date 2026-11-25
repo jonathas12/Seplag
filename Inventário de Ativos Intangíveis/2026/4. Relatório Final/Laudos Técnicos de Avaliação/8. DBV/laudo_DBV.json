@@ -1,0 +1,210 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "DBV",
+ "nome": "Sistema de Declaração Anual de Bens e Valores",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_DBV_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/8. DBV/Baseline-Declaração de Bens e Valores-v1.2.xlsx",
+ "baseline_nome": "Baseline-Declaração de Bens e Valores-v1.2.xlsx",
+ "baseline_versao": "1.2",
+ "medida": "PF Local da FS",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "texto_nivel": "O DBV foi medido no nível Detalhado (IFPUG), com tipos de dados e registros referenciados identificados e complexidade calculada para cada função. A planilha v1.2, revisada em 11/12/2023, soma 188 PF IFPUG (célula L4) e 181,7 PF Local da FS (célula L6); a diferença de 6,3 PF decorre da função de dados Carga de Dados, registrada com o tipo de manutenção AER, que contribui com 0,7 PF em vez de 7 PF. Por decisão da comissão, o inventário de 2026 adota o PF Local da FS, 181,7 PF, critério dos inventários de 2023 e 2024. Como não foi disponibilizada documentação funcional, a contagem é a mesma dos inventários anteriores.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "SEPLAG, competente para o desenvolvimento, a gestão e a disponibilização do sistema via internet a todos os órgãos e entidades do Poder Executivo (Decreto nº 4.487/2002, art. 5º-A, parágrafo único, incluído pelo Decreto nº 930/2021); unidades de gestão de pessoas dos órgãos, que acompanham as entregas; órgãos de controle, com acesso de fiscalização às declarações (informação prestada à comissão)",
+ "perfis": "Agente público declarante (servidores efetivos, comissionados, ocupantes de função de confiança e empregados públicos), que entrega a declaração na posse, no desligamento e anualmente; gestores e administradores, que acompanham as declarações, emitem relatórios, mantêm usuários, perfis e exercícios; fiscalizador, com acesso restrito aos declarantes que lhe são atribuídos (planilha de contagem, grupo Segurança Usuário)",
+ "base_legal": "Decreto Estadual nº 4.487, de 18/06/2002, com as alterações do Decreto nº 930, de 03/05/2021 (arts. 5º, 5º-A e 6º: obrigatoriedade da entrega na posse, no desligamento e anualmente; instituição do DBV; entrega exclusiva pelo sistema). Normas informadas à comissão, sem texto anexado: Decreto nº 2.590/2004; Lei Federal nº 8.429/1992, art. 13, com a redação da Lei nº 14.230/2021 (declaração como condição para posse e exercício); Lei Complementar Estadual nº 04/1990 (Estatuto dos Servidores); Instrução Normativa nº 01/2002 e Portaria nº 57/2021/SEPLAG (procedimentos, guarda, fiscalização e prazos)",
+ "vi": 0.5,
+ "vi_justificativa": [
+  "O DBV é a ferramenta oficial e exclusiva de entrega da declaração de bens e valores dos agentes públicos do Poder Executivo (Decreto nº 4.487/2002, arts. 5º-A e 6º, na redação do Decreto nº 930/2021). A entrega é obrigatória na posse, no desligamento e anualmente, e a declaração é exigida como condição para posse e exercício pela Lei nº 8.429/1992, art. 13 (informação prestada à comissão).",
+  "O uso é sazonal, concentrado no período anual de entrega, que acompanha o prazo do imposto de renda e termina no último dia do mês subsequente (art. 5º, III). A inoperância do sistema fora desse período teria impacto reduzido, e dentro dele poderia ser mitigada pela prorrogação do prazo, que a SEPLAG pode fixar (Decreto nº 930/2021, art. 5º). A comissão mantém o nível Importante, índice 0,50, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, adotado nos inventários de 2023 a 2025."
+ ],
+ "finalidade": [
+  "O Sistema de Declaração Anual de Bens e Valores (DBV) recebe, trata, armazena e disponibiliza para acompanhamento e fiscalização as declarações de bens e valores dos agentes públicos do Poder Executivo de Mato Grosso. O Decreto nº 930, de 03/05/2021, alterou o Decreto nº 4.487/2002 para instituir o DBV como ferramenta oficial de envio (art. 5º-A), atribuir à SEPLAG seu desenvolvimento, gestão e disponibilização via internet e tornar a entrega anual exclusivamente eletrônica (art. 6º), obrigatória a partir de 2022 (art. 4º). A motivação registrada no decreto é eliminar a coleta e a guarda de declarações em papel, com economia de material e de espaço físico, e alinhar o prazo ao da declaração do imposto de renda.",
+  "Pelas funções da contagem, o agente público declara de uma das formas previstas no art. 6º do decreto: preenche o formulário de bens no sistema, com código do bem, localização e lista dos bens cadastrados, ou envia por upload a declaração do imposto de renda; pode também declarar que não possui bens. Antes de finalizar aceita o termo de responsabilidade e LGPD; ao concluir emite o comprovante (a entrega se considera concluída com o comprovante e o número de protocolo, art. 6º, parágrafo único). A declaração pode ser consultada, alterada ou retificada a qualquer momento, excluída e impressa.",
+  "Os gestores acompanham as declarações por órgão, tipo e situação, com exportação para Excel, e emitem relatórios consolidados por órgão e por vínculo, em PDF e Excel. O módulo de segurança mantém usuários, vínculos e perfis de acesso, recuperação de senha e o acesso de fiscalização, em que o fiscalizador recebe declarantes atribuídos e visualiza os arquivos enviados; o cadastro de exercícios define os períodos de entrega; a auditoria registra as operações, com consulta e exportação; e a carga de dados importa as informações funcionais dos agentes públicos."
+ ],
+ "integracoes": [
+  [
+   "Órgãos do Poder Executivo",
+   "Lista de órgãos usada no acompanhamento das declarações",
+   "AIE (Órgão)"
+  ],
+  [
+   "Base funcional dos agentes públicos",
+   "Dados de vínculos importados pela carga de dados",
+   "ALI (Carga de Dados)"
+  ],
+  [
+   "Receita Federal do Brasil",
+   "Declaração do imposto de renda enviada pelo próprio declarante em arquivo (upload); não há integração entre sistemas",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^Declara|^$",
+   "Declaração do agente público"
+  ],
+  [
+   "^Acompanhar|^Relat",
+   "Acompanhamento e relatórios"
+  ],
+  [
+   "^Auditoria",
+   "Auditoria"
+  ],
+  [
+   "^Seguran|^Carga",
+   "Segurança, exercícios e carga de dados"
+  ]
+ ],
+ "ordem_modulos": [
+  "Declaração do agente público",
+  "Acompanhamento e relatórios",
+  "Auditoria",
+  "Segurança, exercícios e carga de dados"
+ ],
+ "modulos_tabela": [
+  [
+   "Declaração do agente público",
+   "Formulário de bens, envio da declaração do imposto de renda, declaração de não possuir bens, termo de responsabilidade e LGPD, finalização, comprovante, consulta, alteração, retificação, exclusão e impressão"
+  ],
+  [
+   "Acompanhamento e relatórios",
+   "Acompanhamento das declarações por órgão, tipo e situação, exportação para Excel e relatórios consolidados por órgão e por vínculo"
+  ],
+  [
+   "Auditoria",
+   "Registro das operações, consulta e exportação em Excel e PDF"
+  ],
+  [
+   "Segurança, exercícios e carga de dados",
+   "Usuários, vínculos, perfis de acesso, acesso de fiscalização, recuperação de senha, exercícios (períodos de entrega) e carga de dados"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG",
+ "uso": "Em produção; uso sazonal, concentrado no período anual de entrega das declarações, e contínuo para posse e desligamento",
+ "beneficio": "Potencial de serviço para o Estado: entrega eletrônica obrigatória das declarações de bens, sem custo de papel e de arquivo físico, com acompanhamento e fiscalização centralizados",
+ "fase_texto": "Sistema em produção, instituído pelo Decreto nº 930/2021",
+ "custo_incorrido": "O DBV foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 930/2021 e conferência da planilha de contagem v1.2 (abas Contagem e Funções)",
+ "documentacao_resumo": "Não há documentação funcional; planilha de contagem v1.2 e Decreto nº 930/2021 (Anexo I)",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário, casos de uso nem manual. A descrição se apoia nas funções da planilha de contagem, no Decreto nº 930/2021 e nas informações prestadas à comissão.",
+ "ressalva_documentacao": "Sem documentação funcional, a descrição das funcionalidades se limita às funções da planilha de contagem e ao decreto. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A contagem foi criada em 28/04/2022 e revisada em 11/12/2023 (planilha v1.2), com a inclusão da consulta de vínculos, do submódulo de fiscalização e de ajustes na auditoria e na declaração. Os inventários de 2023 e 2024 adotaram 181,7 PF Local da FS e o de 2025 adotou 188 PF IFPUG da mesma planilha; em 2026 a comissão volta ao PF Local da FS.",
+ "exemplos_tipos": [
+  "Declaração, usuários, exercícios, auditoria, carga de dados",
+  "Órgão",
+  "Declarar, finalizar, enviar imposto de renda, cadastrar exercício",
+  "Consultar declarações, acompanhar, exportar Excel, visualizar arquivo",
+  "Comprovante, relatórios consolidados por órgão e por vínculo, tabela de bens"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "11/12/2023",
+   "pf": 181.7,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.2, PF Local da FS; VI 0,50"
+  },
+  {
+   "inventario": 2024,
+   "data": "11/12/2023",
+   "pf": 181.7,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Mesma planilha, PF Local da FS; VI 0,50"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 188,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Produção",
+   "uso": "Mesma planilha, PF IFPUG; VI 0,50"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 181.7,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Mesma planilha, PF Local da FS; VI 0,50"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 188,
+  "preco_pf": 943.25,
+  "vi": 0.5,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026 e da medida adotada: o inventário de 2025 usou 188 PF IFPUG e o de 2026 usa 181,7 PF Local da FS da mesma planilha, como em 2023 e 2024. A contagem não mudou e o Valor Institucional permanece 0,50.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "A análise da evolução patrimonial dos declarantes, feita pelos órgãos de controle fora do sistema.",
+  "O sistema de origem dos dados funcionais e o cadastro de órgãos."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto nº 930, de 03/05/2021",
+   "DOE, republicado por incorreção do D.O. de 04/05/2021 (cópia da base Leis Estaduais)",
+   "03/05/2021",
+   "Instituição do DBV, competência da SEPLAG, formas e prazo de entrega"
+  ],
+  [
+   "Planilha de contagem Baseline-Declaração de Bens e Valores v1.2",
+   "Pasta do sistema",
+   "28/04/2022; revisão em 11/12/2023",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ],
+  [
+   "Decreto nº 4.487/2002, Decreto nº 2.590/2004, Lei nº 8.429/1992, Lei nº 14.230/2021, LC nº 04/1990, IN nº 01/2002 e Portaria nº 57/2021/SEPLAG",
+   "Informação prestada à comissão; textos não anexados (o Decreto nº 4.487/2002 foi lido nos dispositivos alterados pelo Decreto nº 930/2021)",
+   "1990 a 2021",
+   "Base legal e contexto"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e o Decreto nº 930/2021 acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Medida adotada: 181,7 PF Local da FS (célula L6), por decisão da comissão, em vez dos 188 PF IFPUG (célula L4) adotados em 2025. A diferença decorre da função Carga de Dados, registrada com tipo de manutenção AER (0,7 PF); recomenda-se, na próxima revisão da baseline, confirmar se essa função de dados é mantida pela aplicação e unificar a medida para comparabilidade entre inventários.",
+  "A planilha não foi alterada para este inventário. Na conferência, foram observadas classificações a revisar, sem efeito relevante no tamanho: as funções de edição de usuário e de perfil classificadas como CE, a combo de código do bem classificada como EE e o cadastro de órgãos registrado como \"Combo Órgão\" (AIE).",
+  "Sem documentação funcional, recomenda-se que a equipe responsável disponibilize as histórias de usuário ou a especificação do DBV, para revisão da contagem no próximo inventário.",
+  "A base legal, exceto o Decreto nº 930/2021, foi informada à comissão sem os textos; recomenda-se anexá-los ao processo do inventário."
+ ],
+ "modulos_funcao": [
+  [
+   "^Carga de Dados",
+   "Segurança, exercícios e carga de dados"
+  ]
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "medida": "PF IFPUG",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "tecnologia": "PHP",
+ "situacao": "Em produção, com possível sucessor (SAGEP)",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em PHP",
+ "areas_negocio": "Perícia Médica da SEPLAG (Coordenadoria de Perícia Médica), competente para a avaliação médica pericial dos servidores e dependentes para licenças de saúde, readequação funcional, teletrabalho, indenização de férias e inclusão de dependentes (Decreto nº 550/2023, art. 2º; IN nº 016/2023/SEPLAG, art. 3º); Unidades Setoriais de Gestão de Pessoas, que encaminham servidores à perícia (IN nº 016/2023, art. 6º)",
+ "base_legal": "Decreto Estadual nº 550, de 26/10/2023 (competências da Perícia Médica da SEPLAG e da Perícia Previdenciária do MTPREV; uso do SEAP nos atendimentos e guarda dos laudos; sigilo das informações médicas nos termos da LGPD, art. 5º); Instrução Normativa nº 016/2023/SEPLAG, alterada pela IN nº 004/2024/SEPLAG (procedimentos das avaliações médicas periciais; agendamento da perícia presencial pelo servidor no Portal do Servidor em até 5 dias úteis da emissão do atestado, art. 12; avaliação documental, arts. 8º e 11); IN nº 004/2024/SEPLAG (prazos de apresentação de atestados). Normas informadas à comissão, sem texto anexado: IN nº 005/2024/SEPLAG (readequação de função e LACL); IN Conjunta nº 003/2023/SEPLAG/MTPREV (perícia de ingresso); Lei Complementar nº 04/1990 e LC nº 700/2021; Decreto nº 1.413/2025 (avaliação continuada dos serviços públicos)",
+ "vi": 1.0,
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG",
+ "custo_incorrido": "O sistema foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "modulos": {},
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário, especificação funcional nem manual. A contagem foi feita por navegação no sistema, em 12/12/2023; a descrição se apoia nas funções da planilha, nas normas da perícia médica e nas informações prestadas à comissão.",
+ "ressalva_documentacao": "Sem documentação funcional, a descrição das funcionalidades se limita às funções da planilha de contagem e às normas. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_vida_util": [
+  "A vida útil é classificada como indefinida (IN, arts. 14 e 15), como nos inventários anteriores, e o bem não é amortizado (art. 17). A possível substituição pelo SAGEP indica, porém, que o período de uso remanescente é limitado: a vida útil deve ser revista (art. 16) assim que a área de TI informar a data de encerramento do uso.",
+  "O bem deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da substituição pelo SAGEP (Seção 8)."
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "texto_acompanham": "A planilha de contagem, o Decreto nº 550/2023 e as Instruções Normativas nº 016/2023 e nº 004/2024/SEPLAG acompanham o processo do inventário para conferência.",
+ "sigla": "Agendamento SGA",
+ "nome": "Agendamento SGA (Serviço de Agendamento do SGA)",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_AGENDAMENTO_SGA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/15. Agendamento SGA/APF-Agendamento SGA-v1.0.xlsx",
+ "baseline_nome": "APF-Agendamento SGA-v1.0.xlsx (Contagem revisada em 25/11/2026)",
+ "baseline_versao": "1.0",
+ "texto_nivel": "O Agendamento SGA foi medido no nível Detalhado (IFPUG), por navegação no sistema, em 12/12/2023: 46 PF (aba Funções, célula L4), com 5 Arquivos de Interface Externa e 6 transações. A contagem foi mantida nos inventários de 2024 e 2025 e, como não foi disponibilizada documentação funcional, também neste inventário.",
+ "perfis": "Servidores e demais usuários finais, que consultam horários e realizam o agendamento, inclusive o da perícia médica presencial pelo Portal do Servidor (IN nº 016/2023, art. 12)",
+ "vi_justificativa": [
+  "A Perícia Médica da SEPLAG realiza as avaliações periciais que fundamentam a concessão de licenças para tratamento de saúde, por doença em pessoa da família, ao servidor acidentado e à gestante, além da readequação funcional, do teletrabalho, da indenização de férias e da inclusão de dependentes (Decreto nº 550/2023, art. 2º). A perícia presencial depende de agendamento pelo servidor no Portal do Servidor em até 5 dias úteis da emissão do atestado, sob pena de indeferimento (IN nº 016/2023/SEPLAG, art. 12, na redação da IN nº 004/2024).",
+  "O Agendamento SGA é a aplicação de atendimento (front) pela qual os servidores consultam os horários e realizam o agendamento da perícia, a partir das agendas parametrizadas no SGA-Perícia Médica (informação prestada à comissão). A inoperância do sistema impediria o agendamento no prazo normativo e a organização das agendas periciais, com prejuízo de altíssimo impacto para os servidores e para a concessão de licenças. A comissão mantém o nível Imprescindível, índice 1,00, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, adotado no inventário de 2025, enquanto o sistema estiver em uso; a possível substituição pelo SAGEP está tratada na Seção 8."
+ ],
+ "finalidade": [
+  "O Agendamento SGA é a aplicação de atendimento (front) da Solução Corporativa de Agendamento e Atendimento (SGA), pela qual os servidores e demais usuários finais consultam horários disponíveis e realizam agendamentos, entre eles o da perícia médica presencial. Segundo a área, as agendas que o sistema apresenta são parametrizadas e configuradas no SGA-Perícia Médica, sistema gestor com o qual é integrado. Os dois sistemas foram desenvolvidos pela equipe interna da SEPLAG em PHP e estão em produção.",
+  "O agendamento da perícia presencial é obrigação do servidor, que deve fazê-lo pelo Portal do Servidor em até 5 dias úteis da emissão do atestado, sob pena de indeferimento por intempestividade (IN nº 016/2023/SEPLAG, art. 12, na redação da IN nº 004/2024, com efeitos a partir de 01/07/2024; a redação original previa o Disque-Servidor). A perícia presencial se aplica aos atestados acima de 15 dias ou recorrentes, e a documental aos afastamentos de 4 a 15 dias (IN nº 016/2023, art. 8º). As competências da Perícia Médica da SEPLAG estão no Decreto nº 550/2023, art. 2º.",
+  "Pelas funções da contagem, o usuário escolhe a unidade, o departamento e o serviço, consulta o calendário com os dias e horários disponíveis e finaliza o agendamento com seus dados. Os grupos de dados (unidades, departamentos, serviços, horários e agendamentos) foram contados como lidos de outra aplicação (AIE), mantidos na base do SGA."
+ ],
+ "integracoes": [
+  [
+   "SGA-Perícia Médica",
+   "Sistema gestor que parametriza as agendas, os serviços e os horários",
+   "Fora da fronteira; avaliado em laudo próprio"
+  ],
+  [
+   "Base da Solução Corporativa de Agendamento e Atendimento (SGA)",
+   "Unidades, departamentos, serviços, horários e agendamentos",
+   "AIE (Unidade, Departamento, Serviço, Horários, Dados - Agendamento)"
+  ],
+  [
+   "Portal do Servidor",
+   "Acesso do servidor ao agendamento da perícia (IN nº 016/2023, art. 12)",
+   "Fora da fronteira"
+  ],
+  [
+   "SAGEP",
+   "Possível sucessor (Sistema de Agendamento de Perícia Médica)",
+   "Fora da fronteira; avaliado em laudo próprio"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "^Servi",
+   "Unidade, departamento e serviço"
+  ],
+  [
+   "^Hor",
+   "Calendário de horários"
+  ],
+  [
+   "^Dados",
+   "Agendamento"
+  ]
+ ],
+ "ordem_modulos": [
+  "Unidade, departamento e serviço",
+  "Calendário de horários",
+  "Agendamento"
+ ],
+ "modulos_tabela": [
+  [
+   "Unidade, departamento e serviço",
+   "Escolha da unidade de atendimento, do departamento e do serviço"
+  ],
+  [
+   "Calendário de horários",
+   "Consulta do calendário e dos horários disponíveis por serviço e unidade"
+  ],
+  [
+   "Agendamento",
+   "Registro e finalização do agendamento com os dados do usuário"
+  ]
+ ],
+ "uso": "Em produção; agendamento pelos servidores, inclusive da perícia médica pelo Portal do Servidor, com possível substituição pelo SAGEP sem cronograma oficial",
+ "beneficio": "Potencial de serviço enquanto em uso: agendamento pelo servidor no prazo da IN nº 016/2023, sem atendimento telefônico ou presencial",
+ "fase_texto": "Sistema em produção, com possível sucessor (SAGEP) e recomendação de plano de transição e baixa",
+ "analise_documental": "Leitura do Decreto nº 550/2023 e das INs nº 016/2023 e nº 004/2024/SEPLAG e conferência da planilha de contagem; revisão da aba Contagem",
+ "documentacao_resumo": "Não há documentação funcional; planilha de contagem v1.0 (Contagem revisada), Decreto nº 550/2023 e INs nº 016/2023 e nº 004/2024 (Anexo I)",
+ "texto_evolucao": "A contagem de 12/12/2023, feita por navegação, mediu 46 PF e foi usada nos inventários de 2023 a 2025. Em 2026 a comissão mantém a mesma contagem; a revisão de 25/11/2026 corrigiu apenas a aba Contagem (nome da aplicação, tecnologia, propósito, escopo e documentação).",
+ "exemplos_tipos": [
+  "Não identificados",
+  "Unidade, departamento, serviço, horários, agendamento",
+  "Finalizar agendamento",
+  "Combos de unidade, departamento e serviço, calendário e horários",
+  "Não identificadas"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "12/12/2023",
+   "pf": 46,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.0; VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "12/12/2023",
+   "pf": 46,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção",
+   "uso": "Mesma contagem; VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 46,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Produção",
+   "uso": "Mesma contagem; VI 1,00"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 46,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em produção, com possível sucessor",
+   "uso": "Mesma contagem (Contagem revisada); VI 1,00"
+  }
+ ],
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 46,
+  "preco_pf": 943.25,
+  "vi": 1.0,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "A variação decorre apenas do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (46 PF) e o Valor Institucional (1,00) permanecem os do inventário de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "O SGA-Perícia Médica e o SAGEP, avaliados em laudos próprios.",
+  "O Portal do Servidor, que dá acesso ao agendamento."
+ ],
+ "outros_documentos": [
+  [
+   "Planilha de contagem APF-Agendamento SGA v1.0",
+   "Pasta do sistema",
+   "12/12/2023; Contagem revisada em 25/11/2026",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "Decreto Estadual nº 550, de 26/10/2023",
+   "Processo SEPLAG-PRO-2023/10088 (cópia da base Leis Estaduais)",
+   "26/10/2023",
+   "Competências da Perícia Médica da SEPLAG, uso do SEAP e sigilo (LGPD)"
+  ],
+  [
+   "Instrução Normativa nº 016/2023/SEPLAG",
+   "DOE de 10/11/2023, p. 19 (texto consolidado com a IN nº 004/2024)",
+   "09/11/2023",
+   "Procedimentos periciais, avaliação documental e presencial, agendamento pelo Portal do Servidor (art. 12)"
+  ],
+  [
+   "Instrução Normativa nº 004/2024/SEPLAG",
+   "Protocolo 1594316, DOE de 27/06/2024, p. 11-12",
+   "27/06/2024",
+   "Prazos de atestados e nova redação do art. 12 da IN nº 016/2023 (efeitos a partir de 01/07/2024)"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ],
+  [
+   "IN nº 005/2024/SEPLAG, IN Conjunta nº 003/2023/SEPLAG/MTPREV, LC nº 04/1990, LC nº 700/2021 e Decreto nº 1.413/2025",
+   "Informação prestada à comissão; textos não anexados",
+   "1990 a 2025",
+   "Base legal e contexto (não lidas)"
+  ]
+ ],
+ "ressalvas_extras": [
+  "Substituição pelo SAGEP e baixa: o SGA-Perícia Médica e o Agendamento SGA são sistemas em PHP, integrados entre si, sem documentação funcional, e têm como possível sucessor o SAGEP, novo Sistema de Agendamento de Perícia Médica, avaliado em laudo próprio. Não foram disponibilizados o planejamento, o cronograma nem informação oficial sobre a implantação do SAGEP e a descontinuidade dos sistemas atuais. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ não admite o registro de software gerado internamente que não esteja em uso em virtude de obsolescência ou defasagem tecnológica (art. 2º, § 2º, II) e exige o reconhecimento da perda quando o valor contábil superar o valor recuperável (art. 18). A comissão mantém o sistema no inventário com esta ressalva e recomenda à área de TI da SEPLAG e à área de negócio (Coordenadoria de Perícia Médica) que formalizem a transição para o SAGEP e, encerrado o uso, procedam à baixa patrimonial e contábil dos dois sistemas, com comunicação ao setor contábil (art. 23).",
+  "Estratégia de transição recomendada (cutover), a ser conduzida em conjunto pela área de TI e pela Coordenadoria de Perícia Médica: (1) designar responsáveis de TI e de negócio e registrar a decisão de substituição, com data-alvo de encerramento dos dois sistemas; (2) mapear as funcionalidades atuais (consulta de dados do servidor, locais, serviços, tipos de perícia, vínculo de parentesco, calendário, horários e agendamento) e confirmar que o SAGEP as atende, inclusive o prazo de 5 dias úteis do art. 12 da IN nº 016/2023 e o acesso pelo Portal do Servidor; (3) definir os dados a migrar (agendamentos futuros, parametrização de locais, serviços e agendas) e os que serão apenas arquivados (histórico), com regras de sigilo e acesso da LGPD (Decreto nº 550/2023, art. 5º, parágrafo único); (4) realizar migração de teste e homologação com a área de negócio; (5) congelar a abertura de novas agendas no sistema atual a partir de data definida e executar a migração final dos agendamentos futuros; (6) operar em paralelo por período curto, com o sistema atual apenas para consulta, e redirecionar o link do Portal do Servidor ao SAGEP; (7) comunicar servidores, USGP e unidades de perícia sobre a mudança e os canais de suporte; (8) desativar os sistemas, guardar cópia dos dados e do código-fonte pelo prazo de guarda aplicável e comunicar a CIABI e o setor contábil para a baixa (IN, arts. 2º, § 2º, II, e 23).",
+  "Escopo da contagem: feita por navegação, a contagem registra a escolha de unidade, departamento e serviço, a consulta de horários e a finalização do agendamento, com os agendamentos contados como AIE. Não constam funções de consulta, remarcação ou cancelamento do agendamento pelo usuário; se existirem, a contagem está subestimada. Diante da substituição pelo SAGEP, recomenda-se recontar apenas se o sistema permanecer em uso por prazo relevante.",
+  "Registro histórico: os inventários de 2023 e 2024 registraram a tecnologia Java; a tecnologia correta é PHP, como em 2025. A aba Contagem trazia nome com espaço final e propósito e documentação copiados do Web Ponto; foram corrigidos na cópia de 2026.",
+  "A base legal, exceto o Decreto nº 550/2023 e as INs nº 016/2023 e nº 004/2024/SEPLAG, foi informada à comissão sem os textos; recomenda-se anexá-los ao processo do inventário."
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "sigla": "Agendamento SGA",
+ "medida": "PF IFPUG",
+ "pf": 46.0,
+ "preco_pf": 1215.09,
+ "vt": 55894.14,
+ "vi": 1.0,
+ "va": 111788.28,
+ "funcoes": 11,
+ "por_tipo": {
+  "AIE": [
+   5,
+   25.0
+  ],
+  "EE": [
+   1,
+   6.0
+  ],
+  "CE": [
+   5,
+   15.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   11,
+   46.0,
+   46.0
+  ]
+ },
+ "por_modulo": {
+  "Unidade, departamento e serviço": 24.0,
+  "Calendário de horários": 11.0,
+  "Agendamento": 11.0
+ }
+}

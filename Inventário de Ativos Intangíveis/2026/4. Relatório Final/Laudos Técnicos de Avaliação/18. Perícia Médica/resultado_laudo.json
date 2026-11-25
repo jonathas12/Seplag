@@ -1,0 +1,36 @@
+{
+ "sigla": "SGA-Perícia Médica",
+ "medida": "PF IFPUG",
+ "pf": 52.0,
+ "preco_pf": 1215.09,
+ "vt": 63184.68,
+ "vi": 1.0,
+ "va": 126369.36,
+ "funcoes": 13,
+ "por_tipo": {
+  "AIE": [
+   6,
+   30.0
+  ],
+  "EE": [
+   1,
+   4.0
+  ],
+  "CE": [
+   6,
+   18.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   13,
+   52.0,
+   52.0
+  ]
+ },
+ "por_modulo": {
+  "Dados do servidor": 8.0,
+  "Parâmetros da perícia": 32.0,
+  "Agenda e agendamento": 12.0
+ }
+}

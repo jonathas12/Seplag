@@ -1,0 +1,187 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47); 6 ALI e 2 AIE, 240 PF",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "vida_util": "Indefinida",
+ "texto_tipos": "Na contagem indicativa só as funções de dados são identificadas; o peso das transações está embutido nos valores de 35 PF por ALI e 15 PF por AIE.",
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "SCPA",
+ "nome": "Sistema de Catálogo Produto Atividade",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SCPA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/16. SCPA/APF-SCPA-v1.0.xlsx",
+ "baseline_nome": "APF-SCPA-v1.0.xlsx (Contagem revisada em 25/11/2026)",
+ "baseline_versao": "1.0",
+ "situacao": "Em produção",
+ "tecnologia": "Java",
+ "texto_nivel": "O SCPA foi medido no nível Indicativo (NESMA, ISO/IEC 24570), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE); o peso das transações está embutido nesses valores. A contagem de 12/12/2023 identificou 6 ALI e 2 AIE, total de 240 PF (aba Sumário 1, célula G47), e foi mantida nos inventários de 2024 e 2025. Como não foi disponibilizada documentação funcional, a comissão mantém a mesma contagem em 2026.",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Coordenadoria de Modelagem Organizacional, da Superintendência de Modernização Organizacional/SEPLAG, competente para gerir a implantação do Sistema de Gestão Organizacional (SGO) e orientar e prestar suporte técnico aos usuários do Catálogo de Produtos do SGO (Decreto nº 1.744/2025, arts. 76, VIII, e 77, IX e X); órgãos e entidades do Poder Executivo, que mapeiam seus produtos e atividades por unidade",
+ "perfis": "Não há documentação funcional que descreva os perfis. Pelas normas informadas, o catálogo é mantido pelas unidades setoriais e centrais responsáveis pela gestão organizacional, e as atividades catalogadas são consultadas pelos servidores e chefias no SIEP",
+ "base_legal": "Decreto nº 1.744, de 21/11/2025 (Regimento Interno da SEPLAG), arts. 76, VIII, e 77, IX e X. Normas informadas à comissão, sem texto anexado: Decreto nº 1.808/2026 (estrutura organizacional da SEPLAG); Lei nº 12.771/2024 e Decreto nº 1.853/2026 (governança, eficiência e IGEF-MT); Portarias nº 099/2024/SEPLAG e nº 133/2024/SEPLAG (implantação do Catálogo de Produtos no SGO e do SIEP na SEPLAG); Portaria Conjunta nº 024/2025/SEPLAG/CGE (implantação do SGO e do SIEP); Decreto nº 1.303/2022 e IN nº 15/2022/SEPLAG, alterada pela IN nº 019/2023/SEPLAG (avaliação anual de desempenho); IN nº 21/2020/SEPLAG (Manual Técnico de Processos e Procedimentos)",
+ "vi": 0.5,
+ "vi_justificativa": [
+  "O SCPA é um sistema de apoio: mantém o catálogo de produtos e atividades das unidades, que o SIEP consome para que os servidores montem seus planos de atividades e para a mensuração da produtividade. O SIEP depende do catálogo para funcionar, mas a manutenção do catálogo é feita com pouca frequência, por unidades responsáveis pela gestão organizacional, e não diretamente pelo conjunto dos servidores.",
+  "Por decisão da comissão, o SCPA é classificado como Importante, índice 0,50, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ: a inoperância do sistema provocaria prejuízo de médio impacto, pois impediria a atualização do catálogo, mas o SIEP continuaria a usar os produtos e atividades já cadastrados. No inventário de 2025 o índice era 0,75; a redução reflete o papel de suporte e a frequência de uso informados pela área responsável."
+ ],
+ "finalidade": [
+  "O Sistema de Catálogo Produto Atividade (SCPA) mantém o catálogo de produtos organizacionais e das atividades que os compõem, por unidade administrativa dos órgãos e entidades do Poder Executivo. Atualmente está integrado como o Módulo Catálogo de Produtos do Sistema de Gestão Organizacional (SGO) da SEPLAG (informação prestada à comissão). O Regimento Interno da SEPLAG (Decreto nº 1.744/2025) atribui à Superintendência de Modernização Organizacional supervisionar a implementação e a evolução do SGO e à Coordenadoria de Modelagem Organizacional gerir sua implantação e orientar e prestar suporte técnico aos usuários do Catálogo de Produtos do SGO (arts. 76, VIII, e 77, IX e X).",
+  "O catálogo é a base do Sistema Estadual de Produtividade (SIEP): os servidores escolhem, no SIEP, os produtos e as atividades do catálogo da sua unidade para montar o plano de atividades, cuja execução é aprovada pela chefia e usada na mensuração da produtividade e na avaliação de desempenho. A planilha de contagem do SIEP (v0.16) registra o Produto do catálogo como Arquivo de Interface Externa, a consulta de produtos e atividades (combo) e o acesso ao catálogo por autenticação única (SSO), o que confirma que o SIEP lê os dados mantidos pelo SCPA. As normas informadas à comissão (Portaria Conjunta nº 024/2025/SEPLAG/CGE, Portarias nº 099/2024 e nº 133/2024/SEPLAG, Lei nº 12.771/2024 e Decreto nº 1.853/2026) tratam da gestão por entregas e da implantação conjunta do catálogo no SGO e do SIEP.",
+  "Pelos grupos de dados da contagem, o SCPA mantém produtos, atividades, a relação entre atividades e produtos, a relação entre atividades e unidades, o histórico de alterações e os usuários do sistema, e lê de outra aplicação os órgãos e as unidades de lotação. A identificação e a padronização dos produtos e atividades seguem a metodologia de processos e procedimentos da SEPLAG (IN nº 21/2020/SEPLAG, informada à comissão)."
+ ],
+ "integracoes": [
+  [
+   "SIEP",
+   "Lê o Produto e as atividades do catálogo para o plano de atividades do servidor; acesso ao catálogo por SSO (planilha de contagem do SIEP v0.16)",
+   "Fora da fronteira (o SIEP conta o Produto como AIE)"
+  ],
+  [
+   "Estrutura organizacional (órgãos e unidades)",
+   "Órgãos e unidades de lotação a que se vinculam produtos e atividades",
+   "AIE (Órgão, Unidade de Lotação)"
+  ],
+  [
+   "SGO",
+   "Sistema do qual o catálogo é hoje um módulo (informação prestada à comissão)",
+   "Demais módulos fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulo_por_tipo": {
+  "ALI": "Catálogo de produtos e atividades",
+  "AIE": "Estrutura organizacional (outra aplicação)"
+ },
+ "ordem_modulos": [
+  "Catálogo de produtos e atividades",
+  "Estrutura organizacional (outra aplicação)"
+ ],
+ "modulos_tabela": [
+  [
+   "Catálogo de produtos e atividades: 6 ALI, 210 PF",
+   "Produtos, atividades, atividades por produto, atividades por unidade, histórico de alterações e usuários"
+  ],
+  [
+   "Estrutura organizacional (outra aplicação): 2 AIE, 30 PF",
+   "Órgãos e unidades de lotação, lidos de outra aplicação"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG",
+ "uso": "Em produção, como Módulo Catálogo de Produtos do SGO, base do catálogo usado pelo SIEP",
+ "beneficio": "Potencial de serviço para o Estado: catálogo padronizado de produtos e atividades que sustenta o plano de atividades e a mensuração da produtividade no SIEP",
+ "fase_texto": "Sistema em produção, integrado ao SGO e ao SIEP",
+ "custo_incorrido": "O SCPA foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 1.744/2025 (Regimento Interno da SEPLAG), da planilha de contagem do SCPA e da planilha e do laudo do SIEP, para a integração; revisão da aba Contagem",
+ "documentacao_resumo": "Não há documentação funcional; planilha de contagem v1.0 (Contagem revisada), Decreto nº 1.744/2025 e planilha do SIEP (Anexo I)",
+ "documentacao_fonte": "Não foram disponibilizadas histórias de usuário, especificação funcional nem manual. A descrição se apoia nos grupos de dados da contagem, no Regimento Interno da SEPLAG, na especificação e na contagem do SIEP e nas informações prestadas à comissão.",
+ "ressalva_documentacao": "Sem documentação funcional, a descrição das funcionalidades se limita aos grupos de dados da contagem e à integração com o SIEP. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A contagem de 12/12/2023 (planilha v1.0) mediu 240 PF indicativos e foi usada nos inventários de 2023 a 2025. Em 2026 a comissão mantém a mesma contagem; a revisão de 25/11/2026 só corrigiu a aba Contagem (nível de detalhe, tecnologia, propósito e documentação).",
+ "exemplos_tipos": [
+  "Produto, atividade, atividade por produto, atividade por unidade, histórico, usuário",
+  "Órgão, unidade de lotação",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa",
+  "Não identificadas na contagem indicativa"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2023,
+   "data": "12/12/2023",
+   "pf": 240,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em homologação",
+   "uso": "Planilha v1.0; VI 0,25"
+  },
+  {
+   "inventario": 2024,
+   "data": "12/12/2023",
+   "pf": 240,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Mesma contagem; VI 0,25"
+  },
+  {
+   "inventario": 2025,
+   "data": "04/12/2025",
+   "pf": 240,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Produção",
+   "uso": "Mesma contagem; VI 0,75"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 240,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Mesma contagem (Contagem revisada); VI 0,50"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventários de 2023 a 2025; inventário de 2026: este laudo.",
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 240,
+  "preco_pf": 943.25,
+  "vi": 0.75,
+  "situacao": "Produção"
+ },
+ "motivo_variacao": "O tamanho funcional não mudou (240 PF). A variação decorre do novo preço do ponto de função apurado na pesquisa de 2026, que eleva o VT, e da redução do Valor Institucional de 0,75 para 0,50, decidida pela comissão.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "O SIEP, que consome o catálogo e é avaliado em laudo próprio.",
+  "Os demais módulos do SGO e o sistema que mantém órgãos e unidades, lidos como AIE."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto nº 1.744, de 21/11/2025 (Regimento Interno da SEPLAG)",
+   "Processo SEPLAG-PRO-2025/25266",
+   "21/11/2025",
+   "Competências da Superintendência de Modernização Organizacional e da Coordenadoria de Modelagem Organizacional sobre o SGO e o Catálogo de Produtos"
+  ],
+  [
+   "Planilha de contagem APF-SCPA v1.0",
+   "Pasta do sistema",
+   "12/12/2023; Contagem revisada em 25/11/2026",
+   "Funções de dados e tamanho funcional"
+  ],
+  [
+   "Planilha de contagem APF-Baseline-SIEP v0.16 e Laudo Técnico de Avaliação do SIEP 2026",
+   "Pasta do SIEP",
+   "2026",
+   "Integração: Produto do catálogo lido como AIE, combo de produto e atividade e SSO para o catálogo"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2023 a 2025",
+   "Tamanho, preço, VI e valor dos inventários anteriores"
+  ],
+  [
+   "Decreto nº 1.808/2026, Lei nº 12.771/2024, Decreto nº 1.853/2026, Portarias nº 099/2024 e nº 133/2024/SEPLAG, Portaria Conjunta nº 024/2025/SEPLAG/CGE, Decreto nº 1.303/2022, IN nº 15/2022, IN nº 019/2023 e IN nº 21/2020/SEPLAG",
+   "Informação prestada à comissão; textos não anexados",
+   "2020 a 2026",
+   "Base legal e contexto (não lidas neste laudo)"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e o Decreto nº 1.744/2025 acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Medida adotada: a contagem indicativa de 240 PF (aba Sumário 1, G47), a mesma dos inventários de 2023 a 2025. A aba Funções da planilha aplica os pesos estimativos às mesmas funções (6 ALI x 7 + 2 AIE x 5 = 52 PF, célula L4), número que não representa o tamanho da aplicação, porque as transações não foram identificadas; no nível indicativo o peso das transações está embutido em 35 PF por ALI e 15 PF por AIE.",
+  "A aba Contagem da planilha registrava nível \"Detalhada (IFPUG)\", sem tecnologia e com propósito e documentação copiados de outros sistemas (Serviço de Agendamento do SGA e Web Ponto); foram corrigidos na cópia de 2026, com data de revisão 25/11/2026. As funções não foram alteradas.",
+  "Sem documentação funcional, recomenda-se que a equipe responsável pelo SGO disponibilize as histórias de usuário ou a especificação do Módulo Catálogo de Produtos, para contagem estimativa ou detalhada no próximo inventário e para confirmar a origem dos dados de órgãos e unidades (AIE).",
+  "A base legal, exceto o Decreto nº 1.744/2025, foi informada à comissão sem os textos; recomenda-se anexá-los ao processo do inventário."
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "sigla": "SCPA",
+ "medida": "Indicativa (NESMA)",
+ "pf": 240.0,
+ "preco_pf": 1215.09,
+ "vt": 291621.6,
+ "vi": 0.5,
+ "va": 437432.4,
+ "funcoes": 8,
+ "por_tipo": {
+  "ALI": [
+   6,
+   210.0
+  ],
+  "AIE": [
+   2,
+   30.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   8,
+   52.0,
+   240.0
+  ]
+ },
+ "por_modulo": {
+  "Catálogo de produtos e atividades": 210.0,
+  "Estrutura organizacional (outra aplicação)": 30.0
+ }
+}

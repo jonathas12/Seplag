@@ -1,0 +1,265 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "medida": "PF IFPUG",
+ "medida_descricao": "Contagem estimativa (NESMA), total da aba Funções (célula L4)",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "tecnologia": "Java",
+ "situacao": "Em desenvolvimento",
+ "vi": 0.25,
+ "tipo_bem": "Software em desenvolvimento pela SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java, com analista de requisitos responsável pelas histórias de usuário",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe de TI da SEPLAG",
+ "rotulo_uso": "Situação e uso",
+ "rotulo_fase": "Ativo em desenvolvimento",
+ "custo_incorrido": "O sistema está sendo desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "documentacao_fonte": "A tabela A2 traz a versão e a data da última linha do histórico de versões de cada história de usuário. Foram usadas apenas as versões mais recentes de cada história disponibilizada.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "grupos_sem_historia": {},
+ "modulos": {},
+ "formato_us": "US{:02d}",
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "base_legal": "Não foram disponibilizadas normas que instituam ou regulamentem o sistema, e as histórias de usuário não citam lei, decreto ou instrução normativa específicos. As histórias referem-se genericamente à lei de cada carreira, cadastrada no SEAP (cargo, lei de criação e documentos legais), como fundamento do interstício e da concessão da progressão vertical",
+ "sigla": "Contagem de Tempo",
+ "nome": "Sistema Contagem de Tempo",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_CONTAGEM_DE_TEMPO_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/31. Contagem de Tempo/APF-Contagem de Tempo-v1.0.xlsx",
+ "baseline_nome": "APF-Contagem de Tempo-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "texto_nivel": "O Contagem de Tempo não tinha contagem de pontos de função. A comissão fez, neste inventário, a contagem no nível Estimativo (NESMA), a partir das 14 histórias de usuário: identificou as funções de dados e de transação e atribuiu a complexidade padrão de cada tipo, ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Resultado: 4 ALI, 8 AIE, 26 EE, 19 CE e 2 SE, total de 258 PF (aba Funções, célula L4).",
+ "areas_negocio": "Áreas de gestão de pessoas que concedem direitos dependentes de tempo de serviço (progressão vertical, entre outros); manutenção sob coordenação da área de aplicações da SEPLAG, que aprovou as histórias de usuário",
+ "perfis": "Admin do Sistema, Admin Central e Admin Setorial, Chefia do Setor, Analista SEPLAG e Operador de Sistema, com permissões de adicionar, visualizar, editar e excluir por tela (matrizes de permissões das histórias); acesso com a matrícula e a senha do Portal do Servidor (US01)",
+ "vi_justificativa": [
+  "O Contagem de Tempo calcula, a partir dos dados do SEAP e de parâmetros configuráveis por cargo e por finalidade, o tempo de exercício e a situação de cada servidor para a concessão de direitos. Para a progressão vertical, apura o interstício cumprido, as suspensões, prorrogações e a média das avaliações e indica os vínculos aptos a progredir, que alimentam o módulo Progressão Vertical.",
+  "Por estar em desenvolvimento, sem informação sobre conclusão, implantação e uso, não é possível atestar com segurança a geração de benefícios econômicos futuros ou de potencial de serviços; a inoperância do sistema, que ainda não sustenta as atividades dos órgãos, teria baixo impacto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, a ser revisto quando o Contagem de Tempo entrar em produção."
+ ],
+ "finalidade": [
+  "O Contagem de Tempo está em desenvolvimento pela SEPLAG em Java para calcular o tempo de exercício dos servidores do Poder Executivo e verificar o cumprimento dos requisitos de direitos que dependem de tempo, com base nos dados registrados no SEAP. O sistema é parametrizável: o usuário cadastra finalidades de contagem (US03) e, para cada combinação de regime jurídico, tipo de vínculo, categoria e cargo (quadrinômio), configura parâmetros gerais de oito produtos (férias, licença-prêmio, estabilidade, avaliação de desempenho, progressão vertical, progressão horizontal, promoção e aposentadoria), como interstício, ciclo avaliativo e período aquisitivo (US04 e US05), e as causas que suspendem, prorrogam, interrompem, iniciam ou reiniciam a contagem para cada finalidade (US06).",
+  "As contagens são solicitadas por finalidade e abrangência (órgão, setor, regime, vínculo, categoria, cargo ou grupo de eleitos), para execução imediata ou agendada, com recorrência; o usuário consulta as execuções e os agendamentos, altera, exclui, inativa ou reativa agendamentos e cancela ou reinicia execuções não concluídas (US07 a US09, US11 e US12). As histórias de usuário especificam o processamento para a progressão vertical (US13): o sistema verifica o quadrinômio, os eventos que iniciam ou interrompem a contagem, a estabilidade e o último nível, calcula o interstício em dias, desconta suspensões por frequências e penalidades, prorroga por média insuficiente nas avaliações anuais de desempenho e classifica cada vínculo como APTO A PROGREDIR, FALTA ESTABILIDADE, FALTA AVALIACAO, MEDIA INSUFICIENTE ou INTERSTICIO INCOMPLETO.",
+  "O resultado, com detalhes da execução e dos vínculos participantes, é consultado e exportado (US10), e os vínculos excluídos por erro são listados no log de erros (US14). Os vínculos aptos alimentam o módulo Progressão Vertical, avaliado em laudo próprio. As histórias citam apenas a lei de cada carreira como fonte do interstício."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Cargos e carreiras, vínculos, eventos funcionais, frequências, penalidades disciplinares e avaliações de desempenho usados no cálculo",
+   "AIE (Cargo e carreira, Servidor e vínculo, Eventos funcionais, Frequências, Penalidades disciplinares, Avaliações de desempenho)"
+  ],
+  [
+   "Manopla",
+   "Log da execução da contagem, do qual o log de erros é uma versão resumida (US14)",
+   "AIE (Log de execução da contagem)"
+  ],
+  [
+   "Progressão Vertical",
+   "Consome os resultados APTO A PROGREDIR; a contagem passará a verificar a situação AGUARDANDO REGISTRO do módulo (US13)",
+   "Fora da fronteira; avaliado em laudo próprio"
+  ],
+  [
+   "Portal do Servidor",
+   "Credenciais de acesso (matrícula e senha) (US01)",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "^US0[3-6]",
+   "Cadastros e parâmetros"
+  ],
+  [
+   "^US(0[789]|1[12])",
+   "Execuções e agendamentos"
+  ],
+  [
+   "^US1[034]",
+   "Processamento e resultados"
+  ]
+ ],
+ "ordem_modulos": [
+  "Cadastros e parâmetros",
+  "Execuções e agendamentos",
+  "Processamento e resultados"
+ ],
+ "modulos_tabela": [
+  [
+   "Cadastros e parâmetros",
+   "Finalidades, quadrinômios, parâmetros gerais por produto e causas por finalidade (US03 a US06)"
+  ],
+  [
+   "Execuções e agendamentos",
+   "Solicitação imediata ou agendada, consulta, cancelamento, reinício, alteração, exclusão e ativação de agendamentos (US07 a US09, US11, US12)"
+  ],
+  [
+   "Processamento e resultados",
+   "Processamento da contagem para progressão vertical, resultados por vínculo e log de erros (US10, US13, US14)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US01",
+   "nome": "Tela de login",
+   "versao": "1.0",
+   "data": "01/02/2024",
+   "modulo": "Acesso"
+  },
+  {
+   "codigo": "US02",
+   "nome": "Página inicial",
+   "versao": "1.2",
+   "data": "08/07/2025",
+   "modulo": "Acesso"
+  },
+  {
+   "codigo": "US03",
+   "nome": "Cadastrar finalidades de contagem de tempo",
+   "versao": "1.2",
+   "data": "09/07/2025",
+   "modulo": "Cadastros e parâmetros"
+  },
+  {
+   "codigo": "US04",
+   "nome": "Configurar parâmetros para contagem de tempo",
+   "versao": "1.2",
+   "data": "10/07/2025",
+   "modulo": "Cadastros e parâmetros"
+  },
+  {
+   "codigo": "US05",
+   "nome": "Configurar parâmetros gerais de contagem",
+   "versao": "1.2",
+   "data": "15/07/2025",
+   "modulo": "Cadastros e parâmetros"
+  },
+  {
+   "codigo": "US06",
+   "nome": "Configurar parâmetros de contagem por finalidade",
+   "versao": "1.2",
+   "data": "17/07/2025",
+   "modulo": "Cadastros e parâmetros"
+  },
+  {
+   "codigo": "US07",
+   "nome": "Executar ou agendar execução de contagem",
+   "versao": "1.1",
+   "data": "21/07/2025",
+   "modulo": "Execuções e agendamentos"
+  },
+  {
+   "codigo": "US08",
+   "nome": "Consultar execuções de contagem",
+   "versao": "1.1",
+   "data": "21/07/2025",
+   "modulo": "Execuções e agendamentos"
+  },
+  {
+   "codigo": "US09",
+   "nome": "Consultar agendamento de contagem",
+   "versao": "1.1",
+   "data": "22/07/2025",
+   "modulo": "Execuções e agendamentos"
+  },
+  {
+   "codigo": "US10",
+   "nome": "Consultar resultados da contagem",
+   "versao": "1.2",
+   "data": "22/09/2025",
+   "modulo": "Processamento e resultados"
+  },
+  {
+   "codigo": "US11",
+   "nome": "Cancelar ou reiniciar a execução da contagem",
+   "versao": "1.1",
+   "data": "23/07/2025",
+   "modulo": "Execuções e agendamentos"
+  },
+  {
+   "codigo": "US12",
+   "nome": "Alterar ou excluir agendamento de contagem",
+   "versao": "1.1",
+   "data": "22/07/2025",
+   "modulo": "Execuções e agendamentos"
+  },
+  {
+   "codigo": "US13",
+   "nome": "Executar Contagem de Tempo para Concessão de Progressão Vertical",
+   "versao": "1.2",
+   "data": "22/09/2025",
+   "modulo": "Processamento e resultados"
+  },
+  {
+   "codigo": "US14",
+   "nome": "Consultar log de erros",
+   "versao": "1.0",
+   "data": "24/07/2025",
+   "modulo": "Processamento e resultados"
+  }
+ ],
+ "uso": "Em desenvolvimento; não há informação sobre entrada em produção ou uso",
+ "beneficio": "Potencial de serviço futuro, condicionado à conclusão e à implantação: cálculo automatizado e parametrizável do tempo de exercício para a concessão de direitos, a começar pela progressão vertical",
+ "fase_texto": "Projeto em desenvolvimento, com histórias de usuário versionadas de 01/02/2024 a 22/09/2025; não há informação sobre conclusão e implantação. O art. 9º exige a demonstração da viabilidade técnica, da intenção de concluir e usar o bem e da disponibilidade de recursos (Seção 8)",
+ "conclusao_reconhecimento": "O Contagem de Tempo é reconhecido no inventário como ativo em desenvolvimento (art. 2º, § 1º), avaliado pela metodologia do art. 11, com a ressalva da Seção 8: o atendimento ao art. 9º depende de informações da área de TI e da área de negócio sobre a conclusão e a implantação do sistema.",
+ "analise_documental": "Leitura das 14 histórias de usuário (versões mais recentes) e contagem estimativa das funções de dados e de transação",
+ "documentacao_resumo": "14 histórias de usuário do sistema Contagem de Tempo e planilha de contagem v1.0 (Anexo I)",
+ "texto_evolucao": "Primeira medição do sistema: a contagem estimativa de 25/11/2026 (planilha v1.0) mede 258 PF a partir das histórias de usuário de 2024 e 2025.",
+ "exemplos_tipos": [
+  "Finalidade, quadrinômio e parâmetros gerais, parâmetros por finalidade, execução de contagem",
+  "Cargo e carreira, servidor e vínculo, eventos, frequências, penalidades, avaliações (SEAP), órgão e setor, log de execução (Manopla)",
+  "Incluir e alterar finalidades e parâmetros, executar, agendar, cancelar, reiniciar, processar a contagem",
+  "Consultar finalidades, parâmetros, execuções, agendamentos, log de erros, combos",
+  "Resultado da contagem por vínculo e sua exportação"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 258,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,25"
+  }
+ ],
+ "texto_vida_util": [
+  "A vida útil do Contagem de Tempo é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. Como não há informação de que o bem esteja disponível para uso, a contagem da vida útil não começou (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de informações sobre a conclusão e o uso (Seção 8)."
+ ],
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único), como responsividade, auditoria no Envers e personalização de grids.",
+  "O login (US01) e a página inicial (US02), sem processo elementar próprio.",
+  "O processamento das demais finalidades (férias, licença-prêmio, estabilidade, avaliação de desempenho, progressão horizontal, promoção e aposentadoria), cujos parâmetros são configuráveis mas cuja execução não está especificada nas histórias.",
+  "O módulo Progressão Vertical, avaliado em laudo próprio, e o SEAP."
+ ],
+ "outros_documentos": [
+  [
+   "Histórias de usuário US01 a US14 do sistema Contagem de Tempo",
+   "Pasta do sistema; analista de requisitos; aprovação da coordenação de aplicações",
+   "01/02/2024 a 22/09/2025",
+   "Funcionalidades, regras de negócio, campos, perfis e integrações"
+  ],
+  [
+   "Planilha de contagem APF-Contagem de Tempo v1.0",
+   "Elaborada pela comissão",
+   "25/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e as histórias de usuário acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Situação, conclusão e reconhecimento: não foram disponibilizadas informações sobre a entrada em produção, o uso ou a conclusão do Contagem de Tempo, que é mantido como em desenvolvimento por decisão da comissão. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º) desde que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos (art. 9º, I, II e V). As histórias de usuário, versionadas e com aprovação registrada, indicam projeto em andamento, mas não demonstram por si esses requisitos. A comissão reconhece o Contagem de Tempo como ativo em desenvolvimento, com esta ressalva, e recomenda à área de TI da SEPLAG, em conjunto com as áreas de gestão de pessoas usuárias, que informem a situação do sistema, a previsão de conclusão e de implantação, para revisão da situação e do Valor Institucional no próximo inventário; sem a demonstração do art. 9º, caberá o reconhecimento da perda por redução ao valor recuperável (art. 18).",
+  "Contagem estimativa: as transações seguem as histórias. Os parâmetros gerais de cada um dos oito produtos (US05) têm campos e salvamento próprios e foram contados como oito entradas externas; o processamento da contagem para a progressão vertical (US13), executado em fila ou por agendamento, foi contado como uma entrada externa. Exportações em PDF e Excel da mesma listagem foram contadas uma vez; a duplicação de finalidade usa a mesma lógica da inclusão e não foi contada à parte.",
+  "Escopo: o sistema prevê parâmetros para oito produtos, mas as histórias só especificam o processamento da progressão vertical. Quando o processamento de outras finalidades for especificado e implementado, a contagem deverá ser revista.",
+  "Base legal: as histórias de usuário não citam lei, decreto ou instrução normativa; apenas remetem à lei de cada carreira para o interstício e a conceitos do estatuto (estágio probatório, licenças). Recomenda-se à área de negócio informar as normas aplicáveis, para o próximo inventário."
+ ]
+}

@@ -88,12 +88,19 @@ Não use o recálculo em planilha com referência a outra pasta de trabalho (ex.
 valores em cache como no SIGS. Grave sempre em `2026/.../2.1. Medições em APF/<nº. SIGLA>/` com nova versão; nunca altere
 o arquivo de 2025.
 
-Testes feitos ao criar a skill (25/11/2026):
-- **Contagem nova:** a v1.2 do Revisa foi recriada do zero a partir da lista de funções e deu o mesmo total, 319 PF.
+Testes (25/11/2026):
 - **Incremento:** a baseline do Banco de Talentos (281 PF) recebeu a US012 (+36 PF) e as anotações de alteração, total 317 PF.
+- **Contagem nova com outro modelo:** Progressão Vertical (210 PF) e Contagem de Tempo (258 PF), gravados sobre a v1.2 do Revisa.
+  Esse teste revelou que o LibreOffice mantinha os valores em cache do modelo (as linhas novas herdavam os pesos das
+  funções antigas e L4 continuava 319). O script passou a usar um perfil temporário do LibreOffice com recálculo
+  obrigatório ao abrir (OOXMLRecalcMode = 0). Recriar o Revisa sobre ele mesmo não serve de teste, pois os valores em
+  cache coincidem.
+- **Conferência obrigatória:** além de L4, confira linha a linha que a coluna H de cada função tem o peso NESMA do tipo.
 
 ## Passo 6: laudo
 
-Gerar o laudo pela skill `laudo-avaliacao-intangivel`, com `nivel_contagem` "Estimativa (NESMA)". O texto do nível explica
+Gerar o laudo pela skill `laudo-avaliacao-intangivel`, com `nivel_contagem` "Estimativa (NESMA)". Na primeira avaliação de
+um sistema (uma só medição), use `laudo_apf_primeira_dev.py`, que também aceita `rotulo_uso`, `rotulo_fase` e
+`conclusao_reconhecimento` para bens em desenvolvimento e arredonda os centavos como o Excel. O texto do nível explica
 a complexidade padrão. A evolução e as ressalvas registram o que foi incluído, alterado, removido ou corrigido na versão.
 Recomende contagem detalhada quando as histórias trouxerem campos (TD) e entidades (AR/TR) suficientes.

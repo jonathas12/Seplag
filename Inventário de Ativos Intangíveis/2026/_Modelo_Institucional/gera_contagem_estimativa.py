@@ -102,7 +102,17 @@ def main(origem, destino, cfg_path):
     json.dump(linhas, open(tmp / 'linhas.json', 'w', encoding='utf-8'), ensure_ascii=False)
     py = sys.executable
     subprocess.run([py, '-I', str(AQUI / 'incrementa_baseline.py'), str(base), str(tmp / 'b.xlsx'), str(tmp / 'linhas.json')], check=True)
-    subprocess.run(['soffice', '--headless', '--calc', '--convert-to', 'xlsx', '--outdir', str(tmp / 'out'), str(tmp / 'b.xlsx')],
+    # perfil temporário do LibreOffice que força o recálculo das fórmulas ao abrir o xlsx; sem ele o LibreOffice pode
+    # manter os valores em cache do modelo (as linhas novas ficam com os pesos das funções antigas)
+    perfil = tmp / 'perfil' / 'user'
+    perfil.mkdir(parents=True)
+    (perfil / 'registrymodifications.xcu').write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<oor:items xmlns:oor="http://openoffice.org/2001/registry" '
+        'xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n'
+        '<item oor:path="/org.openoffice.Office.Calc/Formula/Load"><prop oor:name="OOXMLRecalcMode" oor:op="fuse">'
+        '<value>0</value></prop></item>\n</oor:items>\n', encoding='utf-8')
+    subprocess.run(['soffice', f'-env:UserInstallation={(tmp / "perfil").as_uri()}', '--headless', '--calc',
+                    '--convert-to', 'xlsx', '--outdir', str(tmp / 'out'), str(tmp / 'b.xlsx')],
                    check=True, capture_output=True)
     json.dump(cfg.get('contagem', {}), open(tmp / 'contagem.json', 'w', encoding='utf-8'), ensure_ascii=False)
     subprocess.run([py, '-I', str(AQUI / 'preenche_contagem.py'), str(tmp / 'out' / 'b.xlsx'), str(destino), str(tmp / 'contagem.json')], check=True)

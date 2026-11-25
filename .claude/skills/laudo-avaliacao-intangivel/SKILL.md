@@ -106,6 +106,9 @@ evolução das linhas de base); 6 Valor (justificativa do VI, cálculo, compara�
   (`=SOMA((M*N);M)`); o laudo precisa bater centavo a centavo com a aba Avaliação.
   O Excel arredonda a 15 algarismos significativos antes de exibir: quando o VA cai em meio centavo (ex.: Banco de
   Talentos, 317 x 1.215,09 x 1,5 = 577.775,295), use `laudo_apf_sispat_xl.py` (mesmo gerador, arredondamento do Excel).
+- Primeira avaliação de sistema em desenvolvimento, em qualquer nível de contagem: `laudo_apf_primeira_dev.py` (uma só
+  medição em `historico_medicoes`, sem `avaliacao_anterior`; campos `rotulo_uso`, `rotulo_fase`, `conclusao_reconhecimento`;
+  centavos como o Excel). Usado no Progressão Vertical e no Contagem de Tempo, com a ressalva do art. 9º.
 - Data de revisão da baseline: se R10 estiver vazia, perguntar ao usuário e gravar com `preenche_contagem.py`
   (valor "AAAA-MM-DD" é gravado como data).
 - Histórias de usuário organizadas por sprint: listar a pasta inteira e usar a versão mais recente de cada história;

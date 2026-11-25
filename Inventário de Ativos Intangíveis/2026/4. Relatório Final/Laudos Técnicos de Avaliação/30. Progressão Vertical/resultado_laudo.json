@@ -1,0 +1,45 @@
+{
+ "sigla": "Progressão Vertical",
+ "medida": "PF IFPUG",
+ "pf": 210.0,
+ "preco_pf": 1215.09,
+ "vt": 255168.9,
+ "vi": 0.25,
+ "va": 318961.13,
+ "funcoes": 49,
+ "por_tipo": {
+  "ALI": [
+   2,
+   14.0
+  ],
+  "AIE": [
+   7,
+   35.0
+  ],
+  "EE": [
+   14,
+   56.0
+  ],
+  "CE": [
+   25,
+   100.0
+  ],
+  "SE": [
+   1,
+   5.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   49,
+   210.0,
+   210.0
+  ]
+ },
+ "por_modulo": {
+  "Gestão da progressão vertical": 80.0,
+  "Operadores responsáveis": 65.0,
+  "Registro (Operador 1)": 41.0,
+  "Conferência (Operador 2)": 24.0
+ }
+}

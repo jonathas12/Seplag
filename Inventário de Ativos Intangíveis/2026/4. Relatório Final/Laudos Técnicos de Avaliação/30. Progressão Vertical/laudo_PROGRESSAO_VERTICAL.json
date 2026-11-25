@@ -1,0 +1,261 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "medida": "PF IFPUG",
+ "medida_descricao": "Contagem estimativa (NESMA), total da aba Funções (célula L4)",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "tecnologia": "Java",
+ "situacao": "Em desenvolvimento",
+ "vi": 0.25,
+ "tipo_bem": "Software em desenvolvimento pela SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java, com analista de requisitos responsável pelas histórias de usuário",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe de TI da SEPLAG",
+ "rotulo_uso": "Situação e uso",
+ "rotulo_fase": "Ativo em desenvolvimento",
+ "custo_incorrido": "O sistema está sendo desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "documentacao_fonte": "A tabela A2 traz a versão e a data da última linha do histórico de versões de cada história de usuário. Foram usadas apenas as versões mais recentes de cada história disponibilizada.",
+ "ressalva_documentacao": "O conteúdo e a qualidade das histórias de usuário são de responsabilidade da equipe do projeto que as elaborou. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "grupos_sem_historia": {},
+ "modulos": {},
+ "formato_us": "US{:03d}",
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "base_legal": "Não foram disponibilizadas normas que instituam ou regulamentem o sistema, e as histórias de usuário não citam lei, decreto ou instrução normativa específicos. As histórias referem-se genericamente à lei de cada carreira, cadastrada no SEAP (cargo, lei de criação e documentos legais), como fundamento do interstício e da concessão da progressão vertical",
+ "sigla": "Progressão Vertical",
+ "nome": "Progressão Funcional - Módulo Progressão Vertical",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_PROGRESSAO_VERTICAL_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/30. Progressão Vertical/APF-Progressão Vertical-v1.0.xlsx",
+ "baseline_nome": "APF-Progressão Vertical-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "texto_nivel": "A Progressão Vertical não tinha contagem de pontos de função. A comissão fez, neste inventário, a contagem no nível Estimativo (NESMA), a partir das 13 histórias de usuário do módulo: identificou as funções de dados e de transação e atribuiu a complexidade padrão de cada tipo, ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Resultado: 2 ALI, 7 AIE, 14 EE, 25 CE e 1 SE, total de 210 PF (aba Funções, célula L4).",
+ "areas_negocio": "Áreas de gestão de pessoas responsáveis pela concessão da progressão vertical, nos níveis central e setorial (perfis Gestor PV e Analista PV Central e Setorial das histórias de usuário); a autorização e a publicação do ato continuam a cargo das autoridades e dos servidores que operam no SEAP",
+ "perfis": "Administrador Central e Setorial; Gestor PV Central e Setorial, que consultam a gestão, atribuem operadores e definem prioridades; Analista PV Central e Setorial; Operador 1, responsável pelo registro do evento, e Operador 2, responsável pela conferência, que atuam no sistema; Operador 3 (autorização) e Operador 4 (publicação), que atuam no SEAP (matrizes de permissões das histórias US001 a US013)",
+ "vi_justificativa": [
+  "O módulo Progressão Vertical organiza a análise e a concessão da progressão vertical dos servidores aptos, a partir do resultado da Contagem de Tempo: distribui os vínculos entre operadores, define prioridades (PCD, 60 anos ou mais, doença grave, moléstia ou debilidade profissional), registra o evento de progressão no SEAP e acompanha a conferência, a autorização e a publicação. Quando em produção, substituirá controles manuais de um direito funcional previsto nas leis das carreiras.",
+  "Por estar em desenvolvimento, sem informação sobre conclusão, implantação e uso, não é possível atestar com segurança a geração de benefícios econômicos futuros ou de potencial de serviços; a inoperância do sistema, que ainda não sustenta as atividades dos órgãos, teria baixo impacto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, a ser revisto quando o Progressão Vertical entrar em produção."
+ ],
+ "finalidade": [
+  "O sistema Progressão Funcional, módulo Progressão Vertical, está em desenvolvimento pela SEPLAG em Java para gerir a análise e a concessão da progressão vertical (elevação de nível) dos servidores do Poder Executivo. O módulo parte do resultado do sistema Contagem de Tempo: os vínculos com cálculo concluído na situação APTO A PROGREDIR passam a ser geridos na tela Gestão de Progressão Vertical, com acesso ao sistema Contagem de Tempo pela página inicial (US001). As histórias de usuário não citam norma específica; o texto da conclusão gerado pelo sistema cita a lei da carreira do servidor, cadastrada no SEAP, como fundamento da concessão (US006).",
+  "Pelas histórias, os gestores consultam as progressões disponíveis, em andamento e publicadas, com filtros por órgão, setor, execução da contagem, situação e motivo de rejeição, e exportação em PDF e Excel (US001); atribuem e removem, em lote ou individualmente, os operadores responsáveis pelo registro e pela conferência (US002 a US005); consultam os detalhes de cada vínculo, com informações funcionais, contagem de tempo, avaliações de desempenho, média e conclusão (US006); alteram a prioridade de análise, atribuída automaticamente como PCD, 60 anos ou mais ou normal, e manualmente como doença grave ou moléstia ou debilidade profissional (US007); e acompanham o histórico da situação e dos operadores (US008).",
+  "O Operador 1 analisa os pendentes de registro e registra o evento PROGRESSAO VERTICAL, que o sistema valida quanto à concomitância e grava no SEAP com o ato de publicação, ou rejeita com justificativa e anexos (US009 a US011). O Operador 2 confere os eventos registrados, validando ou rejeitando (US012 e US013). A autorização (Operador 3) e a publicação no Diário Oficial (Operador 4) seguem no SEAP, e a situação no sistema acompanha a situação no SEAP (NÃO INICIADO, AGUARDANDO REGISTRO, REGISTRADO, CONFERIDO, AUTORIZADO, PUBLICADO, REJEITADO)."
+ ],
+ "integracoes": [
+  [
+   "Contagem de Tempo",
+   "Vínculos APTO A PROGREDIR e dados da contagem (execução, tempo, avaliações, data prevista de concessão)",
+   "AIE (Resultado da Contagem de Tempo); sistema avaliado em laudo próprio"
+  ],
+  [
+   "SEAP",
+   "Dados funcionais, avaliações (pasta funcional), cargo e lei da carreira, registro do evento PROGRESSAO VERTICAL e da publicação e acompanhamento das situações (EVENTO_FUNC_PND, HAD_PUBLICACOES)",
+   "AIE (Servidor e vínculo, Avaliação de desempenho, Cargo e lei da carreira, Evento funcional e publicação)"
+  ],
+  [
+   "Manopla (controle de acesso)",
+   "Usuários com perfil de operador",
+   "AIE (Usuários operadores)"
+  ]
+ ],
+ "modulos_grupo": [
+  [
+   "^US00[1678]",
+   "Gestão da progressão vertical"
+  ],
+  [
+   "^US00[2-5]",
+   "Operadores responsáveis"
+  ],
+  [
+   "^US0(09|10|11)",
+   "Registro (Operador 1)"
+  ],
+  [
+   "^US01[23]",
+   "Conferência (Operador 2)"
+  ]
+ ],
+ "ordem_modulos": [
+  "Gestão da progressão vertical",
+  "Operadores responsáveis",
+  "Registro (Operador 1)",
+  "Conferência (Operador 2)"
+ ],
+ "modulos_tabela": [
+  [
+   "Gestão da progressão vertical",
+   "Consulta e exportação das progressões, detalhes do vínculo, prioridade de análise e histórico (US001, US006 a US008)"
+  ],
+  [
+   "Operadores responsáveis",
+   "Atribuição em lote e individual dos operadores do registro e da conferência (US002 a US005)"
+  ],
+  [
+   "Registro (Operador 1)",
+   "Pendentes, registro do evento no SEAP, rejeição, registrados e rejeitados (US009 a US011)"
+  ],
+  [
+   "Conferência (Operador 2)",
+   "Pendentes de conferência, validação, rejeição e conferidos (US012 e US013)"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "US001",
+   "nome": "Consultar Progressão Vertical (Gestão)",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Gestão da progressão vertical"
+  },
+  {
+   "codigo": "US002",
+   "nome": "Atribuir Operador Responsável pelo Registro em lote",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Operadores responsáveis"
+  },
+  {
+   "codigo": "US003",
+   "nome": "Manter Operador Responsável pelo Registro (Individual)",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Operadores responsáveis"
+  },
+  {
+   "codigo": "US004",
+   "nome": "Atribuir Operador Responsável pela Conferência em lote",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Operadores responsáveis"
+  },
+  {
+   "codigo": "US005",
+   "nome": "Manter Operador Responsável pela Conferência (Individual)",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Operadores responsáveis"
+  },
+  {
+   "codigo": "US006",
+   "nome": "Visualizar Detalhes",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Gestão da progressão vertical"
+  },
+  {
+   "codigo": "US007",
+   "nome": "Manter Prioridade",
+   "versao": "1.2",
+   "data": "29/09/2026",
+   "modulo": "Gestão da progressão vertical"
+  },
+  {
+   "codigo": "US008",
+   "nome": "Manter Histórico",
+   "versao": "1.1",
+   "data": "25/06/2026",
+   "modulo": "Gestão da progressão vertical"
+  },
+  {
+   "codigo": "US009",
+   "nome": "Analisar Progressão Vertical pendente de Registro (Operador 1)",
+   "versao": "1.2",
+   "data": "04/11/2026",
+   "modulo": "Registro (Operador 1)"
+  },
+  {
+   "codigo": "US010",
+   "nome": "Consultar Progressão Vertical Registrada (Operador 1)",
+   "versao": "1.2",
+   "data": "04/11/2026",
+   "modulo": "Registro (Operador 1)"
+  },
+  {
+   "codigo": "US011",
+   "nome": "Consultar Progressão Vertical Rejeitada (Operador 1)",
+   "versao": "1.2",
+   "data": "04/11/2026",
+   "modulo": "Registro (Operador 1)"
+  },
+  {
+   "codigo": "US012",
+   "nome": "Analisar Progressão Vertical pendente de Conferência (Operador 2)",
+   "versao": "1.2",
+   "data": "04/11/2026",
+   "modulo": "Conferência (Operador 2)"
+  },
+  {
+   "codigo": "US013",
+   "nome": "Consultar Progressão Vertical Conferida (Operador 2)",
+   "versao": "1.1",
+   "data": "04/11/2026",
+   "modulo": "Conferência (Operador 2)"
+  }
+ ],
+ "uso": "Em desenvolvimento; não há informação sobre entrada em produção ou uso",
+ "beneficio": "Potencial de serviço futuro, condicionado à conclusão e à implantação: concessão da progressão vertical com distribuição, priorização, registro e conferência informatizados e integrados ao SEAP",
+ "fase_texto": "Projeto em desenvolvimento, com histórias de usuário versionadas de 20/05/2026 a 04/11/2026; não há informação sobre conclusão e implantação. O art. 9º exige a demonstração da viabilidade técnica, da intenção de concluir e usar o bem e da disponibilidade de recursos (Seção 8)",
+ "conclusao_reconhecimento": "A Progressão Vertical é reconhecida no inventário como ativo em desenvolvimento (art. 2º, § 1º), avaliado pela metodologia do art. 11, com a ressalva da Seção 8: o atendimento ao art. 9º depende de informações da área de TI e da área de negócio sobre a conclusão e a implantação do sistema.",
+ "analise_documental": "Leitura das 13 histórias de usuário do módulo (versões mais recentes) e contagem estimativa das funções de dados e de transação",
+ "documentacao_resumo": "13 histórias de usuário do módulo Progressão Vertical e planilha de contagem v1.0 (Anexo I)",
+ "texto_evolucao": "Primeira medição do sistema: a contagem estimativa de 25/11/2026 (planilha v1.0) mede 210 PF a partir das histórias de usuário de 2026.",
+ "exemplos_tipos": [
+  "Progressão vertical (registro de análise), histórico",
+  "Resultado da Contagem de Tempo, servidor e vínculo, avaliação de desempenho, cargo e lei, evento e publicação (SEAP), órgão e setor, usuários",
+  "Atribuir operadores, alterar prioridade, registrar evento, conferir, rejeitar",
+  "Consultar gestão, pendentes, registrados, rejeitados e conferidos, histórico, exportações",
+  "Detalhes da progressão com média e conclusão"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 210,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,25"
+  }
+ ],
+ "texto_vida_util": [
+  "A vida útil do Progressão Vertical é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. Como não há informação de que o bem esteja disponível para uso, a contagem da vida útil não começou (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de informações sobre a conclusão e o uso (Seção 8)."
+ ],
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único), como responsividade, padronização visual, personalização de grids e log de auditoria sem consulta.",
+  "A autorização e a publicação do ato, feitas no SEAP pelos operadores 3 e 4.",
+  "O sistema Contagem de Tempo, avaliado em laudo próprio, e o SEAP."
+ ],
+ "outros_documentos": [
+  [
+   "Histórias de usuário US001 a US013 do módulo Progressão Vertical",
+   "Pasta do sistema; analista de requisitos",
+   "20/05/2026 a 04/11/2026",
+   "Funcionalidades, regras de negócio, campos, perfis e integrações"
+  ],
+  [
+   "Planilha de contagem APF-Progressão Vertical v1.0",
+   "Elaborada pela comissão",
+   "25/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e as histórias de usuário acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Situação, conclusão e reconhecimento: não foram disponibilizadas informações sobre a entrada em produção, o uso ou a conclusão do Progressão Vertical, que é mantido como em desenvolvimento por decisão da comissão. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º) desde que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos (art. 9º, I, II e V). As histórias de usuário, versionadas e com aprovação registrada, indicam projeto em andamento, mas não demonstram por si esses requisitos. A comissão reconhece o Progressão Vertical como ativo em desenvolvimento, com esta ressalva, e recomenda à área de TI da SEPLAG, em conjunto com a área de gestão de pessoas responsável pela progressão vertical, que informem a situação do sistema, a previsão de conclusão e de implantação, para revisão da situação e do Valor Institucional no próximo inventário; sem a demonstração do art. 9º, caberá o reconhecimento da perda por redução ao valor recuperável (art. 18).",
+  "Contagem estimativa: as transações seguem as histórias (cenários, ações e regras de negócio). Exportações em PDF e Excel da mesma listagem foram contadas uma vez; a impressão dos detalhes, com o mesmo conteúdo da tela, não foi contada à parte; a atribuição automática da prioridade integra a criação do registro. O histórico da situação e dos operadores foi contado como ALI próprio, por ser consultado pelo usuário. A sincronização da situação com o SEAP (autorização, publicação e rejeições feitas no SEAP) foi contada como entrada externa.",
+  "Base legal: as histórias de usuário não citam lei, decreto ou instrução normativa; apenas remetem à lei da carreira cadastrada no SEAP e à \"legislação vigente\" para a prioridade de análise. Recomenda-se à área de negócio informar as normas que regem a progressão vertical e o uso do sistema, para o próximo inventário.",
+  "Recomenda-se, quando o sistema entrar em produção, revisar a contagem para o nível detalhado: as histórias já trazem campos e tabelas suficientes para identificar tipos de dados e registros."
+ ]
+}

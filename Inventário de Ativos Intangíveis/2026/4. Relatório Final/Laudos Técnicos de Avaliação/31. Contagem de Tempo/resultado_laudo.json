@@ -1,0 +1,44 @@
+{
+ "sigla": "Contagem de Tempo",
+ "medida": "PF IFPUG",
+ "pf": 258.0,
+ "preco_pf": 1215.09,
+ "vt": 313493.22,
+ "vi": 0.25,
+ "va": 391866.53,
+ "funcoes": 59,
+ "por_tipo": {
+  "ALI": [
+   4,
+   28.0
+  ],
+  "AIE": [
+   8,
+   40.0
+  ],
+  "EE": [
+   26,
+   104.0
+  ],
+  "CE": [
+   19,
+   76.0
+  ],
+  "SE": [
+   2,
+   10.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   59,
+   258.0,
+   258.0
+  ]
+ },
+ "por_modulo": {
+  "Cadastros e parâmetros": 150.0,
+  "Execuções e agendamentos": 56.0,
+  "Processamento e resultados": 52.0
+ }
+}

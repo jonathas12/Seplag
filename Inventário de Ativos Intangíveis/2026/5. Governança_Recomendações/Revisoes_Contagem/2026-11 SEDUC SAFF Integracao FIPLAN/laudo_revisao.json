@@ -1,0 +1,485 @@
+{
+ "titulo": "Laudo Técnico de Revisão de Pontos de Função",
+ "subtitulos": [
+  "SAFF - Alteração da Integração Financeira FIPLAN x SAFF",
+  "Contrato nº 103/2025/UCP/SEDUC - Chamado nº 661830"
+ ],
+ "arquivo_saida": "LAUDO_REVISAO_PF_SAFF_INTEGRACAO_FIPLAN_2026",
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "setor": "Análise de Métricas de Software (SSCPG/SAPGD/SEPLAG)",
+ "cards": [
+  [
+   "Contratada",
+   "25,5 PF",
+   "51 PF brutos"
+  ],
+  [
+   "Revisão",
+   "29,0 PF",
+   "58 PF brutos"
+  ],
+  [
+   "Diferença",
+   "+3,5 PF",
+   "ALI Pagamento (órgão)"
+  ],
+  [
+   "Nível",
+   "Detalhada",
+   "IFPUG, melhoria (50%)"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "📌",
+   "1. Identificação"
+  ],
+  [
+   "tabela",
+   [
+    "Item",
+    "Informação"
+   ],
+   [
+    [
+     "Contratante",
+     "Secretaria de Estado de Educação de Mato Grosso (SEDUC-MT), Unidade de Coordenação do Projeto PADIS/MT"
+    ],
+    [
+     "Contrato",
+     "Nº 103/2025/UCP/SEDUC (SEDUC-PRO-2025/115789); serviços sob demanda medidos em pontos de função (Termo de Referência, item 3.3.8)"
+    ],
+    [
+     "Contratada",
+     "Softplan Planejamento e Sistemas S/A"
+    ],
+    [
+     "Sistema",
+     "SAFF - Sistema de Administração de Acordos de Financiamento"
+    ],
+    [
+     "Demanda",
+     "Alteração da integração financeira FIPLAN x SAFF (ERS-UNGP-SAFF.2026.0002), chamado nº 661830"
+    ],
+    [
+     "Contagem revisada",
+     "Planilha PPF-UNGP-SAFF.2026.0002 - SEDUC-MT, projeto de melhoria, IFPUG detalhada, de 10/09/2026, revisada pelo escritório de métricas da contratada: 51 PF brutos, 25,5 PF com fator de impacto"
+    ],
+    [
+     "Solicitação da revisão",
+     "E-mail da UCP do Projeto PADIS/MT de 19/11/2026, com contrato, ERS, planilha e e-mails da integração"
+    ]
+   ],
+   "Tabela 1 - Identificação",
+   [
+    24,
+    76
+   ],
+   null,
+   null
+  ],
+  [
+   "secao",
+   "🔎",
+   "2. Objeto e escopo da revisão"
+  ],
+  [
+   "p",
+   "Este laudo revisa a contagem de pontos de função apresentada pela contratada para a demanda de alteração da integração financeira FIPLAN x SAFF: verifica se as funções identificadas, seus tipos, complexidades e fatores de impacto correspondem aos requisitos da especificação, responde à dúvida sobre o novo campo órgão e apresenta a contagem revisada, registrada na planilha institucional no nível detalhado."
+  ],
+  [
+   "p",
+   "Por orientação do solicitante, não fazem parte desta revisão o preço do ponto de função, o enquadramento contratual da demanda nem os trâmites do projeto. A conciliação da Seção 9 é feita em pontos de função."
+  ],
+  [
+   "secao",
+   "📎",
+   "3. Documentos analisados"
+  ],
+  [
+   "tabela",
+   [
+    "Documento",
+    "Identificação",
+    "Data",
+    "Uso na revisão"
+   ],
+   [
+    [
+     "ERS - Especificação de Requisitos de Software",
+     "ERS-UNGP-SAFF.2026.0002, versão 1.0 (sem data e autor na tabela de revisão)",
+     "2026",
+     "Requisitos alterados: F.001 a F.003, P.001 a P.003, Regra.001 a Regra.004 e regras de tela"
+    ],
+    [
+     "Planilha de contagem da contratada",
+     "PPF-UNGP-SAFF.2026.0002 - SEDUC-MT (formato SISP da contratada)",
+     "10/09/2026",
+     "Funções, tipos, DER, ALR/RLR, complexidades, fatores de impacto e totais"
+    ],
+    [
+     "E-mail \"Integração FIPLAN x SAFF - PADIS-MT\"",
+     "UCP PADIS-SEDUC e Softplan",
+     "12/11/2026",
+     "Situação da integração e aguardo do aceite da contagem no chamado nº 661830"
+    ],
+    [
+     "Contrato nº 103/2025/UCP/SEDUC",
+     "SEDUC-PRO-2025/115789",
+     "03/11/2025",
+     "Previsão de serviços sob demanda medidos em pontos de função (item 3.3.8)"
+    ]
+   ],
+   "Tabela 2 - Documentos analisados",
+   [
+    28,
+    30,
+    12,
+    30
+   ],
+   null,
+   null
+  ],
+  [
+   "p",
+   "O e-mail de solicitação menciona também os anexos \"histórico de E-mails.pdf\", \"image (10).png\" e \"image (11).png\", que não foram recebidos para esta revisão."
+  ],
+  [
+   "secao",
+   "⚖️",
+   "4. Método"
+  ],
+  [
+   "p",
+   "A revisão segue o Manual de Práticas de Contagem do IFPUG (CPM 4.3.1, ISO/IEC 20926) e o Roteiro de Métricas de Software do SISP para projetos de melhoria. Em projeto de melhoria, conta-se cada função de dados ou de transação incluída, alterada ou excluída pela demanda; a função alterada recebe o fator de impacto de 50% quando foi desenvolvida ou já alterada pela própria contratada, como é o caso do SAFF, produto da contratada. O tamanho é o PF bruto (IFPUG) multiplicado pelo fator de impacto."
+  ],
+  [
+   "p",
+   "Uma função de dados é alterada quando a demanda inclui, altera ou exclui tipos de dados (DER) ou registros lógicos (RLR) do grupo de dados; uma transação é alterada quando a demanda muda sua lógica de processamento, seus dados ou suas validações. Tabelas temporárias e outros elementos técnicos de implementação não são arquivos lógicos."
+  ],
+  [
+   "secao",
+   "🧩",
+   "5. Requisitos da demanda"
+  ],
+  [
+   "p",
+   "A ERS altera a importação financeira já existente no SAFF para consumir a API do FIPLAN da SEDUC-MT e incluir um novo campo de órgão (item 2). A importação ocorre de duas formas, ambas alteradas: pelo serviço, executado automaticamente às 6h e às 12h, e manualmente pela tela, quando o registro tem pendência e o usuário corrige a informação e integra (Regra.001). O importador grava os dados em tabelas temporárias e o integrador os transfere para as tabelas definitivas do SAFF. As telas de consulta e detalhamento não são alteradas e estão fora do escopo."
+  ],
+  [
+   "tabela",
+   [
+    "Requisito",
+    "Conteúdo"
+   ],
+   [
+    [
+     "F.001 / P.001 - Importar pagamentos",
+     "Importação de pagamentos do FIPLAN por serviço e manualmente, adaptada à API da SEDUC-MT e \"também trazer um campo de órgão\"; validações de contrato, documento, datas, período contábil, fonte, combinação de ano, órgão/setor, fonte, projeto/atividade e rubrica, saldos e entregável"
+    ],
+    [
+     "F.002 / P.002 - Importar empenhos",
+     "Importação de empenhos por serviço e manualmente; validações de dotação, ano, órgão/setor, fonte, projeto/atividade e rubrica"
+    ],
+    [
+     "F.003 / P.003 - Importar dotações",
+     "Importação de dotações por serviço e manualmente; validações de ano, órgão/setor, fonte, projeto/atividade e rubrica"
+    ],
+    [
+     "Regra.002 a Regra.004",
+     "Pagamento só sem pendência de empenho; empenho só sem pendência de dotação; dotação exige cadastros básicos prévios"
+    ]
+   ],
+   "Tabela 3 - Requisitos alterados (ERS)",
+   [
+    30,
+    70
+   ],
+   null,
+   null
+  ],
+  [
+   "secao",
+   "📊",
+   "6. Análise da contagem da contratada"
+  ],
+  [
+   "subsecao",
+   "6.1 Funções de dados"
+  ],
+  [
+   "tabela",
+   [
+    "Função",
+    "Contratada",
+    "Revisão",
+    "Situação"
+   ],
+   [
+    [
+     "Pagamento - FIPLAN",
+     "AIE alterado, 1-19 DER, 1 RLR, baixa, 5 PF",
+     "AIE alterado, baixa, 5 PF",
+     "Confere: o SAFF passa a ler o órgão retornado pela API"
+    ],
+    [
+     "Empenho - FIPLAN",
+     "AIE alterado, baixa, 5 PF",
+     "AIE alterado, baixa, 5 PF",
+     "Confere"
+    ],
+    [
+     "Dotação - FIPLAN",
+     "AIE alterado, baixa, 5 PF",
+     "AIE alterado, baixa, 5 PF",
+     "Confere"
+    ],
+    [
+     "Pagamento (SAFF)",
+     "Não contado",
+     "ALI alterado, baixa, 7 PF",
+     "Inclusão na revisão, condicionada (Seção 7)"
+    ]
+   ],
+   "Tabela 4 - Funções de dados",
+   [
+    22,
+    26,
+    24,
+    28
+   ],
+   null,
+   null
+  ],
+  [
+   "subsecao",
+   "6.2 Funções de transação"
+  ],
+  [
+   "tabela",
+   [
+    "Processo elementar",
+    "Contratada",
+    "Revisão",
+    "Situação"
+   ],
+   [
+    [
+     "Importar pagamento (serviço)",
+     "EE alterada, >15 DER, 7 ALR, alta, 6 PF",
+     "EE alterada, 20 DER, 6 ALR, alta, 6 PF",
+     "Confere o tamanho; \"Importação FIPLAN\" (tabelas temporárias) retirada dos ALR"
+    ],
+    [
+     "Importar pagamento (manual)",
+     "EE alterada, >15 DER, 7 ALR, alta, 6 PF",
+     "EE alterada, 20 DER, 6 ALR, alta, 6 PF",
+     "Confere; processo distinto do automático (correção e integração pelo usuário)"
+    ],
+    [
+     "Importar empenho (serviço)",
+     "EE alterada, 5-15 DER, 6 ALR, alta, 6 PF",
+     "EE alterada, 10 DER, 5 ALR, alta, 6 PF",
+     "Confere o tamanho; mesmo ajuste de ALR"
+    ],
+    [
+     "Importar empenho (manual)",
+     "EE alterada, 5-15 DER, 6 ALR, alta, 6 PF",
+     "EE alterada, 10 DER, 5 ALR, alta, 6 PF",
+     "Confere o tamanho; mesmo ajuste de ALR"
+    ],
+    [
+     "Importar dotação (serviço)",
+     "EE alterada, 5-15 DER, 5 ALR, alta, 6 PF",
+     "EE alterada, 10 DER, 4 ALR, alta, 6 PF",
+     "Confere o tamanho; mesmo ajuste de ALR"
+    ],
+    [
+     "Importar dotação (manual)",
+     "EE alterada, 5-15 DER, 5 ALR, alta, 6 PF",
+     "EE alterada, 10 DER, 4 ALR, alta, 6 PF",
+     "Confere o tamanho; mesmo ajuste de ALR"
+    ]
+   ],
+   "Tabela 5 - Funções de transação",
+   [
+    22,
+    26,
+    24,
+    28
+   ],
+   null,
+   null
+  ],
+  [
+   "p",
+   "As seis entradas externas estão corretamente identificadas e classificadas: a importação automática e a manual são processos elementares distintos, e todas continuam com complexidade alta (3 ou mais arquivos referenciados e 5 ou mais tipos de dados) mesmo sem as tabelas temporárias, que a contratada contou como arquivo \"Importação FIPLAN\". O fator de impacto de 50% é o adequado para alteração de função desenvolvida pela própria contratada. A ERS não registra inclusão nem exclusão de funções, nem funções de teste ou itens não mensuráveis, e a planilha não os conta."
+  ],
+  [
+   "secao",
+   "🔧",
+   "7. O novo campo órgão"
+  ],
+  [
+   "p",
+   "A ERS inclui \"um novo campo de órgão\" na importação (item 2) e determina que a importação de pagamentos passe a \"também trazer um campo de órgão\" (F.001). Esse campo afeta a contagem em dois pontos distintos:"
+  ],
+  [
+   "lista",
+   [
+    "**Funções de dados.** O dado lido do FIPLAN muda (o órgão passa a ser recebido da API), o que a contratada contou como alteração dos três AIE do FIPLAN. Se, além de lido, o órgão passa a ser gravado no pagamento do SAFF, o grupo de dados Pagamento do SAFF (ALI) ganha um tipo de dado e é uma função de dados alterada, que não consta da planilha. Nas telas de empenho e de dotação (P.002 e P.003) o campo órgão/setor já existe e é validado, de modo que não há evidência de alteração desses ALI; na tela de pagamento (P.001) o campo não aparece, e a F.001 é a única a mencionar o novo campo.",
+    "**Combo-box.** Uma lista de órgãos para seleção na tela é uma consulta externa (CE), e não parte do ALI: o ALI só é alterado pela gravação do novo atributo. A ERS não especifica combo-box para o órgão, e as telas mostram os campos importados para correção. Se a tela de importação manual passou a oferecer uma lista de órgãos que antes não existia, essa lista é uma CE incluída (fator 100%), de complexidade baixa ou média (3 ou 4 PF)."
+   ]
+  ],
+  [
+   "caixa",
+   "info",
+   "Posição da revisão:",
+   "A dúvida procede quanto à função de dados: com o órgão gravado no pagamento do SAFF, o ALI Pagamento é alterado e deve ser contado (7 PF brutos, 3,5 PF com o fator de impacto). A contagem revisada inclui esse ALI, condicionado à confirmação da gravação do campo. A combo-box, se existir, é contada como CE incluída, e não como alteração do ALI; não foi incluída por falta de especificação."
+  ],
+  [
+   "secao",
+   "⚠️",
+   "8. Inconsistências formais da planilha da contratada"
+  ],
+  [
+   "lista",
+   [
+    "O campo \"Contrato\" traz 661830, número do chamado; o contrato é o nº 103/2025/UCP/SEDUC.",
+    "O resumo das funções de transação informa quantidade zero de EE: a fórmula conta a partir da linha 23, e as funções estão nas linhas 17 a 22. O total por operação usa intervalo de soma de uma única célula (H16:H16), que só produz o resultado correto pela expansão automática do intervalo no Excel.",
+    "A aba Sumário, oculta, totaliza apenas as funções de dados (15 PF IFPUG), sem as transações.",
+    "As tabelas temporárias do importador (\"Importação FIPLAN\") constam como arquivo referenciado das seis EE; não são arquivo lógico reconhecido pelo usuário. Não alteram o tamanho.",
+    "O nome da solicitante está grafado \"Allin Fortunato\". A ERS não tem data, autor nem aprovação na tabela de revisão."
+   ]
+  ],
+  [
+   "secao",
+   "✅",
+   "9. Conciliação e recomendações"
+  ],
+  [
+   "p",
+   "Quadro para os gestores da contratante, da contratada e da área financeira. Os valores estão em pontos de função; PF bruto é o tamanho IFPUG e PF é o tamanho com o fator de impacto de 50%."
+  ],
+  [
+   "tabela",
+   [
+    "Item",
+    "Contratada (PF bruto / PF)",
+    "Revisão (PF bruto / PF)",
+    "Diferença (PF)"
+   ],
+   [
+    [
+     "Funções de dados: 3 AIE do FIPLAN alterados",
+     "15 / 7,5",
+     "15 / 7,5",
+     "0"
+    ],
+    [
+     "Função de dados: ALI Pagamento do SAFF alterado (campo órgão)",
+     "Não contado",
+     "7 / 3,5",
+     "+3,5"
+    ],
+    [
+     "Funções de transação: 6 EE de importação alteradas",
+     "36 / 18,0",
+     "36 / 18,0",
+     "0"
+    ],
+    [
+     "Funções de teste e itens não mensuráveis",
+     "0 / 0",
+     "0 / 0",
+     "0"
+    ],
+    [
+     "**Total**",
+     "**51 / 25,5**",
+     "**58 / 29,0**",
+     "**+3,5**"
+    ]
+   ],
+   "Tabela 6 - Conciliação da contagem",
+   [
+    40,
+    20,
+    20,
+    20
+   ],
+   null,
+   [
+    4
+   ]
+  ],
+  [
+   "tabela",
+   [
+    "Cenário",
+    "Condição",
+    "Tamanho (PF)"
+   ],
+   [
+    [
+     "A",
+     "O órgão é apenas lido da API e usado nas validações, sem gravação no pagamento do SAFF",
+     "25,5 (igual à contratada)"
+    ],
+    [
+     "B (recomendado)",
+     "O órgão é gravado no pagamento do SAFF",
+     "29,0"
+    ],
+    [
+     "C",
+     "Cenário B e, além disso, nova lista (combo-box) de órgãos na tela de importação manual",
+     "32,0 (CE baixa) ou 33,0 (CE média)"
+    ]
+   ],
+   "Tabela 7 - Cenários conforme a implementação do campo órgão",
+   [
+    18,
+    58,
+    24
+   ],
+   null,
+   [
+    1
+   ]
+  ],
+  [
+   "subsecao",
+   "9.1 Recomendações"
+  ],
+  [
+   "lista_num",
+   [
+    "**À contratante (UCP PADIS/SEDUC-MT):** confirmar com a contratada, ou em homologação, se o órgão é gravado no pagamento do SAFF e se foi criada lista de órgãos na tela de importação; aceitar a contagem pelo cenário confirmado na Tabela 7; solicitar os anexos não recebidos, se houver informação adicional sobre o campo.",
+    "**À contratada (Softplan):** reapresentar a planilha com o ALI Pagamento alterado, se o campo for gravado, e com a CE da lista de órgãos, se existir; corrigir o número do contrato, as fórmulas de resumo e a aba Sumário; retirar as tabelas temporárias dos arquivos referenciados; datar e identificar autor e aprovação da ERS e explicitar nela como o campo órgão é tratado (origem, gravação e forma de exibição).",
+    "**À área financeira e à fiscalização do contrato:** atestar a quantidade de pontos de função do cenário confirmado (25,5, 29,0 ou 32,0/33,0 PF) e somente após a correção da planilha, para que o documento de medição corresponda à quantidade aceita."
+   ]
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Conclusão:",
+   "A contagem da contratada está correta nas funções e complexidades declaradas: 3 AIE e 6 EE alterados, 51 PF brutos e 25,5 PF com fator de impacto de 50%. A revisão acrescenta o ALI Pagamento do SAFF, alterado pelo novo campo órgão que a F.001 manda trazer na importação, o que eleva a contagem para 58 PF brutos e 29,0 PF, condicionado à confirmação de que o campo é gravado. A combo-box de órgão, se existir, é uma consulta externa incluída, contada à parte, e não alteração do ALI. A planilha da contratada tem inconsistências formais que não alteram o total, mas devem ser corrigidas antes do aceite."
+  ],
+  [
+   "p",
+   "Esta revisão tem caráter técnico e se limita aos documentos listados na Tabela 2. A contagem revisada está na planilha institucional APF-SAFF-Integracao-FIPLAN-Revisao-v1.0.xlsx, que acompanha este laudo."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável técnico pela revisão",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Analista de métricas de software (Análise de Pontos de Função)",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193",
+   "Cuiabá/MT, 25 de novembro de 2026."
+  ]
+ }
+}

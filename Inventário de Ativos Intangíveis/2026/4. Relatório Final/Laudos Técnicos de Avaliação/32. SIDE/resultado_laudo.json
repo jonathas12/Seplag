@@ -1,0 +1,43 @@
+{
+ "sigla": "SIDE",
+ "medida": "PF IFPUG",
+ "pf": 42.0,
+ "preco_pf": 1215.09,
+ "vt": 51033.78,
+ "vi": 0.75,
+ "va": 89309.12,
+ "funcoes": 9,
+ "por_tipo": {
+  "ALI": [
+   1,
+   7.0
+  ],
+  "AIE": [
+   2,
+   10.0
+  ],
+  "EE": [
+   3,
+   12.0
+  ],
+  "CE": [
+   2,
+   8.0
+  ],
+  "SE": [
+   1,
+   5.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   9,
+   42.0,
+   42.0
+  ]
+ },
+ "por_modulo": {
+  "Portal de painéis": 19.0,
+  "Administração e governança": 23.0
+ }
+}

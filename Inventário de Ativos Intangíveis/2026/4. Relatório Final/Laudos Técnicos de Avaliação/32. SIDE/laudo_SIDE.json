@@ -1,0 +1,157 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "SIDE",
+ "nome": "Sistema Inteligente de Dados Estratégicos",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIDE_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/32. SIDE/APF-SIDE-v1.0.xlsx",
+ "baseline_nome": "APF-SIDE-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "medida": "PF IFPUG",
+ "medida_descricao": "Contagem estimativa (NESMA), total da aba Funções (célula L4)",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Java (Spring), com front-end React e Power BI Embedded",
+ "texto_nivel": "O SIDE não tinha contagem de pontos de função. A comissão fez, neste inventário, a contagem no nível Estimativo (NESMA), a partir da documentação técnica e do documento de projeto, medindo as funcionalidades reconhecidas pelo usuário, sem considerar a tecnologia empregada: identificou as funções de dados e de transação e atribuiu a complexidade padrão de cada tipo, ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Resultado: 1 ALI, 2 AIE, 3 EE, 2 CE e 1 SE, total de 42 PF (aba Funções, célula L4).",
+ "tipo_bem": "Software desenvolvido internamente pela SEPLAG; código-fonte do Estado de Mato Grosso, mantido e hospedado pela SEPLAG",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java Spring (back-end) e React (front-end), com incorporação de painéis do Power BI (modelo App Owns Data)",
+ "areas_negocio": "Coordenadoria de Banco de Dados e Informações Gerenciais (CBDIG/SEPLAG), unidade responsável pela demanda original do portal de informações gerenciais (DOD); unidades da SEPLAG e demais áreas usuárias dos painéis estratégicos",
+ "perfis": "Usuário dos painéis, que acessa apenas os painéis da sua área de lotação, com dados filtrados por segurança em nível de linha (RLS) conforme o tipo de acesso do painel (geral, setorial ou individual); Administrador, que mantém a configuração de cada painel no módulo de administração; equipe de BI, que publica os relatórios e define os papéis RLS no Power BI (documentação técnica, itens 1 a 3)",
+ "base_legal": "Não foram disponibilizadas normas que instituam o SIDE. O DOD do portal de informações gerenciais cita como objetivo o controle de acesso aos painéis conforme as políticas de acesso a dados e a Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais)",
+ "vi": 0.75,
+ "vi_justificativa": [
+  "O SIDE centraliza o acesso aos painéis estratégicos da SEPLAG e disponibiliza informações sumarizadas (produtos de dados) para o apoio ao processo decisório de várias unidades e áreas de negócio, com controle de acesso por lotação e filtragem dos dados por segurança em nível de linha, em atenção à LGPD (DOD; documentação técnica).",
+  "A indisponibilidade do portal impediria o acesso controlado aos painéis pelas áreas usuárias e prejudicaria o acompanhamento gerencial, com prejuízo de alto impacto, ainda que os dados de origem permaneçam nos sistemas transacionais. A comissão adota o nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ."
+ ],
+ "finalidade": [
+  "O SIDE (Sistema Inteligente de Dados Estratégicos) é a plataforma de Business Intelligence da SEPLAG que incorpora painéis do Power BI em um portal próprio, com ponto único de acesso e controle de acesso por usuário. Responde à necessidade registrada no DOD do Portal de Informações Gerenciais (CBDIG, 2022): os painéis gerenciais ficavam em plataforma com acesso limitado a 30 usuários, e era necessária uma interface que gerenciasse os usuários por painel, considerando a classificação da informação e a LGPD. O DOD previa o portal sobre a plataforma QlikSense; a solução implantada, documentada no Projeto SIDE v3.0 e na Documentação Técnica e Operacional, usa o Power BI Embedded no modelo App Owns Data, em que a aplicação controla a identidade e as regras de acesso.",
+  "Pela documentação, o usuário se autentica na API de autenticação corporativa (Thanos-Security), que fornece seu perfil e lotação (órgão, CPF, matrícula). O sistema monta o menu com os painéis autorizados, comparando o nome de cada relatório publicado com a área do usuário, e, ao abrir um painel, gera o token de incorporação com a identidade de segurança em nível de linha (RLS) definida para aquele painel: geral, sem filtro; setorial, filtrado pela lotação; ou individual, filtrado pelo CPF ou pela matrícula. O token é renovado antes de expirar.",
+  "O módulo de administração mantém a configuração de cada painel (relatório, workspace, conjunto de dados, tipo de acesso, papel RLS e campo de filtro do perfil do usuário), com validações condicionais: papel e campo de filtro são obrigatórios nos acessos setorial e individual. Os relatórios e papéis RLS são criados e publicados pela equipe de BI no Power BI."
+ ],
+ "integracoes": [
+  [
+   "Thanos-Security (API de autenticação)",
+   "Autenticação e perfil do usuário (lotação, CPF, matrícula)",
+   "AIE (Usuário, perfil e lotação)"
+  ],
+  [
+   "Power BI Service e Azure AD",
+   "Lista de relatórios do workspace, geração do token de incorporação com RLS e renderização dos painéis",
+   "AIE (Painéis publicados); conteúdo dos painéis fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^Portal",
+   "Portal de painéis"
+  ],
+  [
+   "^Admin",
+   "Administração e governança"
+  ]
+ ],
+ "ordem_modulos": [
+  "Portal de painéis",
+  "Administração e governança"
+ ],
+ "modulos_tabela": [
+  [
+   "Portal de painéis",
+   "Menu de painéis autorizados pela lotação e visualização do painel com segurança em nível de linha"
+  ],
+  [
+   "Administração e governança",
+   "Configuração de cada painel: relatório, workspace, conjunto de dados, tipo de acesso, papel RLS e campo de filtro"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido e mantido pela equipe de TI da SEPLAG; os painéis dependem de capacidade do Power BI contratada à parte",
+ "uso": "Em produção, como portal de acesso aos painéis estratégicos da SEPLAG",
+ "beneficio": "Potencial de serviço: acesso centralizado e controlado a informações estratégicas sumarizadas para o processo decisório, com filtragem dos dados por usuário",
+ "fase_texto": "Sistema em produção, desenvolvido a partir da demanda do DOD do Portal de Informações Gerenciais",
+ "custo_incorrido": "O SIDE foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura da Documentação Técnica e Operacional, do Projeto SIDE v3.0, do diagrama de arquitetura e do DOD, e contagem estimativa das funções de dados e de transação",
+ "documentacao_resumo": "Documentação técnica, projeto v3.0, diagrama de arquitetura, DOD e planilha de contagem v1.0 (Anexo I)",
+ "documentacao_fonte": "Não há histórias de usuário. A contagem e a descrição se apoiam na documentação técnica e no documento de projeto, que descrevem fluxos, telas e o módulo de administração.",
+ "ressalva_documentacao": "A documentação disponibilizada é predominantemente técnica, e os protótipos do projeto são indicados como sugestões. A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "Primeira medição do sistema: a contagem estimativa de 25/11/2026 (planilha v1.0) mede 42 PF a partir da documentação técnica e do projeto v3.0.",
+ "exemplos_tipos": [
+  "Configuração de painel",
+  "Usuário, perfil e lotação (Thanos-Security), painéis publicados (Power BI)",
+  "Incluir, alterar e excluir configuração",
+  "Menu de painéis autorizados, consulta das configurações",
+  "Painel com token RLS gerado por usuário"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 42,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único), como responsividade e monitoramento.",
+  "A autenticação e a recuperação de senha, providas pela API Thanos-Security.",
+  "O conteúdo, os dados e a interação dentro dos painéis, que pertencem aos relatórios do Power BI, e a configuração de capacidade, Azure AD e papéis RLS no Power BI Desktop.",
+  "Os cadastros de assuntos e áreas previstos no DOD, sem evidência de implementação na documentação técnica."
+ ],
+ "outros_documentos": [
+  [
+   "Documentação Técnica e Operacional Definitiva - Projeto SIDE",
+   "Equipe do projeto",
+   "2026",
+   "Arquitetura, fluxo de segurança, módulo de administração, lógica RLS, menu e incorporação"
+  ],
+  [
+   "Projeto SIDE - Sistema Inteligente de Dados Estratégicos v3.0",
+   "Equipe do projeto",
+   "2024 (protótipos de 15/05/2024)",
+   "Objetivos, arquitetura, protótipos, funcionalidades e cronograma"
+  ],
+  [
+   "Diagrama Arquitetura SIDE",
+   "Equipe do projeto",
+   "2026",
+   "Fluxo de acesso: login, validação do perfil, token RLS, lista e renderização dos painéis"
+  ],
+  [
+   "DOD - Portal de Informações Gerenciais da SEPLAG",
+   "CBDIG/SEPLAG; campo de aprovação sem preenchimento",
+   "2022 (cronograma de 01/06/2022 a 31/10/2022)",
+   "Problema, objetivo, justificativa e produtos (assuntos, áreas, painéis, acesso)"
+  ],
+  [
+   "Planilha de contagem APF-SIDE v1.0",
+   "Elaborada pela comissão",
+   "25/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem e a documentação do projeto acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Contagem estimativa sobre documentação técnica: as funções foram identificadas pelo que o usuário reconhece (menu de painéis autorizados, visualização do painel com filtragem por usuário e manutenção das configurações), sem contar componentes técnicos (tokens, DTOs, serviços). O módulo de administração é descrito como CRUD, com consulta e inclusão detalhadas; alteração e exclusão foram contadas pela descrição de CRUD. A renovação do token na expiração integra a visualização do painel. Os painéis, por serem conteúdo do Power BI, ficam fora da fronteira; seu valor não está incluído neste laudo.",
+  "DOD e solução implantada: o DOD (2022) previa o portal sobre a plataforma QlikSense, com cadastros de assuntos, áreas, painéis e acessos, e não tem o campo de aprovação preenchido. A solução documentada usa o Power BI Embedded e controla o acesso pela lotação do usuário e pela configuração de cada painel, sem cadastros de assuntos e áreas. Recomenda-se registrar formalmente a mudança de plataforma e de escopo no processo do projeto.",
+  "Nome do sistema: os documentos do projeto adotam \"Sistema Inteligente de Dados Estratégicos\"; a denominação \"Sistema Integrado de Dados Estratégicos\" também foi informada à comissão. Recomenda-se uniformizar o nome no inventário.",
+  "Base legal: não foram disponibilizadas normas que instituam o SIDE; o DOD cita a LGPD. Recomenda-se à área de negócio informar os atos que regem o portal e a classificação das informações dos painéis."
+ ]
+}

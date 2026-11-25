@@ -1,0 +1,242 @@
+{
+ "titulo": "Manifestação Técnica - Reconhecimento de Bem Intangível",
+ "assunto": "Licenças do software Métrica Topo (Termo de Referência nº 005/COPI/SPP/SEAPS/SEPLAG/2026)",
+ "arquivo_saida": "MANIFESTACAO_TECNICA_RECONHECIMENTO_METRICA_TOPO_2026",
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "cards": [
+  [
+   "Objeto",
+   "4 licenças",
+   "Métrica Topo, 12 meses"
+  ],
+  [
+   "Valor",
+   "R$ 5.737,00",
+   "R$ 1.434,25 por licença"
+  ],
+  [
+   "Natureza da despesa",
+   "3.3.90.40.001",
+   "Despesa corrente"
+  ],
+  [
+   "Recomendação",
+   "Despesa do período",
+   "Não registrar no Ativo Intangível"
+  ]
+ ],
+ "abertura": [
+  "Esta Manifestação Técnica analisa se a contratação de licenças de uso do software Métrica Topo, objeto do Termo de Referência nº 005/COPI/SPP/SEAPS/SEPLAG/2026, configura bem intangível a ser reconhecido no Ativo Intangível da SEPLAG, à luz da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ (IN), e indica, caso o registro seja adotado, a mensuração, a vida útil e a amortização aplicáveis."
+ ],
+ "identificacao": [
+  [
+   "Documento analisado",
+   "Termo de Referência nº 005/COPI/SPP/SEAPS/SEPLAG/2026"
+  ],
+  [
+   "Área demandante",
+   "Coordenadoria de Patrimônio Imobiliário (COPI), Superintendência de Patrimônio Público (SPP), Secretaria Adjunta de Patrimônio e Serviços (SEAPS/SEPLAG)"
+  ],
+  [
+   "Objeto",
+   "Aquisição de 4 licenças do software Métrica Topo para elaboração de peças técnicas de georreferenciamento de imóveis rurais e urbanos (TR, itens 1.1, 2.2.1 e 3.2.2)"
+  ],
+  [
+   "Contratada",
+   "Métrica Tecnologia Ltda., CNPJ 01.227.689/0001-54, fabricante e única detentora dos direitos autorais e de comercialização (TR, item 8.2)"
+  ],
+  [
+   "Registro do programa",
+   "INPI BR 51 2023 000804-4, certificado de 28/03/2023 (TR, itens 8.2 e 8.4)"
+  ],
+  [
+   "Vigência",
+   "12 meses a contar da assinatura, prorrogável por termo aditivo (TR, item 2.2.2)"
+  ],
+  [
+   "Valor",
+   "R$ 5.737,00 (R$ 1.434,25 por licença), pagamento em parcela única (TR, itens 6.1 e 7.3)"
+  ],
+  [
+   "Dotação",
+   "UO 11101, Ação 2599, Programa 501, Fonte 1.759.0000, Natureza de Despesa 3.3.90.40.001 (TR, item 2.1)"
+  ],
+  [
+   "Forma de contratação",
+   "Inexigibilidade, art. 74, I, da Lei nº 14.133/2021 (TR, item 8.1)"
+  ]
+ ],
+ "consulta": [
+  "A consulta pede que se determine se a contratação constitui ativo intangível quanto ao reconhecimento, à geração de benefício econômico futuro ou potencial de serviço e à propriedade, considerando que: (i) trata-se de licença de 12 meses, com vida útil determinada; (ii) o código-fonte e a propriedade intelectual permanecem com a fabricante; (iii) a SEPLAG obtém por tempo determinado os benefícios de uso, mas não pode comercializar nem alterar o software."
+ ],
+ "documentos": [
+  [
+   "Termo de Referência nº 005/COPI/SPP/SEAPS/SEPLAG/2026",
+   "Elaborado pela COPI-SPP-SEAPS-SEPLAG",
+   "2026",
+   "Objeto, vigência, valor, dotação, direitos da contratada e da contratante"
+  ],
+  [
+   "Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ",
+   "DOE de 27/05/2022, p. 14",
+   "25/05/2022",
+   "Conceitos, critérios de reconhecimento, mensuração, vida útil e amortização"
+  ]
+ ],
+ "fundamentos": [
+  "A IN define bem intangível como o ativo não monetário, sem substância física, identificável, controlado pela entidade e gerador de benefícios econômicos futuros ou potencial de serviços (art. 2º, II). Ela determina o reconhecimento dos softwares cujos códigos-fontes são do Estado, dos softwares de prateleira e dos projetos em desenvolvimento (art. 2º, § 1º), e exclui do registro os softwares adquiridos sem licenciamento válido, com prazo contratualmente vencido (art. 2º, § 2º, I). Software de prateleira é a solução programada e produzida uniformemente e em grande escala, sem funcionalidades específicas nem personalizadas (art. 2º, XI).",
+  "O controle exigido pela IN recai sobre os benefícios do bem, e não sobre a propriedade do código-fonte. No licenciamento, o objeto controlado pela entidade é o direito contratual de uso, por prazo e condições definidos; a impossibilidade de alterar ou comercializar o programa limita esse direito, mas não o elimina."
+ ],
+ "criterios": [
+  [
+   "Bem intangível",
+   "art. 2º, II",
+   "Programa identificável (registro no INPI); a SEPLAG controla o direito de uso das 4 licenças durante a vigência e obtém potencial de serviço no georreferenciamento de imóveis do Estado (TR, itens 1.1 e 3.2.3)",
+   "Atende"
+  ],
+  [
+   "Software de prateleira",
+   "art. 2º, XI, e § 1º",
+   "Programa comercializado pela fabricante a diversos órgãos, sem personalização para a SEPLAG (TR, item 7.2.1)",
+   "Atende"
+  ],
+  [
+   "Licença válida",
+   "art. 2º, § 2º, I",
+   "Durante os 12 meses de vigência a licença é válida; vencida sem renovação, o software não pode permanecer registrado",
+   "Atende, por 12 meses"
+  ],
+  [
+   "Benefício ou potencial de serviço",
+   "art. 6º, parágrafo único, I",
+   "Celeridade e qualidade das peças técnicas de regularização e gestão de imóveis (TR, item 3.2.3; Lei nº 11.109/2020)",
+   "Atende"
+  ],
+  [
+   "Mensuração confiável",
+   "art. 6º, parágrafo único, II",
+   "Custo de aquisição definido: R$ 5.737,00 (TR, item 7.3)",
+   "Atende"
+  ],
+  [
+   "Separabilidade",
+   "art. 6º, parágrafo único, III",
+   "A licença não pode ser vendida, transferida ou cedida pela SEPLAG",
+   "Não atende"
+  ],
+  [
+   "Direito contratual",
+   "art. 6º, parágrafo único, IV",
+   "O direito de uso resulta da contratação com a fabricante; os critérios III e IV são alternativos",
+   "Atende"
+  ],
+  [
+   "Propriedade intelectual",
+   "art. 2º, II e § 1º",
+   "Código-fonte e direitos autorais da fabricante (TR, item 8.2); a IN não exige propriedade do código para o software de prateleira",
+   "Não impede"
+  ],
+  [
+   "Vida útil",
+   "arts. 14, § 2º, e 16, caput e § 2º",
+   "Vida útil definida, limitada à vigência do licenciamento: 12 meses. A renovação só integraria a vida útil se pudesse ocorrer sem custo significativo (art. 16, § 1º), o que não se verifica, pois exige nova contratação pelo preço da licença",
+   "Definida, 12 meses"
+  ],
+  [
+   "Custos de renovação",
+   "art. 2º, IV, e art. 10, parágrafo único",
+   "A renovação de licenças é custo de manutenção periódica e não agrega valor ao bem",
+   "Condiciona"
+  ]
+ ],
+ "contrapontos": [
+  [
+   "Natureza orçamentária da despesa.",
+   "O Termo de Referência nº 005/COPI/SPP/SEAPS/SEPLAG/2026 classifica a contratação na natureza 3.3.90.40.001, despesa corrente, embora denomine o objeto \"aquisição de bem intangível\" (item 1.1). A incorporação ao Ativo Intangível pressupõe despesa de capital; mantida a classificação corrente, o gasto é reconhecido como variação patrimonial diminutiva do período. A correlação entre a natureza da despesa e o registro patrimonial deve ser confirmada com o setor contábil (IN, art. 27)."
+  ],
+  [
+   "Renovação de licença.",
+   "O TR menciona a \"adesão de 04 (quatro) licenças pelo período de 01 (um) ano\" (item 7.3) e não informa se a SEPLAG já utilizava o software. Se a contratação renovar licenças anteriores, enquadra-se como custo de manutenção periódica (art. 2º, IV) e não deve ser computada no valor de intangível algum (art. 10, parágrafo único)."
+  ],
+  [
+   "Cessão temporária de uso.",
+   "A fabricante mantém o código-fonte, os direitos autorais e a exclusividade de comercialização (TR, item 8.2). A SEPLAG adquire apenas o uso por 12 meses, sem permanência após o vencimento (art. 2º, § 2º, I), o que, na essência, equivale a uma assinatura de uso."
+  ],
+  [
+   "Relevância da informação contábil.",
+   "O valor de R$ 5.737,00 seria integralmente amortizado em 12 meses, com baixa no vencimento. No inventário anual (art. 26) o saldo remanescente seria reduzido, e o registro, a amortização mensal e a baixa teriam custo administrativo superior ao benefício informacional para as demonstrações contábeis."
+  ]
+ ],
+ "alternativa": {
+  "texto": [
+   "Se a contratação for a primeira aquisição das licenças e o setor contábil, à vista da natureza da despesa, optar pelo registro no Ativo Intangível, os parâmetros da IN são os seguintes:"
+  ],
+  "tabela": [
+   [
+    "Mensuração inicial",
+    "Custo de aquisição, R$ 5.737,00 (art. 10, I), sem incluir suporte ou custos de manutenção periódica (art. 10, parágrafo único)"
+   ],
+   [
+    "Agrupamento",
+    "As 4 licenças compõem um único item (art. 12, valor do conjunto)"
+   ],
+   [
+    "Vida útil",
+    "Definida, 12 meses, sem exceder a vigência do licenciamento (arts. 14, § 2º, e 16, § 2º)"
+   ],
+   [
+    "Início da amortização",
+    "Data em que as licenças estiverem instaladas e disponíveis para uso (art. 19, § 1º)"
+   ],
+   [
+    "Amortização",
+    "Linear e mensal: 11 parcelas de R$ 478,08 e a última de R$ 478,12 (R$ 5.737,00 / 12); valor residual zero (arts. 17, 19 e 19, § 2º)"
+   ],
+   [
+    "Após o reconhecimento",
+    "Custo menos amortização acumulada e eventuais perdas por redução ao valor recuperável (art. 18)"
+   ],
+   [
+    "Vencimento",
+    "Baixa do item ao fim da vigência sem renovação (art. 2º, § 2º, I); renovações posteriores como despesa de manutenção periódica (art. 2º, IV)"
+   ],
+   [
+    "Identificação contábil",
+    "Conforme Instrução de Serviço nº 022/2020-SACE/SEFAZ, item 4.7 (art. 20, II, e art. 24)"
+   ]
+  ]
+ },
+ "inconsistencias": [
+  "Item 3.2.1: quantitativos de engenheiros e arquitetos não preenchidos (\"XX\"), e o título do item 3.2 menciona \"quantitativo de vagas\".",
+  "Item 1.1: o objeto é denominado \"aquisição de bem intangível\", mas a natureza da despesa (item 2.1) é corrente; a denominação e a classificação devem ser coerentes.",
+  "Item 6.6: condiciona o pagamento à \"entrega do certificado de participação pelo servidor\", e o item 7.2.1 trata as notas fiscais como \"serviços prestados\", termos próprios de contratação de capacitação.",
+  "Itens 10.2 e 10.3: redação repetida.",
+  "Item 12.1: dispensa o contrato por se tratar de \"entrega imediata do serviço\" sem obrigações futuras, enquanto o item 2.2.2 fixa vigência de 12 meses, prorrogável por termo aditivo (art. 107 da Lei nº 14.133/2021), e o item 9.6 prevê suporte ao usuário durante a execução."
+ ],
+ "conclusao": {
+  "titulo": "Conclusão:",
+  "texto": "As licenças do Métrica Topo atendem formalmente aos critérios de reconhecimento da IN Conjunta nº 003/2022/SEPLAG/SEFAZ como software de prateleira com licenciamento válido, resultante de direito contratual (art. 2º, II e § 1º, e art. 6º, parágrafo único, I, II e IV), com vida útil definida de 12 meses (arts. 14 e 16, § 2º). Contudo, por se tratar de cessão temporária de uso, sem transferência de código-fonte ou de direitos, classificada pela área demandante em despesa corrente (3.3.90.40.001), e de valor integralmente consumido no prazo de 12 meses, recomenda-se não registrá-las no Ativo Intangível e reconhecer o gasto como despesa do período. Confirmada a renovação de licenças já utilizadas, o tratamento como despesa decorre diretamente do art. 2º, IV, e do art. 10, parágrafo único, da IN.",
+  "recomendacoes": [
+   "À COPI/SPP/SEAPS: informar se a contratação é a primeira aquisição ou a renovação de licenças já utilizadas e corrigir as inconsistências apontadas no Termo de Referência.",
+   "Ao setor contábil: confirmar o tratamento como despesa do período, coerente com a natureza 3.3.90.40.001 (IN, arts. 23 e 27).",
+   "Caso o setor contábil opte pelo registro no Ativo Intangível, adotar os parâmetros da Tabela 4: custo de R$ 5.737,00, vida útil definida de 12 meses, amortização linear a partir da disponibilização para uso e baixa no vencimento.",
+   "Em qualquer hipótese, a CIABI registrará as licenças no levantamento do inventário anual (IN, art. 6º), para controle da vigência e do uso, sem atribuir valor pela metodologia do art. 11, que se aplica a softwares sem custo de aquisição conhecido."
+  ]
+ },
+ "limites": [
+  "Esta manifestação tem caráter técnico e opinativo, nos termos da Portaria nº 124/2026/SEPLAG, art. 3º: a decisão sobre o registro contábil cabe ao setor contábil do órgão. A análise se limita aos documentos listados na Tabela 2."
+ ],
+ "qualificacao": "A análise foi elaborada por avaliador com atuação em gestão de produtos e tecnologia, análise de métricas de software (pontos de função), gestão de projetos, avaliação de ativos intangíveis de software e ciência de dados, responsável pelas medições e laudos técnicos de avaliação do inventário de bens intangíveis da SEPLAG.",
+ "responsavel": {
+  "rotulo": "Responsável técnico",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Avaliador de Ativos Intangíveis de Software",
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Portaria nº 124/2026/SEPLAG - matrícula 280193",
+   "Cuiabá/MT, 25 de novembro de 2026."
+  ]
+ },
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)"
+}

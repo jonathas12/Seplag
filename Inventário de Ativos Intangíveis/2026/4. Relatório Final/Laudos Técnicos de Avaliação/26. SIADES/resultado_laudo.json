@@ -1,0 +1,45 @@
+{
+ "sigla": "SIADES",
+ "medida": "PF IFPUG",
+ "pf": 344.0,
+ "preco_pf": 1215.09,
+ "vt": 417990.96,
+ "vi": 0.25,
+ "va": 522488.7,
+ "funcoes": 79,
+ "por_tipo": {
+  "ALI": [
+   8,
+   56.0
+  ],
+  "AIE": [
+   1,
+   5.0
+  ],
+  "EE": [
+   28,
+   112.0
+  ],
+  "CE": [
+   39,
+   156.0
+  ],
+  "SE": [
+   3,
+   15.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   79,
+   344.0,
+   344.0
+  ]
+ },
+ "por_modulo": {
+  "Formulários e critérios": 58.0,
+  "Comissões": 66.0,
+  "Processo e avaliações": 115.0,
+  "Manifestação técnica e homologação": 105.0
+ }
+}

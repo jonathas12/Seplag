@@ -1,0 +1,213 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "medida": "PF IFPUG",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 25 de novembro de 2026.",
+ "sigla": "SIADES",
+ "nome": "Sistema de Avaliação de Desempenho",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIADES_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/26. SIADES/APF-SIADES-v1.0.xlsx",
+ "baseline_nome": "APF-SIADES-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em desenvolvimento (inclui homologação)",
+ "tecnologia": "Java",
+ "texto_nivel": "O SIADES foi medido no nível Estimativo (NESMA), que identifica as funções de dados e de transação e atribui complexidade padrão a cada tipo: ALI baixa (7 PF), AIE baixa (5 PF) e transações média (EE e CE, 4 PF; SE, 5 PF). Não havia documentação funcional: a contagem foi feita no inventário de 2025, a partir de apresentação do sistema pelo desenvolvedor, e é mantida neste inventário: 344 PF (aba Funções, célula L4).",
+ "tipo_bem": "Software em desenvolvimento pela equipe interna da SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Equipe de TI da SEPLAG (SSCPG/SAPGD/SEPLAG), em Java",
+ "areas_negocio": "Secretaria Adjunta de Gestão de Pessoas da SEPLAG, de onde vêm preferencialmente os membros da Comissão Central de Avaliação de Desempenho (Decreto nº 1.303/2022, art. 4º); Comissões Setoriais de Avaliação de Desempenho (CSAD) dos órgãos e entidades e Comitês de Avaliação de Desempenho (art. 3º)",
+ "perfis": "Comissão Setorial de Avaliação de Desempenho (CSAD) e subcomissões, que designam o Comitê, validam documentos, elaboram a manifestação técnica e publicam o resultado; membros do Comitê (chefia imediata e servidor indicado), que preenchem o formulário de competências; servidor avaliado, que preenche a autoavaliação, envia documentos e pode recorrer; autoridade máxima, que homologa o resultado (IN nº 15/2022/SEPLAG, art. 3º, e funções da contagem)",
+ "base_legal": "Decreto Estadual nº 1.303, de 03/03/2022 (avaliação anual de desempenho dos servidores civis do Poder Executivo); Instrução Normativa nº 15/2022/SEPLAG (diretrizes, fases e procedimentos; aferição pelo SIGADOC enquanto não houver sistema específico da SEPLAG, art. 3º, e conteúdo do Relatório Final a ser emitido por esse sistema, art. 3º, § 4º); não há norma que institua o SIADES como sistema oficial; IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 2º, § 1º, 9º, 18 e 23",
+ "vi": 0.25,
+ "vi_justificativa": [
+  "A avaliação anual de desempenho é disciplinada pelo Decreto nº 1.303/2022 e pela Instrução Normativa nº 15/2022/SEPLAG, que preveem um sistema específico da SEPLAG para a aferição; enquanto ele não for disponibilizado, a avaliação é feita por processo digital no SIGADOC (IN, art. 3º). Nenhuma norma institui o SIADES como esse sistema, e não foram disponibilizadas à comissão informações sobre sua entrada em produção, seu uso ou a conclusão do projeto.",
+  "Com as informações disponíveis até a elaboração deste laudo, não é possível atestar a geração de benefícios econômicos futuros ou de potencial de serviços nem a viabilidade de conclusão do projeto; a inoperância do sistema não causa prejuízo às atividades dos órgãos, que realizam a avaliação pelo SIGADOC. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, como no inventário de 2025."
+ ],
+ "finalidade": [
+  "O SIADES (Sistema de Avaliação de Desempenho) foi desenvolvido pela equipe interna da SEPLAG para apoiar a Avaliação Anual de Desempenho dos servidores públicos civis efetivos e estabilizados do Poder Executivo, que faz parte do acompanhamento do trabalho realizado pelo servidor ao longo do ano, ajuda a reconhecer pontos fortes, identificar oportunidades de melhoria e contribuir para o desenvolvimento profissional (página Avaliação Anual de Desempenho da SEPLAG). O Decreto nº 1.303/2022 tem por objetivos mensurar sistematicamente o desempenho do servidor em face das atribuições do cargo, identificar necessidades de desenvolvimento profissional e fornecer subsídios para o cumprimento de obrigações funcionais e a concessão de direitos, como a progressão (art. 2º); a nota é composta pelos pilares Competências, Comprometimento e Produtividade e Assiduidade e Pontualidade.",
+  "A Instrução Normativa nº 15/2022/SEPLAG organiza a avaliação em sete fases: a CSAD verifica os servidores a avaliar e designa o Comitê de Avaliação; o Comitê preenche o formulário de competências, e o servidor e a chefia encaminham os documentos comprobatórios; a CSAD mensura os pontos, valida os documentos e elabora a manifestação técnica com o resultado preliminar; o servidor pode recorrer; a CSAD analisa o recurso; a autoridade máxima homologa; e a CSAD publica o resultado e encerra o processo (art. 3º). A aferição é feita por processo digital no SIGADOC, desde que não haja outro sistema específico disponibilizado pela SEPLAG, que deverá emitir o Relatório Final com as notas detalhadas por pilar e competência, a comparação com a média do cargo, pontos fortes, oportunidades de melhoria e o Plano de Desenvolvimento de Competências (PDCI) (art. 3º, § 4º).",
+  "Pela contagem de pontos de função, o SIADES permite: manter formulários de competência e seus fatores de comprometimento; constituir subcomissões e comissões de avaliação; abrir e conduzir o processo de avaliação, com avaliados, chefias (dados do SEAP) e servidores indicados; ao servidor, consultar suas avaliações, indicar, deferir ou indeferir substitutos, responder o formulário, consultar o relatório de competências e as movimentações; à comissão, elaborar a manifestação técnica, validar ou rejeitar documentos comprobatórios e o pilar assiduidade e assinar; e homologar o resultado e tratar recursos."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Dados da chefia e dos servidores para o processo de avaliação",
+   "AIE (SEAP - Chefia)"
+  ],
+  [
+   "SIGADOC",
+   "Processo digital da avaliação enquanto não houver sistema específico (IN nº 15/2022, art. 3º)",
+   "Fora da fronteira"
+  ],
+  [
+   "WEBPonto",
+   "Relatório Consolidado de Frequência para o pilar Assiduidade e Pontualidade (Decreto nº 1.303/2022; IN nº 15/2022)",
+   "Fora da fronteira (documento anexado)"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^(Formulário de Competência|Comprometimento)",
+   "Formulários e critérios"
+  ],
+  [
+   "^(Subcomissão|Comissão)",
+   "Comissões"
+  ],
+  [
+   "^(Processo de Avaliação|Minhas Avaliações)",
+   "Processo e avaliações"
+  ],
+  [
+   "^(Manifestação|Processo de Homologação)",
+   "Manifestação técnica e homologação"
+  ]
+ ],
+ "ordem_modulos": [
+  "Formulários e critérios",
+  "Comissões",
+  "Processo e avaliações",
+  "Manifestação técnica e homologação"
+ ],
+ "modulos_tabela": [
+  [
+   "Formulários e critérios",
+   "Formulário de competências e perguntas; comprometimento por órgão e unidade"
+  ],
+  [
+   "Comissões",
+   "Subcomissões de avaliação e comissões avaliativas, com membros"
+  ],
+  [
+   "Processo e avaliações",
+   "Processo de avaliação (tipo, comissão, avaliados, chefias do SEAP, servidor indicado, início do processo) e minhas avaliações (substituto, formulário, jornada, relatório de competências, movimentações)"
+  ],
+  [
+   "Manifestação técnica e homologação",
+   "Manifestação técnica (resultados de competências, documentos comprobatórios, pilar assiduidade, assinatura) e homologação com recurso"
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe interna da SEPLAG",
+ "uso": "Sem informação de entrada em produção nem de uso; mantido na situação Em desenvolvimento (inclui homologação). A avaliação anual de desempenho é feita pelo SIGADOC enquanto não houver sistema específico (IN nº 15/2022/SEPLAG, art. 3º)",
+ "beneficio": "Potencial de serviço futuro, condicionado à conclusão e à adoção do sistema como ferramenta da avaliação anual de desempenho",
+ "fase_texto": "Projeto em desenvolvimento ou homologação, sem informação sobre conclusão e uso. O art. 9º exige, para o reconhecimento, que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos; essas informações não foram disponibilizadas (Seção 8)",
+ "custo_incorrido": "O SIADES foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Decreto nº 1.303/2022, da Instrução Normativa nº 15/2022/SEPLAG, da página Avaliação Anual de Desempenho da SEPLAG e da notícia de 19/12/2022, e conferência da planilha de contagem APF-SIADES v1.0",
+ "documentacao_resumo": "Planilha de contagem v1.0, Decreto nº 1.303/2022, IN nº 15/2022/SEPLAG e páginas da SEPLAG e da CGE (Anexo I). Não há documentação funcional",
+ "documentacao_fonte": "Não foram disponibilizados documentos funcionais nem informações sobre a situação do sistema nos inventários de 2025 e 2026. A contagem foi feita a partir de apresentação do sistema pelo desenvolvedor, e os documentos abaixo fundamentam a finalidade e o processo que o sistema apoia.",
+ "ressalva_documentacao": "Não foram disponibilizados documentos funcionais nem informações sobre a entrada em produção do SIADES. A contagem foi feita por breve apresentação do sistema no inventário de 2025; a avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "A planilha APF-SIADES v1.0, de 09/12/2025, foi a primeira medição do sistema (344 PF, inventário de 2025) e é mantida neste inventário. Na revisão de 25/11/2026 foram preenchidos o revisor e os quadros de escopo e documentação; as funções não foram alteradas.",
+ "exemplos_tipos": [
+  "Formulário de competências, comprometimento, comissões, processo de avaliação, manifestação técnica, homologação",
+  "SEAP (chefia)",
+  "Iniciar processo, responder formulário, validar documento comprobatório, assinar manifestação",
+  "Listar avaliações, consultar servidor indicado, relatório de competências",
+  "Resultados da avaliação de competências, consultar manifestação técnica"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2025,
+   "data": "09/12/2025",
+   "pf": 344,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Desenvolvimento",
+   "uso": "Planilha v1.0; VI 0,25; primeiro inventário do sistema"
+  },
+  {
+   "inventario": 2026,
+   "data": "25/11/2026",
+   "pf": 344,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Planilha v1.0 (Contagem revisada); VI 0,25"
+  }
+ ],
+ "fonte_historico": "Fonte: registro histórico das avaliações da comissão (Dados.xlsx), inventário de 2025; inventário de 2026: este laudo.",
+ "motivo_variacao": "A variação decorre apenas do novo preço do ponto de função apurado na pesquisa de 2026. O tamanho funcional (344 PF) e o Valor Institucional (0,25) permanecem os do inventário de 2025.",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "Os sistemas SEAP, SIGADOC e WEBPonto.",
+  "Funcionalidades não apresentadas na demonstração do inventário de 2025, como o Relatório Final e o PDCI previstos no art. 3º, § 4º, da IN nº 15/2022/SEPLAG."
+ ],
+ "outros_documentos": [
+  [
+   "Decreto Estadual nº 1.303/2022",
+   "Governo do Estado de Mato Grosso",
+   "03/03/2022",
+   "Objetivos, agentes, pilares e regras da avaliação anual de desempenho"
+  ],
+  [
+   "Instrução Normativa nº 15/2022/SEPLAG",
+   "Diário Oficial (IOMAT)",
+   "dezembro de 2022",
+   "Fases do processo, aferição pelo SIGADOC ou por sistema específico da SEPLAG e conteúdo do Relatório Final"
+  ],
+  [
+   "Página Avaliação Anual de Desempenho",
+   "Site da SEPLAG",
+   "consultada em 25/11/2026",
+   "Finalidade, base legal, formulários e material de apoio"
+  ],
+  [
+   "Notícia \"Governo estabelece novos critérios para avaliação de desempenho dos servidores\"",
+   "SEPLAG (site da CGE)",
+   "19/12/2022",
+   "Objetivos e critérios da nova avaliação"
+  ],
+  [
+   "Planilha de contagem APF-SIADES v1.0",
+   "Pasta do sistema",
+   "09/12/2025; Contagem revisada em 25/11/2026",
+   "Funções e tamanho funcional"
+  ],
+  [
+   "Registro histórico das avaliações (Dados.xlsx)",
+   "Planilha da comissão",
+   "2025",
+   "Tamanho, preço, VI e valor do inventário de 2025"
+  ],
+  [
+   "Normas informadas à comissão (IN nº 019/2023/SEPLAG, LC nº 04/1990, portarias conjuntas SEPLAG/SEDUC nº 066/2023 e nº 010/2025)",
+   "Informação prestada à comissão; textos não anexados",
+   "1990 a 2025",
+   "Contexto normativo (não lidas)"
+  ]
+ ],
+ "texto_acompanham": "A planilha de contagem, o decreto, a instrução normativa e as páginas consultadas acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Situação, conclusão e reconhecimento: não foram disponibilizadas informações sobre a entrada em produção, o uso ou a conclusão do SIADES, que é mantido como em desenvolvimento. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º) desde que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos (art. 9º, I, II e V). Sem essa demonstração, não é possível atestar a geração de benefícios econômicos futuros, e caberia a baixa ou o reconhecimento da perda por redução ao valor recuperável (art. 18). A comissão mantém o SIADES no inventário com esta ressalva e recomenda à área de TI da SEPLAG, em conjunto com a Secretaria Adjunta de Gestão de Pessoas, que informem a situação do sistema e decidam formalmente sobre sua conclusão e adoção como sistema específico da avaliação anual de desempenho (IN nº 15/2022/SEPLAG, art. 3º) ou sobre a baixa, com comunicação ao setor contábil (art. 23).",
+  "Contagem mantida do inventário de 2025: a apresentação não cobriu, ou a contagem não registrou, funcionalidades previstas na IN nº 15/2022/SEPLAG, como o Relatório Final com notas por pilar e competência e o PDCI (art. 3º, § 4º), e os combos de órgão e unidade não têm AIE correspondente (estrutura organizacional de outro sistema). O tamanho pode estar subestimado; recomenda-se revisar a contagem quando houver documentação.",
+  "O Decreto nº 1.303/2022 é de 03/03/2022, conforme o próprio texto e a IN nº 15/2022/SEPLAG; a data de 16 de março informada à comissão não foi confirmada nos documentos."
+ ],
+ "rotulo_uso": "Uso e situação",
+ "rotulo_fase": "Ativo em desenvolvimento",
+ "conclusao_reconhecimento": "O SIADES é mantido no inventário como ativo em desenvolvimento (art. 2º, § 1º), avaliado pela metodologia do art. 11, com a ressalva da Seção 8: o atendimento ao art. 9º depende de informações da área de TI e da área de negócio sobre a conclusão e o uso do sistema.",
+ "fase_desenvolvimento": true,
+ "avaliacao_anterior": {
+  "exercicio": 2025,
+  "pf": 344,
+  "preco_pf": 943.25,
+  "vi": 0.25,
+  "situacao": "Desenvolvimento"
+ },
+ "texto_vida_util": [
+  "A vida útil do SIADES é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. Como não há informação de que o bem esteja disponível para uso, a contagem da vida útil não começou (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de informações sobre a conclusão e o uso (Seção 8)."
+ ]
+}

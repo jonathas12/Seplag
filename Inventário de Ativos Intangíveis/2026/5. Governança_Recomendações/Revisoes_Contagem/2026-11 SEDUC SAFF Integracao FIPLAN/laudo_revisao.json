@@ -43,7 +43,7 @@
   ],
   [
    "secao",
-   "🧭",
+   "",
    "1. Identificação"
   ],
   [
@@ -96,7 +96,7 @@
   ],
   [
    "secao",
-   "📏",
+   "",
    "2. Ponto de função em linguagem simples"
   ],
   [
@@ -117,31 +117,31 @@
    ],
    [
     [
-     "🗄️ ALI - Arquivo Lógico Interno",
+     "ALI - Arquivo Lógico Interno",
      "Grupo de dados que o próprio sistema guarda e mantém",
      "7, 10 ou 15",
      "Os pagamentos registrados no SAFF"
     ],
     [
-     "🔗 AIE - Arquivo de Interface Externa",
+     "AIE - Arquivo de Interface Externa",
      "Grupo de dados de outro sistema que o sistema apenas lê",
      "5, 7 ou 10",
      "Os pagamentos, empenhos e dotações lidos do FIPLAN"
     ],
     [
-     "📥 EE - Entrada Externa",
+     "EE - Entrada Externa",
      "Processo que recebe dados e grava ou altera dados do sistema",
      "3, 4 ou 6",
      "Importar um pagamento do FIPLAN para o SAFF"
     ],
     [
-     "🔎 CE - Consulta Externa",
+     "CE - Consulta Externa",
      "Processo que apresenta dados sem cálculo (consultas, listas)",
      "3, 4 ou 6",
      "Uma lista de órgãos para seleção na tela"
     ],
     [
-     "📊 SE - Saída Externa",
+     "SE - Saída Externa",
      "Processo que apresenta dados com cálculo ou totalização (relatórios)",
      "4, 5 ou 7",
      "Não há nesta demanda"
@@ -179,13 +179,13 @@
    ],
    [
     [
-     "📐 Tamanho das funções afetadas (PF IFPUG)",
+     "Tamanho das funções afetadas (PF IFPUG)",
      "O tamanho completo de cada função que a demanda tocou, como se fosse construída do zero",
      "Soma dos pesos das funções pela tabela do IFPUG",
      "3 AIE x 5 PF + 6 EE x 6 PF = 51 PF"
     ],
     [
-     "🛠️ Tamanho da demanda (PF a aceitar)",
+     "Tamanho da demanda (PF a aceitar)",
      "O quanto dessas funções foi efetivamente trabalhado; é o número que se aceita e se mede no contrato",
      "Tamanho das funções afetadas x fator de impacto do Roteiro SISP",
      "51 PF x 50% = 25,5 PF"
@@ -207,7 +207,7 @@
   ],
   [
    "secao",
-   "📚",
+   "",
    "3. Normas, método e a versão do roteiro"
   ],
   [
@@ -235,7 +235,7 @@
   ],
   [
    "secao",
-   "📂",
+   "",
    "4. O que foi examinado"
   ],
   [
@@ -284,11 +284,11 @@
   ],
   [
    "p",
-   "📎 Três anexos citados no e-mail de solicitação (\"histórico de E-mails.pdf\", \"image (10).png\" e \"image (11).png\") não foram recebidos. Se tratarem da implementação do campo órgão, podem fechar a questão da Seção 7."
+   "Após a solicitação, foram encaminhados os anexos complementares citados no e-mail. A imagem (11) foi examinada e não trata da implementação do campo órgão no SAFF; a imagem (10) não foi examinada, por não ter relação com a medição; o arquivo de histórico de e-mails (121 MB) não pôde ser processado nesta revisão. Nenhum deles altera a análise da Seção 7."
   ],
   [
    "secao",
-   "🧩",
+   "",
    "5. O que a demanda pede"
   ],
   [
@@ -298,8 +298,8 @@
   [
    "lista",
    [
-    "⏱️ **Automática (serviço):** duas vezes ao dia, às 6h e às 12h, o sistema busca os dados no FIPLAN e os integra ao SAFF (Regra.001).",
-    "🖐️ **Manual (tela):** quando um registro tem pendência, o usuário corrige a informação na tela e integra o registro (Regra.001; telas P.001 a P.003)."
+    "**Automática (serviço):** duas vezes ao dia, às 6h e às 12h, o sistema busca os dados no FIPLAN e os integra ao SAFF (Regra.001).",
+    "**Manual (tela):** quando um registro tem pendência, o usuário corrige a informação na tela e integra o registro (Regra.001; telas P.001 a P.003)."
    ]
   ],
   [
@@ -308,7 +308,7 @@
   ],
   [
    "secao",
-   "🔍",
+   "",
    "6. Como a contratada chegou a 25,5 PF"
   ],
   [
@@ -336,43 +336,43 @@
      "Pagamento - FIPLAN",
      "AIE alterado, baixa, 5 PF",
      "Confere: o SAFF passa a ler dados do FIPLAN da SEDUC-MT com o órgão",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Empenho - FIPLAN",
      "AIE alterado, baixa, 5 PF",
      "Confere",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Dotação - FIPLAN",
      "AIE alterado, baixa, 5 PF",
      "Confere",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Importar pagamento (automática e manual)",
      "2 EE alteradas, alta, 6 PF cada",
      "Confere: são processos distintos; continuam de complexidade alta",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Importar empenho (automática e manual)",
      "2 EE alteradas, alta, 6 PF cada",
      "Confere",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Importar dotação (automática e manual)",
      "2 EE alteradas, alta, 6 PF cada",
      "Confere",
-     "✅ Confere"
+     "Confere"
     ],
     [
      "Tabelas temporárias do importador",
      "Contadas como grupo de dados usado pelas EE",
      "Não são grupo de dados reconhecido pelo usuário; retiradas, sem mudar a complexidade",
-     "⚠️ Ajuste sem efeito no tamanho"
+     "Ajuste sem efeito no tamanho"
     ]
    ],
    "Tabela 5 - Verificação da contagem da contratada",
@@ -393,7 +393,7 @@
   ],
   [
    "secao",
-   "❓",
+   "",
    "7. O novo campo órgão: muda o tamanho?"
   ],
   [
@@ -402,7 +402,7 @@
   ],
   [
    "subsecao",
-   "🟢 Cenário 1 - O órgão é apenas um filtro"
+   "Cenário 1 - O órgão é apenas um filtro"
   ],
   [
    "p",
@@ -410,7 +410,7 @@
   ],
   [
    "subsecao",
-   "🟡 Cenário 2 - O órgão é guardado no SAFF como campo novo"
+   "Cenário 2 - O órgão é guardado no SAFF como campo novo"
   ],
   [
    "p",
@@ -418,7 +418,7 @@
   ],
   [
    "subsecao",
-   "🟠 Cenário 3 - O órgão é guardado, mas o campo já existia"
+   "Cenário 3 - O órgão é guardado, mas o campo já existia"
   ],
   [
    "p",
@@ -426,7 +426,7 @@
   ],
   [
    "subsecao",
-   "🔵 Cenário 4 - Há uma nova lista de órgãos para escolha"
+   "Cenário 4 - Há uma nova lista de órgãos para escolha"
   ],
   [
    "p",
@@ -440,7 +440,7 @@
   ],
   [
    "secao",
-   "⚠️",
+   "",
    "8. Inconsistências formais na planilha da contratada"
   ],
   [
@@ -450,16 +450,16 @@
   [
    "lista",
    [
-    "📄 O campo \"Contrato\" traz 661830, número do chamado; o contrato é o nº 103/2025/UCP/SEDUC.",
-    "🧮 O resumo das funções de transação informa zero EE: a fórmula conta a partir da linha 23, e as funções estão nas linhas 17 a 22. O total usa um intervalo de soma de uma única célula (H16:H16), que só dá o resultado certo porque o Excel o expande automaticamente.",
-    "🙈 A aba Sumário, oculta, soma apenas as funções de dados (15 PF), sem as transações.",
-    "🗂️ As tabelas temporárias do importador constam como grupo de dados usado pelas seis EE.",
-    "✍️ O nome da solicitante está grafado \"Allin Fortunato\". A ERS não tem data, autor nem aprovação na tabela de revisão."
+    "O campo \"Contrato\" traz 661830, número do chamado; o contrato é o nº 103/2025/UCP/SEDUC.",
+    "O resumo das funções de transação informa zero EE: a fórmula conta a partir da linha 23, e as funções estão nas linhas 17 a 22. O total usa um intervalo de soma de uma única célula (H16:H16), que só dá o resultado certo porque o Excel o expande automaticamente.",
+    "A aba Sumário, oculta, soma apenas as funções de dados (15 PF), sem as transações.",
+    "As tabelas temporárias do importador constam como grupo de dados usado pelas seis EE.",
+    "O nome da solicitante está grafado \"Allin Fortunato\". A ERS não tem data, autor nem aprovação na tabela de revisão."
    ]
   ],
   [
    "secao",
-   "⚖️",
+   "",
    "9. Conciliação e recomendações"
   ],
   [
@@ -477,35 +477,35 @@
    ],
    [
     [
-     "🔗 Leitura dos dados do FIPLAN (3 AIE)",
+     "Leitura dos dados do FIPLAN (3 AIE)",
      "3 AIE alterados: 15 PF de funções afetadas, 7,5 PF de demanda",
      "Confere",
      "A importação passou a ler a API do FIPLAN da SEDUC-MT",
      "0"
     ],
     [
-     "📥 Importações automáticas e manuais (6 EE)",
+     "Importações automáticas e manuais (6 EE)",
      "6 EE alteradas: 36 PF de funções afetadas, 18,0 PF de demanda",
      "Confere",
      "São seis processos distintos, todos alterados, de complexidade alta",
      "0"
     ],
     [
-     "🗄️ Pagamento do SAFF (ALI)",
+     "Pagamento do SAFF (ALI)",
      "Não contado",
      "Depende do campo órgão",
      "Só é alterado se o órgão for gravado como campo novo (cenário 2)",
      "0 ou +3,5"
     ],
     [
-     "🔎 Lista de órgãos (CE)",
+     "Lista de órgãos (CE)",
      "Não contada",
      "Depende da implementação",
      "Só conta se for lista nova e única (cenário 4)",
      "0 ou +3,0"
     ],
     [
-     "🧩 Outras funções afetadas",
+     "Outras funções afetadas",
      "Não informadas",
      "Não especificadas na ERS",
      "Cadastros, consultas ou relatórios que passem a usar o órgão",
@@ -543,28 +543,28 @@
    ],
    [
     [
-     "🟢 1",
+     "1",
      "Apenas filtro na API ou na consulta",
      "O órgão é gravado em alguma tabela do SAFF?",
      "51",
      "25,5"
     ],
     [
-     "🟡 2",
+     "2",
      "Gravado no pagamento como campo novo",
      "O pagamento do SAFF ganhou um campo de órgão que não existia?",
      "58",
      "29,0"
     ],
     [
-     "🟠 3",
+     "3",
      "Gravado, mas o campo já existia",
      "O campo gravado é o mesmo órgão/setor já usado no SAFF?",
      "51",
      "25,5"
     ],
     [
-     "🔵 4",
+     "4",
      "Campo novo e nova lista de órgãos",
      "A tela de importação ganhou uma lista de órgãos que não existia em outra tela?",
      "61",
@@ -596,14 +596,14 @@
   [
    "lista_num",
    [
-    "🏛️ **À contratante (UCP PADIS/SEDUC-MT):** pedir à contratada que responda às perguntas da Tabela 7 e informe se outras funções foram afetadas; aceitar o tamanho do cenário confirmado; formalizar com a contratada a versão do Roteiro de Métricas do SISP aplicável ao contrato.",
-    "🛠️ **À contratada (Softplan):** responder às perguntas da Tabela 7, com evidência (tela ou modelo de dados); reapresentar a planilha conforme o cenário confirmado, com as correções da Seção 8; atualizar a ERS com data, autor e aprovação e com a descrição de como o campo órgão é tratado.",
-    "💼 **À área financeira e à fiscalização do contrato:** atestar o tamanho da demanda do cenário confirmado (25,5, 28,5, 29,0 ou 32,0 PF), e somente após a reapresentação da planilha corrigida."
+    "**À contratante (UCP PADIS/SEDUC-MT):** pedir à contratada que responda às perguntas da Tabela 7 e informe se outras funções foram afetadas; aceitar o tamanho do cenário confirmado; formalizar com a contratada a versão do Roteiro de Métricas do SISP aplicável ao contrato.",
+    "**À contratada (Softplan):** responder às perguntas da Tabela 7, com evidência (tela ou modelo de dados); reapresentar a planilha conforme o cenário confirmado, com as correções da Seção 8; atualizar a ERS com data, autor e aprovação e com a descrição de como o campo órgão é tratado.",
+    "**À área financeira e à fiscalização do contrato:** atestar o tamanho da demanda do cenário confirmado (25,5, 28,5, 29,0 ou 32,0 PF), e somente após a reapresentação da planilha corrigida."
    ]
   ],
   [
    "secao",
-   "✅",
+   "",
    "10. Conclusão"
   ],
   [

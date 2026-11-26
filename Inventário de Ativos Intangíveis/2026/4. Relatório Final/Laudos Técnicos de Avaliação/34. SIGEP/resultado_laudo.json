@@ -1,0 +1,53 @@
+{
+ "sigla": "SIGEP",
+ "medida": "PF IFPUG",
+ "pf": 2691.0,
+ "preco_pf": 1215.09,
+ "vt": 3269807.19,
+ "vi": 0.25,
+ "va": 4087258.99,
+ "funcoes": 506,
+ "por_tipo": {
+  "ALI": [
+   68,
+   622.0
+  ],
+  "AIE": [
+   3,
+   15.0
+  ],
+  "EE": [
+   257,
+   1202.0
+  ],
+  "CE": [
+   162,
+   747.0
+  ],
+  "SE": [
+   16,
+   105.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   506,
+   2691.0,
+   2691.0
+  ]
+ },
+ "por_modulo": {
+  "Cadastro de Pessoas": 261.0,
+  "Estrutura Organizacional": 166.0,
+  "Cadastros Funcionais": 463.0,
+  "Vínculos e Vida Funcional": 312.0,
+  "Certame e Ingresso": 315.0,
+  "Controle de Vagas": 204.0,
+  "Remuneração e Parâmetros": 308.0,
+  "Folha de Pagamento": 271.0,
+  "Rubricas": 168.0,
+  "Pensões, Aposentadorias e Descontos": 178.0,
+  "Listas de Seleção Compartilhadas": 30.0,
+  "Dados de Outros Sistemas": 15.0
+ }
+}

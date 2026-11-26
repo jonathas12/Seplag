@@ -1,0 +1,2536 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "sigla": "SIGEP",
+ "nome": "Sistema de Gestão de Pessoas e Pagamento",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGEP_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/34. SIGEP/APF-SIGEP-v1.0.xlsx",
+ "baseline_nome": "APF-SIGEP-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "medida": "PF IFPUG",
+ "medida_descricao": "Contagem detalhada (IFPUG), total da aba Funções (célula L4)",
+ "nivel_contagem": "Detalhada (IFPUG)",
+ "situacao": "Em desenvolvimento",
+ "tecnologia": "Não informada na documentação",
+ "vi": 0.25,
+ "rotulo_uso": "Situação e uso",
+ "rotulo_fase": "Ativo em desenvolvimento",
+ "formato_us": "US{:03d}",
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Cadastro\\ de\\ Pessoas$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Estrutura\\ Organizacional$",
+   "Estrutura Organizacional"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Cadastros\\ Funcionais$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Vínculos\\ e\\ Vida\\ Funcional$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Certame\\ e\\ Ingresso$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Controle\\ de\\ Vagas$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Remuneração\\ e\\ Parâmetros$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Folha\\ de\\ Pagamento$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Rubricas$",
+   "Rubricas"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Pensões,\\ Aposentadorias\\ e\\ Descontos$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Funções\\ de\\ dados\\ \\-\\ Dados\\ de\\ Outros\\ Sistemas$",
+   "Dados de Outros Sistemas"
+  ],
+  [
+   "^Pessoa\\ Física\\ \\(US002,\\ US056,\\ US098\\)$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Pessoa\\ Jurídica\\ \\(US010\\ a\\ US014\\)$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Dependentes\\ \\(US025\\)$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Tipo\\ de\\ Dependência\\ \\(US026\\)$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Representante\\ Legal\\ \\(US029\\)$",
+   "Cadastro de Pessoas"
+  ],
+  [
+   "^Órgão/Entidade,\\ Ente\\ Federativo\\ e\\ Órgão\\ Externo\\ \\(US261\\ a\\ US270\\)$",
+   "Estrutura Organizacional"
+  ],
+  [
+   "^Tipo\\ de\\ Unidade\\ \\(US271\\)$",
+   "Estrutura Organizacional"
+  ],
+  [
+   "^Estrutura\\ Organizacional\\ \\(US256,\\ US257,\\ US259,\\ US260\\)$",
+   "Estrutura Organizacional"
+  ],
+  [
+   "^Unidades\\ da\\ Estrutura\\ \\(US258\\)$",
+   "Estrutura Organizacional"
+  ],
+  [
+   "^Regime\\ Jurídico\\ \\(US145,\\ US146\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Tipo\\ de\\ Vínculo\\ \\(US209,\\ US210\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Carreira\\ \\(US211,\\ US212\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Cargo\\ \\(US213,\\ US214\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Perfil\\ Profissional\\ \\(US215,\\ US216\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Documento\\ Legal\\ /\\ Amparo\\ Legal\\ \\(US242,\\ US244,\\ US148\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Gestão\\ de\\ Documentos\\ do\\ Sistema\\ \\(US095,\\ US100\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Listas\\ de\\ Referência\\ \\(US075,\\ Lista\\ de\\ Referência\\ v4\\.0\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Formas\\ de\\ Vacância\\ \\(US055\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Tipos\\ de\\ Aposentadoria$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Tipos\\ de\\ Pensão\\ \\(US072\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Tipos\\ de\\ Eventos\\ \\(US060\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Cadastro\\ de\\ Eventos\\ \\(US031\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Incompatibilidade\\ \\(US022\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Grupo\\ de\\ Eleitos\\ \\(US057\\ v1\\.4,\\ US058\\)$",
+   "Cadastros Funcionais"
+  ],
+  [
+   "^Gestão\\ de\\ Vínculos\\ \\(US300,\\ US301,\\ US311\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Eventos\\ Funcionais\\ \\(US061,\\ US076\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Formas\\ de\\ Encerramento\\ \\(US312,\\ US313\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Histórico\\ Funcional\\ \\(US314\\ a\\ US316\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Parametrização\\ de\\ Ocorrências\\ \\(US318\\ a\\ US320\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Licenças,\\ Afastamentos\\ e\\ Ausências\\ \\(US321,\\ US322\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Férias\\ e\\ Recesso\\ \\(US302\\ a\\ US309,\\ US317\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Perícia\\ \\(US088,\\ US106\\)$",
+   "Vínculos e Vida Funcional"
+  ],
+  [
+   "^Controle\\ de\\ Certame\\ \\(US217\\ a\\ US223,\\ US243\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Polos\\ \\(US224\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Fases\\ do\\ Certame\\ \\(US225\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Tipos\\ de\\ Cota\\ \\(US245\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Comissões\\ \\(US278\\ a\\ US281\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Gestão\\ de\\ Ingresso\\ \\(US226\\ a\\ US241\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Ingresso\\ de\\ Comissionados\\ \\(US274\\ a\\ US277\\)$",
+   "Certame e Ingresso"
+  ],
+  [
+   "^Quadros\\ Autorizados\\ \\(US195\\ a\\ US202\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Quadros\\ Autorizados\\ de\\ Bolsistas\\ \\(US294\\ a\\ US299,\\ US325\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Vagas\\ Individualizadas\\ \\(US205\\ a\\ US207,\\ US287\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Contratos\\ Temporários\\ \\(US285,\\ US286\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Quadro\\ de\\ Vagas\\ Comissionados\\ \\(US288,\\ US289,\\ US291\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Limites\\ de\\ DGA\\ \\(US292,\\ US293\\)$",
+   "Controle de Vagas"
+  ],
+  [
+   "^Tabela\\ de\\ Vencimentos\\ \\(US247\\ a\\ US252,\\ US272,\\ US273\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^RGA\\ em\\ Lote\\ \\(US253\\ a\\ US255\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Exceção\\ de\\ Tabela\\ de\\ Vencimentos\\ \\(US284\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Tabelas\\ de\\ Referência\\ \\(US334\\ a\\ US342\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Valores\\ de\\ Referência\\ \\(US343\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Parametrização\\ de\\ Pesos\\ das\\ Abrangências\\ \\(US344\\ a\\ US346\\)$",
+   "Remuneração e Parâmetros"
+  ],
+  [
+   "^Tipos\\ de\\ Folha\\ \\(US023,\\ US064\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Folha\\ de\\ Pagamento\\ \\(US167,\\ US168,\\ US184\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Competência\\ da\\ Folha\\ \\(US163,\\ US164\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Grupos\\ de\\ Cálculo\\ \\(US165,\\ US166\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Processamento\\ da\\ Folha\\ \\(US169\\ a\\ US172,\\ US183\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Ficha\\ Financeira\\ \\(US173\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Relatório\\ Dinâmico\\ da\\ Folha\\ \\(US174\\ a\\ US177,\\ US186,\\ US188\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Solicitações\\ de\\ Ajuste\\ da\\ Folha\\ \\(US178\\ a\\ US182\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Informativos,\\ Avisos\\ e\\ Cronograma\\ \\(US187,\\ US328,\\ US329\\)$",
+   "Folha de Pagamento"
+  ],
+  [
+   "^Rubricas\\ \\(US140,\\ US142,\\ US160\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Solicitação\\ de\\ Rubrica\\ \\(US133\\ a\\ US135,\\ US149\\ a\\ US154,\\ US158\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Fluxo\\ de\\ Aprovação\\ \\(US136,\\ US138\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Grupos\\ de\\ Usuários\\ \\(US137,\\ US139\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Variáveis\\ do\\ Motor\\ de\\ Cálculo\\ \\(US141\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Exceção\\ de\\ Fórmula\\ \\(US143,\\ US144\\)$",
+   "Rubricas"
+  ],
+  [
+   "^Pensão\\ por\\ Morte\\ \\(US073,\\ US104,\\ US105,\\ US110\\)$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Pensão\\ Alimentícia\\ \\(US119,\\ US121\\)$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Pensão\\ Especial\\ \\(US122,\\ US129\\)$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Penhora\\ \\(US155\\ a\\ US162\\)$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Aposentadorias\\ \\(US074\\)$",
+   "Pensões, Aposentadorias e Descontos"
+  ],
+  [
+   "^Listas\\ de\\ seleção\\ \\(combo\\-box\\)\\ de\\ cadastros\\ estruturantes$",
+   "Listas de Seleção Compartilhadas"
+  ]
+ ],
+ "ordem_modulos": [
+  "Cadastro de Pessoas",
+  "Estrutura Organizacional",
+  "Cadastros Funcionais",
+  "Vínculos e Vida Funcional",
+  "Certame e Ingresso",
+  "Controle de Vagas",
+  "Remuneração e Parâmetros",
+  "Folha de Pagamento",
+  "Rubricas",
+  "Pensões, Aposentadorias e Descontos",
+  "Listas de Seleção Compartilhadas",
+  "Dados de Outros Sistemas"
+ ],
+ "descricao_modulos": {
+  "Cadastro de Pessoas": "Pessoa física (contato, endereço e dados bancários), pessoa jurídica, dependentes, tipos de dependência e representante legal",
+  "Estrutura Organizacional": "Órgãos e entidades, ente federativo, órgãos externos, tipos de unidade, estruturas organizacionais versionadas e suas unidades",
+  "Cadastros Funcionais": "Regime jurídico, tipo de vínculo, carreira, cargo, perfil profissional, amparo legal, gestão de documentos, listas de referência, formas de vacância, tipos de aposentadoria, pensão e eventos, incompatibilidades e grupos de eleitos",
+  "Vínculos e Vida Funcional": "Gestão e encerramento de vínculos, eventos funcionais, histórico funcional, licenças e afastamentos parametrizados, férias e recesso, perícia",
+  "Certame e Ingresso": "Controle de certame (cronograma, vagas, cotas, custos, documentos e situações), polos, fases, comissões e ingresso por processo seletivo, concurso e cargo comissionado",
+  "Controle de Vagas": "Quadros autorizados versionados (inclusive de bolsistas), vagas individualizadas, quadros temporários, quadros de comissionados e limites de DGA",
+  "Remuneração e Parâmetros": "Tabelas de vencimentos versionadas, RGA individual e em lote, exceções, tabelas de referência previdenciárias e de IRRF, valores de referência e pesos das abrangências",
+  "Folha de Pagamento": "Tipos de folha, folhas, competências, grupos de cálculo, processamento, relatório técnico, ficha financeira, relatório dinâmico, ajustes, informativos e cronograma",
+  "Rubricas": "Catálogo e fórmulas das rubricas, solicitação de criação com fluxo de aprovação em etapas, grupos de usuários, variáveis do motor de cálculo e exceções de fórmula",
+  "Pensões, Aposentadorias e Descontos": "Pensão por morte, pensão alimentícia, pensão especial, penhora e aposentadorias",
+  "Listas de Seleção Compartilhadas": "Listas de seleção dos cadastros estruturantes usadas pelos formulários",
+  "Dados de Outros Sistemas": "Serviço de CEP, Sigadoc e Manopla"
+ },
+ "modulos_tabela": [
+  [
+   "Cadastro de Pessoas",
+   "Pessoa física (contato, endereço e dados bancários), pessoa jurídica, dependentes, tipos de dependência e representante legal"
+  ],
+  [
+   "Estrutura Organizacional",
+   "Órgãos e entidades, ente federativo, órgãos externos, tipos de unidade, estruturas organizacionais versionadas e suas unidades"
+  ],
+  [
+   "Cadastros Funcionais",
+   "Regime jurídico, tipo de vínculo, carreira, cargo, perfil profissional, amparo legal, gestão de documentos, listas de referência, formas de vacância, tipos de aposentadoria, pensão e eventos, incompatibilidades e grupos de eleitos"
+  ],
+  [
+   "Vínculos e Vida Funcional",
+   "Gestão e encerramento de vínculos, eventos funcionais, histórico funcional, licenças e afastamentos parametrizados, férias e recesso, perícia"
+  ],
+  [
+   "Certame e Ingresso",
+   "Controle de certame (cronograma, vagas, cotas, custos, documentos e situações), polos, fases, comissões e ingresso por processo seletivo, concurso e cargo comissionado"
+  ],
+  [
+   "Controle de Vagas",
+   "Quadros autorizados versionados (inclusive de bolsistas), vagas individualizadas, quadros temporários, quadros de comissionados e limites de DGA"
+  ],
+  [
+   "Remuneração e Parâmetros",
+   "Tabelas de vencimentos versionadas, RGA individual e em lote, exceções, tabelas de referência previdenciárias e de IRRF, valores de referência e pesos das abrangências"
+  ],
+  [
+   "Folha de Pagamento",
+   "Tipos de folha, folhas, competências, grupos de cálculo, processamento, relatório técnico, ficha financeira, relatório dinâmico, ajustes, informativos e cronograma"
+  ],
+  [
+   "Rubricas",
+   "Catálogo e fórmulas das rubricas, solicitação de criação com fluxo de aprovação em etapas, grupos de usuários, variáveis do motor de cálculo e exceções de fórmula"
+  ],
+  [
+   "Pensões, Aposentadorias e Descontos",
+   "Pensão por morte, pensão alimentícia, pensão especial, penhora e aposentadorias"
+  ],
+  [
+   "Listas de Seleção Compartilhadas",
+   "Listas de seleção dos cadastros estruturantes usadas pelos formulários"
+  ],
+  [
+   "Dados de Outros Sistemas",
+   "Serviço de CEP, Sigadoc e Manopla"
+  ]
+ ],
+ "documentos": [
+  {
+   "codigo": "Doc.",
+   "nome": "Controle de Vagas: Visão Funcional, Regras e Fluxos",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US s/n",
+   "nome": "Manter Tipos de Aposentadoria",
+   "versao": "1.0",
+   "data": "26/11/2024",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "Lista Ref.",
+   "nome": "Nome da US",
+   "versao": "4.0",
+   "data": "28/04/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US002",
+   "nome": "Manter Contato Pessoa Física",
+   "versao": "3.0",
+   "data": "26/02/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US005",
+   "nome": "Manter Cargos",
+   "versao": "1.1",
+   "data": "10/02/2025",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US006",
+   "nome": "Manter cadastro de documento legal",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US008",
+   "nome": "Manter Tipo de Vínculo",
+   "versao": "1.1",
+   "data": "14/08/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US010",
+   "nome": "Manter Pessoa Jurídica",
+   "versao": "1.5",
+   "data": "26/11/2025",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US011",
+   "nome": "Manter Contato Pessoa Jurídica",
+   "versao": "3.0",
+   "data": "27/02/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US012",
+   "nome": "Manter Endereço PJ",
+   "versao": "1.2",
+   "data": "17/04/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US013",
+   "nome": "Manter Dados Bancários",
+   "versao": "1.5",
+   "data": "29/08/2024",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US014",
+   "nome": "Manter Responsável PJ",
+   "versao": "1.4",
+   "data": "22/04/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US022",
+   "nome": "Incompatibilidade",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US023",
+   "nome": "Manter Tipos de folha de pagamento",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US025",
+   "nome": "Manter Dependentes",
+   "versao": "3.0",
+   "data": "13/02/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US026",
+   "nome": "Tipo de Dependência",
+   "versao": "2.0",
+   "data": "13/01/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US029",
+   "nome": "Manter Cadastro de Representante Legal",
+   "versao": "3.3",
+   "data": "24/03/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US031",
+   "nome": "Manter Cadastro de Eventos",
+   "versao": "1.0",
+   "data": "09/09/2024",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US041",
+   "nome": "Manter Órgãos e Entidades - Tela Inicial",
+   "versao": "1.2",
+   "data": "06/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US044",
+   "nome": "Manter Órgãos e Entidades - Dados Cadastrais",
+   "versao": "1.3",
+   "data": "09/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US045",
+   "nome": "Manter Órgãos e Entidades - Informações Complementares",
+   "versao": "2.0",
+   "data": "02/12/2025",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US046",
+   "nome": "Manter Órgãos e Entidades - Integração",
+   "versao": "1.1",
+   "data": "17/10/2024",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US047",
+   "nome": "Manter Órgãos e Entidades - Documentos Legais",
+   "versao": "1.2",
+   "data": "24/10/2024",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US048",
+   "nome": "Manter Órgãos e Entidades - Histórico",
+   "versao": "1.1",
+   "data": "23/10/2024",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US049",
+   "nome": "Manter Órgãos e Entidades - eSocial",
+   "versao": "1.1",
+   "data": "18/10/2024",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US050",
+   "nome": "Manter Setores - Tela Inicial",
+   "versao": "1.0",
+   "data": "23/12/2024",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US051",
+   "nome": "Manter Setores - Cadastro",
+   "versao": "2.1",
+   "data": "10/02/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US055",
+   "nome": "Manter Formas de Vacância",
+   "versao": "2.0",
+   "data": "21/01/2025",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US056",
+   "nome": "Manter Endereços",
+   "versao": "1.2",
+   "data": "23/12/2024",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US283",
+   "nome": "Adequar Amarrações Sistêmicas do SIGEP (arquivo nomeado US057 v4.0)",
+   "versao": "4.0",
+   "data": "04/11/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US058",
+   "nome": "Manter Participantes de Grupo de Eleitos",
+   "versao": "1.0",
+   "data": "08/10/2024",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US060",
+   "nome": "Manter tipos de eventos",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US061",
+   "nome": "Transação Eventos de Cargo",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US062",
+   "nome": "Manter Vínculos",
+   "versao": "1.1",
+   "data": "27/12/2024",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US063",
+   "nome": "Manter Tabelas de Vencimentos",
+   "versao": "2.1",
+   "data": "05/03/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US064",
+   "nome": "Parametrização de folha de pagamento",
+   "versao": "3.0",
+   "data": "12/02/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US072",
+   "nome": "Cadastrar tipo de pensão",
+   "versao": "1.0",
+   "data": "04/11/2024",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US073",
+   "nome": "Administração de Pensões por Morte",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US074",
+   "nome": "Manter Aposentadorias",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US075",
+   "nome": "Manter Listas de Referência",
+   "versao": "3.0",
+   "data": "23/02/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US076",
+   "nome": "Registro de eventos em lote",
+   "versao": "1.0",
+   "data": "20/12/2024",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US077",
+   "nome": "Documento legal",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US078",
+   "nome": "Concurso e Vagas",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US086",
+   "nome": "Cadastro de Folha de Pagamento",
+   "versao": "2.0",
+   "data": "09/12/2025",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US088",
+   "nome": "Solicitar Perícia",
+   "versao": "0.2",
+   "data": "27/02/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US095",
+   "nome": "Gestão de Documentos do Sistema",
+   "versao": "4.0",
+   "data": "27/08/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US097",
+   "nome": "Disponibilizar ações Editar, Duplicar e Excluir nas telas de visualização de cadastros",
+   "versao": "1.0",
+   "data": "16/01/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US098",
+   "nome": "Manter Dados Bancários PF",
+   "versao": "1.1",
+   "data": "27/01/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US100",
+   "nome": "Definição da Estrutura de Documentos do Sistema",
+   "versao": "2.0",
+   "data": "03/03/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US101",
+   "nome": "Atualização da Identidade Visual dos Ícones do Menu Lateral",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US102",
+   "nome": "Manter Reajuste Salarial",
+   "versao": "2.0",
+   "data": "27/02/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US103",
+   "nome": "Manter RGA",
+   "versao": "1.0",
+   "data": "10/02/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US104",
+   "nome": "Consultar Administração de Pensão por Morte",
+   "versao": "2.1",
+   "data": "25/03/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US105",
+   "nome": "Cadastrar Falecido e Pensionistas",
+   "versao": "2.1",
+   "data": "25/03/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US106",
+   "nome": "Solicitação de perícia - Upload dinâmico de documentos.",
+   "versao": "1.1",
+   "data": "04/03/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US107",
+   "nome": "Manter Instituição (Tela Inicial)",
+   "versao": "1.0",
+   "data": "04/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US108",
+   "nome": "Instituição (Aba de Dados Cadastrais)",
+   "versao": "1.0",
+   "data": "04/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US109",
+   "nome": "Manter Contato Instituição",
+   "versao": "1.0",
+   "data": "05/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US110",
+   "nome": "Cadastrar Regras de Pensão por Morte",
+   "versao": "1.1",
+   "data": "25/03/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US111",
+   "nome": "Manter Dados Bancários de Órgãos e Entidades",
+   "versao": "1.0",
+   "data": "19/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US112",
+   "nome": "Manter Contato Órgãos e Entidades",
+   "versao": "1.0",
+   "data": "19/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US113",
+   "nome": "Manter Responsável de Órgãos e Entidades",
+   "versao": "1.0",
+   "data": "23/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US114",
+   "nome": "Manter Responsável de Instituição",
+   "versao": "1.0",
+   "data": "23/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US115",
+   "nome": "Manter Dados Bancários de Órgãos e Entidades",
+   "versao": "1.0",
+   "data": "19/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US116",
+   "nome": "Manter Categoria",
+   "versao": "1.1",
+   "data": "30/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US117",
+   "nome": "Manter Cargo",
+   "versao": "1.0",
+   "data": "16/03/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US118",
+   "nome": "Manter Tabela Referência",
+   "versao": "1.0",
+   "data": "20/03/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US118",
+   "nome": "Parâmetros de Folha - Consultar",
+   "versao": "1.0",
+   "data": "30/03/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US119",
+   "nome": "Listar Pensão",
+   "versao": "1.0",
+   "data": "18/03/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US120",
+   "nome": "Manter Integração - Órgão/Entidade",
+   "versao": "2.0",
+   "data": "19/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US121",
+   "nome": "Cadastro de Pensão Alimentícia",
+   "versao": "1.0",
+   "data": "20/03/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US122",
+   "nome": "Cadastrar editar e Gerir Pensão Especial",
+   "versao": "2.0",
+   "data": "23/04/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US123",
+   "nome": "Manter Endereço de Instituição",
+   "versao": "2.0",
+   "data": "19/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US124",
+   "nome": "Manter Endereço de Órgãos/Entidades",
+   "versao": "2.0",
+   "data": "19/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US125",
+   "nome": "Manter Integração - Instituição",
+   "versao": "2.0",
+   "data": "19/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US126",
+   "nome": "Manter Esocial de Instituição",
+   "versao": "2.0",
+   "data": "20/03/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US127",
+   "nome": "Manter Esocial de Órgãos e Entidades",
+   "versao": "2.0",
+   "data": "20/03/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US128",
+   "nome": "Modal de Alterações não salvas",
+   "versao": "1.0",
+   "data": "26/03/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US129",
+   "nome": "Consulta e Gerir Pensão Especial",
+   "versao": "2.0",
+   "data": "23/04/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US130",
+   "nome": "Parâmetros de Folha - Previdenciários (INSS e RPPS)",
+   "versao": "3.0",
+   "data": "05/05/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US131",
+   "nome": "Manter Parâmetros do IRRF",
+   "versao": "2.0",
+   "data": "17/04/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US132",
+   "nome": "Manter Parâmetros de Valores e Benefícios (Salário Mínimo e Salário-Família)",
+   "versao": "2.0",
+   "data": "20/04/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US132",
+   "nome": "Dashboard de Acompanhamento de Solicitações de Rubricas",
+   "versao": "1.0",
+   "data": "14/04/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US133",
+   "nome": "Solicitação de Rubrica - Análise Documental",
+   "versao": "2.0",
+   "data": "03/06/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US134",
+   "nome": "Cabeçalho Solicitação de Rubrica",
+   "versao": "1.0",
+   "data": "30/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US135",
+   "nome": "Formulário de Solicitação da Criação da Rubrica",
+   "versao": "1.0",
+   "data": "27/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US136",
+   "nome": "Assinantes Obrigatórios das Etapas do Fluxo de Aprovação de Rubricas",
+   "versao": "1.0",
+   "data": "14/03/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US137",
+   "nome": "Busca Grupos de Usuários",
+   "versao": "3.0",
+   "data": "05/11/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US138",
+   "nome": "Etapas do Fluxo de Aprovação de Rubricas",
+   "versao": "2.0",
+   "data": "24/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US139",
+   "nome": "Gerencia Grupos de Usuários",
+   "versao": "1.0",
+   "data": "14/03/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US140",
+   "nome": "Criação - Configuração de regras do cálculo da rubrica",
+   "versao": "1.0",
+   "data": "17/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US141",
+   "nome": "Biblioteca de Elementos - Variavel",
+   "versao": "1.0",
+   "data": "05/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US142",
+   "nome": "Biblioteca de Elementos - Rubrica",
+   "versao": "1.0",
+   "data": "05/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US143",
+   "nome": "Manter Exceção Formula da Rubrica",
+   "versao": "1.0",
+   "data": "23/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US144",
+   "nome": "Consulta de Exceção Formula de Rubrica",
+   "versao": "1.0",
+   "data": "24/04/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US145",
+   "nome": "Manter Regime Jurídico - Tela Inicial",
+   "versao": "1.0",
+   "data": "08/05/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US146",
+   "nome": "Manter Regime Jurídico",
+   "versao": "1.0",
+   "data": "07/05/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US147",
+   "nome": "Componente de Situação e Vigência",
+   "versao": "1.0",
+   "data": "08/05/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US148",
+   "nome": "Componente de Base Legal",
+   "versao": "2.0",
+   "data": "11/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US149",
+   "nome": "Histórico de Atividades de Solicitação de Rubricas",
+   "versao": "1.0",
+   "data": "08/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US150",
+   "nome": "Etapa 3 - Parecer Jurídico",
+   "versao": "1.0",
+   "data": "11/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US151",
+   "nome": "Etapa 5 - Testes",
+   "versao": "1.0",
+   "data": "11/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US152",
+   "nome": "Etapa 6 - Aprovação Final",
+   "versao": "1.0",
+   "data": "11/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US153",
+   "nome": "Padronização de Accordions: Visualização de Etapas do processo",
+   "versao": "1.0",
+   "data": "11/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US154",
+   "nome": "Padronização de botões nas etapas de Solicitação de Rubrica",
+   "versao": "1.0",
+   "data": "13/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US155",
+   "nome": "Cadastrar Penhora",
+   "versao": "1.0",
+   "data": "12/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US156",
+   "nome": "Visualizar Penhora",
+   "versao": "1.0",
+   "data": "17/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US157",
+   "nome": "Editar Penhora",
+   "versao": "1.0",
+   "data": "12/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US158",
+   "nome": "Solicitação de Ajustes",
+   "versao": "1.0",
+   "data": "08/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US159",
+   "nome": "Base de cálculo Penhora",
+   "versao": "1.0",
+   "data": "19/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US160",
+   "nome": "Catálogo de Rubricas",
+   "versao": "1.0",
+   "data": "19/05/2026",
+   "modulo": "Rubricas"
+  },
+  {
+   "codigo": "US161",
+   "nome": "Vínculos Penhora",
+   "versao": "1.0",
+   "data": "12/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US162",
+   "nome": "Gerar Ofico",
+   "versao": "1.0",
+   "data": "25/05/2026",
+   "modulo": "Pensões, Aposentadorias e Descontos"
+  },
+  {
+   "codigo": "US163",
+   "nome": "Competência da Folha - Parametrização",
+   "versao": "1.0",
+   "data": "03/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US164",
+   "nome": "Competência da Folha - Listagem de Competências",
+   "versao": "1.0",
+   "data": "03/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US165",
+   "nome": "Listagem de Grupos de Cálculo",
+   "versao": "2.0",
+   "data": "09/11/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US166",
+   "nome": "Manter Grupo de Cálculo",
+   "versao": "6.0",
+   "data": "29/10/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US167",
+   "nome": "Tela Inicial Folha de Pagamento",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US168",
+   "nome": "Manter folha de pagamento",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US169",
+   "nome": "Tela Inicial Processamento da Folha",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US170",
+   "nome": "Manter Processamento da Folha",
+   "versao": "3.0",
+   "data": "17/11/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US171",
+   "nome": "Emissão do Relatório Tecnico do Processamento da Folha",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US172",
+   "nome": "Template do Relatório Técnico de Processamento da Folha",
+   "versao": "2.0",
+   "data": "04/11/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US173",
+   "nome": "Lançamento Financeiro - Ficha Financeira",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US174",
+   "nome": "Relatório Dinâmico da Folha",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US175",
+   "nome": "Cadastro de Filtro do Relatório Dinâmico",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US176",
+   "nome": "Gerenciador de Filtros do Relatório",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US177",
+   "nome": "Carregamento de Filtros",
+   "versao": "1.0",
+   "data": "10/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US178",
+   "nome": "Tela Inicial Solicitações de Ajustes da Folha de Pagamento",
+   "versao": "1.0",
+   "data": "03/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US179",
+   "nome": "Manter Solicitações de Ajustes da Folha",
+   "versao": "1.0",
+   "data": "03/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US180",
+   "nome": "Ajustes da Folha (Responsável pela Conformidade)",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US181",
+   "nome": "Responsavel pela Folha",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US182",
+   "nome": "Histórico de Solicitações de Ajustes da Folha de Pagamento",
+   "versao": "1.0",
+   "data": "08/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US183",
+   "nome": "XLS Template do Relatório Técnico de Processamento da Folha",
+   "versao": "1.0",
+   "data": "15/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US184",
+   "nome": "Editar folha de pagamento",
+   "versao": "1.0",
+   "data": "16/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US186",
+   "nome": "Fila de Relatórios da Folha",
+   "versao": "1.0",
+   "data": "16/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US187",
+   "nome": "Informativos e Boletim de Ciclo da Folha",
+   "versao": "1.0",
+   "data": "16/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US188",
+   "nome": "Geração do Arquivo Excel do Relatório da Folha",
+   "versao": "1.0",
+   "data": "15/06/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US195",
+   "nome": "Listagem de Quadros Autorizados",
+   "versao": "4.0",
+   "data": "21/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US196",
+   "nome": "Consultar Histórico de Versões",
+   "versao": "4.0",
+   "data": "21/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US197",
+   "nome": "Quadros Autorizados - 03 - Cadastrar Novo Quadro Autorizado",
+   "versao": "6.0",
+   "data": "23/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US198",
+   "nome": "Quadros Autorizados - 04 - Editar e Excluir Quadro Autorizado",
+   "versao": "4.0",
+   "data": "21/08/2026",
+   "modulo": "Histórias descontinuadas (US282, US330) ou canceladas"
+  },
+  {
+   "codigo": "US199",
+   "nome": "Quadros Autorizados - 05 - Versionar: Ampliação -  Redução - Transformação - Extinção",
+   "versao": "4.0",
+   "data": "21/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US200",
+   "nome": "Quadros Autorizados - Versionar: Distribuição",
+   "versao": "2.0",
+   "data": "25/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US201",
+   "nome": "Quadros Autorizados - 07 - Versionar: Redistribuição",
+   "versao": "2.0",
+   "data": "25/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US202",
+   "nome": "Quadros Autorizados - 08 - Versionar: Atualização da base legal",
+   "versao": "2.0",
+   "data": "25/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US205",
+   "nome": "Vagas Individualizadas - 01 - Consultar Vagas Individualizadas por Quadro Autorizado",
+   "versao": "3.0",
+   "data": "25/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US206",
+   "nome": "Vagas Individualizadas - 02 - Filtrar Vagas Individualizadas",
+   "versao": "1.0",
+   "data": "07/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US207",
+   "nome": "Vagas Individualizadas - 03 - Visualizar Detalhes da Vaga Individualizada",
+   "versao": "2.0",
+   "data": "28/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US209",
+   "nome": "Tipo de Vínculo - Listagem, Filtro, Extinção e Encerramento",
+   "versao": "2.0",
+   "data": "14/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US210",
+   "nome": "Tipo de Vínculo - Cadastro, Visualização e Edição",
+   "versao": "3.0",
+   "data": "02/10/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US211",
+   "nome": "Carreira - Listagem, Filtro, Encerramento e Extinção",
+   "versao": "2.0",
+   "data": "14/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US212",
+   "nome": "Carreira - Cadastro, Visualização e Edição",
+   "versao": "2.0",
+   "data": "14/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US213",
+   "nome": "Cargo - Listagem, Filtro e Encerramento",
+   "versao": "1.1",
+   "data": "03/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US214",
+   "nome": "Cargo - Cadastro, Visualização e Edição",
+   "versao": "3.0",
+   "data": "02/10/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US215",
+   "nome": "Perfil Profissional - Listagem, Filtro, Encerramento e Extinção",
+   "versao": "1.0",
+   "data": "30/08/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US216",
+   "nome": "Perfil Profissional - Cadastro, Visualização e Edição",
+   "versao": "4.0",
+   "data": "23/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US217",
+   "nome": "Controle de certame - Listagem de Certames / Novo certame",
+   "versao": "2.0",
+   "data": "31/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US218",
+   "nome": "Controle de certame / Identificação",
+   "versao": "2.0",
+   "data": "31/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US219",
+   "nome": "Controle de certame / cronograma",
+   "versao": "1.0",
+   "data": "25/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US220",
+   "nome": "Controle de certame / Vagas",
+   "versao": "2.0",
+   "data": "10/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US221",
+   "nome": "Controle de certame",
+   "versao": "1.0",
+   "data": "25/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US222",
+   "nome": "Cadastro de Certame - Documentos",
+   "versao": "1.0",
+   "data": "25/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US223",
+   "nome": "Controle de certame Situação",
+   "versao": "1.0",
+   "data": "25/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US224",
+   "nome": "Controle de certame / Local",
+   "versao": "1.0",
+   "data": "28/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US225",
+   "nome": "Controle de certame / Fase do certame",
+   "versao": "1.0",
+   "data": "28/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US226",
+   "nome": "01 - Gestão de Ingresso - Tela Inicial",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US227",
+   "nome": "02.1 - Novo Ingresso SELETIVO - Aba Ingresso",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US228",
+   "nome": "02.2 - Novo Ingresso - Aba Documentação",
+   "versao": "3.0",
+   "data": "28/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US229",
+   "nome": "02.3 - Novo Ingresso - Aba Efetivo Exercício",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US230",
+   "nome": "03.1 - Novo Ingresso CONCURSO - Aba Ingresso",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US231",
+   "nome": "03.2 - Novo Ingresso - Aba Analise do Provimento",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US232",
+   "nome": "Gerenciar Ingressos Processo Seletivo",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US233",
+   "nome": "02.1 - Cancelar Ingresso PS",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US234",
+   "nome": "02.2 - Histórico do Ingresso PS",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US235",
+   "nome": "Gerenciar Ingressos Concurso",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US236",
+   "nome": "03.1 - Histórico do Ingresso CONCURSO",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US238",
+   "nome": "04 - Gestão do Efetivo Exercício",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US239",
+   "nome": "04.1 - Atuar no Efetivo Exercício",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US240",
+   "nome": "03.3 - Ver detalhes - Concurso",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US241",
+   "nome": "02.3 - Ver detalhes - PS",
+   "versao": "1.0",
+   "data": "14/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US242",
+   "nome": "Listagem de Documentos Legais",
+   "versao": "1.0",
+   "data": "01/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US243",
+   "nome": "Controle de certame Historico",
+   "versao": "1.0",
+   "data": "25/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US244",
+   "nome": "Cadastro de Documentos Legais",
+   "versao": "1.1",
+   "data": "02/09/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US245",
+   "nome": "Controle de certame / Cotas",
+   "versao": "1.0",
+   "data": "02/08/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US247",
+   "nome": "01 - Tabela de vencimentos - Tela Inicial",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US248",
+   "nome": "02 - Nova Tabela de Vencimentos - Aba Identificação e Vigência",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US249",
+   "nome": "03 - Nova Tabela de Vencimentos - Aba Valores por Nível e Classe",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US250",
+   "nome": "04 - Nova Tabela de Vencimentos - Aba Aplicação de RGA",
+   "versao": "1.0",
+   "data": "10/09/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US251",
+   "nome": "05 - Versionar Tabela de Vencimentos",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US252",
+   "nome": "06 - Histórico da Tabela de Vencimentos",
+   "versao": "2.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US253",
+   "nome": "07 - Aplicação de RGA em lote - Aba Seleção das Tabelas",
+   "versao": "1.0",
+   "data": "10/09/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US254",
+   "nome": "08 - Aplicação de RGA em lote - Aba Parâmetros do RGA",
+   "versao": "1.0",
+   "data": "10/09/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US255",
+   "nome": "09 - Aplicação de RGA em lote - Pré-visualização",
+   "versao": "1.0",
+   "data": "10/09/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US256",
+   "nome": "Consultar Estruturas e Unidades",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US257",
+   "nome": "Cadastrar Nova Estrutura",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US258",
+   "nome": "Cadastrar e Gerenciar Unidades da Estrutura Organizacional",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US259",
+   "nome": "Publicar Nova Estrutura",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US260",
+   "nome": "Visualizar Estrutura Organizacional e Unidades",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US261",
+   "nome": "Cadastrar Órgão ou Entidade - Dados Cadastrais",
+   "versao": "1.0",
+   "data": "30/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US262",
+   "nome": "Cadastro de Órgãos e Entidades - Aba de Localização e Contato",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US263",
+   "nome": "Cadastro de Órgãos e Entidades - Aba de Responsável e Dados Bancários",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US264",
+   "nome": "Cadastro de Órgãos e Entidade - Aba de Integrações",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US265",
+   "nome": "Consulta e Listagem Unificada de Órgãos e Entidades",
+   "versao": "1.0",
+   "data": "10/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US266",
+   "nome": "Cadastro de Ente Federativo - Aba de Dados Cadastrais",
+   "versao": "1.0",
+   "data": "15/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US267",
+   "nome": "Ente Federativo - Aba de Localização e Contato",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US268",
+   "nome": "Ente Federativo - Aba de Responsável e Dados Bancários",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US269",
+   "nome": "Cadastro de Órgãos e Entidade - Aba de Integrações",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US270",
+   "nome": "Cadastro Simplificado de Órgãos Externos",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US271",
+   "nome": "Cadastro de Tipos de Unidade",
+   "versao": "1.0",
+   "data": "12/09/2026",
+   "modulo": "Estrutura Organizacional"
+  },
+  {
+   "codigo": "US272",
+   "nome": "03.1 - Nova Tabela de Vencimentos - Aba Revisão das Jornadas",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US273",
+   "nome": "02.1 - Nova Tabela de Vencimentos - Comissionados",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US274",
+   "nome": "01 -  Gestão de Ingresso de Comissionados",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US275",
+   "nome": "02 - Novo Ingresso Comissionado - Aba Ingresso",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US276",
+   "nome": "03 - Novo Ingresso Comissionado - Aba Documentação",
+   "versao": "1.0",
+   "data": "05/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US277",
+   "nome": "04 - Novo Ingresso Comissionado - Aba Efetivo Exercício",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US278",
+   "nome": "Comissão - Cadastro da Comissão - Listagem",
+   "versao": "1.0",
+   "data": "21/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US279",
+   "nome": "Comissão - Cadastro da Comissão - Identificação",
+   "versao": "1.0",
+   "data": "21/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US280",
+   "nome": "Comissão - Cadastro da Comissão - Membros (aba Composição da comissão)",
+   "versao": "1.0",
+   "data": "21/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US281",
+   "nome": "Comissão - Cadastro da Comissão - Historico",
+   "versao": "1.0",
+   "data": "21/09/2026",
+   "modulo": "Certame e Ingresso"
+  },
+  {
+   "codigo": "US282",
+   "nome": "Adequação do Amparo Legal e remoção do Menu Documentos Legais",
+   "versao": "1.0",
+   "data": "08/10/2026",
+   "modulo": "Cadastros Funcionais"
+  },
+  {
+   "codigo": "US284",
+   "nome": "Cadastrar Exceção",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US285",
+   "nome": "Contratos Temporários - Consulta de Quadros",
+   "versao": "2.0",
+   "data": "26/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US286",
+   "nome": "Contratos Temporários - Cadastro de Quadro",
+   "versao": "2.0",
+   "data": "26/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US287",
+   "nome": "Contratos Temporários - Vagas Individualizadas",
+   "versao": "2.0",
+   "data": "26/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US288",
+   "nome": "Quadro de Vagas Comissionados - Consulta e Histórico",
+   "versao": "1.0",
+   "data": "30/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US289",
+   "nome": "Quadro de Vagas Comissionados - Cadastro Inicial",
+   "versao": "1.0",
+   "data": "30/09/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US291",
+   "nome": "Quadro de Vagas Comissionados - Versionamento",
+   "versao": "1.0",
+   "data": "30/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US292",
+   "nome": "Limites de DGA - Consulta e Histórico de Vigências",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US293",
+   "nome": "Limites de DGA - Cadastro de Tabela",
+   "versao": "1.0",
+   "data": "01/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US294",
+   "nome": "Quadros Autorizados Bolsistas - Listagem de Quadros",
+   "versao": "1.0",
+   "data": "02/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US295",
+   "nome": "Quadros Autorizados Bolsistas - Cadastrar Novo Quadro",
+   "versao": "1.0",
+   "data": "30/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US296",
+   "nome": "Quadros Autorizados Bolsistas - Consultar Histórico de Versões",
+   "versao": "1.0",
+   "data": "02/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US297",
+   "nome": "Quadros Autorizados Bolsistas - Versionar Ampliação, Redução e Extinção Progressiva",
+   "versao": "1.0",
+   "data": "02/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US298",
+   "nome": "Quadros Autorizados Bolsistas - Versionar Distribuição",
+   "versao": "1.0",
+   "data": "05/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US299",
+   "nome": "Quadros Autorizados Bolsistas - Versionar Redistribuição",
+   "versao": "1.0",
+   "data": "30/08/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US300",
+   "nome": "Gestão de Vínculos - Tela Inicial",
+   "versao": "1.0",
+   "data": "16/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US301",
+   "nome": "Cadastrar Vínculo",
+   "versao": "1.0",
+   "data": "16/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US302",
+   "nome": "Gestão de Ferias - Tela Inicial",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US303",
+   "nome": "Solicitar Férias / Individual",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US304",
+   "nome": "Solicitar Férias / Coletiva (SEDUC/UNEMAT/SECITECI) · Órgão & Servidores",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US305",
+   "nome": "Solicitar Férias / Coletiva (SEDUC/UNEMAT/ SECITECI) · Parcelas & Alertas",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US306",
+   "nome": "Solicitar Férias / Agendamento em Lote · Órgão & Servidores",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US307",
+   "nome": "Solicitar Férias / Agendamento em Lote · Parcelas & Alertas",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US308",
+   "nome": "Solicitar Férias / Recesso Remunerado",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US309",
+   "nome": "Aprovações de Férias",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US311",
+   "nome": "Encerramento de Vínculo - Encerrar Vínculo - Listagem",
+   "versao": "1.0",
+   "data": "20/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US312",
+   "nome": "Encerramento de Vínculo - Formas de Encerramento - Listagem",
+   "versao": "1.0",
+   "data": "20/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US313",
+   "nome": "Encerramento de Vínculo - Cadastrar Forma de Encerramento",
+   "versao": "1.0",
+   "data": "20/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US314",
+   "nome": "Histórico Funcional - Tela Inicial",
+   "versao": "1.0",
+   "data": "16/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US315",
+   "nome": "Visualizar Histórico Funcional do Servidor",
+   "versao": "1.0",
+   "data": "16/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US316",
+   "nome": "Exportar Histórico Funcional do Servidor",
+   "versao": "1.0",
+   "data": "16/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US317",
+   "nome": "Histórico  Solicitação de Férias",
+   "versao": "-",
+   "data": "-",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US318",
+   "nome": "Consulta de Parametrização de Ocorrências",
+   "versao": "1.0",
+   "data": "21/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US319",
+   "nome": "Cadastrar Parametrização de Ocorrências - Aba Dados da Parametrização",
+   "versao": "1.0",
+   "data": "21/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US320",
+   "nome": "Cadastro de Parametrização de Ocorrências - Aba de Efeitos Financeiros por tipo de vínculo",
+   "versao": "1.0",
+   "data": "21/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US321",
+   "nome": "Consultar, visualizar e Retificar licença, afastamento ou ausência1. Descrição",
+   "versao": "1.0",
+   "data": "21/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US322",
+   "nome": "Cadastrar lançamento de licença, afastamento ou ausência",
+   "versao": "1.0",
+   "data": "21/10/2026",
+   "modulo": "Vínculos e Vida Funcional"
+  },
+  {
+   "codigo": "US325",
+   "nome": "Quadros Autorizados Bolsistas - Versionar Atualização da Base Legal",
+   "versao": "1.0",
+   "data": "19/10/2026",
+   "modulo": "Controle de Vagas"
+  },
+  {
+   "codigo": "US327",
+   "nome": "Página Inicial e Navegação por Módulos do SIGEP",
+   "versao": "1.0",
+   "data": "27/10/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US328",
+   "nome": "Avisos Importantes na Página Inicial",
+   "versao": "1.0",
+   "data": "27/10/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US329",
+   "nome": "Cronograma na Pagina Inicial",
+   "versao": "1.0",
+   "data": "27/10/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US330",
+   "nome": "Remoção dos Menus Instituição, Setor e Categoria",
+   "versao": "1.0",
+   "data": "08/10/2026",
+   "modulo": "Ajustes transversais (sem função própria)"
+  },
+  {
+   "codigo": "US331",
+   "nome": "Grupo de Cálculo da Folha - Amarrações Sistêmicas",
+   "versao": "1.0",
+   "data": "08/10/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US332",
+   "nome": "Folha de Pagamento - Amarrações Sistêmicas",
+   "versao": "1.0",
+   "data": "08/10/2026",
+   "modulo": "Folha de Pagamento"
+  },
+  {
+   "codigo": "US333",
+   "nome": "Adequar relacionamento do Vínculo para Pessoa Física",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Cadastro de Pessoas"
+  },
+  {
+   "codigo": "US334",
+   "nome": "Tela de Listagem - Tabelas de Referência",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US335",
+   "nome": "RGPS - Regime Geral de Previdência Social",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US336",
+   "nome": "IRRF - Imposto de Renda Retido na Fonte",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US337",
+   "nome": "RPPS - Servidor Civil Ativo",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US338",
+   "nome": "RPPS - Servidor Civil Ativo PREVCOM",
+   "versao": "1.0",
+   "data": "09/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US339",
+   "nome": "RPPS - Inativo/Pensionista LC 700 por faixas de proventos",
+   "versao": "1.0",
+   "data": "10/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US340",
+   "nome": "RPPS - Inativo/Pensionista sobre excedente do salário mínimo",
+   "versao": "1.0",
+   "data": "10/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US341",
+   "nome": "RPPS - Militar por faixas do limite legal PM/BM",
+   "versao": "1.0",
+   "data": "10/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US342",
+   "nome": "RPPS - Beneficiário com doença incapacitante sobre excedente do teto RGPS",
+   "versao": "1.0",
+   "data": "11/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US343",
+   "nome": "Valores de Referência",
+   "versao": "1.0",
+   "data": "12/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US344",
+   "nome": "Gestão da Parametrização de Pesos",
+   "versao": "1.0",
+   "data": "17/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US345",
+   "nome": "Cadastrar Parametrização de Pesos das Abrangências",
+   "versao": "1.0",
+   "data": "17/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US346",
+   "nome": "Versionar Parametrização de Pesos das Abrangências",
+   "versao": "1.0",
+   "data": "17/11/2026",
+   "modulo": "Remuneração e Parâmetros"
+  },
+  {
+   "codigo": "US057",
+   "nome": "Adequar Amarrações Sistêmicas do SIGEP",
+   "versao": "1.4",
+   "data": "04/10/2024",
+   "modulo": "Cadastros Funcionais"
+  }
+ ],
+ "grupos_sem_historia": {},
+ "texto_nivel": "O SIGEP não tinha contagem de pontos de função. A comissão mediu o sistema neste inventário em três níveis sucessivos, cada um revisado antes do seguinte, a partir das 279 histórias de usuário distintas das Sprints 4 a 23: (1) Indicativo (NESMA), só com as funções de dados, 68 ALI e 3 AIE, 2.425 PF; (2) Estimativo (NESMA), com as funções de dados e de transação na complexidade padrão, 68 ALI, 3 AIE, 257 EE, 162 CE e 16 SE, 2.247 PF; (3) Detalhado (IFPUG), com os mesmos 506 processos e a complexidade calculada pelos tipos de dados (TD) e arquivos referenciados (AR) extraídos das tabelas de campos das histórias, 2.691 PF. O laudo adota a contagem detalhada (aba Funções, célula L4), o nível mais preciso que a documentação permite. As regras de extração (o que conta como TD e AR) estão no Escopo da Contagem da planilha e na Seção 8.",
+ "tipo_bem": "Software em desenvolvimento pela SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Equipe interna de TI da SEPLAG (SSCPG/SAPGD/SEPLAG)",
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe interna da SEPLAG",
+ "areas_negocio": "Áreas de gestão de pessoas e de folha de pagamento da SEPLAG e unidades setoriais de gestão de pessoas dos órgãos, conforme os perfis citados nas histórias (gestão central e setorial, responsável pela folha, responsável pela conformidade, parecer jurídico, aprovadores do fluxo de rubricas e chefias imediatas)",
+ "perfis": "Servidores de gestão de pessoas (cadastros, vínculos, ingresso, férias e afastamentos), equipe da folha de pagamento (rubricas, grupos de cálculo, processamento e ajustes), área de conformidade, área jurídica e aprovadores do fluxo de rubricas, comissões de certame e chefias imediatas identificadas pelo Manopla",
+ "base_legal": "Não foram disponibilizadas normas que instituam o SIGEP. As histórias citam, como regras de negócio, a LC Estadual nº 700/2021, a LC nº 50/1998, a LC nº 266/2006, os Decretos nº 656/2020 e nº 704/2024, as Emendas Constitucionais nº 41/2003 e nº 47/2005, a Emenda Constitucional Estadual nº 92, a Lei nº 12.546/2011, as INC nº 002/2023 e nº 002/2025 (perícia) e os leiautes do eSocial e do APLIC (TCE-MT). São referências citadas nas histórias, com texto não anexado e não lido pela comissão",
+ "vi_justificativa": [
+  "O SIGEP (Sistema de Gestão de Pessoas e Pagamento) está em desenvolvimento pela equipe interna da SEPLAG para suceder o SEAP. As histórias cobrem o ciclo completo da gestão de pessoas e da folha do Estado: estrutura organizacional, cargos e carreiras, controle de vagas, certames e ingresso, vínculos, vida funcional, férias e afastamentos, tabelas de vencimentos, rubricas, processamento da folha, pensões e descontos. Quando implantado, sustentará a gestão de pessoal e o pagamento dos servidores, processos de altíssimo impacto.",
+  "Hoje, porém, o sistema está em construção, sem informação de entrada em produção, e o SEAP continua a processar a folha. A inoperância do SIGEP teria, no momento, baixo impacto. A comissão adota o nível Relativa importância, índice 0,25, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, a ser revisto quando o sistema substituir o SEAP."
+ ],
+ "finalidade": [
+  "O SIGEP é o novo sistema de gestão de pessoas e de pagamento do Estado, em desenvolvimento pela SEPLAG para suceder o SEAP. O desenvolvimento é organizado em sprints; as histórias de usuário entregues pela equipe estavam distribuídas em 17 pastas, das Sprints 4 a 23, com 324 arquivos.",
+  "A comissão comparou os arquivos pelo conteúdo binário (hash), pelo texto e pela tabela de histórico de versões de cada história: 321 arquivos têm conteúdo binário distinto, 311 têm texto distinto e há 279 histórias distintas. De cada história foi usada a versão mais recente; cópias e versões anteriores foram descartadas, e funções repetidas entre histórias foram contadas uma vez.",
+  "Pelas histórias, o SIGEP mantém os cadastros estruturantes (pessoas, órgãos e unidades, regimes, vínculos, carreiras, cargos e perfis), o controle de vagas e de certames, o ingresso de servidores, a gestão dos vínculos e da vida funcional, as férias e os afastamentos, as tabelas de vencimentos e de referência, as rubricas com fluxo de aprovação, o processamento da folha com relatórios e ajustes, e as pensões e descontos. Histórias recentes (US282, US283, US330 a US333) reorganizam o modelo de dados: substituem Instituição, Setor e Categoria por Órgão/Entidade, Unidade e Carreira, descontinuam o antigo módulo Documentos Legais em favor do Amparo Legal e ligam o vínculo funcional à pessoa física."
+ ],
+ "integracoes": [
+  [
+   "SEAP",
+   "Sistema atual, a ser sucedido; as histórias indicam a origem de cada campo no SEAP para a migração e guardam o código SEAP dos órgãos",
+   "Fora da fronteira; sem leitura em tempo de uso"
+  ],
+  [
+   "FIPLAN e ARH",
+   "Códigos de integração do órgão/entidade registrados no SIGEP",
+   "Fora da fronteira; códigos são atributos do ALI Órgão/Entidade"
+  ],
+  [
+   "SIGPAS",
+   "Recebe do SIGEP o afastamento e o bloqueio do auxílio-transporte em férias e recesso de estagiários e residentes",
+   "Fora da fronteira; envio de dados, sem AIE"
+  ],
+  [
+   "Sigadoc",
+   "Validação do número do processo ou protocolo informado nas solicitações",
+   "AIE (Processo Sigadoc)"
+  ],
+  [
+   "Manopla",
+   "Perfis de acesso e chefia imediata usada como aprovador",
+   "AIE (Usuários e chefias)"
+  ],
+  [
+   "Serviço de CEP",
+   "Preenchimento automático do endereço a partir do CEP",
+   "AIE (Endereço por CEP)"
+  ],
+  [
+   "eSocial e APLIC (TCE-MT)",
+   "Padronização dos campos e catálogos",
+   "Dados de código; não contados"
+  ]
+ ],
+ "uso": "Em desenvolvimento; histórias das Sprints 4 a 23 (09/2024 a 11/2026), sem informação de entrada em produção nem de transição do SEAP",
+ "beneficio": "Potencial de serviço futuro, condicionado à conclusão, à migração dos dados e à implantação: gestão de pessoas e folha de pagamento do Estado em sistema próprio, em substituição ao SEAP",
+ "fase_texto": "Projeto em desenvolvimento, com entregas por sprint até a Sprint 23 (11/2026); não há informação sobre conclusão, implantação e desligamento do SEAP. O art. 9º exige a demonstração da viabilidade técnica, da intenção de concluir e usar o bem e da disponibilidade de recursos (Seção 8)",
+ "conclusao_reconhecimento": "O SIGEP é reconhecido no inventário como ativo em desenvolvimento (art. 2º, § 1º), avaliado pela metodologia do art. 11, com a ressalva da Seção 8: o atendimento ao art. 9º depende de informações da área de TI e das áreas de gestão de pessoas e folha sobre a conclusão, a implantação e a transição do SEAP.",
+ "custo_incorrido": "O SIGEP é desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura das 279 histórias de usuário distintas (324 arquivos das Sprints 4 a 23), comparadas por hash, texto e histórico de versões; extração das tabelas de campos para tipos de dados e arquivos referenciados; contagem em três níveis com revisão em cada um",
+ "documentacao_resumo": "279 histórias de usuário das Sprints 4 a 23, documento Controle de Vagas, plano de evolução dos processos do SIGEP e planilhas de contagem v1.0 (Anexo I)",
+ "documentacao_fonte": "Histórias de usuário entregues pela equipe do SIGEP, organizadas por sprint, com histórico de versões. O documento Plano de Evolução dos Processos do SIGEP trata do processo de trabalho das sprints e não descreve funcionalidades.",
+ "ressalva_documentacao": "A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam. A história do cadastro principal da pessoa física (US001) e as histórias das Sprints 1 a 3, 5, 7 e 8 não estavam nas pastas.",
+ "texto_evolucao": "Primeira medição do sistema: a contagem de 26/11/2026 (planilhas v1.0) mede 2.425 PF no nível indicativo, 2.247 PF no estimativo e 2.691 PF no detalhado, adotado neste laudo.",
+ "exemplos_tipos": [
+  "Pessoa física, órgão/entidade, cargo, vínculo funcional, tabela de vencimentos, rubrica, folha de pagamento",
+  "Endereço por CEP, processo Sigadoc, usuários e chefias do Manopla",
+  "Cadastrar vínculo, versionar quadro autorizado, aplicar RGA, executar processamento da folha, aprovar etapa da rubrica",
+  "Consultar vínculos, listar quadros, histórico funcional, listas de seleção",
+  "Ficha financeira, relatório técnico e relatório dinâmico da folha, simulação de RGA, painel de ingresso, ofício de penhora"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "26/11/2026",
+   "pf": 2691,
+   "nivel": "Detalhada (IFPUG)",
+   "situacao": "Em desenvolvimento",
+   "uso": "Planilha v1.0 (primeira contagem); indicativa 2.425 PF e estimativa 2.247 PF; VI 0,25"
+  }
+ ],
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "texto_vida_util": [
+  "A vida útil do SIGEP é classificada como indefinida (IN, arts. 14 e 15), pelos mesmos fatores dos demais sistemas cujo código-fonte pertence ao Estado. Como não há informação de que o bem esteja disponível para uso, a contagem da vida útil não começou (art. 19, § 1º).",
+  "O bem não é amortizado (art. 17) e deve passar pelo teste de redução ao valor recuperável (art. 18), que ganha importância diante da falta de informações sobre a conclusão e a implantação (Seção 8)."
+ ],
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "Histórias de interface, navegação e padronização, sem processo elementar próprio: US097, US101, US128, US147, US153, US154 e US327.",
+  "Histórias de adequação do modelo de dados (US282, US283, US330 a US333), registradas como alteração das funções existentes.",
+  "Instituição, Setor e Categoria (US107 a US109, US114, US116, US123, US125, US126, US050 e US051) e o antigo módulo Documentos Legais (US006, US077), descontinuados pelas US330 e US282.",
+  "A US198 (Editar e Excluir Quadro Autorizado), marcada como cancelada.",
+  "O SEAP, o FIPLAN, o ARH e o SIGPAS, fora da fronteira."
+ ],
+ "outros_documentos": [
+  [
+   "Histórias de usuário do SIGEP (324 arquivos)",
+   "Pastas Sprint 4 a Sprint 23",
+   "09/2024 a 11/2026",
+   "Funcionalidades, campos, regras e versões; base das três contagens"
+  ],
+  [
+   "Controle de Vagas: Visão Funcional, Regras e Fluxos",
+   "Pasta Sprint 18",
+   "-",
+   "Contexto do módulo Controle de Vagas"
+  ],
+  [
+   "Plano de Evolução dos Processos do SIGEP",
+   "Documento da equipe do projeto",
+   "-",
+   "Processo de trabalho por sprint; sem descrição funcional"
+  ],
+  [
+   "Planilhas APF-SIGEP-Indicativa, Estimativa e v1.0 (detalhada)",
+   "Elaboradas pela comissão",
+   "26/11/2026",
+   "Funções e tamanho funcional nos três níveis"
+  ]
+ ],
+ "texto_acompanham": "As três planilhas de contagem (indicativa, estimativa e detalhada) acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Situação, conclusão e reconhecimento: o SIGEP está em desenvolvimento, com entregas por sprint até a Sprint 23. A IN Conjunta nº 003/2022/SEPLAG/SEFAZ determina o reconhecimento dos projetos em desenvolvimento (art. 2º, § 1º) desde que a entidade demonstre a viabilidade técnica de conclusão, a intenção de concluir e usar o bem e a disponibilidade de recursos (art. 9º, I, II e V). As histórias versionadas indicam projeto em andamento, mas não demonstram por si esses requisitos. A comissão reconhece o SIGEP com esta ressalva e recomenda à área de TI da SEPLAG e às áreas de gestão de pessoas e folha que informem a previsão de conclusão e de implantação, para revisão da situação e do Valor Institucional no próximo inventário.",
+  "Sucessão do SEAP: o SIGEP foi concebido para suceder o SEAP. A comissão recomenda que a transição seja planejada e documentada (migração dos dados, operação em paralelo, critérios de aceite e data de desligamento) e que o setor contábil seja comunicado das mudanças de situação dos dois bens (art. 23), para que o SEAP seja reavaliado e, após o desligamento, baixado, e o SIGEP passe a ser avaliado como bem em uso.",
+  "Contagem detalhada por extração das histórias: os tipos de dados (TD) vêm das tabelas de campos de cada história, descontados botões, títulos, mensagens e navegação, e os arquivos referenciados (AR) vêm dos grupos de dados citados nessas tabelas. Onde a história não traz tabela de campos, a função ficou na complexidade padrão. Os mesmos processos foram contados nos três níveis; a diferença de tamanho entre eles decorre só da complexidade. A conferência por amostragem com a equipe do projeto é recomendada antes da próxima avaliação.",
+  "Lacunas e inconsistências da documentação: falta a história do cadastro principal da pessoa física (US001), e as transações contadas para esse grupo se limitam a contato, endereço e dados bancários; há códigos repetidos para histórias diferentes (US118 e US132), histórias sem número (USXXX, US00X, US0XX) e um arquivo nomeado US057 que contém a US283. A comissão recomenda numerar e versionar as histórias de forma única e manter o repositório sem cópias, para facilitar as próximas medições.",
+  "Tecnologia: as histórias não informam a linguagem nem a plataforma de desenvolvimento, que devem ser confirmadas pela área de TI."
+ ]
+}

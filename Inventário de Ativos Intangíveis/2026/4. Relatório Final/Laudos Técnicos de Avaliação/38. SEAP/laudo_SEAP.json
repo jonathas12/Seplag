@@ -1,0 +1,492 @@
+{
+ "titulo": "Laudo Técnico de Avaliação",
+ "subtitulos": [
+  "SEAP - Sistema Estadual de Administração de Pessoas",
+  "Inventário de Bens Intangíveis · Exercício 2026"
+ ],
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SEAP_2026",
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
+ "cards": [
+  [
+   "VALOR DO ATIVO",
+   "R$ 5.254.186,60",
+   "Contrato nº 001/2026"
+  ],
+  [
+   "VALOR INSTITUCIONAL",
+   "1,00",
+   "Imprescindível"
+  ],
+  [
+   "AMORTIZAÇÃO MENSAL",
+   "R$ 437.848,88",
+   "12 meses (cl. 4.2)"
+  ],
+  [
+   "VALOR LÍQUIDO 31/12/2026",
+   "R$ 437.848,92",
+   "11 parcelas"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "Preâmbulo"
+  ],
+  [
+   "p",
+   "Este laudo integra o inventário de bens intangíveis do exercício de 2026 da SEPLAG-MT, conduzido pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, nos termos da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ. Trata exclusivamente do Sistema Estadual de Administração de Pessoas (SEAP), separado do grupo das licenças por ser regido por contrato próprio, com valor e vida útil definidos por ele."
+  ],
+  [
+   "secao",
+   "",
+   "1. Identificação do bem"
+  ],
+  [
+   "tabela",
+   [
+    "Item",
+    "Informação"
+   ],
+   [
+    [
+     "Bem",
+     "SEAP - Sistema Estadual de Administração de Pessoas (plataforma ERGON / ERGON NG)"
+    ],
+    [
+     "Finalidade",
+     "Sistema corporativo central da SEPLAG-MT para cadastro funcional, vida funcional, vagas, controle de cargos, previdência (Sisprev-SEAP) e geração da folha de pagamento dos servidores ativos e inativos do Poder Executivo de Mato Grosso, com obrigações acessórias do eSocial e da EFD-Reinf (cláusula 10.2.1, a)"
+    ],
+    [
+     "Fornecedor",
+     "Techne Engenharia e Sistemas Ltda., CNPJ 50.737.766/0001-21, detentora exclusiva da tecnologia ERGON/SEAP (cláusula 4.4)"
+    ],
+    [
+     "Contrato",
+     "Contrato nº 001/2026/SEPLAG, assinado em 26/01/2026 (Sigadoc SEPLAG-DIC-2026/01704), Processo SEPLAG-PRO-2025/26802"
+    ],
+    [
+     "Valor Institucional informado",
+     "1,00 (Imprescindível)"
+    ],
+    [
+     "Valor do ativo",
+     "R$ 5.254.186,60 (valor do contrato)"
+    ],
+    [
+     "Vida útil",
+     "Definida: 12 meses (vigência do contrato), com amortização linear"
+    ]
+   ],
+   "Identificação do SEAP",
+   [
+    28,
+    72
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "2. O contrato nº 001/2026/SEPLAG"
+  ],
+  [
+   "subsecao",
+   "2.1 Fundamentação da contratação"
+  ],
+  [
+   "p",
+   "Contratação por inexigibilidade de licitação, com fundamento no art. 74, inciso I, § 1º, da Lei nº 14.133/2021, que a admite para serviços que só possam ser prestados por produtor, empresa ou representante comercial exclusivos (cláusula 3.1). A contratação seguiu o Termo de Referência nº 001/2025/SAGPP/SEPLAG e o Parecer Jurídico nº 00414/2025/SGPG/PGEMT, no Processo SEPLAG-PRO-2025/26802, e é regida pela Lei nº 14.133/2021 e pelo Decreto Estadual nº 1.525/2022."
+  ],
+  [
+   "subsecao",
+   "2.2 Objeto"
+  ],
+  [
+   "p",
+   "Contratação de empresa especializada na prestação de serviços continuados e sob demanda de suporte, manutenção, consultoria, treinamento tecnológico da infraestrutura/sistema, desenvolvimento contínuo e transferência de tecnologia do Sistema Estadual de Administração de Pessoas (SEAP/ERGON), para atender as demandas da SEPLAG e dos demais órgãos do Poder Executivo (cláusula 1.1)."
+  ],
+  [
+   "tabela",
+   [
+    "Item",
+    "Serviço",
+    "Unidade",
+    "Quantidade",
+    "Valor unitário",
+    "Valor total"
+   ],
+   [
+    [
+     "1",
+     "Serviços Técnicos Consultivos Especializados - Serviço de Suporte Técnico On-Site",
+     "Homem-hora",
+     "2.800",
+     "R$ 620,00",
+     "R$ 1.736.000,00"
+    ],
+    [
+     "2",
+     "Serviços Técnicos Consultivos Especializados - Serviço de Suporte Técnico Remoto",
+     "Homem-hora",
+     "1.200",
+     "R$ 440,00",
+     "R$ 528.000,00"
+    ],
+    [
+     "3",
+     "Serviços Técnicos Consultivos Especializados - Manutenção Evolutiva Específica",
+     "Homem-hora",
+     "5.000",
+     "R$ 340,00",
+     "R$ 1.700.000,00"
+    ],
+    [
+     "4",
+     "Suporte Técnico e Manutenção Corretiva e Evolutiva",
+     "Mês",
+     "12",
+     "R$ 107.515,55",
+     "R$ 1.290.186,60"
+    ],
+    [
+     "",
+     "TOTAL (12 meses)",
+     "",
+     "",
+     "",
+     "R$ 5.254.186,60"
+    ]
+   ],
+   "Itens do contrato (cláusula 2.1)",
+   [
+    6,
+    46,
+    11,
+    11,
+    13,
+    13
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    4
+   ]
+  ],
+  [
+   "subsecao",
+   "2.3 Vigência"
+  ],
+  [
+   "p",
+   "A vigência é de 12 meses contados da assinatura (cláusula 4.2), de 26/01/2026 a 25/01/2027, podendo ser prorrogada sucessivamente até o limite de 10 anos, nos termos do art. 107 da Lei nº 14.133/2021, por se tratar de fornecimento exclusivo de sistema crítico (cláusula 4.3). A prorrogação é justificada pela curva de aprendizado, pela complexidade da migração dos dados de folha de pagamento e pela exclusividade da tecnologia (cláusula 4.4), com avaliação anual da vantajosidade (cláusulas 4.5 e 4.6)."
+  ],
+  [
+   "subsecao",
+   "2.4 Serviços prestados"
+  ],
+  [
+   "lista",
+   [
+    "Pagamento mensal (cláusula 10.2.2, grupo 1): manutenção corretiva, manutenção evolutiva, suporte técnico aos usuários da SEPLAG e documentação (manuais e releases).",
+    "Pagamento sob demanda, em homem-hora (cláusula 10.2.2, grupo 2): manutenção adaptativa a novas exigências legais, desenvolvimento de relatórios, transações e ferramentas, e capacitação.",
+    "Requisitos mínimos (cláusula 10.2.1): suporte ao ERGON, ERGON NG, eSocial e EFD-Reinf; manutenção evolutiva específica, como módulos de avaliação de desempenho e concursos; consultoria on-site e remota; e transferência de tecnologia."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "3. Reconhecimento como ativo intangível"
+  ],
+  [
+   "p",
+   "O objeto do contrato é de prestação de serviços, o que, por si, não configura ativo intangível a incorporar. O contrato, contudo, obriga a contratada a entregar à SEPLAG o produto tecnológico desses serviços:"
+  ],
+  [
+   "lista",
+   [
+    "Cláusula 10.2.1, alínea d (Transferência de Tecnologia): obrigação de entregar, após cada atualização e ao término do contrato, os códigos-fontes, frameworks e todos os artefatos atualizados do Processo de Desenvolvimento e Manutenção de Software (PDS-MT), além de manuais, mapeamentos e treinamentos para a equipe da SEPLAG/MTI.",
+    "Cláusula 10.3.1 (Requisitos de Transferência de Conhecimentos): compete à contratada, durante a vigência, entregar, após cada atualização e ao término do contrato, os códigos-fontes, frameworks e todos os artefatos atualizados do Processo de Desenvolvimento e Manutenção de Software, além de manuais, mapeamentos e treinamentos para a equipe da SEPLAG/MTI.",
+    "Cláusulas 10.3.2 a 10.3.6: fornecimento das versões finais e da documentação com a arquitetura da solução, habilitação da equipe técnica da SEPLAG para reduzir a dependência técnica e capacitação para descrever a arquitetura, a infraestrutura e o modelo de dados.",
+    "Cláusulas 7.19 e 10.4: transição contratual com transferência de tecnologia, sem perda de informações, aos técnicos da SEPLAG ou a nova contratada.",
+    "Cláusula 5.15.4.1: a ausência de códigos-fontes é a ocorrência de maior peso da tabela de glosas (17 pontos), o que reforça a exigibilidade da entrega."
+   ]
+  ],
+  [
+   "p",
+   "Assim, a SEPLAG detém o código-fonte e os artefatos atualizados do sistema e obtém benefícios econômicos futuros e potencial de serviços: o SEAP sustenta a gestão de pessoas e o processamento da folha do Poder Executivo, e sua continuidade é assegurada pelos serviços prestados durante a vigência e pela equipe interna da SEPLAG. O bem atende aos critérios de reconhecimento da IN Conjunta nº 003/2022/SEPLAG/SEFAZ como ativo intangível sob controle da SEPLAG."
+  ],
+  [
+   "secao",
+   "",
+   "4. Mensuração"
+  ],
+  [
+   "p",
+   "Por haver contrato vigente que define o custo do bem, o SEAP não é medido por pontos de função: seu valor é o valor do Contrato nº 001/2026/SEPLAG, R$ 5.254.186,60 (cláusula 2.2). O Valor Institucional 1,00 (Imprescindível) registra a importância do sistema, mas não é aplicado sobre o valor contratual."
+  ],
+  [
+   "tabela",
+   [
+    "Inventário",
+    "Base",
+    "Valor"
+   ],
+   [
+    [
+     "2023 e 2024",
+     "Valor registrado nas versões finais",
+     "R$ 96.833,33"
+    ],
+    [
+     "2025",
+     "Item 3.2 (Serviços Técnicos Consultivos Especializados) do Contrato nº 043/2020/SEPLAG, 6º Termo Aditivo",
+     "R$ 3.166.000,00"
+    ],
+    [
+     "2026",
+     "Valor total do Contrato nº 001/2026/SEPLAG",
+     "R$ 5.254.186,60"
+    ]
+   ],
+   "Histórico de avaliação do SEAP",
+   [
+    16,
+    60,
+    24
+   ],
+   [
+    2
+   ],
+   [
+    2
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "5. Vida útil e amortização"
+  ],
+  [
+   "p",
+   "Diferentemente de 2025, quando a vida útil foi classificada como indefinida, em 2026 o valor do bem decorre de um contrato com prazo certo. A vida útil é definida pelos 12 meses da vigência (cláusula 4.2), contados da assinatura em 26/01/2026, e o valor é amortizado em parcelas mensais lineares de R$ 437.848,88. É, neste inventário, o único bem intangível da SEPLAG com amortização."
+  ],
+  [
+   "tabela",
+   [
+    "Parcela",
+    "Início",
+    "Fim",
+    "Amortização do mês",
+    "Amortização acumulada",
+    "Valor líquido"
+   ],
+   [
+    [
+     "1",
+     "26/01/2026",
+     "25/02/2026",
+     "R$ 437.848,88",
+     "R$ 437.848,88",
+     "R$ 4.816.337,72"
+    ],
+    [
+     "2",
+     "26/02/2026",
+     "25/03/2026",
+     "R$ 437.848,88",
+     "R$ 875.697,76",
+     "R$ 4.378.488,84"
+    ],
+    [
+     "3",
+     "26/03/2026",
+     "25/04/2026",
+     "R$ 437.848,88",
+     "R$ 1.313.546,64",
+     "R$ 3.940.639,96"
+    ],
+    [
+     "4",
+     "26/04/2026",
+     "25/05/2026",
+     "R$ 437.848,88",
+     "R$ 1.751.395,52",
+     "R$ 3.502.791,08"
+    ],
+    [
+     "5",
+     "26/05/2026",
+     "25/06/2026",
+     "R$ 437.848,88",
+     "R$ 2.189.244,40",
+     "R$ 3.064.942,20"
+    ],
+    [
+     "6",
+     "26/06/2026",
+     "25/07/2026",
+     "R$ 437.848,88",
+     "R$ 2.627.093,28",
+     "R$ 2.627.093,32"
+    ],
+    [
+     "7",
+     "26/07/2026",
+     "25/08/2026",
+     "R$ 437.848,88",
+     "R$ 3.064.942,16",
+     "R$ 2.189.244,44"
+    ],
+    [
+     "8",
+     "26/08/2026",
+     "25/09/2026",
+     "R$ 437.848,88",
+     "R$ 3.502.791,04",
+     "R$ 1.751.395,56"
+    ],
+    [
+     "9",
+     "26/09/2026",
+     "25/10/2026",
+     "R$ 437.848,88",
+     "R$ 3.940.639,92",
+     "R$ 1.313.546,68"
+    ],
+    [
+     "10",
+     "26/10/2026",
+     "25/11/2026",
+     "R$ 437.848,88",
+     "R$ 4.378.488,80",
+     "R$ 875.697,80"
+    ],
+    [
+     "11",
+     "26/11/2026",
+     "25/12/2026",
+     "R$ 437.848,88",
+     "R$ 4.816.337,68",
+     "R$ 437.848,92"
+    ],
+    [
+     "12",
+     "26/12/2026",
+     "25/01/2027",
+     "R$ 437.848,92",
+     "R$ 5.254.186,60",
+     "R$ 0,00"
+    ]
+   ],
+   "Quadro de amortização do SEAP",
+   [
+    9,
+    13,
+    13,
+    21,
+    22,
+    22
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    9,
+    10
+   ]
+  ],
+  [
+   "figura",
+   "graficos/G1_linha_do_tempo_amortizacao.png",
+   "Linha do tempo do valor contábil líquido do SEAP",
+   16
+  ],
+  [
+   "tabela",
+   [
+    "Marco",
+    "Data",
+    "Amortização acumulada",
+    "Valor contábil líquido"
+   ],
+   [
+    [
+     "Assinatura do contrato",
+     "26/01/2026",
+     "R$ 0,00",
+     "R$ 5.254.186,60"
+    ],
+    [
+     "Data deste laudo (10 parcelas)",
+     "26/11/2026",
+     "R$ 4.378.488,80",
+     "R$ 875.697,80"
+    ],
+    [
+     "Encerramento do exercício (11 parcelas)",
+     "31/12/2026",
+     "R$ 4.816.337,68",
+     "R$ 437.848,92"
+    ],
+    [
+     "Fim da vigência (12 parcelas)",
+     "25/01/2027",
+     "R$ 5.254.186,60",
+     "R$ 0,00"
+    ]
+   ],
+   "Posições do valor do SEAP",
+   [
+    40,
+    16,
+    22,
+    22
+   ],
+   [
+    2,
+    3
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "6. Ressalvas e recomendações"
+  ],
+  [
+   "lista",
+   [
+    "Prorrogação: o contrato pode ser prorrogado por termo aditivo (cláusulas 4.3 e 4.7). Cada prorrogação deve ser comunicada à comissão e ao setor contábil (art. 23) para registro do novo valor e do novo período de amortização.",
+    "Entregas de código-fonte: recomenda-se que a fiscalização do contrato registre cada entrega de código-fonte e artefatos prevista nas cláusulas 10.2.1, d, e 10.3.1, que comprova o controle do bem pela SEPLAG.",
+    "Sucessão: o SIGEP, em desenvolvimento pela equipe interna (laudo próprio), foi concebido para suceder o SEAP; a transição deve ser planejada e documentada, com comunicação ao setor contábil das mudanças de situação dos dois bens.",
+    "Mudança de critério em relação a 2025: o valor passa do item 3.2 do contrato anterior para o valor total do novo contrato, e a vida útil passa de indefinida para definida, por decisão da comissão."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "7. Conclusão"
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Conclusão:",
+   "O SEAP é reconhecido como ativo intangível da SEPLAG, avaliado em R$ 5.254.186,60, valor do Contrato nº 001/2026/SEPLAG, com vida útil definida de 12 meses e amortização linear mensal de R$ 437.848,88 a partir de 26/01/2026. Na data deste laudo, o valor contábil líquido é de R$ 875.697,80 e, no encerramento do exercício de 2026, será de R$ 437.848,92."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável técnico",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), Portaria nº 124/2026/SEPLAG",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

@@ -1,0 +1,564 @@
+{
+ "titulo": "Laudo Técnico de Avaliação",
+ "subtitulos": [
+  "Softwares Adquiridos (Licenças e Softwares de Prateleira)",
+  "Inventário de Bens Intangíveis · Exercício 2026"
+ ],
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SOFTWARES_ADQUIRIDOS_2026",
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
+ "cards": [
+  [
+   "BENS",
+   "18",
+   "licenças e softwares"
+  ],
+  [
+   "VALOR TOTAL",
+   "R$ 3.121.832,16",
+   "custo de aquisição"
+  ],
+  [
+   "VARIAÇÃO",
+   "R$ 0,00",
+   "em relação a 2025"
+  ],
+  [
+   "ATENÇÃO",
+   "2 cessões",
+   "vigência encerrada"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "Preâmbulo"
+  ],
+  [
+   "p",
+   "Este laudo integra o inventário de bens intangíveis do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT), conduzido pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, nos termos da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ. Trata do grupo dos softwares adquiridos (licenças e softwares de prateleira) da SEPLAG. O Sistema Estadual de Administração de Pessoas (SEAP), regido por contrato próprio, é avaliado em laudo separado, e os softwares desenvolvidos internamente, medidos por pontos de função, têm laudos individuais."
+  ],
+  [
+   "secao",
+   "",
+   "1. Objeto e conceito"
+  ],
+  [
+   "p",
+   "Softwares adquiridos são produtos de terceiros, desenvolvidos e comercializados em larga escala para muitos clientes (software de prateleira), cujo direito de uso a SEPLAG obtém por compra de licença perpétua ou vitalícia, por cessão temporária de direito de uso ou como componente de solução de infraestrutura. O código-fonte e a propriedade intelectual permanecem com o fabricante; a SEPLAG detém o direito de uso e os benefícios que ele gera."
+  ],
+  [
+   "p",
+   "Diferem dos softwares desenvolvidos internamente, cujo código-fonte pertence ao Estado e cujo valor é estimado pelo tamanho funcional em pontos de função. Por isso, o valor dos softwares adquiridos é o custo de aquisição registrado no patrimônio, sem aplicação do Valor Institucional."
+  ],
+  [
+   "tabela",
+   [
+    "Aspecto",
+    "Software adquirido (este laudo)",
+    "Software desenvolvido internamente"
+   ],
+   [
+    [
+     "Origem",
+     "Fabricante ou revendedor, produto de mercado",
+     "Equipe interna ou fábrica de software contratada"
+    ],
+    [
+     "Propriedade do código",
+     "Fabricante; a SEPLAG detém o direito de uso",
+     "Estado de Mato Grosso"
+    ],
+    [
+     "Mensuração",
+     "Custo de aquisição registrado no SIGPAT",
+     "Pontos de função x preço do PF, com Valor Institucional"
+    ],
+    [
+     "Vida útil",
+     "Pelo tipo de licença: indefinida (perpétua ou vitalícia) ou definida (cessão por prazo)",
+     "Em geral indefinida"
+    ]
+   ],
+   "Softwares adquiridos e desenvolvidos internamente",
+   [
+    20,
+    40,
+    40
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "2. Documentos analisados"
+  ],
+  [
+   "tabela",
+   [
+    "Documento",
+    "Uso na análise"
+   ],
+   [
+    [
+     "Planilha LEVANTAMENTO INTANGÍVEIS EXERCÍCIO 2025 (aba Levantamento), documento SEPLAG-DIC-2025/36360",
+     "Base dos 18 bens deste grupo"
+    ],
+    [
+     "Relatório Final do inventário de 2025 (processo SEPLAG-PRO-2025/27297)",
+     "Critério de mensuração e análise do grupo em 2025"
+    ],
+    [
+     "Versão final e Planilhas de Trabalho INTANGÍVEIS EXERCÍCIO 2023 e 2024",
+     "Conciliação histórica"
+    ],
+    [
+     "Relatório Analítico de Bens Móveis (Agrupado por Endereço), endereço 02147640 - SOFTWARE - BENS INTANGÍVEIS - SEPLAG",
+     "Posição patrimonial fornecida pela equipe de Patrimônio e Materiais Setorial"
+    ],
+    [
+     "Informação da Coordenadoria de Infraestrutura e Serviços de TI da Secretaria Adjunta de Administração Sistêmica",
+     "Ausência de aquisição, cessão ou baixa desde o último inventário"
+    ]
+   ],
+   "Documentos analisados",
+   [
+    62,
+    38
+   ]
+  ],
+  [
+   "p",
+   "A documentação técnica e contratual de cada licença não foi disponibilizada; a análise se apoia nos registros patrimoniais e nos inventários anteriores."
+  ],
+  [
+   "secao",
+   "",
+   "3. Metodologia"
+  ],
+  [
+   "lista_num",
+   [
+    "Repetição do levantamento de 2025, diante da informação de que não houve aquisição, cessão ou baixa no exercício.",
+    "Separação do SEAP, tratado em laudo próprio por ser regido pelo Contrato nº 001/2026/SEPLAG.",
+    "Conferência de cada bem com o relatório patrimonial do endereço de softwares e com as versões finais e erratas de 2023 e 2024.",
+    "Classificação do tipo de licença e da vida útil a partir da descrição registrada.",
+    "Mensuração pelo custo de aquisição registrado no SIGPAT, como em 2025."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "4. Inventário de 2026"
+  ],
+  [
+   "tabela",
+   [
+    "Patrimônio",
+    "Bem",
+    "Fornecedor",
+    "Contrato",
+    "Tipo de licença",
+    "Aquisição",
+    "Valor",
+    "Vida útil"
+   ],
+   [
+    [
+     "N6500013",
+     "HIPERCONVERGENTE",
+     "CLM SOFTWARE COMERCIO IMPORTACAO E EXPORTACAO LTDA",
+     "-",
+     "Licenciamento de solução de infraestrutura (hiperconvergência)",
+     "15/08/2022",
+     "R$ 1.479.468,92",
+     "Indefinida"
+    ],
+    [
+     "N6500051",
+     "AUTODESK AEC",
+     "MCR Sistemas e Consultoria Ltda",
+     "CONTRATO Nº 019/2023/SEPLAG",
+     "Cessão temporária de direito de uso (locação de software)",
+     "20/07/2023",
+     "R$ 698.315,73",
+     "Definida (encerrada em 19/07/2026)"
+    ],
+    [
+     "N6500049",
+     "Business Intelligence – Qlik, ou Qlik Analytics Plattform",
+     "Inteligência de Negócios, Sistemas e Informática Ltda.",
+     "Contrato SEPLAG nº: 025/2022/SEPLAG",
+     "Licença perpétua de uso (servidor)",
+     "22/07/2022",
+     "R$ 337.179,00",
+     "Indefinida"
+    ],
+    [
+     "N0696928",
+     "GERENCIAMENTO DE REDE",
+     "STELMAT",
+     "-",
+     "Licença de software de gerenciamento de rede",
+     "06/05/2021",
+     "R$ 136.869,63",
+     "Indefinida"
+    ],
+    [
+     "N0696930",
+     "SOFTWARE DE ANÁLISE DE APLICAÇÕES",
+     "STELMAT",
+     "-",
+     "Licença de software de análise de aplicações",
+     "06/05/2021",
+     "R$ 104.876,05",
+     "Indefinida"
+    ],
+    [
+     "N6500050",
+     "ADOBE CC VIP",
+     "MCR Sistemas e Consultoria Ltda",
+     "CONTRATO Nº 019/2023/SEPLAG",
+     "Cessão temporária de direito de uso (locação de software)",
+     "20/07/2023",
+     "R$ 99.085,00",
+     "Definida (encerrada em 19/07/2026)"
+    ],
+    [
+     "N0696929",
+     "SOFTWARE DE GERENCIAMENTO CONTROLE DE ACESSO EM REDE",
+     "STELMAT",
+     "-",
+     "Licença de software de controle de acesso em rede",
+     "06/05/2021",
+     "R$ 82.977,16",
+     "Indefinida"
+    ],
+    [
+     "N0696927",
+     "XCC",
+     "STELMAT",
+     "-",
+     "Licença permanente com chave de ativação e suporte",
+     "06/05/2021",
+     "R$ 38.279,67",
+     "Indefinida"
+    ],
+    [
+     "C0045037",
+     "SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS ESTRUTURAIS",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2021",
+     "R$ 34.374,00",
+     "Indefinida"
+    ],
+    [
+     "C0045038",
+     "SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS ESTRUTURAIS",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2021",
+     "R$ 34.374,00",
+     "Indefinida"
+    ],
+    [
+     "N6500037",
+     "ALTOQI BUILDER 2022 SOFTWARE PARA PROJETOS DE INSTALACOES PREDIAIS",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença de software (AltoQi Builder 2022)",
+     "06/03/2023",
+     "R$ 13.376,00",
+     "Indefinida"
+    ],
+    [
+     "C0045039",
+     "QIBUIDER 2021 ELÉTRICO SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS DE",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2021",
+     "R$ 13.200,00",
+     "Indefinida"
+    ],
+    [
+     "C0045040",
+     "QIBUIDER 2021 ELÉTRICO SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS DE",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2021",
+     "R$ 13.200,00",
+     "Indefinida"
+    ],
+    [
+     "C0045041",
+     "QIBUILDER 2021 HIDRAULICO SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2021",
+     "R$ 13.200,00",
+     "Indefinida"
+    ],
+    [
+     "C0045042",
+     "QIBUILDER 2021 HIDRAULICO SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Licença vitalícia",
+     "13/12/2023",
+     "R$ 13.200,00",
+     "Indefinida"
+    ],
+    [
+     "1067839",
+     "GEOOFFICE",
+     "SOLUTIONS SOFTWARE",
+     "-",
+     "Licença vitalícia",
+     "12/06/2023",
+     "R$ 4.247,00",
+     "Indefinida"
+    ],
+    [
+     "N6500038",
+     "ATUALIZACAO SOFTWARE ATUALIZACAO SW P/ ALTOQI BUILDER 2022 PLANEA ESSE",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Atualização de software (AltoQi Builder 2022 Planea Essencial)",
+     "06/03/2023",
+     "R$ 2.805,00",
+     "Indefinida"
+    ],
+    [
+     "N6500039",
+     "ATUALIZACAO SOFTWARE ATUALIZACAO SW P/ ALTOQI BUILDER 2022 PLANEA ESSE",
+     "M.N TECNOLOGIA E TREINAMENTO LTDA",
+     "-",
+     "Atualização de software (AltoQi Builder 2022 Planea Essencial)",
+     "06/03/2023",
+     "R$ 2.805,00",
+     "Indefinida"
+    ],
+    [
+     "TOTAL",
+     "18 bens",
+     "",
+     "",
+     "",
+     "",
+     "R$ 3.121.832,16",
+     ""
+    ]
+   ],
+   "Softwares adquiridos da SEPLAG em 2026",
+   [
+    9,
+    17,
+    15,
+    11,
+    16,
+    9,
+    12,
+    11
+   ],
+   [
+    6
+   ],
+   [
+    18
+   ]
+  ],
+  [
+   "figura",
+   "graficos/G1_valor_por_bem.png",
+   "Valor de aquisição por bem (em vermelho, cessões temporárias com vigência encerrada)",
+   16
+  ],
+  [
+   "tabela",
+   [
+    "Fornecedor",
+    "Bens",
+    "Valor",
+    "Participação"
+   ],
+   [
+    [
+     "Clm Software Comercio Importacao E Exportacao Ltda",
+     "1",
+     "R$ 1.479.468,92",
+     "47,4%"
+    ],
+    [
+     "Mcr Sistemas E Consultoria Ltda",
+     "2",
+     "R$ 797.400,73",
+     "25,5%"
+    ],
+    [
+     "Stelmat",
+     "4",
+     "R$ 363.002,51",
+     "11,6%"
+    ],
+    [
+     "Inteligência De Negócios, Sistemas E Informática Ltda.",
+     "1",
+     "R$ 337.179,00",
+     "10,8%"
+    ],
+    [
+     "M.N Tecnologia E Treinamento Ltda",
+     "9",
+     "R$ 140.534,00",
+     "4,5%"
+    ],
+    [
+     "Solutions Software",
+     "1",
+     "R$ 4.247,00",
+     "0,1%"
+    ]
+   ],
+   "Distribuição por fornecedor",
+   [
+    52,
+    10,
+    22,
+    16
+   ],
+   [
+    1,
+    2,
+    3
+   ]
+  ],
+  [
+   "p",
+   "A solução de infraestrutura hiperconvergente (N6500013) responde sozinha por 47,4% do valor do grupo."
+  ],
+  [
+   "secao",
+   "",
+   "5. Conciliação com os inventários anteriores"
+  ],
+  [
+   "tabela",
+   [
+    "Inventário",
+    "Bens",
+    "Valor",
+    "Movimentação"
+   ],
+   [
+    [
+     "2023 (versão final)",
+     "14",
+     "R$ 1.916.409,05",
+     "Sem a GeoOffice (1067839), a Qlik (N6500049), a Adobe (N6500050) e a Autodesk (N6500051); N0696930 com R$ 38.279,67"
+    ],
+    [
+     "2024 (versão final)",
+     "15",
+     "R$ 1.920.656,05",
+     "Inclusão da GeoOffice (+ R$ 4.247,00)"
+    ],
+    [
+     "2025",
+     "18",
+     "R$ 3.121.832,16",
+     "Inclusão de Qlik, Adobe e Autodesk (+ R$ 1.134.579,73) e correção do N0696930 (+ R$ 66.596,38)"
+    ],
+    [
+     "2026",
+     "18",
+     "R$ 3.121.832,16",
+     "Sem alteração, conforme a Coordenadoria de Infraestrutura e Serviços de TI"
+    ]
+   ],
+   "Evolução do grupo (sem o SEAP)",
+   [
+    18,
+    8,
+    18,
+    56
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   "p",
+   "A soma de 2024 (R$ 1.920.656,05), mais a inclusão de Qlik, Adobe e Autodesk (R$ 1.134.579,73) e a correção do N0696930 (R$ 66.596,38), resulta exatamente nos R$ 3.121.832,16 de 2025 e de 2026. Divergências encontradas:"
+  ],
+  [
+   "lista",
+   [
+    "N0696930 (software de análise de aplicações): as versões finais de 2023 e 2024 registraram R$ 38.279,67, repetindo o valor do N0696927; a errata e o levantamento de 2025 corrigiram para R$ 104.876,05, valor confirmado pelo relatório patrimonial.",
+    "C0045042: data de início 13/12/2023 nos três inventários, enquanto as demais licenças do mesmo lote (C0045037 a C0045041, mesmo fornecedor) têm 13/12/2021. Provável erro de digitação, a confirmar no SIGPAT.",
+    "GeoOffice (1067839): adquirida em 12/06/2023 e ausente do inventário de 2023; incluída em 2024.",
+    "Qlik (N6500049, 22/07/2022), Adobe (N6500050) e Autodesk (N6500051), ambas de 20/07/2023: ausentes de 2023 e 2024 e incluídas em 2025.",
+    "SIDBENS (N6500012, R$ 201.481,68): aparece no endereço patrimonial de softwares e em planilhas de trabalho de 2023 e 2024, mas é sistema desenvolvido internamente, avaliado por pontos de função em laudo próprio; não integra este grupo."
+   ]
+  ],
+  [
+   "p",
+   "O relatório patrimonial recebido lista, entre os softwares adquiridos, os bens N0696927 a N0696930 e N6500013, todos com os mesmos valores do levantamento. Os demais bens do grupo não constam desse recorte e foram mantidos com base no levantamento de 2025."
+  ],
+  [
+   "secao",
+   "",
+   "6. Vida útil, amortização e redução ao valor recuperável"
+  ],
+  [
+   "p",
+   "As licenças perpétuas, vitalícias, permanentes ou sem prazo registrado têm vida útil indefinida: não são amortizadas e devem passar pelo teste anual de redução ao valor recuperável (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, arts. 14 a 18). As cessões temporárias da Autodesk AEC e da Adobe Creative Cloud (Contrato nº 019/2023/SEPLAG) têm vida útil definida pelo prazo da cessão, de 20/07/2023 a 19/07/2026, encerrado antes deste levantamento."
+  ],
+  [
+   "secao",
+   "",
+   "7. Ressalvas e recomendações"
+  ],
+  [
+   "caixa",
+   "atencao",
+   "Cessões temporárias encerradas:",
+   "As cessões de uso da Autodesk AEC (N6500051, R$ 698.315,73) e da Adobe Creative Cloud (N6500050, R$ 99.085,00) terminaram em 19/07/2026. Os bens foram mantidos porque a Coordenadoria de Infraestrutura e Serviços de TI informou que não houve baixa, mas a comissão recomenda confirmar se houve renovação; não havendo, proceder à baixa e comunicar o setor contábil (art. 23). Por serem de prazo determinado, o valor deveria ter sido amortizado ao longo dos 36 meses da cessão."
+  ],
+  [
+   "lista",
+   [
+    "Confirmar no SIGPAT a data de aquisição do C0045042.",
+    "Avaliar a reclassificação do SIDBENS (N6500012) para o grupo de softwares desenvolvidos internamente no registro patrimonial.",
+    "Arquivar, para cada licença, a nota fiscal, o contrato ou termo de cessão e a chave ou certificado de licença, documentação que não foi disponibilizada para este inventário.",
+    "Submeter à comissão, antes da aquisição, os termos de referência de novas licenças, para definir desde a origem o tratamento como ativo ou despesa (recomendação já registrada em 2025)."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "8. Conclusão"
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Conclusão:",
+   "O grupo de softwares adquiridos da SEPLAG no exercício de 2026 é composto por 18 bens, avaliados em R$ 3.121.832,16, pelo custo de aquisição registrado no patrimônio, sem alteração em relação a 2025, com as ressalvas da Seção 7. O SEAP é avaliado em laudo próprio."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável técnico",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), Portaria nº 124/2026/SEPLAG",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

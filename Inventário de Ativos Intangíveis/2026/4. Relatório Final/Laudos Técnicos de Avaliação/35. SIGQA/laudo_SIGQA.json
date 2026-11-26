@@ -1,0 +1,235 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "sigla": "SIGQA",
+ "nome": "Sistema de Gestão da Qualidade de Software (Sig-QA, Teste Ops)",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_SIGQA_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/35. SIGQA/APF-SIGQA-v1.0.xlsx",
+ "baseline_nome": "APF-SIGQA-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "medida": "PF IFPUG",
+ "medida_descricao": "Contagem estimativa (NESMA), total da aba Funções (célula L4)",
+ "nivel_contagem": "Estimativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "Angular (front-end), Node.js (back-end), MySQL",
+ "texto_nivel": "O SIGQA não tinha contagem de pontos de função nem especificação de requisitos. A comissão elaborou a Especificação de Requisitos do SIGQA (SPEC v1.0, por módulos) a partir do histórico do sistema escrito pelo líder técnico de Qualidade de Software e da apresentação SIGQA · Pitch, e dela derivou a contagem no nível Estimativo (NESMA), com a complexidade padrão de cada tipo (ALI baixa, 7 PF; AIE baixa, 5 PF; EE e CE média, 4 PF; SE média, 5 PF): 13 ALI, 3 AIE, 35 EE, 20 CE e 12 SE, total de 386 PF (aba Funções, célula L4). Cada função da planilha remete ao requisito da SPEC que a originou.",
+ "tipo_bem": "Software desenvolvido pela SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Equipe de Qualidade de Software (TesteOPS) da SEPLAG, em Angular, Node.js e MySQL",
+ "areas_negocio": "Equipe de Qualidade de Software (TesteOPS) da SEPLAG; gestores dos produtos acompanhados; coordenação de planejamento, DevOps e Superintendência de TI; gestão do contrato com a fábrica de software",
+ "perfis": "Analistas de qualidade, gestores de produto e áreas de negócio, coordenação de planejamento, DevOps, Superintendência de TI e a fábrica de software contratada, que recebe os defeitos pelo chamado no Suporte 360",
+ "base_legal": "Não foram disponibilizadas normas que instituam o SIGQA. O histórico do sistema informa que o Catálogo de Serviços de QA, usado pelo sistema para medir o esforço em UST, segue ITIL e ISTQB e está alinhado ao Decreto Estadual nº 1.208/2021, ao Decreto nº 338/2023 e à IN nº 001/2024/SEPLAG/CGE; essas normas foram informadas, sem texto anexado, e não foram lidas pela comissão",
+ "vi": 0.5,
+ "vi_justificativa": [
+  "O SIGQA concentra o ciclo de teste dos sistemas que sustentam a folha de pagamento, o eSocial, o patrimônio e as certidões de crédito do Estado (8 sistemas acompanhados), liga cada defeito à evidência e ao chamado da fábrica e mede o serviço de QA em UST. Pelos dados informados, 99,2% dos defeitos com ambiente foram contidos antes da produção (março de 2025 a setembro de 2026) e a retenção no ambiente de Testes passou de 0% para 80% após a mudança de maio a julho de 2026.",
+  "A indisponibilidade do SIGQA afetaria a rastreabilidade dos testes, o acompanhamento da fábrica e os indicadores de qualidade, sem interromper diretamente os serviços prestados aos servidores e órgãos. A comissão adota o nível Importante, índice 0,50, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, conforme decisão do presidente da comissão."
+ ],
+ "finalidade": [
+  "O SIGQA (Sistema de Gestão da Qualidade de Software, conhecido como Sig-QA e Teste Ops) é a plataforma web da equipe de Qualidade de Software (TesteOPS) da SEPLAG-MT, desenvolvida pela própria equipe e hospedada na infraestrutura interna da Secretaria. Substituiu as planilhas individuais em que cada analista registrava casos de teste, execuções e defeitos, motivado pelo afastamento temporário de um analista sênior, que deixou a equipe sem saber o que fora executado.",
+  "O sistema reúne a gestão dos testes funcionais (histórias, casos de teste e execuções por sprint), o registro de defeitos com evidências (vídeo, tela e chamadas de rede), o registro e o acompanhamento de chamados, tickets e bugs no Suporte 360 da CRP Tecnologia, o acompanhamento de testes automatizados e pipelines, o lançamento automático das atividades no Catálogo de Serviços de QA em UST, os painéis de Saúde dos Produtos, defeitos, execuções, chamados e capacidade da equipe, e a documentação, wiki e changelog publicados no próprio sistema.",
+  "Em 21/10/2026, a base tinha 5.555 casos de teste, 1.085 defeitos rastreáveis (mais de 620 ligados ao chamado da fábrica), 35 sprints, 48 impedimentos, 10.752 atividades em UST desde 12/08/2026, 13 suítes automatizadas e 115 pipelines em 42 repositórios."
+ ],
+ "integracoes": [
+  [
+   "Suporte 360 (CRP Tecnologia)",
+   "Registro de chamados, tickets e bugs a partir do defeito, vínculo pelo número do chamado e retorno do status",
+   "AIE (Chamado da fábrica) e SE (registro do chamado)"
+  ],
+  [
+   "GitLab da SEPLAG",
+   "Autenticação SSO e leitura de pipelines e repositórios",
+   "AIE (Usuário GitLab; Pipeline e repositório)"
+  ],
+  [
+   "Bucket de armazenamento de objetos",
+   "Guarda das evidências e dos logs",
+   "Infraestrutura; arquivos são atributos do defeito"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^M01\\ Produtos\\ e\\ Regras\\ do\\ Projeto$",
+   "Produtos e Regras do Projeto"
+  ],
+  [
+   "^M02\\ Sprints\\ e\\ Histórias\\ de\\ Usuário$",
+   "Sprints e Histórias de Usuário"
+  ],
+  [
+   "^M03\\ Casos\\ de\\ Teste\\ e\\ Execuções$",
+   "Casos de Teste e Execuções"
+  ],
+  [
+   "^M04\\ Defeitos\\ e\\ Evidências$",
+   "Defeitos e Evidências"
+  ],
+  [
+   "^M05\\ Integração\\ com\\ a\\ Fábrica\\ \\(Suporte\\ 360\\)$",
+   "Integração com a Fábrica (Suporte 360)"
+  ],
+  [
+   "^M06\\ Impedimentos$",
+   "Impedimentos"
+  ],
+  [
+   "^M07\\ Automação\\ e\\ Integração\\ Contínua$",
+   "Automação e Integração Contínua"
+  ],
+  [
+   "^M08\\ Catálogo\\ de\\ Serviços\\ e\\ Atividades\\ em\\ UST$",
+   "Catálogo de Serviços e Atividades em UST"
+  ],
+  [
+   "^M09\\ Painéis\\ Gerenciais$",
+   "Painéis Gerenciais"
+  ],
+  [
+   "^M10\\ Capacidade\\ da\\ Equipe$",
+   "Capacidade da Equipe"
+  ],
+  [
+   "^M11\\ Acesso\\ e\\ Documentação$",
+   "Acesso e Documentação"
+  ]
+ ],
+ "ordem_modulos": [
+  "Produtos e Regras do Projeto",
+  "Sprints e Histórias de Usuário",
+  "Casos de Teste e Execuções",
+  "Defeitos e Evidências",
+  "Integração com a Fábrica (Suporte 360)",
+  "Impedimentos",
+  "Automação e Integração Contínua",
+  "Catálogo de Serviços e Atividades em UST",
+  "Painéis Gerenciais",
+  "Capacidade da Equipe",
+  "Acesso e Documentação"
+ ],
+ "modulos_tabela": [
+  [
+   "Produtos e Regras do Projeto",
+   "Cadastrar os sistemas acompanhados pelo QA e versionar as regras, metas e premissas usadas nos indicadores."
+  ],
+  [
+   "Sprints e Histórias de Usuário",
+   "Organizar o trabalho de teste por sprint e por história de usuário de cada produto."
+  ],
+  [
+   "Casos de Teste e Execuções",
+   "Registrar os casos de teste e suas execuções, tornando o trabalho rastreável e independente de quem o executou."
+  ],
+  [
+   "Defeitos e Evidências",
+   "Registrar os defeitos com evidência e rastreabilidade até a história, a sprint e o chamado da fábrica."
+  ],
+  [
+   "Integração com a Fábrica (Suporte 360)",
+   "Registrar e acompanhar os chamados, tickets e bugs na fábrica de software (Suporte 360 da CRP Tecnologia), ligando cada defeito ao seu chamado e trazendo de volta o status."
+  ],
+  [
+   "Impedimentos",
+   "Registrar os impedimentos que bloqueiam os testes, com duração e casos bloqueados."
+  ],
+  [
+   "Automação e Integração Contínua",
+   "Acompanhar as suítes de testes automatizados e os pipelines de integração contínua dos repositórios."
+  ],
+  [
+   "Catálogo de Serviços e Atividades em UST",
+   "Medir o esforço do QA pelo Catálogo de Serviços de QA, com registro automático das atividades em UST."
+  ],
+  [
+   "Painéis Gerenciais",
+   "Dar à gestão indicadores de qualidade por produto, com transparência para a fábrica e as áreas de negócio."
+  ],
+  [
+   "Capacidade da Equipe",
+   "Planejar a alocação da equipe por frente de trabalho com base em horas disponíveis e perdas."
+  ],
+  [
+   "Acesso e Documentação",
+   "Autenticar os usuários e publicar a documentação do sistema."
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela equipe de Qualidade de Software da SEPLAG",
+ "uso": "Em produção, usado pela equipe de Qualidade de Software no teste de 8 sistemas estaduais (dados de produção de 21/10/2026)",
+ "beneficio": "Potencial de serviço: rastreabilidade e continuidade do trabalho de teste, defeitos com evidência ligados ao chamado da fábrica, medição do serviço de QA em UST e indicadores de qualidade por produto para a gestão e para o contrato",
+ "fase_texto": "Sistema em produção, com dados desde março de 2025 e evolução contínua registrada no changelog",
+ "custo_incorrido": "O SIGQA foi desenvolvido pela equipe interna da SEPLAG e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do histórico do sistema (relatos 1 a 5) e da apresentação SIGQA · Pitch; elaboração da Especificação de Requisitos (SPEC v1.0, por módulos); contagem estimativa derivada dos requisitos",
+ "documentacao_resumo": "Histórico do sistema, apresentação SIGQA · Pitch, Especificação de Requisitos SPEC v1.0 e planilha de contagem v1.0 (Anexo I)",
+ "documentacao_fonte": "Histórico e principais recursos do SIGQA escritos pelo líder técnico de Qualidade de Software para inscrição em premiação, e apresentação SIGQA · Pitch (14 páginas). A comissão consolidou esse material na Especificação de Requisitos do SIGQA (SPEC v1.0).",
+ "ressalva_documentacao": "A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam.",
+ "texto_evolucao": "Primeira medição do sistema: a contagem estimativa de 26/11/2026 (planilha v1.0), derivada da SPEC v1.0, mede 386 PF.",
+ "exemplos_tipos": [
+  "Produto, sprint, história, caso de teste, execução, defeito, impedimento, catálogo de serviços, atividade em UST, integrante",
+  "Chamado do Suporte 360, pipelines do GitLab, usuário do SSO",
+  "Registrar execução, incluir defeito, anexar evidência, vincular chamado, manter alocação",
+  "Consultar casos de teste, defeitos, chamados e atividades",
+  "Painel Saúde dos Produtos, dashboards de defeitos, execuções e chamados, SLA de correção, capacidade, registro do chamado na fábrica"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "26/11/2026",
+   "pf": 386,
+   "nivel": "Estimativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,50"
+  }
+ ],
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "O login por SSO e as páginas estáticas de documentação, wiki e changelog, que não são processos elementares contáveis.",
+  "O lançamento automático das atividades em UST, que integra as transações de origem (caso de teste, defeito e demais ações catalogadas).",
+  "O Suporte 360, o GitLab e o bucket de objetos, fora da fronteira."
+ ],
+ "outros_documentos": [
+  [
+   "Histórico e principais recursos do SIGQA (relatos 1 a 5)",
+   "Texto do líder técnico de Qualidade de Software para inscrição em premiação",
+   "11/2026",
+   "Finalidade, módulos, integrações, indicadores e recursos"
+  ],
+  [
+   "SIGQA · Pitch",
+   "Apresentação, 14 páginas",
+   "11/2026",
+   "Módulos, indicadores de 21/10/2026 e públicos atendidos"
+  ],
+  [
+   "Especificação de Requisitos do SIGQA (SPEC v1.0)",
+   "Elaborada pela comissão",
+   "26/11/2026",
+   "30 requisitos funcionais e 6 não funcionais por módulo; base da contagem"
+  ],
+  [
+   "Planilha de contagem APF-SIGQA v1.0",
+   "Elaborada pela comissão",
+   "26/11/2026",
+   "Funções e tamanho funcional"
+  ]
+ ],
+ "texto_acompanham": "A Especificação de Requisitos (SPEC v1.0) e a planilha de contagem acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Contagem a partir da especificação: o SIGQA não tinha documentação funcional formal. A comissão elaborou a especificação a partir do histórico e da apresentação do sistema e contou as funções descritas; funções não mencionadas nesse material podem existir e entrar em contagem futura. Recomenda-se que a equipe mantenha a SPEC atualizada junto com o changelog.",
+  "Banco de dados em migração: o histórico informa que o MySQL está em migração; a mudança de banco não altera o tamanho funcional, mas deve ser comunicada se alterar a situação de uso do bem (art. 23)."
+ ]
+}

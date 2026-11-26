@@ -1,0 +1,52 @@
+{
+ "sigla": "SIGQA",
+ "medida": "PF IFPUG",
+ "pf": 386.0,
+ "preco_pf": 1215.09,
+ "vt": 469024.74,
+ "vi": 0.5,
+ "va": 703537.11,
+ "funcoes": 83,
+ "por_tipo": {
+  "ALI": [
+   13,
+   91.0
+  ],
+  "AIE": [
+   3,
+   15.0
+  ],
+  "EE": [
+   35,
+   140.0
+  ],
+  "CE": [
+   20,
+   80.0
+  ],
+  "SE": [
+   12,
+   60.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   83,
+   386.0,
+   386.0
+  ]
+ },
+ "por_modulo": {
+  "Produtos e Regras do Projeto": 42.0,
+  "Sprints e Histórias de Usuário": 59.0,
+  "Casos de Teste e Execuções": 46.0,
+  "Defeitos e Evidências": 35.0,
+  "Integração com a Fábrica (Suporte 360)": 26.0,
+  "Impedimentos": 24.0,
+  "Automação e Integração Contínua": 33.0,
+  "Catálogo de Serviços e Atividades em UST": 35.0,
+  "Painéis Gerenciais": 30.0,
+  "Capacidade da Equipe": 51.0,
+  "Acesso e Documentação": 5.0
+ }
+}

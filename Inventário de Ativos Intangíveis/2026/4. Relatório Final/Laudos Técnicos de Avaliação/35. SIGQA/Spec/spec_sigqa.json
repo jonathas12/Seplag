@@ -1,0 +1,957 @@
+{
+ "titulo": "Especificação de Requisitos do Sistema",
+ "subtitulos": [
+  "SIGQA · Sistema de Gestão da Qualidade de Software",
+  "Especificação por módulos (SPEC), versão 1.0"
+ ],
+ "arquivo_saida": "SPEC_SIGQA_v1",
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "cards": [
+  [
+   "MÓDULOS",
+   "11",
+   "funcionais"
+  ],
+  [
+   "REQUISITOS",
+   "30 RF",
+   "6 RNF"
+  ],
+  [
+   "GRUPOS DE DADOS",
+   "13 ALI",
+   "3 AIE"
+  ],
+  [
+   "TRANSAÇÕES",
+   "67",
+   "35 EE, 20 CE, 12 SE"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "1. Introdução"
+  ],
+  [
+   "p",
+   "Esta especificação descreve os requisitos do SIGQA (Sistema de Gestão da Qualidade de Software, também chamado Sig-QA ou Teste Ops), plataforma web desenvolvida pela equipe de Qualidade de Software (TesteOPS) da SEPLAG-MT. Foi elaborada a partir do histórico do sistema escrito pelo líder técnico de Qualidade de Software para inscrição em premiação e da apresentação SIGQA · Pitch (recorte de dados de 21/10/2026), e serve de base para a contagem de pontos de função do inventário de bens intangíveis de 2026."
+  ],
+  [
+   "subsecao",
+   "1.1 Problema e objetivo"
+  ],
+  [
+   "p",
+   "Antes do SIGQA, cada analista registrava casos de teste, execuções e defeitos em planilhas próprias, e os retornos dos chamados abertos na fábrica de software (CRP Tecnologia) eram acompanhados por fora. O afastamento temporário de um analista sênior mostrou que não havia como saber o que fora executado nem o que faltava testar. O SIGQA concentra em um só lugar o ciclo de teste (histórias, casos de teste, execuções, evidências, defeitos, impedimentos e sprints), torna o trabalho rastreável e independente de pessoas, mede o esforço em Unidades de Serviço Técnico (UST) pelo Catálogo de Serviços de QA e dá à gestão indicadores de qualidade por produto."
+  ],
+  [
+   "subsecao",
+   "1.2 Atores"
+  ],
+  [
+   "lista",
+   [
+    "Analistas de qualidade: cadastram histórias, casos de teste, execuções, defeitos e impedimentos.",
+    "Gestores de produto e áreas de negócio: acompanham sprints e qualidade dos produtos.",
+    "Coordenação de planejamento e Superintendência de TI: painéis gerenciais, UST e capacidade.",
+    "DevOps: suítes automatizadas e pipelines.",
+    "Fábrica de software (CRP Tecnologia): recebe os defeitos com evidência pelo chamado no Suporte 360."
+   ]
+  ],
+  [
+   "subsecao",
+   "1.3 Fronteira e integrações"
+  ],
+  [
+   "tabela",
+   [
+    "Sistema externo",
+    "Uso pelo SIGQA",
+    "Tratamento"
+   ],
+   [
+    [
+     "Suporte 360 (CRP Tecnologia)",
+     "Abertura de chamados, tickets e bugs a partir do defeito, vínculo pelo número do chamado e retorno do status para acompanhamento",
+     "Lido (AIE) e envio de dados (SE)"
+    ],
+    [
+     "GitLab da SEPLAG",
+     "Autenticação SSO; pipelines de integração contínua e repositórios",
+     "Lido (AIE)"
+    ],
+    [
+     "Bucket de armazenamento de objetos",
+     "Guarda dos arquivos de evidência e dos logs",
+     "Infraestrutura; os arquivos são atributos do defeito"
+    ]
+   ],
+   "Integrações do SIGQA",
+   [
+    30,
+    45,
+    25
+   ]
+  ],
+  [
+   "subsecao",
+   "1.4 Visão dos módulos"
+  ],
+  [
+   "tabela",
+   [
+    "Código",
+    "Módulo",
+    "Objetivo"
+   ],
+   [
+    [
+     "M01",
+     "Produtos e Regras do Projeto",
+     "Cadastrar os sistemas acompanhados pelo QA e versionar as regras, metas e premissas usadas nos indicadores."
+    ],
+    [
+     "M02",
+     "Sprints e Histórias de Usuário",
+     "Organizar o trabalho de teste por sprint e por história de usuário de cada produto."
+    ],
+    [
+     "M03",
+     "Casos de Teste e Execuções",
+     "Registrar os casos de teste e suas execuções, tornando o trabalho rastreável e independente de quem o executou."
+    ],
+    [
+     "M04",
+     "Defeitos e Evidências",
+     "Registrar os defeitos com evidência e rastreabilidade até a história, a sprint e o chamado da fábrica."
+    ],
+    [
+     "M05",
+     "Integração com a Fábrica (Suporte 360)",
+     "Registrar e acompanhar os chamados, tickets e bugs na fábrica de software (Suporte 360 da CRP Tecnologia), ligando cada defeito ao seu chamado e trazendo de volta o status."
+    ],
+    [
+     "M06",
+     "Impedimentos",
+     "Registrar os impedimentos que bloqueiam os testes, com duração e casos bloqueados."
+    ],
+    [
+     "M07",
+     "Automação e Integração Contínua",
+     "Acompanhar as suítes de testes automatizados e os pipelines de integração contínua dos repositórios."
+    ],
+    [
+     "M08",
+     "Catálogo de Serviços e Atividades em UST",
+     "Medir o esforço do QA pelo Catálogo de Serviços de QA, com registro automático das atividades em UST."
+    ],
+    [
+     "M09",
+     "Painéis Gerenciais",
+     "Dar à gestão indicadores de qualidade por produto, com transparência para a fábrica e as áreas de negócio."
+    ],
+    [
+     "M10",
+     "Capacidade da Equipe",
+     "Planejar a alocação da equipe por frente de trabalho com base em horas disponíveis e perdas."
+    ],
+    [
+     "M11",
+     "Acesso e Documentação",
+     "Autenticar os usuários e publicar a documentação do sistema."
+    ]
+   ],
+   "Módulos do SIGQA",
+   [
+    12,
+    28,
+    60
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "2. Requisitos funcionais por módulo"
+  ],
+  [
+   "subsecao",
+   "2.1 M01 · Produtos e Regras do Projeto"
+  ],
+  [
+   "p",
+   "**Objetivo:** Cadastrar os sistemas acompanhados pelo QA e versionar as regras, metas e premissas usadas nos indicadores."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Produto",
+     "Sistema estadual acompanhado pelo QA (hoje 8), com nome, sigla, situação e ambientes (Testes, Homologação, Produção)."
+    ],
+    [
+     "ALI",
+     "Regra e premissa do projeto",
+     "Metas dos indicadores, SLA por severidade, valor da UST e custo-hora, com versões datadas para reconstituir a régua de cada período."
+    ]
+   ],
+   "Dados do módulo M01",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF01. Manter produtos.** O sistema deve permitir incluir, alterar, excluir, consultar e visualizar produtos. Um novo produto entra por cadastro, sem alteração de código."
+  ],
+  [
+   "lista",
+   [
+    "Incluir produto (Entrada · EE)",
+    "Alterar produto (Entrada · EE)",
+    "Excluir produto (Entrada · EE)",
+    "Consultar produtos (Consulta · CE)",
+    "Visualizar produto (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF02. Versionar regras e premissas.** O sistema deve registrar novas versões datadas das regras, metas e premissas (valor da UST, custo-hora, SLA por severidade), preservando as anteriores."
+  ],
+  [
+   "lista",
+   [
+    "Registrar nova versão de regras e premissas (Entrada · EE)",
+    "Consultar versões de regras e premissas (Consulta · CE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.2 M02 · Sprints e Histórias de Usuário"
+  ],
+  [
+   "p",
+   "**Objetivo:** Organizar o trabalho de teste por sprint e por história de usuário de cada produto."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Sprint",
+     "Sprint do produto com período, situação e previsão de liberação (35 sprints acompanhadas)."
+    ],
+    [
+     "ALI",
+     "História de usuário",
+     "História do produto vinculada à sprint, base dos casos de teste e da rastreabilidade dos defeitos."
+    ]
+   ],
+   "Dados do módulo M02",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF03. Manter sprints.** O sistema deve permitir incluir, alterar, excluir, consultar e visualizar sprints por produto."
+  ],
+  [
+   "lista",
+   [
+    "Incluir sprint (Entrada · EE)",
+    "Alterar sprint (Entrada · EE)",
+    "Excluir sprint (Entrada · EE)",
+    "Consultar sprints (Consulta · CE)",
+    "Visualizar sprint (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF04. Acompanhar o andamento da sprint.** O sistema deve apresentar, por sprint, as execuções, o percentual de aprovação e os defeitos, para a equipe e as áreas de negócio."
+  ],
+  [
+   "lista",
+   [
+    "Acompanhar andamento da sprint (execuções, aprovação e defeitos) (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF05. Manter histórias de usuário.** O sistema deve permitir incluir, alterar, excluir, consultar e visualizar histórias de usuário vinculadas ao produto e à sprint."
+  ],
+  [
+   "lista",
+   [
+    "Incluir história de usuário (Entrada · EE)",
+    "Alterar história de usuário (Entrada · EE)",
+    "Excluir história de usuário (Entrada · EE)",
+    "Consultar histórias de usuário (Consulta · CE)",
+    "Visualizar história de usuário (Consulta · CE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.3 M03 · Casos de Teste e Execuções"
+  ],
+  [
+   "p",
+   "**Objetivo:** Registrar os casos de teste e suas execuções, tornando o trabalho rastreável e independente de quem o executou."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Caso de teste",
+     "Caso de teste vinculado ao produto e à história, com situação (pronto para execução ou não); 5.555 cadastrados."
+    ],
+    [
+     "ALI",
+     "Execução de teste",
+     "Execução de um caso de teste em uma sprint e ambiente, com resultado (aprovado ou reprovado), responsável e data."
+    ]
+   ],
+   "Dados do módulo M03",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF06. Manter casos de teste.** O sistema deve permitir incluir, alterar, excluir, consultar e visualizar casos de teste, com a situação de prontidão para execução."
+  ],
+  [
+   "lista",
+   [
+    "Incluir caso de teste (Entrada · EE)",
+    "Alterar caso de teste (Entrada · EE)",
+    "Excluir caso de teste (Entrada · EE)",
+    "Consultar casos de teste (Consulta · CE)",
+    "Visualizar caso de teste (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF07. Registrar execuções de teste.** O sistema deve registrar e corrigir as execuções dos casos de teste por sprint e ambiente e permitir consultá-las."
+  ],
+  [
+   "lista",
+   [
+    "Registrar execução de teste (Entrada · EE)",
+    "Alterar execução de teste (Entrada · EE)",
+    "Consultar execuções de teste (Consulta · CE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.4 M04 · Defeitos e Evidências"
+  ],
+  [
+   "p",
+   "**Objetivo:** Registrar os defeitos com evidência e rastreabilidade até a história, a sprint e o chamado da fábrica."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Defeito",
+     "Defeito ligado a produto, severidade e ambiente e, quando houver, à história, à sprint, à execução e ao chamado da fábrica; evidências (vídeo, tela e chamadas de rede) como subgrupo, com os arquivos guardados no bucket de objetos; 1.085 registrados."
+    ]
+   ],
+   "Dados do módulo M04",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF08. Manter defeitos.** O sistema deve permitir incluir, alterar, excluir, consultar e visualizar defeitos, com produto, severidade, ambiente, história e sprint."
+  ],
+  [
+   "lista",
+   [
+    "Incluir defeito (Entrada · EE)",
+    "Alterar defeito (Entrada · EE)",
+    "Excluir defeito (Entrada · EE)",
+    "Consultar defeitos (Consulta · CE)",
+    "Visualizar defeito (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF09. Anexar evidências ao defeito.** O sistema deve receber e anexar ao defeito as evidências capturadas (vídeo, tela e chamadas de rede) e permitir abri-las."
+  ],
+  [
+   "lista",
+   [
+    "Anexar evidência ao defeito (vídeo, tela, rede) (Entrada · EE)",
+    "Visualizar evidência do defeito (Consulta · CE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.5 M05 · Integração com a Fábrica (Suporte 360)"
+  ],
+  [
+   "p",
+   "**Objetivo:** Registrar e acompanhar os chamados, tickets e bugs na fábrica de software (Suporte 360 da CRP Tecnologia), ligando cada defeito ao seu chamado e trazendo de volta o status."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "AIE",
+     "Chamado da fábrica (Suporte 360)",
+     "Chamado do sistema Suporte 360 da CRP Tecnologia, identificado pelo número, com o status de atendimento."
+    ]
+   ],
+   "Dados do módulo M05",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF10. Registrar chamado no Suporte 360.** O sistema deve abrir o chamado (ticket) na fábrica a partir do defeito, enviando ao Suporte 360 a descrição, a severidade, o produto e as evidências, e guardar o número retornado."
+  ],
+  [
+   "lista",
+   [
+    "Registrar chamado no Suporte 360 a partir do defeito (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF11. Vincular defeito ao chamado.** O sistema deve vincular o defeito a um chamado já existente na fábrica pelo número do chamado (mais de 620 vínculos)."
+  ],
+  [
+   "lista",
+   [
+    "Vincular defeito ao chamado da fábrica (Entrada · EE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF12. Acompanhar chamados e tickets.** O sistema deve listar os chamados, tickets e bugs abertos na fábrica, com o status de atendimento, para acompanhamento pela equipe e pela gestão do contrato."
+  ],
+  [
+   "lista",
+   [
+    "Acompanhar chamados e tickets da fábrica (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF13. Atualizar status do chamado.** O sistema deve obter o status do chamado no Suporte 360 e apresentá-lo no defeito."
+  ],
+  [
+   "lista",
+   [
+    "Atualizar status do chamado no defeito (Entrada · EE)",
+    "Consultar chamado vinculado (Consulta · CE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.6 M06 · Impedimentos"
+  ],
+  [
+   "p",
+   "**Objetivo:** Registrar os impedimentos que bloqueiam os testes, com duração e casos bloqueados."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Impedimento",
+     "Impedimento com produto, início, fim, duração e casos de teste bloqueados (48 registrados)."
+    ]
+   ],
+   "Dados do módulo M06",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF14. Manter impedimentos.** O sistema deve permitir registrar, alterar, encerrar e consultar impedimentos, calculando a duração e os casos bloqueados."
+  ],
+  [
+   "lista",
+   [
+    "Registrar impedimento (Entrada · EE)",
+    "Alterar impedimento (Entrada · EE)",
+    "Encerrar impedimento (Entrada · EE)",
+    "Consultar impedimentos (duração e casos bloqueados) (Saída · SE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.7 M07 · Automação e Integração Contínua"
+  ],
+  [
+   "p",
+   "**Objetivo:** Acompanhar as suítes de testes automatizados e os pipelines de integração contínua dos repositórios."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Suíte de testes automatizados",
+     "Suíte automatizada por produto (13 suítes: eSocial 6, SIGEP 3, SIGPAS 3, SISPAT 1)."
+    ],
+    [
+     "AIE",
+     "Pipeline e repositório (GitLab)",
+     "Pipelines de integração contínua e repositórios lidos do GitLab da SEPLAG (115 pipelines em 42 repositórios)."
+    ]
+   ],
+   "Dados do módulo M07",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF15. Manter suítes automatizadas.** O sistema deve permitir incluir, alterar, excluir e consultar as suítes de testes automatizados por produto."
+  ],
+  [
+   "lista",
+   [
+    "Incluir suíte automatizada (Entrada · EE)",
+    "Alterar suíte automatizada (Entrada · EE)",
+    "Excluir suíte automatizada (Entrada · EE)",
+    "Consultar suítes automatizadas (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF16. Monitorar pipelines.** O sistema deve apresentar os pipelines dos repositórios monitorados, com o resultado e o percentual de sucesso."
+  ],
+  [
+   "lista",
+   [
+    "Monitorar pipelines de integração contínua (percentual de sucesso) (Saída · SE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.8 M08 · Catálogo de Serviços e Atividades em UST"
+  ],
+  [
+   "p",
+   "**Objetivo:** Medir o esforço do QA pelo Catálogo de Serviços de QA, com registro automático das atividades em UST."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Catálogo de serviços de QA",
+     "Tipos de serviço (4), fases (6) e serviços (33) com código, complexidade e valor em UST (subgrupos)."
+    ],
+    [
+     "ALI",
+     "Atividade de QA",
+     "Atividade lançada automaticamente ao registrar caso de teste, defeito ou outra ação, com serviço, UST, responsável e data (10.752 entre 12/08 e 21/10/2026)."
+    ]
+   ],
+   "Dados do módulo M08",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF17. Manter o catálogo de serviços.** O sistema deve permitir incluir, alterar e consultar os serviços do catálogo, com tipo, fase, complexidade e UST."
+  ],
+  [
+   "lista",
+   [
+    "Incluir serviço do catálogo (Entrada · EE)",
+    "Alterar serviço do catálogo (Entrada · EE)",
+    "Consultar catálogo de serviços (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF18. Registrar atividades automaticamente.** Ao registrar caso de teste, defeito e demais ações catalogadas, o sistema deve lançar a atividade no catálogo com o código do serviço e o valor em UST, sem cadastro paralelo. O lançamento faz parte da própria transação de origem."
+  ],
+  [
+   "p",
+   "**RF19. Apurar UST.** O sistema deve consultar as atividades e totalizar as UST por período, serviço, produto e integrante."
+  ],
+  [
+   "lista",
+   [
+    "Consultar atividades de QA (Consulta · CE)",
+    "Apurar UST por período, serviço e produto (Saída · SE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.9 M09 · Painéis Gerenciais"
+  ],
+  [
+   "p",
+   "**Objetivo:** Dar à gestão indicadores de qualidade por produto, com transparência para a fábrica e as áreas de negócio."
+  ],
+  [
+   "p",
+   "**RF20. Painel Saúde dos Produtos.** O sistema deve apresentar, por produto, a aprovação das execuções, os casos prontos, os defeitos abertos, a contenção antes da produção e a retenção em Testes, segundo as regras vigentes no período."
+  ],
+  [
+   "lista",
+   [
+    "Painel Saúde dos Produtos (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF21. SLA de correção.** O sistema deve apresentar o tempo de correção dos defeitos frente ao SLA por severidade e produto (percentual dentro do SLA e mediana)."
+  ],
+  [
+   "lista",
+   [
+    "Indicador de tempo de correção frente ao SLA (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF22. Dashboard inicial.** O sistema deve apresentar o resumo geral da qualidade na página inicial (dashboard)."
+  ],
+  [
+   "lista",
+   [
+    "Dashboard inicial de qualidade (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF23. Dashboard de defeitos.** O sistema deve apresentar os defeitos por produto, severidade, situação e ambiente em que foram encontrados, com a retenção em Testes e a contenção antes da produção."
+  ],
+  [
+   "lista",
+   [
+    "Dashboard de defeitos (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF24. Dashboard de execuções de teste.** O sistema deve apresentar as execuções por produto e período, com aprovação, reprovação e casos prontos para execução."
+  ],
+  [
+   "lista",
+   [
+    "Dashboard de execuções de teste (Saída · SE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF25. Dashboard de chamados da fábrica.** O sistema deve apresentar os chamados, tickets e bugs da fábrica por situação, produto e severidade, com o tempo de atendimento."
+  ],
+  [
+   "lista",
+   [
+    "Dashboard de chamados da fábrica (Saída · SE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.10 M10 · Capacidade da Equipe"
+  ],
+  [
+   "p",
+   "**Objetivo:** Planejar a alocação da equipe por frente de trabalho com base em horas disponíveis e perdas."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "ALI",
+     "Integrante da equipe",
+     "Integrante com carga semanal e percentual de perda (8 cadastrados)."
+    ],
+    [
+     "ALI",
+     "Alocação por frente",
+     "Alocação de horas do integrante por frente ou produto, no período."
+    ]
+   ],
+   "Dados do módulo M10",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF26. Manter integrantes.** O sistema deve permitir incluir, alterar, excluir e consultar os integrantes, com carga semanal e perda."
+  ],
+  [
+   "lista",
+   [
+    "Incluir integrante (Entrada · EE)",
+    "Alterar integrante (Entrada · EE)",
+    "Excluir integrante (Entrada · EE)",
+    "Consultar integrantes (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF27. Manter alocações.** O sistema deve permitir incluir, alterar, excluir e consultar as alocações dos integrantes por frente."
+  ],
+  [
+   "lista",
+   [
+    "Incluir alocação (Entrada · EE)",
+    "Alterar alocação (Entrada · EE)",
+    "Excluir alocação (Entrada · EE)",
+    "Consultar alocações (Consulta · CE)"
+   ]
+  ],
+  [
+   "p",
+   "**RF28. Painel de capacidade.** O sistema deve calcular a capacidade bruta e líquida, a alocação e a superalocação por integrante e frente."
+  ],
+  [
+   "lista",
+   [
+    "Painel de capacidade (bruta, líquida e superalocação) (Saída · SE)"
+   ]
+  ],
+  [
+   "subsecao",
+   "2.11 M11 · Acesso e Documentação"
+  ],
+  [
+   "p",
+   "**Objetivo:** Autenticar os usuários e publicar a documentação do sistema."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição"
+   ],
+   [
+    [
+     "AIE",
+     "Usuário GitLab (SSO)",
+     "Identificação do usuário autenticado pelo GitLab da SEPLAG."
+    ]
+   ],
+   "Dados do módulo M11",
+   [
+    10,
+    25,
+    65
+   ]
+  ],
+  [
+   "p",
+   "**RF29. Autenticação por SSO.** O sistema deve autenticar o usuário pelo GitLab da SEPLAG (SSO). O login é controle de acesso e não é contado como função."
+  ],
+  [
+   "p",
+   "**RF30. Documentação, wiki e changelog.** O sistema deve publicar a documentação técnica e funcional (/documentation), a wiki por perfil (/app-docs) e o histórico de versões (/changelog). São páginas de conteúdo estático, de ajuda, e não são contadas como função."
+  ],
+  [
+   "secao",
+   "",
+   "3. Requisitos não funcionais"
+  ],
+  [
+   "tabela",
+   [
+    "Código",
+    "Tema",
+    "Requisito"
+   ],
+   [
+    [
+     "RNF01",
+     "Tecnologia",
+     "Front-end em Angular, back-end em Node.js e banco de dados MySQL (em migração)."
+    ],
+    [
+     "RNF02",
+     "Armazenamento",
+     "Evidências e logs guardados em bucket de armazenamento de objetos."
+    ],
+    [
+     "RNF03",
+     "Infraestrutura",
+     "Hospedagem na infraestrutura interna da SEPLAG-MT, com tecnologias de uso livre e sem licença."
+    ],
+    [
+     "RNF04",
+     "Multiproduto",
+     "Novos produtos entram por cadastro, sem alteração de código."
+    ],
+    [
+     "RNF05",
+     "Rastreabilidade",
+     "Regras e premissas com versões datadas; changelog de cada evolução."
+    ],
+    [
+     "RNF06",
+     "Acesso",
+     "Autenticação única (SSO) pelo GitLab da SEPLAG."
+    ]
+   ],
+   "Requisitos não funcionais",
+   [
+    12,
+    20,
+    68
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "4. Indicadores de referência"
+  ],
+  [
+   "p",
+   "Indicadores informados para o SIGQA em produção (recorte de 21/10/2026), que ilustram o volume de dados mantido pelos requisitos acima:"
+  ],
+  [
+   "tabela",
+   [
+    "Indicador",
+    "Resultado"
+   ],
+   [
+    [
+     "Sistemas estaduais acompanhados",
+     "8 (SIGEP, eSocial, SISPAT, SICC, SIGPAS, SIGED, Contagem de Tempo, Progressão Funcional)"
+    ],
+    [
+     "Casos de teste",
+     "5.555, dos quais 4.188 prontos para execução"
+    ],
+    [
+     "Defeitos",
+     "1.085, mais de 620 ligados ao chamado da fábrica"
+    ],
+    [
+     "Sprints",
+     "35"
+    ],
+    [
+     "Impedimentos",
+     "48"
+    ],
+    [
+     "Atividades no catálogo",
+     "10.752 entre 12/08 e 21/10/2026"
+    ],
+    [
+     "Automação",
+     "13 suítes; 115 pipelines em 42 repositórios, 97% com sucesso"
+    ],
+    [
+     "Aprovação das execuções",
+     "87,3% em outubro de 2026 (737 de 844)"
+    ],
+    [
+     "Contenção antes da produção",
+     "99,2% (8 de 982 defeitos com ambiente chegaram à produção)"
+    ]
+   ],
+   "Indicadores do SIGQA",
+   [
+    35,
+    65
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "5. Rastreabilidade com a contagem de pontos de função"
+  ],
+  [
+   "p",
+   "Cada função listada nos requisitos corresponde a uma linha da planilha APF-SIGQA-v1.0 (contagem estimativa NESMA). Não são contados: o login por SSO (RF29), as páginas estáticas de documentação, wiki e changelog (RF30) e o lançamento automático de atividades (RF18), que integra as transações de origem."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Elaboração",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Analista de métricas de software (Análise de Pontos de Função)",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

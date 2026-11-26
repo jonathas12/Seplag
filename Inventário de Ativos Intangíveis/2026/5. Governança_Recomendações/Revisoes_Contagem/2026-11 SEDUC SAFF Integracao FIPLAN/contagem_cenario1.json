@@ -12,14 +12,6 @@
      "Contratada: AIE alterado, 1-19 DER, 1 RLR, baixa. Confere: o SAFF passa a ler o órgão retornado pela API do FIPLAN."
     ],
     [
-     "Pagamento (SAFF)",
-     "ALI",
-     "A50",
-     "",
-     "",
-     "Revisão CIABI: ALI alterado pelo novo campo órgão gravado no pagamento (F.001: 'também trazer um campo de órgão'); TD/RLR não informados, complexidade baixa (mínima). Não contado pela contratada; condicionado à confirmação de que o campo é persistido no SAFF."
-    ],
-    [
      "Importar pagamento - serviço (automático)",
      "EE",
      "A50",
@@ -104,14 +96,14 @@
   "F5": "SAFF - Sistema de Administração de Acordos de Financiamento (SEDUC-MT/PADIS)",
   "F6": "Projeto de Melhoria",
   "F7": "Detalhada (IFPUG)",
-  "F8": "Alteração da Integração Financeira (FIPLAN) x SAFF - ERS-UNGP-SAFF.2026.0002 (chamado nº 661830)",
+  "F8": "Alteração da Integração Financeira (FIPLAN) x SAFF - ERS-UNGP-SAFF.2026.0002 (chamado nº 661830) - Cenário 1 - órgão usado apenas como filtro",
   "R7": "Não informada",
   "F9": "Gabriel Guedes (Softplan) - contagem original de 10/09/2026",
   "F10": "Jonathas Gomes Marques - revisão",
   "R9": "2026-09-10",
   "R10": "2026-11-25",
   "A12": "Revisar a contagem de pontos de função apresentada pela contratada para a demanda de alteração da integração financeira FIPLAN x SAFF (Contrato nº 103/2025/UCP/SEDUC; chamado nº 661830), conferindo funções, complexidades e fatores de impacto, e apresentar a contagem revisada.",
-  "A17": "1 - Identificar e mensurar as funções de dados e de transação alteradas;\n2 - Identificar a fronteira da aplicação (SAFF).\n\nProjeto de melhoria, contagem detalhada IFPUG CPM 4.3.1 com fatores de impacto do Roteiro de Métricas do SISP (alteração de função desenvolvida pela própria contratada: 50%). Escopo: importação de pagamentos, empenhos e dotações a partir da API do FIPLAN da SEDUC-MT, via serviço e manual, com inclusão do campo órgão. Fora do escopo: telas de consulta e detalhamento (sem alteração, ERS item 2); tabelas temporárias do importador (técnicas).\nResultado: 58 PF brutos, 29,0 PF com fator de impacto (contratada: 51 PF brutos, 25,5 PF).",
+  "A17": "1 - Identificar e mensurar as funções de dados e de transação alteradas ou incluídas;\n2 - Identificar a fronteira da aplicação (SAFF).\n\nProjeto de melhoria, contagem detalhada IFPUG CPM 4.3.1 (ISO/IEC 20926) com fatores de impacto do Roteiro de Métricas do SISP (alteração de função desenvolvida pela própria contratada: 50%; inclusão: 100%). Cenário 1: o órgão é apenas parâmetro de filtro da API do FIPLAN ou da consulta e não é armazenado no SAFF. Nenhum ALI do SAFF ganha campo; o tamanho é o da contagem da contratada.\nResultado: 51 PF brutos, 25,5 PF com fator de impacto (contratada: 51 PF brutos, 25,5 PF).",
   "A22": "ERS-UNGP-SAFF.2026.0002 - Especificação de Requisitos de Software (versão 1.0, sem data e autor); planilha PPF-UNGP-SAFF.2026.0002 - SEDUC-MT (Softplan, 10/09/2026); e-mail Integração FIPLAN x SAFF - PADIS-MT (12/11/2026); Contrato nº 103/2025/UCP/SEDUC (cláusula 3.3.8, serviços sob demanda medidos em pontos de função)."
  }
 }

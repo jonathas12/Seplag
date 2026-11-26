@@ -44,6 +44,15 @@ números. Com D ou E vazios, ela assume a complexidade padrão (ALI/AIE baixa, t
   - Dados de código (tipos, situações) não contam como AR.
 - **Processos elementares distintos:** mesma tela com lógica diferente (importação automática e manual, inclusão e alteração) conta separadamente. Mesma lógica em canais diferentes conta uma vez.
 - **Combo-box:** é uma CE (lista de dados de ALI/AIE), não altera o ALI. A função de dados só é alterada quando a demanda inclui, altera ou exclui DER ou RLR do grupo de dados (ex.: novo campo gravado).
+- **Novo campo em integração ou tela (cenários a confirmar com a contratada):**
+  1. Apenas filtro na API ou na consulta, sem gravar: não altera ALI.
+  2. Gravado na fronteira como campo novo: ALI alterado.
+  3. Gravado, mas o campo já existe no sistema (outro módulo ou tela): campo repetido não é contado.
+  4. Nova lista de seleção, nova e única: CE incluída (100%); se lista igual já existir, não conta.
+
+  Gerar uma planilha por cenário e perguntar à contratada se outras funções (alterações, consultas, listagens,
+  relatórios) passaram a usar o campo.
+- **Versão do Roteiro SISP:** verificar no contrato. Se não estiver definida, recomendar formalizar a versão (a 3.0 é a mais recente, com mudanças técnicas e de critério) e apontar indícios de regras diferentes na planilha da contratada (ex.: fator de exclusão 0,3 contra 0,4 da versão 2.3).
 - **Integração:**
   - dados de outro sistema lidos pela aplicação são AIE;
   - mudança no que é lido (novo campo da API) altera o AIE;
@@ -57,7 +66,11 @@ números. Com D ou E vazios, ela assume a complexidade padrão (ALI/AIE baixa, t
   - **A75** (75%): função de outra empresa.
   - **A90** (90%): A75 com redocumentação.
 - Outros deflatores na aba Deflatores: COR, ARN, PFT (testes, 15%), AER e demais.
-- O tamanho da melhoria é o PF Local da FS (`Funções!L6`); o PF IFPUG (L4) é o bruto.
+- **Duas grandezas, nomes claros:** nos laudos, não escrever "PF bruto / PF".
+  - **"Tamanho das funções afetadas (PF IFPUG)"** (`Funções!L4`) é o tamanho completo das funções tocadas, como se construídas do zero.
+  - **"Tamanho da demanda (PF a aceitar)"** (`Funções!L6`, PF Local da FS) é esse tamanho multiplicado pelo fator de impacto. É o que se aceita e mede.
+  - Analogia: a área da cozinha (12 m²) é uma coisa, o tamanho da reforma é outra.
+  - Uma função incluída entra com 100% nas duas grandezas.
 - Funções de teste e itens não mensuráveis só entram se a demanda os previr.
 
 ## Passos
@@ -101,6 +114,11 @@ números. Com D ou E vazios, ela assume a complexidade padrão (ALI/AIE baixa, t
 ## Estilo e limites
 
 - **Escopo:** só a contagem. Não opinar sobre preço do PF, enquadramento contratual ou trâmites, salvo pedido expresso; a conciliação é em pontos de função.
-- **Tom:** técnico, sem adjetivos, sem travessão longo. Cada divergência cita o requisito (item da ERS) e a regra.
+- **Tom:** técnico, em terceira pessoa ("o analista", "a revisão constatou"), sem adjetivos, sem travessão longo.
+- **Laudo como perícia:**
+  - abrir com preâmbulo (camada de governança consultiva e orientativa, imparcial; quem pediu e por quê) e uma pergunta-guia;
+  - explicar ponto de função em linguagem simples (metro quadrado, os 5 tipos com exemplos da própria demanda);
+  - mostrar a conta da contratada passo a passo, com ícones discretos de situação (✅ confere, ⚠️ ajuste, ❓ em aberto);
+  - na conciliação, explicar "o que foi contado, o que a revisão constatou, por quê e o efeito". Cada divergência cita o requisito (item da ERS) e a regra.
 - **Contratada correta:** quando a contagem da contratada está correta, dizer isso claramente e separar as inconsistências formais, que não mudam o total, das que mudam o tamanho.
 - **Assinatura:** Jonathas Gomes Marques, "Analista de métricas de software (Análise de Pontos de Função)", "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)", matrícula 280193.

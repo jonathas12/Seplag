@@ -1,0 +1,591 @@
+{
+ "titulo": "Especificação de Requisitos do Sistema",
+ "subtitulos": [
+  "PRIMO · Plataforma de Planejamento e Projetos de TI",
+  "Especificação por módulos (SPEC), versão 1.0"
+ ],
+ "arquivo_saida": "SPEC_PRIMO_v1",
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "cards": [
+  [
+   "MÓDULOS",
+   "7",
+   "funcionais"
+  ],
+  [
+   "REQUISITOS",
+   "28 RF",
+   "8 RN e 5 RNF"
+  ],
+  [
+   "GRUPOS DE DADOS",
+   "14 ALI",
+   "0 AIE"
+  ],
+  [
+   "INDICATIVA",
+   "490 PF",
+   "NESMA"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "1. Introdução"
+  ],
+  [
+   "p",
+   "Esta especificação descreve os requisitos funcionais do PRIMO (Plataforma de Planejamento e Projetos de TI), sistema oficial de governança, planejamento e acompanhamento das entregas de TI da Coordenadoria de Planejamento e Projetos de TI (CPPTI) da SEPLAG-MT, desenvolvido internamente pela própria Coordenadoria. Foi elaborada a partir do Manual do Usuário e Guia de Operações Ilustrado (versão do sistema v1.1.0.0+, novembro de 2026) e do Guia Operacional de Padronização de Projetos de Sustentação, e serve de base para a contagem indicativa de pontos de função do inventário de bens intangíveis de 2026."
+  ],
+  [
+   "subsecao",
+   "1.1 Objetivo do sistema"
+  ],
+  [
+   "p",
+   "O PRIMO funciona como a torre de controle das demandas de TI: recebe a solicitação (DoD), calcula seu impacto pelo critério RICE-Gov, autoriza o plano na árvore de Produtos e Projetos, aloca os especialistas e registra a entrega com rastreabilidade. Responde a quatro perguntas: o que foi pedido, quem está trabalhando, quanto está custando (horas da equipe e USTs da fábrica) e quando será entregue."
+  ],
+  [
+   "subsecao",
+   "1.2 Perfis de acesso (RBAC)"
+  ],
+  [
+   "tabela",
+   [
+    "Perfil",
+    "Atuação"
+   ],
+   [
+    [
+     "Administrador (ADMIN)",
+     "Acesso total: usuários, matriz de permissões, logs de auditoria e todos os cadastros."
+    ],
+    [
+     "Estratégico",
+     "Superintendentes, diretores e alta administração: dashboards, portfólio de entregas, \"Quem Fez o Quê\", previsões e custos."
+    ],
+    [
+     "Gestor de Produto/Fluxo",
+     "Governança de um sistema permanente ou esteira: projetos, aprovação de DoDs, sprints e alocações."
+    ],
+    [
+     "Líder de Projeto",
+     "Cronograma de sprints, ações e subações, percentuais de conclusão e prazos."
+    ],
+    [
+     "Coordenador",
+     "Força de trabalho, times, alocação de especialistas e catálogos de papéis e stacks."
+    ]
+   ],
+   "Perfis do PRIMO",
+   [
+    30,
+    70
+   ]
+  ],
+  [
+   "subsecao",
+   "1.3 Fronteira"
+  ],
+  [
+   "p",
+   "O PRIMO mantém todos os seus dados. O SIGADOC e o SEI aparecem apenas como número e link do processo informados pelo usuário, sem leitura de dados; Redmine, GLPI e SisProjeto continuam como ferramentas de controle das demandas individuais de sustentação, fora do sistema."
+  ],
+  [
+   "subsecao",
+   "1.4 Visão dos módulos"
+  ],
+  [
+   "tabela",
+   [
+    "Código",
+    "Módulo",
+    "Objetivo"
+   ],
+   [
+    [
+     "M01",
+     "Solicitações (DoD)",
+     "Registrar e priorizar as demandas formais de TI (Documento de Oficialização de Demanda), porta de entrada de qualquer nova necessidade."
+    ],
+    [
+     "M02",
+     "Produtos, Fluxos, Projetos e Ações",
+     "Organizar, planejar e executar as entregas na árvore hierárquica Produto/Fluxo, Projeto, Sprint, Ação e Subação."
+    ],
+    [
+     "M03",
+     "Analistas e Times",
+     "Manter o cadastro unificado de pessoas (servidores internos e especialistas de fábrica) e os times técnicos."
+    ],
+    [
+     "M04",
+     "Catálogos de Papéis e Stacks",
+     "Padronizar os papéis da estrutura hierárquica e as tecnologias homologadas."
+    ],
+    [
+     "M05",
+     "Clientes e Secretarias",
+     "Manter as unidades consumidoras de tecnologia e seus interlocutores."
+    ],
+    [
+     "M06",
+     "Dashboards e Relatórios",
+     "Responder o que foi pedido, quem está trabalhando, quanto custa e quando será entregue."
+    ],
+    [
+     "M07",
+     "Governança, Usuários e Auditoria",
+     "Controlar o acesso por perfis (RBAC) e auditar as alterações."
+    ]
+   ],
+   "Módulos do PRIMO",
+   [
+    12,
+    28,
+    60
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "2. Requisitos funcionais por módulo"
+  ],
+  [
+   "subsecao",
+   "2.1 M01 · Solicitações (DoD)"
+  ],
+  [
+   "p",
+   "**Objetivo:** Registrar e priorizar as demandas formais de TI (Documento de Oficialização de Demanda), porta de entrada de qualquer nova necessidade."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Solicitação (DoD)",
+     "Código, título, órgão demandante e solicitante, estágio de governança, critérios do RICE-Gov (alcance, impacto, urgência, confiança, esforço, prioridade de gabinete), enquadramento legal (tipo, número do instrumento, prazo fatal, link do processo no SIGADOC ou SEI), score calculado e TimeLine de pareceres e comunicações (subgrupo).",
+     "Cap. 4"
+    ]
+   ],
+   "Dados do módulo M01",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF01. Manter solicitações.** Incluir, alterar, cancelar ou rejeitar e consultar solicitações, com filtros por cliente demandante e estágio de governança."
+  ],
+  [
+   "p",
+   "**RF02. Calcular o score RICE-Gov.** Calcular o score = [(Alcance × Impacto × Urgência × Confiança) × Gabinete × Enquadramento Legal] ÷ Esforço em dias, com multiplicadores legais de 5,0 (decisão judicial), 3,0 (lei), 2,0 (decreto), 1,5 (IN) e 1,2 (portaria), e ordenar a fila por score e chegada."
+  ],
+  [
+   "p",
+   "**RF03. Fila sequencial e esteira Kanban.** Apresentar as solicitações em fila ordenada, com indicadores (total, recebidos, em análise, finalizados), e em esteira Kanban por estágio (Recebido, Em Análise, Pronto p/ Embarque, Finalizado), permitindo arrastar o cartão entre estágios."
+  ],
+  [
+   "p",
+   "**RF04. Embarcar a solicitação.** Embarcar a solicitação aprovada na árvore de Produtos e Projetos."
+  ],
+  [
+   "p",
+   "**RF05. TimeLine e despacho timbrado.** Registrar pareceres e comunicações na TimeLine da solicitação e gerar o despacho timbrado do Governo de Mato Grosso com a análise técnica e o parecer de deferimento, para juntada no SIGADOC."
+  ],
+  [
+   "subsecao",
+   "2.2 M02 · Produtos, Fluxos, Projetos e Ações"
+  ],
+  [
+   "p",
+   "**Objetivo:** Organizar, planejar e executar as entregas na árvore hierárquica Produto/Fluxo, Projeto, Sprint, Ação e Subação."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Produto/Fluxo",
+     "Sistema permanente (produto) ou esteira contínua de processos (fluxo), com gestor responsável, stacks associadas, marcação de IP e timeline consolidada.",
+     "Cap. 5"
+    ],
+    [
+     "ALI",
+     "Projeto",
+     "Obra estruturante vinculada ao produto ou fluxo, com líder, datas de início e término previsto, progresso e marcação de IP; inclui os projetos de sustentação trimestrais.",
+     "Cap. 5; Guia de Sustentação"
+    ],
+    [
+     "ALI",
+     "Sprint",
+     "Ciclo do projeto (em geral quinzenal), com datas, horas técnicas estimadas e USTs previstas da fábrica; não pode ser IP.",
+     "Cap. 5"
+    ],
+    [
+     "ALI",
+     "Ação",
+     "Entregável concreto do projeto, da sprint ou direto do produto/fluxo (ação direta), com percentual de conclusão, datas de entrega e marcação de IP; subações técnicas e registros de acompanhamento (observações, impedimentos e histórico de status, com data e autor) como subgrupos; os mesmos registros de projetos e sprints são subgrupos desses grupos.",
+     "Cap. 5"
+    ],
+    [
+     "ALI",
+     "Alocação",
+     "Matriz de quatro quadros por produto, fluxo, projeto ou ação: gestores e líderes, times, especialistas com papel operacional e clientes com papel funcional (Responsável Funcional).",
+     "Cap. 5.3 e 5.4"
+    ]
+   ],
+   "Dados do módulo M02",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF06. Manter produtos e fluxos.** Incluir, alterar, excluir e consultar produtos e fluxos, com gestor, stacks e marcação de IP, em árvore viva com indicadores (produtos, fluxos, projetos, sprints, ações e subações)."
+  ],
+  [
+   "p",
+   "**RF07. Manter projetos.** Incluir, alterar, excluir e consultar projetos vinculados ao produto ou fluxo, com líder, datas, progresso e IP; projetos de sustentação seguem a nomenclatura padronizada por trimestre."
+  ],
+  [
+   "p",
+   "**RF08. Manter sprints.** Incluir, alterar, excluir e consultar sprints, com datas, horas estimadas e USTs previstas."
+  ],
+  [
+   "p",
+   "**RF09. Manter ações e subações.** Incluir, alterar, excluir e consultar ações e subações, com percentual de conclusão (0% a 100%), datas e IP; ações diretas no produto ou fluxo, sem projeto."
+  ],
+  [
+   "p",
+   "**RF10. Alocar recursos.** Alocar gestores, times, especialistas (com papel operacional obrigatório) e clientes (Responsável Funcional) a produtos, fluxos, projetos e ações."
+  ],
+  [
+   "p",
+   "**RF11. Acompanhamento rápido.** Registrar observações e impedimentos, consultar o histórico de status e ajustar progresso e datas pelo modal de detalhes rápidos."
+  ],
+  [
+   "p",
+   "**RF12. Timeline do produto.** Consolidar os acontecimentos, versões e marcos de todos os projetos do produto ou fluxo em visão temporal."
+  ],
+  [
+   "subsecao",
+   "2.3 M03 · Analistas e Times"
+  ],
+  [
+   "p",
+   "**Objetivo:** Manter o cadastro unificado de pessoas (servidores internos e especialistas de fábrica) e os times técnicos."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Pessoa (cadastro unificado)",
+     "Nome, e-mail, matrícula SEPLAG/MTI, CPF, telefone, origem (interno ou externo), senioridade, contrato, regime (home office, vínculo com MTI) e papéis habilitados (subgrupo).",
+     "Cap. 6"
+    ],
+    [
+     "ALI",
+     "Time (esquadra)",
+     "Esquadras técnicas (ex.: API, Sustentação, CDSS, DevOps, Java, PHP) e seus integrantes.",
+     "Cap. 6"
+    ]
+   ],
+   "Dados do módulo M03",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF13. Manter pessoas.** Incluir, alterar, excluir e consultar pessoas, com filtros por papéis e contadores."
+  ],
+  [
+   "p",
+   "**RF14. Manter times.** Incluir, alterar, excluir e consultar times e vincular pessoas."
+  ],
+  [
+   "p",
+   "**RF15. Detalhes do especialista.** Apresentar a ficha do especialista com papéis, times e a tabela de alocações ativas e seus status."
+  ],
+  [
+   "subsecao",
+   "2.4 M04 · Catálogos de Papéis e Stacks"
+  ],
+  [
+   "p",
+   "**Objetivo:** Padronizar os papéis da estrutura hierárquica e as tecnologias homologadas."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Papel",
+     "Papéis em 5 níveis (0 Estratégico a 4 Operacional) e o papel do cliente (Responsável Funcional), com natureza.",
+     "Cap. 7"
+    ],
+    [
+     "ALI",
+     "Stack técnica",
+     "Linguagens, frameworks e bancos homologados, por camada (Backend, Frontend, Banco de Dados, DevOps, Mobile).",
+     "Cap. 5.5"
+    ]
+   ],
+   "Dados do módulo M04",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF16. Manter papéis.** Incluir, alterar, excluir e consultar papéis, com nível e natureza; o Responsável Funcional não é oferecido a técnicos internos."
+  ],
+  [
+   "p",
+   "**RF17. Manter stacks.** Incluir, alterar, excluir e consultar stacks e associá-las a produtos e times."
+  ],
+  [
+   "subsecao",
+   "2.5 M05 · Clientes e Secretarias"
+  ],
+  [
+   "p",
+   "**Objetivo:** Manter as unidades consumidoras de tecnologia e seus interlocutores."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Cliente (secretaria ou órgão)",
+     "Secretarias e órgãos clientes, com interlocutores e quantitativo de demandas.",
+     "Cap. 9"
+    ]
+   ],
+   "Dados do módulo M05",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF18. Manter clientes.** Incluir, alterar, excluir e consultar clientes e seus interlocutores, com o quantitativo de demandas."
+  ],
+  [
+   "subsecao",
+   "2.6 M06 · Dashboards e Relatórios"
+  ],
+  [
+   "p",
+   "**Objetivo:** Responder o que foi pedido, quem está trabalhando, quanto custa e quando será entregue."
+  ],
+  [
+   "p",
+   "**RF19. Hub de dashboards.** Acesso aos painéis analíticos, com filtro de IP ativado por padrão em \"Sem IPs (Oficiais)\"."
+  ],
+  [
+   "p",
+   "**RF20. Matriz de alocação e capacidade.** Mapa de ocupação da equipe e da fábrica, com busca por pessoa, status de ocupação, grupo e função."
+  ],
+  [
+   "p",
+   "**RF21. Realizações e \"Quem Fez o Quê\".** Entregas concluídas por profissional e esquadra, com horas apontadas e projetos atendidos, por ano e período."
+  ],
+  [
+   "p",
+   "**RF22. Entregas dos clientes.** Entregas consolidadas por órgão demandante, para relatórios executivos a secretários e diretores."
+  ],
+  [
+   "p",
+   "**RF23. Previsões de entregas.** Datas previstas e cronograma das entregas."
+  ],
+  [
+   "p",
+   "**RF24. Exportação PDF e CSV.** Exportar relatórios e telas em PDF executivo (A4 paisagem, cabeçalho institucional, filtros e rodapé) e CSV (UTF-8 com BOM, separador ponto e vírgula)."
+  ],
+  [
+   "subsecao",
+   "2.7 M07 · Governança, Usuários e Auditoria"
+  ],
+  [
+   "p",
+   "**Objetivo:** Controlar o acesso por perfis (RBAC) e auditar as alterações."
+  ],
+  [
+   "tabela",
+   [
+    "Tipo",
+    "Grupo de dados",
+    "Descrição",
+    "Fonte"
+   ],
+   [
+    [
+     "ALI",
+     "Usuário",
+     "Conta de acesso com login, nome, perfil, situação e data de cadastro.",
+     "Cap. 11"
+    ],
+    [
+     "ALI",
+     "Perfil e matriz de permissões",
+     "Perfis ADMIN, ESTRATEGICO, GESTOR_PRODUTO, LIDER_PROJETO e COORDENADOR e as permissões de criar, editar e excluir por módulo.",
+     "Cap. 3 e 11"
+    ],
+    [
+     "ALI",
+     "Log de auditoria",
+     "Registro de toda criação, edição e exclusão, com usuário, data e comparação antes e depois (diff), consultado em tela própria.",
+     "Cap. 11"
+    ]
+   ],
+   "Dados do módulo M07",
+   [
+    8,
+    20,
+    60,
+    12
+   ]
+  ],
+  [
+   "p",
+   "**RF25. Manter usuários.** Incluir, alterar, ativar ou inativar usuários e atribuir perfis."
+  ],
+  [
+   "p",
+   "**RF26. Matriz de permissões.** Definir quais perfis podem criar, editar ou excluir em cada módulo."
+  ],
+  [
+   "p",
+   "**RF27. Logs de auditoria.** Consultar os logs com filtros temporais e a comparação de diff."
+  ],
+  [
+   "p",
+   "**RF28. Meu perfil.** Alterar a própria senha; preferências de interface (menu recolhido, tema claro ou escuro)."
+  ],
+  [
+   "secao",
+   "",
+   "3. Regras de negócio"
+  ],
+  [
+   "lista",
+   [
+    "RN01. Nenhuma UST deve ser autorizada sem solicitação (DoD) registrada no PRIMO.",
+    "RN02. Todo projeto deve estar vinculado a um produto ou fluxo.",
+    "RN03. Sprints não podem ser marcadas como IP (Iniciativa Pessoal/Própria); produtos, fluxos, projetos, ações e subações podem.",
+    "RN04. Os dashboards exibem por padrão apenas entregas oficiais (filtro \"Sem IPs\").",
+    "RN05. Todo especialista alocado deve ter um papel operacional; o papel Responsável Funcional é exclusivo do cliente.",
+    "RN06. Projetos de sustentação seguem a nomenclatura \"Sustentação - [NomeDoSistema] - Xº Trimestre de 20XX\", com abertura trimestral e relatório consolidado de fechamento.",
+    "RN07. Toda criação, edição e exclusão é registrada no log de auditoria, com diff.",
+    "RN08. Formulários em modal pedem confirmação antes de descartar alterações."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "4. Requisitos não funcionais"
+  ],
+  [
+   "tabela",
+   [
+    "Código",
+    "Requisito"
+   ],
+   [
+    [
+     "RNF01",
+     "Aplicação web em PHP com banco de dados MySQL."
+    ],
+    [
+     "RNF02",
+     "Controle de acesso por perfis (RBAC) e login institucional."
+    ],
+    [
+     "RNF03",
+     "Tema claro e escuro; menu lateral retrátil com preferência gravada no perfil."
+    ],
+    [
+     "RNF04",
+     "Ajuda contextual pelas teclas F1 ou ? (Guia do Primo interativo)."
+    ],
+    [
+     "RNF05",
+     "Exportação em PDF (A4 paisagem) e CSV (UTF-8 com BOM, separador ponto e vírgula)."
+    ]
+   ],
+   "Requisitos não funcionais",
+   [
+    15,
+    85
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "5. Rastreabilidade com a contagem de pontos de função"
+  ],
+  [
+   "p",
+   "A contagem indicativa (NESMA) considera os 14 grupos de dados mantidos pelo PRIMO listados nas tabelas da Seção 2, cada um com 35 PF; não há dados lidos de outros sistemas (AIE). As subações e os registros de acompanhamento são subgrupos das entregas; preferências de interface e sessões são dados técnicos, não contados."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Elaboração",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Analista de métricas de software (Análise de Pontos de Função)",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

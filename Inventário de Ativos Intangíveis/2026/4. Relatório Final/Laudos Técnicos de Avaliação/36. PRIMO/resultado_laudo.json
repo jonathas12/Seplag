@@ -1,0 +1,31 @@
+{
+ "sigla": "PRIMO",
+ "medida": "Indicativa (NESMA)",
+ "pf": 490.0,
+ "preco_pf": 1215.09,
+ "vt": 595394.1,
+ "vi": 0.75,
+ "va": 1041939.68,
+ "funcoes": 14,
+ "por_tipo": {
+  "ALI": [
+   14,
+   490.0
+  ]
+ },
+ "por_manutencao": {
+  "I": [
+   14,
+   98.0,
+   490.0
+  ]
+ },
+ "por_modulo": {
+  "Solicitações (DoD)": 35.0,
+  "Produtos, Fluxos, Projetos e Ações": 175.0,
+  "Analistas e Times": 70.0,
+  "Catálogos de Papéis e Stacks": 70.0,
+  "Clientes e Secretarias": 35.0,
+  "Governança, Usuários e Auditoria": 105.0
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "exercicio": 2026,
+ "preco_pf": 1215.09,
+ "preco_fundamento": "Preço aprovado pela comissão na Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), com base na pesquisa de preços registrada no Sigadoc sob SEPLAG-DIC-2026/59836-A e na Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A): centroide do Grupo 2 do agrupamento K-Means no cenário C5 (9 preços de ponto de função para Java coletados no Compras.gov.br e no PNCP, mais o Contrato nº 014/2022/SEPLAG), com os preços atualizados pelo IPCA até 10/2026. O grupo reúne os preços da Pagadoria de Pessoal da Marinha (R$ 1.114,16; ficha SEPLAG-CAP-2026/73353-A) e do Tribunal de Justiça do Estado do Pará (R$ 1.316,01; ficha SEPLAG-CAP-2026/73339-A), ambos formados em pregão eletrônico com disputa e conferidos com o resultado homologado no PNCP. A escolha mantém o critério do inventário de 2025, que adotou o centroide do Grupo 2.",
+ "registro_preco": "Pesquisa de preços, Sigadoc SEPLAG-DIC-2026/59836-A; Manifestação Técnica da pesquisa, SEPLAG-DIC-2026/59842-A; Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+ "fonte_preco_curta": "Manifestação Técnica de Aprovação do Preço do Ponto de Função 2026 (Sigadoc SEPLAG-DIC-2026/59859), data-base 10/2026",
+ "responsavel": {
+  "nome": "Jonathas Gomes Marques",
+  "cargo": "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI)",
+  "matricula": "280193",
+  "portaria": "Portaria nº 124/2026/SEPLAG",
+  "funcao": "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)"
+ },
+ "roteiro_sisp": "2.3",
+ "vida_util": "Indefinida",
+ "quebrar_rotulos_grafico": 22,
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "sigla": "PRIMO",
+ "nome": "Plataforma de Planejamento e Projetos de TI",
+ "arquivo_saida": "LAUDO_TECNICO_AVALIACAO_PRIMO_2026",
+ "baseline": "../../../2. Levantamento_Identificacao_Avaliacao/2.2 Softwares Dev. Internamente/2.1. Medições em APF/36. PRIMO/APF-PRIMO-v1.0.xlsx",
+ "baseline_nome": "APF-PRIMO-v1.0.xlsx",
+ "baseline_versao": "1.0",
+ "medida": "Indicativa (NESMA)",
+ "medida_descricao": "Contagem indicativa (NESMA): 35 PF por ALI e 15 PF por AIE (planilha, aba Sumário 1, célula G47); 14 ALI, 490 PF",
+ "nivel_contagem": "Indicativa (NESMA)",
+ "situacao": "Em produção",
+ "tecnologia": "PHP, MySQL",
+ "vi": 0.75,
+ "texto_nivel": "O PRIMO não tinha contagem de pontos de função. A documentação disponível é o Manual do Usuário, com a visão de operador (perfil Líder de Produtos e Fluxos), que descreve módulos, telas e regras, mas não os campos e processos de cada tela no grau exigido pela contagem estimativa. A comissão elaborou a Especificação de Requisitos do PRIMO (SPEC v1.0) e fez a contagem no nível Indicativo (NESMA, ISO/IEC 24570), que identifica apenas as funções de dados e atribui 35 PF a cada Arquivo Lógico Interno (ALI) e 15 PF a cada Arquivo de Interface Externa (AIE), com o peso das transações embutido: 14 ALI e nenhum AIE, total de 490 PF (aba Sumário 1, célula G47).",
+ "tipo_bem": "Software desenvolvido pela SEPLAG; código-fonte do Estado de Mato Grosso",
+ "unidade_desenvolvimento": "Coordenadoria de Planejamento e Projetos de TI (CPPTI/SEPLAG), em PHP com MySQL",
+ "areas_negocio": "Coordenadoria de Planejamento e Projetos de TI (CPPTI) e Superintendência de Sistemas Corporativos de Planejamento e Gestão da SEPLAG; gestores de produtos e fluxos, líderes de projeto e coordenadores; secretarias e órgãos clientes como demandantes",
+ "perfis": "Administrador, Estratégico (superintendentes, diretores e alta administração), Gestor de Produto/Fluxo, Líder de Projeto e Coordenador, com acesso por perfil (RBAC); auditores e órgãos de controle como consumidores dos relatórios",
+ "base_legal": "Não foram disponibilizadas normas que instituam o PRIMO. O Manual do Usuário apresenta o sistema como o instrumento oficial de governança, planejamento e acompanhamento das entregas de TI da CPPTI, e o Guia Operacional de Padronização de Projetos de Sustentação define a abertura trimestral dos projetos de sustentação no sistema",
+ "vi_justificativa": [
+  "O PRIMO é o sistema oficial de governança das demandas de TI da CPPTI: registra e prioriza as solicitações (DoD) pelo critério RICE-Gov, que pondera amparo legal e prioridade de gabinete, organiza as entregas na árvore de produtos, fluxos, projetos, sprints e ações, aloca as equipes internas e da fábrica de software e informa horas, USTs e prazos. Nenhuma UST deve ser autorizada sem solicitação registrada no sistema (Manual, Cap. 4).",
+  "A indisponibilidade do PRIMO comprometeria a priorização das demandas, a autorização e o controle das USTs da fábrica e a prestação de contas aos gestores e órgãos de controle, com prejuízo de alto impacto. A comissão adota o nível Muito importante, índice 0,75, da tabela do art. 11, § 4º, da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, conforme decisão do presidente da comissão."
+ ],
+ "finalidade": [
+  "O PRIMO (Plataforma de Planejamento e Projetos de TI) é o sistema oficial de governança, planejamento e acompanhamento das entregas de Tecnologia da Informação da Coordenadoria de Planejamento e Projetos de TI (CPPTI) da SEPLAG-MT, desenvolvido internamente pela própria Coordenadoria para a gestão estratégica, operacional e gerencial das demandas de TI.",
+  "Funciona como uma torre de controle: recebe a solicitação (DoD), calcula seu impacto pelo RICE-Gov, autoriza o plano na árvore de Produtos e Projetos, aloca os especialistas e registra a entrega com rastreabilidade, respondendo o que foi pedido (dor do órgão registrada no SIGADOC), quem está trabalhando, quanto está custando (horas e USTs) e quando será entregue (cronograma das sprints).",
+  "Na versão v1.1.0.0, o cadastro de pessoas foi unificado, reunindo servidores internos e especialistas de fábrica. Os dashboards trazem a matriz de alocação e capacidade, o relatório \"Quem Fez o Quê\", as entregas por cliente e as previsões, com exportação em PDF e CSV, e as entregas por iniciativa própria (IP) ficam separadas das oficiais."
+ ],
+ "integracoes": [
+  [
+   "SIGADOC e SEI",
+   "Número e link do processo da solicitação; o despacho timbrado é gerado para juntada no SIGADOC",
+   "Fora da fronteira; sem leitura de dados"
+  ],
+  [
+   "Redmine, GLPI e SisProjeto",
+   "Controle das demandas individuais de sustentação, consolidado no projeto trimestral",
+   "Fora da fronteira"
+  ]
+ ],
+ "modulos": {},
+ "modulos_grupo": [
+  [
+   "^M01\\ Solicitações\\ \\(DoD\\)$",
+   "Solicitações (DoD)"
+  ],
+  [
+   "^M02\\ Produtos,\\ Fluxos,\\ Projetos\\ e\\ Ações$",
+   "Produtos, Fluxos, Projetos e Ações"
+  ],
+  [
+   "^M03\\ Analistas\\ e\\ Times$",
+   "Analistas e Times"
+  ],
+  [
+   "^M04\\ Catálogos\\ de\\ Papéis\\ e\\ Stacks$",
+   "Catálogos de Papéis e Stacks"
+  ],
+  [
+   "^M05\\ Clientes\\ e\\ Secretarias$",
+   "Clientes e Secretarias"
+  ],
+  [
+   "^M07\\ Governança,\\ Usuários\\ e\\ Auditoria$",
+   "Governança, Usuários e Auditoria"
+  ]
+ ],
+ "ordem_modulos": [
+  "Solicitações (DoD)",
+  "Produtos, Fluxos, Projetos e Ações",
+  "Analistas e Times",
+  "Catálogos de Papéis e Stacks",
+  "Clientes e Secretarias",
+  "Governança, Usuários e Auditoria"
+ ],
+ "modulos_tabela": [
+  [
+   "Solicitações (DoD)",
+   "Registrar e priorizar as demandas formais de TI (Documento de Oficialização de Demanda), porta de entrada de qualquer nova necessidade."
+  ],
+  [
+   "Produtos, Fluxos, Projetos e Ações",
+   "Organizar, planejar e executar as entregas na árvore hierárquica Produto/Fluxo, Projeto, Sprint, Ação e Subação."
+  ],
+  [
+   "Analistas e Times",
+   "Manter o cadastro unificado de pessoas (servidores internos e especialistas de fábrica) e os times técnicos."
+  ],
+  [
+   "Catálogos de Papéis e Stacks",
+   "Padronizar os papéis da estrutura hierárquica e as tecnologias homologadas."
+  ],
+  [
+   "Clientes e Secretarias",
+   "Manter as unidades consumidoras de tecnologia e seus interlocutores."
+  ],
+  [
+   "Dashboards e Relatórios",
+   "Responder o que foi pedido, quem está trabalhando, quanto custa e quando será entregue."
+  ],
+  [
+   "Governança, Usuários e Auditoria",
+   "Controlar o acesso por perfis (RBAC) e auditar as alterações."
+  ]
+ ],
+ "documentos": [],
+ "grupos_sem_historia": {},
+ "propriedade": "Código-fonte do Estado de Mato Grosso, desenvolvido pela CPPTI/SEPLAG",
+ "uso": "Em produção (versão v1.1.0.0+), com perfis de acesso para a alta administração, gestores, líderes e coordenadores",
+ "beneficio": "Potencial de serviço: priorização objetiva das demandas de TI, controle das horas e USTs da fábrica, alocação das equipes e transparência das entregas para gestores, clientes e órgãos de controle",
+ "fase_texto": "Sistema em produção, versão v1.1.0.0+, com manual de usuário emitido em novembro de 2026",
+ "custo_incorrido": "O PRIMO foi desenvolvido pela equipe interna da CPPTI e não há registro do custo de desenvolvimento nem do custo do projeto. Como o custo incorrido (art. 10, III) não é mensurável com confiabilidade, o bem é avaliado pela metodologia do art. 11.",
+ "analise_documental": "Leitura do Manual do Usuário (24 páginas, com capturas de tela) e do Guia de Sustentação; elaboração da Especificação de Requisitos (SPEC v1.0, por módulos); contagem indicativa dos grupos de dados",
+ "documentacao_resumo": "Manual do Usuário e Guia de Operações Ilustrado, Guia Operacional de Padronização de Projetos de Sustentação, Especificação de Requisitos SPEC v1.0 e planilha de contagem v1.0 (Anexo I)",
+ "documentacao_fonte": "Manual do Usuário e Guia de Operações Ilustrado do PRIMO (v1.1.0.0+, novembro de 2026), com a visão de operador do perfil Líder de Produtos e Fluxos, e Guia Operacional de Padronização de Projetos de Sustentação. A comissão consolidou esse material na Especificação de Requisitos do PRIMO (SPEC v1.0).",
+ "ressalva_documentacao": "A avaliação foi feita com a documentação existente e disponibilizada, o que não significa que outros documentos não existam. O manual tem a visão de operador, com acesso restrito ao perfil, o que limitou a contagem ao nível indicativo.",
+ "texto_evolucao": "Primeira medição do sistema: a contagem indicativa de 26/11/2026 (planilha v1.0), derivada da SPEC v1.0, mede 490 PF.",
+ "exemplos_tipos": [
+  "Solicitação (DoD), produto/fluxo, projeto, sprint, ação, alocação, pessoa, time, papel, stack, cliente, usuário, perfil, log de auditoria",
+  "Não há",
+  "Embutidas no peso indicativo",
+  "Embutidas no peso indicativo",
+  "Embutidas no peso indicativo"
+ ],
+ "historico_medicoes": [
+  {
+   "inventario": 2026,
+   "data": "26/11/2026",
+   "pf": 490,
+   "nivel": "Indicativa (NESMA)",
+   "situacao": "Em produção",
+   "uso": "Planilha v1.0 (primeira contagem); VI 0,75"
+  }
+ ],
+ "fonte_historico": "Fonte: este laudo (primeira avaliação do sistema no inventário de bens intangíveis).",
+ "fora_do_escopo": [
+  "Requisitos não funcionais e atividades de sustentação (IN, art. 10, parágrafo único).",
+  "As transações (entradas, consultas e saídas), embutidas no peso indicativo de cada ALI.",
+  "Preferências de interface, sessões e a ajuda contextual (Guia do Primo), dados e funções técnicas ou de ajuda.",
+  "SIGADOC, SEI, Redmine, GLPI e SisProjeto, fora da fronteira."
+ ],
+ "outros_documentos": [
+  [
+   "Manual do Usuário e Guia de Operações Ilustrado do PRIMO",
+   "Versão do sistema v1.1.0.0+, 24 páginas",
+   "11/2026",
+   "Módulos, perfis, telas, regras e glossário"
+  ],
+  [
+   "Guia Operacional de Padronização de Projetos de Sustentação",
+   "Diretriz da Diretoria de Tecnologia e Operações",
+   "11/2026",
+   "Projetos trimestrais de sustentação no PRIMO"
+  ],
+  [
+   "Especificação de Requisitos do PRIMO (SPEC v1.0)",
+   "Elaborada pela comissão",
+   "26/11/2026",
+   "28 requisitos funcionais por módulo; base da contagem"
+  ],
+  [
+   "Planilha de contagem APF-PRIMO v1.0",
+   "Elaborada pela comissão",
+   "26/11/2026",
+   "Funções de dados e tamanho indicativo"
+  ]
+ ],
+ "texto_acompanham": "A Especificação de Requisitos (SPEC v1.0) e a planilha de contagem acompanham o processo do inventário para conferência.",
+ "ressalvas_extras": [
+  "Nível indicativo: a contagem considera só os 14 grupos de dados mantidos pelo PRIMO, com o peso das transações embutido. Recomenda-se, para o próximo inventário, a contagem estimativa ou detalhada a partir de documentação com a visão completa do sistema (todos os perfis) ou de histórias de usuário."
+ ]
+}

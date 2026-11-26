@@ -1,0 +1,868 @@
+{
+ "titulo": "Relatório Resumido do Valor Apurado de Bens Intangíveis",
+ "subtitulos": [
+  "Consolidação das categorias: desenvolvidos internamente e adquiridos",
+  "Inventário de Bens Intangíveis · Exercício 2026"
+ ],
+ "arquivo_saida": "RELATORIO_RESUMIDO_VALOR_APURADO_BENS_INTANGIVEIS_2026",
+ "cidade_data": "Cuiabá/MT, 26 de novembro de 2026.",
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
+ "cards": [
+  [
+   "VALOR APURADO 2026",
+   "R$ 78.611.015,47",
+   "58 bens"
+  ],
+  [
+   "DESENVOLVIDOS",
+   "R$ 70.234.996,71",
+   "39 sistemas · 89,3%"
+  ],
+  [
+   "ADQUIRIDOS",
+   "R$ 8.376.018,76",
+   "18 licenças e SEAP · 10,7%"
+  ],
+  [
+   "VARIAÇÃO",
+   "R$ 27.346.665,18",
+   "53,3% sobre 2025"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "Preâmbulo"
+  ],
+  [
+   "p",
+   "Este relatório resume o valor apurado dos bens intangíveis da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT) no inventário do exercício de 2026, conduzido pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, nos termos da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ. Consolida as duas categorias de bens intangíveis, cada uma detalhada em relatório próprio, sintético e analítico, e nos respectivos laudos técnicos de avaliação."
+  ],
+  [
+   "secao",
+   "",
+   "1. Valor apurado no exercício de 2026"
+  ],
+  [
+   "tabela",
+   [
+    "Categoria",
+    "Grupo",
+    "Bens",
+    "Critério de mensuração",
+    "Valor apurado (R$)",
+    "%"
+   ],
+   [
+    [
+     "Desenvolvidos internamente e/ou medidos por pontos de função",
+     "Sistemas da SEPLAG",
+     "39",
+     "Pontos de função (31.732,8 PF) × preço do PF (R$ 1.215,09), acrescido do Valor Institucional (art. 11)",
+     "R$ 70.234.996,71",
+     "89,3%"
+    ],
+    [
+     "Adquiridos",
+     "Licenças e softwares de prateleira",
+     "18",
+     "Custo de aquisição registrado no patrimônio (SIGPAT)",
+     "R$ 3.121.832,16",
+     "4,0%"
+    ],
+    [
+     "Adquiridos",
+     "SEAP (Contrato nº 001/2026/SEPLAG)",
+     "1",
+     "Valor do contrato (cláusula 2.2), com amortização linear em 12 meses",
+     "R$ 5.254.186,60",
+     "6,7%"
+    ],
+    [
+     "TOTAL",
+     "",
+     "58",
+     "",
+     "R$ 78.611.015,47",
+     "100,0%"
+    ]
+   ],
+   "Valor apurado dos bens intangíveis da SEPLAG, exercício de 2026",
+   [
+    20,
+    19,
+    6,
+    31,
+    15,
+    9
+   ],
+   [
+    2,
+    4,
+    5
+   ],
+   [
+    3
+   ]
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Valor apurado:",
+   "O valor apurado dos bens intangíveis da SEPLAG no exercício de 2026 é de **R$ 78.611.015,47**, sendo R$ 70.234.996,71 de softwares desenvolvidos internamente e R$ 8.376.018,76 de softwares adquiridos."
+  ],
+  [
+   "secao",
+   "",
+   "2. Evolução em relação aos inventários anteriores"
+  ],
+  [
+   "tabela",
+   [
+    "Categoria",
+    "2024",
+    "2025",
+    "2026",
+    "Variação 2026 x 2025",
+    "Var. %"
+   ],
+   [
+    [
+     "Desenvolvidos internamente",
+     "R$ 26.249.155,48",
+     "R$ 44.976.518,13",
+     "R$ 70.234.996,71",
+     "R$ 25.258.478,58",
+     "56,2%"
+    ],
+    [
+     "Adquiridos: licenças e prateleira",
+     "R$ 1.920.656,05",
+     "R$ 3.121.832,16",
+     "R$ 3.121.832,16",
+     "R$ 0,00",
+     "0,0%"
+    ],
+    [
+     "Adquiridos: SEAP",
+     "R$ 96.833,33",
+     "R$ 3.166.000,00",
+     "R$ 5.254.186,60",
+     "R$ 2.088.186,60",
+     "66,0%"
+    ],
+    [
+     "TOTAL",
+     "R$ 28.266.644,86",
+     "R$ 51.264.350,29",
+     "R$ 78.611.015,47",
+     "R$ 27.346.665,18",
+     "53,3%"
+    ]
+   ],
+   "Valores por inventário (2024: versões finais; o SEAP de 2024 constava da aba de sistemas e aqui foi agrupado com os adquiridos)",
+   [
+    28,
+    15,
+    15,
+    15,
+    17,
+    10
+   ],
+   [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   [
+    3
+   ]
+  ],
+  [
+   "figura",
+   "graficos/G1_evolucao_por_categoria.png",
+   "Valor apurado por inventário e categoria",
+   15
+  ],
+  [
+   "p",
+   "O crescimento de 2025 para 2026 nos desenvolvidos internamente (R$ 25.258.478,58) decorre do novo preço do PF (R$ 943,25 para R$ 1.215,09, efeito de R$ 12.962.010,80), do aumento de tamanho das medições (R$ 1.485.204,51), da revisão do Valor Institucional (R$ 3.347.572,95) e da inclusão de 8 sistemas (SIGEP, Primo, SIGQA, SIDBENS, Contagem, PV, SAGEP, SIDE, R$ 7.463.690,33). Nos adquiridos, as licenças não se alteraram e o SEAP passou a ser avaliado pelo valor do Contrato nº 001/2026/SEPLAG."
+  ],
+  [
+   "secao",
+   "",
+   "3. Vida útil e amortização"
+  ],
+  [
+   "tabela",
+   [
+    "Categoria",
+    "Vida útil",
+    "Tratamento"
+   ],
+   [
+    [
+     "Desenvolvidos internamente",
+     "Indefinida",
+     "Sem amortização; valor revisto a cada inventário (art. 16)."
+    ],
+    [
+     "Licenças e softwares de prateleira",
+     "Indefinida para as licenças perpétuas e vitalícias; definida para as cessões temporárias",
+     "Mantido o custo de aquisição registrado no patrimônio."
+    ],
+    [
+     "SEAP",
+     "12 meses (26/01/2026 a 25/01/2027)",
+     "Amortização linear mensal de R$ 437.848,88; acumulada em 31/12/2026: R$ 4.816.337,68; valor líquido em 31/12/2026: R$ 437.848,92."
+    ]
+   ],
+   null,
+   [
+    26,
+    30,
+    44
+   ]
+  ],
+  [
+   "p",
+   "O valor apurado do SEAP (R$ 5.254.186,60) é o valor bruto do contrato. Para o registro contábil no encerramento do exercício, deve ser considerada a amortização acumulada até 31/12/2026, que reduz o valor líquido desse bem a R$ 437.848,92; com isso, o valor líquido do conjunto de bens intangíveis em 31/12/2026 é de R$ 73.794.677,79."
+  ],
+  [
+   "secao",
+   "",
+   "4. Pontos de atenção"
+  ],
+  [
+   "lista",
+   [
+    "Autodesk AEC (N6500051, R$ 698.315,73) e Adobe CC VIP (N6500050, R$ 99.085,00): cessão temporária do Contrato nº 019/2023/SEPLAG com vigência encerrada em 19/07/2026; confirmar renovação ou proceder à baixa.",
+    "SIDBENS (N6500012): registrado no endereço patrimonial de softwares por R$ 201.481,68, mas é sistema desenvolvido internamente e foi avaliado por pontos de função (R$ 520.969,84); não integra o grupo de adquiridos, para evitar contagem em duplicidade.",
+    "SIGQA: consta com o nome \"TesteOPS\" na aba Avaliação 2026; o valor (R$ 703.537,11) é o do seu laudo.",
+    "C0045042: data de aquisição de 2023 no patrimônio, diferente de 2021 das demais licenças do mesmo lote; confirmar no SIGPAT."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "5. Documentos de referência"
+  ],
+  [
+   "tabela",
+   [
+    "Documento",
+    "Conteúdo"
+   ],
+   [
+    [
+     "Relatório de Levantamento e Avaliação de Bens Intangíveis Desenvolvidos Internamente e/ou Medidos por Pontos de Função, exercício 2026 (sintético e analítico)",
+     "39 sistemas, resumo por valor final, detalhamento e conciliação com 2024 e 2025"
+    ],
+    [
+     "Relatório de Levantamento e Avaliação de Bens Intangíveis Adquiridos, exercício 2026 (sintético e analítico)",
+     "18 licenças e o SEAP, conciliação por bem com 2023 a 2025 e com o relatório patrimonial"
+    ],
+    [
+     "Laudos Técnicos de Avaliação dos sistemas desenvolvidos internamente (39)",
+     "Medição em PF, Valor Institucional e valor de cada sistema"
+    ],
+    [
+     "Laudo Técnico de Avaliação dos Softwares Adquiridos e Laudo Técnico de Avaliação do SEAP",
+     "Valor das licenças; valor, vigência e amortização do SEAP"
+    ],
+    [
+     "Manifestação Técnica de Aprovação do Preço do PF 2026 (Sigadoc SEPLAG-DIC-2026/59859)",
+     "Preço do PF de R$ 1.215,09 (pesquisa SEPLAG-DIC-2026/59836-A; Manifestação SEPLAG-DIC-2026/59842-A)"
+    ]
+   ],
+   null,
+   [
+    60,
+    40
+   ]
+  ],
+  [
+   "quebra"
+  ],
+  [
+   "secao",
+   "",
+   "Anexo I. Softwares desenvolvidos internamente"
+  ],
+  [
+   "tabela",
+   [
+    "Nº",
+    "Sigla",
+    "Nome",
+    "Situação",
+    "PF",
+    "VI",
+    "Valor apurado (R$)"
+   ],
+   [
+    [
+     "1",
+     "SISPAT",
+     "Sistema de Gestão Patrimonial",
+     "Produção",
+     "5.375",
+     "1,00",
+     "R$ 13.062.217,50"
+    ],
+    [
+     "2",
+     "SIAG",
+     "Sistema Integrado de Aquisições Governamentais e Contratos",
+     "Produção",
+     "4.239,5",
+     "1,00",
+     "R$ 10.302.748,11"
+    ],
+    [
+     "3",
+     "SIG-SST",
+     "Sistema de Saúde e Segurança no Trabalho",
+     "Produção",
+     "2.416,8",
+     "1,00",
+     "R$ 5.873.259,02"
+    ],
+    [
+     "4",
+     "SIGEP",
+     "Sistema de Gestão de Pessoas e Pagamento",
+     "Desenvolvimento",
+     "2.691",
+     "0,25",
+     "R$ 4.087.258,99"
+    ],
+    [
+     "5",
+     "SIGPAS",
+     "Sistema de Gestão de Assiduidade",
+     "Produção",
+     "1.601,6",
+     "1,00",
+     "R$ 3.892.176,29"
+    ],
+    [
+     "6",
+     "SIGED",
+     "Sistema de Gestão Eletrônica de Documentos",
+     "Produção",
+     "1.565,8",
+     "0,75",
+     "R$ 3.329.528,86"
+    ],
+    [
+     "7",
+     "SICAD",
+     "Sistema de Concessão de Adiantamento",
+     "Produção",
+     "905",
+     "1,00",
+     "R$ 2.199.312,90"
+    ],
+    [
+     "8",
+     "Censo",
+     "Sistema do Censo Previdenciário",
+     "Produção",
+     "780",
+     "1,00",
+     "R$ 1.895.540,40"
+    ],
+    [
+     "9",
+     "SIGEV",
+     "Sistema de Gestão de Viagens",
+     "Produção",
+     "749",
+     "1,00",
+     "R$ 1.820.204,82"
+    ],
+    [
+     "10",
+     "RAG",
+     "Monitora/RAG",
+     "Produção",
+     "740",
+     "1,00",
+     "R$ 1.798.333,20"
+    ],
+    [
+     "11",
+     "PSICO",
+     "Sistema de Saúde e Segurança no Trabalho - Psicossocial",
+     "Produção",
+     "734",
+     "1,00",
+     "R$ 1.783.752,12"
+    ],
+    [
+     "12",
+     "SIES-MT",
+     "Sistema Estadual de Seleção",
+     "Produção",
+     "699",
+     "1,00",
+     "R$ 1.698.695,82"
+    ],
+    [
+     "13",
+     "SIEP",
+     "Sistema Estadual de Produtividade",
+     "Produção",
+     "657,2",
+     "1,00",
+     "R$ 1.597.114,30"
+    ],
+    [
+     "14",
+     "SINOVA",
+     "Sistema Prêmio Eficiência e Inovação",
+     "Produção",
+     "593",
+     "1,00",
+     "R$ 1.441.096,74"
+    ],
+    [
+     "15",
+     "RECAD",
+     "Recadastramento",
+     "Produção",
+     "665",
+     "0,75",
+     "R$ 1.414.060,99"
+    ],
+    [
+     "16",
+     "PORTAL",
+     "Portal do Servidor",
+     "Produção",
+     "513,2",
+     "1,00",
+     "R$ 1.247.168,38"
+    ],
+    [
+     "17",
+     "SICC",
+     "Sistema Integrado de Certidão de Crédito",
+     "Produção",
+     "666",
+     "0,50",
+     "R$ 1.213.874,91"
+    ],
+    [
+     "18",
+     "Primo",
+     "Primo",
+     "Produção",
+     "490",
+     "0,75",
+     "R$ 1.041.939,68"
+    ],
+    [
+     "19",
+     "SINER",
+     "Sistema de Emprego do Reeducando",
+     "Produção",
+     "456",
+     "0,75",
+     "R$ 969.641,82"
+    ],
+    [
+     "20",
+     "SIFSW",
+     "Sistema da Inteligência de Gestão de Fábrica de Software",
+     "Desenvolvimento",
+     "612",
+     "0,25",
+     "R$ 929.543,85"
+    ],
+    [
+     "21",
+     "Manopla",
+     "Manopla",
+     "Produção",
+     "380",
+     "1,00",
+     "R$ 923.468,40"
+    ],
+    [
+     "22",
+     "WEB PONTO",
+     "Web Ponto",
+     "Produção",
+     "367",
+     "0,75",
+     "R$ 780.391,55"
+    ],
+    [
+     "23",
+     "Revisa",
+     "Revisa Consignados",
+     "Produção",
+     "319",
+     "1,00",
+     "R$ 775.227,42"
+    ],
+    [
+     "24",
+     "SIGQA",
+     "TesteOPS",
+     "Produção",
+     "386",
+     "0,50",
+     "R$ 703.537,11"
+    ],
+    [
+     "25",
+     "Banco de Talentos",
+     "Sistema de Banco de Talentos",
+     "Produção",
+     "317",
+     "0,50",
+     "R$ 577.775,30"
+    ],
+    [
+     "26",
+     "Opiniões",
+     "Sistema de Opiniões",
+     "Produção",
+     "266",
+     "0,75",
+     "R$ 565.624,40"
+    ],
+    [
+     "27",
+     "SEI",
+     "Sistema Estadual de Indicadores",
+     "Produção",
+     "353",
+     "0,25",
+     "R$ 536.158,46"
+    ],
+    [
+     "28",
+     "SIADES",
+     "Sistema de Avaliação de Desempenho",
+     "Desenvolvimento",
+     "344",
+     "0,25",
+     "R$ 522.488,70"
+    ],
+    [
+     "29",
+     "SIDBENS",
+     "Sistema de Distribuição de Bens",
+     "Produção",
+     "245",
+     "0,75",
+     "R$ 520.969,84"
+    ],
+    [
+     "30",
+     "SIGS",
+     "Sistema de Inteligência de Gestão de Serviços",
+     "Produção",
+     "293",
+     "0,25",
+     "R$ 445.026,71"
+    ],
+    [
+     "31",
+     "SCPA",
+     "Sistema de Catálogo Produto Atividade",
+     "Produção",
+     "240",
+     "0,50",
+     "R$ 437.432,40"
+    ],
+    [
+     "32",
+     "Contagem",
+     "Contagem de Tempo",
+     "Produção",
+     "258",
+     "0,25",
+     "R$ 391.866,53"
+    ],
+    [
+     "33",
+     "DBV",
+     "Declaração de Bens e Valores",
+     "Produção",
+     "181,7",
+     "0,50",
+     "R$ 331.172,78"
+    ],
+    [
+     "34",
+     "PV",
+     "Progressão Vertical",
+     "Produção",
+     "210",
+     "0,25",
+     "R$ 318.961,12"
+    ],
+    [
+     "35",
+     "SAGEP",
+     "Sistema de Agendamento de Perícia Médica",
+     "Desenvolvimento",
+     "204",
+     "0,25",
+     "R$ 309.847,95"
+    ],
+    [
+     "36",
+     "WEB PONTO",
+     "Web Ponto Client Biometria",
+     "Produção",
+     "80",
+     "0,75",
+     "R$ 170.112,60"
+    ],
+    [
+     "37",
+     "SGA-Perícia Médica",
+     "SGA-Perícia Médica",
+     "Produção",
+     "52",
+     "1,00",
+     "R$ 126.369,36"
+    ],
+    [
+     "38",
+     "Ag. SGA",
+     "Agendamento de Atendimento do SGA",
+     "Produção",
+     "46",
+     "1,00",
+     "R$ 111.788,28"
+    ],
+    [
+     "39",
+     "SIDE",
+     "Sistema Inteligente de Dados Estratégicos",
+     "Produção",
+     "42",
+     "0,75",
+     "R$ 89.309,12"
+    ],
+    [
+     "",
+     "TOTAL",
+     "",
+     "",
+     "31.732,8",
+     "",
+     "R$ 70.234.996,71"
+    ]
+   ],
+   "Sistemas da aba Avaliação 2026, do maior para o menor valor",
+   [
+    5,
+    14,
+    38,
+    12,
+    9,
+    6,
+    16
+   ],
+   [
+    4,
+    5,
+    6
+   ],
+   [
+    39
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "Anexo II. Softwares adquiridos"
+  ],
+  [
+   "tabela",
+   [
+    "Nº",
+    "Patrimônio",
+    "Bem",
+    "Prazo da licença",
+    "Valor apurado (R$)"
+   ],
+   [
+    [
+     "1",
+     "N6500013",
+     "HIPERCONVERGENTE",
+     "Licenciamento de solução de infraestrutura (hiperconvergência)",
+     "R$ 1.479.468,92"
+    ],
+    [
+     "2",
+     "N6500051",
+     "AUTODESK AEC",
+     "Cessão temporária de direito de uso (locação de software)",
+     "R$ 698.315,73"
+    ],
+    [
+     "3",
+     "N6500049",
+     "Business Intelligence – Qlik, ou Qlik Analytics Plattform",
+     "Licença perpétua de uso (servidor)",
+     "R$ 337.179,00"
+    ],
+    [
+     "4",
+     "N0696928",
+     "GERENCIAMENTO DE REDE",
+     "Licença de software de gerenciamento de rede",
+     "R$ 136.869,63"
+    ],
+    [
+     "5",
+     "N0696930",
+     "SOFTWARE DE ANÁLISE DE APLICAÇÕES",
+     "Licença de software de análise de aplicações",
+     "R$ 104.876,05"
+    ],
+    [
+     "6",
+     "N6500050",
+     "ADOBE CC VIP",
+     "Cessão temporária de direito de uso (locação de software)",
+     "R$ 99.085,00"
+    ],
+    [
+     "7",
+     "N0696929",
+     "SOFTWARE DE GERENCIAMENTO CONTROLE DE ACESSO EM REDE",
+     "Licença de software de controle de acesso em rede",
+     "R$ 82.977,16"
+    ],
+    [
+     "8",
+     "N0696927",
+     "XCC",
+     "Licença permanente com chave de ativação e suporte",
+     "R$ 38.279,67"
+    ],
+    [
+     "9",
+     "C0045037",
+     "SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS ESTRUTURAIS",
+     "Licença vitalícia",
+     "R$ 34.374,00"
+    ],
+    [
+     "10",
+     "C0045038",
+     "SOFTWARE COM LICENÇA VITALÍCIA PARA PROJETOS ESTRUTURAIS",
+     "Licença vitalícia",
+     "R$ 34.374,00"
+    ],
+    [
+     "11",
+     "N6500037",
+     "ALTOQI BUILDER 2022 SOFTWARE PARA PROJETOS DE INSTALACOES PREDIAIS",
+     "Licença de software (AltoQi Builder 2022)",
+     "R$ 13.376,00"
+    ],
+    [
+     "12",
+     "C0045039",
+     "QIBUIDER 2021 ELÉTRICO SOFTWARE COM LICENÇA VITALÍCIA",
+     "Licença vitalícia",
+     "R$ 13.200,00"
+    ],
+    [
+     "13",
+     "C0045040",
+     "QIBUIDER 2021 ELÉTRICO SOFTWARE COM LICENÇA VITALÍCIA",
+     "Licença vitalícia",
+     "R$ 13.200,00"
+    ],
+    [
+     "14",
+     "C0045041",
+     "QIBUILDER 2021 HIDRAULICO SOFTWARE COM LICENÇA VITALÍCIA",
+     "Licença vitalícia",
+     "R$ 13.200,00"
+    ],
+    [
+     "15",
+     "C0045042",
+     "QIBUILDER 2021 HIDRAULICO SOFTWARE COM LICENÇA VITALÍCIA",
+     "Licença vitalícia",
+     "R$ 13.200,00"
+    ],
+    [
+     "16",
+     "1067839",
+     "GEOOFFICE",
+     "Licença vitalícia",
+     "R$ 4.247,00"
+    ],
+    [
+     "17",
+     "N6500038",
+     "ATUALIZACAO SW P/ ALTOQI BUILDER 2022",
+     "Atualização de software (AltoQi Builder 2022 Planea Essencial)",
+     "R$ 2.805,00"
+    ],
+    [
+     "18",
+     "N6500039",
+     "ATUALIZACAO SW P/ ALTOQI BUILDER 2022 P",
+     "Atualização de software (AltoQi Builder 2022 Planea Essencial)",
+     "R$ 2.805,00"
+    ],
+    [
+     "19",
+     "-",
+     "SEAP (Contrato nº 001/2026/SEPLAG)",
+     "12 meses (26/01/2026 a 25/01/2027)",
+     "R$ 5.254.186,60"
+    ],
+    [
+     "",
+     "TOTAL",
+     "",
+     "",
+     "R$ 8.376.018,76"
+    ]
+   ],
+   "Licenças da aba Licenças 2026 e SEAP",
+   [
+    5,
+    11,
+    38,
+    30,
+    16
+   ],
+   [
+    4
+   ],
+   [
+    19
+   ]
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), Portaria nº 124/2026/SEPLAG",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

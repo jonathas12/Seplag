@@ -1,0 +1,1645 @@
+{
+ "titulo": "Nota Técnica Consultiva",
+ "subtitulos": [
+  "Gestão e Governança de Software: diligências e recomendações do Inventário de Bens Intangíveis 2026",
+  "Versão 1.0"
+ ],
+ "arquivo_saida": "Nota_Tecnica_Consultiva_Gestao_Governanca_Software",
+ "cidade_data": "Cuiabá/MT, 27 de novembro de 2026.",
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
+ "cards": [
+  [
+   "DILIGÊNCIAS",
+   "19",
+   "5 prioritárias até 10/12/2026"
+  ],
+  [
+   "SEM DOCUMENTAÇÃO",
+   "18 de 39",
+   "R$ 17.321.654,74"
+  ],
+  [
+   "SEM USO OU SUSPENSOS",
+   "R$ 1.910.729,02",
+   "R$ 815.525,33 já pagos"
+  ],
+  [
+   "RECOMENDAÇÕES",
+   "20",
+   "3 propostas normativas"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "Apresentação"
+  ],
+  [
+   "p",
+   "Esta Nota Técnica Consultiva, versão 1.0, consolida as diligências e as recomendações da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) resultantes do inventário do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT). Substitui a versão 0.2, de 16/11/2026, cujo conteúdo foi incorporado e ampliado com os achados dos 38 laudos técnicos de avaliação emitidos no exercício."
+  ],
+  [
+   "p",
+   "O fundamento é o art. 3º da Portaria nº 124/2026/SEPLAG, que atribui à comissão, entre outras competências, solicitar ao setorial de tecnologia da informação as informações sobre os softwares e demais bens intangíveis, inclusive sobre a existência de instrumento jurídico que autorize a sua utilização (inciso I), e \"realizar diligências, sempre que julgar necessário, visando à confirmação de informações\" (inciso III). A IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 3º, parágrafo único, determina que os titulares das unidades inventariadas ofereçam à CIABI todos os meios, recursos e colaboração necessários ao cumprimento de suas atribuições."
+  ],
+  [
+   "caixa",
+   "info",
+   "Natureza do documento:",
+   "Documento consultivo e orientativo. Não altera os valores do inventário de 2026 nem atribui responsabilidade a pessoas. Registra fatos documentados nos laudos, indica a informação que falta e propõe as medidas para obtê-la. Onde a documentação não foi apresentada, isso não significa que ela não exista, mas que não chegou à comissão."
+  ],
+  [
+   "secao",
+   "",
+   "1. Síntese"
+  ],
+  [
+   "p",
+   "O inventário de 2026 apurou **R$ 78.611.015,47** em bens intangíveis, dos quais R$ 70.234.996,71 (89,3%) em 39 softwares desenvolvidos internamente, avaliados pelo método do art. 11 da IN Conjunta nº 003/2022/SEPLAG/SEFAZ (pontos de função multiplicados pelo preço de mercado, acrescidos do Valor Institucional). Esse método é o previsto para softwares \"cuja documentação seja insuficiente ou não tenha sido localizada\", e a própria norma o destina a \"inventário, registro contábil e regularização documental\" (art. 13). O valor registrado depende, portanto, da qualidade da informação que as áreas de tecnologia e de negócio fornecem à comissão."
+  ],
+  [
+   "p",
+   "Os laudos registram que essa informação ainda é incompleta e dispersa. Os achados se concentram em nove eixos: documentação, uso e benefício, transição de sistemas legados, fundamentação de origem, custos, licenças e registros patrimoniais, qualidade das contagens e das entregas, propriedade intelectual e consistência cadastral."
+  ],
+  [
+   "tabela",
+   [
+    "Indicador",
+    "Valor",
+    "Fonte"
+   ],
+   [
+    [
+     "Softwares desenvolvidos internamente sem documentação funcional disponibilizada",
+     "18 de 39 (R$ 17.321.654,74)",
+     "Seção de ressalvas dos laudos"
+    ],
+    [
+     "Softwares em produção sem uso ou com projeto suspenso (SEI, SIGS, SIFSW)",
+     "3 (R$ 1.910.729,02)",
+     "Laudos do SEI, do SIGS e do SIFSW"
+    ],
+    [
+     "Custo pago à fábrica de software nesses três sistemas",
+     "R$ 815.525,33",
+     "Painel de custos de projetos, TRDs até 07/2026"
+    ],
+    [
+     "Projetos em desenvolvimento sem demonstração dos requisitos do art. 9º",
+     "5 (R$ 5.630.423,29)",
+     "Laudos do SIGEP, SAGEP, SIADES, Progressão Vertical e Contagem de Tempo"
+    ],
+    [
+     "Sistemas legados com sucessor definido e sem plano formal de transição",
+     "4 (R$ 1.188.661,79)",
+     "Laudos do Web Ponto, Web Ponto Client, SGA-Perícia Médica e Agendamento SGA"
+    ],
+    [
+     "Licenças com cessão temporária encerrada em 19/07/2026, ainda registradas",
+     "2 (R$ 797.400,73)",
+     "Laudo dos Softwares Adquiridos"
+    ],
+    [
+     "Softwares com custo de projeto registrado",
+     "7 de 39 (R$ 7.494.435,94)",
+     "Laudos com custo de projeto da fábrica de software"
+    ],
+    [
+     "Softwares com registro no INPI informado à comissão",
+     "nenhum",
+     "Laudos de 2026"
+    ]
+   ],
+   "Indicadores dos achados do inventário de 2026",
+   [
+    62,
+    20,
+    18
+   ],
+   [
+    1
+   ],
+   []
+  ],
+  [
+   "figura",
+   "graficos/G1_valor_sob_ressalva.png",
+   "Valor de avaliação dos bens com ressalva, por eixo do achado (um bem pode aparecer em mais de um eixo)",
+   15
+  ],
+  [
+   "p",
+   "Nenhum desses achados, isoladamente, indica irregularidade. Em conjunto, mostram que parte relevante do ativo registrado no balanço da SEPLAG não tem, hoje, documento de origem, demonstração de uso ou custo que permita a sua verificação independente. É esse o ponto que as diligências e recomendações desta Nota buscam resolver."
+  ],
+  [
+   "secao",
+   "",
+   "2. Por que o ativo intangível exige lastro"
+  ],
+  [
+   "subsecao",
+   "2.1 O bem que ninguém vê"
+  ],
+  [
+   "p",
+   "A IN Conjunta nº 003/2022/SEPLAG/SEFAZ define bem intangível como \"ativo não monetário, sem substância física, identificável, controlado pela entidade e gerador de benefícios econômicos futuros ou potencial de serviços\" (art. 2º, II). Sem substância física, o software não pode ser conferido por inspeção, como um veículo ou um imóvel. A sua existência, o seu uso e o seu valor só se comprovam por documentos: especificação, código-fonte em repositório institucional, termo de entrega, registro de uso, contrato e norma que o institui."
+  ],
+  [
+   "p",
+   "Por isso a norma exclui do registro os softwares adquiridos sem licenciamento válido e os gerados internamente que não estejam em uso por obsolescência ou defasagem tecnológica (art. 2º, § 2º), e exige que a entidade demonstre, para os bens em desenvolvimento, a viabilidade técnica de conclusão, a intenção de concluir e usar, a forma de geração de benefícios, a disponibilidade de recursos e a capacidade de mensurar os gastos (art. 9º, I a VI). Um bem registrado que não existe, não está em uso ou não gera benefício infla o ativo e o patrimônio líquido do órgão e do Estado. Neste documento, esse risco é chamado de \"sistema fantasma\"."
+  ],
+  [
+   "subsecao",
+   "2.2 Lições de casos de mercado"
+  ],
+  [
+   "p",
+   "Dois casos recentes, de naturezas distintas da administração pública, ilustram o mecanismo pelo qual saldos sem lastro se acumulam até um ajuste de grande porte:"
+  ],
+  [
+   "lista",
+   [
+    "**Americanas (2023).** Segundo a Polícia Federal, a Operação Disclosure, deflagrada em 27/06/2024 com o Ministério Público Federal e apoio técnico da CVM, apura fraudes contábeis que, \"conforme Fato Relevante divulgado pela própria empresa, chegam ao montante de R$ 25,3 bilhões\", relacionadas a operações de risco sacado e a contratos de verba de propaganda cooperada, em que \"eram contabilizadas VPCs que nunca existiram\" (Polícia Federal, nota de 27/06/2024).",
+    "**Banco Master (2025).** A Polícia Federal deflagrou em 18/11/2025 a Operação Compliance Zero, iniciada após requisição do Ministério Público Federal \"para investigar a possível fabricação de carteiras de crédito insubsistentes por uma instituição financeira\", títulos que \"teriam sido vendidos a outro banco e, após fiscalização do Banco Central, substituídos por outros ativos sem avaliação técnica adequada\" (Polícia Federal, nota de 18/11/2025). O Ministério da Justiça e Segurança Pública informou que as investigações \"apontam que o Banco Master teria criado carteiras de crédito sem lastro, posteriormente vendidas ao Banco de Brasília (BRB)\" (MJSP, nota de 16/04/2026). Em 28/10/2026, a PF apresentou ao STF relatório parcial com o indiciamento de 15 pessoas; a investigação prossegue, sem decisão judicial definitiva."
+   ]
+  ],
+  [
+   "p",
+   "A situação da SEPLAG é de natureza diferente: não há ocultação, e as limitações estão declaradas nos próprios laudos. A lição aproveitável é estrutural. Nos dois casos, ativos ou reduções de passivo foram registrados sem documento que comprovasse a sua existência, e a distorção se manteve enquanto não houve conciliação independente. No intangível público o risco é o mesmo: um sistema desativado, nunca usado ou com entregas não comprovadas continua no balanço enquanto ninguém verifica. O remédio também é o mesmo: lastro documental, segregação de funções e verificação periódica."
+  ],
+  [
+   "subsecao",
+   "2.3 Investimento (CAPEX) e custeio (OPEX)"
+  ],
+  [
+   "p",
+   "O desenvolvimento de um software novo ou de uma evolução relevante é investimento: os custos incorridos compõem o valor do ativo, inclusive os de benefícios a empregados (IN, art. 10, III, \"b\"). A manutenção periódica, que compreende mão de obra de manutenção, renovação de licenças e horas técnicas de correção (art. 2º, IV), é despesa e não entra no valor do software (art. 10, parágrafo único)."
+  ],
+  [
+   "p",
+   "Na SEPLAG, conforme a versão 0.2 desta Nota, a manutenção é feita por pessoal próprio, com salários e encargos lançados como despesa operacional, sem separação entre sustentação e evolução. A comissão não recebeu dados que permitam quantificar quanto da folha da área de tecnologia corresponde a cada sistema e a cada fase. Sem essa informação, não é possível saber quanto custou construir cada produto, quanto custa mantê-lo, nem se o aumento de custos de um contrato ou de uma equipe é justificado pelo benefício entregue. A Lei nº 14.133/2021 exige que a contratação considere o ciclo de vida do objeto (art. 11, I) e evite sobrepreço e superfaturamento (art. 11, III); o custo total de propriedade (TCO) é a medida desse ciclo de vida."
+  ],
+  [
+   "secao",
+   "",
+   "3. Diagnóstico do inventário de 2026"
+  ],
+  [
+   "p",
+   "Os achados abaixo foram extraídos das seções de ressalvas dos laudos técnicos de avaliação de 2026 e dos relatórios consolidados do inventário. O Anexo I traz a matriz completa por sistema."
+  ],
+  [
+   "subsecao",
+   "3.1 Documentação ausente, parcial ou dispersa"
+  ],
+  [
+   "p",
+   "Dos 39 softwares desenvolvidos internamente, 18 não tiveram documentação funcional disponibilizada à comissão, e as suas contagens foram feitas por navegação no sistema, por apresentação da equipe ou mantidas de inventários anteriores. Em outros 10, a documentação existe, mas com lacunas relevantes: no SISPAT, 24 histórias de usuário com funções contadas não foram localizadas; no SIGED, 34 de 68; no SIGEP, as histórias das Sprints 1 a 3, 5, 7 e 8. A documentação está distribuída em pastas de projeto, e-mails de entrega, drives e ferramentas diferentes, sem repositório institucional único."
+  ],
+  [
+   "tabela",
+   [
+    "Situação da documentação",
+    "Sistemas",
+    "Valor de avaliação",
+    "% do grupo"
+   ],
+   [
+    [
+     "Sem documentação funcional disponibilizada",
+     "18",
+     "R$ 17.321.654,74",
+     "24,7%"
+    ],
+    [
+     "Documentação parcial, geral ou elaborada pela comissão",
+     "6",
+     "R$ 14.099.600,59",
+     "20,1%"
+    ],
+    [
+     "Histórias de usuário com lacunas",
+     "10",
+     "R$ 31.213.110,41",
+     "44,4%"
+    ],
+    [
+     "Documentação adequada à contagem",
+     "5",
+     "R$ 7.600.630,97",
+     "10,8%"
+    ],
+    [
+     "TOTAL",
+     "39",
+     "R$ 70.234.996,71",
+     "100,0%"
+    ]
+   ],
+   "Situação da documentação funcional dos softwares desenvolvidos internamente",
+   [
+    46,
+    12,
+    24,
+    18
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    4
+   ]
+  ],
+  [
+   "p",
+   "Sem documentação, a contagem tende a subestimar ou superestimar o tamanho, não permite distinguir sustentação de evolução e não preserva o conhecimento das regras de negócio. A cada inventário, a comissão refaz o trabalho de descobrir o que cada sistema faz."
+  ],
+  [
+   "subsecao",
+   "3.2 Uso e benefício não demonstrados"
+  ],
+  [
+   "p",
+   "Oito bens não tiveram demonstrado o uso ou os requisitos do art. 9º da IN Conjunta nº 003/2022/SEPLAG/SEFAZ. A comissão os manteve no inventário com ressalva, porque não houve decisão formal de descontinuação, mas o seu reconhecimento depende das informações solicitadas nas diligências da Seção 6."
+  ],
+  [
+   "tabela",
+   [
+    "Sistema",
+    "Situação registrada no laudo",
+    "Valor de avaliação",
+    "Custo pago à fábrica",
+    "Fato registrado"
+   ],
+   [
+    [
+     "SEI",
+     "Em produção, sem uso",
+     "R$ 536.158,46",
+     "R$ 264.260,25",
+     "Em produção desde 10/08/2023, não operacionalizado; continuidade discutida diante de solução similar no FIPLAN"
+    ],
+    [
+     "SIGS",
+     "Em produção, sem uso",
+     "R$ 445.026,71",
+     "R$ 205.591,79",
+     "Em produção desde 03/09/2024, sem uso; tentativas de continuidade sem priorização formal"
+    ],
+    [
+     "SIFSW",
+     "Em desenvolvimento, suspenso",
+     "R$ 929.543,85",
+     "R$ 345.673,29",
+     "Projeto suspenso em 05/09/2025, sem data de retomada"
+    ],
+    [
+     "SIGEP",
+     "Em desenvolvimento",
+     "R$ 4.087.258,99",
+     "-",
+     "Entregas até a Sprint 23; previsão de conclusão e implantação não informada"
+    ],
+    [
+     "SIADES",
+     "Em desenvolvimento",
+     "R$ 522.488,70",
+     "-",
+     "Sem informação sobre entrada em produção, uso ou conclusão"
+    ],
+    [
+     "Contagem de Tempo",
+     "Em desenvolvimento",
+     "R$ 391.866,53",
+     "-",
+     "Sem informação sobre produção ou conclusão; a aba de avaliação registra \"Produção\""
+    ],
+    [
+     "Progressão Vertical",
+     "Em desenvolvimento",
+     "R$ 318.961,12",
+     "-",
+     "Sem informação sobre produção ou conclusão; a aba de avaliação registra \"Produção\""
+    ],
+    [
+     "SAGEP",
+     "Em desenvolvimento",
+     "R$ 309.847,95",
+     "-",
+     "Apresentado em homologação; sem previsão de implantação"
+    ],
+    [
+     "TOTAL",
+     "",
+     "R$ 7.541.152,31",
+     "R$ 815.525,33",
+     ""
+    ]
+   ],
+   "Bens sem demonstração de uso ou dos requisitos do art. 9º",
+   [
+    12,
+    15,
+    15,
+    14,
+    44
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    8
+   ]
+  ],
+  [
+   "p",
+   "Nos três primeiros casos o investimento já foi realizado: R$ 815.525,33 foram pagos à fábrica de software do Contrato nº 014/2022/SEPLAG por sistemas que hoje não geram serviço. Se não houver intenção de uso, a IN determina a baixa ou o reconhecimento da perda por redução ao valor recuperável (art. 18), e o registro como ativo deixa de se sustentar."
+  ],
+  [
+   "subsecao",
+   "3.3 Transição de sistemas legados sem plano formal"
+  ],
+  [
+   "p",
+   "Quatro sistemas em produção têm sucessor definido, mas sem decisão formal, plano de transição ou cronograma de encerramento: o Web Ponto e o Web Ponto Client Biometria, que serão sucedidos pelo SIGPAS; e o SGA-Perícia Médica e o Agendamento SGA, que serão sucedidos pelo SAGEP. Juntos somam R$ 1.188.661,79. O SEAP (R$ 5.254.186,60, contrato com vigência até 25/01/2027) tem o SIGEP como sucessor concebido. Enquanto o legado e o sucessor coexistirem sem plano, o Estado paga e registra dois ativos para a mesma finalidade, e o encerramento do legado não chega ao setor contábil (art. 23)."
+  ],
+  [
+   "subsecao",
+   "3.4 Fundamentação da origem e instrumentos jurídicos"
+  ],
+  [
+   "p",
+   "A Portaria nº 124/2026/SEPLAG, art. 3º, I, inclui no levantamento a informação sobre instrumento jurídico que autorize a utilização do bem. Os laudos registram lacunas nesse ponto:"
+  ],
+  [
+   "lista",
+   [
+    "**SIDE:** o Documento de Oficialização da Demanda (2022) não tem o campo de aprovação preenchido e previa a plataforma QlikSense; a solução implantada usa o Power BI Embedded, sem registro formal da mudança de plataforma e de escopo. Não foram disponibilizadas normas que instituam o portal.",
+    "**SIDBENS:** as instruções normativas citadas como origem do sistema (IN nº 005/2019/SEPLAG/SEAPS e IN nº 008/2019/SEPLAG) foram revogadas pela IN nº 003/2024/SEPLAG; o manual disponibilizado é anterior à regra implementada.",
+    "**Censo Previdenciário:** a SEPLAG desenvolve, mantém e hospeda o sistema, e o MTPrev, autarquia com autonomia patrimonial, é o demandante e o beneficiário; não foi localizado termo de cessão ou instrumento equivalente que defina a titularidade.",
+    "**SIAG:** o Contrato nº 019/2021/SEPLAG veda à SEPLAG vender, ceder ou disponibilizar o sistema a terceiros sem anuência da contratada (item 15.20), o que limita a alienação do bem.",
+    "**SINER:** a página pública do sistema não cita o Decreto Estadual nº 377/2023, que o instituiu.",
+    "**Diversos sistemas:** a norma que obriga ou regula o uso (por exemplo, a IN nº 005/2025/SEPLAG para o SIES-MT) traz funcionalidades cuja implantação não foi confirmada à comissão."
+   ]
+  ],
+  [
+   "p",
+   "Os documentos de origem (DOD, estudo técnico preliminar, termo de abertura, norma instituidora) muitas vezes existem, mas não foram fornecidos pelas equipes setoriais de TI e de negócio. Para contratações, a Lei nº 14.133/2021 exige que o processo seja instruído com o documento de formalização de demanda e, se for o caso, o estudo técnico preliminar (art. 72, I), e que a fase preparatória descreva a necessidade da contratação \"fundamentada em estudo técnico preliminar que caracterize o interesse público envolvido\" (art. 18, I)."
+  ],
+  [
+   "subsecao",
+   "3.5 Custos de projetos e custo total de propriedade"
+  ],
+  [
+   "p",
+   "Somente 7 dos 39 softwares desenvolvidos internamente têm custo de projeto registrado, todos com participação da fábrica de software, no total de R$ 7.494.435,94 (base: Termos de Recebimento Definitivo até 07/2026). Os outros 32 foram desenvolvidos e são mantidos pela equipe interna, sem apontamento de esforço por produto. Não há registro do custo de sustentação de nenhum sistema, nem do custo de infraestrutura, licenças de plataforma e suporte associados. A NBC TSP 34 - Custos no Setor Público estabelece as diretrizes do sistema de informação de custos, em que o produto ou serviço pode ser objeto de custo."
+  ],
+  [
+   "tabela",
+   [
+    "Sistema",
+    "Custo de projeto registrado",
+    "Valor de avaliação 2026",
+    "Situação"
+   ],
+   [
+    [
+     "SISPAT",
+     "R$ 3.744.728,30",
+     "R$ 13.062.217,50",
+     "Produção"
+    ],
+    [
+     "SIGPAS",
+     "R$ 1.306.582,49",
+     "R$ 3.892.176,29",
+     "Produção"
+    ],
+    [
+     "SIGED",
+     "R$ 1.127.934,64",
+     "R$ 3.329.528,86",
+     "Produção"
+    ],
+    [
+     "SIEP",
+     "R$ 499.665,18",
+     "R$ 1.597.114,30",
+     "Produção"
+    ],
+    [
+     "SIFSW",
+     "R$ 345.673,29",
+     "R$ 929.543,85",
+     "Desenvolvimento"
+    ],
+    [
+     "SEI",
+     "R$ 264.260,25",
+     "R$ 536.158,46",
+     "Produção"
+    ],
+    [
+     "SIGS",
+     "R$ 205.591,79",
+     "R$ 445.026,71",
+     "Produção"
+    ],
+    [
+     "TOTAL",
+     "R$ 7.494.435,94",
+     "R$ 23.791.765,97",
+     ""
+    ]
+   ],
+   "Softwares com custo de projeto da fábrica de software registrado (componente de desenvolvimento)",
+   [
+    22,
+    26,
+    26,
+    26
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    7
+   ]
+  ],
+  [
+   "subsecao",
+   "3.6 Licenças e registros patrimoniais"
+  ],
+  [
+   "lista",
+   [
+    "**Cessões encerradas e não baixadas:** a Autodesk AEC (N6500051, R$ 698.315,73) e a Adobe Creative Cloud (N6500050, R$ 99.085,00), do Contrato nº 019/2023/SEPLAG, tiveram a cessão encerrada em 19/07/2026 e continuam registradas. A IN exclui do registro o software adquirido \"sem licenciamento válido, ou seja, com prazo contratualmente vencido\" (art. 2º, § 2º, I). Por serem de prazo determinado, o valor deveria ter sido amortizado ao longo dos 36 meses da cessão (arts. 16, § 2º, e 17).",
+    "**Registro sem origem informada:** o SIDBENS consta do SIGPAT (N6500012) por R$ 201.481,68, incorporado em 10/08/2022, sem que a origem desse valor tenha sido informada à comissão; é software desenvolvido internamente e foi avaliado por pontos de função em R$ 520.969,84.",
+    "**Data divergente:** a licença C0045042 tem data de aquisição de 2023, diferente de 2021 das demais do mesmo lote.",
+    "**Documentos de licença:** não foram disponibilizados nota fiscal, contrato ou certificado de licença de cada item do grupo de adquiridos."
+   ]
+  ],
+  [
+   "subsecao",
+   "3.7 Qualidade das contagens e comprovação das entregas"
+  ],
+  [
+   "p",
+   "Em três sistemas desenvolvidos com a fábrica de software, a planilha de contagem incluía funções especificadas e não entregues em produção, que a comissão excluiu do tamanho adotado: 189 PF no SEI, 366 PF no SIGS e 225 PF no SIFSW. Os laudos recomendam que a fiscalização do contrato confirme, nos Termos de Recebimento Definitivo, as histórias efetivamente recebidas. Esse é o ponto de controle que liga o pagamento à entrega: a Lei nº 14.133/2021 determina que \"a execução do contrato deverá ser acompanhada e fiscalizada por 1 (um) ou mais fiscais do contrato\" (art. 117)."
+  ],
+  [
+   "p",
+   "Também foram encontradas planilhas com campos herdados de modelos de outros sistemas (nome de projeto, nível de detalhe e documentação de outro produto), referências quebradas, funções contadas em duplicidade e linhas de modelo sem funcionalidade, corrigidas nas cópias que acompanham os laudos (por exemplo, Manopla, SCPA, Banco de Talentos, SIFSW, SIEP, Recadastramento, Censo, Opiniões, Revisa Consignados e SIGS)."
+  ],
+  [
+   "subsecao",
+   "3.8 Propriedade intelectual"
+  ],
+  [
+   "p",
+   "Nenhum laudo de 2026 registra pedido ou certificado de registro de programa de computador ou de marca no Instituto Nacional da Propriedade Industrial (INPI), e a comissão não recebeu informação nesse sentido. A proteção do programa de computador \"independe de registro\" (Lei nº 9.609/1998, art. 2º, § 3º), e o registro é facultativo, \"a critério do titular\" (art. 3º). Os direitos sobre programa desenvolvido durante vínculo estatutário ou contrato pertencem, salvo estipulação em contrário, ao órgão público ou contratante (art. 4º). O registro, porém, é a prova pública de autoria, data e titularidade, relevante sobretudo nos desenvolvimentos híbridos com fábrica de software e nos sistemas compartilhados com outras entidades, como o Censo. Patente não é, em regra, o instrumento: a Lei nº 9.279/1996 não considera invenção os \"programas de computador em si\" (art. 10, V). A IN Conjunta nº 003/2022/SEPLAG/SEFAZ deixa ao órgão a decisão sobre o encaminhamento dos registros (art. 28), e a taxa de registro compõe o custo do ativo (art. 10, III, \"c\")."
+  ],
+  [
+   "subsecao",
+   "3.9 Consistência cadastral"
+  ],
+  [
+   "lista",
+   [
+    "A Progressão Vertical e a Contagem de Tempo estão como \"Produção\" na aba Avaliação 2026 e como \"em desenvolvimento\" nos laudos.",
+    "O SIGQA está registrado com o nome \"TesteOPS\" na aba Avaliação 2026.",
+    "O SIDE é chamado de \"Sistema Inteligente\" nos documentos do projeto e de \"Sistema Integrado\" em outra fonte.",
+    "Siglas variaram entre inventários (SIES e SIES-MT; Thanos e Manopla), e dois registros distintos compartilham a sigla WEB PONTO.",
+    "Os inventários usaram medidas diferentes da mesma planilha em anos distintos (PF IFPUG e PF Local da FS), o que exige conciliação a cada ano."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "4. Riscos"
+  ],
+  [
+   "tabela",
+   [
+    "Risco",
+    "Causa observada",
+    "Efeito",
+    "Severidade"
+   ],
+   [
+    [
+     "Ativo superavaliado (\"sistema fantasma\")",
+     "Sistemas sem uso, suspensos ou em desenvolvimento sem demonstração do art. 9º mantidos no registro",
+     "Ativo e patrimônio líquido do órgão e do Estado acima da realidade",
+     "Alta"
+    ],
+    [
+     "Licença vencida no balanço",
+     "Cessão encerrada sem baixa nem amortização",
+     "Registro vedado pelo art. 2º, § 2º, I",
+     "Alta"
+    ],
+    [
+     "Pagamento sem entrega comprovada",
+     "Funções especificadas e não entregues nas planilhas da fábrica",
+     "Risco de pagamento por escopo não recebido; fragiliza a fiscalização",
+     "Alta"
+    ],
+    [
+     "Custo real desconhecido",
+     "Folha da TI sem apontamento por produto; sustentação sem registro",
+     "Decisões de investir, manter ou descontinuar sem base; aumento de custos sem justificativa verificável",
+     "Alta"
+    ],
+    [
+     "Duplicidade de ativos na transição",
+     "Legado e sucessor coexistem sem plano",
+     "Gasto em dobro; baixa não comunicada à contabilidade",
+     "Média"
+    ],
+    [
+     "Perda de conhecimento",
+     "Documentação ausente ou dispersa; dependência de pessoas",
+     "Indisponibilidade prolongada em falha; custo de reconstrução",
+     "Alta"
+    ],
+    [
+     "Titularidade contestável",
+     "Ausência de termo de cessão, de cláusula expressa e de registro no INPI",
+     "Insegurança jurídica sobre o controle do bem",
+     "Média"
+    ],
+    [
+     "Segurança e continuidade",
+     "Débitos técnicos críticos registrados (SIDBENS); tecnologias legadas",
+     "Exposição de dados e indisponibilidade de serviços",
+     "Alta"
+    ],
+    [
+     "Ressalva nas contas",
+     "Ausência de teste de recuperabilidade, de amortização de licenças e de trilha documental",
+     "Apontamento dos órgãos de controle",
+     "Média"
+    ]
+   ],
+   "Matriz de riscos (severidade atribuída pela comissão)",
+   [
+    20,
+    32,
+    34,
+    14
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "5. Papéis: quem controla e quem verifica"
+  ],
+  [
+   "p",
+   "A pergunta sobre quem deve fazer o controle e a gestão dos produtos de software, se a área de tecnologia ou uma comissão, tem resposta na segregação de funções, princípio expresso da Lei nº 14.133/2021 (art. 5º), que veda a designação do mesmo agente para funções mais suscetíveis a riscos, \"de modo a reduzir a possibilidade de ocultação de erros e de ocorrência de fraudes\" (art. 7º, § 1º). A mesma lei atribui à alta administração a governança das contratações, com \"processos e estruturas, inclusive de gestão de riscos e controles internos\" (art. 11, parágrafo único)."
+  ],
+  [
+   "p",
+   "Aplicado aos softwares, o modelo tem quatro camadas. Quem constrói e mantém o produto (área de TI) e quem o demanda e usa (área de negócio) são os responsáveis pela gestão e pelos registros de origem: documentação, custo, uso e decisões de ciclo de vida. A CIABI não substitui essa gestão; ela solicita, consolida, diligencia e avalia (Portaria nº 124/2026/SEPLAG, art. 3º), de forma independente de quem executa. O patrimônio e a contabilidade registram, e o controle interno revisa."
+  ],
+  [
+   "tabela",
+   [
+    "Camada",
+    "Unidade",
+    "Responsabilidade"
+   ],
+   [
+    [
+     "Gestão do produto",
+     "Unidade setorial de TI (SSCPG/SAPGD/SEPLAG)",
+     "Catálogo e ficha de cada produto; documentação funcional e técnica em repositório único; classificação das demandas; apontamento de esforço; linha de base em PF; registro dos eventos do ciclo de vida"
+    ],
+    [
+     "Gestão do negócio",
+     "Área demandante de cada sistema",
+     "Formalização da demanda (DOD) e da norma que institui o sistema; atesto de uso e de relevância (Valor Institucional); decisão de continuidade, substituição ou descontinuação"
+    ],
+    [
+     "Fiscalização de contratos",
+     "Fiscais e gestores dos contratos de software",
+     "Vinculação de cada ordem de serviço a um produto; conferência das entregas nos termos de recebimento; registro do custo por produto"
+    ],
+    [
+     "Verificação e avaliação",
+     "CIABI",
+     "Diligências, conferência independente, avaliação, laudos e relatório anual; acompanhamento das recomendações ao longo do ano"
+    ],
+    [
+     "Registro",
+     "Patrimônio setorial e contabilidade",
+     "Incorporação, baixa, amortização e redução ao valor recuperável; reflexo no FIPLAN"
+    ],
+    [
+     "Governança e controle",
+     "Alta administração e controle interno",
+     "Aprovação das políticas; priorização do portfólio; revisão periódica dos controles"
+    ]
+   ],
+   "Distribuição de responsabilidades proposta",
+   [
+    18,
+    24,
+    58
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "6. Diligências"
+  ],
+  [
+   "p",
+   "As diligências abaixo são as solicitações formais de informação da comissão, com fundamento no art. 3º, III, da Portaria nº 124/2026/SEPLAG. Os prazos sugeridos consideram a data de 15 de dezembro para encaminhamento dos autos do inventário ao setor contábil (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 26, § 1º): as marcadas como prioritárias permitem ajuste ainda no exercício de 2026; as demais preparam o inventário de 2027. Recomenda-se o envio por memorando no Sigadoc, com resposta no mesmo processo. Sem resposta, a ressalva é mantida e reiterada no inventário seguinte."
+  ],
+  [
+   "tabela",
+   [
+    "Nº",
+    "Objeto",
+    "Destinatário",
+    "Fundamento",
+    "Prazo sugerido"
+   ],
+   [
+    [
+     "D01",
+     "Cessões da Autodesk AEC (N6500051) e da Adobe Creative Cloud (N6500050), encerradas em 19/07/2026: informar se houve renovação, com o instrumento; não havendo, proceder à baixa",
+     "Coordenadoria de Infraestrutura e Serviços de TI; patrimônio setorial",
+     "IN, arts. 2º, § 2º, I; 16, § 2º; 23",
+     "Prioritária: 10/12/2026"
+    ],
+    [
+     "D02",
+     "SEI e SIGS: decisão formal sobre uso e continuidade, com plano e recursos; ou decisão de descontinuação, para baixa ou reconhecimento da perda",
+     "Unidade setorial de TI e áreas de negócio demandantes",
+     "IN, arts. 2º, § 2º, II; 9º; 18",
+     "Prioritária: 10/12/2026"
+    ],
+    [
+     "D03",
+     "SIFSW: decisão formal sobre retomada (com cronograma e recursos) ou encerramento do projeto suspenso em 05/09/2025",
+     "Unidade setorial de TI e área de negócio",
+     "IN, arts. 9º e 18",
+     "Prioritária: 10/12/2026"
+    ],
+    [
+     "D04",
+     "Progressão Vertical e Contagem de Tempo: confirmar a situação (produção ou desenvolvimento) e a data de entrada em produção",
+     "Unidade setorial de TI",
+     "IN, arts. 9º e 23",
+     "Prioritária: 10/12/2026"
+    ],
+    [
+     "D05",
+     "SIDBENS: informar a origem do valor de R$ 201.481,68 registrado no SIGPAT (N6500012) e ajustar o registro ao valor do laudo; avaliar a reclassificação como software desenvolvido internamente",
+     "Patrimônio setorial e contabilidade",
+     "IN, arts. 22 e 23",
+     "Prioritária: 10/12/2026"
+    ],
+    [
+     "D06",
+     "SIGEP, SAGEP e SIADES: demonstrar os requisitos do art. 9º (viabilidade técnica, intenção de concluir e usar, forma de geração de benefícios, recursos e mensuração dos gastos), com previsão de implantação",
+     "Unidade setorial de TI e áreas de negócio",
+     "IN, art. 9º, I a VI",
+     "31/03/2027"
+    ],
+    [
+     "D07",
+     "Planos formais de transição: Web Ponto e Web Ponto Client para o SIGPAS; SGA-Perícia Médica e Agendamento SGA para o SAGEP; SEAP para o SIGEP; com cronograma de implantação e data de encerramento do legado",
+     "Unidade setorial de TI; Unidade Central de Gestão de Pessoas; Coordenadoria de Perícia Médica",
+     "IN, arts. 2º, § 2º, II, e 23",
+     "31/03/2027"
+    ],
+    [
+     "D08",
+     "SEI, SIGS e SIFSW: confirmar nos Termos de Recebimento Definitivo do Contrato nº 014/2022/SEPLAG as histórias efetivamente recebidas e pagas, e o custo correspondente",
+     "Fiscalização e gestão do Contrato nº 014/2022/SEPLAG",
+     "Lei nº 14.133/2021, art. 117",
+     "31/03/2027"
+    ],
+    [
+     "D09",
+     "Documentação funcional (histórias de usuário ou especificação) dos 18 sistemas sem documentação, começando pelos de Valor Institucional 1,00",
+     "Unidade setorial de TI e áreas de negócio",
+     "IN, art. 6º, parágrafo único, II; Portaria nº 124/2026, art. 3º, I",
+     "30/06/2027"
+    ],
+    [
+     "D10",
+     "Histórias de usuário com funções contadas e não localizadas (SISPAT, SIGED, SIGEP, SIEP, SIG-SST, Banco de Talentos, Revisa Consignados)",
+     "Unidade setorial de TI",
+     "IN, art. 6º, parágrafo único, II",
+     "31/03/2027"
+    ],
+    [
+     "D11",
+     "Documentos de origem: DOD aprovado e registro da mudança de plataforma do SIDE; norma vigente do SIDBENS; normas instituidoras dos sistemas sem base legal informada",
+     "Áreas de negócio demandantes",
+     "Portaria nº 124/2026, art. 3º, I; Lei nº 14.133/2021, arts. 18, I, e 72, I",
+     "31/03/2027"
+    ],
+    [
+     "D12",
+     "Censo Previdenciário: instrumento que defina titularidade, uso e responsabilidades entre a SEPLAG e o MTPrev; confirmação da pertinência das funções de dados da Prefeitura de Cuiabá no Censo e no Recadastramento",
+     "Unidade setorial de TI; MTPrev",
+     "Portaria nº 124/2026, art. 3º, I",
+     "30/06/2027"
+    ],
+    [
+     "D13",
+     "SIAG: planilha detalhada que embasou a medição indicativa de 4.095 PF",
+     "Unidade setorial de TI; gestão do Contrato nº 019/2021/SEPLAG",
+     "IN, art. 6º, parágrafo único, II",
+     "31/03/2027"
+    ],
+    [
+     "D14",
+     "Funcionalidades previstas em norma e não confirmadas: SIES-MT (acesso Gov.BR e API, IN nº 005/2025/SEPLAG); SIGEV (alterações do Decreto nº 2.121/2026); aceite da melhoria Gestão de Riscos do Monitora/RAG; cadastro de questionários do Manopla",
+     "Unidade setorial de TI",
+     "IN, art. 23",
+     "31/03/2027"
+    ],
+    [
+     "D15",
+     "Custo de desenvolvimento e de sustentação por produto, para os sistemas sem custo registrado, ainda que estimado a partir da alocação da equipe",
+     "Unidade setorial de TI, com apoio da área financeira",
+     "IN, arts. 9º, VI, e 10, III; NBC TSP 34",
+     "30/06/2027"
+    ],
+    [
+     "D16",
+     "Registros no INPI: informar se há pedido ou certificado de registro de programa de computador ou de marca de algum sistema",
+     "Unidade setorial de TI; assessoria jurídica",
+     "IN, art. 28; Lei nº 9.609/1998, art. 3º",
+     "31/03/2027"
+    ],
+    [
+     "D17",
+     "SIDBENS: plano de correção dos débitos técnicos de segurança de severidade crítica e alta registrados na documentação técnica",
+     "Unidade setorial de TI",
+     "IN, art. 14, § 1º, III",
+     "31/03/2027"
+    ],
+    [
+     "D18",
+     "Cadastro: corrigir o nome do SIGQA, uniformizar o nome do SIDE e as siglas, e definir identificador único para cada sistema",
+     "Unidade setorial de TI",
+     "Lei nº 4.320/1964, art. 94",
+     "31/03/2027"
+    ],
+    [
+     "D19",
+     "Licenças do grupo de adquiridos: arquivar nota fiscal, contrato ou termo e certificado de cada licença; confirmar a data de aquisição do C0045042",
+     "Coordenadoria de Infraestrutura e Serviços de TI; patrimônio setorial",
+     "Lei nº 4.320/1964, art. 94",
+     "31/03/2027"
+    ]
+   ],
+   "Diligências da CIABI decorrentes do inventário de 2026",
+   [
+    5,
+    43,
+    22,
+    17,
+    13
+   ],
+   [],
+   [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "7. Recomendações"
+  ],
+  [
+   "p",
+   "As recomendações estão organizadas por eixo. Cada uma indica o responsável principal e o resultado esperado. Elas aprofundam as da versão 0.2 desta Nota e as do Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026), sem repeti-las integralmente."
+  ],
+  [
+   "subsecao",
+   "7.1 Governança e portfólio de produtos"
+  ],
+  [
+   "lista",
+   [
+    "**R01. Catálogo oficial de produtos de software.** Instituir o catálogo como fonte única de verdade sobre os sistemas da SEPLAG, com identificador, nome, sigla, gestor de negócio, gestor técnico, situação, tecnologia, norma instituidora, contrato associado, data de entrada em produção e de desligamento. O inventário passa a partir do catálogo, e não de levantamento a cada ano. Responsável: unidade setorial de TI.",
+    "**R02. Dono de negócio por produto.** Designar formalmente, para cada sistema, o gestor de negócio, que atesta uso, relevância e continuidade. Sistema sem dono designado é sinal de alerta para o inventário. Responsável: alta administração e áreas de negócio.",
+    "**R03. Revisão anual de portfólio.** Antes do inventário, revisar cada produto quanto a uso, custo, risco e decisão (manter, evoluir, substituir, descontinuar), com registro da decisão. Responsável: comitê ou instância de governança de TI."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.2 Gestão de projetos e de produtos"
+  ],
+  [
+   "lista",
+   [
+    "**R04. Marcos formais do ciclo de vida.** Termo de abertura (com DOD aprovado), termo de entrada em produção, termo de passagem para sustentação e termo de descontinuação, cada um comunicado ao patrimônio e à contabilidade (IN, art. 23).",
+    "**R05. Projeto não pode ficar em desenvolvimento indefinidamente.** Todo projeto em desenvolvimento deve ter cronograma, orçamento e data-alvo de implantação; projeto sem atividade por mais de um ciclo de inventário deve ter decisão formal de retomada ou encerramento.",
+    "**R06. Transição de legados com plano.** Toda substituição de sistema deve ter plano de transição (cutover) com responsáveis, mapeamento de funcionalidades, migração de dados, operação em paralelo, data de encerramento do legado e destino dos dados."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.3 Documentação e conhecimento"
+  ],
+  [
+   "lista",
+   [
+    "**R07. Repositório institucional único.** Centralizar, por produto, a documentação funcional (histórias de usuário versionadas e aprovadas), técnica (arquitetura, modelo de dados, integrações), de contagem (linha de base em PF) e contratual, além do código-fonte em repositório institucional.",
+    "**R08. Ficha mínima do produto.** Adotar a ficha do Anexo III como requisito para qualquer sistema entrar em produção e para ser avaliado no inventário.",
+    "**R09. Linha de base atualizada a cada entrega.** Atualizar a contagem de pontos de função a cada entrega evolutiva aceita, e não uma vez por ano, usando sempre a mesma medida (PF Local da FS ou PF IFPUG) entre inventários."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.4 Custos, investimento e custo total de propriedade"
+  ],
+  [
+   "lista",
+   [
+    "**R10. Classificação de toda demanda na origem** (pesquisa, desenvolvimento, evolutiva, adaptativa, corretiva, sustentação), que define o tratamento como investimento ou despesa, conforme a versão 0.2 desta Nota.",
+    "**R11. Apontamento de esforço da equipe interna por produto e por classe**, com custo-hora médio da categoria e encargos, para apurar o custo de desenvolvimento (capitalizável, IN, art. 10, III, \"b\") e o de sustentação (despesa).",
+    "**R12. Custo total de propriedade (TCO) por produto**, somando desenvolvimento, evolução, sustentação, infraestrutura, licenças de plataforma e suporte, apresentado anualmente com o inventário. É o indicador que permite identificar aumento de custo sem aumento correspondente de benefício.",
+    "**R13. Ordens de serviço vinculadas ao produto** e termos de recebimento com a lista das histórias entregues, para que pagamento, entrega e ativo se reconciliem."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.5 Contratações e licenças"
+  ],
+  [
+   "lista",
+   [
+    "**R14. Participação da CIABI no planejamento de contratações de software**, com manifestação sobre o tratamento como ativo ou despesa antes da contratação, a partir do estudo técnico preliminar e do termo de referência (Lei nº 14.133/2021, arts. 6º, XX, e 18, I). Recomendação já registrada em 2025.",
+    "**R15. Controle de vigência de licenças**, com alerta antes do vencimento e comunicação obrigatória ao patrimônio do encerramento ou da renovação; amortização das licenças de prazo determinado (IN, arts. 16, § 2º, e 17)."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.6 Contabilidade e controle"
+  ],
+  [
+   "lista",
+   [
+    "**R16. Teste anual de redução ao valor recuperável** para os softwares de vida útil indefinida (IN, art. 18, parágrafo único; NBC TSP 09 e NBC TSP 10), com os indícios objetivos de perda da versão 0.2 desta Nota (sem uso, substituição em curso, tecnologia sem suporte, finalidade extinta).",
+    "**R17. Conciliação anual entre o catálogo, o SIGPAT e a contabilidade**, com tratamento das divergências antes do fechamento do exercício."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.7 Riscos, segurança e continuidade"
+  ],
+  [
+   "lista",
+   [
+    "**R18. Registro de riscos por produto**, incluindo dependência de pessoas, tecnologia sem suporte, débitos técnicos de segurança e ausência de documentação, com plano de tratamento para os sistemas de Valor Institucional 1,00."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.8 Propriedade intelectual"
+  ],
+  [
+   "lista",
+   [
+    "**R19. Registro de programa de computador no INPI**, a começar pelos sistemas imprescindíveis e pelos desenvolvidos em regime híbrido, e registro de marca para os sistemas com identidade perante o público; cláusula expressa de cessão de direitos e entrega de código-fonte nos contratos de desenvolvimento."
+   ]
+  ],
+  [
+   "subsecao",
+   "7.9 Comissão com atuação contínua"
+  ],
+  [
+   "lista",
+   [
+    "**R20. CIABI ativa durante todo o exercício**, com calendário trimestral de acompanhamento das diligências e recomendações, recebimento contínuo dos eventos do ciclo de vida e relatório anual. O inventário deixa de ser um esforço concentrado no fim do ano e passa a ser a consolidação de registros mantidos ao longo dele."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "8. Propostas normativas"
+  ],
+  [
+   "p",
+   "Para dar efetividade às recomendações, a comissão propõe três instrumentos, em ordem de alcance:"
+  ],
+  [
+   "tabela",
+   [
+    "Instrumento",
+    "Objeto",
+    "Competência",
+    "Situação"
+   ],
+   [
+    [
+     "Portaria SEPLAG (minuta no Anexo II)",
+     "Catálogo de Produtos de Software; ficha mínima; marcos do ciclo de vida; atuação contínua da CIABI; dever e prazo de resposta às diligências",
+     "Secretário de Estado de Planejamento e Gestão",
+     "Proposta nesta Nota"
+    ],
+    [
+     "Instrução Normativa Conjunta SEPLAG/SEFAZ",
+     "Custos e ciclo de vida dos produtos de software: classificação das demandas, apuração de custos, tratamento contábil, comunicação de eventos, indicadores",
+     "SEPLAG e SEFAZ",
+     "Minuta elaborada pela comissão em 2026"
+    ],
+    [
+     "Aperfeiçoamento da IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "Ver propostas abaixo",
+     "SEPLAG e SEFAZ",
+     "Sugestão para o órgão central"
+    ]
+   ],
+   null,
+   [
+    24,
+    44,
+    18,
+    14
+   ],
+   [],
+   []
+  ],
+  [
+   "p",
+   "Propostas de aperfeiçoamento da IN Conjunta nº 003/2022/SEPLAG/SEFAZ, a submeter aos órgãos centrais:"
+  ],
+  [
+   "lista",
+   [
+    "Prever o dever de resposta às diligências da CIABI em prazo definido, com registro da ausência de resposta no relatório final.",
+    "Definir a documentação mínima exigida por software para reconhecimento e avaliação (ficha do produto).",
+    "Estabelecer indícios objetivos e periodicidade anual para o teste de redução ao valor recuperável dos softwares de vida útil indefinida.",
+    "Fixar a transição do método do art. 11 para o custo incorrido (art. 10, III) nos softwares desenvolvidos após a vigência das regras de apuração de custos, mantendo o art. 11 para o legado, coerente com o caráter de regularização previsto no art. 13.",
+    "Explicitar a amortização das cessões temporárias de uso e a baixa automática ao fim da vigência sem renovação.",
+    "Prever a comunicação obrigatória dos eventos do ciclo de vida (início, entrada em produção, melhoria, descontinuação) ao setor contábil, detalhando o art. 23."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "9. Plano de implantação"
+  ],
+  [
+   "tabela",
+   [
+    "Etapa",
+    "Prazo",
+    "Entregas"
+   ],
+   [
+    [
+     "1",
+     "Até 15/12/2026",
+     "Respostas às diligências prioritárias (D01 a D05); ajustes no encaminhamento do inventário à contabilidade"
+    ],
+    [
+     "2",
+     "1º trimestre de 2027",
+     "Publicação da portaria; catálogo inicial dos 39 sistemas e das licenças; designação dos gestores de negócio; respostas às diligências D06 a D19 com prazo em março"
+    ],
+    [
+     "3",
+     "1º semestre de 2027",
+     "Repositório único; fichas dos sistemas imprescindíveis; classificação das demandas e vinculação das ordens de serviço ao produto; planos de transição"
+    ],
+    [
+     "4",
+     "2º semestre de 2027",
+     "Apontamento de esforço; primeiro TCO por produto; primeiro teste de recuperabilidade; registros no INPI dos sistemas prioritários"
+    ],
+    [
+     "5",
+     "Inventário de 2027",
+     "Inventário a partir do catálogo; acompanhamento das recomendações; proposta de IN Conjunta encaminhada à SEFAZ"
+    ]
+   ],
+   null,
+   [
+    8,
+    20,
+    72
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "10. Considerações finais"
+  ],
+  [
+   "p",
+   "O inventário de 2026 registrou R$ 78.611.015,47 em bens intangíveis com transparência sobre as suas limitações. O próximo passo é reduzir essas limitações na origem: a informação sobre cada produto deve ser produzida por quem o constrói e o usa, no momento em que os fatos ocorrem, e verificada de forma independente pela comissão. Com catálogo, documentação centralizada, custos apurados por produto e marcos formais de ciclo de vida, o valor registrado passa a ter lastro, os investimentos passam a ser comparáveis aos benefícios e os bens sem uso deixam o balanço no tempo certo."
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Encaminhamento:",
+   "Recomenda-se o encaminhamento desta Nota ao Secretário de Estado de Planejamento e Gestão, às Secretarias Adjuntas responsáveis pela tecnologia da informação e pelas áreas de negócio citadas, ao patrimônio setorial, ao setor contábil e à unidade setorial de controle interno, com a expedição das diligências da Seção 6."
+  ],
+  [
+   "secao",
+   "",
+   "Referências"
+  ],
+  [
+   "tabela",
+   [
+    "Documento",
+    "Fonte"
+   ],
+   [
+    [
+     "Portaria nº 124/2026/SEPLAG: institui a CIABI do exercício de 2026 (art. 3º)",
+     "Diário Oficial do Estado de Mato Grosso nº 29.279, 23/07/2026, código de autenticidade 4f8b6de4"
+    ],
+    [
+     "Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ, de 25/05/2022",
+     "Texto do portal de legislação da SEFAZ-MT, cópia nos autos do inventário"
+    ],
+    [
+     "Lei nº 9.609/1998 (programa de computador), arts. 2º, § 3º, 3º e 4º",
+     "https://www.planalto.gov.br/ccivil_03/leis/l9609.htm"
+    ],
+    [
+     "Lei nº 9.279/1996 (propriedade industrial), art. 10, V",
+     "https://www.planalto.gov.br/ccivil_03/leis/l9279.htm"
+    ],
+    [
+     "Lei nº 14.133/2021 (licitações e contratos), arts. 5º, 6º, XX, 7º, § 1º, 11, 18, I, 72, I, e 117",
+     "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+    ],
+    [
+     "Lei nº 4.320/1964, arts. 94 a 96",
+     "https://www.planalto.gov.br/ccivil_03/leis/l4320.htm"
+    ],
+    [
+     "NBC TSP 08 (R1) - Ativo Intangível; NBC TSP 09 (R1) e NBC TSP 10 (R1) - Redução ao Valor Recuperável; NBC TSP 34 - Custos no Setor Público",
+     "Conselho Federal de Contabilidade: https://cfc.org.br/tecnica/normas-brasileiras-de-contabilidade/nbc-tsp-do-setor-publico/"
+    ],
+    [
+     "INPI - Programas de Computador (serviço de registro)",
+     "https://www.gov.br/inpi/pt-br/servicos/programas-de-computador"
+    ],
+    [
+     "Polícia Federal. \"PF deflagra operação para elucidar fraudes contábeis da empresa Americanas\", 27/06/2024",
+     "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/06/pf-deflagra-operacao-para-elucidar-fraudes-contabeis-da-empresa-americanas"
+    ],
+    [
+     "Polícia Federal. Operação Compliance Zero, 1ª fase, 18/11/2025",
+     "https://www.gov.br/pf/pt-br/assuntos/noticias/2025/11/policia-federal-combate-crimes-praticados-contra-o-sistema-financeiro-nacional"
+    ],
+    [
+     "Ministério da Justiça e Segurança Pública. \"Operação Compliance Zero avança e mira corrupção no alto escalão do sistema financeiro\", 16/04/2026",
+     "https://www.gov.br/mj/pt-br/assuntos/noticias/operacao-compliance-zero-avanca-e-mira-corrupcao-no-alto-escalao-do-sistema-financeiro"
+    ],
+    [
+     "Polícia Federal. \"PF apresenta primeiros indiciamentos da Operação Compliance Zero em relatório parcial ao STF\", 28/10/2026",
+     "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apresenta-primeiros-indiciamentos-da-operacao-compliance-zero-em-relatorio-parcial-ao-stf"
+    ],
+    [
+     "Laudos Técnicos de Avaliação do inventário de 2026 (38 laudos) e relatórios consolidados do exercício",
+     "CIABI/SEPLAG, novembro de 2026"
+    ],
+    [
+     "Nota Técnica Consultiva, versão 0.2 (16/11/2026); Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026); Minuta de IN Conjunta de Custos e Ciclo de Vida dos Produtos de Software",
+     "CIABI/SEPLAG, 2026"
+    ]
+   ],
+   null,
+   [
+    52,
+    48
+   ],
+   [],
+   []
+  ],
+  [
+   "quebra"
+  ],
+  [
+   "secao",
+   "",
+   "Anexo I. Matriz de achados por sistema"
+  ],
+  [
+   "tabela",
+   [
+    "Sistema",
+    "Valor 2026",
+    "Documentação",
+    "Custo de projeto",
+    "Principal achado",
+    "Diligências"
+   ],
+   [
+    [
+     "SISPAT",
+     "R$ 13.062.217,50",
+     "Com lacunas",
+     "R$ 3.744.728,30",
+     "24 histórias com funções contadas não localizadas",
+     "D10"
+    ],
+    [
+     "SIAG",
+     "R$ 10.302.748,11",
+     "Parcial",
+     "Não registrado",
+     "Planilha da medição indicativa não localizada; contrato veda cessão (item 15.20)",
+     "D13, D15"
+    ],
+    [
+     "SIG-SST",
+     "R$ 5.873.259,02",
+     "Com lacunas",
+     "Não registrado",
+     "Histórias ausentes na pasta disponibilizada",
+     "D10, D15"
+    ],
+    [
+     "SIGEP (desenvolvimento)",
+     "R$ 4.087.258,99",
+     "Com lacunas",
+     "Não registrado",
+     "Sprints sem histórias na pasta; requisitos do art. 9º; sucessor do SEAP",
+     "D06, D07, D10, D15"
+    ],
+    [
+     "SIGPAS",
+     "R$ 3.892.176,29",
+     "Adequada",
+     "R$ 1.306.582,49",
+     "Histórias sem aprovação formal; sucessor do Web Ponto",
+     "D15"
+    ],
+    [
+     "SIGED",
+     "R$ 3.329.528,86",
+     "Com lacunas",
+     "R$ 1.127.934,64",
+     "34 de 68 histórias não localizadas",
+     "D10"
+    ],
+    [
+     "SICAD",
+     "R$ 2.199.312,90",
+     "Ausente",
+     "Não registrado",
+     "Sem documentação; processos de 2026 sem descrição do objeto",
+     "D09, D15"
+    ],
+    [
+     "Censo",
+     "R$ 1.895.540,40",
+     "Ausente",
+     "Não registrado",
+     "Titularidade SEPLAG e MTPrev sem instrumento; funções da Prefeitura de Cuiabá",
+     "D09, D12, D15"
+    ],
+    [
+     "SIGEV",
+     "R$ 1.820.204,82",
+     "Ausente",
+     "Não registrado",
+     "Sem requisitos; evoluções do Decreto nº 2.121/2026 não mensuráveis",
+     "D09, D14, D15"
+    ],
+    [
+     "RAG",
+     "R$ 1.798.333,20",
+     "Ausente",
+     "Não registrado",
+     "Sem documentação da baseline; aceite da melhoria não apresentado",
+     "D09, D14, D15"
+    ],
+    [
+     "PSICO",
+     "R$ 1.783.752,12",
+     "Adequada",
+     "Não registrado",
+     "Sem achado relevante",
+     "D15"
+    ],
+    [
+     "SIES-MT",
+     "R$ 1.698.695,82",
+     "Ausente",
+     "Não registrado",
+     "Funcionalidades da IN nº 005/2025 não confirmadas",
+     "D09, D14, D15"
+    ],
+    [
+     "SIEP",
+     "R$ 1.597.114,30",
+     "Com lacunas",
+     "R$ 499.665,18",
+     "Duas histórias com funções sem documento",
+     "D10"
+    ],
+    [
+     "SINOVA",
+     "R$ 1.441.096,74",
+     "Parcial",
+     "Não registrado",
+     "Documentação de 2026 não atualizada",
+     "D15"
+    ],
+    [
+     "RECAD",
+     "R$ 1.414.060,99",
+     "Ausente",
+     "Não registrado",
+     "Sem documentação; funções da Prefeitura de Cuiabá; sem custo",
+     "D09, D12, D15"
+    ],
+    [
+     "PORTAL",
+     "R$ 1.247.168,38",
+     "Ausente",
+     "Não registrado",
+     "Documentação só de certidões e CAT; tamanho pode estar subestimado",
+     "D09, D15"
+    ],
+    [
+     "SICC",
+     "R$ 1.213.874,91",
+     "Adequada",
+     "Não registrado",
+     "Sem achado relevante",
+     "D15"
+    ],
+    [
+     "Primo",
+     "R$ 1.041.939,68",
+     "Parcial",
+     "Não registrado",
+     "Manual com visão de operador; contagem indicativa",
+     "D15"
+    ],
+    [
+     "SINER",
+     "R$ 969.641,82",
+     "Ausente",
+     "Não registrado",
+     "Sem informação de evolução desde 2023; página sem o decreto instituidor",
+     "D09, D11, D15"
+    ],
+    [
+     "SIFSW (desenvolvimento)",
+     "R$ 929.543,85",
+     "Com lacunas",
+     "R$ 345.673,29",
+     "Projeto suspenso desde 05/09/2025; 225 PF especificados sem entrega",
+     "D03, D08"
+    ],
+    [
+     "Manopla",
+     "R$ 923.468,40",
+     "Ausente",
+     "Não registrado",
+     "Histórias não apresentadas; cadastro de questionários fora da contagem",
+     "D09, D14, D15"
+    ],
+    [
+     "Web Ponto",
+     "R$ 780.391,55",
+     "Ausente",
+     "Não registrado",
+     "Legado .NET; sucessão pelo SIGPAS sem plano formal",
+     "D07, D09, D15"
+    ],
+    [
+     "Revisa",
+     "R$ 775.227,42",
+     "Com lacunas",
+     "Não registrado",
+     "Histórias sem aprovação formal; números de histórias não disponibilizados",
+     "D10, D15"
+    ],
+    [
+     "SIGQA",
+     "R$ 703.537,11",
+     "Parcial",
+     "Não registrado",
+     "Especificação elaborada pela comissão; nome \"TesteOPS\" na aba",
+     "D18, D15"
+    ],
+    [
+     "Banco de Talentos",
+     "R$ 577.775,30",
+     "Com lacunas",
+     "Não registrado",
+     "Três histórias fora da pasta; versões divergentes",
+     "D10, D15"
+    ],
+    [
+     "Opiniões",
+     "R$ 565.624,40",
+     "Ausente",
+     "Não registrado",
+     "Artefatos solicitados em 2025 e 2026 não fornecidos",
+     "D09, D15"
+    ],
+    [
+     "SEI",
+     "R$ 536.158,46",
+     "Com lacunas",
+     "R$ 264.260,25",
+     "Em produção sem uso desde 10/08/2023; 189 PF não entregues",
+     "D02, D08"
+    ],
+    [
+     "SIADES (desenvolvimento)",
+     "R$ 522.488,70",
+     "Ausente",
+     "Não registrado",
+     "Sem informação de produção, uso ou conclusão",
+     "D06, D09, D15"
+    ],
+    [
+     "SIDBENS",
+     "R$ 520.969,84",
+     "Parcial",
+     "Não registrado",
+     "Valor no SIGPAT sem origem; normas de origem revogadas; débitos de segurança críticos",
+     "D05, D11, D17, D15"
+    ],
+    [
+     "SIGS",
+     "R$ 445.026,71",
+     "Com lacunas",
+     "R$ 205.591,79",
+     "Em produção sem uso; 366 PF especificados não desenvolvidos",
+     "D02, D08"
+    ],
+    [
+     "SCPA",
+     "R$ 437.432,40",
+     "Ausente",
+     "Não registrado",
+     "Sem documentação; contagem indicativa",
+     "D09, D15"
+    ],
+    [
+     "Contagem",
+     "R$ 391.866,53",
+     "Adequada",
+     "Não registrado",
+     "Situação divergente entre aba e laudo; requisitos do art. 9º",
+     "D04, D15"
+    ],
+    [
+     "DBV",
+     "R$ 331.172,78",
+     "Ausente",
+     "Não registrado",
+     "Sem documentação; medida divergente entre inventários",
+     "D09, D15"
+    ],
+    [
+     "PV",
+     "R$ 318.961,12",
+     "Adequada",
+     "Não registrado",
+     "Situação divergente entre aba e laudo; requisitos do art. 9º",
+     "D04, D15"
+    ],
+    [
+     "SAGEP (desenvolvimento)",
+     "R$ 309.847,95",
+     "Ausente",
+     "Não registrado",
+     "Em homologação, sem previsão de implantação",
+     "D06, D07, D15"
+    ],
+    [
+     "Web Ponto Client Biometria",
+     "R$ 170.112,60",
+     "Ausente",
+     "Não registrado",
+     "Legado .NET; sucessão pelo SIGPAS sem plano formal",
+     "D07, D09, D15"
+    ],
+    [
+     "SGA-Perícia Médica",
+     "R$ 126.369,36",
+     "Ausente",
+     "Não registrado",
+     "Sucessão pelo SAGEP sem cronograma",
+     "D07, D09, D15"
+    ],
+    [
+     "Ag. SGA",
+     "R$ 111.788,28",
+     "Ausente",
+     "Não registrado",
+     "Sucessão pelo SAGEP sem cronograma",
+     "D07, D09, D15"
+    ],
+    [
+     "SIDE",
+     "R$ 89.309,12",
+     "Parcial",
+     "Não registrado",
+     "DOD sem aprovação; mudança de plataforma não registrada; sem norma",
+     "D11, D18, D15"
+    ]
+   ],
+   "Softwares desenvolvidos internamente, do maior para o menor valor (situação entre parênteses quando diferente de produção); D15 (custo por produto) aplica-se a todos os sistemas sem custo de sustentação registrado",
+   [
+    15,
+    14,
+    10,
+    12,
+    37,
+    12
+   ],
+   [
+    1
+   ],
+   []
+  ],
+  [
+   "tabela",
+   [
+    "Bem",
+    "Valor 2026",
+    "Achado",
+    "Diligências"
+   ],
+   [
+    [
+     "Autodesk AEC (N6500051)",
+     "R$ 698.315,73",
+     "Cessão encerrada em 19/07/2026, sem baixa nem amortização",
+     "D01"
+    ],
+    [
+     "Adobe Creative Cloud (N6500050)",
+     "R$ 99.085,00",
+     "Cessão encerrada em 19/07/2026, sem baixa nem amortização",
+     "D01"
+    ],
+    [
+     "C0045042 (QiBuilder)",
+     "R$ 13.200,00",
+     "Data de aquisição divergente do lote",
+     "D19"
+    ],
+    [
+     "Demais licenças (15)",
+     "R$ 2.311.231,43",
+     "Documentos de licença não disponibilizados",
+     "D19"
+    ],
+    [
+     "SEAP (Contrato nº 001/2026/SEPLAG)",
+     "R$ 5.254.186,60",
+     "Sucessão pelo SIGEP sem plano formal; prorrogação a comunicar",
+     "D07"
+    ]
+   ],
+   "Softwares adquiridos",
+   [
+    30,
+    16,
+    42,
+    12
+   ],
+   [
+    1
+   ],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "Anexo II. Minuta de Portaria"
+  ],
+  [
+   "p",
+   "**PORTARIA Nº ___/____/SEPLAG**"
+  ],
+  [
+   "p",
+   "Institui o Catálogo de Produtos de Software e dispõe sobre a gestão do ciclo de vida e o acompanhamento contínuo dos bens intangíveis de software da Secretaria de Estado de Planejamento e Gestão."
+  ],
+  [
+   "p",
+   "O SECRETÁRIO DE ESTADO DE PLANEJAMENTO E GESTÃO, no uso de suas atribuições legais, CONSIDERANDO a Lei Federal nº 4.320/1964, arts. 94 a 96; a Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ; a Lei Federal nº 14.133/2021; e a necessidade de assegurar lastro documental, controle de custos e verificação periódica dos bens intangíveis, RESOLVE:"
+  ],
+  [
+   "lista",
+   [
+    "**Art. 1º** Fica instituído o Catálogo de Produtos de Software da SEPLAG, registro oficial e único dos softwares desenvolvidos internamente, contratados ou licenciados, mantido pela unidade setorial de tecnologia da informação.",
+    "**Art. 2º** Cada produto terá identificador único, gestor de negócio e gestor técnico designados, e ficha com, no mínimo, as informações do Anexo desta Portaria, atualizada a cada evento do ciclo de vida.",
+    "**Art. 3º** São eventos do ciclo de vida, a registrar no Catálogo e comunicar ao patrimônio setorial, ao setor contábil e à CIABI em até 30 dias: I - abertura de projeto, com o documento de formalização da demanda aprovado; II - entrada em produção, com termo de entrega e linha de base em pontos de função; III - entrega de melhoria evolutiva; IV - suspensão ou retomada de projeto; V - início e conclusão de transição para sistema sucessor; VI - descontinuação, com destino dos dados; VII - contratação, renovação ou encerramento de licença ou cessão de uso.",
+    "**Art. 4º** Nenhum software entrará em produção sem a documentação funcional e técnica, o código-fonte e a linha de base armazenados no repositório institucional indicado pela unidade setorial de tecnologia da informação.",
+    "**Art. 5º** Toda demanda de software será classificada na abertura como pesquisa, desenvolvimento, evolutiva, adaptativa, corretiva ou sustentação, e o esforço da equipe interna e as ordens de serviço contratadas serão vinculados ao produto e à classe.",
+    "**Art. 6º** Projeto em desenvolvimento sem entrega por período superior a doze meses terá decisão formal de retomada, com cronograma e recursos, ou de encerramento, registrada no Catálogo.",
+    "**Art. 7º** A Comissão de Inventário e Avaliação de Bens Intangíveis atuará durante todo o exercício, com reuniões ao menos trimestrais para acompanhamento dos eventos e das recomendações, sem prejuízo do inventário anual.",
+    "**Art. 8º** As unidades destinatárias de diligências da CIABI responderão no prazo de 10 (dez) dias úteis, prorrogável mediante justificativa; a ausência de resposta será registrada no relatório final do inventário.",
+    "**Art. 9º** Os estudos técnicos preliminares e os termos de referência de contratações de software e de licenças serão submetidos à CIABI para manifestação quanto ao tratamento como ativo intangível ou despesa.",
+    "**Art. 10** A unidade setorial de tecnologia da informação apresentará anualmente, com o inventário, o custo total de propriedade de cada produto do Catálogo.",
+    "**Art. 11** Esta Portaria entra em vigor na data de sua publicação."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "Anexo III. Ficha mínima do produto de software"
+  ],
+  [
+   "tabela",
+   [
+    "Bloco",
+    "Informações"
+   ],
+   [
+    [
+     "Identificação",
+     "Identificador único; nome e sigla oficiais; descrição da finalidade; tecnologia; endereço de acesso"
+    ],
+    [
+     "Responsáveis",
+     "Gestor de negócio; gestor técnico; unidade demandante; equipe de sustentação"
+    ],
+    [
+     "Origem e fundamento",
+     "Documento de formalização da demanda aprovado; norma que institui ou obriga o uso; estudo técnico preliminar e contrato, quando houver; instrumento de cessão ou de uso compartilhado"
+    ],
+    [
+     "Situação",
+     "Pesquisa, desenvolvimento, produção, suspenso, em transição ou descontinuado; datas de cada marco"
+    ],
+    [
+     "Uso e benefício",
+     "Usuários e órgãos atendidos; indicador de uso; serviço prestado; Valor Institucional atestado pelo gestor de negócio"
+    ],
+    [
+     "Documentação",
+     "Localização no repositório institucional da documentação funcional, técnica, do código-fonte e da linha de base em pontos de função"
+    ],
+    [
+     "Custos",
+     "Custo de desenvolvimento e de evoluções (interno e contratado); custo anual de sustentação, infraestrutura e licenças; custo total de propriedade"
+    ],
+    [
+     "Riscos",
+     "Dependências; tecnologia e suporte; débitos técnicos de segurança; plano de continuidade"
+    ],
+    [
+     "Propriedade intelectual",
+     "Titularidade; cláusula de cessão de direitos; número de registro no INPI, quando houver"
+    ],
+    [
+     "Ciclo de vida",
+     "Sistema sucessor ou antecessor; plano de transição; destino dos dados na descontinuação"
+    ]
+   ],
+   null,
+   [
+    22,
+    78
+   ],
+   [],
+   []
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), Portaria nº 124/2026/SEPLAG",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

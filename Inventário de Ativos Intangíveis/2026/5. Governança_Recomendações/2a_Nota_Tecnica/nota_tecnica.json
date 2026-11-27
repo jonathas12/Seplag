@@ -101,7 +101,7 @@
     ],
     [
      "Softwares com custo de projeto registrado",
-     "7 de 39 (R$ 7.494.435,94)",
+     "9 de 39 (R$ 9.368.136,99)",
      "Laudos com custo de projeto da fábrica de software"
     ],
     [
@@ -395,7 +395,7 @@
   ],
   [
    "p",
-   "Somente 7 dos 39 softwares desenvolvidos internamente têm custo de projeto registrado, todos com participação da fábrica de software, no total de R$ 7.494.435,94 (base: Termos de Recebimento Definitivo até 07/2026). Os outros 32 foram desenvolvidos e são mantidos pela equipe interna, sem apontamento de esforço por produto. Não há registro do custo de sustentação de nenhum sistema, nem do custo de infraestrutura, licenças de plataforma e suporte associados. A NBC TSP 34 - Custos no Setor Público estabelece as diretrizes do sistema de informação de custos, em que o produto ou serviço pode ser objeto de custo."
+   "Somente 9 dos 39 softwares desenvolvidos internamente têm custo de projeto registrado, todos com participação da fábrica de software, no total de R$ 9.368.136,99 (base: Termos de Recebimento Definitivo até 07/2026). Os outros 30 foram desenvolvidos e são mantidos pela equipe interna, sem apontamento de esforço por produto. Não há registro do custo de sustentação de nenhum sistema, nem do custo de infraestrutura, licenças de plataforma e suporte associados. A NBC TSP 34 - Custos no Setor Público estabelece as diretrizes do sistema de informação de custos, em que o produto ou serviço pode ser objeto de custo."
   ],
   [
    "tabela",
@@ -410,6 +410,12 @@
      "SISPAT",
      "R$ 3.744.728,30",
      "R$ 13.062.217,50",
+     "Produção"
+    ],
+    [
+     "SIG-SST",
+     "R$ 1.443.847,29",
+     "R$ 5.873.259,02",
      "Produção"
     ],
     [
@@ -428,6 +434,12 @@
      "SIEP",
      "R$ 499.665,18",
      "R$ 1.597.114,30",
+     "Produção"
+    ],
+    [
+     "PSICO",
+     "R$ 429.853,76",
+     "R$ 1.783.752,12",
      "Produção"
     ],
     [
@@ -450,12 +462,12 @@
     ],
     [
      "TOTAL",
-     "R$ 7.494.435,94",
-     "R$ 23.791.765,97",
+     "R$ 9.368.136,99",
+     "R$ 31.448.777,12",
      ""
     ]
    ],
-   "Softwares com custo de projeto da fábrica de software registrado (componente de desenvolvimento)",
+   "Softwares com custo de projeto da fábrica de software registrado",
    [
     22,
     26,
@@ -467,7 +479,7 @@
     2
    ],
    [
-    7
+    9
    ]
   ],
   [
@@ -1178,9 +1190,9 @@
      "SIG-SST",
      "R$ 5.873.259,02",
      "Com lacunas",
-     "Não registrado",
+     "R$ 1.443.847,29",
      "Histórias ausentes na pasta disponibilizada",
-     "D10, D15"
+     "D10"
     ],
     [
      "SIGEP (desenvolvimento)",
@@ -1242,7 +1254,7 @@
      "PSICO",
      "R$ 1.783.752,12",
      "Adequada",
-     "Não registrado",
+     "R$ 429.853,76",
      "Sem achado relevante",
      "D15"
     ],

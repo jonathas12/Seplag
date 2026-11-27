@@ -2,18 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000e5000000000019",
   "position": {
-    "x": 30,
-    "y": 290,
+    "x": 20,
+    "y": 502,
     "z": 20000,
-    "height": 194,
-    "width": 600,
+    "height": 208,
+    "width": 820,
     "tabOrder": 20000
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,13 +27,24 @@
                 }
               },
               "queryRef": "dProduto.Sigla",
-              "nativeQueryRef": "Sigla",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
+              "nativeQueryRef": "Sistema",
+              "displayName": "Sistema"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "PF Faturado"
+                }
+              },
+              "queryRef": "Medidas.PF Faturado",
+              "nativeQueryRef": "PF faturado",
+              "displayName": "PF faturado"
+            },
             {
               "field": {
                 "Measure": {
@@ -46,7 +57,23 @@
                 }
               },
               "queryRef": "Medidas.Custo Pago (R$)",
-              "nativeQueryRef": "Custo Pago (R$)"
+              "nativeQueryRef": "Custo pago",
+              "displayName": "Custo pago"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Custo Médio por PF Faturado (R$)"
+                }
+              },
+              "queryRef": "Medidas.Custo Médio por PF Faturado (R$)",
+              "nativeQueryRef": "R$/PF",
+              "displayName": "R$/PF"
             },
             {
               "field": {
@@ -60,7 +87,68 @@
                 }
               },
               "queryRef": "Medidas.Custo a Preço de Mercado (R$)",
-              "nativeQueryRef": "Custo a Preço de Mercado (R$)"
+              "nativeQueryRef": "A preço de mercado",
+              "displayName": "A preço de mercado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Economia vs Mercado (R$)"
+                }
+              },
+              "queryRef": "Medidas.Economia vs Mercado (R$)",
+              "nativeQueryRef": "Economia",
+              "displayName": "Economia"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "% Economia"
+                }
+              },
+              "queryRef": "Medidas.% Economia",
+              "nativeQueryRef": "%",
+              "displayName": "%"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "VA Sistemas com Custo (R$)"
+                }
+              },
+              "queryRef": "Medidas.VA Sistemas com Custo (R$)",
+              "nativeQueryRef": "VA 2026",
+              "displayName": "VA 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Retorno Ativo por R$ 1"
+                }
+              },
+              "queryRef": "Medidas.Retorno Ativo por R$ 1",
+              "nativeQueryRef": "VA por R$ 1",
+              "displayName": "VA por R$ 1"
             }
           ]
         }
@@ -84,22 +172,26 @@
       }
     },
     "objects": {
-      "categoryAxis": [
+      "columnHeaders": [
         {
           "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelColor": {
+            "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4E6B76'"
+                      "Value": "'#0E3A4D'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D5E6EC'"
                     }
                   }
                 }
@@ -108,29 +200,69 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "8.5D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
           }
         }
       ],
-      "valueAxis": [
+      "values": [
         {
           "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelColor": {
+            "fontColorPrimary": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#7D949B'"
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FBFDFC'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F1F6F5'"
                     }
                   }
                 }
@@ -139,25 +271,38 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "8.5D"
                 }
               }
             },
-            "show": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridHorizontal": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "gridlineColor": {
+            "gridHorizontalColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -168,52 +313,31 @@
                 }
               }
             },
-            "labelDisplayUnits": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
+                }
+              }
+            },
+            "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000D"
+                  "Value": "3D"
                 }
               }
             }
           }
         }
       ],
-      "legend": [
+      "total": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Top'"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#4E6B76'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "showTitle": {
+            "totals": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -223,7 +347,67 @@
           }
         }
       ],
-      "labels": [
+      "columnFormatting": [
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#9FC4D2'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FF8C42'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#C8D9D6'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Economia vs Mercado (R$)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
         {
           "properties": {
             "show": {
@@ -238,83 +422,16 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0E2F3C'"
+                      "Value": "'#FBFDFC'"
                     }
                   }
                 }
               }
             },
-            "fontSize": {
+            "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1000000D"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#155C78'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Custo Pago (R$)"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FF8C42'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Custo a Preço de Mercado (R$)"
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "0D"
                 }
               }
             }
@@ -327,7 +444,53 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalhe por sistema'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -340,7 +503,32 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -353,6 +541,113 @@
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E3A4D'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Outer'"
+                }
+              }
+            },
+            "preset": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Custom'"
+                }
+              }
+            },
+            "shadowBlur": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "shadowSpread": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "angle": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "divider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
                   "Value": "false"
                 }
               }
@@ -360,7 +655,7 @@
           }
         }
       ],
-      "visualTooltip": [
+      "subTitle": [
         {
           "properties": {
             "show": {
@@ -370,10 +665,49 @@
                 }
               }
             },
-            "section": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'ca7a1090000000000039'"
+                  "Value": "'custo pago, mercado, economia e retorno'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#7D949B'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

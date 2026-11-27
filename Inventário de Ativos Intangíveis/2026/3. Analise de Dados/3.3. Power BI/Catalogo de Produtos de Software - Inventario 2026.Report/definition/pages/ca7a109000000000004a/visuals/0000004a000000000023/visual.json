@@ -3,14 +3,14 @@
   "name": "0000004a000000000023",
   "position": {
     "x": 346,
-    "y": 422,
+    "y": 282,
     "z": 24000,
     "height": 32,
     "width": 200,
     "tabOrder": 24000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,27 +23,20 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Valor por PF A"
+                  "Property": "Valor Cenário A (texto)"
                 }
               },
-              "queryRef": "Medidas.Valor por PF A",
-              "nativeQueryRef": "Valor por PF A"
+              "queryRef": "Medidas.Valor Cenário A (texto)",
+              "nativeQueryRef": "Valor Cenário A (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
@@ -54,9 +47,16 @@
                           "Entity": "Medidas"
                         }
                       },
-                      "Property": "Cor Valor por PF A"
+                      "Property": "Cor Valor Cenário A"
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             },
@@ -64,6 +64,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -83,20 +90,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0000004a000000000007",
   "position": {
-    "x": 972,
-    "y": 246,
+    "x": 34,
+    "y": 506,
     "z": 8000,
-    "height": 84,
+    "height": 40,
     "width": 276,
     "tabOrder": 8000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,64 +23,21 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Pergunta Cenário B"
+                  "Property": "Dif Real 2026 Cenário A (texto)"
                 }
               },
-              "queryRef": "Medidas.Pergunta Cenário B",
-              "nativeQueryRef": " ",
-              "displayName": " "
+              "queryRef": "Medidas.Dif Real 2026 Cenário A (texto)",
+              "nativeQueryRef": "Dif Real 2026 Cenário A (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "columnHeaders": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "values": [
-        {
-          "properties": {
-            "fontColorPrimary": {
+            "color": {
               "solid": {
                 "color": {
                   "expr": {
@@ -91,124 +48,50 @@
                 }
               }
             },
-            "backColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10.5D"
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "15D"
                 }
               }
             },
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
           }
         }
       ],
-      "grid": [
+      "categoryLabels": [
         {
           "properties": {
-            "gridVertical": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "gridHorizontal": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "rowPadding": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
           }
         }
       ],
-      "columnWidth": [
+      "wordWrap": [
         {
           "properties": {
-            "value": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "250D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Pergunta Cenário B"
-          }
-        }
-      ],
-      "total": [
-        {
-          "properties": {
-            "totals": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

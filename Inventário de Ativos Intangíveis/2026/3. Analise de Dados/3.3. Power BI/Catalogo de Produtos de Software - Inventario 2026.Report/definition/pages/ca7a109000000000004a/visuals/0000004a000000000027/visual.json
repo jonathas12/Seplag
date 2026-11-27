@@ -2,73 +2,82 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0000004a000000000027",
   "position": {
-    "x": 110,
-    "y": 62,
+    "x": 740,
+    "y": 317,
     "z": 28000,
     "height": 32,
-    "width": 340,
+    "width": 200,
     "tabOrder": 28000
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dCenarioA"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "Cenário"
+                  "Property": "PF Cenário B (texto)"
                 }
               },
-              "queryRef": "dCenarioA.Cenário",
-              "nativeQueryRef": "Cenário",
-              "active": true
+              "queryRef": "Medidas.PF Cenário B (texto)",
+              "nativeQueryRef": "PF Cenário B (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
+      "labels": [
         {
           "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Cor PF Cenário B"
+                    }
+                  }
                 }
               }
             },
-            "singleSelect": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
           }
         }
       ],
-      "header": [
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -81,53 +90,13 @@
           }
         }
       ],
-      "items": [
+      "wordWrap": [
         {
           "properties": {
-            "textSize": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "background": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
+                  "Value": "true"
                 }
               }
             }

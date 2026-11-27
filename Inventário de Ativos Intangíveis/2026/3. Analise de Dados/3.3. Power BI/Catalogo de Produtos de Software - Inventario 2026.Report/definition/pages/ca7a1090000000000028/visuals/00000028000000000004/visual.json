@@ -10,7 +10,7 @@
     "tabOrder": 5000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,27 +23,20 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Var % (tabela)"
+                  "Property": "Var % (tabela) (texto)"
                 }
               },
-              "queryRef": "Medidas.Var % (tabela)",
-              "nativeQueryRef": "Var % (tabela)"
+              "queryRef": "Medidas.Var % (tabela) (texto)",
+              "nativeQueryRef": "Var % (tabela) (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10.5D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
@@ -60,10 +53,24 @@
                 }
               }
             },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -83,20 +90,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

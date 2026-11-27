@@ -2,70 +2,73 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000b2000000000011",
   "position": {
-    "x": 1032,
-    "y": 332,
+    "x": 320,
+    "y": 62,
     "z": 12000,
-    "height": 28,
-    "width": 210,
+    "height": 32,
+    "width": 250,
     "tabOrder": 12000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medidas"
+                      "Entity": "dProduto"
                     }
                   },
-                  "Property": "% Sistemas Sem Documentação"
+                  "Property": "Categoria"
                 }
               },
-              "queryRef": "Medidas.% Sistemas Sem Documentação",
-              "nativeQueryRef": "% Sistemas Sem Documentação"
+              "queryRef": "dProduto.Categoria",
+              "nativeQueryRef": "Categoria",
+              "active": true
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "data": [
         {
           "properties": {
-            "fontSize": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "categoryLabels": [
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
         {
           "properties": {
             "show": {
@@ -78,20 +81,53 @@
           }
         }
       ],
-      "card": [
+      "items": [
         {
           "properties": {
-            "barShow": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FBFDFC'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
                 }
               }
             },
             "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

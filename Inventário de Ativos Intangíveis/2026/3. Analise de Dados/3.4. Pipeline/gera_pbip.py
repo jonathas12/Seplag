@@ -2,8 +2,9 @@
 Gera o projeto Power BI (PBIP: modelo TMDL + relatório PBIR) do Catálogo de Produtos de Software 2026.
 
 Identidade visual 60-30-10: Porcelana Gelada (fundos, 60%), Azul Mergulho (estrutura, 30%) e Laranja
-Mandarina (destaque, 10%). O "cromo" das páginas (cabeçalho, abas, molduras, rótulos e ícones) é desenhado
-em SVG de fundo; os números vêm de medidas DAX em visuais transparentes posicionados sobre as molduras.
+Mandarina (destaque, 10%). Só o cabeçalho (abas e logotipo) e a barra de filtros ficam no SVG de fundo; cards,
+quadros, títulos e textos são visuais nativos (fundo, borda arredondada, sombra, título e subtítulo do próprio
+visual), que podem ser movidos, redimensionados e formatados no Power BI Desktop.
 
 Páginas: Capa · Visão Geral · Desenvolvidos · Adquiridos · Economicidade · Operacional · Ficha do Produto
 Tooltips: Produto · Economia
@@ -141,9 +142,24 @@ def tmdl_valor(v):
     return v
 
 
+FMT_MEDIDA = {n: f for n, _, f, _, _ in MEDIDAS}
+TEXTOS = {}  # medidas de texto geradas para cards e subtítulos (FORMAT na cultura pt-BR do modelo)
+
+
+def tx(nome):
+    """Devolve a medida de texto equivalente (FORMAT com o formato da medida), criando-a se preciso."""
+    fmt = FMT_MEDIDA[nome]
+    if not fmt:
+        return nome
+    novo = f"{nome} (texto)"
+    TEXTOS[novo] = (f'FORMAT ( [{nome}], "{fmt.replace(chr(34), chr(34) * 2)}" )', None, "10. Textos dos cards",
+                    f"Texto de [{nome}] já formatado, para cards e subtítulos.")
+    return novo
+
+
 def medidas_tmdl():
     corpo = f"table Medidas\n\tlineageTag: {tag()}\n\n"
-    for nome, expr, fmt, pasta, desc in MEDIDAS:
+    for nome, expr, fmt, pasta, desc in MEDIDAS + [(n, *v) for n, v in TEXTOS.items()]:
         if desc:
             corpo += f"\t/// {desc}\n"
         linhas = expr.split("\n")
@@ -282,35 +298,84 @@ SEM_MOLDURA = {"background": [{"properties": {"show": L("false")}}], "title": [{
                "border": [{"properties": {"show": L("false")}}], "dropShadow": [{"properties": {"show": L("false")}}]}
 
 
+PAGINA_ATUAL = [None]
+
+
+def tam_cabe(w, n, maximo, fator=0.6):
+    """Maior fonte (pt) em que n caracteres cabem na largura w (px), limitada a maximo."""
+    return max(8, min(maximo, round((w - 24) / (n * fator * 1.333), 1)))
+
+
+def moldura(titulo=None, sub=None, fundo=CARD, borda=LINHA, raio=14, cor_titulo=TEXTO, cor_sub=APOIO, sub_medida=None, cor_sub_medida=None,
+            tam_titulo=11, tam_sub=9, sombra=True, transp=0, pad=(10, 12, 8, 14)):
+    """Formatação do contêiner: fundo, borda arredondada, sombra, título e subtítulo (fixo ou por medida)."""
+    o = {"background": [{"properties": {"show": L("true"), "color": COR(fundo), "transparency": L(f"{transp}D")}}],
+         "border": [{"properties": {"show": L("true" if borda else "false"), "color": COR(borda or fundo), "radius": L(f"{raio}D"), "width": L("1D")}}],
+         "dropShadow": [{"properties": {"show": L("true" if sombra else "false"), "color": COR("#0E3A4D"), "transparency": L("88D"), "position": S("Outer"),
+                                        "preset": S("Custom"), "shadowBlur": L("6D"), "shadowDistance": L("2D"), "shadowSpread": L("0D"), "angle": L("90D")}}],
+         "padding": [{"properties": {"top": L(f"{pad[0]}D"), "right": L(f"{pad[1]}D"), "bottom": L(f"{pad[2]}D"), "left": L(f"{pad[3]}D")}}],
+         "divider": [{"properties": {"show": L("false")}}],
+         "title": [{"properties": {"show": L("true" if titulo else "false"), "text": S(titulo or ""), "fontColor": COR(cor_titulo), "fontSize": L(f"{tam_titulo}D"),
+                                   "fontFamily": FONTE("Segoe UI Semibold"), "alignment": S("left"), "titleWrap": L("true")}}]}
+    if sub or sub_medida:
+        o["subTitle"] = [{"properties": {"show": L("true"), "text": {"expr": M(sub_medida)} if sub_medida else S(sub),
+                                         "fontColor": {"solid": {"color": {"expr": M(cor_sub_medida)}}} if cor_sub_medida else COR(cor_sub),
+                                         "fontSize": L(f"{tam_sub}D"), "fontFamily": FONTE("Segoe UI Semibold"), "alignment": S("left"), "titleWrap": L("true")}}]
+    return o
+
+
 class Pagina:
     def __init__(self, chave, w=1280, h=720, tooltip=False):
         self.id, self.nome = PAGINAS[chave]
         self.chave, self.w, self.h, self.tooltip = chave, w, h, tooltip
-        self.visuais, self.z, self.filtros = [], 1000, []
+        self.visuais, self.z, self.filtros, self.quadros = [], 1000, [], []
+        PAGINA_ATUAL[0] = self
 
-    def add(self, x, y, w, h, visual, filtros=None, cabecalho=False, dica=None):
+    def add(self, x, y, w, h, visual, filtros=None, cabecalho=False, dica=None, z=None):
         n = f"{self.id[-8:]}{len(self.visuais):012d}"
         vco = json.loads(json.dumps(SEM_MOLDURA))
         if not cabecalho:
             vco["visualHeader"] = [{"properties": {"show": L("false")}}]
         if dica:
             vco["visualTooltip"] = [{"properties": {"show": L("true"), "section": S(PAGINAS[dica][0])}}]
-        visual.setdefault("visualContainerObjects", {}).update(vco)
+        vco.update(visual.get("visualContainerObjects", {}))
+        visual["visualContainerObjects"] = vco
         visual.setdefault("drillFilterOtherVisuals", True)
-        c = {"$schema": SCHEMA_VC, "name": n, "position": {"x": x, "y": y, "z": self.z, "height": h, "width": w, "tabOrder": self.z}, "visual": visual}
+        zz = z if z is not None else self.z
+        c = {"$schema": SCHEMA_VC, "name": n, "position": {"x": x, "y": y, "z": zz, "height": h, "width": w, "tabOrder": zz}, "visual": visual}
         if filtros:
             c["filterConfig"] = {"filters": filtros}
         self.visuais.append(c)
-        self.z += 1000
+        if z is None:
+            self.z += 1000
         return c
 
-    def texto(self, x, y, w, h, medida, tam=11, cor=TEXTO, fonte="Segoe UI", cor_medida=None):
-        """Valor numérico (multiRowCard). Medidas de texto vão em texto_longo, que quebra linha e não usa o estilo de título."""
+    def quadro(self, x, y, w, h, titulo=None, dica=None, **kw):
+        """Registra um quadro. Na gravação, se houver um único visual dentro dele, o próprio visual recebe o quadro
+        (fundo, borda, sombra, título); se houver vários, o quadro vira uma forma atrás deles."""
+        self.quadros.append((x, y, w, h, moldura(titulo, dica, **kw)))
+
+    def card(self, x, y, w, h, medida, titulo=None, sub=None, sub_medida=None, cor_sub_medida=None, tam=None, cor=AZUL_ESC, cor_medida=None,
+             fundo=CARD, borda=LINHA, cor_titulo=APOIO, cor_sub=APOIO, n=None, fonte="Segoe UI Bold", moldura_=True, tam_sub=9, tam_titulo=10.5,
+             transp=0, sombra=True):
+        """Card nativo (um único visual): título, subtítulo de contexto e valor. Valor e contexto são medidas de texto (FORMAT)."""
+        m = tx(medida)
+        n = n or (16 if "R$" in (FMT_MEDIDA.get(medida) or "") else 8)
+        tam = tam or tam_cabe(w, n, 22)
         cor_ = {"solid": {"color": {"expr": M(cor_medida)}}} if cor_medida else COR(cor)
-        return self.add(x, y, w, h, {"visualType": "multiRowCard", "query": {"queryState": {"Values": {"projections": [proj(M(medida))]}}},
-                                     "objects": {"dataLabels": [{"properties": {"fontSize": L(f"{tam}D"), "color": cor_, "fontFamily": FONTE(fonte)}}],
-                                                 "categoryLabels": [{"properties": {"show": L("false")}}],
-                                                 "card": [{"properties": {"barShow": L("false"), "outlineStyle": L("0D")}}]}})
+        v = {"visualType": "card", "query": {"queryState": {"Values": {"projections": [proj(M(m))]}}},
+             "objects": {"labels": [{"properties": {"color": cor_, "fontSize": L(f"{tam}D"), "fontFamily": FONTE(fonte), "labelDisplayUnits": L("1D")}}],
+                         "categoryLabels": [{"properties": {"show": L("false")}}],
+                         "wordWrap": [{"properties": {"show": L("true")}}]}}
+        if moldura_:
+            v["visualContainerObjects"] = moldura(titulo, sub, fundo, borda, cor_titulo=cor_titulo, cor_sub=cor_sub,
+                                                  sub_medida=tx(sub_medida) if sub_medida else None, cor_sub_medida=cor_sub_medida,
+                                                  tam_sub=tam_sub, tam_titulo=tam_titulo, pad=(8, 10, 6, 14), transp=transp, sombra=sombra)
+        return self.add(x, y, w, h, v)
+
+    def texto(self, x, y, w, h, medida, tam=11, cor=TEXTO, fonte="Segoe UI", cor_medida=None):
+        """Valor isolado (card sem moldura)."""
+        return self.card(x, y, w, h, medida, tam=tam, cor=cor, cor_medida=cor_medida, fonte=fonte, moldura_=False)
 
     def valor(self, x, y, w, h, medida, tam=18, cor=AZUL_ESC, cor_medida=None):
         return self.texto(x, y, w, h, medida, tam, cor, "Segoe UI Bold", cor_medida)
@@ -319,15 +384,27 @@ class Pagina:
         return self.texto(x, y, w, h, medida, tam, cor, "Segoe UI Semibold", cor_medida)
 
     def texto_longo(self, x, y, w, h, medida, tam=10, cor=TEXTO, fundo=CARD, negrito=False):
-        f = M(medida)
-        o = {"columnHeaders": [{"properties": {"fontSize": L("1D"), "fontColor": COR(fundo), "backColor": COR(fundo), "wordWrap": L("false")}}],
-             "values": [{"properties": {"fontColorPrimary": COR(cor), "backColorPrimary": COR(fundo), "fontColorSecondary": COR(cor),
-                                        "backColorSecondary": COR(fundo), "fontSize": L(f"{tam}D"), "wordWrap": L("true"),
-                                        "fontFamily": FONTE("Segoe UI Bold" if negrito else "Segoe UI")}}],
-             "grid": [{"properties": {"gridVertical": L("false"), "gridHorizontal": L("false"), "outlineColor": COR(fundo), "rowPadding": L("0D")}}],
-             "columnWidth": [{"properties": {"value": L(f"{w - 26}D")}, "selector": {"metadata": ref(f)}}],
-             "total": [{"properties": {"totals": L("false")}}]}
-        return self.add(x, y, w, h, {"visualType": "tableEx", "query": {"queryState": {"Values": {"projections": [proj(f, nome=" ")]}}}, "objects": o})
+        """Texto dinâmico com quebra de linha, alinhado à esquerda e sem barra de rolagem (texto de botão ligado à medida)."""
+        return self.add(x, y, w, h, {
+            "visualType": "actionButton",
+            "objects": {"icon": [{"properties": {"shapeType": S("blank")}, "selector": {"id": "default"}}, {"properties": {"show": L("false")}}],
+                        "outline": [{"properties": {"show": L("false")}}], "fill": [{"properties": {"show": L("false")}}],
+                        "text": [{"properties": {"show": L("true")}},
+                                 {"properties": {"text": {"expr": M(tx(medida))}, "fontColor": COR(cor), "fontSize": L(f"{tam}D"),
+                                                 "fontFamily": FONTE("Segoe UI Bold" if negrito else "Segoe UI"), "bold": L("false"),
+                                                 "horizontalAlignment": S("left"), "verticalAlignment": S("top"),
+                                                 "leftMargin": L("2D"), "rightMargin": L("2D"), "topMargin": L("2D"), "bottomMargin": L("0D")},
+                                  "selector": {"id": "default"}}]}})
+
+    def rotulo(self, x, y, w, h, texto, tam=10, cor=APOIO, negrito=False, alinh="left", fundo=None):
+        """Texto fixo (caixa de texto nativa). texto pode ser uma lista de (texto, cor, negrito), um parágrafo por item."""
+        itens = texto if isinstance(texto, list) else [(texto, cor, negrito)]
+        pars = [{"textRuns": [{"value": t, "textStyle": {"fontFamily": "Segoe UI", "fontSize": f"{tam}pt", "color": c, **({"fontWeight": "bold"} if b else {})}}],
+                 "horizontalTextAlignment": alinh} for t, c, b in itens]
+        v = {"visualType": "textbox", "objects": {"general": [{"properties": {"paragraphs": pars}}]}}
+        if fundo:
+            v["visualContainerObjects"] = moldura(None, None, fundo, None, raio=12, sombra=False, pad=(2, 4, 0, 4))
+        return self.add(x, y, w, h, v)
 
     def link_web(self, x, y, w, h, url, dica):
         return self.add(x, y, w, h, {
@@ -454,7 +531,26 @@ class Pagina:
             v["query"]["sortDefinition"] = {"sort": [{"field": ordenar, "direction": "Descending" if desc else "Ascending"}]}
         return self.add(x, y, w, h, v, filtros=filtros, cabecalho=True, dica=dica)
 
+    def aplica_quadros(self):
+        zq = 1
+        for x, y, w, h, obj in self.quadros:
+            dentro = [v for v in self.visuais if v["position"]["z"] >= 1000
+                      and v["position"]["x"] >= x - 2 and v["position"]["y"] >= y - 2
+                      and v["position"]["x"] + v["position"]["width"] <= x + w + 2 and v["position"]["y"] + v["position"]["height"] <= y + h + 2
+                      and "visualLink" not in v["visual"].get("visualContainerObjects", {})]
+            if len(dentro) == 1:
+                v = dentro[0]
+                v["position"].update({"x": x, "y": y, "width": w, "height": h})
+                v["visual"]["visualContainerObjects"].update(json.loads(json.dumps(obj)))
+            else:
+                forma = {"visualType": "shape", "objects": {"shape": [{"properties": {"tileShape": S("rectangle")}}],
+                                                            "fill": [{"properties": {"show": L("false")}}], "outline": [{"properties": {"show": L("false")}}]},
+                         "visualContainerObjects": json.loads(json.dumps(obj))}
+                self.add(x, y, w, h, forma, z=zq)
+                zq += 1
+
     def grava(self, svg):
+        self.aplica_quadros()
         pasta = DEF / "pages" / self.id
         (pasta / "visuals").mkdir(parents=True)
         arq = f"pg_{self.chave}.svg"
@@ -576,11 +672,10 @@ def kpi(x, y, w, h, rot, ic, alerta=False):
     return s + icone(ic, x + 16, y + 14, LAR if alerta else AZUL, 1.0) + txt(x + 40, y + 27, rot, 11.5, APOIO, 600)
 
 
-def cartao(x, y, w, h, titulo, ic, dica=""):
-    s = ret(x, y, w, h, CARD, 14, LINHA, 1, 'filter="url(#sombra)"') + icone(ic, x + 16, y + 15, AZUL, 1.0) + txt(x + 40, y + 28, titulo, 13.5, TEXTO, 700)
-    if dica:
-        s += txt(x + 52 + len(titulo) * 8.3, y + 28, dica, 10.5, SUAVE)
-    return s
+def cartao(x, y, w, h, titulo, ic=None, dica="", **kw):
+    """Quadro nativo da página atual (título e subtítulo no próprio visual). Não desenha nada no SVG."""
+    PAGINA_ATUAL[0].quadro(x, y, w, h, titulo, dica or None, tam_titulo=12, cor_titulo=TEXTO, cor_sub=SUAVE, **kw)
+    return ""
 
 
 def navegacao(p):
@@ -603,19 +698,14 @@ def gera_relatorio():
     paginas, svgs = [], {}
 
     def kpi_padrao(p, s, x, y, w, rot, ic, med, ctx, cor_ctx=None, alerta=False, ctx_fixo=None, h=96):
-        s += kpi(x, y, w, h, rot, ic, alerta)
-        p.valor(x + 12, y + 32, w - 20, 40, med, 17, LAR if alerta else AZUL_ESC)
-        if ctx:
-            p.contexto(x + 12, y + 68, w - 20, 24, ctx, cor_ctx, LAR if (alerta and not cor_ctx) else APOIO)
-        if ctx_fixo:
-            s += txt(x + 16, y + h - 12, ctx_fixo, 9.5, APOIO, 600)
+        p.card(x, y, w, h, med, titulo=rot, sub=ctx_fixo, sub_medida=ctx, cor_sub_medida=cor_ctx,
+               cor=LAR if alerta else AZUL_ESC, cor_titulo=LAR if alerta else APOIO, cor_sub=LAR if alerta else APOIO,
+               borda=LAR if alerta else LINHA)
         return s
 
-    def heroi(p, s, rot, ic, med, ctx, cor_ctx="Cor Var Valor (escuro)"):
-        s += kpi_heroi(20, 146, 300, 96, rot, ic)
-        p.valor(32, 172, 284, 46, med, 21, "#FFFFFF")
-        if ctx:
-            p.contexto(32, 214, 284, 24, ctx, cor_ctx, CINZA_CL if cor_ctx is None else APOIO, 10)
+    def heroi(p, s, rot, ic, med, ctx, cor_ctx="Cor Var Valor (escuro)", fixo=None):
+        p.card(20, 146, 300, 96, med, titulo=rot, sub=fixo, sub_medida=ctx, cor_sub_medida=cor_ctx, cor="#FFFFFF",
+               fundo=AZUL, borda=None, cor_titulo="#D9EAF0", cor_sub=CINZA_CL, tam_titulo=11)
         return s
 
     # ===== CAPA =====
@@ -645,17 +735,14 @@ def gera_relatorio():
     s += icone("documento", 300, 397, "#E3F0F4", 1.0) + txt(322, 403, "Fonte: 41 Laudos Técnicos de Avaliação, relatórios sintéticos e analíticos,", 11.5, "#E3F0F4")
     s += txt(322, 420, "Relatório Resumido do Valor Apurado e 3ª Nota Técnica Consultiva", 11.5, "#E3F0F4")
     ACH = [("cubo", "Valor Atual (R$)", "% Variação Valor", "Cor Var Valor (escuro)", "valor total dos 58 bens intangíveis", "geral", 19),
-           ("codigo", "Qtde Desenvolvidos", "Valor Atual (contexto)", None, "softwares desenvolvidos internamente", "dev", 26),
+           ("codigo", "Qtde Desenvolvidos", "Valor Desenvolvidos (contexto)", None, "softwares desenvolvidos internamente", "dev", 26),
            ("porquinho", "% Economia", "Economia vs Mercado (R$)", None, "economia vs preço de mercado do PF (R$)", "eco", 26),
            ("alerta", "Qtde Sem Documentação", "Valor Sem Documentação (R$)", None, "sistemas sem documentação funcional (R$)", "ope", 26)]
     for i, (ic, med, med2, cor2, rot, destino, tam) in enumerate(ACH):
         x, y, w, h = 64 + i * 292, 462, 280, 168
-        s += ret(x, y, w, h, AZUL_ESC, 16, "#FFFFFF", 1, 'fill-opacity="0.72" stroke-opacity="0.25"')
-        s += ret(x + 16, y + 16, 36, 36, LAR, 10, None, extra='fill-opacity="0.22"') + icone(ic, x + 26, y + 26, LAR, 1.0)
-        s += txt(x + 18, y + 126, rot, 11.5, "#FFFFFF")
-        s += txt(x + 18, y + 152, PAGINAS[destino][1] + " →", 11, LAR, 700)
-        capa.valor(x + 60, y + 12, w - 66, 46, med, tam, "#FFFFFF")
-        capa.contexto(x + 14, y + 66, w - 24, 30, med2, cor2, "#FFFFFF", 11.5)
+        capa.card(x, y, w, h, med, titulo=rot[0].upper() + rot[1:], sub_medida=med2, cor_sub_medida=cor2, cor="#FFFFFF", fundo=AZUL_ESC,
+                  borda="#5E8A9C", cor_titulo="#FFFFFF", cor_sub="#E3F0F4", transp=22, tam_titulo=11.5, tam_sub=11, sombra=False)
+        capa.rotulo(x + 10, y + h - 34, 200, 26, PAGINAS[destino][1] + " →", 10, LAR, True)
         capa.link(x, y, w, h, destino, f"Abrir {PAGINAS[destino][1]}")
     s += txt(1216, 690, "CIABI/SEPLAG-MT", 10, "#CFE3EA", 600, 'text-anchor="end"')
     capa.link(64, 380, 212, 50, "geral", "Iniciar análises")
@@ -676,22 +763,19 @@ def gera_relatorio():
     s += cartao(20, 254, 610, 222, "Evolução do valor por inventário", "linha", "R$ milhões, por categoria")
     s += cartao(642, 254, 290, 222, "Composição", "pizza", "por categoria")
     s += cartao(944, 254, 316, 456, "Governança do catálogo", "escudo", "3ª Nota Técnica")
-    s += cartao(20, 488, 912, 222, "Produtos por valor", "trofeu")
-    FX = ["até 100 mil", "100-300 mil", "300-600 mil", "600-900 mil", "0,9-1,2 mi", "1,2-2,2 mi", "2,2-5,2 mi", "5,2-10 mi", "acima de 10 mi"]
-    CORES_FX = ["#CFE3EA", "#B4D3DE", "#98C2D1", "#7BAFC2", "#5F9BB2", "#4787A1", "#33748F", "#22617D", "#0E3A4D"]
-    for i, (rot, cor) in enumerate(zip(FX, CORES_FX)):
-        xx = 222 + i * 78
-        s += f'<rect x="{xx}" y="507" width="10" height="10" rx="2" fill="{cor}"/>' + txt(xx + 14, 516, rot, 8.5, APOIO)
+    s += cartao(20, 488, 912, 222, "Produtos por valor", "trofeu",
+                "9 faixas de valor, do azul mais claro (até R$ 100 mil) ao mais escuro (acima de R$ 10 mi): 100-300 mil · 300-600 mil · "
+                "600-900 mil · 0,9-1,2 mi · 1,2-2,2 mi · 2,2-5,2 mi · 5,2-10 mi")
     GOV = [("Sem documentação funcional", "alerta", "Qtde Sem Documentação", "% Sistemas Sem Documentação"),
            ("Sem uso ou suspensos", "alerta", "Qtde Sem Uso ou Suspensos", "% Valor Sem Uso"),
            ("Em desenvolvimento (art. 9º)", "engrenagem", "Qtde Em Desenvolvimento", "Valor Em Desenvolvimento (R$)"),
            ("Licenças com cessão encerrada", "licenca", "Qtde Licenças Encerradas", "% Licenças Encerradas"),
            ("Diligências aplicáveis (de 19)", "lupa", "Qtde Diligências", "Prioritárias (contexto)")]
     for i, (rot, ic, med, med2) in enumerate(GOV):
-        y = 296 + i * 80
-        s += ret(958, y, 288, 70, "#F1F6F5", 10, None) + icone(ic, 970, y + 12, LAR if ic == "alerta" else AZUL, 0.95) + txt(992, y + 24, rot, 11.5, APOIO, 600)
-        p.valor(968, y + 30, 62, 36, med, 17, LAR if ic == "alerta" else AZUL_ESC)
-        p.contexto(1032, y + 36, 210, 28, med2, None, TEXTO, 10)
+        y = 294 + i * 83
+        al = ic == "alerta"
+        p.card(956, y, 292, 77, med, titulo=rot, sub_medida=med2, tam=15, cor=LAR if al else AZUL_ESC, fundo="#F1F6F5", borda=None,
+               cor_titulo=LAR if al else APOIO, cor_sub=TEXTO, sombra=False)
     svgs["geral"] = svg_doc(s)
     p.slicer(110, 62, 110, 32, "dInventario", "Inventário", unico=True)
     p.slicer(320, 62, 250, 32, "dProduto", "Categoria")
@@ -784,14 +868,17 @@ def gera_relatorio():
              "Retorno: VT e VA de 2026 divididos pelo custo pago.",
              "Limite: não inclui a equipe interna da SEPLAG; os 30 sistemas",
              "sem custo registrado ficam fora (ver diligência D15)."]
-    for i, l_ in enumerate(NOTAS):
-        s += txt(870, 552 + i * 21, l_, 11, TEXTO if i % 2 == 0 else APOIO, 600 if i in (0, 2, 4, 5) else 400)
+    NOTAS = [("Custo pago: o que a SEPLAG pagou à fábrica do Contrato nº 014/2022 (desenvolvimento, tickets e PFT), segundo os laudos.", TEXTO, False),
+             ("Mercado: o mesmo serviço a R$ 1.215,09 por PF (referência 2026), em vez do preço do contrato no laudo; conservador para pagamentos antigos.", TEXTO, False),
+             ("Retorno: VT e VA de 2026 divididos pelo custo pago.", TEXTO, False),
+             ("Limite: não inclui a equipe interna da SEPLAG; os 30 sistemas sem custo registrado ficam fora (diligência D15).", APOIO, False)]
+    p.rotulo(864, 540, 386, 164, NOTAS, 9.5)
     svgs["eco"] = svg_doc(s)
     p.slicer(96, 62, 220, 32, "dProduto", "Sigla")
     navegacao(p)
     p.texto_longo(150, 103, 1112, 42, "Leitura Economicidade", 10, TEXTO, PORC, True)
     p.grafico("clusteredColumnChart", 30, 290, 600, 194, F_SIGLA, [M("Custo Pago (R$)"), M("Custo a Preço de Mercado (R$)")],
-              ordenar=M("Custo Pago (R$)"), rotulos=True, dica="tt_eco", cores=[AZUL, LAR], precisao="2L")
+              ordenar=M("Custo Pago (R$)"), rotulos=False, dica="tt_eco", cores=[AZUL, LAR], precisao="2L")
     p.grafico("clusteredBarChart", 662, 290, 588, 194, F_SIGLA, [M("Retorno Produto por R$ 1"), M("Retorno Ativo por R$ 1")],
               ordenar=M("Retorno Ativo por R$ 1"), rotulos=True, unidades="1D", dica="tt_eco", rot_y=False, cores=[AZUL, LAR], precisao="2L")
     p.tabela(30, 538, 800, 166, [F_SIGLA, M("PF Faturado"), M("Custo Pago (R$)"), M("Custo Médio por PF Faturado (R$)"), M("Custo a Preço de Mercado (R$)"),
@@ -804,33 +891,30 @@ def gera_relatorio():
     p = Pagina("cen")
     s = cabecalho("cen") + barra_filtros([("alvo", "Cenário A", 20), ("alvo", "Cenário B", 470)], "Desenvolvidos internamente · fonte: aba Avaliação 2026 e Dados.xlsx") + leitura()
     for x, lado, cor in ((20, "A", LAR), (960, "B", AZUL)):
-        s += ret(x, 146, 300, 564, CARD, 16, LINHA, 1, 'filter="url(#sombra)"') + f'<rect x="{x}" y="146" width="300" height="6" rx="3" fill="{cor}"/>'
-        s += txt(x + 18, 176, f"CENÁRIO {lado} · escolha no seletor", 10, cor, 800, 'letter-spacing="1"')
-        s += txt(x + 18, 420, "Valor no cenário", 11, APOIO, 600) + txt(x + 18, 498, "Diferença para o Real 2026", 11, APOIO, 600)
-        s += txt(x + 18, 576, "Diferença para o Real 2025", 11, APOIO, 600)
+        p.quadro(x, 146, 300, 564, f"CENÁRIO {lado} · escolha no seletor", None, cor_titulo=cor, borda=cor, tam_titulo=10.5)
+        p.rotulo(x + 12, 402, 276, 24, "Valor no cenário", 10, APOIO, True)
+        p.rotulo(x + 12, 480, 276, 24, "Diferença para o Real 2026", 10, APOIO, True)
+        p.rotulo(x + 12, 558, 276, 24, "Diferença para o Real 2025", 10, APOIO, True)
         p.texto_longo(x + 12, 184, 276, 60, f"Nome Cenário {lado}", 15, AZUL_ESC, CARD, True)
         p.texto_longo(x + 12, 246, 276, 84, f"Pergunta Cenário {lado}", 10.5, TEXTO, CARD)
         p.texto_longo(x + 12, 332, 276, 64, f"Premissas Cenário {lado}", 9.5, APOIO, CARD)
         p.valor(x + 14, 428, 276, 46, f"Valor Cenário {lado}", 20, cor)
         p.valor(x + 14, 506, 276, 40, f"Dif Real 2026 Cenário {lado}", 15, TEXTO)
         p.valor(x + 14, 584, 276, 40, f"Dif Real 2025 Cenário {lado}", 15, TEXTO)
-    s += ret(332, 146, 616, 112, AZUL, 16, None, extra='filter="url(#sombra)"')
-    s += txt(640, 172, "PLACAR DOS CENÁRIOS", 11, LAR, 800, 'text-anchor="middle" letter-spacing="2"')
-    s += txt(640, 214, "×", 30, "#FFFFFF", 800, 'text-anchor="middle"')
+    p.quadro(332, 146, 616, 112, "PLACAR DOS CENÁRIOS", None, fundo=AZUL, borda=None, cor_titulo=LAR, tam_titulo=11)
+    p.rotulo(616, 180, 48, 44, "×", 24, "#FFFFFF", True, "center")
     p.valor(344, 180, 270, 44, "Valor Cenário A", 18, "#FFFFFF")
     p.valor(668, 180, 270, 44, "Valor Cenário B", 18, "#FFFFFF")
     p.texto_longo(346, 224, 590, 30, "Placar Cenários", 10.5, "#FFFFFF", AZUL, True)
     IND = [("Valor (R$)", "Valor Cenário"), ("Tamanho funcional (PF)", "PF Cenário"), ("Preço do PF (R$)", "Preço PF Cenário"),
            ("Sistemas", "Sistemas Cenário"), ("Valor por PF (R$)", "Valor por PF"), ("Valor por sistema (R$)", "Valor por Sistema")]
-    s += ret(332, 270, 616, 226, CARD, 16, LINHA, 1, 'filter="url(#sombra)"')
+    p.quadro(332, 270, 616, 226)
     for i, (rot, base) in enumerate(IND):
         y = 282 + i * 35
-        if i:
-            s += f'<line x1="348" y1="{y - 2}" x2="932" y2="{y - 2}" stroke="{LINHA}"/>'
-        s += ret(552, y + 4, 176, 24, AZUL_CL, 12, None) + txt(640, y + 21, rot.upper(), 9.5, AZUL_ESC, 800, 'text-anchor="middle"')
+        p.rotulo(552, y + 4, 176, 26, rot.upper(), 8.5, AZUL_ESC, True, "center", fundo=AZUL_CL)
         p.valor(346, y, 200, 32, f"{base} A", 13, TEXTO, f"Cor {base} A")
         p.valor(740, y, 200, 32, f"{base} B", 13, TEXTO, f"Cor {base} B")
-    s += txt(640, 490, "laranja: lado com o maior valor no indicador", 9, SUAVE, 400, 'text-anchor="middle"')
+    p.rotulo(440, 488, 400, 20, "laranja: lado com o maior valor no indicador", 8.5, SUAVE, False, "center")
     s += cartao(332, 508, 616, 202, "Todos os cenários", "grafico", "valor dos desenvolvidos, R$ milhões")
     svgs["cen"] = svg_doc(s)
     p.slicer(110, 62, 340, 32, "dCenarioA", "Cenário", unico=True)
@@ -843,8 +927,7 @@ def gera_relatorio():
     # ===== PONTE 2025-2026 =====
     p = Pagina("ponte")
     s = cabecalho("ponte") + barra_filtros([("codigo", "Sistema", 20), ("linha", "Movimento do tamanho", 330)], "Desenvolvidos internamente · decomposição sequencial: preço, tamanho e VI") + leitura()
-    s = heroi(p, s, "Valor dos desenvolvidos em 2025", "cubo", "Efeito Base 2025", None, None)
-    s += txt(36, 236, "31 sistemas · 26.660 PF · R$ 943,25 por PF", 10, "#E3F0F4")
+    s = heroi(p, s, "Valor dos desenvolvidos em 2025", "cubo", "Efeito Base 2025", None, None, "31 sistemas · 26.660 PF · R$ 943,25 por PF")
     KP = [("Novo preço do PF", "moeda", "Efeito Preço", "% Efeito Preço"), ("Sistemas novos (8)", "cubo", "Efeito Novos", "% Efeito Novos"),
           ("Revisão do Valor Institucional", "trofeu", "Efeito VI", "% Efeito VI"), ("Tamanho funcional", "regua", "Efeito Tamanho", "% Efeito Tamanho")]
     for i, (rot, ic, med, ctx) in enumerate(KP):
@@ -895,7 +978,7 @@ def gera_relatorio():
     # ===== FICHA DO PRODUTO =====
     p = Pagina("ficha")
     s = cabecalho("ficha") + barra_filtros([("lupa", "Produto", 20)], "Fonte: Laudo Técnico de Avaliação do produto")
-    s += ret(20, 110, 1240, 84, AZUL, 14, None, extra='filter="url(#sombra)"') + icone("cubo", 36, 128, LAR, 1.3)
+    p.quadro(20, 110, 1240, 84, None, None, fundo=AZUL, borda=None)
     KP = [("Valor no inventário", "cubo", "Valor Atual (R$)", "% Variação Valor", "Cor Var Valor"), ("Pontos de função", "regua", "PF Atual", "% Variação PF", "Cor Var PF"),
           ("Valor Institucional", "trofeu", "VI Atual", "VI Anterior", None), ("Integrações", "conexao", "Qtde Integrações", "Qtde Módulos (contexto)", None)]
     for i, (rot, ic, med, ctx, cor) in enumerate(KP):
@@ -908,8 +991,8 @@ def gera_relatorio():
     svgs["ficha"] = svg_doc(s)
     p.slicer(96, 62, 420, 32, "dProduto", "Nome do Produto", unico=True)
     navegacao(p)
-    p.texto_longo(72, 114, 900, 40, "Ficha Produto", 15, "#FFFFFF", AZUL, True)
-    p.texto_longo(72, 154, 1170, 36, "Ficha Categoria", 10, "#E3F0F4", AZUL)
+    p.texto_longo(36, 114, 930, 40, "Ficha Produto", 15, "#FFFFFF", AZUL, True)
+    p.texto_longo(36, 154, 1206, 36, "Ficha Categoria", 10, "#E3F0F4", AZUL)
     p.texto_longo(980, 116, 270, 36, "Ficha Situação", 10.5, LAR, AZUL, True)
     p.texto_longo(32, 344, 752, 110, "Ficha Finalidade", 9, TEXTO)
     p.texto_longo(32, 456, 752, 40, "Ficha Benefício", 9, APOIO, CARD, True)
@@ -994,7 +1077,7 @@ def gera_relatorio():
 if __name__ == "__main__":
     for pasta in (REP, SMD):
         shutil.rmtree(pasta, ignore_errors=True)
-    tabelas = gera_modelo()
     paginas = gera_relatorio()
-    print(f"  modelo: {len(tabelas)} tabelas + Medidas ({len(MEDIDAS)} medidas), {len(RELACOES)} relacionamentos")
+    tabelas = gera_modelo()
+    print(f"  modelo: {len(tabelas)} tabelas + Medidas ({len(MEDIDAS)} medidas + {len(TEXTOS)} de texto), {len(RELACOES)} relacionamentos")
     print(f"  relatório: {len(paginas)} páginas, {sum(len(p.visuais) for p in paginas)} visuais -> {RAIZ}")

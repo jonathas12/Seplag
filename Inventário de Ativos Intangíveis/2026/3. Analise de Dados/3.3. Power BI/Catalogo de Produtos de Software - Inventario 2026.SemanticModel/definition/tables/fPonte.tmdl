@@ -1,10 +1,10 @@
 table fPonte
-	lineageTag: f1a79153-cb48-4cd2-9a0f-c93dc7072360
+	lineageTag: 76e1d53e-9bb8-4f6f-8240-3bec4c7327f8
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: a4623fea-8bbf-401d-88b9-61c76a612086
+		lineageTag: 9c3bb420-4991-4ca4-a930-8cf66bd4d4d6
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fPonte
 
 	column 'Situação no Período'
 		dataType: string
-		lineageTag: 01bc4bfb-caad-423c-bbb5-7c61a7e0c12e
+		lineageTag: 9f4876b3-32a5-4d13-a2f3-30aa93b53b48
 		summarizeBy: none
 		sourceColumn: Situação no Período
 
@@ -21,7 +21,7 @@ table fPonte
 	column 'PF 2025'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 2b429e0f-9c09-42b7-b7ee-4776491072d4
+		lineageTag: 5da9f5b7-3f97-468f-9c81-24cf8ae6685a
 		summarizeBy: sum
 		sourceColumn: PF 2025
 
@@ -30,7 +30,7 @@ table fPonte
 	column 'PF 2026'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 8de4eb79-cb8a-4ba0-8aa7-d003d1267273
+		lineageTag: 364cbe87-d5be-4d60-8b32-38e55ee5ee1b
 		summarizeBy: sum
 		sourceColumn: PF 2026
 
@@ -39,7 +39,7 @@ table fPonte
 	column 'Variação PF'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 00cba1ef-fcc9-475e-8f6d-e1084dcce7ec
+		lineageTag: 11e536ea-641c-44f8-87f1-9c493ee85c7e
 		summarizeBy: sum
 		sourceColumn: Variação PF
 
@@ -48,7 +48,7 @@ table fPonte
 	column 'VI 2025'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: c5f71887-059a-41ea-bfc1-a7768ac2f161
+		lineageTag: 5af24eb2-f679-4cc8-a403-e4a44eae379e
 		summarizeBy: sum
 		sourceColumn: VI 2025
 
@@ -57,7 +57,7 @@ table fPonte
 	column 'VI 2026'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: f71fe1c8-b342-4cc7-af09-f1d4737a0a15
+		lineageTag: 4ac286dd-ac45-440c-a3b2-83259c02cd74
 		summarizeBy: sum
 		sourceColumn: VI 2026
 
@@ -66,7 +66,7 @@ table fPonte
 	column 'VA 2025 (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: a3acf112-e10d-4183-9d66-d1594b0b6f36
+		lineageTag: e62bce86-4548-4720-a7ba-dd2ad7bb5bc9
 		summarizeBy: sum
 		sourceColumn: VA 2025 (R$)
 
@@ -75,7 +75,7 @@ table fPonte
 	column 'VA 2026 (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 0f98da24-e881-4faa-a722-a93bdd4ba83e
+		lineageTag: f1d28840-f432-404c-9a18-d8f8484788f8
 		summarizeBy: sum
 		sourceColumn: VA 2026 (R$)
 
@@ -84,7 +84,7 @@ table fPonte
 	column 'Efeito Preço (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 6890c8f7-ec9b-40b2-b351-1e9e3671bc9a
+		lineageTag: f6eb4bbc-e00b-4a4b-a361-b2693a690ca6
 		summarizeBy: sum
 		sourceColumn: Efeito Preço (R$)
 
@@ -93,7 +93,7 @@ table fPonte
 	column 'Efeito Tamanho (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 71c86156-dc9a-4596-9a24-fdeb6e57b4bd
+		lineageTag: 718f121b-3865-44b4-b524-9a82a33d5ed3
 		summarizeBy: sum
 		sourceColumn: Efeito Tamanho (R$)
 
@@ -102,7 +102,7 @@ table fPonte
 	column 'Efeito VI (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: edc4a2f9-e339-4300-9fe9-bd653cad258a
+		lineageTag: 54e2b1a2-9de9-4d7f-bd01-8a6f81e09556
 		summarizeBy: sum
 		sourceColumn: Efeito VI (R$)
 
@@ -111,7 +111,7 @@ table fPonte
 	column 'Efeito Novo Sistema (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: f4c1b80c-0555-4562-9d8a-85be46c684f8
+		lineageTag: e0578a30-e948-404c-b78a-c929668451b9
 		summarizeBy: sum
 		sourceColumn: Efeito Novo Sistema (R$)
 
@@ -120,7 +120,7 @@ table fPonte
 	column 'Variação Total (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: c07d3fd5-8b90-424b-8bf6-c34dcc904bf5
+		lineageTag: 450343e0-bcb3-422d-b785-0e6cc92b8564
 		summarizeBy: sum
 		sourceColumn: Variação Total (R$)
 
@@ -128,7 +128,7 @@ table fPonte
 
 	column 'Movimento do Tamanho'
 		dataType: string
-		lineageTag: 4bf8507c-ff12-4ad4-90f9-fc2d159842d6
+		lineageTag: 2aecc53a-9f57-4dc1-9b4a-91ed77789bd7
 		summarizeBy: none
 		sourceColumn: Movimento do Tamanho
 

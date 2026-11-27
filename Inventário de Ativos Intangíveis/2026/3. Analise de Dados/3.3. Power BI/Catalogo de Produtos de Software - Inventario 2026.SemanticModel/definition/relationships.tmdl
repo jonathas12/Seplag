@@ -1,49 +1,49 @@
-relationship 33ad5397-a6fc-4e9b-83c4-bbc40407da92
+relationship 831eceae-9eb1-4e3b-bed4-da7d4fcfe135
 	fromColumn: fAvaliacao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship ddef3251-2e41-4950-a82d-0c1003936a46
+relationship 174926ad-2e2a-409e-89dc-cf9832276255
 	fromColumn: fAvaliacao.'Ano Inventário'
 	toColumn: dInventario.'Ano Inventário'
 
-relationship dfcdd5e6-3048-498e-8443-ac6432b1dc37
+relationship 15ab1b7b-a90d-44d8-85f0-c553eec1d105
 	fromColumn: fModulo.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 7b61fcb4-8824-4c0e-820a-88e170b3587f
+relationship 3510c16e-8a0d-49ca-9954-cd36e1340fa8
 	fromColumn: fFuncao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 82df3fdd-2f52-4f9d-967e-25ae4ec4a2f1
+relationship f9b3948d-e08e-446d-a264-c54e19779a94
 	fromColumn: fFuncao.'Tipo de Função'
 	toColumn: dTipoFuncao.'Tipo de Função'
 
-relationship ccc577f0-aefa-486d-9066-6b9948f75876
+relationship f27fcf43-b874-4cdb-88fb-c704129446be
 	fromColumn: fIntegracao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 8ca5624d-ceb9-46ed-9961-742fefd0ace3
+relationship 6b130444-5a38-487e-afb3-54fefb89b915
 	fromColumn: fHistoricoLaudo.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 5dfdd120-8d51-42da-860f-5a571075384f
+relationship 00eb38d2-fbcb-4d5e-82d6-c0be30a6faa1
 	fromColumn: fCustoProjeto.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 102a0517-b5c2-48e2-93fa-caccc577dc4c
+relationship fa8a2579-46c2-44b1-a1e3-06bd1bfa1a9c
 	fromColumn: fEconomicidade.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 5e81ccd5-e76d-42d7-a09a-d6546208bf44
+relationship 9cd2ecd0-8fc2-4c67-aafb-6d13389dbb47
 	fromColumn: bProdutoDiligencia.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 3bc0e530-c11d-4ac6-a1f8-a99814438730
+relationship a4b47d30-dbaa-4921-98d6-07d6163676cd
 	crossFilteringBehavior: bothDirections
 	fromColumn: bProdutoDiligencia.Código
 	toColumn: dDiligencia.Código
 
-relationship f3b2e92c-5061-4432-abac-a652df0ba30f
+relationship 1081a961-b1ac-4716-9c57-98de2a458d46
 	fromColumn: fPonte.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 

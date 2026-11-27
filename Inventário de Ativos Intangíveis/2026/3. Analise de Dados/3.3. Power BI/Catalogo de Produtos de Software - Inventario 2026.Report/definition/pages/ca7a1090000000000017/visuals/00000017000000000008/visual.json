@@ -2,73 +2,31 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000008",
   "position": {
-    "x": 96,
-    "y": 62,
+    "x": 609,
+    "y": 10,
     "z": 9000,
-    "height": 32,
-    "width": 420,
+    "height": 40,
+    "width": 113,
     "tabOrder": 9000
   },
   "visual": {
-    "visualType": "slicer",
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dProduto"
-                    }
-                  },
-                  "Property": "Nome do Produto"
-                }
-              },
-              "queryRef": "dProduto.Nome do Produto",
-              "nativeQueryRef": "Nome do Produto",
-              "active": true
-            }
-          ]
-        }
-      }
-    },
+    "visualType": "actionButton",
     "objects": {
-      "data": [
+      "icon": [
         {
           "properties": {
-            "mode": {
+            "shapeType": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "'blank'"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "singleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "header": [
+        },
         {
           "properties": {
             "show": {
@@ -81,53 +39,26 @@
           }
         }
       ],
-      "items": [
+      "outline": [
         {
           "properties": {
-            "textSize": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "false"
                 }
               }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "background": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineStyle": {
+            }
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
                 }
               }
             }
@@ -195,6 +126,40 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ca7a10900000000000e5'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Economicidade'"
                 }
               }
             }

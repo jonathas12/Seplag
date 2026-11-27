@@ -57,6 +57,11 @@ Capa · Visão Geral · Desenvolvidos · Adquiridos · Economicidade · Cenário
 e os tooltips Produto e Economia. Todos os cards trazem contexto: variação sobre o inventário anterior (seta e cor: verde para
 aumento, vermelho para redução) ou a participação no total.
 
+Só o cabeçalho (abas e logotipo) e a barra de filtros ficam na imagem de fundo das páginas. Cards, quadros, títulos e textos
+são visuais nativos (fundo, borda arredondada, sombra, título e subtítulo do próprio visual) e podem ser movidos,
+redimensionados e formatados no Power BI Desktop. Os valores e contextos dos cards usam as medidas de texto da pasta
+"10. Textos dos cards" (FORMAT na cultura pt-BR), geradas por `gera_pbip.py` a partir do formato de cada medida.
+
 ## Cenários e ponte 2025-2026
 
 Explicam o aumento do valor dos desenvolvidos de 2025 (R$ 44,98 mi) para 2026 (R$ 70,23 mi). A ponte decompõe a variação de

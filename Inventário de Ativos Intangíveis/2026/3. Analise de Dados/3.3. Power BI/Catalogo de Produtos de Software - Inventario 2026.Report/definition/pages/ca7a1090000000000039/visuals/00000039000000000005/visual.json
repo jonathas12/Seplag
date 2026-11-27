@@ -10,7 +10,7 @@
     "tabOrder": 6000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,27 +23,20 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Economia vs Mercado (R$)"
+                  "Property": "Economia vs Mercado (R$) (texto)"
                 }
               },
-              "queryRef": "Medidas.Economia vs Mercado (R$)",
-              "nativeQueryRef": "Economia vs Mercado (R$)"
+              "queryRef": "Medidas.Economia vs Mercado (R$) (texto)",
+              "nativeQueryRef": "Economia vs Mercado (R$) (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10.5D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
@@ -55,10 +48,24 @@
                 }
               }
             },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -78,20 +85,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

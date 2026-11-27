@@ -1,9 +1,9 @@
 table dProduto
-	lineageTag: 0f6304b9-9815-47b6-8786-07a380d59e50
+	lineageTag: 10f806d2-aa95-40e9-9cb4-7ec63f4556e5
 
 	column 'ID Produto'
 		dataType: string
-		lineageTag: bea14be4-6056-4693-be48-ee09feca6af2
+		lineageTag: d1583fed-3a3e-4551-93dd-45d49c6deb94
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -11,7 +11,7 @@ table dProduto
 
 	column Sigla
 		dataType: string
-		lineageTag: a8b99af9-e476-4557-8e93-f396c2ca5a0b
+		lineageTag: 2d4c034a-d270-48e4-a58c-a47ed5908e1b
 		summarizeBy: none
 		sourceColumn: Sigla
 
@@ -19,7 +19,7 @@ table dProduto
 
 	column 'Nome do Produto'
 		dataType: string
-		lineageTag: 9dc68a73-9be7-41cb-878c-1a106b617dc9
+		lineageTag: 843741ba-2060-4ecb-8a91-6302167c3c82
 		summarizeBy: none
 		sourceColumn: Nome do Produto
 
@@ -27,7 +27,7 @@ table dProduto
 
 	column 'Nome no Inventário'
 		dataType: string
-		lineageTag: a3824696-18c9-46ef-8dd1-2f54fc4032c8
+		lineageTag: 09f829ea-bf38-44e2-94fa-e3e10ea5215b
 		summarizeBy: none
 		sourceColumn: Nome no Inventário
 
@@ -35,7 +35,7 @@ table dProduto
 
 	column Categoria
 		dataType: string
-		lineageTag: 7734c277-2166-4126-b148-505f15371830
+		lineageTag: 9b83be9f-25e4-4473-914e-dce1c8c3a8cc
 		summarizeBy: none
 		sourceColumn: Categoria
 
@@ -43,7 +43,7 @@ table dProduto
 
 	column Grupo
 		dataType: string
-		lineageTag: 3d0e13ad-ae28-40c3-a071-1fb4f4a487aa
+		lineageTag: 92ebd99d-fadb-4d74-af24-d51c1e3023c7
 		summarizeBy: none
 		sourceColumn: Grupo
 
@@ -51,7 +51,7 @@ table dProduto
 
 	column Situação
 		dataType: string
-		lineageTag: a8f9bfad-4573-479c-a83c-ca4b71631c7b
+		lineageTag: 690e9143-52ab-4bc2-b64f-7383e2285369
 		summarizeBy: none
 		sourceColumn: Situação
 
@@ -59,7 +59,7 @@ table dProduto
 
 	column 'Situação Resumida'
 		dataType: string
-		lineageTag: e8803e7a-d092-46de-8f1d-6ddd266039f2
+		lineageTag: 8f98a829-a3ba-49b3-ae98-6ad5df13be27
 		summarizeBy: none
 		sourceColumn: Situação Resumida
 
@@ -67,7 +67,7 @@ table dProduto
 
 	column 'Situação na Avaliação'
 		dataType: string
-		lineageTag: 50c4a3fa-d7b7-43cb-91f4-16ff9c799be4
+		lineageTag: 51cc2e73-7eea-4187-badf-b4f33b3a009b
 		summarizeBy: none
 		sourceColumn: Situação na Avaliação
 
@@ -75,7 +75,7 @@ table dProduto
 
 	column Tecnologia
 		dataType: string
-		lineageTag: d4aa0bd9-b925-4e98-b4fd-6f04a2c234fd
+		lineageTag: c90a0648-2647-4f13-b78e-c62b37c7d654
 		summarizeBy: none
 		sourceColumn: Tecnologia
 
@@ -83,7 +83,7 @@ table dProduto
 
 	column 'Nível de Medição'
 		dataType: string
-		lineageTag: a16839b8-2d71-4ea3-850e-31f473ed06f5
+		lineageTag: 30a16e29-95f3-4dab-9e7e-5bd8f4e07fb7
 		summarizeBy: none
 		sourceColumn: Nível de Medição
 
@@ -91,7 +91,7 @@ table dProduto
 
 	column 'Medida PF'
 		dataType: string
-		lineageTag: 76f8f125-0e4d-41f4-8376-7bfedb077fdb
+		lineageTag: 76daa269-4f77-43eb-a843-d2cca0cb5b52
 		summarizeBy: none
 		sourceColumn: Medida PF
 
@@ -99,7 +99,7 @@ table dProduto
 
 	column 'Vida Útil'
 		dataType: string
-		lineageTag: 0b591865-4fb5-48a9-8fec-018b1fe675f5
+		lineageTag: c4301812-f26e-46bf-933b-3b94f1e36972
 		summarizeBy: none
 		sourceColumn: Vida Útil
 
@@ -108,7 +108,7 @@ table dProduto
 	column 'Valor Institucional'
 		dataType: double
 		formatString: 0.00
-		lineageTag: a3a81db8-98f2-4c4a-b5e9-225171ddc111
+		lineageTag: b3f26810-6f3b-4498-b96d-f1399ed52217
 		summarizeBy: none
 		sourceColumn: Valor Institucional
 
@@ -116,7 +116,7 @@ table dProduto
 
 	column 'Faixa Valor Institucional'
 		dataType: string
-		lineageTag: 6a38d786-cd6d-414a-87e5-8b7789e55472
+		lineageTag: 1bb84fb9-11d0-4394-ad59-07c1be0c475c
 		summarizeBy: none
 		sourceColumn: Faixa Valor Institucional
 
@@ -124,7 +124,7 @@ table dProduto
 
 	column 'Unidade de Desenvolvimento'
 		dataType: string
-		lineageTag: d13aba99-9be5-4284-a9b0-7461f3b5823b
+		lineageTag: 8eab4c96-5044-4df1-90ee-80d6bf3c7e68
 		summarizeBy: none
 		sourceColumn: Unidade de Desenvolvimento
 
@@ -132,7 +132,7 @@ table dProduto
 
 	column 'Tipo de Bem'
 		dataType: string
-		lineageTag: 2ca811f0-6b2b-489f-ad51-f09e2cc9a817
+		lineageTag: 84b37dc9-01cd-492e-ad98-867af89ba651
 		summarizeBy: none
 		sourceColumn: Tipo de Bem
 
@@ -140,7 +140,7 @@ table dProduto
 
 	column Propriedade
 		dataType: string
-		lineageTag: d6198a51-2313-4ed7-add2-20b41c144d54
+		lineageTag: 1372ecf7-8d3e-4a2a-8b90-c0665fadd681
 		summarizeBy: none
 		sourceColumn: Propriedade
 
@@ -148,7 +148,7 @@ table dProduto
 
 	column Finalidade
 		dataType: string
-		lineageTag: c76a5d30-cda9-4c98-81c6-ed0449606a81
+		lineageTag: 671747e2-97ec-4ab1-96e2-692d875885ec
 		summarizeBy: none
 		sourceColumn: Finalidade
 
@@ -156,7 +156,7 @@ table dProduto
 
 	column Benefício
 		dataType: string
-		lineageTag: 702bd9c7-0fa8-42e3-9fbc-89877cb1bf5c
+		lineageTag: a5bb77fb-cffd-400f-acb3-20f6c63ab08d
 		summarizeBy: none
 		sourceColumn: Benefício
 
@@ -164,7 +164,7 @@ table dProduto
 
 	column 'Base Legal'
 		dataType: string
-		lineageTag: b6e631f6-8783-4eb8-b2ce-5dfea26cb082
+		lineageTag: 2ab13ee2-57be-4174-ae4a-b1b07240ac3d
 		summarizeBy: none
 		sourceColumn: Base Legal
 
@@ -172,7 +172,7 @@ table dProduto
 
 	column 'Áreas de Negócio'
 		dataType: string
-		lineageTag: 036b0af3-4c37-42bd-9f84-7a8c82c3e06d
+		lineageTag: 2462755e-ccd8-4a29-9f30-c8a65736e837
 		summarizeBy: none
 		sourceColumn: Áreas de Negócio
 
@@ -180,7 +180,7 @@ table dProduto
 
 	column 'Perfis de Usuário'
 		dataType: string
-		lineageTag: 8f331531-858f-4f92-9f8d-3f233fed7b33
+		lineageTag: aa60b424-4b64-42aa-881e-d2c40e7e963e
 		summarizeBy: none
 		sourceColumn: Perfis de Usuário
 
@@ -188,7 +188,7 @@ table dProduto
 
 	column 'Justificativa do VI'
 		dataType: string
-		lineageTag: 48aa0d57-b9f1-450b-ae50-eb2b64998b03
+		lineageTag: 0ceae246-91f3-4ad7-9da6-dfa8e4bdd307
 		summarizeBy: none
 		sourceColumn: Justificativa do VI
 
@@ -196,7 +196,7 @@ table dProduto
 
 	column Uso
 		dataType: string
-		lineageTag: 964f35e5-bdfd-42d5-a253-9992d76fa23a
+		lineageTag: 7bf5a550-7127-45e2-bb68-88fd202cb775
 		summarizeBy: none
 		sourceColumn: Uso
 
@@ -204,7 +204,7 @@ table dProduto
 
 	column Integrações
 		dataType: string
-		lineageTag: 0fcc5c59-99fb-4b6f-b33f-d43ad1fa1871
+		lineageTag: 8a659325-db53-44ec-92e4-632416e55e56
 		summarizeBy: none
 		sourceColumn: Integrações
 
@@ -213,7 +213,7 @@ table dProduto
 	column 'Qtde Integrações'
 		dataType: int64
 		formatString: 0
-		lineageTag: 831d6335-8efa-427f-98f9-711a8ec5cfcf
+		lineageTag: b6e49d0e-c0f8-4836-a40a-0682e594c7bb
 		summarizeBy: sum
 		sourceColumn: Qtde Integrações
 
@@ -222,7 +222,7 @@ table dProduto
 	column 'Qtde Módulos'
 		dataType: int64
 		formatString: 0
-		lineageTag: 2f86b554-76c5-4627-9d6d-b893e47d0bb5
+		lineageTag: d7e1424f-697b-430f-b451-bfa80c807406
 		summarizeBy: sum
 		sourceColumn: Qtde Módulos
 
@@ -231,7 +231,7 @@ table dProduto
 	column 'Qtde Funções'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: f52e3b8a-3ccf-4026-9ceb-83067d829307
+		lineageTag: e167960e-6d23-4d48-8333-46ba27fe17f7
 		summarizeBy: sum
 		sourceColumn: Qtde Funções
 
@@ -239,7 +239,7 @@ table dProduto
 
 	column Documentação
 		dataType: string
-		lineageTag: 4b5d343d-30ab-4332-9351-92a366851a7c
+		lineageTag: 92bc3793-4b14-415c-9630-98010a7c2270
 		summarizeBy: none
 		sourceColumn: Documentação
 
@@ -247,7 +247,7 @@ table dProduto
 
 	column 'Principal Achado'
 		dataType: string
-		lineageTag: 2c0db4fd-d828-4a85-98f2-517eff089c98
+		lineageTag: 54daec4e-ca72-411b-a9f8-5906814fd848
 		summarizeBy: none
 		sourceColumn: Principal Achado
 
@@ -255,7 +255,7 @@ table dProduto
 
 	column Diligências
 		dataType: string
-		lineageTag: 56e7fa36-2be5-436b-bf24-dbaa747f571e
+		lineageTag: fa89c6d4-950a-43df-b01d-b87a2f574f5c
 		summarizeBy: none
 		sourceColumn: Diligências
 
@@ -263,7 +263,7 @@ table dProduto
 
 	column 'Ressalva de Documentação'
 		dataType: string
-		lineageTag: 6ba92697-2a7e-4d09-a207-b4284c8c8428
+		lineageTag: f406fc46-9eda-43eb-91d5-01c35c415603
 		summarizeBy: none
 		sourceColumn: Ressalva de Documentação
 
@@ -271,7 +271,7 @@ table dProduto
 
 	column Ressalvas
 		dataType: string
-		lineageTag: 6d8e3ec7-6831-47a7-8e12-d6b4abb8c291
+		lineageTag: 7bb06d68-874d-42c7-bafa-dfecf9e08a2d
 		summarizeBy: none
 		sourceColumn: Ressalvas
 
@@ -279,7 +279,7 @@ table dProduto
 
 	column 'Motivo da Variação'
 		dataType: string
-		lineageTag: b98025e8-5828-4f2f-88ba-78c3923d9bd8
+		lineageTag: 89f57472-5d52-4f4e-aec9-f5a0c8dcebfb
 		summarizeBy: none
 		sourceColumn: Motivo da Variação
 
@@ -287,7 +287,7 @@ table dProduto
 
 	column 'Fora do Escopo'
 		dataType: string
-		lineageTag: b9c841ee-a0cb-4b23-a0f3-b8a1dc7dd4db
+		lineageTag: 729481eb-3577-4b22-8a38-33d3dce638cf
 		summarizeBy: none
 		sourceColumn: Fora do Escopo
 
@@ -295,7 +295,7 @@ table dProduto
 
 	column 'Linha de Base'
 		dataType: string
-		lineageTag: 1e9bac5e-ed1e-40ae-ac57-867a6b42fdb6
+		lineageTag: 979460fa-86a5-4f47-83ea-942d912f14dc
 		summarizeBy: none
 		sourceColumn: Linha de Base
 
@@ -304,7 +304,7 @@ table dProduto
 	column 'Data da Avaliação'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: 1f067059-cd79-4fbf-ae82-d2597bae4a68
+		lineageTag: 68de267d-d0ce-4ffc-84ee-29d9c16a9264
 		summarizeBy: none
 		sourceColumn: Data da Avaliação
 
@@ -314,7 +314,7 @@ table dProduto
 
 	column Laudo
 		dataType: string
-		lineageTag: d31c1251-70b7-4b05-a82c-278dbde3d862
+		lineageTag: ff81cd61-0120-43fa-b76d-8300d616a717
 		summarizeBy: none
 		sourceColumn: Laudo
 
@@ -322,7 +322,7 @@ table dProduto
 
 	column 'Pasta do Laudo'
 		dataType: string
-		lineageTag: 606650a3-ffec-40c7-9b63-5cf059791160
+		lineageTag: 5f49479a-3930-4fa0-8961-43e6741c873e
 		summarizeBy: none
 		sourceColumn: Pasta do Laudo
 
@@ -331,7 +331,7 @@ table dProduto
 	column 'Nº Laudo'
 		dataType: int64
 		formatString: 0
-		lineageTag: 648439ec-7b86-4e82-a89a-5139d10f0017
+		lineageTag: 21c80203-585e-4f8d-8718-622f1856ce3c
 		summarizeBy: none
 		sourceColumn: Nº Laudo
 
@@ -339,7 +339,7 @@ table dProduto
 
 	column Patrimônio
 		dataType: string
-		lineageTag: acc554c6-f0e8-4e13-a495-5b4871a29692
+		lineageTag: 8e179973-8051-443b-976c-135efac6c46b
 		summarizeBy: none
 		sourceColumn: Patrimônio
 
@@ -347,7 +347,7 @@ table dProduto
 
 	column Fornecedor
 		dataType: string
-		lineageTag: bfd1144e-5128-419d-bc34-0f4eae4b8c73
+		lineageTag: 2b66f464-59b1-48ba-a6a0-edf5e55feb92
 		summarizeBy: none
 		sourceColumn: Fornecedor
 
@@ -355,7 +355,7 @@ table dProduto
 
 	column Contrato
 		dataType: string
-		lineageTag: d4e3ab7c-56e4-4c75-846f-c80b14737473
+		lineageTag: 5131a0e3-f9f2-4478-bf49-f80f8ecfa006
 		summarizeBy: none
 		sourceColumn: Contrato
 
@@ -363,7 +363,7 @@ table dProduto
 
 	column 'Tipo de Licença'
 		dataType: string
-		lineageTag: f83a7be4-483b-46b2-b00a-ebeb06929ee2
+		lineageTag: 4763c1c8-fad9-47eb-8a26-75888df543fc
 		summarizeBy: none
 		sourceColumn: Tipo de Licença
 
@@ -371,7 +371,7 @@ table dProduto
 
 	column 'Prazo da Licença'
 		dataType: string
-		lineageTag: 76ab6388-181e-41e7-bfaa-3bb43697a60a
+		lineageTag: c2be20d4-2abd-4e71-b965-7d164900b8d9
 		summarizeBy: none
 		sourceColumn: Prazo da Licença
 
@@ -380,7 +380,7 @@ table dProduto
 	column 'Data de Aquisição'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: cc278780-d43e-4f4e-ae47-541190f05ede
+		lineageTag: 46fe23cb-7151-4edf-9b73-86f3d8810c84
 		summarizeBy: none
 		sourceColumn: Data de Aquisição
 
@@ -391,7 +391,7 @@ table dProduto
 	column 'Data Fim'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: fa9d3724-f743-4e24-a51d-a9364bfa102c
+		lineageTag: 48f42c0d-39b2-489c-837c-4f48bdd2e3fa
 		summarizeBy: none
 		sourceColumn: Data Fim
 
@@ -401,7 +401,7 @@ table dProduto
 
 	column 'Situação da Licença'
 		dataType: string
-		lineageTag: d534216d-cc6b-4b31-b7e5-3acb630a0272
+		lineageTag: f9a74e33-3d20-4f4f-badc-d43354614e85
 		summarizeBy: none
 		sourceColumn: Situação da Licença
 
@@ -409,7 +409,7 @@ table dProduto
 
 	column 'Tem Custo de Projeto'
 		dataType: string
-		lineageTag: 74d852b6-91ad-4e2d-b0b8-0217455e699d
+		lineageTag: 4aa9a8fd-4746-4a92-a592-e60122a20604
 		summarizeBy: none
 		sourceColumn: Tem Custo de Projeto
 

@@ -1,10 +1,10 @@
 table fCustoProjeto
-	lineageTag: 43a7dace-cfed-4b7d-8d3b-c95fb54f8562
+	lineageTag: 9dc0ddb8-f656-4384-bfd4-e9a799ac16db
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 554bf88c-e93d-4576-b974-785385e2a852
+		lineageTag: 80505e0b-6027-4a6c-bfd8-0689c1b0820a
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fCustoProjeto
 
 	column Componente
 		dataType: string
-		lineageTag: 7612b2df-3d9b-474b-ae7c-3a462b3a1706
+		lineageTag: 7f6affa4-dc37-45c7-8697-ac5906b8e96f
 		summarizeBy: none
 		sourceColumn: Componente
 
@@ -20,7 +20,7 @@ table fCustoProjeto
 
 	column 'Tipo de Custo'
 		dataType: string
-		lineageTag: 96aed18c-0c59-4539-b9b8-11e9c09b95ea
+		lineageTag: e0ba177c-fedd-44cb-ac66-d575df18ef3d
 		summarizeBy: none
 		sourceColumn: Tipo de Custo
 
@@ -29,7 +29,7 @@ table fCustoProjeto
 	column 'Valor (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 7bb495fc-83a0-40cc-8add-679a7573ac3a
+		lineageTag: 89f7babc-9039-42bc-9e77-1bcfe42870e6
 		summarizeBy: sum
 		sourceColumn: Valor (R$)
 

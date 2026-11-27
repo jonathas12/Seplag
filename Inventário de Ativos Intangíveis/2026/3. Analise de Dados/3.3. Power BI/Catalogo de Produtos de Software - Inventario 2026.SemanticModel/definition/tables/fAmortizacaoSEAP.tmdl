@@ -1,10 +1,10 @@
 table fAmortizacaoSEAP
-	lineageTag: 7d0bb9be-2fcd-48c2-84c0-8c5d73f76e20
+	lineageTag: 7ee8695d-81bd-4a49-80a0-e8a09eadc8e0
 
 	column Parcela
 		dataType: int64
 		formatString: 0
-		lineageTag: 4d2a8032-b637-4dd1-bc08-2d093d8d2798
+		lineageTag: 39378c64-1216-41a6-9ebc-8108c836997d
 		summarizeBy: none
 		sourceColumn: Parcela
 
@@ -13,7 +13,7 @@ table fAmortizacaoSEAP
 	column 'Início do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: 81ddd54d-1d58-4ee4-950e-b782a2e52943
+		lineageTag: a46d3b30-eea8-4a98-92ee-f32529bac57a
 		summarizeBy: none
 		sourceColumn: Início do Período
 
@@ -24,7 +24,7 @@ table fAmortizacaoSEAP
 	column 'Fim do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: 588633f8-9fea-432f-a84b-224f8d8c2ccb
+		lineageTag: 1102e02f-2c2e-45d6-8392-643d5088c9dd
 		summarizeBy: none
 		sourceColumn: Fim do Período
 
@@ -35,7 +35,7 @@ table fAmortizacaoSEAP
 	column 'Amortização do Mês (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: e9c27822-53a3-48f0-9511-5f545c5df301
+		lineageTag: c6ba9a14-f9ac-4c05-9177-036444a0cc32
 		summarizeBy: sum
 		sourceColumn: Amortização do Mês (R$)
 
@@ -44,7 +44,7 @@ table fAmortizacaoSEAP
 	column 'Amortização Acumulada (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 61e3294d-3613-4846-973c-29dd892d2ff4
+		lineageTag: 9b6d5c9b-28e9-4520-885d-bf159d4690fd
 		summarizeBy: sum
 		sourceColumn: Amortização Acumulada (R$)
 
@@ -53,7 +53,7 @@ table fAmortizacaoSEAP
 	column 'Valor Contábil Líquido (R$)'
 		dataType: double
 		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
-		lineageTag: 7daf6a5e-877e-4351-b805-3b4d36f73857
+		lineageTag: 36bee298-176e-4fd0-b002-c72d5cf68b27
 		summarizeBy: sum
 		sourceColumn: Valor Contábil Líquido (R$)
 
@@ -61,7 +61,7 @@ table fAmortizacaoSEAP
 
 	column Marco
 		dataType: string
-		lineageTag: a86570f2-a59c-4857-828e-9dbab63446ca
+		lineageTag: 7d6d133b-81fa-429c-bb0b-09eac4249a62
 		summarizeBy: none
 		sourceColumn: Marco
 

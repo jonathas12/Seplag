@@ -1,10 +1,10 @@
 table fIntegracao
-	lineageTag: ee3f622e-37cc-4d4c-bbc3-9b4947a7a0a1
+	lineageTag: d35e3545-3b51-45eb-9b00-04ff5fa96011
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: f60e657b-8bf4-497f-aa5b-b76909d696e0
+		lineageTag: 1f4058b3-6ea6-4d29-ac14-03b0296b78cf
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fIntegracao
 
 	column 'Sistema Integrado'
 		dataType: string
-		lineageTag: 590f3c11-c1fc-461a-af18-13a3a648647b
+		lineageTag: 919657c7-af01-4a2e-88d4-882222b4f4dc
 		summarizeBy: none
 		sourceColumn: Sistema Integrado
 
@@ -20,7 +20,7 @@ table fIntegracao
 
 	column 'Dados Trocados'
 		dataType: string
-		lineageTag: 8d95874e-ab01-4df6-8d31-919127b08e36
+		lineageTag: ff0453ab-91fc-470c-af9d-c0b230b59342
 		summarizeBy: none
 		sourceColumn: Dados Trocados
 
@@ -28,7 +28,7 @@ table fIntegracao
 
 	column Forma
 		dataType: string
-		lineageTag: 27cb8d78-eb87-4855-80d8-7313a77437a6
+		lineageTag: 668d21ec-825d-491f-bf70-af311df35c84
 		summarizeBy: none
 		sourceColumn: Forma
 

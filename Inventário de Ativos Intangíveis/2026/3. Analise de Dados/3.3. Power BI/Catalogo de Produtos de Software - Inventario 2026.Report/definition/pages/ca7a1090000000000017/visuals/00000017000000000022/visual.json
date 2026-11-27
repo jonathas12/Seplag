@@ -2,72 +2,34 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000022",
   "position": {
-    "x": 32,
-    "y": 456,
+    "x": 816,
+    "y": 546,
     "z": 23000,
-    "height": 40,
-    "width": 752,
+    "height": 46,
+    "width": 436,
     "tabOrder": 23000
   },
   "visual": {
-    "visualType": "tableEx",
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Ficha Benefício"
-                }
-              },
-              "queryRef": "Medidas.Ficha Benefício",
-              "nativeQueryRef": " ",
-              "displayName": " "
-            }
-          ]
-        }
-      }
-    },
+    "visualType": "actionButton",
     "objects": {
-      "columnHeaders": [
+      "icon": [
         {
           "properties": {
-            "fontSize": {
+            "shapeType": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "'blank'"
                 }
               }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "wordWrap": {
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -77,48 +39,64 @@
           }
         }
       ],
-      "values": [
+      "outline": [
         {
           "properties": {
-            "fontColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#4E6B76'"
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "text": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
                     }
-                  }
+                  },
+                  "Property": "Ficha Achado"
                 }
               }
             },
-            "backColorPrimary": {
+            "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#4E6B76'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
+                      "Value": "'#0E2F3C'"
                     }
                   }
                 }
@@ -127,14 +105,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "9.5D"
                 }
               }
             },
@@ -144,74 +115,59 @@
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "gridVertical": {
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "gridHorizontal": {
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'left'"
                 }
               }
             },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
                 }
               }
             },
-            "rowPadding": {
+            "leftMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "rightMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "topMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "bottomMargin": {
               "expr": {
                 "Literal": {
                   "Value": "0D"
                 }
               }
             }
-          }
-        }
-      ],
-      "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "726D"
-                }
-              }
-            }
           },
           "selector": {
-            "metadata": "Medidas.Ficha Benefício"
-          }
-        }
-      ],
-      "total": [
-        {
-          "properties": {
-            "totals": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
+            "id": "default"
           }
         }
       ]

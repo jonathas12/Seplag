@@ -67,40 +67,6 @@
       ]
     },
     "visualContainerObjects": {
-      "visualLink": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'WebUrl'"
-                }
-              }
-            },
-            "webUrl": {
-              "expr": {
-                "Literal": {
-                  "Value": "'https://www.sigadoc.mt.gov.br/sigaex/app/expediente/doc/exibir?sigla=SEPLAG-PRO-2026/20317-V01'"
-                }
-              }
-            },
-            "tooltip": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Abrir o processo SEPLAG-PRO-2026/20317-V01 no Sigadoc'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "background": [
         {
           "properties": {
@@ -160,6 +126,40 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WebUrl'"
+                }
+              }
+            },
+            "webUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "'https://www.sigadoc.mt.gov.br/sigaex/app/expediente/doc/exibir?sigla=SEPLAG-PRO-2026/20317-V01'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Abrir o processo SEPLAG-PRO-2026/20317-V01 no Sigadoc'"
                 }
               }
             }

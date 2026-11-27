@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000d4000000000017",
   "position": {
-    "x": 726,
-    "y": 10,
+    "x": 150,
+    "y": 103,
     "z": 18000,
-    "height": 40,
-    "width": 81,
+    "height": 42,
+    "width": 1112,
     "tabOrder": 18000
   },
   "visual": {
@@ -64,10 +64,8 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualLink": [
+      ],
+      "text": [
         {
           "properties": {
             "show": {
@@ -76,31 +74,105 @@
                   "Value": "true"
                 }
               }
-            },
-            "type": {
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Leitura Adquiridos"
                 }
               }
             },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ca7a109000000000004a'"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
                 }
               }
             },
-            "tooltip": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Cenários'"
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
+                }
+              }
+            },
+            "leftMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "rightMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "topMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "bottomMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
-      ],
+      ]
+    },
+    "visualContainerObjects": {
       "background": [
         {
           "properties": {

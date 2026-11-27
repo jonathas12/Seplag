@@ -197,7 +197,7 @@ DIVIDE ( [Valor Atual (R$)], CALCULATE ( [Valor Atual (R$)], ALLSELECTED ( dProd
 Posição do produto pelo valor.
 
 ```dax
-IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto[ID Produto] ), [Valor Atual (R$)], , DESC, DENSE ) )
+IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto ), [Valor Atual (R$)], , DESC, DENSE ) )
 ```
 
 ## 2. Governança
@@ -928,6 +928,14 @@ COUNTROWS ( fModulo )
 
 ```dax
 [Valor Atual (R$)]
+```
+
+### Valor Desenvolvidos (contexto)
+
+Valor dos softwares desenvolvidos internamente, para o card da capa.
+
+```dax
+[Valor Desenvolvidos (R$)]
 ```
 
 ### Posição

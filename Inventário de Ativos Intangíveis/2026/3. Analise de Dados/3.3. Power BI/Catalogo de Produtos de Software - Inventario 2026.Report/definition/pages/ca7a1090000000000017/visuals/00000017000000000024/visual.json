@@ -2,85 +2,96 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000024",
   "position": {
-    "x": 30,
-    "y": 548,
+    "x": 816,
+    "y": 622,
     "z": 25000,
-    "height": 156,
-    "width": 360,
+    "height": 40,
+    "width": 436,
     "tabOrder": 25000
   },
   "visual": {
-    "visualType": "columnChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dTipoFuncao"
-                    }
-                  },
-                  "Property": "Tipo de Função"
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
                 }
-              },
-              "queryRef": "dTipoFuncao.Tipo de Função",
-              "nativeQueryRef": "Tipo de Função",
-              "active": true
+              }
             }
-          ]
+          },
+          "selector": {
+            "id": "default"
+          }
         },
-        "Y": {
-          "projections": [
-            {
-              "field": {
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "text": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
+              "expr": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtde Funções"
-                }
-              },
-              "queryRef": "Medidas.Qtde Funções",
-              "nativeQueryRef": "Qtde Funções"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dTipoFuncao"
-                  }
-                },
-                "Property": "Tipo de Função"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Property": "Ficha Documentação"
                 }
               }
             },
-            "labelColor": {
+            "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -94,180 +105,69 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
                 }
               }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#7D949B'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "'left'"
                 }
               }
             },
-            "show": {
+            "verticalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'top'"
                 }
               }
             },
-            "gridlineShow": {
+            "leftMargin": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "2D"
                 }
               }
             },
-            "gridlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
-                }
-              }
-            },
-            "labelDisplayUnits": {
+            "rightMargin": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "2D"
+                }
+              }
+            },
+            "topMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "bottomMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Top'"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#4E6B76'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "showTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "labels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#155C78'"
-                    }
-                  }
-                }
-              }
-            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]
@@ -313,6 +213,19 @@
         }
       ],
       "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
         {
           "properties": {
             "show": {

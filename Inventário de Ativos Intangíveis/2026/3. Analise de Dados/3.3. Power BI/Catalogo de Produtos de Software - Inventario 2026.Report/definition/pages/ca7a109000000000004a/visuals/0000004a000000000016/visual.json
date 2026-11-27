@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0000004a000000000016",
   "position": {
-    "x": 740,
-    "y": 282,
+    "x": 974,
+    "y": 506,
     "z": 17000,
-    "height": 32,
-    "width": 200,
+    "height": 40,
+    "width": 276,
     "tabOrder": 17000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,40 +23,35 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Valor Cenário B"
+                  "Property": "Dif Real 2026 Cenário B (texto)"
                 }
               },
-              "queryRef": "Medidas.Valor Cenário B",
-              "nativeQueryRef": "Valor Cenário B"
+              "queryRef": "Medidas.Dif Real 2026 Cenário B (texto)",
+              "nativeQueryRef": "Dif Real 2026 Cenário B (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
                   "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Medidas"
-                        }
-                      },
-                      "Property": "Cor Valor Cenário B"
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
                 }
               }
             },
@@ -64,6 +59,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -83,20 +85,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

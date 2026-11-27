@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000e5000000000016",
   "position": {
-    "x": 1045,
-    "y": 10,
+    "x": 150,
+    "y": 103,
     "z": 17000,
-    "height": 40,
-    "width": 62,
+    "height": 42,
+    "width": 1112,
     "tabOrder": 17000
   },
   "visual": {
@@ -64,10 +64,8 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualLink": [
+      ],
+      "text": [
         {
           "properties": {
             "show": {
@@ -76,31 +74,105 @@
                   "Value": "true"
                 }
               }
-            },
-            "type": {
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Leitura Economicidade"
                 }
               }
             },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ca7a1090000000000017'"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
                 }
               }
             },
-            "tooltip": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Ficha'"
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
+                }
+              }
+            },
+            "leftMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "rightMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "topMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "bottomMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
-      ],
+      ]
+    },
+    "visualContainerObjects": {
       "background": [
         {
           "properties": {

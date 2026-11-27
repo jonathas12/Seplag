@@ -12,10 +12,10 @@ NUM1 = "#,0.0"
 NUM0 = "#,0"
 NUM2 = "#,0.00"
 TXT = None
-SETA_PCT = '"▲ "+0.0%" vs inventário anterior";"▼ "-0.0%" vs inventário anterior";"● 0,0% vs inventário anterior"'
+SETA_PCT = '"▲ "+0.0%" vs anterior";"▼ "-0.0%" vs anterior";"● 0,0% vs anterior"'
 SETA_PCT_CURTA = '"▲ "0.0%;"▼ "0.0%;"● 0,0%"'
-SETA_QTD = '"▲ +"0" vs inventário anterior";"▼ -"0" vs inventário anterior";"● sem variação"'
-SETA_PF = '"▲ +"#,0.0" PF vs inventário anterior";"▼ -"#,0.0" PF vs inventário anterior";"● sem variação"'
+SETA_QTD = '"▲ +"0" vs anterior";"▼ -"0" vs anterior";"● sem variação"'
+SETA_PF = '"▲ +"#,0.0" PF vs anterior";"▼ -"#,0.0" PF vs anterior";"● sem variação"'
 VERDE, VERMELHO, CINZA = "#1E8E5A", "#C0392B", "#5E7C88"
 VERDE_CL, VERMELHO_CL, CINZA_CL = "#8EE4B8", "#FFB3A7", "#D9EAF0"
 FAIXAS = [(100000, "#CFE3EA"), (300000, "#B4D3DE"), (600000, "#98C2D1"), (900000, "#7BAFC2"), (1200000, "#5F9BB2"),
@@ -66,7 +66,7 @@ MEDIDAS = [
     ("Qtde Licenças", f"CALCULATE ( [Qtde Produtos Atual], dProduto[Categoria] = {LIC} )", NUM0, "1. Base", "Licenças avaliadas."),
     ("Qtde Adquiridos", f"CALCULATE ( [Qtde Produtos Atual], dProduto[Categoria] <> {DEV} )", NUM0, "1. Base", "Licenças e SEAP."),
     ("% Participação", "DIVIDE ( [Valor Atual (R$)], CALCULATE ( [Valor Atual (R$)], ALLSELECTED ( dProduto ) ) )", PCT, "1. Base", "Participação no valor do recorte."),
-    ("Posição no Ranking", "IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto[ID Produto] ), [Valor Atual (R$)], , DESC, DENSE ) )",
+    ("Posição no Ranking", "IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto ), [Valor Atual (R$)], , DESC, DENSE ) )",
      NUM0, "1. Base", "Posição do produto pelo valor."),
     # ------------------------------------------------------------------ 2. Governança
     ("Qtde Sem Documentação", f'CALCULATE ( COUNTROWS ( dProduto ), dProduto[Documentação] = "Ausente", dProduto[Categoria] = {DEV} )', NUM0, "2. Governança",
@@ -212,6 +212,7 @@ MEDIDAS += [
     ("Qtde Funções (contexto)", "[Qtde Funções]", '#,0" funções contadas"', "8. Contexto", ""),
     ("Qtde Módulos (contexto)", "COUNTROWS ( fModulo )", '0" módulos no laudo"', "8. Contexto", ""),
     ("Valor Atual (contexto)", "[Valor Atual (R$)]", '"valor de R$ "#,0.00', "8. Contexto", ""),
+    ("Valor Desenvolvidos (contexto)", "[Valor Desenvolvidos (R$)]", '"valor de R$ "#,0.00', "8. Contexto", "Valor dos softwares desenvolvidos internamente, para o card da capa."),
     ("Posição", 'VAR r = [Posição no Ranking] RETURN IF ( NOT ISBLANK ( r ), SWITCH ( r, 1, "💎 1º", 2, "🥇 2º", 3, "🥈 3º", 4, "🥉 4º", r & "º" ) )',
      TXT, "8. Contexto", "Posição pelo valor, com medalhas para os quatro maiores."),
     ("Cor Faixa Valor", "VAR v = [Valor Atual (R$)] RETURN SWITCH ( TRUE (), " + ", ".join(f'v <= {lim}, "{cor}"' for lim, cor in FAIXAS) + ', "#0E3A4D" )',

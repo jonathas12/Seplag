@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0000004a000000000006",
   "position": {
-    "x": 972,
-    "y": 184,
+    "x": 34,
+    "y": 428,
     "z": 7000,
-    "height": 60,
+    "height": 46,
     "width": 276,
     "tabOrder": 7000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,102 +23,26 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Nome Cenário B"
+                  "Property": "Valor Cenário A (texto)"
                 }
               },
-              "queryRef": "Medidas.Nome Cenário B",
-              "nativeQueryRef": " ",
-              "displayName": " "
+              "queryRef": "Medidas.Valor Cenário A (texto)",
+              "nativeQueryRef": "Valor Cenário A (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "columnHeaders": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "fontColor": {
+            "color": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "values": [
-        {
-          "properties": {
-            "fontColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E3A4D'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E3A4D'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
+                      "Value": "'#FF8C42'"
                     }
                   }
                 }
@@ -127,14 +51,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "20D"
                 }
               }
             },
@@ -144,71 +61,37 @@
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "gridVertical": {
+            },
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridHorizontal": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "rowPadding": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }
           }
         }
       ],
-      "columnWidth": [
+      "categoryLabels": [
         {
           "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "250D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Medidas.Nome Cenário B"
-          }
-        }
-      ],
-      "total": [
-        {
-          "properties": {
-            "totals": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "wordWrap": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

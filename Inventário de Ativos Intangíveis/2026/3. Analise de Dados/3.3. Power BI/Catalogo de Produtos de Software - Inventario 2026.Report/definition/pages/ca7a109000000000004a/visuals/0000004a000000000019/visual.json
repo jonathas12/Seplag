@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0000004a000000000019",
   "position": {
-    "x": 346,
-    "y": 352,
+    "x": 344,
+    "y": 180,
     "z": 20000,
-    "height": 32,
-    "width": 200,
+    "height": 44,
+    "width": 270,
     "tabOrder": 20000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,40 +23,35 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Preço PF Cenário A"
+                  "Property": "Valor Cenário A (texto)"
                 }
               },
-              "queryRef": "Medidas.Preço PF Cenário A",
-              "nativeQueryRef": "Preço PF Cenário A"
+              "queryRef": "Medidas.Valor Cenário A (texto)",
+              "nativeQueryRef": "Valor Cenário A (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
                   "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Medidas"
-                        }
-                      },
-                      "Property": "Cor Preço PF Cenário A"
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
                 }
               }
             },
@@ -64,6 +59,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -83,20 +85,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

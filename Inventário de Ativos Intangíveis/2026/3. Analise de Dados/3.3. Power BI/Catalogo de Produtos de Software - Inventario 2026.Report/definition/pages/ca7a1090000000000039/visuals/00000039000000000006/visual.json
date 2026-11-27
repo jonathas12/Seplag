@@ -10,7 +10,7 @@
     "tabOrder": 7000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "card",
     "query": {
       "queryState": {
         "Values": {
@@ -23,27 +23,20 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Retorno Ativo por R$ 1"
+                  "Property": "Retorno Ativo por R$ 1 (texto)"
                 }
               },
-              "queryRef": "Medidas.Retorno Ativo por R$ 1",
-              "nativeQueryRef": "Retorno Ativo por R$ 1"
+              "queryRef": "Medidas.Retorno Ativo por R$ 1 (texto)",
+              "nativeQueryRef": "Retorno Ativo por R$ 1 (texto)"
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "labels": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10.5D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
@@ -55,10 +48,24 @@
                 }
               }
             },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -78,20 +85,13 @@
           }
         }
       ],
-      "card": [
+      "wordWrap": [
         {
           "properties": {
-            "barShow": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             }

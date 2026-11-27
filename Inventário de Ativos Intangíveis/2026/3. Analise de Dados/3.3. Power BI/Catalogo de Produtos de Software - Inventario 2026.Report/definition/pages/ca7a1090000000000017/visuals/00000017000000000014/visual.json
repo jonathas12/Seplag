@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000014",
   "position": {
-    "x": 811,
-    "y": 10,
+    "x": 36,
+    "y": 114,
     "z": 15000,
     "height": 40,
-    "width": 126,
+    "width": 930,
     "tabOrder": 15000
   },
   "visual": {
@@ -64,10 +64,8 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualLink": [
+      ],
+      "text": [
         {
           "properties": {
             "show": {
@@ -76,31 +74,105 @@
                   "Value": "true"
                 }
               }
-            },
-            "type": {
+            }
+          }
+        },
+        {
+          "properties": {
+            "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Ficha Produto"
                 }
               }
             },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ca7a109000000000005b'"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
                 }
               }
             },
-            "tooltip": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Ponte 2025-2026'"
+                  "Value": "15D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
+                }
+              }
+            },
+            "leftMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "rightMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "topMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "bottomMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
-      ],
+      ]
+    },
+    "visualContainerObjects": {
       "background": [
         {
           "properties": {

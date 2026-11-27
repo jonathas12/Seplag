@@ -2,75 +2,73 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000d4000000000005",
   "position": {
-    "x": 576,
-    "y": 214,
+    "x": 110,
+    "y": 62,
     "z": 6000,
-    "height": 24,
-    "width": 200,
+    "height": 32,
+    "width": 110,
     "tabOrder": 6000
   },
   "visual": {
-    "visualType": "multiRowCard",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medidas"
+                      "Entity": "dInventario"
                     }
                   },
-                  "Property": "% Var SEAP"
+                  "Property": "Inventário"
                 }
               },
-              "queryRef": "Medidas.% Var SEAP",
-              "nativeQueryRef": "% Var SEAP"
+              "queryRef": "dInventario.Inventário",
+              "nativeQueryRef": "Inventário",
+              "active": true
             }
           ]
         }
       }
     },
     "objects": {
-      "dataLabels": [
+      "data": [
         {
           "properties": {
-            "fontSize": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "9.5D"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Medidas"
-                        }
-                      },
-                      "Property": "Cor Var SEAP"
-                    }
-                  }
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "categoryLabels": [
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
         {
           "properties": {
             "show": {
@@ -83,20 +81,53 @@
           }
         }
       ],
-      "card": [
+      "items": [
         {
           "properties": {
-            "barShow": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FBFDFC'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
                 }
               }
             },
             "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

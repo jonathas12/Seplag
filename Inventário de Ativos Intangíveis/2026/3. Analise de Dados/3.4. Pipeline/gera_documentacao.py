@@ -27,6 +27,11 @@ DESCR = {
     "fEconomicidade": "Economicidade por sistema: custo pago, mesmo serviço a preço de mercado do PF, economia e retorno por R$ 1,00.",
     "fAmortizacaoSEAP": "Amortização linear do SEAP em 12 parcelas (Contrato nº 001/2026/SEPLAG, cláusula 4.2).",
     "bProdutoDiligencia": "Ponte produto x diligência.",
+    "fPonte": "Ponte do valor dos desenvolvidos de 2025 para 2026 por sistema: PF, VI, VA e efeitos de preço, tamanho, VI e entrada de sistemas novos.",
+    "fCenario": "Cenários 'E se?' do valor dos desenvolvidos (preço, tamanho e VI de 2025 ou de 2026, com e sem os sistemas novos).",
+    "fPonteFator": "Ponte agregada por fator (base 2025, preço, tamanho, VI e sistemas novos), para o gráfico em cascata.",
+    "dCenarioA": "Seletor do Cenário A da página Cenários (tabela desconectada).",
+    "dCenarioB": "Seletor do Cenário B da página Cenários (tabela desconectada).",
 }
 
 linhas = ["# Dicionário de dados", "", "Gerado por `gera_documentacao.py` a partir dos arquivos em `3.2. Dados/parquet`.", "",

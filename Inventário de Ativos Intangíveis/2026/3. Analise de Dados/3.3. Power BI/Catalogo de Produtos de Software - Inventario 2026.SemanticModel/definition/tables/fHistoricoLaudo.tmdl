@@ -1,10 +1,10 @@
 table fHistoricoLaudo
-	lineageTag: 86a26e57-1365-4766-aedd-2a7f9c64b837
+	lineageTag: 72307b22-a6d0-492c-b3d0-a4542775adb6
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 5de94db6-0434-413d-9d48-1945a6cedb9d
+		lineageTag: c952967e-2e0e-41ec-aa2f-fe70bd84d563
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -14,7 +14,7 @@ table fHistoricoLaudo
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 5d5e4ac5-ee57-4d4f-a106-f6cd34f3f82d
+		lineageTag: 1c4a6042-bc41-4f16-bbff-ba39eb3fca35
 		summarizeBy: none
 		sourceColumn: Ano Inventário
 
@@ -22,7 +22,7 @@ table fHistoricoLaudo
 
 	column 'Data da Medição'
 		dataType: string
-		lineageTag: 17f75c4e-281d-4115-ae97-6037938b582c
+		lineageTag: 1b636012-55ea-48f2-8ec5-08e0ea5a91fc
 		summarizeBy: none
 		sourceColumn: Data da Medição
 
@@ -31,7 +31,7 @@ table fHistoricoLaudo
 	column 'Tamanho Funcional (PF)'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 9806e29a-fac2-48a2-ad5f-fd5ec9452ddf
+		lineageTag: ef4021f9-e7b9-4362-9a49-167337869b9f
 		summarizeBy: sum
 		sourceColumn: Tamanho Funcional (PF)
 
@@ -39,7 +39,7 @@ table fHistoricoLaudo
 
 	column 'Nível de Medição'
 		dataType: string
-		lineageTag: fd350dfd-ab33-4da7-9d07-c6df8abdf587
+		lineageTag: c3d8ce08-2da6-4c01-ba7a-994c9dd02a5e
 		summarizeBy: none
 		sourceColumn: Nível de Medição
 
@@ -47,7 +47,7 @@ table fHistoricoLaudo
 
 	column Situação
 		dataType: string
-		lineageTag: 7490f1f9-261a-4e66-a877-d923aa86b62e
+		lineageTag: 5df255dc-a22c-4731-8753-ea5f7dcd1324
 		summarizeBy: none
 		sourceColumn: Situação
 
@@ -55,7 +55,7 @@ table fHistoricoLaudo
 
 	column Observação
 		dataType: string
-		lineageTag: a647e8d3-9274-40d7-b96c-de0a45a28922
+		lineageTag: 2fa70844-59ee-4578-b2b2-9d662860be73
 		summarizeBy: none
 		sourceColumn: Observação
 

@@ -1,0 +1,467 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "0000005b000000000023",
+  "position": {
+    "x": 30,
+    "y": 538,
+    "z": 24000,
+    "height": 166,
+    "width": 1220,
+    "tabOrder": 24000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dProduto"
+                    }
+                  },
+                  "Property": "Sigla"
+                }
+              },
+              "queryRef": "dProduto.Sigla",
+              "nativeQueryRef": "Sistema",
+              "displayName": "Sistema"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Situação no Período"
+                }
+              },
+              "queryRef": "fPonte.Situação no Período",
+              "nativeQueryRef": "Período",
+              "displayName": "Período"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "PF 2025"
+                }
+              },
+              "queryRef": "fPonte.PF 2025",
+              "nativeQueryRef": "PF 2025",
+              "displayName": "PF 2025"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "PF 2026"
+                }
+              },
+              "queryRef": "fPonte.PF 2026",
+              "nativeQueryRef": "PF 2026",
+              "displayName": "PF 2026"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Variação PF"
+                }
+              },
+              "queryRef": "fPonte.Variação PF",
+              "nativeQueryRef": "Var. PF",
+              "displayName": "Var. PF"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "VI 2025"
+                }
+              },
+              "queryRef": "fPonte.VI 2025",
+              "nativeQueryRef": "VI 2025",
+              "displayName": "VI 2025"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "VI 2026"
+                }
+              },
+              "queryRef": "fPonte.VI 2026",
+              "nativeQueryRef": "VI 2026",
+              "displayName": "VI 2026"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "VA 2025 (R$)"
+                }
+              },
+              "queryRef": "fPonte.VA 2025 (R$)",
+              "nativeQueryRef": "VA 2025",
+              "displayName": "VA 2025"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Efeito Preço (R$)"
+                }
+              },
+              "queryRef": "fPonte.Efeito Preço (R$)",
+              "nativeQueryRef": "Efeito preço",
+              "displayName": "Efeito preço"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Efeito Tamanho (R$)"
+                }
+              },
+              "queryRef": "fPonte.Efeito Tamanho (R$)",
+              "nativeQueryRef": "Efeito tamanho",
+              "displayName": "Efeito tamanho"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Efeito VI (R$)"
+                }
+              },
+              "queryRef": "fPonte.Efeito VI (R$)",
+              "nativeQueryRef": "Efeito VI",
+              "displayName": "Efeito VI"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "Efeito Novo Sistema (R$)"
+                }
+              },
+              "queryRef": "fPonte.Efeito Novo Sistema (R$)",
+              "nativeQueryRef": "Sistema novo",
+              "displayName": "Sistema novo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPonte"
+                    }
+                  },
+                  "Property": "VA 2026 (R$)"
+                }
+              },
+              "queryRef": "fPonte.VA 2026 (R$)",
+              "nativeQueryRef": "VA 2026",
+              "displayName": "VA 2026"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fPonte"
+                  }
+                },
+                "Property": "VA 2026 (R$)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E3A4D'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D5E6EC'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8.5D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FBFDFC'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F1F6F5'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8.5D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C8D9D6'"
+                    }
+                  }
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

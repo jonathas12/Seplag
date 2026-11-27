@@ -12,6 +12,14 @@ NUM1 = "#,0.0"
 NUM0 = "#,0"
 NUM2 = "#,0.00"
 TXT = None
+SETA_PCT = '"▲ "+0.0%" vs inventário anterior";"▼ "-0.0%" vs inventário anterior";"● 0,0% vs inventário anterior"'
+SETA_PCT_CURTA = '"▲ "0.0%;"▼ "0.0%;"● 0,0%"'
+SETA_QTD = '"▲ +"0" vs inventário anterior";"▼ -"0" vs inventário anterior";"● sem variação"'
+SETA_PF = '"▲ +"#,0.0" PF vs inventário anterior";"▼ -"#,0.0" PF vs inventário anterior";"● sem variação"'
+VERDE, VERMELHO, CINZA = "#1E8E5A", "#C0392B", "#5E7C88"
+VERDE_CL, VERMELHO_CL, CINZA_CL = "#8EE4B8", "#FFB3A7", "#D9EAF0"
+FAIXAS = [(100000, "#CFE3EA"), (300000, "#B4D3DE"), (600000, "#98C2D1"), (900000, "#7BAFC2"), (1200000, "#5F9BB2"),
+          (2200000, "#4787A1"), (5200000, "#33748F"), (10000000, "#22617D")]
 
 DEV = '"Desenvolvido internamente"'
 LIC = '"Adquirido: licença"'
@@ -44,7 +52,7 @@ MEDIDAS = [
     ("Valor Atual (R$)", ano_ref("[Valor Final (R$)]"), CUR, "1. Base", "Valor do ativo no inventário de referência."),
     ("Valor Anterior (R$)", ano_ant("[Valor Final (R$)]"), CUR, "1. Base", "Valor do ativo no inventário anterior ao de referência."),
     ("Variação Valor (R$)", "[Valor Atual (R$)] - [Valor Anterior (R$)]", CUR, "1. Base", "Diferença do valor sobre o inventário anterior."),
-    ("% Variação Valor", "DIVIDE ( [Variação Valor (R$)], [Valor Anterior (R$)] )", PCT, "1. Base", "Variação percentual do valor."),
+    ("% Variação Valor", "DIVIDE ( [Variação Valor (R$)], [Valor Anterior (R$)] )", SETA_PCT, "1. Base", "Variação percentual do valor sobre o inventário anterior."),
     ("PF Atual", ano_ref("[Tamanho Funcional (PF)]"), NUM1, "1. Base", "Pontos de função no inventário de referência."),
     ("PF Anterior", ano_ant("[Tamanho Funcional (PF)]"), NUM1, "1. Base", "Pontos de função no inventário anterior."),
     ("Variação PF", "[PF Atual] - [PF Anterior]", NUM1, "1. Base", "Diferença de pontos de função."),
@@ -170,4 +178,105 @@ MEDIDAS = [
      'SWITCH ( SELECTEDVALUE ( dProduto[Documentação] ), "Ausente", "#FF8C42", "Com lacunas", "#C77A3F", "Parcial", "#6FA0B3", "Adequada", "#155C78", "#5E7C88" )',
      TXT, "7. Cores", "Cor da classificação da documentação."),
     ("Cor Economia", 'IF ( [Custo Médio por PF Faturado (R$)] <= [Preço PF Mercado (R$)], "#155C78", "#FF8C42" )', TXT, "7. Cores", ""),
+]
+
+def cor_var(nome, medida, escuro=False):
+    v, n, c = (VERDE_CL, VERMELHO_CL, CINZA_CL) if escuro else (VERDE, VERMELHO, CINZA)
+    return (nome, f'VAR v = {medida} RETURN SWITCH ( TRUE (), ISBLANK ( v ), "{c}", v > 0.0005, "{v}", v < -0.0005, "{n}", "{c}" )', TXT, "7. Cores",
+            "Verde: aumento; vermelho: redução; cinza: estável.")
+
+
+MEDIDAS += [
+    # ------------------------------------------------------------------ 8. Contexto e variação dos cards
+    ("Qtde Produtos Anterior", ano_ant("[Qtde Produtos]"), NUM0, "8. Contexto", "Produtos avaliados no inventário anterior."),
+    ("Var Qtde Produtos", "[Qtde Produtos Atual] - [Qtde Produtos Anterior]", SETA_QTD, "8. Contexto", "Diferença de produtos sobre o inventário anterior."),
+    ("% Variação PF", "DIVIDE ( [PF Atual] - [PF Anterior], [PF Anterior] )", SETA_PCT, "8. Contexto", "Variação percentual do tamanho funcional."),
+    ("Variação PF (seta)", "[Variação PF]", SETA_PF, "8. Contexto", "Diferença de pontos de função, com seta."),
+    ("% Var Desenvolvidos", f"CALCULATE ( [% Variação Valor], dProduto[Categoria] = {DEV} )", SETA_PCT, "8. Contexto", ""),
+    ("% Var Adquiridos", f"CALCULATE ( [% Variação Valor], dProduto[Categoria] <> {DEV} )", SETA_PCT, "8. Contexto", ""),
+    ("% Var Licenças", f"CALCULATE ( [% Variação Valor], dProduto[Categoria] = {LIC} )", SETA_PCT, "8. Contexto", ""),
+    ("% Var SEAP", f"CALCULATE ( [% Variação Valor], dProduto[Categoria] = {SEAP} )", SETA_PCT, "8. Contexto", ""),
+    ("Var % (tabela)", "[% Variação Valor]", SETA_PCT_CURTA, "8. Contexto", "Variação do valor para tabelas."),
+    ("% Sistemas Sem Documentação", f"DIVIDE ( [Qtde Sem Documentação], CALCULATE ( COUNTROWS ( dProduto ), dProduto[Categoria] = {DEV} ) )",
+     '0.0%" dos sistemas desenvolvidos"', "8. Contexto", ""),
+    ("% Valor Sem Uso", "DIVIDE ( [Valor Sem Uso ou Suspensos (R$)], [Valor Desenvolvidos (R$)] )", '0.0%" do valor dos desenvolvidos"', "8. Contexto", ""),
+    ("Valor Em Desenvolvimento (R$)", 'CALCULATE ( [Valor Atual (R$)], dProduto[Situação Resumida] = "Em desenvolvimento" )', CUR, "8. Contexto", ""),
+    ("% Licenças Encerradas", "DIVIDE ( [Valor Licenças Encerradas (R$)], [Valor Licenças (R$)] )", '0.0%" do valor das licenças"', "8. Contexto", ""),
+    ("% SEAP Líquido", "DIVIDE ( [Valor Líquido SEAP 31/12 (R$)], [Valor SEAP (R$)] )", '0.0%" do contrato após a amortização"', "8. Contexto", ""),
+    ("Total Diligências", "COUNTROWS ( ALL ( dDiligencia ) )", '"de "0" diligências"', "8. Contexto", ""),
+    ("Prioritárias (contexto)", "[Qtde Diligências Prioritárias]", '0" prioritárias até 10/12"', "8. Contexto", ""),
+    ("% Economia (contexto)", "[% Economia]", '0.0%" do custo de mercado"', "8. Contexto", ""),
+    ("Mercado sobre Pago", "DIVIDE ( [Custo a Preço de Mercado (R$)], [Custo Pago (R$)] )", '0.00"× o valor pago"', "8. Contexto", ""),
+    ("Sistemas com Custo (contexto)", "[Qtde Sistemas com Custo]", '0" de 39 sistemas com custo registrado"', "8. Contexto", ""),
+    ("VI Anterior", ano_ant("AVERAGE ( fAvaliacao[Valor Institucional] )"), '"VI anterior: "0.00', "8. Contexto", ""),
+    ("Qtde Funções (contexto)", "[Qtde Funções]", '#,0" funções contadas"', "8. Contexto", ""),
+    ("Qtde Módulos (contexto)", "COUNTROWS ( fModulo )", '0" módulos no laudo"', "8. Contexto", ""),
+    ("Valor Atual (contexto)", "[Valor Atual (R$)]", '"valor de R$ "#,0.00', "8. Contexto", ""),
+    ("Posição", 'VAR r = [Posição no Ranking] RETURN IF ( NOT ISBLANK ( r ), SWITCH ( r, 1, "💎 1º", 2, "🥇 2º", 3, "🥈 3º", 4, "🥉 4º", r & "º" ) )',
+     TXT, "8. Contexto", "Posição pelo valor, com medalhas para os quatro maiores."),
+    ("Cor Faixa Valor", "VAR v = [Valor Atual (R$)] RETURN SWITCH ( TRUE (), " + ", ".join(f'v <= {lim}, "{cor}"' for lim, cor in FAIXAS) + ', "#0E3A4D" )',
+     TXT, "7. Cores", "Nove faixas de valor no mesmo tom de azul."),
+    cor_var("Cor Var Valor", "[% Variação Valor]"), cor_var("Cor Var Valor (escuro)", "[% Variação Valor]", True),
+    cor_var("Cor Var PF", "[% Variação PF]"), cor_var("Cor Var Qtde", "[Var Qtde Produtos]"),
+    cor_var("Cor Var Desenvolvidos", "[% Var Desenvolvidos]"), cor_var("Cor Var Adquiridos", "[% Var Adquiridos]"),
+    cor_var("Cor Var Licenças", "[% Var Licenças]"), cor_var("Cor Var SEAP", "[% Var SEAP]"),
+    cor_var("Cor Variação PF Sistema", "SUM ( fPonte[Variação PF] )"),
+    # ------------------------------------------------------------------ 9. Cenários e ponte 2025 -> 2026
+    ("Cenário A (ordem)", "SELECTEDVALUE ( dCenarioA[Ordem], 2 )", NUM0, "9. Cenários", "Cenário A escolhido (padrão: 2025 ao preço de 2026)."),
+    ("Cenário B (ordem)", "SELECTEDVALUE ( dCenarioB[Ordem], 7 )", NUM0, "9. Cenários", "Cenário B escolhido (padrão: Real 2026)."),
+] + [
+    (f"{ind} {lado}", f"VAR c = [Cenário {lado} (ordem)] RETURN CALCULATE ( {agg}, fCenario[Ordem] = c )", fmt, "9. Cenários", "")
+    for lado in ("A", "B")
+    for ind, agg, fmt in [("Valor Cenário", "SUM ( fCenario[Valor (R$)] )", CUR), ("PF Cenário", "SUM ( fCenario[Tamanho Funcional (PF)] )", NUM1),
+                          ("Preço PF Cenário", "MAX ( fCenario[Preço PF (R$)] )", CUR), ("Sistemas Cenário", "SUM ( fCenario[Sistemas] )", NUM0),
+                          ("Dif Real 2026 Cenário", "SUM ( fCenario[Diferença para o Real 2026 (R$)] )", CUR),
+                          ("Dif Real 2025 Cenário", "SUM ( fCenario[Diferença para o Real 2025 (R$)] )", CUR)]
+] + [
+    (f"Valor por PF {l}", f"DIVIDE ( [Valor Cenário {l}], [PF Cenário {l}] )", CUR, "9. Cenários", "Valor médio por ponto de função.") for l in "AB"
+] + [
+    (f"Valor por Sistema {l}", f"DIVIDE ( [Valor Cenário {l}], [Sistemas Cenário {l}] )", CUR, "9. Cenários", "Valor médio por sistema.") for l in "AB"
+] + [
+    (f"Nome Cenário {l}", f"VAR c = [Cenário {l} (ordem)] RETURN CALCULATE ( MAX ( fCenario[Cenário] ), fCenario[Ordem] = c )", TXT, "9. Cenários", "") for l in "AB"
+] + [
+    (f"Pergunta Cenário {l}", f"VAR c = [Cenário {l} (ordem)] RETURN CALCULATE ( MAX ( fCenario[Pergunta] ), fCenario[Ordem] = c )", TXT, "9. Cenários", "") for l in "AB"
+] + [
+    (f"Premissas Cenário {l}", f"VAR c = [Cenário {l} (ordem)] RETURN CALCULATE ( MAX ( fCenario[Premissas] ), fCenario[Ordem] = c )", TXT, "9. Cenários", "") for l in "AB"
+] + [
+    ("Diferença B - A (R$)", "[Valor Cenário B] - [Valor Cenário A]", CUR, "9. Cenários", ""),
+    ("% Diferença B sobre A", "DIVIDE ( [Diferença B - A (R$)], [Valor Cenário A] )", SETA_PCT_CURTA, "9. Cenários", ""),
+    ("Placar Cenários",
+     'VAR d = [Diferença B - A (R$)] RETURN IF ( d >= 0, "B supera A em R$ ", "A supera B em R$ " ) & FORMAT ( ABS ( d ) / 1000000, "#,0.00" ) & " milhões (" '
+     '& FORMAT ( ABS ( DIVIDE ( d, IF ( d >= 0, [Valor Cenário A], [Valor Cenário B] ) ) ), "0.0%" ) & ")"', TXT, "9. Cenários", ""),
+] + [
+    (f"Cor {ind} {l}", f'IF ( [{ind} {l}] {op} [{ind} {o}], "#FF8C42", "#0E3A4D" )', TXT, "7. Cores", "Laranja: lado com o maior valor.")
+    for ind in ("Valor Cenário", "PF Cenário", "Preço PF Cenário", "Sistemas Cenário", "Valor por PF", "Valor por Sistema")
+    for l, o, op in (("A", "B", ">"), ("B", "A", ">"))
+] + [
+    ("Valor do Cenário (R$)", "SUM ( fCenario[Valor (R$)] )", CUR, "9. Cenários", "Valor de cada cenário."),
+    ("Efeito Fator (R$)", "SUM ( fPonteFator[Valor (R$)] )", CUR, "9. Cenários", "Ponte do valor dos desenvolvidos de 2025 para 2026."),
+    ("Aumento 2025-2026 (R$)", 'CALCULATE ( SUM ( fPonteFator[Valor (R$)] ), fPonteFator[Fator] <> "Inventário 2025" )', CUR, "9. Cenários", ""),
+] + [
+    (f"Efeito {f}", f'CALCULATE ( SUM ( fPonteFator[Valor (R$)] ), fPonteFator[Fator] = "{fator}" )', CUR, "9. Cenários", "") for f, fator in
+    [("Preço", "Preço do PF"), ("Tamanho", "Tamanho funcional"), ("VI", "Valor Institucional"), ("Novos", "Novos sistemas"), ("Base 2025", "Inventário 2025")]
+] + [
+    (f"% Efeito {f}", f"DIVIDE ( [Efeito {f}], [Aumento 2025-2026 (R$)] )", '0.0%" do aumento"', "9. Cenários", "") for f in ("Preço", "Tamanho", "VI", "Novos")
+] + [
+    ("Variação PF Sistemas", "SUM ( fPonte[Variação PF] )", '"+"#,0.0;-#,0.0;0', "9. Cenários", "Variação de PF de 2025 para 2026."),
+    ("Variação Valor Sistemas (R$)", "SUM ( fPonte[Variação Total (R$)] )", CUR, "9. Cenários", ""),
+    ("Mantidos que Aumentaram", 'CALCULATE ( COUNTROWS ( fPonte ), fPonte[Movimento do Tamanho] = "Aumentou" )', NUM0, "9. Cenários", ""),
+    ("Mantidos que Diminuíram", 'CALCULATE ( COUNTROWS ( fPonte ), fPonte[Movimento do Tamanho] = "Diminuiu" )', NUM0, "9. Cenários", ""),
+    ("Mantidos sem Alteração", 'CALCULATE ( COUNTROWS ( fPonte ), fPonte[Movimento do Tamanho] = "Sem alteração" )', NUM0, "9. Cenários", ""),
+    ("PF Mantidos 2025", 'CALCULATE ( SUM ( fPonte[PF 2025] ), fPonte[Situação no Período] = "Mantido" )', NUM1, "9. Cenários", ""),
+    ("Variação PF Mantidos", 'CALCULATE ( SUM ( fPonte[Variação PF] ), fPonte[Situação no Período] = "Mantido" )', SETA_PF, "9. Cenários", ""),
+    ("% Variação PF Mantidos", "DIVIDE ( [Variação PF Mantidos], [PF Mantidos 2025] )", SETA_PCT, "9. Cenários", ""),
+    ("Leitura Ponte",
+     '"De R$ " & FORMAT ( [Efeito Base 2025] / 1000000, "#,0.00" ) & " mi (2025) para R$ " & FORMAT ( ( [Efeito Base 2025] + [Aumento 2025-2026 (R$)] ) / 1000000, "#,0.00" )'
+     ' & " mi (2026): o novo preço do PF explica " & FORMAT ( DIVIDE ( [Efeito Preço], [Aumento 2025-2026 (R$)] ), "0.0%" ) & " do aumento, os sistemas novos "'
+     ' & FORMAT ( DIVIDE ( [Efeito Novos], [Aumento 2025-2026 (R$)] ), "0.0%" ) & ", a revisão do VI " & FORMAT ( DIVIDE ( [Efeito VI], [Aumento 2025-2026 (R$)] ), "0.0%" )'
+     ' & " e o tamanho funcional " & FORMAT ( DIVIDE ( [Efeito Tamanho], [Aumento 2025-2026 (R$)] ), "0.0%" ) & ". Nos 31 sistemas mantidos, o tamanho variou "'
+     ' & FORMAT ( [Variação PF Mantidos], "+#,0.0;-#,0.0" ) & " PF: " & [Mantidos que Aumentaram] & " aumentaram, " & [Mantidos que Diminuíram] & " diminuíram e "'
+     ' & [Mantidos sem Alteração] & " não mudaram."', TXT, "6. Narrativas", "Leitura rápida da ponte 2025-2026."),
+    ("Leitura Placar",
+     '"Compare dois cenários nos seletores acima. " & [Placar Cenários] & ". Cenário A: " & [Nome Cenário A] & "; cenário B: " & [Nome Cenário B] & "."',
+     TXT, "6. Narrativas", ""),
 ]

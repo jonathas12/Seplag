@@ -3,7 +3,7 @@
   "name": "000000a1000000000004",
   "position": {
     "x": 370,
-    "y": 530,
+    "y": 528,
     "z": 5000,
     "height": 30,
     "width": 256,
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Valor Desenvolvidos (R$)"
+                  "Property": "Valor Atual (contexto)"
                 }
               },
-              "queryRef": "Medidas.Valor Desenvolvidos (R$)",
-              "nativeQueryRef": "Valor Desenvolvidos (R$)"
+              "queryRef": "Medidas.Valor Atual (contexto)",
+              "nativeQueryRef": "Valor Atual (contexto)"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "11.5D"
                 }
               }
             },
@@ -49,7 +49,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#CFE3EA'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }

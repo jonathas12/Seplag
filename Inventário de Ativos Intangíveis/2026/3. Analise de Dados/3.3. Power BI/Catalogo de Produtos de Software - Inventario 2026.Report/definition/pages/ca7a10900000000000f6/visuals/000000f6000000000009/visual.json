@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000f6000000000009",
   "position": {
-    "x": 922,
+    "x": 811,
     "y": 10,
     "z": 10000,
     "height": 40,
-    "width": 146,
+    "width": 126,
     "tabOrder": 10000
   },
   "visual": {
@@ -87,14 +87,14 @@
             "navigationSection": {
               "expr": {
                 "Literal": {
-                  "Value": "'ca7a1090000000000017'"
+                  "Value": "'ca7a109000000000005b'"
                 }
               }
             },
             "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "'Ficha do Produto'"
+                  "Value": "'Ponte 2025-2026'"
                 }
               }
             }

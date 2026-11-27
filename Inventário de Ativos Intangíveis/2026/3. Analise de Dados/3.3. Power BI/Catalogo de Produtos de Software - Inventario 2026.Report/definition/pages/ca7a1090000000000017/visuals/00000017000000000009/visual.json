@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000009",
   "position": {
-    "x": 806,
+    "x": 290,
     "y": 10,
     "z": 10000,
     "height": 40,
-    "width": 116,
+    "width": 100,
     "tabOrder": 10000
   },
   "visual": {
@@ -87,14 +87,14 @@
             "navigationSection": {
               "expr": {
                 "Literal": {
-                  "Value": "'ca7a10900000000000f6'"
+                  "Value": "'ca7a10900000000000b2'"
                 }
               }
             },
             "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "'Operacional'"
+                  "Value": "'Visão Geral'"
                 }
               }
             }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000f6000000000013",
   "position": {
-    "x": 30,
-    "y": 550,
+    "x": 150,
+    "y": 103,
     "z": 14000,
-    "height": 154,
-    "width": 1220,
+    "height": 42,
+    "width": 1112,
     "tabOrder": 14000
   },
   "visual": {
@@ -17,110 +17,40 @@
           "projections": [
             {
               "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dDiligencia"
-                    }
-                  },
-                  "Property": "Código"
-                }
-              },
-              "queryRef": "dDiligencia.Código",
-              "nativeQueryRef": "Nº",
-              "displayName": "Nº"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dDiligencia"
-                    }
-                  },
-                  "Property": "Objeto"
-                }
-              },
-              "queryRef": "dDiligencia.Objeto",
-              "nativeQueryRef": "Objeto",
-              "displayName": "Objeto"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dDiligencia"
-                    }
-                  },
-                  "Property": "Destinatário"
-                }
-              },
-              "queryRef": "dDiligencia.Destinatário",
-              "nativeQueryRef": "Destinatário",
-              "displayName": "Destinatário"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dDiligencia"
-                    }
-                  },
-                  "Property": "Prazo Sugerido"
-                }
-              },
-              "queryRef": "dDiligencia.Prazo Sugerido",
-              "nativeQueryRef": "Prazo",
-              "displayName": "Prazo"
-            },
-            {
-              "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Produtos Alcançados"
+                  "Property": "Leitura Operacional"
                 }
               },
-              "queryRef": "Medidas.Produtos Alcançados",
-              "nativeQueryRef": "Produtos",
-              "displayName": "Produtos"
+              "queryRef": "Medidas.Leitura Operacional",
+              "nativeQueryRef": " ",
+              "displayName": " "
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dDiligencia"
-                  }
-                },
-                "Property": "Código"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
       "columnHeaders": [
         {
           "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0E3A4D'"
+                      "Value": "'#E0ECEA'"
                     }
                   }
                 }
@@ -131,30 +61,16 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#D5E6EC'"
+                      "Value": "'#E0ECEA'"
                     }
                   }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8.5D"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             },
             "wordWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -180,7 +96,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FBFDFC'"
+                      "Value": "'#E0ECEA'"
                     }
                   }
                 }
@@ -202,7 +118,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F1F6F5'"
+                      "Value": "'#E0ECEA'"
                     }
                   }
                 }
@@ -211,7 +127,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8.5D"
+                  "Value": "10D"
                 }
               }
             },
@@ -219,6 +135,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -238,18 +161,7 @@
             "gridHorizontal": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "gridHorizontalColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             },
@@ -258,7 +170,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#C8D9D6'"
+                      "Value": "'#E0ECEA'"
                     }
                   }
                 }
@@ -267,10 +179,26 @@
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "0D"
                 }
               }
             }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "1086D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Leitura Operacional"
           }
         }
       ],
@@ -329,6 +257,19 @@
         }
       ],
       "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
         {
           "properties": {
             "show": {

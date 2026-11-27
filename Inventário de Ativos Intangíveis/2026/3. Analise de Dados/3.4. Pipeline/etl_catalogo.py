@@ -384,6 +384,54 @@ dDiligencia = pd.DataFrame([{"Código": d["codigo"], "Objeto": d["objeto"], "Des
                              "Prazo Sugerido": d["prazo"], "Prioritária": "Sim" if "Prioritária" in d["prazo"] else "Não", "Ordem": i + 1} for i, d in enumerate(DIL)])
 bProdutoDiligencia = pd.DataFrame([{"ID Produto": p["ID Produto"], "Código": c.strip()} for p in prod for c in str(p["Diligências"]).split(",") if c.strip()])
 
+# ------------------------------------------------------------------ cenários "E se?" e ponte 2025 -> 2026 (desenvolvidos)
+P25, P26 = 943.25, PRECO_2026
+d25 = {r["ID Produto"]: r for r in fAvaliacao[(fAvaliacao["Ano Inventário"] == 2025) & (fAvaliacao.Categoria == CAT_DEV)].to_dict("records")}
+d26 = {r["ID Produto"]: r for r in fAvaliacao[(fAvaliacao["Ano Inventário"] == 2026) & (fAvaliacao.Categoria == CAT_DEV)].to_dict("records")}
+ponte = []
+for pid, b in d26.items():
+    a = d25.get(pid)
+    if a:
+        e_preco = a["Tamanho Funcional (PF)"] * P26 * (1 + a["Valor Institucional"]) - a["Valor Final VA (R$)"]
+        e_tam = (b["Tamanho Funcional (PF)"] - a["Tamanho Funcional (PF)"]) * P26 * (1 + a["Valor Institucional"])
+        e_vi = b["Valor Final VA (R$)"] - (a["Valor Final VA (R$)"] + e_preco + e_tam)
+        ponte.append({"ID Produto": pid, "Situação no Período": "Mantido", "PF 2025": a["Tamanho Funcional (PF)"], "PF 2026": b["Tamanho Funcional (PF)"],
+                      "Variação PF": b["Tamanho Funcional (PF)"] - a["Tamanho Funcional (PF)"], "VI 2025": a["Valor Institucional"], "VI 2026": b["Valor Institucional"],
+                      "VA 2025 (R$)": a["Valor Final VA (R$)"], "VA 2026 (R$)": b["Valor Final VA (R$)"], "Efeito Preço (R$)": e_preco,
+                      "Efeito Tamanho (R$)": e_tam, "Efeito VI (R$)": e_vi, "Efeito Novo Sistema (R$)": 0.0})
+    else:
+        ponte.append({"ID Produto": pid, "Situação no Período": "Novo em 2026", "PF 2025": 0.0, "PF 2026": b["Tamanho Funcional (PF)"],
+                      "Variação PF": b["Tamanho Funcional (PF)"], "VI 2025": None, "VI 2026": b["Valor Institucional"], "VA 2025 (R$)": 0.0,
+                      "VA 2026 (R$)": b["Valor Final VA (R$)"], "Efeito Preço (R$)": 0.0, "Efeito Tamanho (R$)": 0.0, "Efeito VI (R$)": 0.0,
+                      "Efeito Novo Sistema (R$)": b["Valor Final VA (R$)"]})
+assert set(d25) <= set(d26), set(d25) - set(d26)
+fPonte = pd.DataFrame(ponte)
+fPonte["Variação Total (R$)"] = fPonte["VA 2026 (R$)"] - fPonte["VA 2025 (R$)"]
+fPonte["Movimento do Tamanho"] = fPonte.apply(lambda r: "Novo sistema" if r["Situação no Período"] != "Mantido" else
+                                              ("Aumentou" if r["Variação PF"] > 0.001 else ("Diminuiu" if r["Variação PF"] < -0.001 else "Sem alteração")), axis=1)
+k = fPonte[fPonte["Situação no Período"] == "Mantido"]; n = fPonte[fPonte["Situação no Período"] != "Mantido"]
+real25, real26 = sum(r["Valor Final VA (R$)"] for r in d25.values()), sum(r["Valor Final VA (R$)"] for r in d26.values())
+c1 = (k["PF 2025"] * P26 * (1 + k["VI 2025"])).sum()
+c3 = (k["PF 2026"] * P25 * (1 + k["VI 2025"])).sum()
+c4 = sum(r["Tamanho Funcional (PF)"] * P25 * (1 + r["Valor Institucional"]) for r in d26.values())
+c5 = (k["PF 2026"] * P26 * (1 + k["VI 2025"])).sum() + n["VA 2026 (R$)"].sum()
+CEN = [
+    (1, "Real 2025", "Como o inventário de 2025 avaliou", "31 sistemas, PF e VI de 2025, preço de R$ 943,25", len(k), k["PF 2025"].sum(), P25, real25),
+    (2, "2025 ao preço de 2026", "Quanto valeriam os mesmos sistemas de 2025 só com o novo preço do PF?", "31 sistemas, PF e VI de 2025, preço de R$ 1.215,09", len(k), k["PF 2025"].sum(), P26, c1),
+    (3, "2025 ao preço de 2026 + novos de 2026", "E se, além do preço, entrassem os 8 sistemas novos?", "C2 + 8 sistemas avaliados pela primeira vez em 2026", len(fPonte), k["PF 2025"].sum() + n["PF 2026"].sum(), P26, c1 + n["VA 2026 (R$)"].sum()),
+    (4, "2025 com o tamanho de 2026, preço de 2025", "Quanto pesou o crescimento do tamanho funcional dos mesmos sistemas?", "31 sistemas, PF de 2026, VI de 2025, preço de R$ 943,25", len(k), k["PF 2026"].sum(), P25, c3),
+    (5, "2026 com o VI de 2025", "Quanto pesou a revisão do Valor Institucional?", "39 sistemas, PF de 2026, preço de 2026, VI de 2025 nos mantidos", len(fPonte), fPonte["PF 2026"].sum(), P26, c5),
+    (6, "2026 ao preço de 2025", "Quanto valeria o inventário de 2026 se o PF não tivesse mudado de preço?", "39 sistemas, PF e VI de 2026, preço de R$ 943,25", len(fPonte), fPonte["PF 2026"].sum(), P25, c4),
+    (7, "Real 2026", "Como o inventário de 2026 avaliou", "39 sistemas, PF e VI de 2026, preço de R$ 1.215,09", len(fPonte), fPonte["PF 2026"].sum(), P26, real26)]
+fCenario = pd.DataFrame([{"Ordem": o, "Cenário": c, "Pergunta": q, "Premissas": pr_, "Sistemas": ns, "Tamanho Funcional (PF)": pf, "Preço PF (R$)": pp,
+                          "Valor (R$)": v, "Diferença para o Real 2026 (R$)": v - real26, "Diferença para o Real 2025 (R$)": v - real25} for o, c, q, pr_, ns, pf, pp, v in CEN])
+FATORES = [(1, "Inventário 2025", real25), (2, "Preço do PF", k["Efeito Preço (R$)"].sum()), (3, "Tamanho funcional", k["Efeito Tamanho (R$)"].sum()),
+           (4, "Valor Institucional", k["Efeito VI (R$)"].sum()), (5, "Novos sistemas", n["Efeito Novo Sistema (R$)"].sum())]
+fPonteFator = pd.DataFrame([{"Ordem": o, "Fator": f, "Valor (R$)": v} for o, f, v in FATORES])
+aud("Ponte 2025 -> 2026 fecha no total de 2026", fPonteFator["Valor (R$)"].sum(), real26)
+aud("Efeito preço igual ao do relatório dos desenvolvidos", k["Efeito Preço (R$)"].sum(), 12962010.80)
+aud("Efeito novos sistemas igual ao do relatório dos desenvolvidos", n["Efeito Novo Sistema (R$)"].sum(), 7463690.33)
+
 # ------------------------------------------------------------------ conferências com os valores publicados
 f26 = fAvaliacao[fAvaliacao["Ano Inventário"] == 2026]
 aud("Total desenvolvidos internamente 2026 (aba, linha TOTAL)", f26[f26.Categoria == CAT_DEV]["Valor Final VA (R$)"].sum(), TOT26[1])
@@ -404,7 +452,9 @@ aud("Produtos no catálogo", len(dProduto), 58, 0)
 SAIDA.mkdir(parents=True, exist_ok=True)
 TABELAS = {"dProduto": dProduto, "dInventario": dInventario, "dPrecoPF": dPrecoPF, "dDiligencia": dDiligencia, "dTipoFuncao": dTipoFuncao,
            "fAvaliacao": fAvaliacao, "fModulo": fModulo, "fFuncao": fFuncao, "fIntegracao": fIntegracao, "fHistoricoLaudo": fHistoricoLaudo,
-           "fCustoProjeto": fCustoProjeto, "fEconomicidade": fEconomicidade, "fAmortizacaoSEAP": fAmortizacaoSEAP, "bProdutoDiligencia": bProdutoDiligencia}
+           "fCustoProjeto": fCustoProjeto, "fEconomicidade": fEconomicidade, "fAmortizacaoSEAP": fAmortizacaoSEAP, "bProdutoDiligencia": bProdutoDiligencia,
+           "fPonte": fPonte, "fCenario": fCenario, "fPonteFator": fPonteFator,
+           "dCenarioA": fCenario[["Ordem", "Cenário"]].copy(), "dCenarioB": fCenario[["Ordem", "Cenário"]].copy()}
 for nome, df in TABELAS.items():
     for c in df.columns:
         if df[c].map(lambda x: isinstance(x, date)).any():

@@ -3,9 +3,9 @@
   "name": "00000028000000000003",
   "position": {
     "x": 120,
-    "y": 118,
+    "y": 116,
     "z": 4000,
-    "height": 36,
+    "height": 34,
     "width": 90,
     "tabOrder": 4000
   },
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "10.5D"
                 }
               }
             },

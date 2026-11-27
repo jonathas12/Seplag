@@ -2,73 +2,75 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000c3000000000007",
   "position": {
-    "x": 604,
-    "y": 62,
+    "x": 716,
+    "y": 214,
     "z": 8000,
-    "height": 32,
-    "width": 130,
+    "height": 24,
+    "width": 156,
     "tabOrder": 8000
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "multiRowCard",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dProduto"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "Tecnologia"
+                  "Property": "% Variação PF"
                 }
               },
-              "queryRef": "dProduto.Tecnologia",
-              "nativeQueryRef": "Tecnologia",
-              "active": true
+              "queryRef": "Medidas.% Variação PF",
+              "nativeQueryRef": "% Variação PF"
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
+      "dataLabels": [
         {
           "properties": {
-            "mode": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "9.5D"
                 }
               }
             },
-            "singleSelect": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Cor Var PF"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
           }
         }
       ],
-      "header": [
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -81,53 +83,20 @@
           }
         }
       ],
-      "items": [
+      "card": [
         {
           "properties": {
-            "textSize": {
+            "barShow": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "background": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             },
             "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             }

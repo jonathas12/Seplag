@@ -1,10 +1,10 @@
 table fAmortizacaoSEAP
-	lineageTag: 4d6b153b-9375-494d-b0b1-bc02335abd20
+	lineageTag: 66fdf73e-c397-44c2-9511-b363004dd14b
 
 	column Parcela
 		dataType: int64
 		formatString: 0
-		lineageTag: 8c135be0-a4d1-43b9-a166-751344b64d4a
+		lineageTag: edc775bf-2532-451a-b747-1c8394258fb4
 		summarizeBy: none
 		sourceColumn: Parcela
 
@@ -13,7 +13,7 @@ table fAmortizacaoSEAP
 	column 'Início do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: d3648ff4-a28b-4ee0-bfd3-a348d511f0fc
+		lineageTag: d6287abd-ceb0-4bab-8269-5a2353be1c8a
 		summarizeBy: none
 		sourceColumn: Início do Período
 
@@ -24,7 +24,7 @@ table fAmortizacaoSEAP
 	column 'Fim do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: c5acfc02-585c-44cb-a9c4-6a59d75fe9ee
+		lineageTag: 0fda847f-8e97-46d5-814b-e5ca0b67fc1b
 		summarizeBy: none
 		sourceColumn: Fim do Período
 
@@ -35,7 +35,7 @@ table fAmortizacaoSEAP
 	column 'Amortização do Mês (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: c157b019-dba9-48db-944a-58d45c272afd
+		lineageTag: 6aecafe9-1b1d-4394-bb67-fd7908965fe8
 		summarizeBy: sum
 		sourceColumn: Amortização do Mês (R$)
 
@@ -44,7 +44,7 @@ table fAmortizacaoSEAP
 	column 'Amortização Acumulada (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 54b3db9b-55ca-46cc-8a3c-7458b86c9b02
+		lineageTag: e42070bf-a7d5-48e4-b38f-7c14e3eadca6
 		summarizeBy: sum
 		sourceColumn: Amortização Acumulada (R$)
 
@@ -53,7 +53,7 @@ table fAmortizacaoSEAP
 	column 'Valor Contábil Líquido (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: c517ec4e-52a6-4808-bfdd-5450c85fc16e
+		lineageTag: 68e508b8-dbc2-4ffd-a336-90db3cfacb99
 		summarizeBy: sum
 		sourceColumn: Valor Contábil Líquido (R$)
 
@@ -61,7 +61,7 @@ table fAmortizacaoSEAP
 
 	column Marco
 		dataType: string
-		lineageTag: dafc1ce2-b9d7-4c2e-9c54-379dd08527e3
+		lineageTag: 143d8de8-8535-49af-bb63-b1a0fa42996e
 		summarizeBy: none
 		sourceColumn: Marco
 

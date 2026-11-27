@@ -1,0 +1,149 @@
+table fPonte
+	lineageTag: 3334d50b-7cb6-47e0-a98e-1277d5113758
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: 3391909d-7188-4896-b9e2-2f38832267fd
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situação no Período'
+		dataType: string
+		lineageTag: 772487a9-b6a7-46f3-93c1-2f5d4d01e939
+		summarizeBy: none
+		sourceColumn: Situação no Período
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PF 2025'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 64feac58-5350-43a6-8cf7-e31e7958bb0d
+		summarizeBy: sum
+		sourceColumn: PF 2025
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PF 2026'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: b223ff44-6d30-4060-8206-1304b5422935
+		summarizeBy: sum
+		sourceColumn: PF 2026
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variação PF'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 918e6be1-71b3-4ab9-8a69-cf287679255b
+		summarizeBy: sum
+		sourceColumn: Variação PF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VI 2025'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 3faa0da3-30b5-4f7f-80c0-8a9dc8d358b3
+		summarizeBy: sum
+		sourceColumn: VI 2025
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VI 2026'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: c99dd79e-18a9-475e-8c0b-c8ff705eb308
+		summarizeBy: sum
+		sourceColumn: VI 2026
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VA 2025 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5423b363-1113-4171-9be4-532515671f90
+		summarizeBy: sum
+		sourceColumn: VA 2025 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VA 2026 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0c69581f-706a-447b-b01f-530454e86981
+		summarizeBy: sum
+		sourceColumn: VA 2026 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Efeito Preço (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c559c5aa-84a4-4321-8c60-b22d306d1807
+		summarizeBy: sum
+		sourceColumn: Efeito Preço (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Efeito Tamanho (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 35387569-97b3-4c94-a536-ae56f786d9ae
+		summarizeBy: sum
+		sourceColumn: Efeito Tamanho (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Efeito VI (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e2b606bd-2d67-4c8d-90d3-c1232d2d5fda
+		summarizeBy: sum
+		sourceColumn: Efeito VI (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Efeito Novo Sistema (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: f521e7c6-5ca4-4c92-b354-7a3e89bf617b
+		summarizeBy: sum
+		sourceColumn: Efeito Novo Sistema (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variação Total (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: f39427f7-744e-4929-a46d-5b3c0d168fc4
+		summarizeBy: sum
+		sourceColumn: Variação Total (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Movimento do Tamanho'
+		dataType: string
+		lineageTag: ebed657d-ac64-4a82-a64a-72fab23ceed3
+		summarizeBy: none
+		sourceColumn: Movimento do Tamanho
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fPonte = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fPonte.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

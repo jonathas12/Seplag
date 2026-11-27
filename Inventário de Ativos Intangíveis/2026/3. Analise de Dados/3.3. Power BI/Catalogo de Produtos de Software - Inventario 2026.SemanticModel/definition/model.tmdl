@@ -20,12 +20,14 @@ queryGroup Parâmetros
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["PastaDados", "bProdutoDiligencia", "dDiligencia", "dInventario", "dPrecoPF", "dProduto", "dTipoFuncao", "fAmortizacaoSEAP", "fAvaliacao", "fCustoProjeto", "fEconomicidade", "fFuncao", "fHistoricoLaudo", "fIntegracao", "fModulo", "Medidas"]
+annotation PBI_QueryOrder = ["PastaDados", "bProdutoDiligencia", "dCenarioA", "dCenarioB", "dDiligencia", "dInventario", "dPrecoPF", "dProduto", "dTipoFuncao", "fAmortizacaoSEAP", "fAvaliacao", "fCenario", "fCustoProjeto", "fEconomicidade", "fFuncao", "fHistoricoLaudo", "fIntegracao", "fModulo", "fPonte", "fPonteFator", "Medidas"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Medidas
 ref table bProdutoDiligencia
+ref table dCenarioA
+ref table dCenarioB
 ref table dDiligencia
 ref table dInventario
 ref table dPrecoPF
@@ -33,9 +35,12 @@ ref table dProduto
 ref table dTipoFuncao
 ref table fAmortizacaoSEAP
 ref table fAvaliacao
+ref table fCenario
 ref table fCustoProjeto
 ref table fEconomicidade
 ref table fFuncao
 ref table fHistoricoLaudo
 ref table fIntegracao
 ref table fModulo
+ref table fPonte
+ref table fPonteFator

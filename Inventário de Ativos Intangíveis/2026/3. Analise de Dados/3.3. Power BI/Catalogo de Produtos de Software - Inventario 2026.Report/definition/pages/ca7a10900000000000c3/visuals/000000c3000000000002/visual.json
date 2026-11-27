@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000c3000000000002",
   "position": {
-    "x": 714,
-    "y": 184,
+    "x": 344,
+    "y": 178,
     "z": 3000,
-    "height": 44,
-    "width": 160,
+    "height": 40,
+    "width": 156,
     "tabOrder": 3000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Variação PF"
+                  "Property": "Qtde Produtos Atual"
                 }
               },
-              "queryRef": "Medidas.Variação PF",
-              "nativeQueryRef": "Variação PF"
+              "queryRef": "Medidas.Qtde Produtos Atual",
+              "nativeQueryRef": "Qtde Produtos Atual"
             }
           ]
         }

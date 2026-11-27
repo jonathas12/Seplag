@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000c3000000000004",
   "position": {
-    "x": 1086,
-    "y": 184,
+    "x": 530,
+    "y": 178,
     "z": 5000,
-    "height": 44,
-    "width": 160,
+    "height": 40,
+    "width": 156,
     "tabOrder": 5000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtde Sem Uso ou Suspensos"
+                  "Property": "PF Atual"
                 }
               },
-              "queryRef": "Medidas.Qtde Sem Uso ou Suspensos",
-              "nativeQueryRef": "Qtde Sem Uso ou Suspensos"
+              "queryRef": "Medidas.PF Atual",
+              "nativeQueryRef": "PF Atual"
             }
           ]
         }
@@ -49,7 +49,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FF8C42'"
+                      "Value": "'#0E3A4D'"
                     }
                   }
                 }

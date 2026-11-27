@@ -3,9 +3,9 @@
   "name": "00000028000000000004",
   "position": {
     "x": 210,
-    "y": 118,
+    "y": 116,
     "z": 5000,
-    "height": 36,
+    "height": 34,
     "width": 106,
     "tabOrder": 5000
   },
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Ficha Faixa VI"
+                  "Property": "Var % (tabela)"
                 }
               },
-              "queryRef": "Medidas.Ficha Faixa VI",
-              "nativeQueryRef": "Ficha Faixa VI"
+              "queryRef": "Medidas.Var % (tabela)",
+              "nativeQueryRef": "Var % (tabela)"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "10.5D"
                 }
               }
             },
@@ -48,8 +48,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#155C78'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Cor Var Valor"
                     }
                   }
                 }
@@ -58,7 +63,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             }

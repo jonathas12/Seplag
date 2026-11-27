@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000e5000000000001",
   "position": {
-    "x": 574,
-    "y": 184,
+    "x": 32,
+    "y": 214,
     "z": 2000,
-    "height": 44,
-    "width": 204,
+    "height": 24,
+    "width": 284,
     "tabOrder": 2000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Custo a Preço de Mercado (R$)"
+                  "Property": "% Economia (contexto)"
                 }
               },
-              "queryRef": "Medidas.Custo a Preço de Mercado (R$)",
-              "nativeQueryRef": "Custo a Preço de Mercado (R$)"
+              "queryRef": "Medidas.% Economia (contexto)",
+              "nativeQueryRef": "% Economia (contexto)"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "17D"
+                  "Value": "10D"
                 }
               }
             },
@@ -49,7 +49,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0E3A4D'"
+                      "Value": "'#D9EAF0'"
                     }
                   }
                 }
@@ -58,7 +58,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }

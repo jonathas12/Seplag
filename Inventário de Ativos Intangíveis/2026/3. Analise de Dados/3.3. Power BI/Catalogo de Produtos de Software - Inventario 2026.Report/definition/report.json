@@ -90,6 +90,16 @@
           "type": "Image"
         },
         {
+          "name": "pg_cen.svg",
+          "path": "pg_cen.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_ponte.svg",
+          "path": "pg_ponte.svg",
+          "type": "Image"
+        },
+        {
           "name": "pg_ope.svg",
           "path": "pg_ope.svg",
           "type": "Image"

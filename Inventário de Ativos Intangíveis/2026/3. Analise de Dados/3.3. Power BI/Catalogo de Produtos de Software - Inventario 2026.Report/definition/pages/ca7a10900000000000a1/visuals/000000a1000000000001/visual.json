@@ -3,7 +3,7 @@
   "name": "000000a1000000000001",
   "position": {
     "x": 78,
-    "y": 530,
+    "y": 528,
     "z": 2000,
     "height": 30,
     "width": 256,
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtde Produtos Atual"
+                  "Property": "% Variação Valor"
                 }
               },
-              "queryRef": "Medidas.Qtde Produtos Atual",
-              "nativeQueryRef": "Qtde Produtos Atual"
+              "queryRef": "Medidas.% Variação Valor",
+              "nativeQueryRef": "% Variação Valor"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "11.5D"
                 }
               }
             },
@@ -48,8 +48,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#CFE3EA'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Cor Var Valor (escuro)"
                     }
                   }
                 }

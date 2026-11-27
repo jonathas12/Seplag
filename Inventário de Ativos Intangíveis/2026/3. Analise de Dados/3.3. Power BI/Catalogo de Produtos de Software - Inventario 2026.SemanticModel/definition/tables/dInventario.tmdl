@@ -1,10 +1,10 @@
 table dInventario
-	lineageTag: 9f68648b-8fa7-4acb-b88b-d1a2f3d90907
+	lineageTag: bb3211e0-33df-4974-94ea-6590ef2371d2
 
 	column 'Ano Inventário'
 		dataType: int64
 		formatString: 0
-		lineageTag: 0460171b-7b14-4a29-b700-3cf1c802650d
+		lineageTag: 5a7a3b91-656d-40c0-b251-6ea1b1f50f59
 		summarizeBy: none
 		sourceColumn: Ano Inventário
 
@@ -12,7 +12,7 @@ table dInventario
 
 	column Inventário
 		dataType: string
-		lineageTag: fcfebae9-f879-462c-8642-12d9228db623
+		lineageTag: a573c1c9-dcb0-4f9d-9456-f16da1742761
 		summarizeBy: none
 		sourceColumn: Inventário
 		sortByColumn: 'Ano Inventário'
@@ -22,7 +22,7 @@ table dInventario
 	column 'Preço PF Mercado (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: f27d7e29-3202-4878-9733-cebb6092622e
+		lineageTag: c3689963-6638-4972-915b-02bb4fd878fc
 		summarizeBy: none
 		sourceColumn: Preço PF Mercado (R$)
 
@@ -30,7 +30,7 @@ table dInventario
 
 	column Portaria
 		dataType: string
-		lineageTag: 8aa754c8-30bd-4fc0-8a54-f7e9abb74f5b
+		lineageTag: 5b58df4a-c65c-4b0d-8b4e-36922c99aa2d
 		summarizeBy: none
 		sourceColumn: Portaria
 
@@ -39,7 +39,7 @@ table dInventario
 	column 'Data de Referência'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: b6a3d6ea-e419-46a7-a53d-3f49d37111bc
+		lineageTag: ed9dc31c-4280-456c-a3b3-511e05f0a328
 		summarizeBy: none
 		sourceColumn: Data de Referência
 
@@ -49,7 +49,7 @@ table dInventario
 
 	column 'Fonte do Preço'
 		dataType: string
-		lineageTag: 3e8ce6da-16ad-4fd8-985d-970fd055d96e
+		lineageTag: 48d95b68-cd3f-4d09-a7d4-976ab19a51d3
 		summarizeBy: none
 		sourceColumn: Fonte do Preço
 

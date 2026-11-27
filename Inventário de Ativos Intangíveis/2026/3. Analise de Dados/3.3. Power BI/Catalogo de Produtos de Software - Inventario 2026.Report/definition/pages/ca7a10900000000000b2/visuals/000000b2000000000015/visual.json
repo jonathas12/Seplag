@@ -2,31 +2,70 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000b2000000000015",
   "position": {
-    "x": 314,
-    "y": 10,
+    "x": 1032,
+    "y": 492,
     "z": 16000,
-    "height": 40,
-    "width": 116,
+    "height": 28,
+    "width": 210,
     "tabOrder": 16000
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "multiRowCard",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Valor Em Desenvolvimento (R$)"
+                }
+              },
+              "queryRef": "Medidas.Valor Em Desenvolvimento (R$)",
+              "nativeQueryRef": "Valor Em Desenvolvimento (R$)"
+            }
+          ]
+        }
+      }
+    },
     "objects": {
-      "icon": [
+      "dataLabels": [
         {
           "properties": {
-            "shapeType": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'blank'"
+                  "Value": "10D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E2F3C'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
-        },
+        }
+      ],
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -39,26 +78,20 @@
           }
         }
       ],
-      "outline": [
+      "card": [
         {
           "properties": {
-            "show": {
+            "barShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
-            }
-          }
-        }
-      ],
-      "fill": [
-        {
-          "properties": {
-            "show": {
+            },
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "0D"
                 }
               }
             }
@@ -67,40 +100,6 @@
       ]
     },
     "visualContainerObjects": {
-      "visualLink": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
-                }
-              }
-            },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ca7a10900000000000b2'"
-                }
-              }
-            },
-            "tooltip": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Visão Geral'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "background": [
         {
           "properties": {

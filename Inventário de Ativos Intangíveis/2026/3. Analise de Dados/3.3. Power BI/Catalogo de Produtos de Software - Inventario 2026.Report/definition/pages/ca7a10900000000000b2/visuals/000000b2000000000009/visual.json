@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000b2000000000009",
   "position": {
-    "x": 968,
-    "y": 566,
+    "x": 1040,
+    "y": 214,
     "z": 10000,
-    "height": 36,
-    "width": 90,
+    "height": 24,
+    "width": 200,
     "tabOrder": 10000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Qtde Licenças Encerradas"
+                  "Property": "% Var Adquiridos"
                 }
               },
-              "queryRef": "Medidas.Qtde Licenças Encerradas",
-              "nativeQueryRef": "Qtde Licenças Encerradas"
+              "queryRef": "Medidas.% Var Adquiridos",
+              "nativeQueryRef": "% Var Adquiridos"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "17D"
+                  "Value": "9.5D"
                 }
               }
             },
@@ -48,8 +48,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#0E3A4D'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Cor Var Adquiridos"
                     }
                   }
                 }
@@ -58,7 +63,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }

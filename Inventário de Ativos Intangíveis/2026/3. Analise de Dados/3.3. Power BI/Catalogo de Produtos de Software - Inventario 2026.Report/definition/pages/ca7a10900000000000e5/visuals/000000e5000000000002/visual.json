@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000e5000000000002",
   "position": {
-    "x": 806,
-    "y": 184,
+    "x": 344,
+    "y": 178,
     "z": 3000,
-    "height": 44,
-    "width": 204,
+    "height": 40,
+    "width": 200,
     "tabOrder": 3000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Retorno Produto por R$ 1"
+                  "Property": "Custo Pago (R$)"
                 }
               },
-              "queryRef": "Medidas.Retorno Produto por R$ 1",
-              "nativeQueryRef": "Retorno Produto por R$ 1"
+              "queryRef": "Medidas.Custo Pago (R$)",
+              "nativeQueryRef": "Custo Pago (R$)"
             }
           ]
         }

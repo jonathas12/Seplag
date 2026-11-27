@@ -1,10 +1,10 @@
 table fAvaliacao
-	lineageTag: fc4466bd-85c8-45e3-b4c9-fd3b65c16519
+	lineageTag: e894e71b-7385-49a6-b28e-57f723ab5ac4
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: fae29310-9c42-4784-822a-b38b37bdacff
+		lineageTag: ce867176-dd53-46be-a7f6-2c623d700956
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -14,7 +14,7 @@ table fAvaliacao
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 9499e53f-aa33-4a02-8f20-f9e54214f90e
+		lineageTag: ca0691cd-a7cb-4ca9-9b09-8f30e2382e05
 		summarizeBy: none
 		sourceColumn: Ano Inventário
 
@@ -22,7 +22,7 @@ table fAvaliacao
 
 	column Categoria
 		dataType: string
-		lineageTag: 90734247-ca2d-4be0-8d34-2c27942bc140
+		lineageTag: ac3122a6-ddd4-4202-ad96-bff7022a106d
 		summarizeBy: none
 		sourceColumn: Categoria
 
@@ -30,7 +30,7 @@ table fAvaliacao
 
 	column Situação
 		dataType: string
-		lineageTag: 8894e4b7-1e52-41d8-b540-49cd026de699
+		lineageTag: 072952e1-a6be-4940-a787-f4f1cfe32c7b
 		summarizeBy: none
 		sourceColumn: Situação
 
@@ -38,7 +38,7 @@ table fAvaliacao
 
 	column 'Nível de Medição'
 		dataType: string
-		lineageTag: 7f249cef-4529-46f2-9182-a22df2547617
+		lineageTag: 2613ea90-86b1-4743-b9fb-94483b7b67a3
 		summarizeBy: none
 		sourceColumn: Nível de Medição
 
@@ -47,7 +47,7 @@ table fAvaliacao
 	column 'Tamanho Funcional (PF)'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 96b94fe5-7e44-4340-89c2-821f2b612f66
+		lineageTag: 66ea1d49-ba8b-4d41-bad5-96b4d67f0025
 		summarizeBy: sum
 		sourceColumn: Tamanho Funcional (PF)
 
@@ -56,7 +56,7 @@ table fAvaliacao
 	column 'Preço PF (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 1051cf90-65e4-40c4-a70c-f7a5f9082f53
+		lineageTag: 0bdbb7fd-6fc1-4412-9f46-ec85b38cbbaf
 		summarizeBy: none
 		sourceColumn: Preço PF (R$)
 
@@ -65,7 +65,7 @@ table fAvaliacao
 	column 'Valor Bruto VT (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 420520eb-89c8-42f8-b3f4-5f62ca180014
+		lineageTag: a171639c-5d0c-4cfb-b168-8860ec5297bf
 		summarizeBy: sum
 		sourceColumn: Valor Bruto VT (R$)
 
@@ -74,7 +74,7 @@ table fAvaliacao
 	column 'Valor Institucional'
 		dataType: double
 		formatString: 0.00
-		lineageTag: eac22f2c-2ac4-46e5-a66a-4940f2608371
+		lineageTag: e04c9799-7307-4744-892d-b3f75f5654bf
 		summarizeBy: none
 		sourceColumn: Valor Institucional
 
@@ -83,7 +83,7 @@ table fAvaliacao
 	column 'Valor Final VA (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: c80f728f-c426-40f1-908e-091881e349e5
+		lineageTag: 39d697be-c528-420e-bfcd-b2b5ff21dc6d
 		summarizeBy: sum
 		sourceColumn: Valor Final VA (R$)
 
@@ -91,7 +91,7 @@ table fAvaliacao
 
 	column Fonte
 		dataType: string
-		lineageTag: 7691e826-d300-4f2d-b11a-861f410d4f8f
+		lineageTag: 81262e9f-72da-4f10-ba52-e079c783f1f1
 		summarizeBy: none
 		sourceColumn: Fonte
 

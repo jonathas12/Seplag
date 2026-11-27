@@ -2,31 +2,70 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000007",
   "position": {
-    "x": 558,
-    "y": 10,
+    "x": 620,
+    "y": 272,
     "z": 8000,
-    "height": 40,
-    "width": 112,
+    "height": 24,
+    "width": 164,
     "tabOrder": 8000
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "multiRowCard",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Qtde Módulos (contexto)"
+                }
+              },
+              "queryRef": "Medidas.Qtde Módulos (contexto)",
+              "nativeQueryRef": "Qtde Módulos (contexto)"
+            }
+          ]
+        }
+      }
+    },
     "objects": {
-      "icon": [
+      "dataLabels": [
         {
           "properties": {
-            "shapeType": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'blank'"
+                  "Value": "9.5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4E6B76'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
-        },
+        }
+      ],
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -39,26 +78,20 @@
           }
         }
       ],
-      "outline": [
+      "card": [
         {
           "properties": {
-            "show": {
+            "barShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
-            }
-          }
-        }
-      ],
-      "fill": [
-        {
-          "properties": {
-            "show": {
+            },
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "0D"
                 }
               }
             }
@@ -67,40 +100,6 @@
       ]
     },
     "visualContainerObjects": {
-      "visualLink": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
-                }
-              }
-            },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ca7a10900000000000d4'"
-                }
-              }
-            },
-            "tooltip": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Adquiridos'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "background": [
         {
           "properties": {

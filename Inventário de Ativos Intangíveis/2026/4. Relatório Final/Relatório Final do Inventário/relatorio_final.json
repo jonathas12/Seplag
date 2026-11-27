@@ -37,7 +37,7 @@
   ],
   [
    "p",
-   "Este é o Relatório Final do Inventário de Bens Intangíveis da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT) do exercício de 2026, elaborado pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, publicada no Diário Oficial do Estado nº 29.279, de 23/07/2026. Constitui o Relatório de Avaliação de Bens Intangíveis previsto no art. 21 da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ e o relatório final de inventário de que trata o art. 3º, V, da Portaria."
+   "Este é o Relatório Final do Inventário de Bens Intangíveis da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT) do exercício de 2026, elaborado pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, publicada no Diário Oficial do Estado nº 29.279, de 23/07/2026. Constitui o Relatório de Avaliação de Bens Intangíveis previsto no art. 21 da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ e o relatório final de inventário de que trata o art. 3º, V, da Portaria. Integra o processo SEPLAG-PRO-2026/20317-V01, no Sigadoc."
   ],
   [
    "p",
@@ -207,7 +207,7 @@
   ],
   [
    "p",
-   "A partir de 16/11/2026, o trabalho foi registrado em repositório versionado: 86 registros de entrega até a emissão deste relatório, que formam a trilha de auditoria do inventário. O gráfico abaixo mostra as fases e o ritmo das entregas."
+   "A partir de 16/11/2026, o trabalho foi registrado em repositório versionado: 88 registros de entrega até a emissão deste relatório, que formam a trilha de auditoria do inventário. O gráfico abaixo mostra as fases e o ritmo das entregas."
   ],
   [
    "figura",
@@ -265,7 +265,12 @@
     ],
     [
      "27/11/2026",
-     "3ª Nota Técnica Consultiva, retificada e substituída no mesmo dia pela 3ª Nota Técnica Consultiva (diligências e recomendações); Catálogo de Produtos (painel) e este Relatório Final",
+     "Ata nº 002/2026 de encerramento e encaminhamento à Coordenadoria de Patrimônio e Serviços",
+     "Processo SEPLAG-PRO-2026/20317-V01"
+    ],
+    [
+     "27/11/2026",
+     "2ª Nota Técnica Consultiva, retificada e substituída no mesmo dia pela 3ª Nota Técnica Consultiva (diligências e recomendações); Catálogo de Produtos (painel) e este Relatório Final",
      "Entrega ao setorial de patrimônio"
     ]
    ],
@@ -483,7 +488,84 @@
   ],
   [
    "subsecao",
-   "5.3 Situação dos softwares desenvolvidos internamente"
+   "5.3 Cenários: o que explica o aumento"
+  ],
+  [
+   "p",
+   "Para responder se os valores já existiam e não tinham sido levantados, e se a produção das equipes aumentou, a comissão comparou cenários do valor dos softwares desenvolvidos internamente (painel, páginas Cenários e Ponte 2025-2026). Do aumento de R$ 25.258.478,59, o novo preço do PF responde por 51,3%, os 8 sistemas avaliados pela primeira vez por 29,5%, a revisão do Valor Institucional por 13,3% e o crescimento do tamanho funcional dos sistemas mantidos por 5,9%."
+  ],
+  [
+   "tabela",
+   [
+    "Cenário",
+    "Pergunta que responde",
+    "Valor (R$)",
+    "Diferença para o Real 2026 (R$)"
+   ],
+   [
+    [
+     "Real 2025",
+     "Como o inventário de 2025 avaliou",
+     "R$ 44.976.518,12",
+     "R$ -25.258.478,58"
+    ],
+    [
+     "2025 ao preço de 2026",
+     "Quanto valeriam os mesmos sistemas de 2025 só com o novo preço do PF?",
+     "R$ 57.938.528,92",
+     "R$ -12.296.467,78"
+    ],
+    [
+     "2025 ao preço de 2026 + novos de 2026",
+     "E se, além do preço, entrassem os 8 sistemas novos?",
+     "R$ 65.402.219,25",
+     "R$ -4.832.777,46"
+    ],
+    [
+     "2025 com o tamanho de 2026, preço de 2025",
+     "Quanto pesou o crescimento do tamanho funcional dos mesmos sistemas?",
+     "R$ 46.129.452,60",
+     "R$ -24.105.544,11"
+    ],
+    [
+     "2026 com o VI de 2025",
+     "Quanto pesou a revisão do Valor Institucional?",
+     "R$ 66.887.423,76",
+     "R$ -3.347.572,95"
+    ],
+    [
+     "2026 ao preço de 2025",
+     "Quanto valeria o inventário de 2026 se o PF não tivesse mudado de preço?",
+     "R$ 54.522.019,48",
+     "R$ -15.712.977,23"
+    ],
+    [
+     "Real 2026",
+     "Como o inventário de 2026 avaliou",
+     "R$ 70.234.996,71",
+     "R$ 0,00"
+    ]
+   ],
+   "Cenários do valor dos softwares desenvolvidos internamente",
+   [
+    22,
+    44,
+    17,
+    17
+   ],
+   [
+    2,
+    3
+   ],
+   []
+  ],
+  [
+   "p",
+   "Nos 31 sistemas mantidos, o tamanho funcional cresceu 546,8 PF (+2,1%): 10 sistemas aumentaram, 8 diminuíram, em razão de revisões que excluíram funções especificadas e não entregues (SIGS, SIFSW e SEI), e 13 não mudaram. O aumento do valor decorre, portanto, principalmente da atualização do preço de mercado do PF e da inclusão de sistemas que não constavam do inventário de 2025, e não de um aumento expressivo da produção funcional dos sistemas existentes."
+  ],
+  [
+   "subsecao",
+   "5.4 Situação dos softwares desenvolvidos internamente"
   ],
   [
    "tabela",
@@ -531,7 +613,7 @@
   ],
   [
    "subsecao",
-   "5.4 Economicidade da fábrica de software"
+   "5.5 Economicidade da fábrica de software"
   ],
   [
    "p",
@@ -619,7 +701,7 @@
      "IN, art. 5º, VII; art. 26, § 1º",
      "Encaminhamento ao setor contábil até 15/12",
      "Entrega ao patrimônio em 27/11/2026; encaminhamento ao contábil pelo patrimônio",
-     "Termo de entrega",
+     "Processo SEPLAG-PRO-2026/20317-V01",
      "A cargo do patrimônio"
     ],
     [
@@ -660,8 +742,8 @@
     [
      "Portaria, art. 3º, VI; art. 6º",
      "Entrega ao patrimônio até 30/10, com termo",
-     "Entrega em 27/11/2026, com termo de entrega",
-     "Atualização nº 1 da Ata; termo de entrega",
+     "Entrega em 27/11/2026 pelo processo SEPLAG-PRO-2026/20317-V01",
+     "Ata nº 002/2026; processo no Sigadoc",
      "Fora do prazo, justificado"
     ],
     [
@@ -787,7 +869,7 @@
    [
     [
      "Planejamento",
-     "Plano de Trabalho e Cronograma (versão 2.0 e atualização final 3.0); Ata nº 001/2026 e atualizações; Análise do Inventário de 2025 e Apontamentos",
+     "Plano de Trabalho e Cronograma (versão 2.0 e atualização final 3.0); Ata nº 001/2026 e atualizações; Ata nº 002/2026 de encerramento; Análise do Inventário de 2025 e Apontamentos",
      "0. Planejamento"
     ],
     [
@@ -832,8 +914,8 @@
     ],
     [
      "Entrega",
-     "Termo de entrega ao setorial de patrimônio",
-     "A emitir na entrega"
+     "Encaminhamento à Coordenadoria de Patrimônio e Serviços pelo processo SEPLAG-PRO-2026/20317-V01",
+     "Sigadoc"
     ]
    ],
    "Checklist de entregas",
@@ -894,7 +976,7 @@
    "caixa",
    "conclusao",
    "Encaminhamento:",
-   "Encaminha-se este Relatório Final, com os laudos e relatórios que o integram, ao setorial de patrimônio da SEPLAG, mediante termo de entrega, para encaminhamento ao setor contábil até 15/12/2026 (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 26, § 1º) e reflexo no FIPLAN (Portaria nº 124/2026/SEPLAG, art. 8º)."
+   "Encaminha-se este Relatório Final, com os laudos e relatórios que o integram, à Coordenadoria de Patrimônio e Serviços da SEPLAG, pelo processo SEPLAG-PRO-2026/20317-V01, para encaminhamento ao setor contábil até 15/12/2026 (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 26, § 1º) e reflexo no FIPLAN (Portaria nº 124/2026/SEPLAG, art. 8º)."
   ]
  ],
  "responsavel": {

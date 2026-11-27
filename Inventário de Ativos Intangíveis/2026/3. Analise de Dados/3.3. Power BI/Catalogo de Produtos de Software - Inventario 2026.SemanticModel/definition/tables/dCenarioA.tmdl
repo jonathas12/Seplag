@@ -1,0 +1,35 @@
+table dCenarioA
+	lineageTag: 0e9c1b45-4bb7-401b-a563-a5443e396d01
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 2c661c64-e791-467a-bb65-4c57f6b50f96
+		summarizeBy: none
+		sourceColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cenário
+		dataType: string
+		lineageTag: 4c68574c-1107-4e4c-9d76-553351a9abd3
+		summarizeBy: none
+		sourceColumn: Cenário
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCenarioA = m
+		mode: import
+		queryGroup: Dimensões
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\dCenarioA.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

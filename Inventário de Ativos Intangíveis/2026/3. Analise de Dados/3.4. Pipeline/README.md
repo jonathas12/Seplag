@@ -51,6 +51,20 @@ contra a aba Avaliação 2026; total dos desenvolvidos (R$ 70.234.996,71); licen
 (R$ 5.254.186,60); total de 2026 (R$ 78.611.015,47); totais de 2024 e 2025; custo de projeto registrado
 (R$ 9.368.136,99, 9 sistemas); amortização do SEAP. O resultado fica em `3.2. Dados/parquet/auditoria_etl.csv`.
 
+## Páginas do painel
+
+Capa · Visão Geral · Desenvolvidos · Adquiridos · Economicidade · Cenários · Ponte 2025-2026 · Operacional · Ficha do Produto,
+e os tooltips Produto e Economia. Todos os cards trazem contexto: variação sobre o inventário anterior (seta e cor: verde para
+aumento, vermelho para redução) ou a participação no total.
+
+## Cenários e ponte 2025-2026
+
+Explicam o aumento do valor dos desenvolvidos de 2025 (R$ 44,98 mi) para 2026 (R$ 70,23 mi). A ponte decompõe a variação de
+cada sistema mantido em sequência: efeito do preço do PF (PF e VI de 2025 ao preço de 2026), efeito do tamanho (variação de PF
+ao preço de 2026) e efeito do Valor Institucional (restante); os sistemas novos entram pelo valor integral. A página Cenários
+compara, no estilo de placar, dois cenários escolhidos entre: Real 2025; 2025 ao preço de 2026; 2025 ao preço de 2026 com os
+sistemas novos; 2025 com o tamanho de 2026 ao preço de 2025; 2026 com o VI de 2025; 2026 ao preço de 2025; Real 2026.
+
 ## Economicidade
 
 Compara o que a SEPLAG pagou à fábrica de software do Contrato nº 014/2022/SEPLAG (custo de projeto registrado nos

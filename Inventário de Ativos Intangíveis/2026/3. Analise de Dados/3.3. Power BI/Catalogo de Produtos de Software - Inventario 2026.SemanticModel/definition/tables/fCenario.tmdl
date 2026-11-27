@@ -1,0 +1,105 @@
+table fCenario
+	lineageTag: 141ef789-10ea-493b-ab3a-756f1b62a6d8
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: d26f8a0d-d548-40fc-b2cf-0052d35dc5af
+		summarizeBy: none
+		sourceColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cenário
+		dataType: string
+		lineageTag: aafa02b4-5316-4300-8233-55303cd0e95a
+		summarizeBy: none
+		sourceColumn: Cenário
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pergunta
+		dataType: string
+		lineageTag: a6ce46a3-36b8-4392-82f4-6f8a962da458
+		summarizeBy: none
+		sourceColumn: Pergunta
+
+		annotation SummarizationSetBy = Automatic
+
+	column Premissas
+		dataType: string
+		lineageTag: b1ddb031-750d-40c9-85f0-ef8b49ab42b2
+		summarizeBy: none
+		sourceColumn: Premissas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sistemas
+		dataType: int64
+		formatString: 0
+		lineageTag: 32c966a1-6435-4168-aef4-b7a249cd04a5
+		summarizeBy: sum
+		sourceColumn: Sistemas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tamanho Funcional (PF)'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 689c3d9d-a24b-48a9-92f0-c56e8aebfa9d
+		summarizeBy: sum
+		sourceColumn: Tamanho Funcional (PF)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço PF (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: fea36722-b4c7-46fe-853f-19fcf60fc1fc
+		summarizeBy: none
+		sourceColumn: Preço PF (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 2da009e7-9a26-41e2-acef-2d18272c4c8e
+		summarizeBy: sum
+		sourceColumn: Valor (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Diferença para o Real 2026 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 3e9321ff-d28f-4fda-9682-164d0552f786
+		summarizeBy: sum
+		sourceColumn: Diferença para o Real 2026 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Diferença para o Real 2025 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 4ac0f92c-9d16-4723-9f7f-81f55833b7d4
+		summarizeBy: sum
+		sourceColumn: Diferença para o Real 2025 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fCenario = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fCenario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

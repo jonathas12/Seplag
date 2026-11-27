@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000e5000000000003",
   "position": {
-    "x": 1038,
-    "y": 184,
+    "x": 344,
+    "y": 214,
     "z": 4000,
-    "height": 44,
-    "width": 204,
+    "height": 24,
+    "width": 200,
     "tabOrder": 4000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Retorno Ativo por R$ 1"
+                  "Property": "Sistemas com Custo (contexto)"
                 }
               },
-              "queryRef": "Medidas.Retorno Ativo por R$ 1",
-              "nativeQueryRef": "Retorno Ativo por R$ 1"
+              "queryRef": "Medidas.Sistemas com Custo (contexto)",
+              "nativeQueryRef": "Sistemas com Custo (contexto)"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "17D"
+                  "Value": "9.5D"
                 }
               }
             },
@@ -49,7 +49,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0E3A4D'"
+                      "Value": "'#4E6B76'"
                     }
                   }
                 }
@@ -58,7 +58,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }

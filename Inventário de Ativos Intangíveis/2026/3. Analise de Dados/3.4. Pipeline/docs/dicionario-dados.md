@@ -7,6 +7,8 @@ Gerado por `gera_documentacao.py` a partir dos arquivos em `3.2. Dados/parquet`.
 | Tabela | Tipo | Linhas | Descrição |
 |---|---|---:|---|
 | bProdutoDiligencia | Ponte | 108 | Ponte produto x diligência. |
+| dCenarioA | Dimensão | 7 | Seletor do Cenário A da página Cenários (tabela desconectada). |
+| dCenarioB | Dimensão | 7 | Seletor do Cenário B da página Cenários (tabela desconectada). |
 | dDiligencia | Dimensão | 19 | Diligências D01 a D19 da 3ª Nota Técnica Consultiva. |
 | dInventario | Dimensão | 4 | Inventários de 2023 a 2026, com o preço de referência do PF e a portaria da comissão. |
 | dPrecoPF | Dimensão | 7 | Preços do ponto de função: referência de mercado de cada inventário e preços do Contrato nº 014/2022/SEPLAG. |
@@ -14,12 +16,15 @@ Gerado por `gera_documentacao.py` a partir dos arquivos em `3.2. Dados/parquet`.
 | dTipoFuncao | Dimensão | 5 | Tipos de função da análise de pontos de função (ALI, AIE, EE, CE, SE). |
 | fAmortizacaoSEAP | Fato | 12 | Amortização linear do SEAP em 12 parcelas (Contrato nº 001/2026/SEPLAG, cláusula 4.2). |
 | fAvaliacao | Fato | 186 | Fato principal: avaliação de cada produto em cada inventário (PF, preço, VT, VI e VA). |
+| fCenario | Fato | 7 | Cenários 'E se?' do valor dos desenvolvidos (preço, tamanho e VI de 2025 ou de 2026, com e sem os sistemas novos). |
 | fCustoProjeto | Fato | 19 | Componentes do custo de projeto pago à fábrica de software (laudos com custo de projeto). |
 | fEconomicidade | Fato | 9 | Economicidade por sistema: custo pago, mesmo serviço a preço de mercado do PF, economia e retorno por R$ 1,00. |
 | fFuncao | Fato | 163 | Quantidade de funções e pontos de função por tipo, conforme o resultado de cada laudo. |
 | fHistoricoLaudo | Fato | 117 | Histórico de medições registrado em cada laudo. |
 | fIntegracao | Fato | 149 | Integrações declaradas em cada laudo. |
 | fModulo | Fato | 192 | Pontos de função por módulo, conforme o resultado de cada laudo. |
+| fPonte | Fato | 39 | Ponte do valor dos desenvolvidos de 2025 para 2026 por sistema: PF, VI, VA e efeitos de preço, tamanho, VI e entrada de sistemas novos. |
+| fPonteFator | Fato | 5 | Ponte agregada por fator (base 2025, preço, tamanho, VI e sistemas novos), para o gráfico em cascata. |
 
 Relacionamentos (todos 1:N, da dimensão para o fato): dProduto[ID Produto] filtra fAvaliacao, fModulo, fFuncao, fIntegracao,
 fHistoricoLaudo, fCustoProjeto, fEconomicidade e bProdutoDiligencia; dInventario[Ano Inventário] filtra fAvaliacao;
@@ -34,6 +39,24 @@ Ponte produto x diligência.
 |---|---|---|
 | ID Produto | str | SISPAT |
 | Código | str | D10 |
+
+## dCenarioA
+
+Seletor do Cenário A da página Cenários (tabela desconectada).
+
+| Coluna | Tipo | Exemplo |
+|---|---|---|
+| Ordem | int64 | 1 |
+| Cenário | str | Real 2025 |
+
+## dCenarioB
+
+Seletor do Cenário B da página Cenários (tabela desconectada).
+
+| Coluna | Tipo | Exemplo |
+|---|---|---|
+| Ordem | int64 | 1 |
+| Cenário | str | Real 2025 |
 
 ## dDiligencia
 
@@ -174,6 +197,23 @@ Fato principal: avaliação de cada produto em cada inventário (PF, preço, VT,
 | Valor Final VA (R$) | float64 | 192867.282 |
 | Fonte | str | Dados.xlsx (inventário 2024) |
 
+## fCenario
+
+Cenários 'E se?' do valor dos desenvolvidos (preço, tamanho e VI de 2025 ou de 2026, com e sem os sistemas novos).
+
+| Coluna | Tipo | Exemplo |
+|---|---|---|
+| Ordem | int64 | 1 |
+| Cenário | str | Real 2025 |
+| Pergunta | str | Como o inventário de 2025 avaliou |
+| Premissas | str | 31 sistemas, PF e VI de 2025, preço de R$ 943,25 |
+| Sistemas | int64 | 31 |
+| Tamanho Funcional (PF) | float64 | 26660.0 |
+| Preço PF (R$) | float64 | 943.25 |
+| Valor (R$) | float64 | 44976518.125 |
+| Diferença para o Real 2026 (R$) | float64 | -25258478.583499998 |
+| Diferença para o Real 2025 (R$) | float64 | 0.0 |
+
 ## fCustoProjeto
 
 Componentes do custo de projeto pago à fábrica de software (laudos com custo de projeto).
@@ -258,3 +298,35 @@ Pontos de função por módulo, conforme o resultado de cada laudo.
 | Módulo | str | Imobiliário: cadastro, documentação e avaliação |
 | Tamanho Funcional (PF) | float64 | 779.6 |
 | Qtde Histórias | float64 | 19.0 |
+
+## fPonte
+
+Ponte do valor dos desenvolvidos de 2025 para 2026 por sistema: PF, VI, VA e efeitos de preço, tamanho, VI e entrada de sistemas novos.
+
+| Coluna | Tipo | Exemplo |
+|---|---|---|
+| ID Produto | str | SISPAT |
+| Situação no Período | str | Mantido |
+| PF 2025 | float64 | 5222.0 |
+| PF 2026 | float64 | 5375.0 |
+| Variação PF | float64 | 153.0 |
+| VI 2025 | float64 | 0.75 |
+| VI 2026 | float64 | 1.0 |
+| VA 2025 (R$) | float64 | 8619890.125 |
+| VA 2026 (R$) | float64 | 13062217.5 |
+| Efeito Preço (R$) | float64 | 2484209.84 |
+| Efeito Tamanho (R$) | float64 | 325340.3475 |
+| Efeito VI (R$) | float64 | 1632777.1875 |
+| Efeito Novo Sistema (R$) | float64 | 0.0 |
+| Variação Total (R$) | float64 | 4442327.375 |
+| Movimento do Tamanho | str | Aumentou |
+
+## fPonteFator
+
+Ponte agregada por fator (base 2025, preço, tamanho, VI e sistemas novos), para o gráfico em cascata.
+
+| Coluna | Tipo | Exemplo |
+|---|---|---|
+| Ordem | int64 | 1 |
+| Fator | str | Inventário 2025 |
+| Valor (R$) | float64 | 44976518.125 |

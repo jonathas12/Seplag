@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "000000d4000000000002",
   "position": {
-    "x": 806,
-    "y": 184,
+    "x": 344,
+    "y": 178,
     "z": 3000,
-    "height": 44,
-    "width": 204,
+    "height": 40,
+    "width": 200,
     "tabOrder": 3000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Valor Licenças Encerradas (R$)"
+                  "Property": "Valor Licenças (R$)"
                 }
               },
-              "queryRef": "Medidas.Valor Licenças Encerradas (R$)",
-              "nativeQueryRef": "Valor Licenças Encerradas (R$)"
+              "queryRef": "Medidas.Valor Licenças (R$)",
+              "nativeQueryRef": "Valor Licenças (R$)"
             }
           ]
         }
@@ -49,7 +49,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FF8C42'"
+                      "Value": "'#0E3A4D'"
                     }
                   }
                 }

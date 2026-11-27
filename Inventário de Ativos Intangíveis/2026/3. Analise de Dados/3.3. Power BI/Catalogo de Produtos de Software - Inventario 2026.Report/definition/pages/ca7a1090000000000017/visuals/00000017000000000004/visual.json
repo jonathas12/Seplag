@@ -2,73 +2,70 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "00000017000000000004",
   "position": {
-    "x": 96,
-    "y": 62,
+    "x": 424,
+    "y": 236,
     "z": 5000,
-    "height": 32,
-    "width": 420,
+    "height": 40,
+    "width": 164,
     "tabOrder": 5000
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "multiRowCard",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dProduto"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "Nome do Produto"
+                  "Property": "VI Atual"
                 }
               },
-              "queryRef": "dProduto.Nome do Produto",
-              "nativeQueryRef": "Nome do Produto",
-              "active": true
+              "queryRef": "Medidas.VI Atual",
+              "nativeQueryRef": "VI Atual"
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
+      "dataLabels": [
         {
           "properties": {
-            "mode": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "17D"
                 }
               }
             },
-            "singleSelect": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0E3A4D'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             }
           }
         }
       ],
-      "header": [
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -81,53 +78,20 @@
           }
         }
       ],
-      "items": [
+      "card": [
         {
           "properties": {
-            "textSize": {
+            "barShow": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0E2F3C'"
-                    }
-                  }
-                }
-              }
-            },
-            "background": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FBFDFC'"
-                    }
-                  }
-                }
-              }
-            },
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C8D9D6'"
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             },
             "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             }

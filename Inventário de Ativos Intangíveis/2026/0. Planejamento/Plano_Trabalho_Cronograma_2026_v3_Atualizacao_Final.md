@@ -14,7 +14,7 @@ Comissão instituída pela Portaria nº 124/2026/SEPLAG. Versão 3.0, de 27/11/2
 | Aprovação do preço do PF (R$ 1.215,09, Sigadoc SEPLAG-DIC-2026/59859) | 18/11/2026 |
 | Conclusão das medições e dos 39 laudos dos sistemas | 26/11/2026 |
 | Laudos dos adquiridos e do SEAP; relatórios consolidados | 26/11/2026 |
-| 2ª Nota Técnica Consultiva, Catálogo de Produtos (painel) e Relatório Final | 27/11/2026 |
+| 2ª e 3ª Notas Técnicas Consultivas (a 3ª retifica e substitui a 2ª), Catálogo de Produtos (painel) e Relatório Final | 27/11/2026 |
 | Entrega ao setorial de patrimônio | 27/11/2026 |
 | Encaminhamento do patrimônio ao setor contábil (IN, art. 26, § 1º) | até 15/12/2026 |
 | Progresso em 27/11/2026 | 97% (falta a entrega formal com termo e a ata de encerramento) |
@@ -30,7 +30,7 @@ A versão 2.0 registrava a abertura em 16/10/2026; a data correta, conforme a At
 | Valor apurado | - | R$ 78.611.015,47 (R$ 73.794.677,79 líquido em 31/12/2026) |
 | Preço do ponto de função | Escolha até 26/11 | R$ 1.215,09, aprovado em 18/11/2026 |
 | Painel de análise de dados (F6.4) | Atualizar o painel de 2025 | Novo Catálogo de Produtos de Software (Power BI), com pipeline reprodutível |
-| Diligências e recomendações | Nota consultiva (E6) | 1ª e 2ª Notas Técnicas Consultivas: 19 diligências e 20 recomendações |
+| Diligências e recomendações | Nota consultiva (E6) | 1ª, 2ª (sem efeito) e 3ª Notas Técnicas Consultivas: 19 diligências e 20 recomendações |
 | Entrega | 27/11/2026 | 27/11/2026 |
 
 ## 3. Fases
@@ -43,7 +43,7 @@ A versão 2.0 registrava a abertura em 16/10/2026; a data correta, conforme a At
 | F4 | Mensuração em pontos de função | Concluído | 18/11 | 26/11 | 100% | 39 planilhas de contagem e especificações do SIGQA e do PRIMO |
 | F5 | Softwares adquiridos e licenciados mantidos | Concluído | 26/11 | 26/11 | 100% | Levantamento dos adquiridos, laudo das licenças, laudo e amortização do SEAP |
 | F6 | Avaliação e consolidação | Concluído | 18/11 | 27/11 | 100% | Valores por bem, vida útil, quadro de movimentação, relatórios consolidados, painel |
-| F7 | Relatório Final e laudos | Em conclusão | 18/11 | 27/11 | 95% | 41 laudos, Relatório Final, 2ª Nota Técnica; falta a ata de encerramento |
+| F7 | Relatório Final e laudos | Em conclusão | 18/11 | 27/11 | 95% | 41 laudos, Relatório Final, 3ª Nota Técnica; falta a ata de encerramento |
 | F8 | Entrega e registro contábil | Em andamento | 27/11 | até 15/12 | 0% (patrimônio e contabilidade) | Termo de entrega; registro contábil e FIPLAN |
 
 ## 4. Subações
@@ -96,7 +96,7 @@ A versão 2.0 registrava a abertura em 16/10/2026; a data correta, conforme a At
 
 ## 7. Histórico de conclusão
 
-Registro das entregas no repositório versionado do inventário, de 16/11/2026 a 27/11/2026 (85 entregas). Cada linha é um registro (commit) com a sua data e hora, o código de identificação e a descrição.
+Registro das entregas no repositório versionado do inventário, de 16/11/2026 a 27/11/2026 (87 entregas). Cada linha é um registro (commit) com a sua data e hora, o código de identificação e a descrição.
 
 | Dia | Entregas | Principais entregas do dia |
 |---|---:|---|
@@ -109,7 +109,7 @@ Registro das entregas no repositório versionado do inventário, de 16/11/2026 a
 | 24/11/2026 | 8 | Laudo técnico de avaliação do SIGS 2026; Laudo técnico de avaliação do SINER 2026; Laudo técnico de avaliação do Manopla 2026; Laudos técnicos de avaliação do Web Ponto e do Client Biometria 2026; Laudo técnico de avaliação do Revisa Consignações 2026; Laudo técnico de avaliação do SEI 2026; Contagem indicativa de pontos de função; Laudo técnico de avaliação do SIDBENS 2026 |
 | 25/11/2026 | 12 | Laudo técnico de avaliação do Sistema de Opiniões 2026; Laudo técnico de avaliação do SIADES 2026; Laudo do Banco de Talentos e skill de contagem estimativa APF; Laudo técnico de avaliação do SCPA; Manifestação técnica de reconhecimento de intangível e skill; Laudo técnico de avaliação do DBV; Laudos do SGA-Perícia Médica e do Agendamento SGA; Laudos e contagens estimativas do Progressão Vertical e do Contagem de Tem |
 | 26/11/2026 | 8 | Laudo de revisão FIPLAN x SAFF reescrito com preâmbulo, cenários e planilhas por cenário; Contagens indicativa, estimativa e detalhada e laudo de avaliação 2026; Especificação de requisitos, contagem estimativa e laudo 2026; Especificação de requisitos, contagem indicativa e laudo 2026; Levantamento 2026, laudo das licenças e laudo do SEAP; Relatórios consolidados de bens intangíveis |
-| 27/11/2026 | 5 | Nota Técnica Consultiva v1.0 com diligências e recomendações; Numera as notas técnicas consultivas (1ª e 2ª) e anexa as fontes; Pipeline e painel Power BI do Catálogo de Produtos de Software 2026; Relatório Final do inventário e Plano de Trabalho 3.0 (atualização final) |
+| 27/11/2026 | 7 | Nota Técnica Consultiva v1.0 com diligências e recomendações; Numera as notas técnicas consultivas (1ª e 2ª) e anexa as fontes; Pipeline e painel Power BI do Catálogo de Produtos de Software 2026; Relatório Final do inventário e Plano de Trabalho 3.0 (atualização final); Histórico de conclusão inclui o Relatório Final; 3ª Nota Técnica Consultiva retifica e substitui a 2ª |
 
 ### Registro completo
 
@@ -200,5 +200,7 @@ Registro das entregas no repositório versionado do inventário, de 16/11/2026 a
 | 27/11/2026 16:22 | 342ec5f | Correção | 2ª Nota Técnica considera o custo de projeto do SIG-SST e do PSICO |
 | 27/11/2026 16:32 | b24002b | Nova entrega | Pipeline e painel Power BI do Catálogo de Produtos de Software 2026 |
 | 27/11/2026 16:37 | 0c3d8aa | Documento | Relatório Final do inventário e Plano de Trabalho 3.0 (atualização final) |
+| 27/11/2026 16:37 | 43d5acb | Documento | Histórico de conclusão inclui o Relatório Final |
+| 27/11/2026 16:40 | 086b24e | Documento | 3ª Nota Técnica Consultiva retifica e substitui a 2ª |
 
 Cuiabá/MT, 27 de novembro de 2026.

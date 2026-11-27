@@ -96,7 +96,7 @@ A versão 2.0 registrava a abertura em 16/10/2026; a data correta, conforme a At
 
 ## 7. Histórico de conclusão
 
-Registro das entregas no repositório versionado do inventário, de 16/11/2026 a 27/11/2026 (84 entregas). Cada linha é um registro (commit) com a sua data e hora, o código de identificação e a descrição.
+Registro das entregas no repositório versionado do inventário, de 16/11/2026 a 27/11/2026 (85 entregas). Cada linha é um registro (commit) com a sua data e hora, o código de identificação e a descrição.
 
 | Dia | Entregas | Principais entregas do dia |
 |---|---:|---|
@@ -109,7 +109,7 @@ Registro das entregas no repositório versionado do inventário, de 16/11/2026 a
 | 24/11/2026 | 8 | Laudo técnico de avaliação do SIGS 2026; Laudo técnico de avaliação do SINER 2026; Laudo técnico de avaliação do Manopla 2026; Laudos técnicos de avaliação do Web Ponto e do Client Biometria 2026; Laudo técnico de avaliação do Revisa Consignações 2026; Laudo técnico de avaliação do SEI 2026; Contagem indicativa de pontos de função; Laudo técnico de avaliação do SIDBENS 2026 |
 | 25/11/2026 | 12 | Laudo técnico de avaliação do Sistema de Opiniões 2026; Laudo técnico de avaliação do SIADES 2026; Laudo do Banco de Talentos e skill de contagem estimativa APF; Laudo técnico de avaliação do SCPA; Manifestação técnica de reconhecimento de intangível e skill; Laudo técnico de avaliação do DBV; Laudos do SGA-Perícia Médica e do Agendamento SGA; Laudos e contagens estimativas do Progressão Vertical e do Contagem de Tem |
 | 26/11/2026 | 8 | Laudo de revisão FIPLAN x SAFF reescrito com preâmbulo, cenários e planilhas por cenário; Contagens indicativa, estimativa e detalhada e laudo de avaliação 2026; Especificação de requisitos, contagem estimativa e laudo 2026; Especificação de requisitos, contagem indicativa e laudo 2026; Levantamento 2026, laudo das licenças e laudo do SEAP; Relatórios consolidados de bens intangíveis |
-| 27/11/2026 | 4 | Nota Técnica Consultiva v1.0 com diligências e recomendações; Numera as notas técnicas consultivas (1ª e 2ª) e anexa as fontes; Pipeline e painel Power BI do Catálogo de Produtos de Software 2026 |
+| 27/11/2026 | 5 | Nota Técnica Consultiva v1.0 com diligências e recomendações; Numera as notas técnicas consultivas (1ª e 2ª) e anexa as fontes; Pipeline e painel Power BI do Catálogo de Produtos de Software 2026; Relatório Final do inventário e Plano de Trabalho 3.0 (atualização final) |
 
 ### Registro completo
 
@@ -199,5 +199,6 @@ Registro das entregas no repositório versionado do inventário, de 16/11/2026 a
 | 27/11/2026 14:59 | bb4cda4 | Documento | Numera as notas técnicas consultivas (1ª e 2ª) e anexa as fontes |
 | 27/11/2026 16:22 | 342ec5f | Correção | 2ª Nota Técnica considera o custo de projeto do SIG-SST e do PSICO |
 | 27/11/2026 16:32 | b24002b | Nova entrega | Pipeline e painel Power BI do Catálogo de Produtos de Software 2026 |
+| 27/11/2026 16:37 | 0c3d8aa | Documento | Relatório Final do inventário e Plano de Trabalho 3.0 (atualização final) |
 
 Cuiabá/MT, 27 de novembro de 2026.

@@ -1,10 +1,9 @@
 {
- "titulo": "Nota Técnica Consultiva",
+ "titulo": "2ª Nota Técnica Consultiva",
  "subtitulos": [
-  "Gestão e Governança de Software: diligências e recomendações do Inventário de Bens Intangíveis 2026",
-  "Versão 1.0"
+  "Gestão e Governança de Software: diligências e recomendações do Inventário de Bens Intangíveis 2026"
  ],
- "arquivo_saida": "Nota_Tecnica_Consultiva_Gestao_Governanca_Software",
+ "arquivo_saida": "2a_Nota_Tecnica_Consultiva_Gestao_Governanca_Software",
  "cidade_data": "Cuiabá/MT, 27 de novembro de 2026.",
  "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
  "cards": [
@@ -37,7 +36,7 @@
   ],
   [
    "p",
-   "Esta Nota Técnica Consultiva, versão 1.0, consolida as diligências e as recomendações da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) resultantes do inventário do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT). Substitui a versão 0.2, de 16/11/2026, cujo conteúdo foi incorporado e ampliado com os achados dos 38 laudos técnicos de avaliação emitidos no exercício."
+   "Esta 2ª Nota Técnica Consultiva consolida as diligências e as recomendações da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) resultantes do inventário do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT). Dá continuidade à 1ª Nota Técnica Consultiva, de 16/11/2026, cujo conteúdo foi incorporado e ampliado com os achados dos 38 laudos técnicos de avaliação emitidos no exercício."
   ],
   [
    "p",
@@ -178,7 +177,7 @@
   ],
   [
    "p",
-   "Na SEPLAG, conforme a versão 0.2 desta Nota, a manutenção é feita por pessoal próprio, com salários e encargos lançados como despesa operacional, sem separação entre sustentação e evolução. A comissão não recebeu dados que permitam quantificar quanto da folha da área de tecnologia corresponde a cada sistema e a cada fase. Sem essa informação, não é possível saber quanto custou construir cada produto, quanto custa mantê-lo, nem se o aumento de custos de um contrato ou de uma equipe é justificado pelo benefício entregue. A Lei nº 14.133/2021 exige que a contratação considere o ciclo de vida do objeto (art. 11, I) e evite sobrepreço e superfaturamento (art. 11, III); o custo total de propriedade (TCO) é a medida desse ciclo de vida."
+   "Na SEPLAG, conforme a 1ª Nota Técnica Consultiva, a manutenção é feita por pessoal próprio, com salários e encargos lançados como despesa operacional, sem separação entre sustentação e evolução. A comissão não recebeu dados que permitam quantificar quanto da folha da área de tecnologia corresponde a cada sistema e a cada fase. Sem essa informação, não é possível saber quanto custou construir cada produto, quanto custa mantê-lo, nem se o aumento de custos de um contrato ou de uma equipe é justificado pelo benefício entregue. A Lei nº 14.133/2021 exige que a contratação considere o ciclo de vida do objeto (art. 11, I) e evite sobrepreço e superfaturamento (art. 11, III); o custo total de propriedade (TCO) é a medida desse ciclo de vida."
   ],
   [
    "secao",
@@ -835,7 +834,7 @@
   ],
   [
    "p",
-   "As recomendações estão organizadas por eixo. Cada uma indica o responsável principal e o resultado esperado. Elas aprofundam as da versão 0.2 desta Nota e as do Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026), sem repeti-las integralmente."
+   "As recomendações estão organizadas por eixo. Cada uma indica o responsável principal e o resultado esperado. Elas aprofundam as da 1ª Nota Técnica Consultiva e as do Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026), sem repeti-las integralmente."
   ],
   [
    "subsecao",
@@ -880,7 +879,7 @@
   [
    "lista",
    [
-    "**R10. Classificação de toda demanda na origem** (pesquisa, desenvolvimento, evolutiva, adaptativa, corretiva, sustentação), que define o tratamento como investimento ou despesa, conforme a versão 0.2 desta Nota.",
+    "**R10. Classificação de toda demanda na origem** (pesquisa, desenvolvimento, evolutiva, adaptativa, corretiva, sustentação), que define o tratamento como investimento ou despesa, conforme a 1ª Nota Técnica Consultiva.",
     "**R11. Apontamento de esforço da equipe interna por produto e por classe**, com custo-hora médio da categoria e encargos, para apurar o custo de desenvolvimento (capitalizável, IN, art. 10, III, \"b\") e o de sustentação (despesa).",
     "**R12. Custo total de propriedade (TCO) por produto**, somando desenvolvimento, evolução, sustentação, infraestrutura, licenças de plataforma e suporte, apresentado anualmente com o inventário. É o indicador que permite identificar aumento de custo sem aumento correspondente de benefício.",
     "**R13. Ordens de serviço vinculadas ao produto** e termos de recebimento com a lista das histórias entregues, para que pagamento, entrega e ativo se reconciliem."
@@ -904,7 +903,7 @@
   [
    "lista",
    [
-    "**R16. Teste anual de redução ao valor recuperável** para os softwares de vida útil indefinida (IN, art. 18, parágrafo único; NBC TSP 09 e NBC TSP 10), com os indícios objetivos de perda da versão 0.2 desta Nota (sem uso, substituição em curso, tecnologia sem suporte, finalidade extinta).",
+    "**R16. Teste anual de redução ao valor recuperável** para os softwares de vida útil indefinida (IN, art. 18, parágrafo único; NBC TSP 09 e NBC TSP 10), com os indícios objetivos de perda da 1ª Nota Técnica Consultiva (sem uso, substituição em curso, tecnologia sem suporte, finalidade extinta).",
     "**R17. Conciliação anual entre o catálogo, o SIGPAT e a contabilidade**, com tratamento das divergências antes do fechamento do exercício."
    ]
   ],
@@ -1128,7 +1127,7 @@
      "CIABI/SEPLAG, novembro de 2026"
     ],
     [
-     "Nota Técnica Consultiva, versão 0.2 (16/11/2026); Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026); Minuta de IN Conjunta de Custos e Ciclo de Vida dos Produtos de Software",
+     "1ª Nota Técnica Consultiva (16/11/2026); Estudo Técnico de Custos, Contabilização e Governança dos Produtos de Software (18/11/2026); Minuta de IN Conjunta de Custos e Ciclo de Vida dos Produtos de Software",
      "CIABI/SEPLAG, 2026"
     ]
    ],

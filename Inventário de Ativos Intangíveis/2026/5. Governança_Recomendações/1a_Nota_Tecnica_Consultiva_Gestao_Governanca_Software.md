@@ -1,4 +1,4 @@
-# Nota Técnica Consultiva - Gestão, contabilização e governança dos softwares da SEPLAG
+# 1ª Nota Técnica Consultiva - Gestão, contabilização e governança dos softwares da SEPLAG
 
 Versão 0.2, de 16/11/2026. Elaboração: presidência da Comissão de Inventário e Avaliação de Bens Intangíveis.
 

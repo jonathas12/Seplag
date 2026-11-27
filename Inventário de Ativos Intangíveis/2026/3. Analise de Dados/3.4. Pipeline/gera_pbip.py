@@ -107,7 +107,7 @@ def tabela_tmdl(nome):
         linhas = [f"\tcolumn {qn(c)}", f"\t\tdataType: {t}"]
         f = fmt_col(c, t)
         if f:
-            linhas.append(f"\t\tformatString: {f}")
+            linhas.append(f"\t\tformatString: {tmdl_valor(f)}")
         if (c in OCULTAS and (oculta_ids or c == "Ordem")) or c == "Ordem":
             linhas.append("\t\tisHidden")
         resumo = "sum" if t in ("double", "int64") and c not in ("Ano Inventário", "Nº Laudo", "Parcela", "Ordem", "Valor Institucional",
@@ -133,6 +133,14 @@ def tabela_tmdl(nome):
     gravar(SM / "tables" / f"{nome}.tmdl", corpo)
 
 
+def tmdl_valor(v):
+    """Valor de propriedade TMDL: com aspas internas, envolve em aspas e duplica as internas."""
+    v = str(v)
+    if '"' in v or v != v.strip():
+        return '"' + v.replace('"', '""') + '"'
+    return v
+
+
 def medidas_tmdl():
     corpo = f"table Medidas\n\tlineageTag: {tag()}\n\n"
     for nome, expr, fmt, pasta, desc in MEDIDAS:
@@ -144,7 +152,7 @@ def medidas_tmdl():
         else:
             corpo += f"\tmeasure {qn(nome)} =\n" + "\n".join("\t\t\t" + l for l in linhas) + "\n"
         if fmt:
-            corpo += f"\t\tformatString: {fmt}\n"
+            corpo += f"\t\tformatString: {tmdl_valor(fmt)}\n"
         corpo += f"\t\tdisplayFolder: {pasta}\n\t\tlineageTag: {tag()}\n\n"
     corpo += (f"\tcolumn Coluna\n\t\tdataType: string\n\t\tisHidden\n\t\tlineageTag: {tag()}\n\t\tsummarizeBy: none\n\t\tsourceColumn: Coluna\n\n"
               "\t\tannotation SummarizationSetBy = Automatic\n\n"

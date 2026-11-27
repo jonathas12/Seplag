@@ -1,10 +1,10 @@
 table fFuncao
-	lineageTag: ca468417-560f-4217-8559-6b15e12e0db0
+	lineageTag: f6a89245-93d8-48bb-873b-5d2b922e1985
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 129f11e7-1a4c-48ae-9616-beee8780a739
+		lineageTag: 9db6f2f0-df53-45c7-a1e6-270808455650
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fFuncao
 
 	column 'Tipo de Função'
 		dataType: string
-		lineageTag: 124d568f-1fe4-4cfc-b40e-c574dc9544ef
+		lineageTag: 7b409210-7cdc-4ae2-a664-2c69ea65b776
 		summarizeBy: none
 		sourceColumn: Tipo de Função
 
@@ -21,7 +21,7 @@ table fFuncao
 	column 'Qtde Funções'
 		dataType: int64
 		formatString: 0
-		lineageTag: 2cf7b744-af4a-40a1-8e6d-93caa72b2a80
+		lineageTag: 60a14d71-9f43-4157-ad31-856c0161f8f4
 		summarizeBy: sum
 		sourceColumn: Qtde Funções
 
@@ -30,7 +30,7 @@ table fFuncao
 	column 'Tamanho Funcional (PF)'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 15253399-8e83-4c9f-98dd-f9f72ebbd812
+		lineageTag: 7fecc4eb-8b55-4c52-8405-57e60bbcebac
 		summarizeBy: sum
 		sourceColumn: Tamanho Funcional (PF)
 

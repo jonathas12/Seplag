@@ -1,11 +1,11 @@
 table fPonteFator
-	lineageTag: 83eab5cc-4c44-4440-a1fb-c8873070cc36
+	lineageTag: cd36f9ea-7d19-4b15-813f-f3403bf0c8a6
 
 	column Ordem
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 42650499-cb00-49fc-853b-3dda89353ffc
+		lineageTag: f942d4f7-8b4b-43d4-b914-aa23853dcc31
 		summarizeBy: none
 		sourceColumn: Ordem
 
@@ -13,7 +13,7 @@ table fPonteFator
 
 	column Fator
 		dataType: string
-		lineageTag: 478679f7-403c-49ee-9c3a-6252f979e07a
+		lineageTag: 0a99f2ff-9db0-4af0-a0be-3a8e9120c7bf
 		summarizeBy: none
 		sourceColumn: Fator
 		sortByColumn: Ordem
@@ -22,8 +22,8 @@ table fPonteFator
 
 	column 'Valor (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: d351cb54-8200-4348-b67f-bce62f9f7202
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 3d419ccb-6003-4197-932e-d746ddc25fe9
 		summarizeBy: sum
 		sourceColumn: Valor (R$)
 

@@ -1,10 +1,10 @@
 table bProdutoDiligencia
-	lineageTag: 37d7f69a-e0e5-4701-bae3-62a1109993c5
+	lineageTag: a9585d1e-1c37-4d86-93e0-661c48462ab2
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 2874b6b9-34ff-4a28-88b6-c1c2d6ca63cf
+		lineageTag: a2412dd7-709c-4dee-86bb-6cf7a43c2865
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table bProdutoDiligencia
 
 	column Código
 		dataType: string
-		lineageTag: 21b8dd27-3c03-4da0-a6d6-77838032d074
+		lineageTag: cc95d7ff-f077-4f8c-bacc-8c0896ee46fb
 		summarizeBy: none
 		sourceColumn: Código
 

@@ -1,10 +1,10 @@
 table fPonte
-	lineageTag: 3334d50b-7cb6-47e0-a98e-1277d5113758
+	lineageTag: f1a79153-cb48-4cd2-9a0f-c93dc7072360
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 3391909d-7188-4896-b9e2-2f38832267fd
+		lineageTag: a4623fea-8bbf-401d-88b9-61c76a612086
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fPonte
 
 	column 'Situação no Período'
 		dataType: string
-		lineageTag: 772487a9-b6a7-46f3-93c1-2f5d4d01e939
+		lineageTag: 01bc4bfb-caad-423c-bbb5-7c61a7e0c12e
 		summarizeBy: none
 		sourceColumn: Situação no Período
 
@@ -21,7 +21,7 @@ table fPonte
 	column 'PF 2025'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 64feac58-5350-43a6-8cf7-e31e7958bb0d
+		lineageTag: 2b429e0f-9c09-42b7-b7ee-4776491072d4
 		summarizeBy: sum
 		sourceColumn: PF 2025
 
@@ -30,7 +30,7 @@ table fPonte
 	column 'PF 2026'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: b223ff44-6d30-4060-8206-1304b5422935
+		lineageTag: 8de4eb79-cb8a-4ba0-8aa7-d003d1267273
 		summarizeBy: sum
 		sourceColumn: PF 2026
 
@@ -39,7 +39,7 @@ table fPonte
 	column 'Variação PF'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 918e6be1-71b3-4ab9-8a69-cf287679255b
+		lineageTag: 00cba1ef-fcc9-475e-8f6d-e1084dcce7ec
 		summarizeBy: sum
 		sourceColumn: Variação PF
 
@@ -48,7 +48,7 @@ table fPonte
 	column 'VI 2025'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: 3faa0da3-30b5-4f7f-80c0-8a9dc8d358b3
+		lineageTag: c5f71887-059a-41ea-bfc1-a7768ac2f161
 		summarizeBy: sum
 		sourceColumn: VI 2025
 
@@ -57,7 +57,7 @@ table fPonte
 	column 'VI 2026'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: c99dd79e-18a9-475e-8c0b-c8ff705eb308
+		lineageTag: f71fe1c8-b342-4cc7-af09-f1d4737a0a15
 		summarizeBy: sum
 		sourceColumn: VI 2026
 
@@ -65,8 +65,8 @@ table fPonte
 
 	column 'VA 2025 (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 5423b363-1113-4171-9be4-532515671f90
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: a3acf112-e10d-4183-9d66-d1594b0b6f36
 		summarizeBy: sum
 		sourceColumn: VA 2025 (R$)
 
@@ -74,8 +74,8 @@ table fPonte
 
 	column 'VA 2026 (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 0c69581f-706a-447b-b01f-530454e86981
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 0f98da24-e881-4faa-a722-a93bdd4ba83e
 		summarizeBy: sum
 		sourceColumn: VA 2026 (R$)
 
@@ -83,8 +83,8 @@ table fPonte
 
 	column 'Efeito Preço (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: c559c5aa-84a4-4321-8c60-b22d306d1807
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 6890c8f7-ec9b-40b2-b351-1e9e3671bc9a
 		summarizeBy: sum
 		sourceColumn: Efeito Preço (R$)
 
@@ -92,8 +92,8 @@ table fPonte
 
 	column 'Efeito Tamanho (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 35387569-97b3-4c94-a536-ae56f786d9ae
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 71c86156-dc9a-4596-9a24-fdeb6e57b4bd
 		summarizeBy: sum
 		sourceColumn: Efeito Tamanho (R$)
 
@@ -101,8 +101,8 @@ table fPonte
 
 	column 'Efeito VI (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: e2b606bd-2d67-4c8d-90d3-c1232d2d5fda
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: edc4a2f9-e339-4300-9fe9-bd653cad258a
 		summarizeBy: sum
 		sourceColumn: Efeito VI (R$)
 
@@ -110,8 +110,8 @@ table fPonte
 
 	column 'Efeito Novo Sistema (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: f521e7c6-5ca4-4c92-b354-7a3e89bf617b
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: f4c1b80c-0555-4562-9d8a-85be46c684f8
 		summarizeBy: sum
 		sourceColumn: Efeito Novo Sistema (R$)
 
@@ -119,8 +119,8 @@ table fPonte
 
 	column 'Variação Total (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: f39427f7-744e-4929-a46d-5b3c0d168fc4
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: c07d3fd5-8b90-424b-8bf6-c34dcc904bf5
 		summarizeBy: sum
 		sourceColumn: Variação Total (R$)
 
@@ -128,7 +128,7 @@ table fPonte
 
 	column 'Movimento do Tamanho'
 		dataType: string
-		lineageTag: ebed657d-ac64-4a82-a64a-72fab23ceed3
+		lineageTag: 4bf8507c-ff12-4ad4-90f9-fc2d159842d6
 		summarizeBy: none
 		sourceColumn: Movimento do Tamanho
 

@@ -1,11 +1,11 @@
 table dCenarioA
-	lineageTag: 0e9c1b45-4bb7-401b-a563-a5443e396d01
+	lineageTag: 5f77d0b5-1278-4139-8081-d7d09503ba44
 
 	column Ordem
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 2c661c64-e791-467a-bb65-4c57f6b50f96
+		lineageTag: 0eb72ef3-30f4-47be-940f-6bf9daac8a4d
 		summarizeBy: none
 		sourceColumn: Ordem
 
@@ -13,7 +13,7 @@ table dCenarioA
 
 	column Cenário
 		dataType: string
-		lineageTag: 4c68574c-1107-4e4c-9d76-553351a9abd3
+		lineageTag: dbc208af-53fa-4f90-abee-3e4e5d33d92d
 		summarizeBy: none
 		sourceColumn: Cenário
 		sortByColumn: Ordem

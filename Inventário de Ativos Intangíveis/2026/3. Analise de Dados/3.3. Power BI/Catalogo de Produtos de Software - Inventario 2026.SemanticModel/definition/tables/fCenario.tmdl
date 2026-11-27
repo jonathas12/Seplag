@@ -1,11 +1,11 @@
 table fCenario
-	lineageTag: 141ef789-10ea-493b-ab3a-756f1b62a6d8
+	lineageTag: 5d82e8a8-b6cf-49ac-b71f-1e11f6c091cb
 
 	column Ordem
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: d26f8a0d-d548-40fc-b2cf-0052d35dc5af
+		lineageTag: 3d04ede7-074f-41b6-8230-38be6747d775
 		summarizeBy: none
 		sourceColumn: Ordem
 
@@ -13,7 +13,7 @@ table fCenario
 
 	column Cenário
 		dataType: string
-		lineageTag: aafa02b4-5316-4300-8233-55303cd0e95a
+		lineageTag: e06303d0-477d-4b56-938c-0837c77d951c
 		summarizeBy: none
 		sourceColumn: Cenário
 		sortByColumn: Ordem
@@ -22,7 +22,7 @@ table fCenario
 
 	column Pergunta
 		dataType: string
-		lineageTag: a6ce46a3-36b8-4392-82f4-6f8a962da458
+		lineageTag: d225a0ac-3c96-4516-8a2d-35edcaa028e8
 		summarizeBy: none
 		sourceColumn: Pergunta
 
@@ -30,7 +30,7 @@ table fCenario
 
 	column Premissas
 		dataType: string
-		lineageTag: b1ddb031-750d-40c9-85f0-ef8b49ab42b2
+		lineageTag: c69413ec-4600-434b-8b82-58323c83da67
 		summarizeBy: none
 		sourceColumn: Premissas
 
@@ -39,7 +39,7 @@ table fCenario
 	column Sistemas
 		dataType: int64
 		formatString: 0
-		lineageTag: 32c966a1-6435-4168-aef4-b7a249cd04a5
+		lineageTag: bd94aa2d-2772-400a-a152-5a72bd4a9d79
 		summarizeBy: sum
 		sourceColumn: Sistemas
 
@@ -48,7 +48,7 @@ table fCenario
 	column 'Tamanho Funcional (PF)'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 689c3d9d-a24b-48a9-92f0-c56e8aebfa9d
+		lineageTag: 297ec87c-155b-4a3a-a827-98b79825aecf
 		summarizeBy: sum
 		sourceColumn: Tamanho Funcional (PF)
 
@@ -56,8 +56,8 @@ table fCenario
 
 	column 'Preço PF (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: fea36722-b4c7-46fe-853f-19fcf60fc1fc
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 74995300-3006-42f7-ac74-4b0eeef27581
 		summarizeBy: none
 		sourceColumn: Preço PF (R$)
 
@@ -65,8 +65,8 @@ table fCenario
 
 	column 'Valor (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 2da009e7-9a26-41e2-acef-2d18272c4c8e
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 52b6ad0a-5128-4919-836f-db1a648c6611
 		summarizeBy: sum
 		sourceColumn: Valor (R$)
 
@@ -74,8 +74,8 @@ table fCenario
 
 	column 'Diferença para o Real 2026 (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 3e9321ff-d28f-4fda-9682-164d0552f786
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 7127ccbc-93f3-4b07-920c-16c157d7f91b
 		summarizeBy: sum
 		sourceColumn: Diferença para o Real 2026 (R$)
 
@@ -83,8 +83,8 @@ table fCenario
 
 	column 'Diferença para o Real 2025 (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 4ac0f92c-9d16-4723-9f7f-81f55833b7d4
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 258e2c0c-6e9c-483e-bbb1-7a7d75a0d9cd
 		summarizeBy: sum
 		sourceColumn: Diferença para o Real 2025 (R$)
 

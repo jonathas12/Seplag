@@ -1,10 +1,10 @@
 table fAmortizacaoSEAP
-	lineageTag: 66fdf73e-c397-44c2-9511-b363004dd14b
+	lineageTag: 7d0bb9be-2fcd-48c2-84c0-8c5d73f76e20
 
 	column Parcela
 		dataType: int64
 		formatString: 0
-		lineageTag: edc775bf-2532-451a-b747-1c8394258fb4
+		lineageTag: 4d2a8032-b637-4dd1-bc08-2d093d8d2798
 		summarizeBy: none
 		sourceColumn: Parcela
 
@@ -13,7 +13,7 @@ table fAmortizacaoSEAP
 	column 'Início do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: d6287abd-ceb0-4bab-8269-5a2353be1c8a
+		lineageTag: 81ddd54d-1d58-4ee4-950e-b782a2e52943
 		summarizeBy: none
 		sourceColumn: Início do Período
 
@@ -24,7 +24,7 @@ table fAmortizacaoSEAP
 	column 'Fim do Período'
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: 0fda847f-8e97-46d5-814b-e5ca0b67fc1b
+		lineageTag: 588633f8-9fea-432f-a84b-224f8d8c2ccb
 		summarizeBy: none
 		sourceColumn: Fim do Período
 
@@ -34,8 +34,8 @@ table fAmortizacaoSEAP
 
 	column 'Amortização do Mês (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 6aecafe9-1b1d-4394-bb67-fd7908965fe8
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: e9c27822-53a3-48f0-9511-5f545c5df301
 		summarizeBy: sum
 		sourceColumn: Amortização do Mês (R$)
 
@@ -43,8 +43,8 @@ table fAmortizacaoSEAP
 
 	column 'Amortização Acumulada (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: e42070bf-a7d5-48e4-b38f-7c14e3eadca6
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 61e3294d-3613-4846-973c-29dd892d2ff4
 		summarizeBy: sum
 		sourceColumn: Amortização Acumulada (R$)
 
@@ -52,8 +52,8 @@ table fAmortizacaoSEAP
 
 	column 'Valor Contábil Líquido (R$)'
 		dataType: double
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 68e508b8-dbc2-4ffd-a336-90db3cfacb99
+		formatString: """R$""\ #,0.00;-""R$""\ #,0.00;""R$""\ #,0.00"
+		lineageTag: 7daf6a5e-877e-4351-b805-3b4d36f73857
 		summarizeBy: sum
 		sourceColumn: Valor Contábil Líquido (R$)
 
@@ -61,7 +61,7 @@ table fAmortizacaoSEAP
 
 	column Marco
 		dataType: string
-		lineageTag: 143d8de8-8535-49af-bb63-b1a0fa42996e
+		lineageTag: a86570f2-a59c-4857-828e-9dbab63446ca
 		summarizeBy: none
 		sourceColumn: Marco
 

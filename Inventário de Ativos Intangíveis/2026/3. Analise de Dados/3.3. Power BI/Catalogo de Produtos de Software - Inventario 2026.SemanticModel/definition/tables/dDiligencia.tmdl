@@ -1,9 +1,9 @@
 table dDiligencia
-	lineageTag: 8a601c27-4d62-40ba-b5a7-e6b0c1a42796
+	lineageTag: cd8cbcee-5287-4db2-92b4-7868937065ca
 
 	column Código
 		dataType: string
-		lineageTag: 2f1d2cb2-4cad-400a-b021-73bda7d69cf9
+		lineageTag: 70d5a771-d043-4131-b184-d4a69d899083
 		summarizeBy: none
 		sourceColumn: Código
 		sortByColumn: Ordem
@@ -12,7 +12,7 @@ table dDiligencia
 
 	column Objeto
 		dataType: string
-		lineageTag: 1301894e-9a1b-455a-9b3f-f08efcb85d22
+		lineageTag: bb97d5ef-1b5a-4c36-aadd-3627f063bc0e
 		summarizeBy: none
 		sourceColumn: Objeto
 
@@ -20,7 +20,7 @@ table dDiligencia
 
 	column Destinatário
 		dataType: string
-		lineageTag: 71e0cfd8-d437-4071-8b06-1e388744dce0
+		lineageTag: 5d34c3f4-f2a0-47d2-a2b2-9959ca80f9c0
 		summarizeBy: none
 		sourceColumn: Destinatário
 
@@ -28,7 +28,7 @@ table dDiligencia
 
 	column Fundamento
 		dataType: string
-		lineageTag: 14a1b481-2e41-4d5c-84fd-9b80cf96b4db
+		lineageTag: a8182057-7455-4289-b86b-29581bb43931
 		summarizeBy: none
 		sourceColumn: Fundamento
 
@@ -36,7 +36,7 @@ table dDiligencia
 
 	column 'Prazo Sugerido'
 		dataType: string
-		lineageTag: 325c365f-09b6-4528-9e28-23f817e0524d
+		lineageTag: 68b19415-895e-4c03-80c8-b8b7f6b54b5e
 		summarizeBy: none
 		sourceColumn: Prazo Sugerido
 
@@ -44,7 +44,7 @@ table dDiligencia
 
 	column Prioritária
 		dataType: string
-		lineageTag: 08076890-765d-424b-a150-2118a5c1b86d
+		lineageTag: 8417ef2e-018e-4aef-96b3-0f919ad44e65
 		summarizeBy: none
 		sourceColumn: Prioritária
 
@@ -54,7 +54,7 @@ table dDiligencia
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 3ddb1a89-4619-4a2d-aba4-fb1489ce38e1
+		lineageTag: 6d802d27-6afa-4418-aa32-d4af1d96a18a
 		summarizeBy: none
 		sourceColumn: Ordem
 

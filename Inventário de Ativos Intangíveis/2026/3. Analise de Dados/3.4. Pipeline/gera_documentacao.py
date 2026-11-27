@@ -16,7 +16,7 @@ DESCR = {
     "dProduto": "Dimensão de produtos: os 39 softwares desenvolvidos internamente, as 18 licenças e o SEAP, com a ficha de cada laudo.",
     "dInventario": "Inventários de 2023 a 2026, com o preço de referência do PF e a portaria da comissão.",
     "dPrecoPF": "Preços do ponto de função: referência de mercado de cada inventário e preços do Contrato nº 014/2022/SEPLAG.",
-    "dDiligencia": "Diligências D01 a D19 da 2ª Nota Técnica Consultiva.",
+    "dDiligencia": "Diligências D01 a D19 da 3ª Nota Técnica Consultiva.",
     "dTipoFuncao": "Tipos de função da análise de pontos de função (ALI, AIE, EE, CE, SE).",
     "fAvaliacao": "Fato principal: avaliação de cada produto em cada inventário (PF, preço, VT, VI e VA).",
     "fModulo": "Pontos de função por módulo, conforme o resultado de cada laudo.",
@@ -24,7 +24,7 @@ DESCR = {
     "fIntegracao": "Integrações declaradas em cada laudo.",
     "fHistoricoLaudo": "Histórico de medições registrado em cada laudo.",
     "fCustoProjeto": "Componentes do custo de projeto pago à fábrica de software (laudos com custo de projeto).",
-    "fEconomicidade": "Economicidade por sistema: custo pago, volume faturado a preço de mercado, economia e retorno por R$ 1,00.",
+    "fEconomicidade": "Economicidade por sistema: custo pago, mesmo serviço a preço de mercado do PF, economia e retorno por R$ 1,00.",
     "fAmortizacaoSEAP": "Amortização linear do SEAP em 12 parcelas (Contrato nº 001/2026/SEPLAG, cláusula 4.2).",
     "bProdutoDiligencia": "Ponte produto x diligência.",
 }

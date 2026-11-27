@@ -7,7 +7,7 @@ Gerado por `gera_documentacao.py` a partir dos arquivos em `3.2. Dados/parquet`.
 | Tabela | Tipo | Linhas | Descrição |
 |---|---|---:|---|
 | bProdutoDiligencia | Ponte | 108 | Ponte produto x diligência. |
-| dDiligencia | Dimensão | 19 | Diligências D01 a D19 da 2ª Nota Técnica Consultiva. |
+| dDiligencia | Dimensão | 19 | Diligências D01 a D19 da 3ª Nota Técnica Consultiva. |
 | dInventario | Dimensão | 4 | Inventários de 2023 a 2026, com o preço de referência do PF e a portaria da comissão. |
 | dPrecoPF | Dimensão | 7 | Preços do ponto de função: referência de mercado de cada inventário e preços do Contrato nº 014/2022/SEPLAG. |
 | dProduto | Dimensão | 58 | Dimensão de produtos: os 39 softwares desenvolvidos internamente, as 18 licenças e o SEAP, com a ficha de cada laudo. |
@@ -15,7 +15,7 @@ Gerado por `gera_documentacao.py` a partir dos arquivos em `3.2. Dados/parquet`.
 | fAmortizacaoSEAP | Fato | 12 | Amortização linear do SEAP em 12 parcelas (Contrato nº 001/2026/SEPLAG, cláusula 4.2). |
 | fAvaliacao | Fato | 186 | Fato principal: avaliação de cada produto em cada inventário (PF, preço, VT, VI e VA). |
 | fCustoProjeto | Fato | 19 | Componentes do custo de projeto pago à fábrica de software (laudos com custo de projeto). |
-| fEconomicidade | Fato | 9 | Economicidade por sistema: custo pago, volume faturado a preço de mercado, economia e retorno por R$ 1,00. |
+| fEconomicidade | Fato | 9 | Economicidade por sistema: custo pago, mesmo serviço a preço de mercado do PF, economia e retorno por R$ 1,00. |
 | fFuncao | Fato | 163 | Quantidade de funções e pontos de função por tipo, conforme o resultado de cada laudo. |
 | fHistoricoLaudo | Fato | 117 | Histórico de medições registrado em cada laudo. |
 | fIntegracao | Fato | 149 | Integrações declaradas em cada laudo. |
@@ -37,7 +37,7 @@ Ponte produto x diligência.
 
 ## dDiligencia
 
-Diligências D01 a D19 da 2ª Nota Técnica Consultiva.
+Diligências D01 a D19 da 3ª Nota Técnica Consultiva.
 
 | Coluna | Tipo | Exemplo |
 |---|---|---|
@@ -187,7 +187,7 @@ Componentes do custo de projeto pago à fábrica de software (laudos com custo d
 
 ## fEconomicidade
 
-Economicidade por sistema: custo pago, volume faturado a preço de mercado, economia e retorno por R$ 1,00.
+Economicidade por sistema: custo pago, mesmo serviço a preço de mercado do PF, economia e retorno por R$ 1,00.
 
 | Coluna | Tipo | Exemplo |
 |---|---|---|

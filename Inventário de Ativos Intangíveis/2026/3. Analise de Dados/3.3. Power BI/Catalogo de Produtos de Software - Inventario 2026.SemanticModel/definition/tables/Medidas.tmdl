@@ -1,35 +1,35 @@
 table Medidas
-	lineageTag: 9da3e95b-4586-409a-bcad-42fcfe942e18
+	lineageTag: 27e10721-65e2-40e5-af76-36a642868c51
 
 	/// Valor do ativo (VA) no contexto do visual.
 	measure 'Valor Final (R$)' = SUM ( fAvaliacao[Valor Final VA (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: a42550c5-73fb-4538-b221-3f81731365d7
+		lineageTag: aa7b76d3-b36f-4e91-a01f-c1049195242a
 
 	/// Valor do tamanho (VT = PF x preço do PF); nos adquiridos, igual ao valor de aquisição ou do contrato.
 	measure 'Valor Bruto (R$)' = SUM ( fAvaliacao[Valor Bruto VT (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 6a1bfec7-327f-4c1f-9d28-3edb7214e4d4
+		lineageTag: 63fd853e-be40-43a6-b607-2c92484fa986
 
 	/// Pontos de função medidos.
 	measure 'Tamanho Funcional (PF)' = SUM ( fAvaliacao[Tamanho Funcional (PF)] )
 		formatString: #,0.0
 		displayFolder: 1. Base
-		lineageTag: 1fbaddd2-b679-4806-a578-382cc0b0580b
+		lineageTag: 118eb68e-d78e-495d-aacf-b542315a9afe
 
 	/// Produtos avaliados no contexto.
 	measure 'Qtde Produtos' = DISTINCTCOUNT ( fAvaliacao[ID Produto] )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: 359abb02-4ec2-4c1c-9764-2821ec97a442
+		lineageTag: 13af553f-fabc-4cc6-badb-b84b12bbc9f4
 
 	/// Inventário de referência: 2026, ou o inventário filtrado.
 	measure 'Ano Referência' = IF ( ISFILTERED ( dInventario[Ano Inventário] ) || ISFILTERED ( dInventario[Inventário] ), MAX ( dInventario[Ano Inventário] ), 2026 )
 		formatString: 0
 		displayFolder: 1. Base
-		lineageTag: debdde46-f18b-43bc-9517-f315c8e83de7
+		lineageTag: 5f1d2c11-6185-4475-a465-80f8adc09481
 
 	/// Valor do ativo no inventário de referência.
 	measure 'Valor Atual (R$)' =
@@ -38,7 +38,7 @@ table Medidas
 			    CALCULATE ( [Valor Final (R$)], REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 742a25cf-adcf-4da5-9020-09bc254caaf1
+		lineageTag: d3ec65c8-65d7-4471-b19e-285ad22a986f
 
 	/// Valor do ativo no inventário anterior ao de referência.
 	measure 'Valor Anterior (R$)' =
@@ -47,19 +47,19 @@ table Medidas
 			    CALCULATE ( [Valor Final (R$)], REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a - 1 )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 88cd056b-e78a-4789-bef1-f37df506100c
+		lineageTag: f453c252-ca1d-481d-bb8c-adee3a34f5ec
 
 	/// Diferença do valor sobre o inventário anterior.
 	measure 'Variação Valor (R$)' = [Valor Atual (R$)] - [Valor Anterior (R$)]
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 766527a6-72a0-4b85-821f-b7235246958d
+		lineageTag: b3be786d-6586-4b3f-879b-2fe47a4a771a
 
 	/// Variação percentual do valor.
 	measure '% Variação Valor' = DIVIDE ( [Variação Valor (R$)], [Valor Anterior (R$)] )
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: 1. Base
-		lineageTag: f41cae4d-014c-4add-a937-e8e9ce739163
+		lineageTag: 2755610c-3e41-48d2-bc61-b8486d96f703
 
 	/// Pontos de função no inventário de referência.
 	measure 'PF Atual' =
@@ -68,7 +68,7 @@ table Medidas
 			    CALCULATE ( [Tamanho Funcional (PF)], REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a )
 		formatString: #,0.0
 		displayFolder: 1. Base
-		lineageTag: 6afc4552-4008-4d9c-8bcc-50da57dcff9a
+		lineageTag: 8448a00a-9833-43c4-9f5c-9b2158c75b5e
 
 	/// Pontos de função no inventário anterior.
 	measure 'PF Anterior' =
@@ -77,13 +77,13 @@ table Medidas
 			    CALCULATE ( [Tamanho Funcional (PF)], REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a - 1 )
 		formatString: #,0.0
 		displayFolder: 1. Base
-		lineageTag: 283b9de8-0348-40a4-9536-986182a8381e
+		lineageTag: 5d39258e-3054-426b-9019-79c7b481c3ea
 
 	/// Diferença de pontos de função.
 	measure 'Variação PF' = [PF Atual] - [PF Anterior]
 		formatString: #,0.0
 		displayFolder: 1. Base
-		lineageTag: 0eb89f0e-cd20-4bf7-9031-9d2f7a441f94
+		lineageTag: 74b3061e-9062-4686-9368-f81ba364684e
 
 	/// Produtos avaliados no inventário de referência.
 	measure 'Qtde Produtos Atual' =
@@ -92,7 +92,7 @@ table Medidas
 			    CALCULATE ( [Qtde Produtos], REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: 7facdef2-e2e4-42aa-97e9-67b5bd30b978
+		lineageTag: 927da6aa-353a-4596-96a5-38515a16342c
 
 	/// Valor Institucional (média, quando há mais de um produto).
 	measure 'VI Atual' =
@@ -101,362 +101,362 @@ table Medidas
 			    CALCULATE ( AVERAGE ( fAvaliacao[Valor Institucional] ), REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = _a )
 		formatString: #,0.00
 		displayFolder: 1. Base
-		lineageTag: cc30625a-5c6b-4dcc-9da9-7cd81093983f
+		lineageTag: 76bc2e91-3ead-4e04-8c2e-558fda0820ba
 
 	/// Valor dos softwares desenvolvidos internamente.
 	measure 'Valor Desenvolvidos (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Categoria] = "Desenvolvido internamente" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 5c14d857-10ee-47fd-bfd5-9447774a9243
+		lineageTag: e66d63e2-509c-477b-a1cf-da6c102d71e6
 
 	/// Valor das licenças e softwares de prateleira.
 	measure 'Valor Licenças (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Categoria] = "Adquirido: licença" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: e2dae0d2-c78c-4aee-a50e-29e129c60315
+		lineageTag: 6c5dd904-4bd9-49f1-84d6-197f4ca5cb86
 
 	/// Valor do SEAP (contrato).
 	measure 'Valor SEAP (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Categoria] = "Adquirido: contrato (SEAP)" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 82396139-77db-428d-beb6-915fe9b0513e
+		lineageTag: 701c2e66-5016-4af2-b31a-dbab8064de62
 
 	/// Licenças e SEAP.
 	measure 'Valor Adquiridos (R$)' = [Valor Licenças (R$)] + [Valor SEAP (R$)]
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 1. Base
-		lineageTag: 8b0793ba-15ef-4ca0-b915-f0438e6f13f8
+		lineageTag: 9d97672d-7aa3-4f07-8123-ed566fe2cfc7
 
 	/// Softwares desenvolvidos internamente.
 	measure 'Qtde Desenvolvidos' = CALCULATE ( [Qtde Produtos Atual], dProduto[Categoria] = "Desenvolvido internamente" )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: d33941d9-fcb0-428a-bd6f-226a3aeee697
+		lineageTag: d28d8545-0860-41af-84c7-26750882c009
 
 	/// Licenças avaliadas.
 	measure 'Qtde Licenças' = CALCULATE ( [Qtde Produtos Atual], dProduto[Categoria] = "Adquirido: licença" )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: af6e616f-1114-4786-92fc-42270976b306
+		lineageTag: ed0f63c2-ab18-4b7c-a762-dd055088a66d
 
 	/// Licenças e SEAP.
 	measure 'Qtde Adquiridos' = CALCULATE ( [Qtde Produtos Atual], dProduto[Categoria] <> "Desenvolvido internamente" )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: be3cf098-4ec7-40c7-a537-f90b31a87163
+		lineageTag: d71daaa9-a9c3-4d15-a509-9d6b2541059a
 
 	/// Participação no valor do recorte.
 	measure '% Participação' = DIVIDE ( [Valor Atual (R$)], CALCULATE ( [Valor Atual (R$)], ALLSELECTED ( dProduto ) ) )
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: 1. Base
-		lineageTag: 54e025e6-cb64-4e87-84c6-098b16af8a36
+		lineageTag: a8fe4d4a-5925-4622-b1df-482d86a8bf23
 
 	/// Posição do produto pelo valor.
 	measure 'Posição no Ranking' = IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto[ID Produto] ), [Valor Atual (R$)], , DESC, DENSE ) )
 		formatString: #,0
 		displayFolder: 1. Base
-		lineageTag: 19a2c24d-1de9-40ad-82ac-778be71054cb
+		lineageTag: d6254905-3dfa-4ad1-834f-5dfbdff9f10d
 
-	/// Desenvolvidos sem documentação funcional disponibilizada (2ª Nota Técnica).
+	/// Desenvolvidos sem documentação funcional disponibilizada (3ª Nota Técnica).
 	measure 'Qtde Sem Documentação' = CALCULATE ( COUNTROWS ( dProduto ), dProduto[Documentação] = "Ausente", dProduto[Categoria] = "Desenvolvido internamente" )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: ddd3c312-4362-4ea4-ba13-70c8c6b22535
+		lineageTag: 8e92dc3c-b34d-47f3-b228-7ffe29b3ad63
 
 	/// Valor dos sistemas sem documentação funcional.
 	measure 'Valor Sem Documentação (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Documentação] = "Ausente" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 2. Governança
-		lineageTag: 22765a73-a3b3-47d6-9d15-37bacf54e813
+		lineageTag: b78a1563-0080-4e1d-b4a0-6516f878564d
 
 	/// SEI, SIGS e SIFSW.
 	measure 'Qtde Sem Uso ou Suspensos' = CALCULATE ( COUNTROWS ( dProduto ), dProduto[Situação Resumida] IN { "Em produção, sem uso", "Em desenvolvimento (suspenso)" } )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: bfaafb1c-a4aa-4c64-820e-aa0b3b7bc79c
+		lineageTag: cfce5a6f-e905-494b-9e16-6602a9ab757e
 
 	/// Valor dos sistemas sem uso ou suspensos.
 	measure 'Valor Sem Uso ou Suspensos (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Situação Resumida] IN { "Em produção, sem uso", "Em desenvolvimento (suspenso)" } )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 2. Governança
-		lineageTag: d9ec2506-4627-40fe-9ee2-a0d5615b6f6b
+		lineageTag: 6753d7d8-5bbf-4b56-84b4-78a2c54388c5
 
 	/// Projetos em desenvolvimento (situação do laudo).
 	measure 'Qtde Em Desenvolvimento' = CALCULATE ( COUNTROWS ( dProduto ), dProduto[Situação Resumida] = "Em desenvolvimento" )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: 595161b3-ec00-46a4-aad5-f1920fa60559
+		lineageTag: d8fb352a-1f07-467a-b705-7984aa1091e8
 
 	/// Cessões encerradas ainda registradas.
 	measure 'Qtde Licenças Encerradas' = CALCULATE ( COUNTROWS ( dProduto ), dProduto[Situação Resumida] = "Licença com cessão encerrada" )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: d5bde02c-afe5-4963-96e9-3ba79583eecd
+		lineageTag: 05d47874-5519-4202-9b02-682e70245f25
 
 	/// Valor das cessões encerradas.
 	measure 'Valor Licenças Encerradas (R$)' = CALCULATE ( [Valor Atual (R$)], dProduto[Situação Resumida] = "Licença com cessão encerrada" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 2. Governança
-		lineageTag: 44052de3-477b-4ca2-aa6b-1db1cd6b3996
+		lineageTag: 62bd69ef-7cf2-464c-93bf-8fe74c231bad
 
 	/// Diligências que alcançam os produtos do recorte.
 	measure 'Qtde Diligências' = DISTINCTCOUNT ( bProdutoDiligencia[Código] )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: 7810b0b5-5ebb-452d-8fda-aa71d92e9184
+		lineageTag: 2be173b5-925b-4317-a77a-7ddeaa2d2c7e
 
 	/// Diligências com prazo até 10/12/2026.
 	measure 'Qtde Diligências Prioritárias' = CALCULATE ( DISTINCTCOUNT ( bProdutoDiligencia[Código] ), dDiligencia[Prioritária] = "Sim" )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: 9b98878e-6ba3-4dbe-b090-41df8300a3dd
+		lineageTag: 8f636bbf-2de2-4994-a7ca-6316c77ba25a
 
 	/// Produtos alcançados pela diligência.
 	measure 'Produtos Alcançados' = DISTINCTCOUNT ( bProdutoDiligencia[ID Produto] )
 		formatString: #,0
 		displayFolder: 2. Governança
-		lineageTag: 836c2932-4804-4500-806b-95193a3339f6
+		lineageTag: 53f968fc-639d-462a-a87e-d7743954c2af
 
 	/// Amortização do SEAP acumulada até o fim do exercício.
 	measure 'Amortização Acumulada 31/12 (R$)' = CALCULATE ( MAX ( fAmortizacaoSEAP[Amortização Acumulada (R$)] ), fAmortizacaoSEAP[Parcela] = 11 )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 3. Adquiridos
-		lineageTag: ffd93d7f-90e6-45af-a016-315ca882b918
+		lineageTag: caee10ca-1425-4301-a786-fe222abcf172
 
 	/// Valor contábil líquido do SEAP em 31/12/2026.
 	measure 'Valor Líquido SEAP 31/12 (R$)' = CALCULATE ( MIN ( fAmortizacaoSEAP[Valor Contábil Líquido (R$)] ), fAmortizacaoSEAP[Parcela] = 11 )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 3. Adquiridos
-		lineageTag: 613b2de7-fc45-4862-bfa6-45261e106428
+		lineageTag: cb6f6cff-86da-4be4-99b7-51f21533a7b4
 
 	/// Valor líquido ao fim de cada parcela.
 	measure 'Valor Líquido SEAP (R$)' = SUM ( fAmortizacaoSEAP[Valor Contábil Líquido (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 3. Adquiridos
-		lineageTag: 7fd59623-a0c2-45cf-9e2d-5ba257b74e6d
+		lineageTag: aa154c84-40dd-4092-92c4-1f0aba20a6b0
 
 	/// Parcela mensal (cláusula 4.2).
 	measure 'Amortização do Mês (R$)' = SUM ( fAmortizacaoSEAP[Amortização do Mês (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 3. Adquiridos
-		lineageTag: 9da9f341-4df0-4e1f-ab06-277060d70180
+		lineageTag: b9820bc6-4f95-4b44-be6d-0db592671a5a
 
 	/// Valor apurado menos a amortização do SEAP até 31/12/2026.
 	measure 'Valor Líquido do Inventário 31/12 (R$)' = CALCULATE ( [Valor Atual (R$)], REMOVEFILTERS ( dProduto ) ) - [Amortização Acumulada 31/12 (R$)]
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 3. Adquiridos
-		lineageTag: 1d9e5209-b6ab-46b0-b2b9-253eef9cb16d
+		lineageTag: 95bba829-73da-4c56-aa12-5600d7afcd96
 
 	/// Pago à fábrica de software (Contrato nº 014/2022), TRDs até 07/2026.
 	measure 'Custo Pago (R$)' = SUM ( fEconomicidade[Custo Total Pago (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: 44b4799c-4112-46dc-95b2-4e67904a8dff
+		lineageTag: 489ff0df-185d-4e53-8b5a-f51f9c5a52dc
 
 	/// Componentes de desenvolvimento (sem tickets e PFT).
 	measure 'Custo de Construção (R$)' = SUM ( fEconomicidade[Custo de Construção (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: b291c33c-76da-4bfa-9e3e-bd15f35bd03b
+		lineageTag: 8c08d68d-a1ad-497f-a4f9-399e4153ea76
 
 	/// Pontos de função faturados ao longo dos projetos.
 	measure 'PF Faturado' = SUM ( fEconomicidade[PF Faturado] )
 		formatString: #,0.0
 		displayFolder: 4. Economicidade
-		lineageTag: 842dfac1-73ef-4a61-913a-70bd679bf823
+		lineageTag: e9085375-cf59-4e6e-beab-14b799f8e211
 
 	/// Custo pago dividido pelo preço do PF no contrato.
 	measure 'PF Equivalentes Pagos' = SUM ( fEconomicidade[PF Equivalentes Pagos] )
 		formatString: #,0.0
 		displayFolder: 4. Economicidade
-		lineageTag: 9db2e70d-9eb1-442c-8b8d-cc9167d4fe8d
+		lineageTag: e7c9e67c-b61d-498c-b3c0-f49a519d56b0
 
 	/// Custo pago dividido pelos PF faturados.
 	measure 'Custo Médio por PF Faturado (R$)' = DIVIDE ( [Custo Pago (R$)], [PF Faturado] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: ca1b4e61-25ec-4c1d-ba62-2c6d7a657acf
+		lineageTag: 9ea317c8-c42d-4d90-9eb7-ea53aa4e299a
 
 	/// Preço de referência do PF aprovado para o inventário de 2026.
 	measure 'Preço PF Mercado (R$)' = CALCULATE ( MAX ( dInventario[Preço PF Mercado (R$)] ), REMOVEFILTERS ( dInventario ), dInventario[Ano Inventário] = 2026 )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: c26b3b3d-7092-4a29-b59b-bcc25a2acf50
+		lineageTag: 45941a5a-1fb9-4cb7-8e5c-1d6a88bf57c3
 
 	/// Preço vigente do PF no Contrato nº 014/2022/SEPLAG.
 	measure 'Preço PF Contrato Vigente (R$)' = CALCULATE ( MAX ( dPrecoPF[Preço PF (R$)] ), dPrecoPF[Tipo] = "Contrato" )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: 82d6822c-4cde-42f6-b11d-6d33e40e00f1
+		lineageTag: 4d93cb5b-02cf-4f29-b09b-89c0993ebd87
 
 	/// O mesmo serviço pago (mesmos PF, percentuais e deflatores) ao preço de referência do PF de 2026, em vez do preço do contrato informado no laudo.
 	measure 'Custo a Preço de Mercado (R$)' = SUM ( fEconomicidade[Custo do Volume a Preço de Mercado (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: 77e72624-b808-4c12-93ec-1c89c0f3a5bd
+		lineageTag: c4ae700f-c895-430c-86fd-39f1672c0977
 
 	/// Quanto a administração deixou de pagar.
 	measure 'Economia vs Mercado (R$)' = [Custo a Preço de Mercado (R$)] - [Custo Pago (R$)]
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: b50ea0c8-fe76-4e5a-a36b-f337c46cdec1
+		lineageTag: dd4b1700-64e9-49be-b275-253a954dc427
 
 	/// Economia sobre o custo de mercado.
 	measure '% Economia' = DIVIDE ( [Economia vs Mercado (R$)], [Custo a Preço de Mercado (R$)] )
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: 4. Economicidade
-		lineageTag: 54a9812a-81da-4df4-ab0a-49a03b8ac8a7
+		lineageTag: cabf9e3e-4bac-4592-9cef-b05c74b2949e
 
 	/// Valor do produto (VT 2026) dos sistemas com custo registrado.
 	measure 'VT Sistemas com Custo (R$)' = SUM ( fEconomicidade[VT 2026 (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: e6208dcb-7be4-4483-a6c2-8a76471c649c
+		lineageTag: 9b0d0798-23d7-4b11-9b88-9eb6d106a887
 
 	/// Valor do ativo (VA 2026) dos sistemas com custo registrado.
 	measure 'VA Sistemas com Custo (R$)' = SUM ( fEconomicidade[VA 2026 (R$)] )
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: 6d06dff5-233c-4e7a-bc4a-abdc6008dfde
+		lineageTag: 69fc9347-c437-4c2e-ab73-82fdfde37bab
 
 	/// Valor do produto (VT) gerado a cada R$ 1,00 pago à fábrica.
 	measure 'Retorno Produto por R$ 1' = DIVIDE ( [VT Sistemas com Custo (R$)], [Custo Pago (R$)] )
 		formatString: "R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: c91740ab-45c0-48b9-a81b-f18b34485907
+		lineageTag: 1d038e78-fa0f-4d08-9091-f28d4958a30d
 
 	/// Valor do ativo (VA) gerado a cada R$ 1,00 pago à fábrica.
 	measure 'Retorno Ativo por R$ 1' = DIVIDE ( [VA Sistemas com Custo (R$)], [Custo Pago (R$)] )
 		formatString: "R$"\ #,0.00
 		displayFolder: 4. Economicidade
-		lineageTag: b68ee71c-72a7-45d2-a6be-6d5b0dd96307
+		lineageTag: 26f0f2b4-355b-4d70-b6c0-b83668e19a39
 
 	/// Sistemas com custo de projeto registrado nos laudos.
 	measure 'Qtde Sistemas com Custo' = COUNTROWS ( fEconomicidade )
 		formatString: #,0
 		displayFolder: 4. Economicidade
-		lineageTag: 33a73217-f3c4-4530-a42c-c94799e4ad8d
+		lineageTag: af843715-35fb-4405-98db-e32aa300ec7f
 
 	/// Nome do produto selecionado.
 	measure 'Ficha Produto' = SELECTEDVALUE ( dProduto[Nome do Produto], "Selecione um produto" )
 		displayFolder: 5. Produto
-		lineageTag: 299290d7-dced-43d1-959a-dc07edb1b9ca
+		lineageTag: 37b12ee5-9163-401b-a316-cdc80602559f
 
 	measure 'Ficha Sigla' = SELECTEDVALUE ( dProduto[Sigla], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 25e55b21-477f-4744-8e57-4a14a0bf5f51
+		lineageTag: 924a8322-d4f9-4cf6-a974-3b2744b52986
 
 	measure 'Ficha Categoria' = SELECTEDVALUE ( dProduto[Categoria], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 3f872cde-ce9d-4fef-9199-60dda04cad1f
+		lineageTag: 2d60208c-c56c-484b-b5ff-090e00aaf1b7
 
 	measure 'Ficha Situação' = SELECTEDVALUE ( dProduto[Situação], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 1ed4c3dc-db55-4e03-b4dd-a76da10c8a50
+		lineageTag: e1a3d975-49ca-4e9f-8f97-2e21d74770f7
 
 	measure 'Ficha Tecnologia' = SELECTEDVALUE ( dProduto[Tecnologia], "-" )
 		displayFolder: 5. Produto
-		lineageTag: be6e6878-6cd4-4962-9066-057b4f861f1f
+		lineageTag: c9f0b919-6cb0-4b51-8f5b-79ad5e067635
 
 	measure 'Ficha Nível' = SELECTEDVALUE ( dProduto[Nível de Medição], "-" )
 		displayFolder: 5. Produto
-		lineageTag: ed96896c-9150-4055-9aaa-2fb512b673fe
+		lineageTag: 79801881-6e92-42f3-9014-be5422ce22b4
 
 	measure 'Ficha Medida' = SELECTEDVALUE ( dProduto[Medida PF], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 066b785e-8e9f-46de-ab14-754d85189782
+		lineageTag: 663a8bde-9843-4384-bfae-2b5f3dadcb36
 
 	measure 'Ficha Vida Útil' = SELECTEDVALUE ( dProduto[Vida Útil], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 5a0c61b3-a99a-451d-a009-c40665cc0af1
+		lineageTag: d08cf094-02ad-4d45-8492-b3a5673da8a2
 
 	measure 'Ficha Faixa VI' = SELECTEDVALUE ( dProduto[Faixa Valor Institucional], "-" )
 		displayFolder: 5. Produto
-		lineageTag: ae5a147f-58ef-4c73-ab63-cf23b4ecf342
+		lineageTag: 2ef074ab-d4ed-49b7-bd7f-163561e01921
 
 	measure 'Ficha Finalidade' = SELECTEDVALUE ( dProduto[Finalidade], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 5647bb96-1f70-47bb-8d9c-869d44087ba9
+		lineageTag: 1a00a252-eab2-4667-a242-8cb6731b05f0
 
 	measure 'Ficha Benefício' = SELECTEDVALUE ( dProduto[Benefício], "-" )
 		displayFolder: 5. Produto
-		lineageTag: d46a0a8b-5113-41dd-8d67-8dc655fdb9e7
+		lineageTag: a271197a-eeda-4350-a23b-a2fff61f048e
 
 	measure 'Ficha Base Legal' = SELECTEDVALUE ( dProduto[Base Legal], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 1e956e36-ba2b-4095-b16a-f468cb100e16
+		lineageTag: fe4a7fda-bace-4745-97ce-a38fe1c9be3c
 
 	measure 'Ficha Áreas' = SELECTEDVALUE ( dProduto[Áreas de Negócio], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 3556cf2a-1603-4182-83a8-0af282669f5e
+		lineageTag: 1d9662ff-102d-4127-8942-b7356f03e963
 
 	measure 'Ficha Justificativa VI' = SELECTEDVALUE ( dProduto[Justificativa do VI], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 93e1a9f4-ded6-45f5-be92-878ce41d1cb9
+		lineageTag: 64dc89a2-21e9-4ee5-8789-bbcb8b7c5764
 
 	measure 'Ficha Documentação' = SELECTEDVALUE ( dProduto[Documentação], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 2a203482-09ff-409b-957e-ca771888aa02
+		lineageTag: d876d12e-c068-4907-8a81-7349ea245378
 
 	measure 'Ficha Achado' = SELECTEDVALUE ( dProduto[Principal Achado], "-" )
 		displayFolder: 5. Produto
-		lineageTag: a0abff9b-7ce1-4b1d-adbd-1b615806bf2e
+		lineageTag: eed5048b-e5f1-431c-8a58-8ef35408d911
 
 	measure 'Ficha Diligências' = SELECTEDVALUE ( dProduto[Diligências], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 76914027-476a-4e82-a3c0-aed480f40c20
+		lineageTag: 05778dfd-d018-4841-9e9c-5fc0b953041e
 
 	measure 'Ficha Laudo' = SELECTEDVALUE ( dProduto[Laudo], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 2083ca05-1a0b-46a1-a540-0413846d2fa9
+		lineageTag: e5bc1c1c-c44e-4770-9483-72538f1afe9c
 
 	measure 'Ficha Fornecedor' = SELECTEDVALUE ( dProduto[Fornecedor], "-" )
 		displayFolder: 5. Produto
-		lineageTag: e1a3797c-6da0-4d80-923d-b068cc28b1f7
+		lineageTag: 916a38b2-f4fd-4b7f-bd0f-9de2807a24b8
 
 	measure 'Ficha Unidade' = SELECTEDVALUE ( dProduto[Unidade de Desenvolvimento], "-" )
 		displayFolder: 5. Produto
-		lineageTag: 2a693d3a-10b8-44d1-8ece-95530e35110e
+		lineageTag: 6ecd27e7-67bc-44a6-bec7-5d1cb6acafcc
 
 	/// Pontos de função por módulo (laudo).
 	measure 'PF Módulo' = SUM ( fModulo[Tamanho Funcional (PF)] )
 		formatString: #,0.0
 		displayFolder: 5. Produto
-		lineageTag: 2eade3b0-26be-4335-972e-b42a49e8fbdd
+		lineageTag: 11d0f81a-c067-425f-9bc9-d351272930ae
 
 	/// Funções contadas por tipo (laudo).
 	measure 'Qtde Funções' = SUM ( fFuncao[Qtde Funções] )
 		formatString: #,0
 		displayFolder: 5. Produto
-		lineageTag: 66a7434f-a601-4c81-847d-f2f93b175301
+		lineageTag: 88f5771d-ef6b-44a1-ab86-9193afdca928
 
 	/// Pontos de função por tipo (ALI, AIE, EE, CE, SE).
 	measure 'PF por Tipo de Função' = SUM ( fFuncao[Tamanho Funcional (PF)] )
 		formatString: #,0.0
 		displayFolder: 5. Produto
-		lineageTag: 21c1b3e7-3a06-4670-9548-511ae4f94b63
+		lineageTag: f9f2b2f3-5ffd-45f9-932a-cfaa7c824eae
 
 	/// Integrações registradas no laudo.
 	measure 'Qtde Integrações' = COUNTROWS ( fIntegracao )
 		formatString: #,0
 		displayFolder: 5. Produto
-		lineageTag: ee5b745b-9664-49fa-8b87-3d5a85248142
+		lineageTag: 2633f6c8-5918-4bbe-a52b-d758813f9e27
 
 	/// Medições registradas no histórico do laudo.
 	measure 'PF Histórico (laudo)' = SUM ( fHistoricoLaudo[Tamanho Funcional (PF)] )
 		formatString: #,0.0
 		displayFolder: 5. Produto
-		lineageTag: 2b6e5feb-3139-4721-895a-1cd1a22135b4
+		lineageTag: 3074f770-e191-4ff6-9fb4-9ce3c24c2cf6
 
 	/// Valor atual em milhões.
 	measure 'Texto Valor Atual' = FORMAT ( [Valor Atual (R$)] / 1000000, "#,0.00" ) & " mi"
 		displayFolder: 6. Narrativas
-		lineageTag: cfc47154-ed58-4d9f-b8e6-31bc4d2048a5
+		lineageTag: 9437b9e4-1ddd-48f0-af22-2ad7c32e9118
 
 	/// Variação sobre o inventário anterior.
 	measure 'Texto Variação' = VAR v = [% Variação Valor] RETURN IF ( ISBLANK ( v ), "primeiro inventário", IF ( v >= 0, "+", "" ) & FORMAT ( v, "0.0%" ) & " sobre " & ( [Ano Referência] - 1 ) )
 		displayFolder: 6. Narrativas
-		lineageTag: 390ace3c-1210-4e01-b330-c39de0f02360
+		lineageTag: c6697644-46c7-4855-a32c-381cb25babbf
 
 	/// Leitura rápida da Visão Geral.
 	measure 'Leitura Visão Geral' =
@@ -464,22 +464,22 @@ table Medidas
 			RETURN "Inventário " & a & ": " & n & " produtos, avaliados em R$ " & FORMAT ( v / 1000000, "#,0.00" ) & " milhões (" & [Texto Variação] & "). "
 			    & d & " softwares desenvolvidos internamente respondem por " & FORMAT ( DIVIDE ( vd, v ), "0.0%" ) & " do valor; " & [Qtde Sem Documentação] & " deles não têm documentação funcional."
 		displayFolder: 6. Narrativas
-		lineageTag: 1a589628-0e09-4bf4-aca1-1a246711c327
+		lineageTag: b4ed7632-3a08-4e3f-bda0-7e58230dc62c
 
 	/// Leitura rápida dos desenvolvidos.
 	measure 'Leitura Desenvolvidos' =
 			VAR n = [Qtde Desenvolvidos] RETURN n & " sistemas, " & FORMAT ( CALCULATE ( [PF Atual], dProduto[Categoria] = "Desenvolvido internamente" ), "#,0.0" ) & " PF e R$ "
 			    & FORMAT ( [Valor Desenvolvidos (R$)] / 1000000, "#,0.00" ) & " milhões. " & [Qtde Sem Uso ou Suspensos] & " sem uso ou suspensos e " & [Qtde Em Desenvolvimento]
-			    & " em desenvolvimento dependem das diligências da 2ª Nota Técnica."
+			    & " em desenvolvimento dependem das diligências da 3ª Nota Técnica."
 		displayFolder: 6. Narrativas
-		lineageTag: 2f54f1e9-ff9c-4c04-a24a-fe2982a3d760
+		lineageTag: e18d7047-a027-46cd-a885-7783fe00abf5
 
 	/// Leitura rápida dos adquiridos.
 	measure 'Leitura Adquiridos' =
 			[Qtde Licenças] & " licenças (R$ " & FORMAT ( [Valor Licenças (R$)] / 1000000, "#,0.00" ) & " mi) e o SEAP (R$ " & FORMAT ( [Valor SEAP (R$)] / 1000000, "#,0.00" )
 			    & " mi, amortizado em 12 meses). " & [Qtde Licenças Encerradas] & " cessões encerradas em 19/07/2026 continuam registradas: confirmar renovação ou baixa."
 		displayFolder: 6. Narrativas
-		lineageTag: 0297d734-1890-433a-ad71-bc31a8f5df35
+		lineageTag: a6a6ae78-29f0-4775-90d1-0bb1e906e322
 
 	/// Leitura rápida da economicidade.
 	measure 'Leitura Economicidade' =
@@ -487,33 +487,33 @@ table Medidas
 			    & " mi à fábrica. O mesmo serviço ao preço de mercado do PF custaria R$ " & FORMAT ( [Custo a Preço de Mercado (R$)] / 1000000, "#,0.00" )
 			    & " mi: economia de " & FORMAT ( [% Economia], "0.0%" ) & ". Cada R$ 1,00 pago gerou R$ " & FORMAT ( [Retorno Ativo por R$ 1], "0.00" ) & " em valor do ativo."
 		displayFolder: 6. Narrativas
-		lineageTag: 9106e860-08ab-4d04-a51c-12586a71bf79
+		lineageTag: 4a6eee34-372a-4e46-939d-f8aadb6e4190
 
 	/// Resumo do recorte da visão operacional.
 	measure 'Leitura Operacional' = COUNTROWS ( dProduto ) & " produtos no recorte · " & [Qtde Diligências] & " diligências aplicáveis · " & [Qtde Diligências Prioritárias] & " prioritárias até 10/12/2026"
 		displayFolder: 6. Narrativas
-		lineageTag: f7f09dac-04d2-4456-849e-5f87f398d199
+		lineageTag: 122221dc-684e-40d8-8350-6be17ce5b853
 
 	/// Cor da situação: laranja indica ressalva.
 	measure 'Cor Situação' =
 			SWITCH ( SELECTEDVALUE ( dProduto[Situação Resumida] ), "Em produção", "#155C78", "Licença vigente", "#155C78", "Em desenvolvimento", "#6FA0B3", "Em produção (legado em sucessão)", "#C77A3F",
 			    "Em produção, sem uso", "#FF8C42", "Em desenvolvimento (suspenso)", "#FF8C42", "Licença com cessão encerrada", "#FF8C42", "#5E7C88" )
 		displayFolder: 7. Cores
-		lineageTag: 00cf6e89-4a72-4fb1-8fdc-c46a459b24ec
+		lineageTag: 91073cb0-948d-4f19-b2e5-1fd277c9f938
 
 	/// Cor da classificação da documentação.
 	measure 'Cor Documentação' = SWITCH ( SELECTEDVALUE ( dProduto[Documentação] ), "Ausente", "#FF8C42", "Com lacunas", "#C77A3F", "Parcial", "#6FA0B3", "Adequada", "#155C78", "#5E7C88" )
 		displayFolder: 7. Cores
-		lineageTag: 0fac6260-17c3-4ec8-bbde-e7ee989b5b5e
+		lineageTag: 24df60a8-aae1-4daf-9c5f-414d2efdb7df
 
 	measure 'Cor Economia' = IF ( [Custo Médio por PF Faturado (R$)] <= [Preço PF Mercado (R$)], "#155C78", "#FF8C42" )
 		displayFolder: 7. Cores
-		lineageTag: 18b9303f-11d0-47d8-8d70-fca9452bf4f3
+		lineageTag: 085ab5af-6d51-405a-add0-e7c53c9837cd
 
 	column Coluna
 		dataType: string
 		isHidden
-		lineageTag: a3730fb4-cebb-44c2-982c-89483fadd13f
+		lineageTag: 0cd20da5-8bc1-490e-bbdd-860682ce6316
 		summarizeBy: none
 		sourceColumn: Coluna
 

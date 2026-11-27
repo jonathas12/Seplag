@@ -35,7 +35,7 @@ clique em **Atualizar**. O caminho padrão está em `config.toml` (`[powerbi] pa
 | `3.2. Dados/Dados.xlsx` | Histórico das avaliações da comissão (inventários de 2023 a 2025) |
 | `3.2. Dados/Fontes/LEVANTAMENTO_INTANGIVEIS_ADQUIRIDOS_2026.xlsx` | 18 licenças, conciliação 2023 a 2026, SEAP e amortização |
 | `4. Relatório Final/Laudos Técnicos de Avaliação/*/laudo_*.json` e `resultado_laudo.json` | Ficha de cada produto, módulos, funções, integrações, histórico e custo de projeto |
-| `3.2. Dados/Fontes/curadoria_nota_tecnica_02.csv` e `diligencias_nota_tecnica_02.csv` | Documentação, principal achado e diligências (2ª Nota Técnica Consultiva) |
+| `3.2. Dados/Fontes/curadoria_nota_tecnica_03.csv` e `diligencias_nota_tecnica_03.csv` | Documentação, principal achado e diligências (3ª Nota Técnica Consultiva) |
 
 ## Modelo em estrela
 

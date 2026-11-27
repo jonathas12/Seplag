@@ -204,7 +204,7 @@ IF ( HASONEVALUE ( dProduto[ID Produto] ), RANKX ( ALLSELECTED ( dProduto[ID Pro
 
 ### Qtde Sem Documentação
 
-Desenvolvidos sem documentação funcional disponibilizada (2ª Nota Técnica).
+Desenvolvidos sem documentação funcional disponibilizada (3ª Nota Técnica).
 
 ```dax
 CALCULATE ( COUNTROWS ( dProduto ), dProduto[Documentação] = "Ausente", dProduto[Categoria] = "Desenvolvido internamente" )
@@ -683,7 +683,7 @@ Leitura rápida dos desenvolvidos.
 ```dax
 VAR n = [Qtde Desenvolvidos] RETURN n & " sistemas, " & FORMAT ( CALCULATE ( [PF Atual], dProduto[Categoria] = "Desenvolvido internamente" ), "#,0.0" ) & " PF e R$ "
     & FORMAT ( [Valor Desenvolvidos (R$)] / 1000000, "#,0.00" ) & " milhões. " & [Qtde Sem Uso ou Suspensos] & " sem uso ou suspensos e " & [Qtde Em Desenvolvimento]
-    & " em desenvolvimento dependem das diligências da 2ª Nota Técnica."
+    & " em desenvolvimento dependem das diligências da 3ª Nota Técnica."
 ```
 
 ### Leitura Adquiridos

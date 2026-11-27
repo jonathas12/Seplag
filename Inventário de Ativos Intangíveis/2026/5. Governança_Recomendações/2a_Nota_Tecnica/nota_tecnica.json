@@ -36,7 +36,7 @@
   ],
   [
    "p",
-   "Esta 2ª Nota Técnica Consultiva consolida as diligências e as recomendações da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) resultantes do inventário do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT). Dá continuidade à 1ª Nota Técnica Consultiva, de 16/11/2026, cujo conteúdo foi incorporado e ampliado com os achados dos 41 laudos técnicos de avaliação emitidos no exercício (39 sistemas desenvolvidos internamente, softwares adquiridos e SEAP)."
+   "Esta 2ª Nota Técnica Consultiva consolida as diligências e as recomendações da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI) resultantes do inventário do exercício de 2026 da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT). Dá continuidade à 1ª Nota Técnica Consultiva, de 16/11/2026, cujo conteúdo foi incorporado e ampliado com os achados dos 38 laudos técnicos de avaliação emitidos no exercício."
   ],
   [
    "p",
@@ -101,7 +101,7 @@
     ],
     [
      "Softwares com custo de projeto registrado",
-     "9 de 39 (R$ 9.368.136,99)",
+     "7 de 39 (R$ 7.494.435,94)",
      "Laudos com custo de projeto da fábrica de software"
     ],
     [
@@ -395,7 +395,7 @@
   ],
   [
    "p",
-   "Somente 9 dos 39 softwares desenvolvidos internamente têm custo de projeto registrado, todos com participação da fábrica de software, no total de R$ 9.368.136,99 (base: Termos de Recebimento Definitivo até 07/2026). Os outros 30 foram desenvolvidos e são mantidos pela equipe interna, sem apontamento de esforço por produto. Não há registro do custo de sustentação de nenhum sistema, nem do custo de infraestrutura, licenças de plataforma e suporte associados. A NBC TSP 34 - Custos no Setor Público estabelece as diretrizes do sistema de informação de custos, em que o produto ou serviço pode ser objeto de custo."
+   "Somente 7 dos 39 softwares desenvolvidos internamente têm custo de projeto registrado, todos com participação da fábrica de software, no total de R$ 7.494.435,94 (base: Termos de Recebimento Definitivo até 07/2026). Os outros 32 foram desenvolvidos e são mantidos pela equipe interna, sem apontamento de esforço por produto. Não há registro do custo de sustentação de nenhum sistema, nem do custo de infraestrutura, licenças de plataforma e suporte associados. A NBC TSP 34 - Custos no Setor Público estabelece as diretrizes do sistema de informação de custos, em que o produto ou serviço pode ser objeto de custo."
   ],
   [
    "tabela",
@@ -410,12 +410,6 @@
      "SISPAT",
      "R$ 3.744.728,30",
      "R$ 13.062.217,50",
-     "Produção"
-    ],
-    [
-     "SIG-SST",
-     "R$ 1.443.847,29",
-     "R$ 5.873.259,02",
      "Produção"
     ],
     [
@@ -434,12 +428,6 @@
      "SIEP",
      "R$ 499.665,18",
      "R$ 1.597.114,30",
-     "Produção"
-    ],
-    [
-     "PSICO",
-     "R$ 429.853,76",
-     "R$ 1.783.752,12",
      "Produção"
     ],
     [
@@ -462,12 +450,12 @@
     ],
     [
      "TOTAL",
-     "R$ 9.368.136,99",
-     "R$ 31.448.777,12",
+     "R$ 7.494.435,94",
+     "R$ 23.791.765,97",
      ""
     ]
    ],
-   "Softwares com custo de projeto da fábrica de software registrado",
+   "Softwares com custo de projeto da fábrica de software registrado (componente de desenvolvimento)",
    [
     22,
     26,
@@ -479,7 +467,7 @@
     2
    ],
    [
-    9
+    7
    ]
   ],
   [
@@ -1135,7 +1123,7 @@
      "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apresenta-primeiros-indiciamentos-da-operacao-compliance-zero-em-relatorio-parcial-ao-stf"
     ],
     [
-     "Laudos Técnicos de Avaliação do inventário de 2026 (41 laudos) e relatórios consolidados do exercício",
+     "Laudos Técnicos de Avaliação do inventário de 2026 (38 laudos) e relatórios consolidados do exercício",
      "CIABI/SEPLAG, novembro de 2026"
     ],
     [
@@ -1190,9 +1178,9 @@
      "SIG-SST",
      "R$ 5.873.259,02",
      "Com lacunas",
-     "R$ 1.443.847,29",
+     "Não registrado",
      "Histórias ausentes na pasta disponibilizada",
-     "D10"
+     "D10, D15"
     ],
     [
      "SIGEP (desenvolvimento)",
@@ -1254,7 +1242,7 @@
      "PSICO",
      "R$ 1.783.752,12",
      "Adequada",
-     "R$ 429.853,76",
+     "Não registrado",
      "Sem achado relevante",
      "D15"
     ],

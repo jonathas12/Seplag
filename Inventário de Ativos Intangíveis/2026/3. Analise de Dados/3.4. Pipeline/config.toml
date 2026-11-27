@@ -10,9 +10,9 @@ historico = "../3.2. Dados/Dados.xlsx"
 adquiridos = "../3.2. Dados/Fontes/LEVANTAMENTO_INTANGIVEIS_ADQUIRIDOS_2026.xlsx"
 # Pasta dos Laudos Técnicos de Avaliação (um laudo_*.json e um resultado_laudo.json por sistema)
 laudos = "../../4. Relatório Final/Laudos Técnicos de Avaliação"
-# Curadoria da 2ª Nota Técnica Consultiva (documentação, principal achado e diligências por sistema)
-curadoria = "../3.2. Dados/Fontes/curadoria_nota_tecnica_02.csv"
-diligencias = "../3.2. Dados/Fontes/diligencias_nota_tecnica_02.csv"
+# Curadoria da 3ª Nota Técnica Consultiva (documentação, principal achado e diligências por sistema)
+curadoria = "../3.2. Dados/Fontes/curadoria_nota_tecnica_03.csv"
+diligencias = "../3.2. Dados/Fontes/diligencias_nota_tecnica_03.csv"
 # Opcional: base de faturamento por TRD gerada pelo projeto custos-projetos-fsw (fFaturamento.parquet).
 # Quando informada, a economicidade é aberta por ano; vazia, usa os totais registrados nos laudos.
 faturamento_trd = ""

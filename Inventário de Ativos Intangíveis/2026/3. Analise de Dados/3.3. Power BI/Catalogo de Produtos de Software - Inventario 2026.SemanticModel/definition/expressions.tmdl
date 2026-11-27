@@ -1,5 +1,5 @@
 expression PastaDados = "C:\Seplag\Inventário de Ativos Intangíveis\2026\3. Analise de Dados\3.2. Dados\parquet" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
-	lineageTag: 96282aae-0cbf-4cf5-ba06-289d2d35976f
+	lineageTag: ae9198b5-4af6-409c-9bb5-7ec4a9ed86dc
 	queryGroup: Parâmetros
 
 	annotation PBI_ResultType = Text

@@ -62,7 +62,7 @@ MEDIDAS = [
      NUM0, "1. Base", "Posição do produto pelo valor."),
     # ------------------------------------------------------------------ 2. Governança
     ("Qtde Sem Documentação", f'CALCULATE ( COUNTROWS ( dProduto ), dProduto[Documentação] = "Ausente", dProduto[Categoria] = {DEV} )', NUM0, "2. Governança",
-     "Desenvolvidos sem documentação funcional disponibilizada (2ª Nota Técnica)."),
+     "Desenvolvidos sem documentação funcional disponibilizada (3ª Nota Técnica)."),
     ("Valor Sem Documentação (R$)", 'CALCULATE ( [Valor Atual (R$)], dProduto[Documentação] = "Ausente" )', CUR, "2. Governança", "Valor dos sistemas sem documentação funcional."),
     ("Qtde Sem Uso ou Suspensos", 'CALCULATE ( COUNTROWS ( dProduto ), dProduto[Situação Resumida] IN { "Em produção, sem uso", "Em desenvolvimento (suspenso)" } )',
      NUM0, "2. Governança", "SEI, SIGS e SIFSW."),
@@ -147,7 +147,7 @@ MEDIDAS = [
     ("Leitura Desenvolvidos",
      'VAR n = [Qtde Desenvolvidos] RETURN n & " sistemas, " & FORMAT ( CALCULATE ( [PF Atual], dProduto[Categoria] = "Desenvolvido internamente" ), "#,0.0" ) & " PF e R$ "\n'
      '    & FORMAT ( [Valor Desenvolvidos (R$)] / 1000000, "#,0.00" ) & " milhões. " & [Qtde Sem Uso ou Suspensos] & " sem uso ou suspensos e " & [Qtde Em Desenvolvimento]\n'
-     '    & " em desenvolvimento dependem das diligências da 2ª Nota Técnica."',
+     '    & " em desenvolvimento dependem das diligências da 3ª Nota Técnica."',
      TXT, "6. Narrativas", "Leitura rápida dos desenvolvidos."),
     ("Leitura Adquiridos",
      '[Qtde Licenças] & " licenças (R$ " & FORMAT ( [Valor Licenças (R$)] / 1000000, "#,0.00" ) & " mi) e o SEAP (R$ " & FORMAT ( [Valor SEAP (R$)] / 1000000, "#,0.00" )\n'

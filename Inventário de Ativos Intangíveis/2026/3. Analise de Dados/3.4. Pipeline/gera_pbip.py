@@ -497,7 +497,7 @@ def cabecalho(ativa):
     return s
 
 
-def barra_filtros(campos, nota="Fonte: laudos, relatórios e 2ª Nota Técnica · inventário 2026"):
+def barra_filtros(campos, nota="Fonte: laudos, relatórios e 3ª Nota Técnica · inventário 2026"):
     s = f'<rect x="0" y="56" width="1280" height="44" fill="{CARD}"/><line x1="0" y1="100" x2="1280" y2="100" stroke="{LINHA}"/>'
     for ic, rot, x in campos:
         s += icone(ic, x, 70, AZUL, 0.9) + txt(x + 20, 83, rot, 11, APOIO)
@@ -573,7 +573,7 @@ def gera_relatorio():
     s += txt(64, 345, "quanto custou e o que falta para que cada valor tenha lastro. Inventário de Bens Intangíveis 2026.", 16.5, "#E3F0F4")
     s += ret(64, 372, 212, 50, LAR, 25, None) + txt(92, 403, "Iniciar análises", 16, "#FFFFFF", 700) + icone("seta", 240, 390, "#FFFFFF", 1.05)
     s += icone("documento", 300, 389, "#BFDCE6", 1.0) + txt(322, 395, "Fonte: 41 Laudos Técnicos de Avaliação, relatórios sintéticos e analíticos,", 11.5, "#CFE3EA")
-    s += txt(322, 412, "Relatório Resumido do Valor Apurado e 2ª Nota Técnica Consultiva", 11.5, "#CFE3EA")
+    s += txt(322, 412, "Relatório Resumido do Valor Apurado e 3ª Nota Técnica Consultiva", 11.5, "#CFE3EA")
     ACH = [("cubo", "Texto Valor Atual", "Valor apurado em 2026 (R$)", "Qtde Produtos Atual", "produtos", "geral"),
            ("codigo", "Qtde Desenvolvidos", "softwares desenvolvidos internamente", "Valor Desenvolvidos (R$)", "", "dev"),
            ("porquinho", "% Economia", "economia vs preço de mercado do PF", "Economia vs Mercado (R$)", "", "eco"),
@@ -605,7 +605,7 @@ def gera_relatorio():
         p.valor(x + 10, 184, 196, 44, med, 17)
     s += cartao(20, 254, 610, 222, "Evolução do valor por inventário", "linha", "R$ milhões, por categoria")
     s += cartao(642, 254, 290, 222, "Composição", "pizza", "por categoria")
-    s += cartao(944, 254, 316, 456, "Governança do catálogo", "escudo", "2ª Nota Técnica")
+    s += cartao(944, 254, 316, 456, "Governança do catálogo", "escudo", "3ª Nota Técnica")
     s += cartao(20, 488, 912, 222, "Produtos por valor", "trofeu", "passe o mouse para ver a ficha resumida")
     GOV = [("Sem documentação funcional", "alerta", "Qtde Sem Documentação", "Valor Sem Documentação (R$)"),
            ("Sem uso ou suspensos", "alerta", "Qtde Sem Uso ou Suspensos", "Valor Sem Uso ou Suspensos (R$)"),
@@ -738,7 +738,7 @@ def gera_relatorio():
     p = Pagina("ope")
     s = cabecalho("ope") + barra_filtros([("camadas", "Categoria", 20), ("engrenagem", "Situação", 290), ("documento", "Documentação", 560), ("lupa", "Diligência", 820)]) + leitura()
     s += cartao(20, 146, 1240, 356, "Catálogo detalhado", "lista", "uma linha por produto · passe o mouse para a ficha resumida")
-    s += cartao(20, 514, 1240, 196, "Diligências da 2ª Nota Técnica", "lupa", "filtre o catálogo para ver as diligências aplicáveis")
+    s += cartao(20, 514, 1240, 196, "Diligências da 3ª Nota Técnica", "lupa", "filtre o catálogo para ver as diligências aplicáveis")
     svgs["ope"] = svg_doc(s)
     p.slicer(96, 62, 180, 32, "dProduto", "Categoria")
     p.slicer(360, 62, 190, 32, "dProduto", "Situação Resumida")

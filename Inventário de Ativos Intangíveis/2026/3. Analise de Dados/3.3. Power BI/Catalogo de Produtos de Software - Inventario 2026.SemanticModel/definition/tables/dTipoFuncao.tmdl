@@ -1,9 +1,9 @@
 table dTipoFuncao
-	lineageTag: a7e9ea15-cea4-4ba5-8d24-b409f9ac1843
+	lineageTag: c1720150-e719-4c32-be09-f167d5e533b2
 
 	column 'Tipo de Função'
 		dataType: string
-		lineageTag: 63838d6d-3843-433a-ac8e-3569866e061f
+		lineageTag: 9df4665f-c521-45ec-a851-33911a4fa2a4
 		summarizeBy: none
 		sourceColumn: Tipo de Função
 		sortByColumn: Ordem
@@ -12,7 +12,7 @@ table dTipoFuncao
 
 	column Descrição
 		dataType: string
-		lineageTag: 1d80b352-5bd9-48ae-ade1-246a8bba36e7
+		lineageTag: c5ee4726-4e19-4365-94cc-73b75f240ac2
 		summarizeBy: none
 		sourceColumn: Descrição
 
@@ -20,7 +20,7 @@ table dTipoFuncao
 
 	column Natureza
 		dataType: string
-		lineageTag: 5a75b130-c44c-4e4b-a61d-f7c962055797
+		lineageTag: ce8adb18-43d9-433a-8a8e-c2353c1c1b2b
 		summarizeBy: none
 		sourceColumn: Natureza
 
@@ -30,7 +30,7 @@ table dTipoFuncao
 		dataType: int64
 		formatString: 0
 		isHidden
-		lineageTag: 210a2a0d-47d1-43d9-9b1b-90ce477098d7
+		lineageTag: aaaeb371-e4e8-49c2-9136-3d69d81f4adc
 		summarizeBy: none
 		sourceColumn: Ordem
 

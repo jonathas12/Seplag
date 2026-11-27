@@ -9,7 +9,7 @@ Lê as fontes oficiais do inventário e gera o modelo em estrela (star schema) e
   Ponte:     bProdutoDiligencia
 
 Fontes (ver config.toml): aba "Avaliação 2026" da relação de sistemas, Dados.xlsx (inventários de 2023
-a 2025), levantamento dos adquiridos, laudos técnicos (JSON) e a curadoria da 2ª Nota Técnica Consultiva.
+a 2025), levantamento dos adquiridos, laudos técnicos (JSON) e a curadoria da 3ª Nota Técnica Consultiva.
 Ao final confere os totais com os valores publicados nos laudos e relatórios e grava auditoria_etl.csv.
 """
 import csv

@@ -1,0 +1,76 @@
+table fHistoricoLaudo
+	lineageTag: a23ac51e-1e17-4d5d-878f-87a540835852
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: ff805996-6c13-49a9-9829-05a51a098008
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ano Inventário'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 1b64178e-2b61-449f-a6b2-9853574ddf9c
+		summarizeBy: none
+		sourceColumn: Ano Inventário
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data da Medição'
+		dataType: string
+		lineageTag: 352eb8f0-3e32-46a5-8dd6-edfbde25a634
+		summarizeBy: none
+		sourceColumn: Data da Medição
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tamanho Funcional (PF)'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: c9798910-b011-4f12-be7e-639089d84f4c
+		summarizeBy: sum
+		sourceColumn: Tamanho Funcional (PF)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nível de Medição'
+		dataType: string
+		lineageTag: c2cd7f9e-d243-43ca-97e9-418d61bf0d50
+		summarizeBy: none
+		sourceColumn: Nível de Medição
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situação
+		dataType: string
+		lineageTag: 2af025ab-83f4-45ee-8388-a268705b562b
+		summarizeBy: none
+		sourceColumn: Situação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Observação
+		dataType: string
+		lineageTag: 2c11b146-22fa-4f80-88ba-259c7146eb9e
+		summarizeBy: none
+		sourceColumn: Observação
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fHistoricoLaudo = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fHistoricoLaudo.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

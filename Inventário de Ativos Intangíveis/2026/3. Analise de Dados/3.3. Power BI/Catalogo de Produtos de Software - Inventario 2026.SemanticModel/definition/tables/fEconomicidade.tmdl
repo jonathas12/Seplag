@@ -1,0 +1,193 @@
+table fEconomicidade
+	lineageTag: 133325ff-eb33-4bad-bd5f-e7a9b51bd599
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: 1c86c084-adc5-4ab2-bb8e-ee227f5ee704
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Período
+		dataType: string
+		lineageTag: eb5099b4-e71a-4d8f-a6e6-24505e9e0106
+		summarizeBy: none
+		sourceColumn: Período
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PF Faturado'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 6c8b54b8-474c-4c2d-bf63-02229e8fef0b
+		summarizeBy: sum
+		sourceColumn: PF Faturado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço PF Contrato (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e3e5177a-b452-4342-9843-a3d48591c70e
+		summarizeBy: none
+		sourceColumn: Preço PF Contrato (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nota Preço Contrato'
+		dataType: string
+		lineageTag: 253bb051-1003-40b2-aff6-62b7483b0826
+		summarizeBy: none
+		sourceColumn: Nota Preço Contrato
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Custo Total Pago (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 00425250-e9c4-4e91-9ff2-936e0d0aad5c
+		summarizeBy: sum
+		sourceColumn: Custo Total Pago (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Custo de Construção (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 324d8758-c0e6-4eec-a776-7a9db6608fda
+		summarizeBy: sum
+		sourceColumn: Custo de Construção (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Custo Médio por PF Faturado (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5085adde-4ead-4838-aa9f-e4c0b19742ba
+		summarizeBy: sum
+		sourceColumn: Custo Médio por PF Faturado (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PF Equivalentes Pagos'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 8de68ab1-e299-4ba2-a358-1ece9c52d7e4
+		summarizeBy: sum
+		sourceColumn: PF Equivalentes Pagos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço PF Mercado 2026 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 14dc34cd-3324-4a28-b623-aeedc68751a7
+		summarizeBy: sum
+		sourceColumn: Preço PF Mercado 2026 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Custo do Volume a Preço de Mercado (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0a9f12dc-7f12-4df2-9d69-a6b58b7a1532
+		summarizeBy: sum
+		sourceColumn: Custo do Volume a Preço de Mercado (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Economia vs Mercado (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 590f8238-4c1e-45f2-8e02-c058e1e6165a
+		summarizeBy: sum
+		sourceColumn: Economia vs Mercado (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '% Economia'
+		dataType: double
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: edff526e-58b7-4728-8c84-e770f2dcc878
+		summarizeBy: sum
+		sourceColumn: % Economia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PF Medido 2026'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 87aca19f-0c6a-461e-8fa2-8b93ec52a202
+		summarizeBy: sum
+		sourceColumn: PF Medido 2026
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VT 2026 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 8e7cfdbe-0d99-45b2-ab1a-2cf12b83ab85
+		summarizeBy: sum
+		sourceColumn: VT 2026 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VA 2026 (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 8e1c001d-cfa4-4c7a-bb97-ac3f7e8681fa
+		summarizeBy: sum
+		sourceColumn: VA 2026 (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Retorno VT por R$ 1'
+		dataType: double
+		formatString: "R$"\ #,0.00
+		lineageTag: e1a28f0c-f1a4-4b8c-a0ac-6fa1832859d8
+		summarizeBy: sum
+		sourceColumn: Retorno VT por R$ 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Retorno VA por R$ 1'
+		dataType: double
+		formatString: "R$"\ #,0.00
+		lineageTag: d6b0ce85-845b-4e87-8206-12281c6ebdf2
+		summarizeBy: sum
+		sourceColumn: Retorno VA por R$ 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fator Grupo Contratado'
+		dataType: double
+		formatString: 0.00
+		lineageTag: 189d074f-454f-4b55-9a39-75722a92f712
+		summarizeBy: sum
+		sourceColumn: Fator Grupo Contratado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fonte
+		dataType: string
+		lineageTag: d13a5d6a-2919-4a0c-8363-c416f3aa6010
+		summarizeBy: none
+		sourceColumn: Fonte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fEconomicidade = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fEconomicidade.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

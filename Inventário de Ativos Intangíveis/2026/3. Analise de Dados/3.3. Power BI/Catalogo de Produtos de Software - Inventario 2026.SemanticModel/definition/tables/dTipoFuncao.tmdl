@@ -1,0 +1,51 @@
+table dTipoFuncao
+	lineageTag: 83ce5ad1-77c4-442d-aecc-5e424bfea015
+
+	column 'Tipo de Função'
+		dataType: string
+		lineageTag: 601f135b-c489-4b7c-829c-8dcc6724745a
+		summarizeBy: none
+		sourceColumn: Tipo de Função
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descrição
+		dataType: string
+		lineageTag: 75c6e831-85c2-43a5-afe1-e6bb974cd997
+		summarizeBy: none
+		sourceColumn: Descrição
+
+		annotation SummarizationSetBy = Automatic
+
+	column Natureza
+		dataType: string
+		lineageTag: a81dcc51-dda2-407a-86d9-689bc7b1a40c
+		summarizeBy: none
+		sourceColumn: Natureza
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 2a74d0dd-756d-45bc-96ed-6b07fe63c3d3
+		summarizeBy: none
+		sourceColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dTipoFuncao = m
+		mode: import
+		queryGroup: Dimensões
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\dTipoFuncao.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

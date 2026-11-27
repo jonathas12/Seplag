@@ -1,0 +1,112 @@
+table fAvaliacao
+	lineageTag: 170f2b81-2108-4f0b-8131-d84c2494dcee
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: 66050b11-7850-4164-9107-ec13041ec486
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ano Inventário'
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: cedd78a7-8349-4676-9db0-aa0aeee8c80a
+		summarizeBy: none
+		sourceColumn: Ano Inventário
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		lineageTag: 428a1af0-394a-4f94-b81f-e040d568b3c6
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situação
+		dataType: string
+		lineageTag: 4cbda19f-2b8b-41d8-9af2-8d16284872c9
+		summarizeBy: none
+		sourceColumn: Situação
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nível de Medição'
+		dataType: string
+		lineageTag: f248d4bd-b15c-491f-a4e8-419d141085d5
+		summarizeBy: none
+		sourceColumn: Nível de Medição
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tamanho Funcional (PF)'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: fd513157-5d42-42b3-afbc-24ecf50bc1fa
+		summarizeBy: sum
+		sourceColumn: Tamanho Funcional (PF)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Preço PF (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c71f9f9a-6159-4c88-87f9-100dda75d11a
+		summarizeBy: none
+		sourceColumn: Preço PF (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Bruto VT (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a9619f69-3314-4610-962c-8f8809d59242
+		summarizeBy: sum
+		sourceColumn: Valor Bruto VT (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Institucional'
+		dataType: double
+		formatString: 0.00
+		lineageTag: fa45a419-2537-44c4-bbd5-4cbdcee20139
+		summarizeBy: none
+		sourceColumn: Valor Institucional
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Final VA (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 669c5191-fcdd-417c-a205-8028c6eb7504
+		summarizeBy: sum
+		sourceColumn: Valor Final VA (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fonte
+		dataType: string
+		lineageTag: bf54af40-7f27-45a4-b85b-fd914836ac56
+		summarizeBy: none
+		sourceColumn: Fonte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fAvaliacao = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fAvaliacao.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

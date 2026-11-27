@@ -1,0 +1,60 @@
+table dPrecoPF
+	lineageTag: 659e7ede-b6ac-40b0-88dd-5086203bb55b
+
+	column Referência
+		dataType: string
+		lineageTag: db09743f-d31d-4a0d-9b2e-ba870e34dd7d
+		summarizeBy: none
+		sourceColumn: Referência
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 3bbb4ba9-b5ca-45ca-b172-a81f2a4d39c7
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 5b15f630-1a18-436d-8167-7289d7041ad9
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Preço PF (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: afa5ecd6-3801-482d-bc13-97eb78af4181
+		summarizeBy: none
+		sourceColumn: Preço PF (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fonte
+		dataType: string
+		lineageTag: 5a861dd3-29fb-4f19-99e8-3a0096fbf7c0
+		summarizeBy: none
+		sourceColumn: Fonte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dPrecoPF = m
+		mode: import
+		queryGroup: Dimensões
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\dPrecoPF.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Table.TransformColumnTypes(Fonte, {{"Data", type date}})
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

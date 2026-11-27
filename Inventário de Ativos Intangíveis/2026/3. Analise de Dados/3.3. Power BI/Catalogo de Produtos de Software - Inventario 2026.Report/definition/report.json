@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY23SU11",
+      "reportVersionAtImport": {
+        "visual": "1.8.86",
+        "report": "2.0.86",
+        "page": "1.3.86"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "CIABI_Catalogo_60-30-10.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.86",
+        "report": "2.0.86",
+        "page": "1.3.86"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY23SU11",
+          "path": "BaseThemes/CY23SU11.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "pg_capa.svg",
+          "path": "pg_capa.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_geral.svg",
+          "path": "pg_geral.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_dev.svg",
+          "path": "pg_dev.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_adq.svg",
+          "path": "pg_adq.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_eco.svg",
+          "path": "pg_eco.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_ope.svg",
+          "path": "pg_ope.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_ficha.svg",
+          "path": "pg_ficha.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_tt_prod.svg",
+          "path": "pg_tt_prod.svg",
+          "type": "Image"
+        },
+        {
+          "name": "pg_tt_eco.svg",
+          "path": "pg_tt_eco.svg",
+          "type": "Image"
+        },
+        {
+          "name": "CIABI_Catalogo_60-30-10.json",
+          "path": "CIABI_Catalogo_60-30-10.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

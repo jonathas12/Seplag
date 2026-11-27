@@ -1,0 +1,33 @@
+table bProdutoDiligencia
+	lineageTag: 8b9c07b2-b410-4e27-813f-22a67d48b982
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: 390c26d1-0f63-4788-9480-d565480e22d3
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Código
+		dataType: string
+		lineageTag: f7688a83-1670-42d4-a812-7cfb7129f72d
+		summarizeBy: none
+		sourceColumn: Código
+
+		annotation SummarizationSetBy = Automatic
+
+	partition bProdutoDiligencia = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\bProdutoDiligencia.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Catalogo de Produtos de Software - Inventario 2026"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "571e2b4a-e4a6-45e9-99ae-5726577255a8"
+  }
+}

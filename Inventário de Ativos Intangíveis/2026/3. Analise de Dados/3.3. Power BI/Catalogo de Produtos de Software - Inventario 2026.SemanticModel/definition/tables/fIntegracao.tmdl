@@ -1,0 +1,49 @@
+table fIntegracao
+	lineageTag: d93df1f2-0e0f-4c50-a8c6-62dc603607b3
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: cc6c56f4-9ccf-486d-9d17-ba3b43d642c4
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sistema Integrado'
+		dataType: string
+		lineageTag: a7f4bee1-ff7e-493c-bd89-f15ef4f30706
+		summarizeBy: none
+		sourceColumn: Sistema Integrado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dados Trocados'
+		dataType: string
+		lineageTag: 82472ddd-2743-4736-9e32-10e1063bbab8
+		summarizeBy: none
+		sourceColumn: Dados Trocados
+
+		annotation SummarizationSetBy = Automatic
+
+	column Forma
+		dataType: string
+		lineageTag: ba383664-712b-456b-b040-10fa43edef8f
+		summarizeBy: none
+		sourceColumn: Forma
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fIntegracao = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fIntegracao.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

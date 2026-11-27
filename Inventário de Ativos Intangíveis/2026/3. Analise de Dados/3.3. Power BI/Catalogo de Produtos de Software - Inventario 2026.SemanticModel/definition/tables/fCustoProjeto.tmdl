@@ -1,0 +1,50 @@
+table fCustoProjeto
+	lineageTag: 51df9ff1-6bee-4531-acef-9d4e24ae506d
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: c89505a6-0fbf-446d-86f2-f6514b3b8fd4
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Componente
+		dataType: string
+		lineageTag: c93192dc-0c00-4489-b459-b6cd85c1737d
+		summarizeBy: none
+		sourceColumn: Componente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Custo'
+		dataType: string
+		lineageTag: 23f53c21-fa63-4298-bed2-aefee2fb53ff
+		summarizeBy: none
+		sourceColumn: Tipo de Custo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 43d4cb95-18a0-4fc8-a64f-56a61d26d1c4
+		summarizeBy: sum
+		sourceColumn: Valor (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fCustoProjeto = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fCustoProjeto.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

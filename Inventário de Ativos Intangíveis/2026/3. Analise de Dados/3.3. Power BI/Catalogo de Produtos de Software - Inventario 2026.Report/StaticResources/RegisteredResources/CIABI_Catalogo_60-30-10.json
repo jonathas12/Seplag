@@ -1,0 +1,36 @@
+{
+  "name": "CIABI Catálogo 60-30-10",
+  "dataColors": [
+    "#155C78",
+    "#FF8C42",
+    "#6FA0B3",
+    "#0E3A4D",
+    "#B9D3DA",
+    "#C77A3F",
+    "#5E7C88",
+    "#9FC2B9"
+  ],
+  "foreground": "#0E2F3C",
+  "background": "#FBFDFC",
+  "tableAccent": "#155C78",
+  "good": "#155C78",
+  "bad": "#FF8C42",
+  "neutral": "#6FA0B3",
+  "maximum": "#155C78",
+  "center": "#B9D3DA",
+  "minimum": "#E0ECEA",
+  "textClasses": {
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#4E6B76"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0E2F3C"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Bold",
+      "color": "#0E3A4D"
+    }
+  }
+}

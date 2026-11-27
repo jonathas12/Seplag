@@ -1,0 +1,82 @@
+table fAmortizacaoSEAP
+	lineageTag: f515eca0-3a9f-4fcb-947d-232b53a1b0e8
+
+	column Parcela
+		dataType: int64
+		formatString: 0
+		lineageTag: a3cebadf-2363-424f-a554-fa4c5c2d900c
+		summarizeBy: none
+		sourceColumn: Parcela
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Início do Período'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 9f2a0bb4-11a7-4694-9bac-e521d2b5b954
+		summarizeBy: none
+		sourceColumn: Início do Período
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fim do Período'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 8e334c96-88e6-499f-ad2f-888c41cb1134
+		summarizeBy: none
+		sourceColumn: Fim do Período
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Amortização do Mês (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b481a6c7-9cbe-4ddc-a0b0-818fb3430d4c
+		summarizeBy: sum
+		sourceColumn: Amortização do Mês (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Amortização Acumulada (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b0e8b0c1-7847-47a6-81f8-a7f8e31b3d41
+		summarizeBy: sum
+		sourceColumn: Amortização Acumulada (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Contábil Líquido (R$)'
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b77df1f3-6a8e-4d2f-ab09-0b87e5cfb3b8
+		summarizeBy: sum
+		sourceColumn: Valor Contábil Líquido (R$)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marco
+		dataType: string
+		lineageTag: 4f2837ab-7ad7-4f94-af4f-471698515dcf
+		summarizeBy: none
+		sourceColumn: Marco
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fAmortizacaoSEAP = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fAmortizacaoSEAP.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Table.TransformColumnTypes(Fonte, {{"Início do Período", type date}, {"Fim do Período", type date}})
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,32 @@
+# Configuração da pipeline do Catálogo de Produtos de Software (Inventário de Bens Intangíveis 2026).
+# Caminhos relativos são resolvidos a partir desta pasta (3.4. Pipeline).
+
+[fontes]
+# Planilha da relação de sistemas desenvolvidos internamente (aba "Avaliação 2026")
+sitec = "../3.2. Dados/Fontes/Inventario_Sistemas_SITEC-2026.xlsx"
+# Histórico das avaliações da comissão (inventários de 2023 a 2025)
+historico = "../3.2. Dados/Dados.xlsx"
+# Levantamento dos softwares adquiridos (abas Licenças 2026, Conciliação, SEAP 2026, Amortização SEAP)
+adquiridos = "../3.2. Dados/Fontes/LEVANTAMENTO_INTANGIVEIS_ADQUIRIDOS_2026.xlsx"
+# Pasta dos Laudos Técnicos de Avaliação (um laudo_*.json e um resultado_laudo.json por sistema)
+laudos = "../../4. Relatório Final/Laudos Técnicos de Avaliação"
+# Curadoria da 2ª Nota Técnica Consultiva (documentação, principal achado e diligências por sistema)
+curadoria = "../3.2. Dados/Fontes/curadoria_nota_tecnica_02.csv"
+diligencias = "../3.2. Dados/Fontes/diligencias_nota_tecnica_02.csv"
+# Opcional: base de faturamento por TRD gerada pelo projeto custos-projetos-fsw (fFaturamento.parquet).
+# Quando informada, a economicidade é aberta por ano; vazia, usa os totais registrados nos laudos.
+faturamento_trd = ""
+
+[saida]
+parquet = "../3.2. Dados/parquet"
+documentacao = "../3.4. Pipeline/docs"
+
+[powerbi]
+pasta = "../3.3. Power BI"
+nome = "Catalogo de Produtos de Software - Inventario 2026"
+# Caminho absoluto dos parquet na máquina que abrirá o Power BI (parâmetro PastaDados do modelo).
+pasta_dados = 'C:\Seplag\Inventário de Ativos Intangíveis\2026\3. Analise de Dados\3.2. Dados\parquet'
+
+[parametros]
+preco_pf_mercado_2026 = 1215.09
+referencia_custos = "Painel Custos de Projetos - Fábrica de Software, TRDs até 07/2026 (Contrato nº 014/2022/SEPLAG)"

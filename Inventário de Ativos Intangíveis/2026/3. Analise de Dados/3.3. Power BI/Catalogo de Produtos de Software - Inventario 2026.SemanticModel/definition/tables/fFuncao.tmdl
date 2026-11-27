@@ -1,0 +1,51 @@
+table fFuncao
+	lineageTag: 7f7b28a5-5380-4591-9e97-e6dee0977e1d
+
+	column 'ID Produto'
+		dataType: string
+		isHidden
+		lineageTag: 4653a684-c848-434d-b665-44f429216ee6
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Função'
+		dataType: string
+		lineageTag: c15e3e42-da57-492d-997f-94ce584cf638
+		summarizeBy: none
+		sourceColumn: Tipo de Função
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qtde Funções'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9dd6b31a-bb07-4b9e-8994-d6873ed7e2f3
+		summarizeBy: sum
+		sourceColumn: Qtde Funções
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tamanho Funcional (PF)'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 77e1ed9e-cdac-46ad-8953-9ce583f7bf8d
+		summarizeBy: sum
+		sourceColumn: Tamanho Funcional (PF)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fFuncao = m
+		mode: import
+		queryGroup: Fatos
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\fFuncao.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Fonte
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

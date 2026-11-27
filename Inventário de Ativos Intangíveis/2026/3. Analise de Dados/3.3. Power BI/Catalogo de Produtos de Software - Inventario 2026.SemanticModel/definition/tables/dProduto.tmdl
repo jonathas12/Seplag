@@ -1,0 +1,430 @@
+table dProduto
+	lineageTag: 9d20de95-50e4-4fb6-9d45-9f3e49475568
+
+	column 'ID Produto'
+		dataType: string
+		lineageTag: b0fcf05a-b8db-41a9-a325-936f437a02d2
+		summarizeBy: none
+		sourceColumn: ID Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sigla
+		dataType: string
+		lineageTag: 2da2c3a5-c9ac-4c9f-b666-c81772c8221b
+		summarizeBy: none
+		sourceColumn: Sigla
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Produto'
+		dataType: string
+		lineageTag: e70d953c-5f16-4e9b-9498-eb246542d491
+		summarizeBy: none
+		sourceColumn: Nome do Produto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome no Inventário'
+		dataType: string
+		lineageTag: 07d81060-5849-4311-98d5-4773ea089794
+		summarizeBy: none
+		sourceColumn: Nome no Inventário
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		lineageTag: 3e90a5a4-3f4d-4e6f-ac59-a4d340e783da
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo
+		dataType: string
+		lineageTag: 9604a19b-b4ee-46c6-a51e-f550b2828eb3
+		summarizeBy: none
+		sourceColumn: Grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situação
+		dataType: string
+		lineageTag: 14042eb5-20df-416e-8fbd-945777988c96
+		summarizeBy: none
+		sourceColumn: Situação
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situação Resumida'
+		dataType: string
+		lineageTag: ce5ae781-67cf-47b7-a5e2-5c637ee58d37
+		summarizeBy: none
+		sourceColumn: Situação Resumida
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Situação na Avaliação'
+		dataType: string
+		lineageTag: 77dc0c0d-c33b-4707-8554-43af8bfafda7
+		summarizeBy: none
+		sourceColumn: Situação na Avaliação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tecnologia
+		dataType: string
+		lineageTag: 18924ba7-b715-42db-a227-1278abe0fab5
+		summarizeBy: none
+		sourceColumn: Tecnologia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nível de Medição'
+		dataType: string
+		lineageTag: a42d8eb9-6072-4434-a40d-8784a1bde01e
+		summarizeBy: none
+		sourceColumn: Nível de Medição
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Medida PF'
+		dataType: string
+		lineageTag: 7316c21d-d5e0-445e-80e9-54a10d5b08ac
+		summarizeBy: none
+		sourceColumn: Medida PF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vida Útil'
+		dataType: string
+		lineageTag: fb7e9531-114a-47c1-96a1-32aa6dabf6fe
+		summarizeBy: none
+		sourceColumn: Vida Útil
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Institucional'
+		dataType: double
+		formatString: 0.00
+		lineageTag: 56ab2769-8bd3-4536-b430-119492482b53
+		summarizeBy: none
+		sourceColumn: Valor Institucional
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Faixa Valor Institucional'
+		dataType: string
+		lineageTag: 3f0d76aa-e6c6-4e30-a72f-777962d90858
+		summarizeBy: none
+		sourceColumn: Faixa Valor Institucional
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unidade de Desenvolvimento'
+		dataType: string
+		lineageTag: 7df27108-85ec-4ad9-ae1d-49098706d305
+		summarizeBy: none
+		sourceColumn: Unidade de Desenvolvimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Bem'
+		dataType: string
+		lineageTag: 55016815-0f8b-4f9a-86ba-2def08abd335
+		summarizeBy: none
+		sourceColumn: Tipo de Bem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Propriedade
+		dataType: string
+		lineageTag: 6020ef79-5512-426e-815e-ec9f1af17758
+		summarizeBy: none
+		sourceColumn: Propriedade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Finalidade
+		dataType: string
+		lineageTag: 89d3be7f-8895-4852-8110-d671f3ce8c99
+		summarizeBy: none
+		sourceColumn: Finalidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Benefício
+		dataType: string
+		lineageTag: 365d83fb-bbd9-441e-87cd-4122e75cb8bf
+		summarizeBy: none
+		sourceColumn: Benefício
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Base Legal'
+		dataType: string
+		lineageTag: 94649318-ebac-4b18-bc56-584b4cdc11a2
+		summarizeBy: none
+		sourceColumn: Base Legal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Áreas de Negócio'
+		dataType: string
+		lineageTag: f56b6b53-f57f-4d19-8b5a-5b587f1be42c
+		summarizeBy: none
+		sourceColumn: Áreas de Negócio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Perfis de Usuário'
+		dataType: string
+		lineageTag: aba4e498-a5ed-479a-a6d5-56f104c2cf0e
+		summarizeBy: none
+		sourceColumn: Perfis de Usuário
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Justificativa do VI'
+		dataType: string
+		lineageTag: 70803493-9a31-4fa9-9024-72dfa9286733
+		summarizeBy: none
+		sourceColumn: Justificativa do VI
+
+		annotation SummarizationSetBy = Automatic
+
+	column Uso
+		dataType: string
+		lineageTag: 5e7613af-d5f2-4e53-b8fa-b62982a0f402
+		summarizeBy: none
+		sourceColumn: Uso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Integrações
+		dataType: string
+		lineageTag: f23b87b7-c97c-46cd-8114-3d477722ec66
+		summarizeBy: none
+		sourceColumn: Integrações
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qtde Integrações'
+		dataType: int64
+		formatString: 0
+		lineageTag: c84e532d-96c8-46a9-88af-718a3bc6774b
+		summarizeBy: sum
+		sourceColumn: Qtde Integrações
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qtde Módulos'
+		dataType: int64
+		formatString: 0
+		lineageTag: b77911b3-4971-4d5b-b58a-fcf95955eaef
+		summarizeBy: sum
+		sourceColumn: Qtde Módulos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qtde Funções'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 5c471bd2-13e4-4911-bc58-995f70d996aa
+		summarizeBy: sum
+		sourceColumn: Qtde Funções
+
+		annotation SummarizationSetBy = Automatic
+
+	column Documentação
+		dataType: string
+		lineageTag: c2f1f5b4-ea59-434b-a686-480322123f47
+		summarizeBy: none
+		sourceColumn: Documentação
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Principal Achado'
+		dataType: string
+		lineageTag: 8811e421-2c8d-4b2d-91ad-650180d96f6d
+		summarizeBy: none
+		sourceColumn: Principal Achado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Diligências
+		dataType: string
+		lineageTag: c9d1f6ce-7a9d-4054-9c86-e3d67b44018f
+		summarizeBy: none
+		sourceColumn: Diligências
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ressalva de Documentação'
+		dataType: string
+		lineageTag: 5345b0e1-ff7d-42db-916e-0716545f1f78
+		summarizeBy: none
+		sourceColumn: Ressalva de Documentação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ressalvas
+		dataType: string
+		lineageTag: 0151d070-237c-40ea-9b42-dc7b2951d887
+		summarizeBy: none
+		sourceColumn: Ressalvas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motivo da Variação'
+		dataType: string
+		lineageTag: 863f7dce-288b-4f83-b6fc-cb4f9a2ced1f
+		summarizeBy: none
+		sourceColumn: Motivo da Variação
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fora do Escopo'
+		dataType: string
+		lineageTag: b65218f4-8a2e-4267-a340-74d9b31ae0fe
+		summarizeBy: none
+		sourceColumn: Fora do Escopo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Linha de Base'
+		dataType: string
+		lineageTag: 9174bcd9-216f-4fc7-a54f-fef53f0c9204
+		summarizeBy: none
+		sourceColumn: Linha de Base
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data da Avaliação'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 06d35d1e-9fb3-4c42-a363-bb51cdc694d2
+		summarizeBy: none
+		sourceColumn: Data da Avaliação
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Laudo
+		dataType: string
+		lineageTag: 06284ecd-f852-4325-8099-ea5857d77e53
+		summarizeBy: none
+		sourceColumn: Laudo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pasta do Laudo'
+		dataType: string
+		lineageTag: 4b1b1f35-13ad-49c1-9b00-92c0e90d84e2
+		summarizeBy: none
+		sourceColumn: Pasta do Laudo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nº Laudo'
+		dataType: int64
+		formatString: 0
+		lineageTag: 208914c5-a250-4d0d-a96a-ab750e4e2b4d
+		summarizeBy: none
+		sourceColumn: Nº Laudo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Patrimônio
+		dataType: string
+		lineageTag: d1b0816c-fdc2-46d4-b92a-09dad2283d2b
+		summarizeBy: none
+		sourceColumn: Patrimônio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fornecedor
+		dataType: string
+		lineageTag: acf7a49b-00a6-43f0-8270-222dc1575e73
+		summarizeBy: none
+		sourceColumn: Fornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Contrato
+		dataType: string
+		lineageTag: c054cd9d-8f30-445b-b57c-8e24b7da78fb
+		summarizeBy: none
+		sourceColumn: Contrato
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Licença'
+		dataType: string
+		lineageTag: 5ef8d619-db10-4b41-94df-b82213594de3
+		summarizeBy: none
+		sourceColumn: Tipo de Licença
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prazo da Licença'
+		dataType: string
+		lineageTag: a56cc1cb-32d5-420f-a374-2fedddf7dc43
+		summarizeBy: none
+		sourceColumn: Prazo da Licença
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data de Aquisição'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 81c093fb-d775-4ab0-8012-b615cf37cc72
+		summarizeBy: none
+		sourceColumn: Data de Aquisição
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Data Fim'
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 745c510d-1460-451e-a7e5-1b79195d5af7
+		summarizeBy: none
+		sourceColumn: Data Fim
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Situação da Licença'
+		dataType: string
+		lineageTag: 6f99aac6-2238-4c41-b9cb-46e717fa84de
+		summarizeBy: none
+		sourceColumn: Situação da Licença
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tem Custo de Projeto'
+		dataType: string
+		lineageTag: 14f71bd9-2051-4baf-84e4-335f8f35b36e
+		summarizeBy: none
+		sourceColumn: Tem Custo de Projeto
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dProduto = m
+		mode: import
+		queryGroup: Dimensões
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents(PastaDados & "\dProduto.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    Resultado = Table.TransformColumnTypes(Fonte, {{"Data da Avaliação", type date}, {"Data de Aquisição", type date}, {"Data Fim", type date}})
+				in
+				    Resultado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table

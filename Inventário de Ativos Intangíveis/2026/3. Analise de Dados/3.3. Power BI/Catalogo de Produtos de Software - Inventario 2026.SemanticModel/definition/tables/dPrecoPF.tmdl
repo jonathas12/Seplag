@@ -1,9 +1,9 @@
 table dPrecoPF
-	lineageTag: 659e7ede-b6ac-40b0-88dd-5086203bb55b
+	lineageTag: 201269ed-6504-4e57-b3b5-1dba82df2c83
 
 	column Referência
 		dataType: string
-		lineageTag: db09743f-d31d-4a0d-9b2e-ba870e34dd7d
+		lineageTag: efe597d7-6075-44e2-9253-83fdd5bdb1f9
 		summarizeBy: none
 		sourceColumn: Referência
 
@@ -11,7 +11,7 @@ table dPrecoPF
 
 	column Tipo
 		dataType: string
-		lineageTag: 3bbb4ba9-b5ca-45ca-b172-a81f2a4d39c7
+		lineageTag: 0b831a8d-e2ad-4263-9450-f59599987cb2
 		summarizeBy: none
 		sourceColumn: Tipo
 
@@ -20,7 +20,7 @@ table dPrecoPF
 	column Data
 		dataType: dateTime
 		formatString: dd/mm/yyyy
-		lineageTag: 5b15f630-1a18-436d-8167-7289d7041ad9
+		lineageTag: 2d3cfa32-10f0-40f8-8752-078981fc2d78
 		summarizeBy: none
 		sourceColumn: Data
 
@@ -31,7 +31,7 @@ table dPrecoPF
 	column 'Preço PF (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: afa5ecd6-3801-482d-bc13-97eb78af4181
+		lineageTag: 00130e9a-b572-444f-a7b6-b154afa3ca0b
 		summarizeBy: none
 		sourceColumn: Preço PF (R$)
 
@@ -39,7 +39,7 @@ table dPrecoPF
 
 	column Fonte
 		dataType: string
-		lineageTag: 5a861dd3-29fb-4f19-99e8-3a0096fbf7c0
+		lineageTag: 54cfa99c-40eb-4f3c-9a63-e55b3ec1ff2e
 		summarizeBy: none
 		sourceColumn: Fonte
 

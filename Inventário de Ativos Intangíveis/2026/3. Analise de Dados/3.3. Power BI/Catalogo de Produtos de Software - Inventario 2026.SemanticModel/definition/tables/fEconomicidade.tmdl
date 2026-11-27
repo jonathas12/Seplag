@@ -1,10 +1,10 @@
 table fEconomicidade
-	lineageTag: 133325ff-eb33-4bad-bd5f-e7a9b51bd599
+	lineageTag: b968d66d-cb8d-4802-9df5-fcd9bad47b20
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: 1c86c084-adc5-4ab2-bb8e-ee227f5ee704
+		lineageTag: acb7e653-0ff1-4d3c-9b61-6bc127feca63
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fEconomicidade
 
 	column Período
 		dataType: string
-		lineageTag: eb5099b4-e71a-4d8f-a6e6-24505e9e0106
+		lineageTag: fb809f4a-6aec-4adf-9c30-9d36e1ba7c26
 		summarizeBy: none
 		sourceColumn: Período
 
@@ -21,7 +21,7 @@ table fEconomicidade
 	column 'PF Faturado'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 6c8b54b8-474c-4c2d-bf63-02229e8fef0b
+		lineageTag: 1fadc372-d723-42d1-b120-79331effad6d
 		summarizeBy: sum
 		sourceColumn: PF Faturado
 
@@ -30,7 +30,7 @@ table fEconomicidade
 	column 'Preço PF Contrato (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: e3e5177a-b452-4342-9843-a3d48591c70e
+		lineageTag: 0a7b4fe5-889a-4299-89f4-43e08e86f2ae
 		summarizeBy: none
 		sourceColumn: Preço PF Contrato (R$)
 
@@ -38,7 +38,7 @@ table fEconomicidade
 
 	column 'Nota Preço Contrato'
 		dataType: string
-		lineageTag: 253bb051-1003-40b2-aff6-62b7483b0826
+		lineageTag: 893b16d2-89af-427b-893a-e3e8f334513f
 		summarizeBy: none
 		sourceColumn: Nota Preço Contrato
 
@@ -47,7 +47,7 @@ table fEconomicidade
 	column 'Custo Total Pago (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 00425250-e9c4-4e91-9ff2-936e0d0aad5c
+		lineageTag: 622326fc-40e9-4df3-84c4-0ba4cb235fea
 		summarizeBy: sum
 		sourceColumn: Custo Total Pago (R$)
 
@@ -56,7 +56,7 @@ table fEconomicidade
 	column 'Custo de Construção (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 324d8758-c0e6-4eec-a776-7a9db6608fda
+		lineageTag: 4feeef0a-7063-4125-8469-6aabaf311dc7
 		summarizeBy: sum
 		sourceColumn: Custo de Construção (R$)
 
@@ -65,7 +65,7 @@ table fEconomicidade
 	column 'Custo Médio por PF Faturado (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 5085adde-4ead-4838-aa9f-e4c0b19742ba
+		lineageTag: 1fb30e41-63a6-4c54-9954-69787c29cf73
 		summarizeBy: sum
 		sourceColumn: Custo Médio por PF Faturado (R$)
 
@@ -74,7 +74,7 @@ table fEconomicidade
 	column 'PF Equivalentes Pagos'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 8de68ab1-e299-4ba2-a358-1ece9c52d7e4
+		lineageTag: 4b279cf9-e425-4878-a7d7-0d0670e0ba77
 		summarizeBy: sum
 		sourceColumn: PF Equivalentes Pagos
 
@@ -83,7 +83,7 @@ table fEconomicidade
 	column 'Preço PF Mercado 2026 (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 14dc34cd-3324-4a28-b623-aeedc68751a7
+		lineageTag: efda9651-88e3-4ba4-9064-7c5e0f346511
 		summarizeBy: sum
 		sourceColumn: Preço PF Mercado 2026 (R$)
 
@@ -92,7 +92,7 @@ table fEconomicidade
 	column 'Custo do Volume a Preço de Mercado (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 0a9f12dc-7f12-4df2-9d69-a6b58b7a1532
+		lineageTag: e68cc2c9-c940-4017-9ed7-57722a410417
 		summarizeBy: sum
 		sourceColumn: Custo do Volume a Preço de Mercado (R$)
 
@@ -101,7 +101,7 @@ table fEconomicidade
 	column 'Economia vs Mercado (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 590f8238-4c1e-45f2-8e02-c058e1e6165a
+		lineageTag: cab5b377-c6cd-4a6c-90df-07c212144053
 		summarizeBy: sum
 		sourceColumn: Economia vs Mercado (R$)
 
@@ -110,7 +110,7 @@ table fEconomicidade
 	column '% Economia'
 		dataType: double
 		formatString: 0.0%;-0.0%;0.0%
-		lineageTag: edff526e-58b7-4728-8c84-e770f2dcc878
+		lineageTag: 2e8fdb27-5d05-4fa1-b7e5-571f6b72c405
 		summarizeBy: sum
 		sourceColumn: % Economia
 
@@ -119,7 +119,7 @@ table fEconomicidade
 	column 'PF Medido 2026'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 87aca19f-0c6a-461e-8fa2-8b93ec52a202
+		lineageTag: b5c38346-d50b-4d46-9b1c-11a276642309
 		summarizeBy: sum
 		sourceColumn: PF Medido 2026
 
@@ -128,7 +128,7 @@ table fEconomicidade
 	column 'VT 2026 (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 8e7cfdbe-0d99-45b2-ab1a-2cf12b83ab85
+		lineageTag: 9edcbf6c-d668-4999-8c5a-8694861a27fc
 		summarizeBy: sum
 		sourceColumn: VT 2026 (R$)
 
@@ -137,7 +137,7 @@ table fEconomicidade
 	column 'VA 2026 (R$)'
 		dataType: double
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: 8e1c001d-cfa4-4c7a-bb97-ac3f7e8681fa
+		lineageTag: 4dad16a2-cb31-40f8-82a3-7e5fae833e7c
 		summarizeBy: sum
 		sourceColumn: VA 2026 (R$)
 
@@ -146,7 +146,7 @@ table fEconomicidade
 	column 'Retorno VT por R$ 1'
 		dataType: double
 		formatString: "R$"\ #,0.00
-		lineageTag: e1a28f0c-f1a4-4b8c-a0ac-6fa1832859d8
+		lineageTag: 1a732f63-b15e-47ea-a90b-3498c678eabb
 		summarizeBy: sum
 		sourceColumn: Retorno VT por R$ 1
 
@@ -155,7 +155,7 @@ table fEconomicidade
 	column 'Retorno VA por R$ 1'
 		dataType: double
 		formatString: "R$"\ #,0.00
-		lineageTag: d6b0ce85-845b-4e87-8206-12281c6ebdf2
+		lineageTag: 42fe73c9-e9af-4f86-acd5-aebbb4daf5dc
 		summarizeBy: sum
 		sourceColumn: Retorno VA por R$ 1
 
@@ -164,7 +164,7 @@ table fEconomicidade
 	column 'Fator Grupo Contratado'
 		dataType: double
 		formatString: 0.00
-		lineageTag: 189d074f-454f-4b55-9a39-75722a92f712
+		lineageTag: a3c34601-4487-4dbe-94ab-364ab4eb9764
 		summarizeBy: sum
 		sourceColumn: Fator Grupo Contratado
 
@@ -172,7 +172,7 @@ table fEconomicidade
 
 	column Fonte
 		dataType: string
-		lineageTag: d13a5d6a-2919-4a0c-8363-c416f3aa6010
+		lineageTag: e675ff9a-fd18-415b-b8f0-b7435068571c
 		summarizeBy: none
 		sourceColumn: Fonte
 

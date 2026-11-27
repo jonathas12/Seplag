@@ -1,44 +1,44 @@
-relationship 6fa7e5fc-30dd-4c39-87c2-3e5ce7e3de92
+relationship 6cc6eab3-214c-429e-ab3c-d28492bf30c6
 	fromColumn: fAvaliacao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship ebefd999-ca8c-49ad-80cf-0b6545784169
+relationship 358b991d-4630-4b2c-9c2e-dfd1e2f9b493
 	fromColumn: fAvaliacao.'Ano Inventário'
 	toColumn: dInventario.'Ano Inventário'
 
-relationship 2b7c2210-9cdd-4a57-a6a7-d3831aa7ed20
+relationship 292ec814-fb23-492e-b26f-5668fce5955e
 	fromColumn: fModulo.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 4f237987-d551-45c8-ad14-8eae267ed4c7
+relationship 9d6ae8c9-2cad-4cc5-905a-d64c27c3a547
 	fromColumn: fFuncao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 72feaae9-4e88-416d-9fd7-807fa5a02ab5
+relationship 9038507c-7f10-4eaf-b066-05b2b4ef848f
 	fromColumn: fFuncao.'Tipo de Função'
 	toColumn: dTipoFuncao.'Tipo de Função'
 
-relationship 23987d54-626a-4d6e-97a9-938fe5101d5c
+relationship ee0b5580-4566-4328-a585-d55f34f38bdc
 	fromColumn: fIntegracao.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 22e8619f-8158-4bea-abfe-e9c0033332a4
+relationship e512fe7a-c205-4b73-b5d6-2bcca67c23b8
 	fromColumn: fHistoricoLaudo.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship e6cba8f4-6349-46d6-9dd3-9e36b11d01bc
+relationship eb81d8a5-22db-49c2-a996-1c2bb3d6e53f
 	fromColumn: fCustoProjeto.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship cd741c61-b7f4-4671-b8c1-31c3dccd4328
+relationship 04d3cf80-e014-4ed5-91b1-0379feb8dffa
 	fromColumn: fEconomicidade.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship 2e07abac-5f36-4661-ace1-fba67568afac
+relationship d17a06e6-9614-4502-af3e-1ddd2133be36
 	fromColumn: bProdutoDiligencia.'ID Produto'
 	toColumn: dProduto.'ID Produto'
 
-relationship af73df6b-8b4a-4c44-a124-9c0a00544773
+relationship d0a3f91f-a966-4882-926b-9b2d8777597e
 	crossFilteringBehavior: bothDirections
 	fromColumn: bProdutoDiligencia.Código
 	toColumn: dDiligencia.Código

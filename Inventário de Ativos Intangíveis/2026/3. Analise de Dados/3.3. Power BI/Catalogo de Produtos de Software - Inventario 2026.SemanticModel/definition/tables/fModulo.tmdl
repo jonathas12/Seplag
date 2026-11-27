@@ -1,10 +1,10 @@
 table fModulo
-	lineageTag: 5786b228-ef91-4115-a2e7-93ee9b3d010e
+	lineageTag: 510f71ff-4786-4471-ae49-3878099ac4d1
 
 	column 'ID Produto'
 		dataType: string
 		isHidden
-		lineageTag: c2659aa8-5704-4f7a-b78f-4fd23ff764a4
+		lineageTag: 9652d45c-1090-4182-8e6f-cda026e2aec1
 		summarizeBy: none
 		sourceColumn: ID Produto
 
@@ -12,7 +12,7 @@ table fModulo
 
 	column Módulo
 		dataType: string
-		lineageTag: 4fb121f6-8a6d-4e18-acaa-74668aecf723
+		lineageTag: e194a0d9-54d1-40bf-bc3f-c5c06af826ae
 		summarizeBy: none
 		sourceColumn: Módulo
 
@@ -21,7 +21,7 @@ table fModulo
 	column 'Tamanho Funcional (PF)'
 		dataType: double
 		formatString: #,0.0
-		lineageTag: 295cd5ff-c7c4-42f1-97e5-b6ac0262aea8
+		lineageTag: 4903a000-879c-44ea-a514-00fa1b42875b
 		summarizeBy: sum
 		sourceColumn: Tamanho Funcional (PF)
 
@@ -30,7 +30,7 @@ table fModulo
 	column 'Qtde Histórias'
 		dataType: double
 		formatString: #,0.00
-		lineageTag: b71fb5ba-17ef-4815-93af-b9fd14210959
+		lineageTag: 46a8af68-fe53-4223-94c7-f54fe5c950e0
 		summarizeBy: sum
 		sourceColumn: Qtde Histórias
 

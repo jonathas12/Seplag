@@ -1,0 +1,909 @@
+{
+ "titulo": "Relatório Final do Inventário de Bens Intangíveis",
+ "subtitulos": [
+  "Relatório de Avaliação de Bens Intangíveis (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 21)",
+  "Exercício 2026"
+ ],
+ "arquivo_saida": "RELATORIO_FINAL_INVENTARIO_BENS_INTANGIVEIS_2026",
+ "cidade_data": "Cuiabá/MT, 27 de novembro de 2026.",
+ "setor": "Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI/SEPLAG)",
+ "cards": [
+  [
+   "VALOR APURADO 2026",
+   "R$ 78.611.015,47",
+   "53,3% sobre 2025"
+  ],
+  [
+   "BENS",
+   "58",
+   "39 sistemas · 18 licenças · SEAP"
+  ],
+  [
+   "LAUDOS",
+   "41",
+   "um por bem ou grupo"
+  ],
+  [
+   "DILIGÊNCIAS",
+   "19",
+   "5 prioritárias até 10/12/2026"
+  ]
+ ],
+ "blocos": [
+  [
+   "secao",
+   "",
+   "Apresentação"
+  ],
+  [
+   "p",
+   "Este é o Relatório Final do Inventário de Bens Intangíveis da Secretaria de Estado de Planejamento e Gestão (SEPLAG-MT) do exercício de 2026, elaborado pela Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), instituída pela Portaria nº 124/2026/SEPLAG, publicada no Diário Oficial do Estado nº 29.279, de 23/07/2026. Constitui o Relatório de Avaliação de Bens Intangíveis previsto no art. 21 da Instrução Normativa Conjunta nº 003/2022/SEPLAG/SEFAZ e o relatório final de inventário de que trata o art. 3º, V, da Portaria."
+  ],
+  [
+   "p",
+   "É o documento de fechamento e de entrega do inventário. Conta a história do trabalho, do planejamento à entrega; registra o método, os resultados e o cumprimento de cada dispositivo da Instrução Normativa e da Portaria; e funciona como índice de todos os entregáveis: laudos, relatórios, planilhas, notas técnicas, painel de dados e documentos de apoio, que permanecem como a fonte de detalhe de cada número aqui resumido."
+  ],
+  [
+   "secao",
+   "",
+   "1. Resumo executivo"
+  ],
+  [
+   "tabela",
+   [
+    "Categoria",
+    "Bens",
+    "Critério de mensuração",
+    "Valor 2025 (R$)",
+    "Valor 2026 (R$)",
+    "Variação"
+   ],
+   [
+    [
+     "Softwares desenvolvidos internamente e/ou medidos por pontos de função",
+     "39",
+     "Pontos de função (31.732,8 PF) × R$ 1.215,09, mais o Valor Institucional (IN, art. 11)",
+     "R$ 44.976.518,12",
+     "R$ 70.234.996,71",
+     "56,2%"
+    ],
+    [
+     "Softwares adquiridos: licenças e de prateleira",
+     "18",
+     "Custo de aquisição registrado no SIGPAT (IN, art. 10, I)",
+     "R$ 3.121.832,16",
+     "R$ 3.121.832,16",
+     "0,0%"
+    ],
+    [
+     "Software adquirido por contrato: SEAP",
+     "1",
+     "Valor do Contrato nº 001/2026/SEPLAG, amortizado em 12 meses",
+     "R$ 3.166.000,00",
+     "R$ 5.254.186,60",
+     "66,0%"
+    ],
+    [
+     "TOTAL",
+     "58",
+     "",
+     "R$ 51.264.350,28",
+     "R$ 78.611.015,47",
+     "53,3%"
+    ]
+   ],
+   "Valor apurado dos bens intangíveis da SEPLAG (2025: Relatório Final do inventário de 2025)",
+   [
+    27,
+    6,
+    27,
+    14,
+    14,
+    12
+   ],
+   [
+    1,
+    3,
+    4,
+    5
+   ],
+   [
+    3
+   ]
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Valor apurado:",
+   "O inventário de 2026 apurou **R$ 78.611.015,47** em 58 bens intangíveis, valor 53,3% superior ao de 2025 (R$ 51.264.350,28). Considerada a amortização do SEAP até 31/12/2026 (R$ 4.816.337,68), o valor líquido do conjunto no encerramento do exercício é de **R$ 73.794.677,79**."
+  ],
+  [
+   "lista",
+   [
+    "**Desenvolvidos internamente:** 39 sistemas, 31.732,8 PF, R$ 70.234.996,71. A variação sobre 2025 vem do novo preço do PF (R$ 12.962.010,80), do aumento do tamanho das medições (R$ 1.485.204,51), da revisão do Valor Institucional (R$ 3.347.572,95) e de 8 sistemas avaliados pela primeira vez (R$ 7.463.690,33).",
+    "**Adquiridos:** 18 licenças (R$ 3.121.832,16, sem alteração) e o SEAP (R$ 5.254.186,60), avaliado pelo Contrato nº 001/2026/SEPLAG e amortizado linearmente de 26/01/2026 a 25/01/2027.",
+    "**Laudos:** 41 Laudos Técnicos de Avaliação (39 sistemas, softwares adquiridos e SEAP), um por bem ou grupo homogêneo, atendendo ao apontamento A2 do inventário de 2025.",
+    "**Preço do ponto de função:** R$ 1.215,09, aprovado pela comissão (Sigadoc SEPLAG-DIC-2026/59859) a partir de pesquisa rastreável em fonte oficial, conferida no PNCP (SEPLAG-DIC-2026/59836-A e 59842-A).",
+    "**Economicidade:** nos 9 sistemas com custo de projeto registrado, a SEPLAG pagou R$ 9.368.136,99 à fábrica de software do Contrato nº 014/2022/SEPLAG; o mesmo serviço ao preço de referência do PF custaria R$ 21.144.041,71 (economia de 55,7%).",
+    "**Governança:** 18 dos 39 sistemas não têm documentação funcional, 3 estão sem uso ou suspensos e 5 projetos em desenvolvimento não demonstraram os requisitos do art. 9º; a 2ª Nota Técnica Consultiva registra 19 diligências e 20 recomendações."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "2. Base legal e competências"
+  ],
+  [
+   "tabela",
+   [
+    "Norma",
+    "Dispositivo",
+    "Objeto"
+   ],
+   [
+    [
+     "Lei nº 4.320/1964",
+     "arts. 94 a 96",
+     "Registros analíticos dos bens e levantamento geral para o balanço"
+    ],
+    [
+     "IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "arts. 3º e 4º",
+     "Instituição e composição da CIABI (mínimo de três servidores, um do patrimônio e, para software, um da TI)"
+    ],
+    [
+     "IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "art. 5º, I a VII",
+     "Etapas: levantamento, reconhecimento, mensuração, vida útil, valor amortizável, laudo e encaminhamento ao setor contábil"
+    ],
+    [
+     "IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "arts. 6º a 19",
+     "Reconhecimento, mensuração (custo ou art. 11), vida útil, amortização e redução ao valor recuperável"
+    ],
+    [
+     "IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "arts. 20 a 26",
+     "Laudo, processo ao setor contábil, alterações comunicadas, balanço anual e prazo de 15 de dezembro"
+    ],
+    [
+     "Portaria nº 124/2026/SEPLAG",
+     "arts. 1º a 3º",
+     "Institui a comissão do exercício de 2026 e fixa as competências: solicitar informações, consolidar, realizar diligências, planejar, elaborar o relatório final e encaminhá-lo ao patrimônio"
+    ],
+    [
+     "Portaria nº 124/2026/SEPLAG",
+     "arts. 4º a 8º",
+     "Colaboração das unidades, disponibilidade dos membros, prazo de 30/10, guarda da documentação e reflexo no FIPLAN"
+    ],
+    [
+     "NBC TSP 08, 09, 10 e 34 (CFC)",
+     "-",
+     "Ativo intangível, redução ao valor recuperável e custos no setor público"
+    ],
+    [
+     "ISO/IEC 20926 (IFPUG CPM 4.3.1), NESMA e Roteiro de Métricas do SISP",
+     "-",
+     "Medição do tamanho funcional em pontos de função"
+    ]
+   ],
+   null,
+   [
+    30,
+    16,
+    54
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "3. A história do inventário"
+  ],
+  [
+   "p",
+   "O inventário de 2026 foi executado em condições restritas. A comissão foi designada em 23/07/2026; os trabalhos foram abertos em 13/10/2026 (Ata nº 001/2026); o prazo de 30/10/2026 da Portaria (art. 6º) transcorreu sem a conclusão, por instabilidade crônica de conexão desde 14/07/2026 (SEPLAG-DIC-2026/59558-A) e por demandas concorrentes, e a entrega foi replanejada para 27/11/2026, preservando o prazo de 15/12/2026 do setor contábil (Atualização nº 1, de 13/11/2026). Entre 12 e 17/11/2026, os três membros designados declinaram de exercer as atividades, e os trabalhos passaram a ser executados pelo presidente (Atualização nº 2, de 17/11/2026)."
+  ],
+  [
+   "p",
+   "A partir de 16/11/2026, o trabalho foi registrado em repositório versionado: 84 registros de entrega até a emissão deste relatório, que formam a trilha de auditoria do inventário. O gráfico abaixo mostra as fases e o ritmo das entregas."
+  ],
+  [
+   "figura",
+   "graficos/G2_linha_do_tempo.png",
+   "Fases do inventário e entregas registradas por dia (commits no repositório do inventário)",
+   16
+  ],
+  [
+   "tabela",
+   [
+    "Data",
+    "Marco",
+    "Evidência"
+   ],
+   [
+    [
+     "23/07/2026",
+     "Designação da comissão",
+     "Portaria nº 124/2026/SEPLAG, DOE nº 29.279"
+    ],
+    [
+     "13/10/2026",
+     "Abertura dos trabalhos",
+     "Ata nº 001/2026"
+    ],
+    [
+     "30/10/2026",
+     "Prazo da Portaria (art. 6º) vencido",
+     "Atualização nº 1 da Ata (13/11/2026)"
+    ],
+    [
+     "12 a 17/11/2026",
+     "Recusa dos membros designados; execução pelo presidente",
+     "Atualização nº 2 da Ata (17/11/2026)"
+    ],
+    [
+     "16/11/2026",
+     "Plano de Trabalho, Análise do Inventário de 2025, 1ª Nota Técnica Consultiva e pesquisa de preços concluída",
+     "Manifestação Técnica da pesquisa (SEPLAG-DIC-2026/59842-A)"
+    ],
+    [
+     "18/11/2026",
+     "Aprovação do preço do PF (R$ 1.215,09); Estudo de Custos e minuta de IN Conjunta; primeiros laudos (SICC, SIGPAS, SIAG)",
+     "SEPLAG-DIC-2026/59859"
+    ],
+    [
+     "19 a 26/11/2026",
+     "Medições e laudos dos 39 sistemas desenvolvidos internamente",
+     "Planilhas de contagem e laudos"
+    ],
+    [
+     "26/11/2026",
+     "Levantamento dos adquiridos, laudo das licenças, laudo do SEAP e relatórios consolidados",
+     "Relatórios sintéticos e analíticos e Relatório Resumido"
+    ],
+    [
+     "27/11/2026",
+     "2ª Nota Técnica Consultiva (diligências e recomendações), Catálogo de Produtos (painel) e este Relatório Final",
+     "Entrega ao setorial de patrimônio"
+    ]
+   ],
+   "Cronologia do inventário de 2026",
+   [
+    16,
+    54,
+    30
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "4. Planejamento e método"
+  ],
+  [
+   "subsecao",
+   "4.1 Escopo"
+  ],
+  [
+   "tabela",
+   [
+    "Grupo",
+    "Conteúdo",
+    "Método de valoração"
+   ],
+   [
+    [
+     "Desenvolvidos internamente e/ou medidos por PF",
+     "Softwares da SEPLAG, desenvolvidos pela equipe interna e/ou pela fábrica de software, com direitos do Estado",
+     "VA = VT + VT × VI, com VT = PF × preço do PF (art. 11)"
+    ],
+    [
+     "Licenças e softwares de prateleira",
+     "Licenças com registro patrimonial no SIGPAT",
+     "Custo de aquisição (art. 10, I)"
+    ],
+    [
+     "Licenciados mantidos pela administração",
+     "SEAP, com contrato de serviços e transferência de tecnologia",
+     "Valor do contrato, com vida útil e amortização pela vigência (arts. 16 e 17)"
+    ]
+   ],
+   null,
+   [
+    28,
+    40,
+    32
+   ],
+   [],
+   []
+  ],
+  [
+   "p",
+   "Ficaram fora do escopo, como em 2025: ativos fonográficos, cartográficos, fotográficos e culturais; softwares sem licença válida e softwares internos fora de uso por obsolescência (art. 2º, § 2º), salvo os mantidos com ressalva até decisão formal; SaaS; utilitários; software embarcado em hardware; painéis e produtos de geoprocessamento; APIs e bancos de dados isolados; software livre; marcas e patentes (tratadas como recomendação de registro)."
+  ],
+  [
+   "subsecao",
+   "4.2 Etapas do método"
+  ],
+  [
+   "lista",
+   [
+    "**Identificação e análise documental:** relação de sistemas e licenças, documentação de requisitos, contratos e linhas de base anteriores (IN, arts. 5º e 6º; Portaria, art. 3º, I).",
+    "**Reconhecimento:** critérios de benefício, mensuração confiável, separabilidade ou direito legal e de exclusão (arts. 2º, § 2º, e 6º a 9º), com ressalva nos casos sem demonstração.",
+    "**Medição:** Análise de Pontos de Função nos níveis detalhado (IFPUG), estimativo (NESMA) ou indicativo (35 × ALI + 15 × AIE, art. 11, § 2º), conforme a documentação disponível; manutenção não soma ao tamanho (art. 10, parágrafo único).",
+    "**Preço do PF:** pesquisa em dados abertos do Compras.gov.br (683 registros, 9 preços Java na amostra), conferência no PNCP (9 de 9), atualização pelo IPCA, estatística e agrupamento K-Means; escolha do Grupo 2, cenário C5 (9 preços e o Contrato nº 014/2022/SEPLAG), data-base 10/2026.",
+    "**Valor Institucional:** imprescindível (1,00), muito importante (0,75), importante (0,50) ou relativa importância (0,25), justificado em cada laudo (art. 11, § 4º).",
+    "**Vida útil:** indefinida para os sistemas próprios, com justificativa; definida para as cessões temporárias e para o SEAP (arts. 14 a 17).",
+    "**Laudo, relatórios e entrega:** laudo por bem (art. 20), relatórios consolidados, Relatório Final e entrega ao patrimônio (art. 21; Portaria, art. 3º, V e VI)."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "5. Resultados"
+  ],
+  [
+   "subsecao",
+   "5.1 Evolução e composição"
+  ],
+  [
+   "tabela",
+   [
+    "Categoria",
+    "2024 (R$)",
+    "2025 (R$)",
+    "2026 (R$)"
+   ],
+   [
+    [
+     "Desenvolvidos internamente",
+     "R$ 26.249.155,48",
+     "R$ 44.976.518,12",
+     "R$ 70.234.996,71"
+    ],
+    [
+     "Licenças e prateleira",
+     "R$ 1.920.656,05",
+     "R$ 3.121.832,16",
+     "R$ 3.121.832,16"
+    ],
+    [
+     "SEAP",
+     "R$ 96.833,33",
+     "R$ 3.166.000,00",
+     "R$ 5.254.186,60"
+    ],
+    [
+     "TOTAL",
+     "R$ 28.266.644,86",
+     "R$ 51.264.350,28",
+     "R$ 78.611.015,47"
+    ]
+   ],
+   "Valor apurado por inventário (2024 sem o SEAP no grupo dos desenvolvidos)",
+   [
+    34,
+    22,
+    22,
+    22
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  [
+   "figura",
+   "graficos/G1_evolucao_por_categoria.png",
+   "Valor apurado por inventário e categoria",
+   14
+  ],
+  [
+   "subsecao",
+   "5.2 Quadro de movimentação 2025 para 2026"
+  ],
+  [
+   "p",
+   "Atende ao apontamento A12 do inventário de 2025 (IN, art. 23). Não houve baixa no exercício; as cessões encerradas e os sistemas sem uso foram mantidos com ressalva, pendentes das diligências da 2ª Nota Técnica Consultiva."
+  ],
+  [
+   "tabela",
+   [
+    "Movimento",
+    "Detalhe",
+    "Valor (R$)"
+   ],
+   [
+    [
+     "Saldo do inventário de 2025",
+     "",
+     "R$ 51.264.350,28"
+    ],
+    [
+     "(+) Reavaliação dos 31 sistemas mantidos: novo preço do PF",
+     "Preço de R$ 943,25 para R$ 1.215,09",
+     "R$ 12.962.010,80"
+    ],
+    [
+     "(+) Reavaliação dos sistemas mantidos: tamanho funcional",
+     "Novas entregas e revisões das contagens",
+     "R$ 1.485.204,51"
+    ],
+    [
+     "(+) Reavaliação dos sistemas mantidos: Valor Institucional",
+     "Revisão do VI em cada laudo",
+     "R$ 3.347.572,95"
+    ],
+    [
+     "(+) Entradas: 8 sistemas avaliados pela primeira vez",
+     "SIGEP, Primo, SIGQA, SIDBENS, Contagem, PV, SAGEP, SIDE",
+     "R$ 7.463.690,33"
+    ],
+    [
+     "(+) SEAP: novo contrato",
+     "Contrato nº 001/2026/SEPLAG",
+     "R$ 2.088.186,60"
+    ],
+    [
+     "(=) Licenças e prateleira",
+     "Sem aquisição, cessão ou baixa",
+     "R$ 0,00"
+    ],
+    [
+     "(-) Baixas",
+     "Nenhuma no exercício",
+     "R$ 0,00"
+    ],
+    [
+     "Saldo do inventário de 2026",
+     "",
+     "R$ 78.611.015,47"
+    ]
+   ],
+   "Movimentação do saldo dos bens intangíveis (a reavaliação dos mantidos é decomposta sequencialmente: preço, tamanho e VI)",
+   [
+    40,
+    40,
+    20
+   ],
+   [
+    2
+   ],
+   [
+    0,
+    8
+   ]
+  ],
+  [
+   "subsecao",
+   "5.3 Situação dos softwares desenvolvidos internamente"
+  ],
+  [
+   "tabela",
+   [
+    "Situação (laudo)",
+    "Sistemas"
+   ],
+   [
+    [
+     "Em produção",
+     "27"
+    ],
+    [
+     "Em desenvolvimento",
+     "5"
+    ],
+    [
+     "Em produção (legado em sucessão)",
+     "4"
+    ],
+    [
+     "Em produção, sem uso",
+     "2"
+    ],
+    [
+     "Em desenvolvimento (suspenso)",
+     "1"
+    ],
+    [
+     "TOTAL",
+     "39"
+    ]
+   ],
+   null,
+   [
+    70,
+    30
+   ],
+   [
+    1
+   ],
+   [
+    5
+   ]
+  ],
+  [
+   "subsecao",
+   "5.4 Economicidade da fábrica de software"
+  ],
+  [
+   "p",
+   "Nos 9 sistemas com custo de projeto registrado nos laudos (SISPAT, SIG-SST, SIGPAS, SIGED, SIEP, PSICO, SIFSW, SEI e SIGS), a SEPLAG pagou R$ 9.368.136,99 à fábrica do Contrato nº 014/2022/SEPLAG (TRDs até 07/2026). Convertido do preço do PF no contrato para o preço de referência de R$ 1.215,09, o mesmo serviço custaria R$ 21.144.041,71: economia de R$ 11.775.904,72 (55,7%). Cada R$ 1,00 pago corresponde a R$ 1,77 em valor do produto (VT) e R$ 3,36 em valor do ativo (VA). O custo não inclui a equipe interna da SEPLAG, e os 30 sistemas sem custo registrado não entram na análise."
+  ],
+  [
+   "secao",
+   "",
+   "6. Cumprimento da Instrução Normativa e da Portaria"
+  ],
+  [
+   "tabela",
+   [
+    "Dispositivo",
+    "Exigência",
+    "Como foi atendido",
+    "Evidência",
+    "Situação"
+   ],
+   [
+    [
+     "IN, arts. 3º e 4º",
+     "CIABI com no mínimo três servidores, um do patrimônio e um da TI",
+     "Comissão designada com quatro servidores; após a recusa dos três membros, execução pelo presidente (servidor da TI)",
+     "Atas 001/2026",
+     "Parcial"
+    ],
+    [
+     "IN, art. 5º, I; art. 6º",
+     "Levantamento de todos os bens",
+     "58 bens: 39 sistemas, 18 licenças e SEAP",
+     "Inventário de Sistemas SITEC 2026; levantamento dos adquiridos",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 5º, II; arts. 7º a 9º",
+     "Reconhecimento",
+     "Critérios aplicados por bem; 8 bens mantidos com ressalva por falta de demonstração de uso ou do art. 9º",
+     "Laudos; 2ª Nota Técnica",
+     "Cumprido com ressalvas"
+    ],
+    [
+     "IN, art. 5º, III; arts. 10 a 13",
+     "Mensuração inicial",
+     "PF × preço de mercado + VI (art. 11) para os sistemas; custo de aquisição para as licenças; valor do contrato para o SEAP",
+     "Planilhas de contagem; laudos",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 5º, IV; arts. 14 a 16",
+     "Vida útil",
+     "Classificação por bem, com justificativa",
+     "Laudos",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 5º, V; arts. 17 a 19",
+     "Valor amortizável e redução ao valor recuperável",
+     "Amortização do SEAP calculada; cessões encerradas e teste de recuperabilidade recomendados, não aplicados",
+     "Laudo do SEAP; 2ª Nota Técnica (R15, R16)",
+     "Parcial"
+    ],
+    [
+     "IN, art. 5º, VI; art. 20",
+     "Laudo Técnico de Avaliação com conteúdo mínimo",
+     "41 laudos com descrição, identificação contábil, critérios, vida útil, data e assinatura",
+     "Laudos Técnicos de Avaliação",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 21",
+     "Processo com laudos e Relatório de Avaliação",
+     "Este relatório, os relatórios consolidados e os laudos",
+     "Relatório Final; relatórios consolidados",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 23",
+     "Alterações comunicadas ao setor contábil",
+     "Quadro de movimentação 2025 para 2026",
+     "Seção 5.2",
+     "Cumprido"
+    ],
+    [
+     "IN, art. 5º, VII; art. 26, § 1º",
+     "Encaminhamento ao setor contábil até 15/12",
+     "Entrega ao patrimônio em 27/11/2026; encaminhamento ao contábil pelo patrimônio",
+     "Termo de entrega",
+     "A cargo do patrimônio"
+    ],
+    [
+     "IN, art. 28",
+     "Decisão sobre registro da propriedade intelectual",
+     "Recomendação de registro no INPI",
+     "1ª e 2ª Notas Técnicas (R19, D16)",
+     "Recomendado"
+    ],
+    [
+     "Portaria, art. 3º, I e II",
+     "Solicitar informações e consolidar",
+     "Solicitações às equipes da CPPTI e ao patrimônio; respostas parciais, consolidadas nos laudos",
+     "Atas; laudos",
+     "Cumprido com ressalvas"
+    ],
+    [
+     "Portaria, art. 3º, III",
+     "Realizar diligências",
+     "19 diligências com destinatário, fundamento e prazo",
+     "2ª Nota Técnica Consultiva",
+     "Cumprido"
+    ],
+    [
+     "Portaria, art. 3º, IV",
+     "Planejamento e cronograma",
+     "Plano de Trabalho e Cronograma e sua atualização final",
+     "Plano de Trabalho (versões 2.0 e 3.0)",
+     "Cumprido"
+    ],
+    [
+     "Portaria, art. 3º, V",
+     "Relatório final",
+     "Este documento",
+     "Relatório Final",
+     "Cumprido"
+    ],
+    [
+     "Portaria, art. 3º, VI; art. 6º",
+     "Entrega ao patrimônio até 30/10, com termo",
+     "Entrega em 27/11/2026, com termo de entrega",
+     "Atualização nº 1 da Ata; termo de entrega",
+     "Fora do prazo, justificado"
+    ],
+    [
+     "Portaria, art. 8º",
+     "Reflexo das alterações no FIPLAN",
+     "A cargo do patrimônio e da contabilidade",
+     "-",
+     "A cargo do patrimônio"
+    ]
+   ],
+   "Matriz de conformidade",
+   [
+    15,
+    20,
+    33,
+    19,
+    13
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "7. Tratamento dos apontamentos do inventário de 2025"
+  ],
+  [
+   "tabela",
+   [
+    "Nº",
+    "Apontamento",
+    "Tratamento em 2026",
+    "Situação"
+   ],
+   [
+    [
+     "A1",
+     "Entrega após o prazo da portaria",
+     "Replanejamento registrado em ata; entrega em 27/11/2026, antes do prazo contábil",
+     "Tratado com ressalva"
+    ],
+    [
+     "A2",
+     "Ausência de laudo por bem",
+     "41 Laudos Técnicos de Avaliação",
+     "Atendido"
+    ],
+    [
+     "A3 e A4",
+     "Vida útil e amortização",
+     "Vida útil por bem; amortização do SEAP; cessões encerradas apontadas para baixa (D01)",
+     "Atendido em parte"
+    ],
+    [
+     "A5",
+     "Enquadramento no art. 11",
+     "Declarado em cada laudo; custo de projeto analisado nos 9 sistemas com custo registrado",
+     "Atendido"
+    ],
+    [
+     "A6",
+     "Preço do PF",
+     "Pesquisa ampliada, rastreável, conferida no PNCP, com sensibilidade e aprovação fundamentada",
+     "Atendido"
+    ],
+    [
+     "A7",
+     "Manutenção fora do valor",
+     "Regra de medição registrada na Ata (item 4.3) e aplicada nos laudos",
+     "Atendido"
+    ],
+    [
+     "A8 e A9",
+     "SEAP e licenciados mantidos",
+     "SEAP avaliado pelo novo contrato, com fundamentação, vigência e amortização em laudo próprio",
+     "Atendido"
+    ],
+    [
+     "A10",
+     "Propriedade intelectual",
+     "Recomendação de registro no INPI e diligência D16",
+     "Recomendado"
+    ],
+    [
+     "A11 e A12",
+     "Conciliação e FIPLAN",
+     "Conciliação por bem com 2023 a 2025 e quadro de movimentação; registro no FIPLAN a cargo do patrimônio",
+     "Atendido em parte"
+    ],
+    [
+     "A13",
+     "Forma e método",
+     "Método detalhado na Ata e nos laudos; K-Means como agrupamento; documentos no modelo institucional",
+     "Atendido"
+    ]
+   ],
+   null,
+   [
+    8,
+    26,
+    48,
+    18
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "8. Entregas do inventário"
+  ],
+  [
+   "p",
+   "Os entregáveis estão no processo do inventário no Sigadoc e, como cópia de trabalho versionada, na pasta \"Inventário de Ativos Intangíveis/2026\" do repositório da SEPLAG."
+  ],
+  [
+   "tabela",
+   [
+    "Grupo",
+    "Entregável",
+    "Local"
+   ],
+   [
+    [
+     "Planejamento",
+     "Plano de Trabalho e Cronograma (versão 2.0 e atualização final 3.0); Ata nº 001/2026 e atualizações; Análise do Inventário de 2025 e Apontamentos",
+     "0. Planejamento"
+    ],
+    [
+     "Legislação",
+     "Portaria nº 124/2026/SEPLAG; IN Conjunta nº 003/2022/SEPLAG/SEFAZ",
+     "1. Legislação_Normas"
+    ],
+    [
+     "Preço do PF",
+     "Pesquisa de Preços (SEPLAG-DIC-2026/59836-A); Manifestação Técnica (59842-A); Mapa Comparativo; análise estatística; evidências do PNCP; Aprovação do Preço (59859)",
+     "2.3 Mapa Comparativo de Preços"
+    ],
+    [
+     "Medições",
+     "39 planilhas de contagem em pontos de função e especificações elaboradas pela comissão (SIGQA, PRIMO)",
+     "2.2 Softwares Dev. Internamente"
+    ],
+    [
+     "Adquiridos",
+     "Levantamento dos Intangíveis Adquiridos 2026 (licenças, SEAP, amortização, conciliação)",
+     "2.1 Softwares Adquiridos"
+    ],
+    [
+     "Laudos",
+     "41 Laudos Técnicos de Avaliação, em PDF e Word",
+     "4. Relatório Final/Laudos Técnicos de Avaliação"
+    ],
+    [
+     "Relatórios",
+     "Relatório sintético e analítico dos desenvolvidos; dos adquiridos; Relatório Resumido do Valor Apurado (PDF e Word); este Relatório Final",
+     "4. Relatório Final"
+    ],
+    [
+     "Governança",
+     "1ª e 2ª Notas Técnicas Consultivas, com impressão das fontes; Estudo Técnico de Custos e minuta de IN Conjunta; Manifestação Técnica de reconhecimento (Métrica Topo); Laudo de revisão de contagem (integração FIPLAN x SAFF)",
+     "5. Governança_Recomendações"
+    ],
+    [
+     "Análise de dados",
+     "Catálogo de Produtos de Software (painel Power BI), pipeline Python reprodutível, modelo em estrela em parquet, dicionário de dados e catálogo de medidas",
+     "3. Analise de Dados"
+    ],
+    [
+     "Entrega",
+     "Termo de entrega ao setorial de patrimônio",
+     "A emitir na entrega"
+    ]
+   ],
+   "Checklist de entregas",
+   [
+    14,
+    60,
+    26
+   ],
+   [],
+   []
+  ],
+  [
+   "secao",
+   "",
+   "9. Limitações e ressalvas"
+  ],
+  [
+   "lista",
+   [
+    "**Composição reduzida:** os trabalhos foram executados e revisados pelo presidente, sem conferência por outro membro; para mitigar, as conferências numéricas são automáticas e reproduzíveis (103 conferências na base do painel, todas conferem).",
+    "**Documentação:** 18 sistemas sem documentação funcional e lacunas em outros 10; as avaliações usam a documentação disponibilizada, o que não significa que outros documentos não existam.",
+    "**Uso e continuidade:** SEI, SIGS e SIFSW sem uso ou suspensos e 5 projetos sem a demonstração do art. 9º foram mantidos com ressalva até decisão formal.",
+    "**Licenças:** duas cessões encerradas em 19/07/2026 continuam registradas, sem amortização no período da cessão.",
+    "**Custos:** só 9 sistemas têm custo de projeto registrado; não há apuração do custo interno nem do custo de sustentação.",
+    "**Prazo:** o prazo de 30/10/2026 da Portaria não foi cumprido, pelos motivos registrados em ata."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "10. Recomendações e próximos passos"
+  ],
+  [
+   "p",
+   "As recomendações completas e as diligências estão na 2ª Nota Técnica Consultiva. Para o encerramento do exercício, destacam-se as diligências prioritárias, com prazo sugerido até 10/12/2026: D01 (renovação ou baixa das cessões encerradas), D02 e D03 (decisão sobre SEI, SIGS e SIFSW), D04 (situação da Progressão Vertical e da Contagem de Tempo) e D05 (origem do valor do SIDBENS no SIGPAT)."
+  ],
+  [
+   "lista",
+   [
+    "Instituir o Catálogo de Produtos de Software e a ficha mínima do produto, com dono de negócio designado (minuta de portaria na 2ª Nota Técnica).",
+    "Manter a CIABI ativa durante o exercício, com acompanhamento trimestral das diligências e recomendações.",
+    "Apurar o custo de desenvolvimento e de sustentação por produto e o custo total de propriedade.",
+    "Aplicar anualmente o teste de redução ao valor recuperável e amortizar as licenças de prazo determinado.",
+    "Registrar no INPI os programas de computador prioritários.",
+    "Publicar o Catálogo de Produtos de Software no portal SIDE, com atualização a cada inventário pela pipeline entregue."
+   ]
+  ],
+  [
+   "secao",
+   "",
+   "11. Conclusão e encaminhamento"
+  ],
+  [
+   "p",
+   "A Comissão de Inventário e Avaliação de Bens Intangíveis conclui o inventário do exercício de 2026 com 58 bens intangíveis avaliados em R$ 78.611.015,47, valor líquido de R$ 73.794.677,79 em 31/12/2026 após a amortização do SEAP, conforme os laudos e relatórios que integram este processo, e com as ressalvas da Seção 9."
+  ],
+  [
+   "caixa",
+   "conclusao",
+   "Encaminhamento:",
+   "Encaminha-se este Relatório Final, com os laudos e relatórios que o integram, ao setorial de patrimônio da SEPLAG, mediante termo de entrega, para encaminhamento ao setor contábil até 15/12/2026 (IN Conjunta nº 003/2022/SEPLAG/SEFAZ, art. 26, § 1º) e reflexo no FIPLAN (Portaria nº 124/2026/SEPLAG, art. 8º)."
+  ]
+ ],
+ "responsavel": {
+  "rotulo": "Responsável",
+  "nome": "Jonathas Gomes Marques",
+  "linhas": [
+   "Presidente da Comissão de Inventário e Avaliação de Bens Intangíveis (CIABI), Portaria nº 124/2026/SEPLAG",
+   "Gerente de projetos e cientista de dados (CPPTI/SSCPG/SAPGD/SEPLAG)",
+   "Matrícula 280193"
+  ]
+ }
+}

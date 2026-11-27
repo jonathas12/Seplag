@@ -572,7 +572,7 @@ def gera_relatorio():
     s += txt(64, 322, "O ativo que ninguém vê: o que a SEPLAG construiu, adquiriu e mantém, quanto vale,", 16.5, "#E3F0F4")
     s += txt(64, 345, "quanto custou e o que falta para que cada valor tenha lastro. Inventário de Bens Intangíveis 2026.", 16.5, "#E3F0F4")
     s += ret(64, 372, 212, 50, LAR, 25, None) + txt(92, 403, "Iniciar análises", 16, "#FFFFFF", 700) + icone("seta", 240, 390, "#FFFFFF", 1.05)
-    s += icone("documento", 300, 389, "#BFDCE6", 1.0) + txt(322, 395, "Fonte: 38 Laudos Técnicos de Avaliação, relatórios sintéticos e analíticos,", 11.5, "#CFE3EA")
+    s += icone("documento", 300, 389, "#BFDCE6", 1.0) + txt(322, 395, "Fonte: 41 Laudos Técnicos de Avaliação, relatórios sintéticos e analíticos,", 11.5, "#CFE3EA")
     s += txt(322, 412, "Relatório Resumido do Valor Apurado e 2ª Nota Técnica Consultiva", 11.5, "#CFE3EA")
     ACH = [("cubo", "Texto Valor Atual", "Valor apurado em 2026 (R$)", "Qtde Produtos Atual", "produtos", "geral"),
            ("codigo", "Qtde Desenvolvidos", "softwares desenvolvidos internamente", "Valor Desenvolvidos (R$)", "", "dev"),
